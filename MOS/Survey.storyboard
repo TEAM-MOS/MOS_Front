@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="irJ-lY-i7m">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Bold.otf">
+            <string>Pretendard-Bold</string>
+        </array>
+        <array key="Pretendard-Regular.otf">
+            <string>Pretendard-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Survey View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SurveyViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취업 준비도 테스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgJ-5x-irg">
+                                <rect key="frame" x="106.66666666666669" y="186.33333333333334" width="177" height="29"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="건너뛰기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVv-IE-8Ns">
+                                <rect key="frame" x="332" y="67" width="42" height="14"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                                <color key="textColor" name="gray-2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2B-Nu-tan">
+                                <rect key="frame" x="18" y="241.33333333333334" width="354" height="33.666666666666657"/>
+                                <string key="text">어떤 스터디를 들어야 할 지 모르겠다고요?
+테스트를 통해 나에게 필요한 스터디를 알아보세요!</string>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                <color key="textColor" name="gray-2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cI-hK-Z8E">
+                                <rect key="frame" x="16" y="617" width="358" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="5Tb-ky-EnN"/>
+                                    <constraint firstAttribute="height" constant="48" id="voP-s1-BPG"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="테스트 시작">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="18" name="Pretendard-Bold"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="테스트 시작">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="18" name="Pretendard-Bold"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="survey_character.png" translatesAutoresizingMaskIntoConstraints="NO" id="HJY-bd-U9e">
+                                <rect key="frame" x="48" y="307" width="294" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="294" id="cg8-Uo-1Xa"/>
+                                    <constraint firstAttribute="height" constant="230" id="sVa-SK-AUT"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="294" id="u2K-Zw-TMZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WVv-IE-8Ns" secondAttribute="trailing" constant="16" id="3Qj-kX-cdS"/>
+                            <constraint firstItem="YgJ-5x-irg" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Fnd-YG-XvX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8cI-hK-Z8E" secondAttribute="trailing" constant="16" id="O0L-nk-syb"/>
+                            <constraint firstItem="8cI-hK-Z8E" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="RVi-gL-X2z"/>
+                            <constraint firstItem="WVv-IE-8Ns" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="Xk8-uS-aq0"/>
+                            <constraint firstItem="J2B-Nu-tan" firstAttribute="top" secondItem="YgJ-5x-irg" secondAttribute="bottom" constant="26" id="b0m-Ox-uTM"/>
+                            <constraint firstItem="HJY-bd-U9e" firstAttribute="top" secondItem="J2B-Nu-tan" secondAttribute="bottom" constant="32" id="fzY-4e-XCk"/>
+                            <constraint firstItem="HJY-bd-U9e" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="iud-3z-DrP"/>
+                            <constraint firstItem="HJY-bd-U9e" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="lHF-oM-cs9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="J2B-Nu-tan" secondAttribute="trailing" constant="18" id="oxU-r3-0bh"/>
+                            <constraint firstItem="8cI-hK-Z8E" firstAttribute="top" secondItem="HJY-bd-U9e" secondAttribute="bottom" constant="80" id="sWr-OC-EcK"/>
+                            <constraint firstItem="J2B-Nu-tan" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="zc1-6e-sTd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="startButton" destination="8cI-hK-Z8E" id="Lua-1T-Nr9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66" y="-2"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rfo-VJ-ygw">
+            <objects>
+                <viewController id="irJ-lY-i7m" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4bx-yF-0t4">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="Pq5-vX-PRT">
+                                <rect key="frame" x="16" y="99" width="358" height="4"/>
+                            </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="82M-oZ-LGr">
+                                <rect key="frame" x="14" y="47" width="362" height="32"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_survey_back" translatesAutoresizingMaskIntoConstraints="NO" id="H7q-dM-hoh">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="FzG-na-EdJ"/>
+                                            <constraint firstAttribute="height" constant="32" id="pJC-bd-9uD"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설문조사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bl-Lp-g5W">
+                                        <rect key="frame" x="153.33333333333334" y="0.0" width="55.333333333333343" height="32"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_survey_exit" translatesAutoresizingMaskIntoConstraints="NO" id="DPb-3t-0hx">
+                                        <rect key="frame" x="330" y="0.0" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="5LF-ZC-3Rn"/>
+                                            <constraint firstAttribute="width" constant="32" id="EHl-ow-HQV"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PQ7-xb-5MI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="82M-oZ-LGr" firstAttribute="top" secondItem="PQ7-xb-5MI" secondAttribute="top" id="3WG-bO-Cx2"/>
+                            <constraint firstItem="Pq5-vX-PRT" firstAttribute="top" secondItem="82M-oZ-LGr" secondAttribute="bottom" constant="20" id="3q2-RG-UTb"/>
+                            <constraint firstItem="PQ7-xb-5MI" firstAttribute="trailing" secondItem="Pq5-vX-PRT" secondAttribute="trailing" constant="16" id="3qa-YJ-6hl"/>
+                            <constraint firstItem="Pq5-vX-PRT" firstAttribute="leading" secondItem="PQ7-xb-5MI" secondAttribute="leading" constant="16" id="UfF-fQ-ZzH"/>
+                            <constraint firstItem="82M-oZ-LGr" firstAttribute="centerX" secondItem="4bx-yF-0t4" secondAttribute="centerX" id="akF-of-KfF"/>
+                            <constraint firstItem="82M-oZ-LGr" firstAttribute="leading" secondItem="PQ7-xb-5MI" secondAttribute="leading" constant="14" id="cRE-8x-1hz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kqp-w3-Y7l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.79710144927537" y="-2.0089285714285712"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="main"/>
+    <resources>
+        <image name="ic_survey_back" width="32" height="32"/>
+        <image name="ic_survey_exit" width="32" height="32"/>
+        <image name="survey_character.png" width="629" height="512"/>
+        <namedColor name="gray-2">
+            <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="main">
+            <color red="0.40392156862745099" green="0.22352941176470589" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
