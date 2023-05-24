@@ -339,10 +339,10 @@
         <image name="ic_survey_exit" width="32" height="32"/>
         <image name="survey_character.png" width="629" height="512"/>
         <namedColor name="gray-2">
-            <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.65055851096751838" green="0.65699968434343436" blue="0.65699968434343436" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="main">
-            <color red="0.40392156862745099" green="0.22352941176470589" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.99607843137254903" green="0.58039215686274515" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
