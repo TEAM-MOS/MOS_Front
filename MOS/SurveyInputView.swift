@@ -29,6 +29,12 @@ class SurveyInputView: UIView {
 
     @IBOutlet weak var button1: UIButton!
     
+    @IBOutlet var button5Label: UILabel!
+    @IBOutlet var button4Label: UILabel!
+    @IBOutlet var button3Label: UILabel!
+    @IBOutlet var button2Label: UILabel!
+    @IBOutlet var button1Label: UILabel!
+    
     //인터페이스 빌더에서 속성 넣기
     @IBInspectable
     var title: String = "" {
@@ -84,10 +90,12 @@ class SurveyInputView: UIView {
         }
     }
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         print(#fileID, #function, #line, "- ")
         applyNib()
+        applyAction()
         
     }
 
@@ -114,5 +122,113 @@ class SurveyInputView: UIView {
                                      view.leadingAnchor.constraint(equalTo: self.leadingAnchor),
                                      view.bottomAnchor.constraint(equalTo: self.bottomAnchor),
                                      view.trailingAnchor.constraint(equalTo: self.trailingAnchor)])
+    }
+    
+    fileprivate func applyAction(){
+        self.button1.addTarget(self, action: #selector(onBtn1Clicked(sender:)), for: .touchUpInside)
+        self.button2.addTarget(self, action: #selector(onBtn2Clicked(sender:)), for: .touchUpInside)
+        self.button3.addTarget(self, action: #selector(onBtn3Clicked(sender:)), for: .touchUpInside)
+        self.button4.addTarget(self, action: #selector(onBtn4Clicked(sender:)), for: .touchUpInside)
+        self.button5.addTarget(self, action: #selector(onBtn5Clicked(sender:)), for: .touchUpInside)
+    }
+    
+    @objc func onBtn1Clicked(sender: UIButton){
+        print(#fileID, #function, #line, "- btn1 clicked")
+        self.button1.layer.borderColor = UIColor(named: "main")?.cgColor
+        self.button1.layer.backgroundColor = UIColor(named: "main-2")?.cgColor
+        self.button1Label.textColor = UIColor(named: "main")
+        
+        self.button3.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button3.layer.backgroundColor = UIColor.white.cgColor
+        self.button3Label.textColor = UIColor.black
+        self.button2.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button2.layer.backgroundColor = UIColor.white.cgColor
+        self.button2Label.textColor = UIColor.black
+        self.button4.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button4.layer.backgroundColor = UIColor.white.cgColor
+        self.button4Label.textColor = UIColor.black
+        self.button5.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button5.layer.backgroundColor = UIColor.white.cgColor
+        self.button5Label.textColor = UIColor.black
+        
+    }
+    @objc func onBtn2Clicked(sender: UIButton){
+        print(#fileID, #function, #line, "- btn2 clicked")
+        self.button2.layer.borderColor = UIColor(named: "main")?.cgColor
+        self.button2.layer.backgroundColor = UIColor(named: "main-2")?.cgColor
+        self.button2Label.textColor = UIColor(named: "main")
+        
+        self.button1.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button1.layer.backgroundColor = UIColor.white.cgColor
+        self.button1Label.textColor = UIColor.black
+        self.button3.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button3.layer.backgroundColor = UIColor.white.cgColor
+        self.button3Label.textColor = UIColor.black
+        self.button4.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button4.layer.backgroundColor = UIColor.white.cgColor
+        self.button4Label.textColor = UIColor.black
+        self.button5.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button5.layer.backgroundColor = UIColor.white.cgColor
+        self.button5Label.textColor = UIColor.black
+        
+    }
+    @objc func onBtn3Clicked(sender: UIButton){
+        print(#fileID, #function, #line, "- btn3 clicked")
+        self.button3.layer.borderColor = UIColor(named: "main")?.cgColor
+        self.button3.layer.backgroundColor = UIColor(named: "main-2")?.cgColor
+        self.button3Label.textColor = UIColor(named: "main")
+        
+        self.button1.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button1.layer.backgroundColor = UIColor.white.cgColor
+        self.button1Label.textColor = UIColor.black
+        self.button2.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button2.layer.backgroundColor = UIColor.white.cgColor
+        self.button2Label.textColor = UIColor.black
+        self.button4.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button4.layer.backgroundColor = UIColor.white.cgColor
+        self.button4Label.textColor = UIColor.black
+        self.button5.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button5.layer.backgroundColor = UIColor.white.cgColor
+        self.button5Label.textColor = UIColor.black
+    }
+    @objc func onBtn4Clicked(sender: UIButton){
+        print(#fileID, #function, #line, "- btn4 clicked")
+        self.button4.layer.borderColor = UIColor(named: "main")?.cgColor
+        self.button4.layer.backgroundColor = UIColor(named: "main-2")?.cgColor
+        self.button4Label.textColor = UIColor(named: "main")
+        
+        self.button1.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button1.layer.backgroundColor = UIColor.white.cgColor
+        self.button1Label.textColor = UIColor.black
+        self.button2.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button2.layer.backgroundColor = UIColor.white.cgColor
+        self.button2Label.textColor = UIColor.black
+        self.button3.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button3.layer.backgroundColor = UIColor.white.cgColor
+        self.button3Label.textColor = UIColor.black
+        self.button5.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button5.layer.backgroundColor = UIColor.white.cgColor
+        self.button5Label.textColor = UIColor.black
+        
+    }
+    @objc func onBtn5Clicked(sender: UIButton){
+        print(#fileID, #function, #line, "- btn5 clicked")
+        self.button5.layer.borderColor = UIColor(named: "main")?.cgColor
+        self.button5.layer.backgroundColor = UIColor(named: "main-2")?.cgColor
+        self.button5Label.textColor = UIColor(named: "main")
+        
+        self.button1.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button1.layer.backgroundColor = UIColor.white.cgColor
+        self.button1Label.textColor = UIColor.black
+        self.button2.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button2.layer.backgroundColor = UIColor.white.cgColor
+        self.button2Label.textColor = UIColor.black
+        self.button4.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button4.layer.backgroundColor = UIColor.white.cgColor
+        self.button4Label.textColor = UIColor.black
+        self.button3.layer.borderColor = UIColor(named: "gray-1")?.cgColor
+        self.button3.layer.backgroundColor = UIColor.white.cgColor
+        self.button3Label.textColor = UIColor.black
+        
     }
 }
