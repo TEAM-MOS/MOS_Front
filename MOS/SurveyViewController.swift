@@ -17,7 +17,14 @@ class SurveyViewController: UIViewController {
         
         self.startButton.layer.masksToBounds = true
         self.startButton.layer.cornerRadius = 10
+        
+        self.startButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
     }
 
+    @objc func buttonTapped() {
+            print(#fileID, #function, #line, "- StartButton clicked")
+            let secondViewController = SurveyInterviewViewController()
+            navigationController?.pushViewController(secondViewController, animated: true)
+        }
 
 }
