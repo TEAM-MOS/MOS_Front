@@ -23,8 +23,9 @@ class SurveyViewController: UIViewController {
 
     @objc func buttonTapped() {
             print(#fileID, #function, #line, "- StartButton clicked")
-            let secondViewController = SurveyInterviewViewController()
-            navigationController?.pushViewController(secondViewController, animated: true)
+//            let secondViewController = SurveyInterviewViewController()
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "surveyInterviewVC") as? SurveyInterviewViewController else { return }
+            navigationController?.pushViewController(nextVC, animated: true)
         }
 
 }

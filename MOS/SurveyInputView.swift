@@ -141,6 +141,7 @@ class SurveyInputView: UIView {
                 button?.layer.cornerRadius = self.button1.frame.height / 2
                 button?.layer.borderColor = UIColor(named: "main")?.cgColor
                 button?.layer.backgroundColor = UIColor(named: "main-2")?.cgColor
+                button?.setTitleColor(UIColor(named: "main"), for: .normal)
                 label?.textColor = UIColor(named: "main")
             } else {
                 button?.layer.borderColor = UIColor(named: "gray-1")?.cgColor
