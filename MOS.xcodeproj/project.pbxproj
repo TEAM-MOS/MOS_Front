@@ -25,15 +25,16 @@
 		2FFCFC422A1DD2A200E2AC95 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */; };
 		2FFCFC442A1DD2B200E2AC95 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */; };
 		5A67766B2A1E1ECF00F1D3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A67766A2A1E1ECF00F1D3DB /* Assets.xcassets */; };
-		5A6776762A22602500F1D3DB /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A67766D2A22602500F1D3DB /* Pretendard-Bold.ttf */; };
-		5A6776772A22602500F1D3DB /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A67766E2A22602500F1D3DB /* Pretendard-SemiBold.ttf */; };
-		5A6776782A22602500F1D3DB /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A67766F2A22602500F1D3DB /* Pretendard-Medium.ttf */; };
-		5A6776792A22602500F1D3DB /* Pretendard-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776702A22602500F1D3DB /* Pretendard-ExtraLight.ttf */; };
-		5A67767A2A22602500F1D3DB /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776712A22602500F1D3DB /* Pretendard-Light.ttf */; };
-		5A67767B2A22602500F1D3DB /* Pretendard-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776722A22602500F1D3DB /* Pretendard-ExtraBold.ttf */; };
-		5A67767C2A22602500F1D3DB /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776732A22602500F1D3DB /* Pretendard-Regular.ttf */; };
-		5A67767D2A22602500F1D3DB /* Pretendard-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776742A22602500F1D3DB /* Pretendard-Thin.ttf */; };
-		5A67767E2A22602500F1D3DB /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776752A22602500F1D3DB /* Pretendard-Black.ttf */; };
+		5A6776892A2264E700F1D3DB /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776802A2264E700F1D3DB /* Pretendard-Light.ttf */; };
+		5A67768A2A2264E700F1D3DB /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776812A2264E700F1D3DB /* Pretendard-Bold.ttf */; };
+		5A67768B2A2264E700F1D3DB /* Pretendard-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776822A2264E700F1D3DB /* Pretendard-ExtraBold.ttf */; };
+		5A67768C2A2264E700F1D3DB /* Pretendard-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776832A2264E700F1D3DB /* Pretendard-ExtraLight.ttf */; };
+		5A67768D2A2264E700F1D3DB /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776842A2264E700F1D3DB /* Pretendard-Medium.ttf */; };
+		5A67768E2A2264E700F1D3DB /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776852A2264E700F1D3DB /* Pretendard-Black.ttf */; };
+		5A67768F2A2264E700F1D3DB /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776862A2264E700F1D3DB /* Pretendard-Regular.ttf */; };
+		5A6776902A2264E700F1D3DB /* Pretendard-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776872A2264E700F1D3DB /* Pretendard-Thin.ttf */; };
+		5A6776912A2264E700F1D3DB /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776882A2264E700F1D3DB /* Pretendard-SemiBold.ttf */; };
+		5A6776932A22660500F1D3DB /* PretendardVariable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776922A22660500F1D3DB /* PretendardVariable.ttf */; };
 		5ABFE9E82A19FF4E0094A316 /* SurveyInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */; };
 		5ABFE9EA2A1A05840094A316 /* SurveyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */; };
 		5AC619912A170A4000966219 /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC619902A170A4000966219 /* Survey.storyboard */; };
@@ -63,15 +64,16 @@
 		2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5A67766A2A1E1ECF00F1D3DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5A67766D2A22602500F1D3DB /* Pretendard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Bold.ttf"; path = "../../../../Downloads/Pretendard-1.3.6/public/static/alternative/Pretendard-Bold.ttf"; sourceTree = "<group>"; };
-		5A67766E2A22602500F1D3DB /* Pretendard-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-SemiBold.ttf"; path = "../../../../Downloads/Pretendard-1.3.6/public/static/alternative/Pretendard-SemiBold.ttf"; sourceTree = "<group>"; };
-		5A67766F2A22602500F1D3DB /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Medium.ttf"; path = "../../../../Downloads/Pretendard-1.3.6/public/static/alternative/Pretendard-Medium.ttf"; sourceTree = "<group>"; };
-		5A6776702A22602500F1D3DB /* Pretendard-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-ExtraLight.ttf"; path = "../../../../Downloads/Pretendard-1.3.6/public/static/alternative/Pretendard-ExtraLight.ttf"; sourceTree = "<group>"; };
-		5A6776712A22602500F1D3DB /* Pretendard-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Light.ttf"; path = "../../../../Downloads/Pretendard-1.3.6/public/static/alternative/Pretendard-Light.ttf"; sourceTree = "<group>"; };
-		5A6776722A22602500F1D3DB /* Pretendard-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-ExtraBold.ttf"; path = "../../../../Downloads/Pretendard-1.3.6/public/static/alternative/Pretendard-ExtraBold.ttf"; sourceTree = "<group>"; };
-		5A6776732A22602500F1D3DB /* Pretendard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Regular.ttf"; path = "../../../../Downloads/Pretendard-1.3.6/public/static/alternative/Pretendard-Regular.ttf"; sourceTree = "<group>"; };
-		5A6776742A22602500F1D3DB /* Pretendard-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Thin.ttf"; path = "../../../../Downloads/Pretendard-1.3.6/public/static/alternative/Pretendard-Thin.ttf"; sourceTree = "<group>"; };
-		5A6776752A22602500F1D3DB /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Black.ttf"; path = "../../../../Downloads/Pretendard-1.3.6/public/static/alternative/Pretendard-Black.ttf"; sourceTree = "<group>"; };
+		5A6776802A2264E700F1D3DB /* Pretendard-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.ttf"; sourceTree = "<group>"; };
+		5A6776812A2264E700F1D3DB /* Pretendard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.ttf"; sourceTree = "<group>"; };
+		5A6776822A2264E700F1D3DB /* Pretendard-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.ttf"; sourceTree = "<group>"; };
+		5A6776832A2264E700F1D3DB /* Pretendard-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.ttf"; sourceTree = "<group>"; };
+		5A6776842A2264E700F1D3DB /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.ttf"; sourceTree = "<group>"; };
+		5A6776852A2264E700F1D3DB /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.ttf"; sourceTree = "<group>"; };
+		5A6776862A2264E700F1D3DB /* Pretendard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.ttf"; sourceTree = "<group>"; };
+		5A6776872A2264E700F1D3DB /* Pretendard-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.ttf"; sourceTree = "<group>"; };
+		5A6776882A2264E700F1D3DB /* Pretendard-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.ttf"; sourceTree = "<group>"; };
+		5A6776922A22660500F1D3DB /* PretendardVariable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PretendardVariable.ttf; sourceTree = "<group>"; };
 		5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyInputView.xib; sourceTree = "<group>"; };
 		5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyInputView.swift; sourceTree = "<group>"; };
 		5AC619902A170A4000966219 /* Survey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
@@ -139,18 +141,19 @@
 			path = MOS;
 			sourceTree = "<group>";
 		};
-		5A67766C2A225FEC00F1D3DB /* Font */ = {
+		5A67767F2A2264A700F1D3DB /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				5A6776752A22602500F1D3DB /* Pretendard-Black.ttf */,
-				5A67766D2A22602500F1D3DB /* Pretendard-Bold.ttf */,
-				5A6776722A22602500F1D3DB /* Pretendard-ExtraBold.ttf */,
-				5A6776702A22602500F1D3DB /* Pretendard-ExtraLight.ttf */,
-				5A6776712A22602500F1D3DB /* Pretendard-Light.ttf */,
-				5A67766F2A22602500F1D3DB /* Pretendard-Medium.ttf */,
-				5A6776732A22602500F1D3DB /* Pretendard-Regular.ttf */,
-				5A67766E2A22602500F1D3DB /* Pretendard-SemiBold.ttf */,
-				5A6776742A22602500F1D3DB /* Pretendard-Thin.ttf */,
+				5A6776922A22660500F1D3DB /* PretendardVariable.ttf */,
+				5A6776852A2264E700F1D3DB /* Pretendard-Black.ttf */,
+				5A6776812A2264E700F1D3DB /* Pretendard-Bold.ttf */,
+				5A6776822A2264E700F1D3DB /* Pretendard-ExtraBold.ttf */,
+				5A6776832A2264E700F1D3DB /* Pretendard-ExtraLight.ttf */,
+				5A6776802A2264E700F1D3DB /* Pretendard-Light.ttf */,
+				5A6776842A2264E700F1D3DB /* Pretendard-Medium.ttf */,
+				5A6776862A2264E700F1D3DB /* Pretendard-Regular.ttf */,
+				5A6776882A2264E700F1D3DB /* Pretendard-SemiBold.ttf */,
+				5A6776872A2264E700F1D3DB /* Pretendard-Thin.ttf */,
 			);
 			name = Font;
 			sourceTree = "<group>";
@@ -158,7 +161,7 @@
 		5AC619942A17105600966219 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5A67766C2A225FEC00F1D3DB /* Font */,
+				5A67767F2A2264A700F1D3DB /* Font */,
 				5AC619A82A173D3C00966219 /* Images */,
 			);
 			path = Resources;
@@ -231,27 +234,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ABFE9E82A19FF4E0094A316 /* SurveyInputView.xib in Resources */,
-				5A67767E2A22602500F1D3DB /* Pretendard-Black.ttf in Resources */,
+				5A67768A2A2264E700F1D3DB /* Pretendard-Bold.ttf in Resources */,
+				5A67768F2A2264E700F1D3DB /* Pretendard-Regular.ttf in Resources */,
 				5AC619AE2A173FF800966219 /* survey_character.png in Resources */,
-				5A67767C2A22602500F1D3DB /* Pretendard-Regular.ttf in Resources */,
 				5A67766B2A1E1ECF00F1D3DB /* Assets.xcassets in Resources */,
 				2FA142822A149026006AA91B /* LaunchScreen.storyboard in Resources */,
+				5A6776902A2264E700F1D3DB /* Pretendard-Thin.ttf in Resources */,
 				5AC619912A170A4000966219 /* Survey.storyboard in Resources */,
-				5A67767D2A22602500F1D3DB /* Pretendard-Thin.ttf in Resources */,
 				2F28E68B2A1DDFBE00021E72 /* AddStudy.storyboard in Resources */,
-				5A6776762A22602500F1D3DB /* Pretendard-Bold.ttf in Resources */,
-				5A6776792A22602500F1D3DB /* Pretendard-ExtraLight.ttf in Resources */,
+				5A67768C2A2264E700F1D3DB /* Pretendard-ExtraLight.ttf in Resources */,
+				5A67768D2A2264E700F1D3DB /* Pretendard-Medium.ttf in Resources */,
+				5A6776892A2264E700F1D3DB /* Pretendard-Light.ttf in Resources */,
 				2FA142822A149026006AA91B /* LaunchScreen.storyboard in Resources */,
-				5A6776782A22602500F1D3DB /* Pretendard-Medium.ttf in Resources */,
 				2FFCFC422A1DD2A200E2AC95 /* Home.storyboard in Resources */,
 				2F28E6832A1DDA5F00021E72 /* StudyRoom.storyboard in Resources */,
-				5A67767A2A22602500F1D3DB /* Pretendard-Light.ttf in Resources */,
-				5A67767B2A22602500F1D3DB /* Pretendard-ExtraBold.ttf in Resources */,
+				5A6776932A22660500F1D3DB /* PretendardVariable.ttf in Resources */,
 				2F28E6852A1DDAD300021E72 /* MyPage.storyboard in Resources */,
+				5A6776912A2264E700F1D3DB /* Pretendard-SemiBold.ttf in Resources */,
 				2F2B3E252A1DBE74008B0506 /* TabMenu.storyboard in Resources */,
-				5A6776772A22602500F1D3DB /* Pretendard-SemiBold.ttf in Resources */,
 				2F28E67D2A1DD9BA00021E72 /* Search.storyboard in Resources */,
 				2FA1427D2A149024006AA91B /* Main.storyboard in Resources */,
+				5A67768E2A2264E700F1D3DB /* Pretendard-Black.ttf in Resources */,
+				5A67768B2A2264E700F1D3DB /* Pretendard-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
