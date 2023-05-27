@@ -21,8 +21,23 @@
 		2FA142782A149024006AA91B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA142772A149024006AA91B /* SceneDelegate.swift */; };
 		2FA1427A2A149024006AA91B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA142792A149024006AA91B /* ViewController.swift */; };
 		2FA1427D2A149024006AA91B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA1427B2A149024006AA91B /* Main.storyboard */; };
-		2FA1427F2A149026006AA91B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA1427E2A149026006AA91B /* Assets.xcassets */; };
 		2FA142822A149026006AA91B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA142802A149026006AA91B /* LaunchScreen.storyboard */; };
+		5A67766B2A1E1ECF00F1D3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A67766A2A1E1ECF00F1D3DB /* Assets.xcassets */; };
+		5ABFE9E82A19FF4E0094A316 /* SurveyInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */; };
+		5ABFE9EA2A1A05840094A316 /* SurveyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */; };
+		5AC619912A170A4000966219 /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC619902A170A4000966219 /* Survey.storyboard */; };
+		5AC619932A170BF300966219 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC619922A170BF300966219 /* SurveyViewController.swift */; };
+		5AC6199F2A1711C500966219 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5AC619962A1711C500966219 /* Pretendard-Light.otf */; };
+		5AC619A02A1711C500966219 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5AC619972A1711C500966219 /* Pretendard-Regular.otf */; };
+		5AC619A12A1711C500966219 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5AC619982A1711C500966219 /* Pretendard-ExtraBold.otf */; };
+		5AC619A22A1711C500966219 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5AC619992A1711C500966219 /* Pretendard-Medium.otf */; };
+		5AC619A32A1711C500966219 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5AC6199A2A1711C500966219 /* Pretendard-ExtraLight.otf */; };
+		5AC619A42A1711C500966219 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5AC6199B2A1711C500966219 /* Pretendard-Bold.otf */; };
+		5AC619A52A1711C500966219 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5AC6199C2A1711C500966219 /* Pretendard-Black.otf */; };
+		5AC619A62A1711C500966219 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5AC6199D2A1711C500966219 /* Pretendard-SemiBold.otf */; };
+		5AC619A72A1711C500966219 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5AC6199E2A1711C500966219 /* Pretendard-Thin.otf */; };
+		5AC619AE2A173FF800966219 /* survey_character.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AC619AD2A173FF800966219 /* survey_character.png */; };
+		5AC619B42A19E5BD00966219 /* SurveyInterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC619B32A19E5BD00966219 /* SurveyInterviewViewController.swift */; };
 		2FFCFC422A1DD2A200E2AC95 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */; };
 		2FFCFC442A1DD2B200E2AC95 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -43,9 +58,24 @@
 		2FA142772A149024006AA91B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2FA142792A149024006AA91B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2FA1427C2A149024006AA91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2FA1427E2A149026006AA91B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FA142812A149026006AA91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FA142832A149026006AA91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A67766A2A1E1ECF00F1D3DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyInputView.xib; sourceTree = "<group>"; };
+		5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyInputView.swift; sourceTree = "<group>"; };
+		5AC619902A170A4000966219 /* Survey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
+		5AC619922A170BF300966219 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		5AC619962A1711C500966219 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Light.otf"; path = "../../../../../Downloads/Pretendard-1.3.6/public/static/Pretendard-Light.otf"; sourceTree = "<group>"; };
+		5AC619972A1711C500966219 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Regular.otf"; path = "../../../../../Downloads/Pretendard-1.3.6/public/static/Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		5AC619982A1711C500966219 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-ExtraBold.otf"; path = "../../../../../Downloads/Pretendard-1.3.6/public/static/Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		5AC619992A1711C500966219 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Medium.otf"; path = "../../../../../Downloads/Pretendard-1.3.6/public/static/Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		5AC6199A2A1711C500966219 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-ExtraLight.otf"; path = "../../../../../Downloads/Pretendard-1.3.6/public/static/Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		5AC6199B2A1711C500966219 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Bold.otf"; path = "../../../../../Downloads/Pretendard-1.3.6/public/static/Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		5AC6199C2A1711C500966219 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Black.otf"; path = "../../../../../Downloads/Pretendard-1.3.6/public/static/Pretendard-Black.otf"; sourceTree = "<group>"; };
+		5AC6199D2A1711C500966219 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-SemiBold.otf"; path = "../../../../../Downloads/Pretendard-1.3.6/public/static/Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		5AC6199E2A1711C500966219 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Thin.otf"; path = "../../../../../Downloads/Pretendard-1.3.6/public/static/Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		5AC619AD2A173FF800966219 /* survey_character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = survey_character.png; path = ../../../../Downloads/survey_character.png; sourceTree = "<group>"; };
+		5AC619B32A19E5BD00966219 /* SurveyInterviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyInterviewViewController.swift; sourceTree = "<group>"; };
 		2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,13 +110,19 @@
 		2FA142742A149024006AA91B /* MOS */ = {
 			isa = PBXGroup;
 			children = (
+				5AC619942A17105600966219 /* Resources */,
 				2FA142752A149024006AA91B /* AppDelegate.swift */,
 				2FA142772A149024006AA91B /* SceneDelegate.swift */,
 				2FA142792A149024006AA91B /* ViewController.swift */,
+				5AC619922A170BF300966219 /* SurveyViewController.swift */,
+				5AC619B32A19E5BD00966219 /* SurveyInterviewViewController.swift */,
+				5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */,
 				2FA1427B2A149024006AA91B /* Main.storyboard */,
-				2FA1427E2A149026006AA91B /* Assets.xcassets */,
 				2FA142802A149026006AA91B /* LaunchScreen.storyboard */,
+				5AC619902A170A4000966219 /* Survey.storyboard */,
+				5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */,
 				2FA142832A149026006AA91B /* Info.plist */,
+				5A67766A2A1E1ECF00F1D3DB /* Assets.xcassets */,
 				2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */,
 				2F2B3E222A1DBE52008B0506 /* TabMenuViewController.swift */,
 				2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */,
@@ -101,6 +137,39 @@
 				2F28E6862A1DDADE00021E72 /* MyPageViewController.swift */,
 			);
 			path = MOS;
+			sourceTree = "<group>";
+		};
+		5AC619942A17105600966219 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AC619A82A173D3C00966219 /* Images */,
+				5AC619952A17107000966219 /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5AC619952A17107000966219 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				5AC6199C2A1711C500966219 /* Pretendard-Black.otf */,
+				5AC6199B2A1711C500966219 /* Pretendard-Bold.otf */,
+				5AC619982A1711C500966219 /* Pretendard-ExtraBold.otf */,
+				5AC6199A2A1711C500966219 /* Pretendard-ExtraLight.otf */,
+				5AC619962A1711C500966219 /* Pretendard-Light.otf */,
+				5AC619992A1711C500966219 /* Pretendard-Medium.otf */,
+				5AC619972A1711C500966219 /* Pretendard-Regular.otf */,
+				5AC6199D2A1711C500966219 /* Pretendard-SemiBold.otf */,
+				5AC6199E2A1711C500966219 /* Pretendard-Thin.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		5AC619A82A173D3C00966219 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5AC619AD2A173FF800966219 /* survey_character.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,13 +230,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AC619A32A1711C500966219 /* Pretendard-ExtraLight.otf in Resources */,
+				5ABFE9E82A19FF4E0094A316 /* SurveyInputView.xib in Resources */,
+				5AC619AE2A173FF800966219 /* survey_character.png in Resources */,
+				5AC619A42A1711C500966219 /* Pretendard-Bold.otf in Resources */,
+				5A67766B2A1E1ECF00F1D3DB /* Assets.xcassets in Resources */,
+				2FA142822A149026006AA91B /* LaunchScreen.storyboard in Resources */,
+				5AC619A62A1711C500966219 /* Pretendard-SemiBold.otf in Resources */,
+				5AC619A02A1711C500966219 /* Pretendard-Regular.otf in Resources */,
+				5AC619A12A1711C500966219 /* Pretendard-ExtraBold.otf in Resources */,
+				5AC619A22A1711C500966219 /* Pretendard-Medium.otf in Resources */,
+				5AC619A52A1711C500966219 /* Pretendard-Black.otf in Resources */,
+				5AC619912A170A4000966219 /* Survey.storyboard in Resources */,
+				5AC619A72A1711C500966219 /* Pretendard-Thin.otf in Resources */,
+				5AC6199F2A1711C500966219 /* Pretendard-Light.otf in Resources */,
 				2F28E68B2A1DDFBE00021E72 /* AddStudy.storyboard in Resources */,
 				2FA142822A149026006AA91B /* LaunchScreen.storyboard in Resources */,
 				2FFCFC422A1DD2A200E2AC95 /* Home.storyboard in Resources */,
 				2F28E6832A1DDA5F00021E72 /* StudyRoom.storyboard in Resources */,
 				2F28E6852A1DDAD300021E72 /* MyPage.storyboard in Resources */,
 				2F2B3E252A1DBE74008B0506 /* TabMenu.storyboard in Resources */,
-				2FA1427F2A149026006AA91B /* Assets.xcassets in Resources */,
 				2F28E67D2A1DD9BA00021E72 /* Search.storyboard in Resources */,
 				2FA1427D2A149024006AA91B /* Main.storyboard in Resources */,
 			);
@@ -187,7 +269,10 @@
 				2FA1427A2A149024006AA91B /* ViewController.swift in Sources */,
 				2F2B3E232A1DBE52008B0506 /* TabMenuViewController.swift in Sources */,
 				2FA142762A149024006AA91B /* AppDelegate.swift in Sources */,
+				5AC619932A170BF300966219 /* SurveyViewController.swift in Sources */,
 				2FA142782A149024006AA91B /* SceneDelegate.swift in Sources */,
+				5AC619B42A19E5BD00966219 /* SurveyInterviewViewController.swift in Sources */,
+				5ABFE9EA2A1A05840094A316 /* SurveyInputView.swift in Sources */,
 				2F28E6872A1DDADE00021E72 /* MyPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
