@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-798" y="-2"/>
         </scene>
-        <!--Search View Controller-->
+        <!--스터디 탐색-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="SearchVC" id="Y6W-OH-hqX" customClass="SearchViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,18 +33,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lD7-nv-ntI">
-                                <rect key="frame" x="170" y="416" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="검색어를 입력해주세요" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MgQ-QF-yg3">
+                                <rect key="frame" x="24" y="123" width="345" height="42"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="MVr-BT-pjg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MgQ-QF-yg3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="K5P-Wl-WKT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MgQ-QF-yg3" secondAttribute="trailing" constant="24" id="M2h-Sm-aZ8"/>
+                            <constraint firstItem="MgQ-QF-yg3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="lMx-ZG-dST"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="g1o-Bz-yY5"/>
+                    <navigationItem key="navigationItem" title="스터디 탐색" id="g1o-Bz-yY5"/>
+                    <connections>
+                        <outlet property="searchBar" destination="MgQ-QF-yg3" id="8vt-08-jlR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,6 +64,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
