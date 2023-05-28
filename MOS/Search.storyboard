@@ -8,6 +8,14 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Bold.ttf">
+            <string>Pretendard-Bold</string>
+        </array>
+        <array key="Pretendard-Regular.ttf">
+            <string>Pretendard-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="QEv-Ne-98j">
@@ -42,26 +50,99 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="alphabet" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최근 검색어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYT-UA-OFx">
+                                <rect key="frame" x="24.000000000000007" y="205" width="91.666666666666686" height="24"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0v-pL-FdH">
+                                <rect key="frame" x="24" y="245" width="82" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VB-AQ-ps8">
+                                        <rect key="frame" x="16" y="6" width="28" height="20"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTI-XC-w6p">
+                                        <rect key="frame" x="52" y="9" width="14" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="14" id="c2P-pz-1hW"/>
+                                            <constraint firstAttribute="height" constant="14" id="iCo-pF-IDt"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="" backgroundImage="icon_cancel"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7VB-AQ-ps8" firstAttribute="leading" secondItem="p0v-pL-FdH" secondAttribute="leading" constant="16" id="0hv-lx-fBW"/>
+                                    <constraint firstItem="7VB-AQ-ps8" firstAttribute="centerY" secondItem="p0v-pL-FdH" secondAttribute="centerY" id="E3N-lQ-LCD"/>
+                                    <constraint firstAttribute="trailing" secondItem="jTI-XC-w6p" secondAttribute="trailing" constant="16" id="UGH-tY-Ruu"/>
+                                    <constraint firstItem="jTI-XC-w6p" firstAttribute="leading" secondItem="7VB-AQ-ps8" secondAttribute="trailing" constant="8" id="ksO-yj-rFV"/>
+                                    <constraint firstAttribute="height" constant="32" id="tuU-VC-Lqu"/>
+                                    <constraint firstItem="jTI-XC-w6p" firstAttribute="centerY" secondItem="p0v-pL-FdH" secondAttribute="centerY" id="u0h-4i-6U1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Lv-CF-1Ch">
+                                <rect key="frame" x="114" y="245" width="102" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사PT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfR-15-H3y">
+                                        <rect key="frame" x="16" y="6" width="48" height="20"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ym7-QA-37j">
+                                        <rect key="frame" x="72" y="9" width="14" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="14" id="BXi-sA-M65"/>
+                                            <constraint firstAttribute="height" constant="14" id="jjw-f9-XNt"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="" backgroundImage="icon_cancel"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ym7-QA-37j" secondAttribute="trailing" constant="16" id="OEZ-AP-LRz"/>
+                                    <constraint firstItem="XfR-15-H3y" firstAttribute="leading" secondItem="6Lv-CF-1Ch" secondAttribute="leading" constant="16" id="WJ0-Ua-E97"/>
+                                    <constraint firstAttribute="height" constant="32" id="h5C-gF-ccM"/>
+                                    <constraint firstItem="XfR-15-H3y" firstAttribute="centerY" secondItem="6Lv-CF-1Ch" secondAttribute="centerY" id="nhB-Ix-35t"/>
+                                    <constraint firstItem="ym7-QA-37j" firstAttribute="centerY" secondItem="6Lv-CF-1Ch" secondAttribute="centerY" id="oMk-ao-XNv"/>
+                                    <constraint firstItem="ym7-QA-37j" firstAttribute="leading" secondItem="XfR-15-H3y" secondAttribute="trailing" constant="8" id="sLy-dQ-TSe"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Lv-CF-1Ch" firstAttribute="leading" secondItem="p0v-pL-FdH" secondAttribute="trailing" constant="8" id="GEk-eh-Um0"/>
                             <constraint firstItem="MgQ-QF-yg3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="K5P-Wl-WKT"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MgQ-QF-yg3" secondAttribute="trailing" constant="24" id="M2h-Sm-aZ8"/>
+                            <constraint firstItem="sYT-UA-OFx" firstAttribute="top" secondItem="MgQ-QF-yg3" secondAttribute="bottom" constant="40" id="OcK-uM-tpB"/>
+                            <constraint firstItem="p0v-pL-FdH" firstAttribute="top" secondItem="sYT-UA-OFx" secondAttribute="bottom" constant="16" id="alQ-eB-89q"/>
+                            <constraint firstItem="6Lv-CF-1Ch" firstAttribute="top" secondItem="p0v-pL-FdH" secondAttribute="top" id="ge6-Cr-7MS"/>
                             <constraint firstItem="MgQ-QF-yg3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="lMx-ZG-dST"/>
+                            <constraint firstItem="sYT-UA-OFx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="qRe-mp-pRG"/>
+                            <constraint firstItem="p0v-pL-FdH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="yIk-MZ-QCN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="스터디 탐색" id="g1o-Bz-yY5"/>
                     <connections>
+                        <outlet property="recentSearchButtonView" destination="p0v-pL-FdH" id="NfG-tH-3M9"/>
+                        <outlet property="recentSearchButtonView2" destination="6Lv-CF-1Ch" id="ZOb-Lr-Zjs"/>
                         <outlet property="searchBar" destination="MgQ-QF-yg3" id="8vt-08-jlR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="-2"/>
+            <point key="canvasLocation" x="138.1679389312977" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="icon_cancel" width="10.666666984558105" height="11"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

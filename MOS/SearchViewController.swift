@@ -10,12 +10,23 @@ import UIKit
 class SearchViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UITextField!
+    @IBOutlet weak var recentSearchButtonView: UIView!
+    @IBOutlet weak var recentSearchButtonView2: UIView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // 검색 textField
         searchBar.setupLeftSideImage(ImageViewNamed: "icon_searchBar")
+        
+        // 최근 검색어 버튼 border
+        recentSearchButtonView?.layer.borderColor = UIColor.systemGray6.cgColor
+        recentSearchButtonView?.layer.borderWidth = 1
+        recentSearchButtonView?.layer.cornerRadius = 16
+        recentSearchButtonView2?.layer.borderColor = UIColor.systemGray6.cgColor
+        recentSearchButtonView2?.layer.borderWidth = 1
+        recentSearchButtonView2?.layer.cornerRadius = 16
     }
 }
 
