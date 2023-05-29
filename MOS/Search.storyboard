@@ -56,11 +56,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천 검색어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMa-x2-ut3">
+                                <rect key="frame" x="24" y="328" width="92" height="24"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0v-pL-FdH">
                                 <rect key="frame" x="24" y="245" width="82" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VB-AQ-ps8">
-                                        <rect key="frame" x="16" y="6" width="28" height="20"/>
+                                        <rect key="frame" x="16" y="6.6666666666666572" width="28" height="19"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -89,7 +95,7 @@
                                 <rect key="frame" x="114" y="245" width="102" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사PT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfR-15-H3y">
-                                        <rect key="frame" x="16" y="6" width="48" height="20"/>
+                                        <rect key="frame" x="16" y="6.6666666666666572" width="48" height="19"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -114,18 +120,63 @@
                                     <constraint firstItem="ym7-QA-37j" firstAttribute="leading" secondItem="XfR-15-H3y" secondAttribute="trailing" constant="8" id="sLy-dQ-TSe"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNx-KF-cUT">
+                                <rect key="frame" x="0.0" y="296" width="393" height="8"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="Oky-dC-glm"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8k-4r-AaC">
+                                <rect key="frame" x="24" y="368" width="76" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="MNZ-A7-irV"/>
+                                    <constraint firstAttribute="width" constant="76" id="hmj-ol-vZq"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="search_kakao"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xN9-fC-Rr7">
+                                <rect key="frame" x="108" y="368" width="64" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="3go-Ra-FGP"/>
+                                    <constraint firstAttribute="height" constant="34" id="z9G-yo-tra"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="search_samsung"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0f-vC-Rlc">
+                                <rect key="frame" x="180" y="368" width="105" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="HoW-1N-uSb"/>
+                                    <constraint firstAttribute="width" constant="105" id="PST-WO-vEP"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="search_sk"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="f8k-4r-AaC" firstAttribute="top" secondItem="mMa-x2-ut3" secondAttribute="bottom" constant="16" id="1hj-md-shR"/>
+                            <constraint firstItem="xN9-fC-Rr7" firstAttribute="leading" secondItem="f8k-4r-AaC" secondAttribute="trailing" constant="8" symbolic="YES" id="6Kg-oS-unt"/>
                             <constraint firstItem="6Lv-CF-1Ch" firstAttribute="leading" secondItem="p0v-pL-FdH" secondAttribute="trailing" constant="8" id="GEk-eh-Um0"/>
+                            <constraint firstItem="t0f-vC-Rlc" firstAttribute="leading" secondItem="xN9-fC-Rr7" secondAttribute="trailing" constant="8" symbolic="YES" id="Hj5-B9-cqI"/>
+                            <constraint firstItem="f8k-4r-AaC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="I3U-4h-6WY"/>
                             <constraint firstItem="MgQ-QF-yg3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="K5P-Wl-WKT"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MgQ-QF-yg3" secondAttribute="trailing" constant="24" id="M2h-Sm-aZ8"/>
                             <constraint firstItem="sYT-UA-OFx" firstAttribute="top" secondItem="MgQ-QF-yg3" secondAttribute="bottom" constant="40" id="OcK-uM-tpB"/>
+                            <constraint firstItem="JNx-KF-cUT" firstAttribute="top" secondItem="p0v-pL-FdH" secondAttribute="bottom" constant="19" id="Rhy-7w-dko"/>
+                            <constraint firstItem="t0f-vC-Rlc" firstAttribute="top" secondItem="xN9-fC-Rr7" secondAttribute="top" id="Wer-HG-mz1"/>
                             <constraint firstItem="p0v-pL-FdH" firstAttribute="top" secondItem="sYT-UA-OFx" secondAttribute="bottom" constant="16" id="alQ-eB-89q"/>
+                            <constraint firstItem="mMa-x2-ut3" firstAttribute="top" secondItem="JNx-KF-cUT" secondAttribute="bottom" constant="24" id="ch6-yR-OAf"/>
+                            <constraint firstItem="mMa-x2-ut3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="dG8-m9-bKK"/>
                             <constraint firstItem="6Lv-CF-1Ch" firstAttribute="top" secondItem="p0v-pL-FdH" secondAttribute="top" id="ge6-Cr-7MS"/>
                             <constraint firstItem="MgQ-QF-yg3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="lMx-ZG-dST"/>
+                            <constraint firstItem="xN9-fC-Rr7" firstAttribute="top" secondItem="f8k-4r-AaC" secondAttribute="top" id="qQS-3C-Q0F"/>
                             <constraint firstItem="sYT-UA-OFx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="qRe-mp-pRG"/>
+                            <constraint firstItem="JNx-KF-cUT" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="t8t-bs-DLk"/>
+                            <constraint firstItem="JNx-KF-cUT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="tvY-35-cea"/>
                             <constraint firstItem="p0v-pL-FdH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="yIk-MZ-QCN"/>
                         </constraints>
                     </view>
@@ -143,6 +194,9 @@
     </scenes>
     <resources>
         <image name="icon_cancel" width="10.666666984558105" height="11"/>
+        <image name="search_kakao" width="152" height="64"/>
+        <image name="search_samsung" width="128" height="64"/>
+        <image name="search_sk" width="210" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
