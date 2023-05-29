@@ -28,6 +28,17 @@ class SearchViewController: UIViewController {
         recentSearchButtonView2?.layer.borderWidth = 1
         recentSearchButtonView2?.layer.cornerRadius = 16
     }
+    
+    @IBAction func kakaoButtonPressed(_ sender: Any) {
+        // 카카오 버튼 클릭
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SearchResultVC") as? SearchResultViewController else { return }
+        nextVC.search_text = "카카오"
+        navigationController?.pushViewController(nextVC, animated: true)
+
+    }
+    
+    
+    
 }
 
 // 검색 textField 좌측 아이콘 추가
@@ -42,3 +53,5 @@ extension UITextField {
         self.tintColor = .lightGray
     }
 }
+
+

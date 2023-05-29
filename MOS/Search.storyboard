@@ -135,6 +135,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" backgroundImage="search_kakao"/>
+                                <connections>
+                                    <action selector="kakaoButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7QB-Nf-SAH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xN9-fC-Rr7">
                                 <rect key="frame" x="108" y="368" width="64" height="34"/>
@@ -190,6 +193,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.1679389312977" y="-2.1126760563380285"/>
+        </scene>
+        <!--검색 결과-->
+        <scene sceneID="AHG-kj-xi1">
+            <objects>
+                <viewController storyboardIdentifier="SearchResultVC" id="35e-Dq-c7d" customClass="SearchResultViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5kv-Qf-IOJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="검색어를 입력해주세요" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Toj-gJ-Y3F">
+                                <rect key="frame" x="24" y="79" width="345" height="42"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="n42-TS-J4V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dSb-EG-YfZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Toj-gJ-Y3F" firstAttribute="leading" secondItem="dSb-EG-YfZ" secondAttribute="leading" constant="24" id="8w4-S7-qNc"/>
+                            <constraint firstItem="Toj-gJ-Y3F" firstAttribute="top" secondItem="dSb-EG-YfZ" secondAttribute="top" constant="20" id="buI-Cr-5JW"/>
+                            <constraint firstItem="dSb-EG-YfZ" firstAttribute="trailing" secondItem="Toj-gJ-Y3F" secondAttribute="trailing" constant="24" id="xG2-nn-dSQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="검색 결과" id="CrB-ea-Q7G"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Toj-gJ-Y3F" id="ctQ-EB-97i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRs-zl-2gX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879" y="-2"/>
         </scene>
     </scenes>
     <resources>
