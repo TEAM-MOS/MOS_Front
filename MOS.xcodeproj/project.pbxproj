@@ -22,6 +22,7 @@
 		2FA1427A2A149024006AA91B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA142792A149024006AA91B /* ViewController.swift */; };
 		2FA1427D2A149024006AA91B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA1427B2A149024006AA91B /* Main.storyboard */; };
 		2FA142822A149026006AA91B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA142802A149026006AA91B /* LaunchScreen.storyboard */; };
+		2FB095862A2631910035FB78 /* DeviceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB095852A2631910035FB78 /* DeviceGroup.swift */; };
 		2FD24DA82A24F73B000747D7 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD24DA72A24F73B000747D7 /* SearchResultViewController.swift */; };
 		2FFCFC422A1DD2A200E2AC95 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */; };
 		2FFCFC442A1DD2B200E2AC95 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */; };
@@ -62,6 +63,7 @@
 		2FA1427C2A149024006AA91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FA142812A149026006AA91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FA142832A149026006AA91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FB095852A2631910035FB78 /* DeviceGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGroup.swift; sourceTree = "<group>"; };
 		2FD24DA72A24F73B000747D7 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -137,14 +139,15 @@
 				2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */,
 				2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */,
 				2F28E67C2A1DD9BA00021E72 /* Search.storyboard */,
-				2FD24DA72A24F73B000747D7 /* SearchResultViewController.swift */,
 				2F28E67E2A1DD9C700021E72 /* SearchViewController.swift */,
+				2FD24DA72A24F73B000747D7 /* SearchResultViewController.swift */,
 				2F28E68A2A1DDFBE00021E72 /* AddStudy.storyboard */,
 				2F28E6882A1DDF9900021E72 /* AddStudyViewController.swift */,
 				2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */,
 				2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */,
 				2F28E6842A1DDAD300021E72 /* MyPage.storyboard */,
 				2F28E6862A1DDADE00021E72 /* MyPageViewController.swift */,
+				2FB095852A2631910035FB78 /* DeviceGroup.swift */,
 			);
 			path = MOS;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				2FA142782A149024006AA91B /* SceneDelegate.swift in Sources */,
 				5AC619B42A19E5BD00966219 /* SurveyInterviewViewController.swift in Sources */,
 				5ABFE9EA2A1A05840094A316 /* SurveyInputView.swift in Sources */,
+				2FB095862A2631910035FB78 /* DeviceGroup.swift in Sources */,
 				2FD24DA82A24F73B000747D7 /* SearchResultViewController.swift in Sources */,
 				2F28E6872A1DDADE00021E72 /* MyPageViewController.swift in Sources */,
 			);
