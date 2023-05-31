@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B9w-rp-Cc9">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -11,13 +11,13 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Pretendard-Bold.otf">
+        <array key="Pretendard-Bold.ttf">
             <string>Pretendard-Bold</string>
         </array>
-        <array key="Pretendard-Regular.otf">
+        <array key="Pretendard-Regular.ttf">
             <string>Pretendard-Regular</string>
         </array>
-        <array key="Pretendard-SemiBold.otf">
+        <array key="Pretendard-SemiBold.ttf">
             <string>Pretendard-SemiBold</string>
         </array>
     </customFonts>
@@ -271,7 +271,7 @@
                                                         <fragment content="다음">
                                                             <attributes>
                                                                 <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <font key="NSFont" size="18" name="Pretendard-Bold"/>
+                                                                <font key="NSFont" metaFont="system" size="18"/>
                                                                 <font key="NSOriginalFont" metaFont="system" size="18"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
@@ -519,7 +519,7 @@
                                                                 <fragment content="다음">
                                                                     <attributes>
                                                                         <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                        <font key="NSFont" size="18" name="Pretendard-Bold"/>
+                                                                        <font key="NSFont" metaFont="system" size="18"/>
                                                                         <font key="NSOriginalFont" metaFont="system" size="18"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
@@ -775,7 +775,7 @@
                                                                         <fragment content="다음">
                                                                             <attributes>
                                                                                 <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                <font key="NSFont" size="18" name="Pretendard-Bold"/>
+                                                                                <font key="NSFont" metaFont="system" size="18"/>
                                                                                 <font key="NSOriginalFont" metaFont="system" size="18"/>
                                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                             </attributes>
@@ -1039,7 +1039,7 @@
                                                                                 <fragment content="다음">
                                                                                     <attributes>
                                                                                         <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                        <font key="NSFont" size="18" name="Pretendard-Bold"/>
+                                                                                        <font key="NSFont" metaFont="system" size="18"/>
                                                                                         <font key="NSOriginalFont" metaFont="system" size="18"/>
                                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                                     </attributes>
@@ -1147,7 +1147,7 @@
         <image name="ic_survey_exit" width="32" height="32"/>
         <image name="survey_character.png" width="629" height="512"/>
         <namedColor name="gray-2">
-            <color red="0.65098039215686276" green="0.6588235294117647" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.52156862745098043" green="0.52156862745098043" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="main">
             <color red="0.99607843137254903" green="0.58039215686274515" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

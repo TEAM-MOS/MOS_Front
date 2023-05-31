@@ -35,6 +35,8 @@
 		5A6776902A2264E700F1D3DB /* Pretendard-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776872A2264E700F1D3DB /* Pretendard-Thin.ttf */; };
 		5A6776912A2264E700F1D3DB /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776882A2264E700F1D3DB /* Pretendard-SemiBold.ttf */; };
 		5A6776932A22660500F1D3DB /* PretendardVariable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776922A22660500F1D3DB /* PretendardVariable.ttf */; };
+		5A6776C32A23934A00F1D3DB /* StudyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6776C22A23934A00F1D3DB /* StudyInputView.swift */; };
+		5A6776C92A23B5C000F1D3DB /* StudyInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776C82A23B5C000F1D3DB /* StudyInputView.xib */; };
 		5ABFE9E82A19FF4E0094A316 /* SurveyInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */; };
 		5ABFE9EA2A1A05840094A316 /* SurveyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */; };
 		5AC619912A170A4000966219 /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC619902A170A4000966219 /* Survey.storyboard */; };
@@ -74,6 +76,8 @@
 		5A6776872A2264E700F1D3DB /* Pretendard-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.ttf"; sourceTree = "<group>"; };
 		5A6776882A2264E700F1D3DB /* Pretendard-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.ttf"; sourceTree = "<group>"; };
 		5A6776922A22660500F1D3DB /* PretendardVariable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PretendardVariable.ttf; sourceTree = "<group>"; };
+		5A6776C22A23934A00F1D3DB /* StudyInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyInputView.swift; sourceTree = "<group>"; };
+		5A6776C82A23B5C000F1D3DB /* StudyInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudyInputView.xib; sourceTree = "<group>"; };
 		5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyInputView.xib; sourceTree = "<group>"; };
 		5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyInputView.swift; sourceTree = "<group>"; };
 		5AC619902A170A4000966219 /* Survey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 				2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */,
 				2F28E6842A1DDAD300021E72 /* MyPage.storyboard */,
 				2F28E6862A1DDADE00021E72 /* MyPageViewController.swift */,
+				5A6776C82A23B5C000F1D3DB /* StudyInputView.xib */,
+				5A6776C22A23934A00F1D3DB /* StudyInputView.swift */,
 			);
 			path = MOS;
 			sourceTree = "<group>";
@@ -248,6 +254,7 @@
 				2FA142822A149026006AA91B /* LaunchScreen.storyboard in Resources */,
 				2FFCFC422A1DD2A200E2AC95 /* Home.storyboard in Resources */,
 				2F28E6832A1DDA5F00021E72 /* StudyRoom.storyboard in Resources */,
+				5A6776C92A23B5C000F1D3DB /* StudyInputView.xib in Resources */,
 				5A6776932A22660500F1D3DB /* PretendardVariable.ttf in Resources */,
 				2F28E6852A1DDAD300021E72 /* MyPage.storyboard in Resources */,
 				5A6776912A2264E700F1D3DB /* Pretendard-SemiBold.ttf in Resources */,
@@ -278,6 +285,7 @@
 				5AC619B42A19E5BD00966219 /* SurveyInterviewViewController.swift in Sources */,
 				5ABFE9EA2A1A05840094A316 /* SurveyInputView.swift in Sources */,
 				2F28E6872A1DDADE00021E72 /* MyPageViewController.swift in Sources */,
+				5A6776C32A23934A00F1D3DB /* StudyInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

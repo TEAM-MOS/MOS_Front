@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Pretendard-Bold.otf">
+        <array key="Pretendard-Bold.ttf">
             <string>Pretendard-Bold</string>
         </array>
-        <array key="Pretendard-SemiBold.otf">
+        <array key="Pretendard-SemiBold.ttf">
             <string>Pretendard-SemiBold</string>
         </array>
     </customFonts>
@@ -126,7 +126,7 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qa3-go-Cj9">
+                                        <stackView opaque="NO" contentMode="center" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qa3-go-Cj9">
                                             <rect key="frame" x="130.33333333333334" y="0.0" width="59.333333333333343" height="55"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOs-T2-dEe">
@@ -177,7 +177,7 @@
                                                             <fragment content="4">
                                                                 <attributes>
                                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                                    <font key="NSFont" size="14" name="Pretendard-Regular"/>
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                 </attributes>
                                                             </fragment>
@@ -211,8 +211,8 @@
                                                         <attributedString key="attributedTitle">
                                                             <fragment content="5">
                                                                 <attributes>
-                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="14" name="Pretendard-Regular"/>
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                 </attributes>
                                                             </fragment>
@@ -261,7 +261,6 @@
                         <constraint firstAttribute="height" constant="30" id="8FH-YV-Ejh"/>
                         <constraint firstAttribute="bottom" secondItem="KCA-Rl-Kle" secondAttribute="bottom" constant="4" id="8TN-bZ-tho"/>
                         <constraint firstItem="KCA-Rl-Kle" firstAttribute="centerX" secondItem="NpH-NY-fSM" secondAttribute="centerX" id="FdE-Y4-v10"/>
-                        <constraint firstItem="KCA-Rl-Kle" firstAttribute="centerY" secondItem="NpH-NY-fSM" secondAttribute="centerY" id="GUk-AH-B05"/>
                         <constraint firstItem="KCA-Rl-Kle" firstAttribute="leading" secondItem="NpH-NY-fSM" secondAttribute="leading" id="NCD-aq-ggK"/>
                         <constraint firstItem="KCA-Rl-Kle" firstAttribute="top" secondItem="NpH-NY-fSM" secondAttribute="top" id="Snb-LF-VvG"/>
                         <constraint firstAttribute="trailing" secondItem="KCA-Rl-Kle" secondAttribute="trailing" id="aiK-ME-9kV"/>
