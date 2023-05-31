@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Bold.ttf">
+            <string>Pretendard-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="PSI-Jh-DAe">
@@ -33,22 +38,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5o-et-cIX">
-                                <rect key="frame" x="173" y="416" width="46" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLf-5O-rkW">
+                                <rect key="frame" x="24.000000000000014" y="151" width="221.33333333333337" height="48"/>
+                                <string key="text">내가먼저취뽀님
+취업에 더 가까워지고 있어요</string>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8g9-9a-2xl" customClass="StudyInputView" customModule="MOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="215" width="361" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="128" id="Uqh-0W-MXY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="2023년 상반기 네이버 IT직군 면접 준비 스터디원 모집합니다 :)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="location" value="송파구"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="date" value="2/14(토)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="member" value="3/4"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="산업&amp;기업 분석"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ub3-Vk-4Di" customClass="StudyInputView" customModule="MOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="359" width="361" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="128" id="Uu3-Hb-Qo1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="IBK기업은행 공채 준비하는 사람들 모임"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="location" value="동작구"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="date" value="2/24(토)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="member" value="1/6"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="인/적성"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8g9-9a-2xl" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="0ON-Xa-gWS"/>
+                            <constraint firstItem="ub3-Vk-4Di" firstAttribute="width" secondItem="8g9-9a-2xl" secondAttribute="width" id="4Sa-lL-EIV"/>
+                            <constraint firstItem="8g9-9a-2xl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="HP2-Rs-uNl"/>
+                            <constraint firstItem="ub3-Vk-4Di" firstAttribute="trailing" secondItem="8g9-9a-2xl" secondAttribute="trailing" id="K3g-2I-VKI"/>
+                            <constraint firstItem="8g9-9a-2xl" firstAttribute="top" secondItem="SLf-5O-rkW" secondAttribute="bottom" constant="16" id="Ti7-y8-l8z"/>
+                            <constraint firstItem="SLf-5O-rkW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="Vng-ZB-VNu"/>
+                            <constraint firstItem="SLf-5O-rkW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="48" id="hcR-3K-aGw"/>
+                            <constraint firstItem="ub3-Vk-4Di" firstAttribute="leading" secondItem="8g9-9a-2xl" secondAttribute="leading" id="rHP-mS-Q3T"/>
+                            <constraint firstItem="ub3-Vk-4Di" firstAttribute="top" secondItem="8g9-9a-2xl" secondAttribute="bottom" constant="16" id="y7y-dB-SwL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TkO-z8-5yw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-34"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>
