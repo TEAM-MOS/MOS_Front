@@ -85,9 +85,7 @@
 		5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyInputView.swift; sourceTree = "<group>"; };
 		5AC619902A170A4000966219 /* Survey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
 		5AC619922A170BF300966219 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
-		5AC619AD2A173FF800966219 /* survey_character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = survey_character.png; path = ../../../../Downloads/survey_character.png; sourceTree = "<group>"; };
 		5AC619B32A19E5BD00966219 /* SurveyInterviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyInterviewViewController.swift; sourceTree = "<group>"; };
-		6EB909782DCFD86BB161B007 /* Pods-MOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOS.debug.xcconfig"; path = "Target Support Files/Pods-MOS/Pods-MOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,9 +181,18 @@
 		5AC619A82A173D3C00966219 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				5AC619AD2A173FF800966219 /* survey_character.png */,
+				5A6776C02A2269DA00F1D3DB /* survey_character.png */,
 			);
-			name = Images;
+			path = Images;
+			sourceTree = "<group>";
+		};
+		5AC619942A17105600966219 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A6776BF2A2269C100F1D3DB /* Images */,
+				5A6776AC2A22699B00F1D3DB /* Font */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		8AB1A6A99AAE1EE58648AE96 /* Pods */ = {
@@ -266,13 +273,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A6776BC2A2269B600F1D3DB /* Pretendard-ExtraLight.ttf in Resources */,
+				5A6776BB2A2269B600F1D3DB /* Pretendard-Thin.ttf in Resources */,
 				5ABFE9E82A19FF4E0094A316 /* SurveyInputView.xib in Resources */,
-				5A67768A2A2264E700F1D3DB /* Pretendard-Bold.ttf in Resources */,
-				5A67768F2A2264E700F1D3DB /* Pretendard-Regular.ttf in Resources */,
-				5AC619AE2A173FF800966219 /* survey_character.png in Resources */,
 				5A67766B2A1E1ECF00F1D3DB /* Assets.xcassets in Resources */,
+				5A6776BA2A2269B600F1D3DB /* Pretendard-Regular.ttf in Resources */,
 				2FA142822A149026006AA91B /* LaunchScreen.storyboard in Resources */,
-				5A6776902A2264E700F1D3DB /* Pretendard-Thin.ttf in Resources */,
 				5AC619912A170A4000966219 /* Survey.storyboard in Resources */,
 				2F28E68B2A1DDFBE00021E72 /* AddStudy.storyboard in Resources */,
 				5A67768C2A2264E700F1D3DB /* Pretendard-ExtraLight.ttf in Resources */,
@@ -280,13 +286,17 @@
 				5A6776892A2264E700F1D3DB /* Pretendard-Light.ttf in Resources */,
 				2FA142822A149026006AA91B /* LaunchScreen.storyboard in Resources */,
 				2FFCFC422A1DD2A200E2AC95 /* Home.storyboard in Resources */,
+				5A6776B62A2269B600F1D3DB /* Pretendard-Bold.ttf in Resources */,
 				2F28E6832A1DDA5F00021E72 /* StudyRoom.storyboard in Resources */,
 				5A6776C92A23B5C000F1D3DB /* StudyInputView.xib in Resources */,
 				5A6776932A22660500F1D3DB /* PretendardVariable.ttf in Resources */,
 				2F28E6852A1DDAD300021E72 /* MyPage.storyboard in Resources */,
 				5A6776912A2264E700F1D3DB /* Pretendard-SemiBold.ttf in Resources */,
 				2F2B3E252A1DBE74008B0506 /* TabMenu.storyboard in Resources */,
+				5A6776BE2A2269B600F1D3DB /* Pretendard-Black.ttf in Resources */,
 				2F28E67D2A1DD9BA00021E72 /* Search.storyboard in Resources */,
+				5A6776B82A2269B600F1D3DB /* Pretendard-SemiBold.ttf in Resources */,
+				5A6776B72A2269B600F1D3DB /* Pretendard-Medium.ttf in Resources */,
 				2FA1427D2A149024006AA91B /* Main.storyboard in Resources */,
 				5A67768E2A2264E700F1D3DB /* Pretendard-Black.ttf in Resources */,
 				5A67768B2A2264E700F1D3DB /* Pretendard-ExtraBold.ttf in Resources */,
