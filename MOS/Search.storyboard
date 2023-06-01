@@ -254,12 +254,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="alphabet" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rke-nh-48O" customClass="StudyInputView" customModule="MOS" customModuleProvider="target">
+                                <rect key="frame" x="24" y="203" width="366" height="193.66666666666663"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="ㄴㅇㅁㄴㅇㄹㅁㄴㅇㄹㄴㅇㄹㄴㄹㅊㄷㅇㄹㄴㅇㅍㅇㄴㅍㅇㄴㄱㅎㄱ족ㅈㅍㄴㅇㅌㅍㅇㄴㅍㅁㅇㅍ"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dSb-EG-YfZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Toj-gJ-Y3F" firstAttribute="leading" secondItem="dSb-EG-YfZ" secondAttribute="leading" constant="24" id="8w4-S7-qNc"/>
+                            <constraint firstItem="Rke-nh-48O" firstAttribute="top" secondItem="Toj-gJ-Y3F" secondAttribute="bottom" constant="97" id="Wyx-Zb-vJx"/>
                             <constraint firstItem="Toj-gJ-Y3F" firstAttribute="top" secondItem="dSb-EG-YfZ" secondAttribute="top" constant="20" id="buI-Cr-5JW"/>
+                            <constraint firstItem="dSb-EG-YfZ" firstAttribute="trailing" secondItem="Rke-nh-48O" secondAttribute="trailing" constant="24" id="uj1-qn-eFK"/>
+                            <constraint firstItem="Rke-nh-48O" firstAttribute="leading" secondItem="dSb-EG-YfZ" secondAttribute="leading" constant="24" id="uwM-W0-FEc"/>
                             <constraint firstItem="dSb-EG-YfZ" firstAttribute="trailing" secondItem="Toj-gJ-Y3F" secondAttribute="trailing" constant="24" id="xG2-nn-dSQ"/>
                         </constraints>
                     </view>
@@ -270,7 +280,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRs-zl-2gX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="879" y="-2"/>
+            <point key="canvasLocation" x="878.26086956521749" y="-2.0089285714285712"/>
         </scene>
     </scenes>
     <resources>
