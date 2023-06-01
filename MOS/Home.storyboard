@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Bold.ttf">
+            <string>Pretendard-Bold</string>
+        </array>
+        <array key="Pretendard-Medium.ttf">
+            <string>Pretendard-Medium</string>
+        </array>
+        <array key="TimesNewRoman.ttf">
+            <string>.SFUI-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="PSI-Jh-DAe">
@@ -30,28 +42,134 @@
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="Y6W-OH-hqX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5o-et-cIX">
-                                <rect key="frame" x="173" y="416" width="46" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="view_home_createStudy" translatesAutoresizingMaskIntoConstraints="NO" id="pEZ-XL-ApP">
+                                <rect key="frame" x="10" y="231" width="373" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="te4-Pg-5ng"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="스터디를 새로 만들어볼까요?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uab-eg-g1N">
+                                <rect key="frame" x="105.66666666666669" y="280" width="182" height="19.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="view_home_new" translatesAutoresizingMaskIntoConstraints="NO" id="aGg-nq-kLv">
+                                <rect key="frame" x="30" y="221" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7xg-gf-rPx"/>
+                                    <constraint firstAttribute="width" constant="80" id="mCt-KJ-3Aj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="아직 가입한 스터디가 없어요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJ0-ux-nEV">
+                                <rect key="frame" x="129.66666666666669" y="262.66666666666669" width="133.66666666666669" height="13.333333333333314"/>
+                                <fontDescription key="fontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="12"/>
+                                <color key="textColor" name="gray-2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLf-5O-rkW">
+                                <rect key="frame" x="24.000000000000014" y="151" width="221.33333333333337" height="48"/>
+                                <string key="text">내가먼저취뽀님
+취업에 더 가까워지고 있어요</string>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카테고리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oK3-fZ-fxc">
+                                <rect key="frame" x="24.000000000000004" y="375" width="62.333333333333343" height="21.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="i2N-qh-yUs">
+                                <rect key="frame" x="10" y="416.66666666666669" width="373" height="122.33333333333331"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xzf-vL-NDv">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="122.33333333333333"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_category1" translatesAutoresizingMaskIntoConstraints="NO" id="55M-MQ-QOy">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="98"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사 PT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XO-z6-lrV">
+                                                <rect key="frame" x="0.0" y="107.99999999999994" width="124.33333333333333" height="14.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G7D-Ng-qP0">
+                                        <rect key="frame" x="124.33333333333334" y="0.0" width="124.33333333333334" height="122.33333333333333"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_category2" translatesAutoresizingMaskIntoConstraints="NO" id="Hv6-8z-Fa1">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="98"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사 PT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdt-Cr-pTk">
+                                                <rect key="frame" x="0.0" y="107.99999999999994" width="124.33333333333333" height="14.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fCI-h8-Opr">
+                                        <rect key="frame" x="248.66666666666671" y="0.0" width="124.33333333333334" height="122.33333333333333"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_category3" translatesAutoresizingMaskIntoConstraints="NO" id="cs0-c7-T8D">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="98"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인/적성" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EO1-KS-MYj">
+                                                <rect key="frame" x="0.0" y="107.99999999999994" width="124.33333333333333" height="14.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pEZ-XL-ApP" firstAttribute="top" secondItem="SLf-5O-rkW" secondAttribute="bottom" constant="32" id="2ZJ-Xo-Xuy"/>
+                            <constraint firstItem="pEZ-XL-ApP" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="3JA-Ih-7fQ"/>
+                            <constraint firstItem="SJ0-ux-nEV" firstAttribute="centerX" secondItem="pEZ-XL-ApP" secondAttribute="centerX" id="5aW-8R-ZdN"/>
+                            <constraint firstItem="aGg-nq-kLv" firstAttribute="top" secondItem="pEZ-XL-ApP" secondAttribute="bottom" constant="-110" id="9gu-DX-u9a"/>
+                            <constraint firstItem="uab-eg-g1N" firstAttribute="centerX" secondItem="pEZ-XL-ApP" secondAttribute="centerX" id="KIM-GY-FPo"/>
+                            <constraint firstItem="pEZ-XL-ApP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="MlJ-RA-RnH"/>
+                            <constraint firstItem="aGg-nq-kLv" firstAttribute="leading" secondItem="pEZ-XL-ApP" secondAttribute="leading" constant="20" id="Nik-5C-Fl8"/>
+                            <constraint firstItem="i2N-qh-yUs" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Qoc-jC-zFS"/>
+                            <constraint firstItem="SLf-5O-rkW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="Vng-ZB-VNu"/>
+                            <constraint firstItem="i2N-qh-yUs" firstAttribute="leading" secondItem="pEZ-XL-ApP" secondAttribute="leading" id="c4I-d5-GB8"/>
+                            <constraint firstItem="oK3-fZ-fxc" firstAttribute="leading" secondItem="SLf-5O-rkW" secondAttribute="leading" id="cyw-Uk-62M"/>
+                            <constraint firstItem="oK3-fZ-fxc" firstAttribute="top" secondItem="pEZ-XL-ApP" secondAttribute="bottom" constant="44" id="dP0-d5-PaG"/>
+                            <constraint firstItem="uab-eg-g1N" firstAttribute="top" secondItem="SJ0-ux-nEV" secondAttribute="bottom" constant="4" id="dxf-nY-LQi"/>
+                            <constraint firstItem="i2N-qh-yUs" firstAttribute="top" secondItem="oK3-fZ-fxc" secondAttribute="bottom" constant="20" id="gXe-HJ-zgt"/>
+                            <constraint firstItem="SLf-5O-rkW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="48" id="hcR-3K-aGw"/>
+                            <constraint firstItem="pEZ-XL-ApP" firstAttribute="top" secondItem="SJ0-ux-nEV" secondAttribute="bottom" constant="-45" id="xM7-rL-fNt"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TkO-z8-5yw"/>
+                    <size key="freeformSize" width="393" height="1200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-34"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ic_home_category1" width="98" height="98"/>
+        <image name="ic_home_category2" width="98" height="98"/>
+        <image name="ic_home_category3" width="98" height="98"/>
+        <image name="view_home_createStudy" width="294" height="96"/>
+        <image name="view_home_new" width="87.666664123535156" height="55.333332061767578"/>
+        <namedColor name="gray-2">
+            <color red="0.52156862745098043" green="0.52156862745098043" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
