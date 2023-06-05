@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,7 +23,7 @@
             <objects>
                 <navigationController id="u6r-ba-1Ci" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="81s-et-zcW">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -38,11 +39,11 @@
             <objects>
                 <viewController storyboardIdentifier="SearchVC" id="Y6W-OH-hqX" customClass="SearchViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="검색어를 입력해주세요" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MgQ-QF-yg3">
-                                <rect key="frame" x="24" y="108" width="366" height="42"/>
+                                <rect key="frame" x="24" y="123" width="345" height="42"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="MVr-BT-pjg"/>
@@ -51,19 +52,19 @@
                                 <textInputTraits key="textInputTraits" keyboardType="alphabet" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최근 검색어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYT-UA-OFx">
-                                <rect key="frame" x="24.000000000000007" y="190" width="91.666666666666686" height="24"/>
+                                <rect key="frame" x="24.000000000000007" y="205" width="91.666666666666686" height="24"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천 검색어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMa-x2-ut3">
-                                <rect key="frame" x="24" y="313" width="92" height="24"/>
+                                <rect key="frame" x="24" y="328" width="92" height="24"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0v-pL-FdH">
-                                <rect key="frame" x="24" y="230" width="82" height="32"/>
+                                <rect key="frame" x="24" y="245" width="82" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VB-AQ-ps8">
                                         <rect key="frame" x="16" y="6.6666666666666572" width="28" height="19"/>
@@ -92,7 +93,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Lv-CF-1Ch">
-                                <rect key="frame" x="114" y="230" width="102" height="32"/>
+                                <rect key="frame" x="114" y="245" width="102" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사PT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfR-15-H3y">
                                         <rect key="frame" x="16" y="6.6666666666666572" width="48" height="19"/>
@@ -121,14 +122,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNx-KF-cUT">
-                                <rect key="frame" x="0.0" y="281" width="414" height="8"/>
+                                <rect key="frame" x="0.0" y="296" width="393" height="8"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="8" id="Oky-dC-glm"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8k-4r-AaC">
-                                <rect key="frame" x="24.000000000000007" y="353" width="98.666666666666686" height="42.666666666666686"/>
+                                <rect key="frame" x="24" y="368" width="93" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="f8k-4r-AaC" secondAttribute="height" multiplier="86:37" id="3mt-5p-3Kz"/>
                                 </constraints>
@@ -139,13 +140,13 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zff-8S-2Bs">
-                                <rect key="frame" x="24" y="341" width="366" height="4"/>
+                                <rect key="frame" x="24" y="356" width="345" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="4" id="H9A-qg-kch"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duX-yi-loD">
-                                <rect key="frame" x="130.66666666666666" y="353" width="91.666666666666657" height="43"/>
+                                <rect key="frame" x="125" y="368" width="86.333333333333314" height="40.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="duX-yi-loD" secondAttribute="height" multiplier="90:38" constant="-10.210526315789465" id="dzH-qv-UVb"/>
                                 </constraints>
@@ -153,7 +154,7 @@
                                 <state key="normal" backgroundImage="search_samsung"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cI4-1b-43f">
-                                <rect key="frame" x="230.33333333333337" y="353" width="139" height="43.666666666666686"/>
+                                <rect key="frame" x="219.33333333333331" y="368" width="131.33333333333331" height="41.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cI4-1b-43f" secondAttribute="height" multiplier="35:11" id="qMg-rx-SAW"/>
                                 </constraints>
@@ -161,7 +162,7 @@
                                 <state key="normal" backgroundImage="search_sk"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPh-F9-2wI">
-                                <rect key="frame" x="24" y="407.66666666666669" width="135.33333333333334" height="41.666666666666686"/>
+                                <rect key="frame" x="24.000000000000007" y="420" width="127.66666666666669" height="39.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MPh-F9-2wI" secondAttribute="height" multiplier="130:41" constant="3" id="WDp-CR-WO0"/>
                                 </constraints>
@@ -169,7 +170,7 @@
                                 <state key="normal" backgroundImage="search_hyundai"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdu-m7-Klt">
-                                <rect key="frame" x="167.33333333333334" y="407.66666666666669" width="102.66666666666666" height="42"/>
+                                <rect key="frame" x="159.66666666666666" y="420" width="96.666666666666657" height="39.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cdu-m7-Klt" secondAttribute="height" multiplier="101:42" constant="1.4047619047619122" id="vMn-Pm-JKq"/>
                                 </constraints>
@@ -177,7 +178,7 @@
                                 <state key="normal" backgroundImage="search_naver"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaW-Qo-1FY">
-                                <rect key="frame" x="278" y="407.66666666666669" width="106" height="42.666666666666686"/>
+                                <rect key="frame" x="264.33333333333331" y="420" width="100" height="40.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="WaW-Qo-1FY" secondAttribute="height" multiplier="49:20" constant="1.5499999999999972" id="xgg-kE-lTB"/>
                                 </constraints>
@@ -242,11 +243,11 @@
             <objects>
                 <viewController storyboardIdentifier="SearchResultVC" id="35e-Dq-c7d" customClass="SearchResultViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5kv-Qf-IOJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="검색어를 입력해주세요" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Toj-gJ-Y3F">
-                                <rect key="frame" x="24" y="64" width="366" height="42"/>
+                                <rect key="frame" x="24" y="79" width="345" height="42"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="n42-TS-J4V"/>
@@ -254,20 +255,47 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="alphabet" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rke-nh-48O" customClass="StudyInputView" customModule="MOS" customModuleProvider="target">
-                                <rect key="frame" x="24" y="203" width="366" height="193.66666666666663"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rke-nh-48O" customClass="StudyInputView" customModule="MOS" customModuleProvider="target">
+                                <rect key="frame" x="24" y="192.33333333333337" width="345" height="143"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="143" id="kxi-Yz-9nL"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="ㄴㅇㅁㄴㅇㄹㅁㄴㅇㄹㄴㅇㄹㄴㄹㅊㄷㅇㄹㄴㅇㅍㅇㄴㅍㅇㄴㄱㅎㄱ족ㅈㅍㄴㅇㅌㅍㅇㄴㅍㅁㅇㅍ"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="카카오 마케팅 직군 같이 준비하실 분들"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="date" value="5/31(일)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="member" value="3 / 6"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="location" value="송파구"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="면접"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모집 중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="on5-0E-KoE">
+                                <rect key="frame" x="24" y="143" width="46" height="19.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                <color key="textColor" name="gray-2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raa-Df-f6W">
+                                <rect key="frame" x="80" y="137.33333333333334" width="51" height="31"/>
+                                <color key="onTintColor" red="0.99607843139999996" green="0.58039215690000001" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmj-np-Eri">
+                                <rect key="frame" x="294" y="135" width="71" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="인기순"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dSb-EG-YfZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Toj-gJ-Y3F" firstAttribute="leading" secondItem="dSb-EG-YfZ" secondAttribute="leading" constant="24" id="8w4-S7-qNc"/>
-                            <constraint firstItem="Rke-nh-48O" firstAttribute="top" secondItem="Toj-gJ-Y3F" secondAttribute="bottom" constant="97" id="Wyx-Zb-vJx"/>
+                            <constraint firstItem="on5-0E-KoE" firstAttribute="top" secondItem="Toj-gJ-Y3F" secondAttribute="bottom" constant="22" id="CuI-jy-GAx"/>
+                            <constraint firstItem="raa-Df-f6W" firstAttribute="leading" secondItem="on5-0E-KoE" secondAttribute="trailing" constant="10" id="GL7-mv-7qz"/>
+                            <constraint firstItem="on5-0E-KoE" firstAttribute="leading" secondItem="dSb-EG-YfZ" secondAttribute="leading" constant="24" id="J3W-ad-EKT"/>
+                            <constraint firstItem="Rke-nh-48O" firstAttribute="top" secondItem="raa-Df-f6W" secondAttribute="bottom" constant="24" id="abM-ub-SCJ"/>
                             <constraint firstItem="Toj-gJ-Y3F" firstAttribute="top" secondItem="dSb-EG-YfZ" secondAttribute="top" constant="20" id="buI-Cr-5JW"/>
+                            <constraint firstItem="raa-Df-f6W" firstAttribute="centerY" secondItem="on5-0E-KoE" secondAttribute="centerY" id="cuV-OF-3Vt"/>
                             <constraint firstItem="dSb-EG-YfZ" firstAttribute="trailing" secondItem="Rke-nh-48O" secondAttribute="trailing" constant="24" id="uj1-qn-eFK"/>
                             <constraint firstItem="Rke-nh-48O" firstAttribute="leading" secondItem="dSb-EG-YfZ" secondAttribute="leading" constant="24" id="uwM-W0-FEc"/>
                             <constraint firstItem="dSb-EG-YfZ" firstAttribute="trailing" secondItem="Toj-gJ-Y3F" secondAttribute="trailing" constant="24" id="xG2-nn-dSQ"/>
@@ -275,7 +303,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="검색 결과" id="CrB-ea-Q7G"/>
                     <connections>
+                        <outlet property="recruitingSwitch" destination="raa-Df-f6W" id="RCU-Fz-2ZR"/>
                         <outlet property="searchBar" destination="Toj-gJ-Y3F" id="ctQ-EB-97i"/>
+                        <outlet property="selectButton" destination="gmj-np-Eri" id="s9z-TK-bmt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRs-zl-2gX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -291,6 +321,9 @@
         <image name="search_naver" width="152" height="64"/>
         <image name="search_samsung" width="128" height="64"/>
         <image name="search_sk" width="210" height="64"/>
+        <namedColor name="gray-2">
+            <color red="0.52156862745098043" green="0.52156862745098043" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
