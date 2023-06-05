@@ -6,14 +6,22 @@
 //
 
 import UIKit
+import DropDown
 
 class SearchResultViewController: UIViewController{
     
     var search_text = ""
     @IBOutlet weak var searchBar: UITextField!
     @IBOutlet weak var recruitingSwitch: UISwitch!
-    @IBOutlet weak var selectButton: UIButton!
+    @IBOutlet weak var dropButtonView: UIView!
+    @IBOutlet weak var dropDownIcon: UIImageView!
+    @IBOutlet weak var dropButtonText: UITextField!
     
+    // DropDown 버튼 객체 생성
+    let dropDown = DropDown()
+    
+    // DropDown 버튼 아이템 리스트
+    let dropDownItemList = ["인기순", "최신순"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +36,60 @@ class SearchResultViewController: UIViewController{
         
         // 모집 중 스위치 사이즈 조절
         recruitingSwitch.transform = CGAffineTransformMakeScale(0.75, 0.75);
+        
+        // DropDown 버튼 UI 함수 호출
+        dropDownUI()
+        setDropDownButton()
     }
+    
+    // DropDown 버튼 UI
+    func dropDownUI() {
+        
+        // DropDown View의 배경
+        dropButtonView.layer.cornerRadius = 14
+        dropButtonView.layer.borderWidth = 1
+        dropButtonView.layer.borderColor = UIColor.lightGray.cgColor
+        
+        
+        DropDown.appearance().textColor = UIColor.black // 아이템 텍스트 색상
+        DropDown.appearance().selectedTextColor = UIColor.red // 선택된 아이템 텍스트 색상
+        DropDown.appearance().backgroundColor = UIColor.white // 아이템 팝업 배경 색상
+        DropDown.appearance().selectionBackgroundColor = UIColor.lightGray // 선택한 아이템 배경 색상
+        DropDown.appearance().setupCornerRadius(8)
+        DropDown.appearance().shadowColor = UIColor.lightGray
+        dropDown.dismissMode = .automatic // 팝업을 닫을 모드 설정
+                
+        dropButtonText.text = "정렬" // 힌트 텍스트
+        dropDownIcon.tintColor = UIColor.gray
+    }
+    
+    // DropDown 버튼 동작 설정
+    func setDropDownButton() {
+        // 버튼 아이템 설정
+        dropDown.dataSource = dropDownItemList
+        
+        // 버튼 클릭 시 나오는 뷰 위치 설정
+        dropDown.anchorView = self.dropButtonView
+        dropDown.bottomOffset = CGPoint(x: 0, y: dropButtonView.bounds.height)
+        
+        // 버튼 클릭 시 처리
+        dropDown.selectionAction = { [weak self] (index, item) in
+            //선택한 Item을 TextField에 넣어준다.
+            self!.dropButtonText.text = item
+            self!.dropDownIcon.image = UIImage.init(named: "icon_arrow_down")
+        }
+        
+        // 취소 시 처리
+        dropDown.cancelAction = { [weak self] in
+            //빈 화면 터치 시 DropDown이 사라지고 아이콘을 원래대로 변경
+            self!.dropDownIcon.image = UIImage.init(named: "icon_arrow_down")
+        }
+    }
+    
+    @IBAction func dropDownButtonClicked(_ sender: Any) {
+        dropDown.show()
+        self.dropDownIcon.image = UIImage.init(named: "icon_arrow_up")
+    }
+    
 }
 
