@@ -43,7 +43,10 @@
 		5ABFE9EA2A1A05840094A316 /* SurveyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */; };
 		5AC619912A170A4000966219 /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC619902A170A4000966219 /* Survey.storyboard */; };
 		5AC619932A170BF300966219 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC619922A170BF300966219 /* SurveyViewController.swift */; };
-		5AC619B42A19E5BD00966219 /* SurveyInterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC619B32A19E5BD00966219 /* SurveyInterviewViewController.swift */; };
+		5AC619B42A19E5BD00966219 /* SurveyFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC619B32A19E5BD00966219 /* SurveyFirstVC.swift */; };
+		5AF073AB2A303748004FD8BB /* SurveySecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF073AA2A303748004FD8BB /* SurveySecondVC.swift */; };
+		5AF073AD2A30375C004FD8BB /* SurveyThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF073AC2A30375C004FD8BB /* SurveyThirdVC.swift */; };
+		5AF073AF2A30376D004FD8BB /* SurveyLastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF073AE2A30376D004FD8BB /* SurveyLastVC.swift */; };
 		E6FE083ADFD94888B7BAA4B1 /* Pods_MOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8023C552FBAB477251468C8 /* Pods_MOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,7 +89,10 @@
 		5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyInputView.swift; sourceTree = "<group>"; };
 		5AC619902A170A4000966219 /* Survey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
 		5AC619922A170BF300966219 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
-		5AC619B32A19E5BD00966219 /* SurveyInterviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyInterviewViewController.swift; sourceTree = "<group>"; };
+		5AC619B32A19E5BD00966219 /* SurveyFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyFirstVC.swift; sourceTree = "<group>"; };
+		5AF073AA2A303748004FD8BB /* SurveySecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveySecondVC.swift; sourceTree = "<group>"; };
+		5AF073AC2A30375C004FD8BB /* SurveyThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyThirdVC.swift; sourceTree = "<group>"; };
+		5AF073AE2A30376D004FD8BB /* SurveyLastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyLastVC.swift; sourceTree = "<group>"; };
 		9F0823D3883FA48E77D1F2F6 /* Pods-MOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOS.release.xcconfig"; path = "Target Support Files/Pods-MOS/Pods-MOS.release.xcconfig"; sourceTree = "<group>"; };
 		C8023C552FBAB477251468C8 /* Pods_MOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBE30F43F34FDAD99EE86F2 /* Pods-MOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOS.debug.xcconfig"; path = "Target Support Files/Pods-MOS/Pods-MOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,13 +135,16 @@
 				2FA142752A149024006AA91B /* AppDelegate.swift */,
 				2FA142772A149024006AA91B /* SceneDelegate.swift */,
 				2FA142792A149024006AA91B /* ViewController.swift */,
-				5AC619922A170BF300966219 /* SurveyViewController.swift */,
-				5AC619B32A19E5BD00966219 /* SurveyInterviewViewController.swift */,
-				5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */,
 				2FA1427B2A149024006AA91B /* Main.storyboard */,
 				2FA142802A149026006AA91B /* LaunchScreen.storyboard */,
 				5AC619902A170A4000966219 /* Survey.storyboard */,
+				5AC619922A170BF300966219 /* SurveyViewController.swift */,
+				5AC619B32A19E5BD00966219 /* SurveyFirstVC.swift */,
+				5AF073AA2A303748004FD8BB /* SurveySecondVC.swift */,
+				5AF073AC2A30375C004FD8BB /* SurveyThirdVC.swift */,
+				5AF073AE2A30376D004FD8BB /* SurveyLastVC.swift */,
 				5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */,
+				5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */,
 				2FA142832A149026006AA91B /* Info.plist */,
 				5A67766A2A1E1ECF00F1D3DB /* Assets.xcassets */,
 				2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */,
@@ -345,14 +354,17 @@
 			files = (
 				2F28E6812A1DDA4300021E72 /* StudyRoomViewController.swift in Sources */,
 				2F28E67F2A1DD9C700021E72 /* SearchViewController.swift in Sources */,
+				5AF073AB2A303748004FD8BB /* SurveySecondVC.swift in Sources */,
 				2FFCFC442A1DD2B200E2AC95 /* HomeViewController.swift in Sources */,
 				2F28E6892A1DDF9A00021E72 /* AddStudyViewController.swift in Sources */,
 				2FA1427A2A149024006AA91B /* ViewController.swift in Sources */,
+				5AF073AD2A30375C004FD8BB /* SurveyThirdVC.swift in Sources */,
 				2F2B3E232A1DBE52008B0506 /* TabMenuViewController.swift in Sources */,
 				2FA142762A149024006AA91B /* AppDelegate.swift in Sources */,
 				5AC619932A170BF300966219 /* SurveyViewController.swift in Sources */,
 				2FA142782A149024006AA91B /* SceneDelegate.swift in Sources */,
-				5AC619B42A19E5BD00966219 /* SurveyInterviewViewController.swift in Sources */,
+				5AC619B42A19E5BD00966219 /* SurveyFirstVC.swift in Sources */,
+				5AF073AF2A30376D004FD8BB /* SurveyLastVC.swift in Sources */,
 				5ABFE9EA2A1A05840094A316 /* SurveyInputView.swift in Sources */,
 				2FB095862A2631910035FB78 /* DeviceGroup.swift in Sources */,
 				2FD24DA82A24F73B000747D7 /* SearchResultViewController.swift in Sources */,

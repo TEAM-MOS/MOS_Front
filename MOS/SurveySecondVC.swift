@@ -1,14 +1,14 @@
 //
-//  SurveyViewController.swift
+//  SurveySecondVC.swift
 //  MOS
 //
-//  Created by 김지은 on 2023/05/19.
+//  Created by 김지은 on 2023/06/07.
 //
 
 import Foundation
 import UIKit
-class SurveyViewController: UIViewController {
-    
+class SurveySecondVC: UIViewController {
+   
     @IBOutlet weak var startButton: UIButton!
 
     override func viewDidLoad() {
@@ -20,7 +20,7 @@ class SurveyViewController: UIViewController {
 
     @objc func buttonTapped() {
         print(#fileID, #function, #line, "- StartButton clicked")
-        self.performSegue(withIdentifier: "navToFirstSurvey", sender: self)
+        self.performSegue(withIdentifier: "navToThirdSurvey", sender: self)
         }
 
 }

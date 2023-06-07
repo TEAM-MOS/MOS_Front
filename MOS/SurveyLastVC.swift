@@ -1,18 +1,17 @@
 //
-//  SurveyInterviewViewController.swift
+//  SurveyLastVC.swift
 //  MOS
 //
-//  Created by 김지은 on 2023/05/21.
+//  Created by 김지은 on 2023/06/07.
 //
 
 import Foundation
 import UIKit
-class SurveyInterviewViewController: UIViewController {
+class SurveyLasttVC: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        
     }
+
 }
