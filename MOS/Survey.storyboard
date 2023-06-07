@@ -1198,10 +1198,24 @@
                     </view>
                     <navigationItem key="navigationItem" id="f8x-0l-PDr"/>
                     <size key="freeformSize" width="393" height="1500"/>
+                    <connections>
+                        <outlet property="startButton" destination="bJa-co-HEu" id="E0G-l0-tFC"/>
+                        <segue destination="btY-7y-dGP" kind="show" identifier="navToHome" id="nMe-bf-fnB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTB-WT-mo5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3446.5648854961833" y="-4.2253521126760569"/>
+        </scene>
+        <!--TabMenu-->
+        <scene sceneID="QKL-Sv-2Wg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabMenu" referencedIdentifier="TabMenu" id="btY-7y-dGP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5t6-ZE-xUe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="38D-6s-jJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4208" y="24"/>
         </scene>
     </scenes>
     <color key="tintColor" name="main"/>
