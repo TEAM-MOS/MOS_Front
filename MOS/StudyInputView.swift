@@ -24,6 +24,16 @@ class StudyInputView: UIView{
     
     
     @IBInspectable
+    var image: String = "" {
+        didSet {
+            DispatchQueue.main.async {
+                self.leaderImage.image = UIImage(named:self.image)
+            }
+        }
+    }
+    
+    
+    @IBInspectable
     var title: String = "" {
         didSet {
             DispatchQueue.main.async {
