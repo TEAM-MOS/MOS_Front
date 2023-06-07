@@ -7,4 +7,5 @@ target 'MOS' do
 
   # Pods for MOS
   pod 'DeviceKit', '~> 4.0'
+  pod 'DropDown'
 end
