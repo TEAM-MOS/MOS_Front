@@ -16,6 +16,7 @@ class SearchResultViewController: UIViewController{
     @IBOutlet weak var dropButtonView: UIView!
     @IBOutlet weak var dropDownIcon: UIImageView!
     @IBOutlet weak var dropButtonText: UITextField!
+    @IBOutlet weak var studyInputView: StudyInputView!
     
     // DropDown 버튼 객체 생성
     let dropDown = DropDown()
@@ -40,6 +41,11 @@ class SearchResultViewController: UIViewController{
         // DropDown 버튼 UI 함수 호출
         dropDownUI()
         setDropDownButton()
+        
+        // 스터디 상세 페이지로 이동
+        // viewMap: View 객체
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+        studyInputView.addGestureRecognizer(tapGestureRecognizer)
     }
     
     // DropDown 버튼 UI
@@ -86,10 +92,16 @@ class SearchResultViewController: UIViewController{
         }
     }
     
+    
+    @objc func viewTapped(_ sender: UITapGestureRecognizer) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "studyDetailVC") as? StudyDetailViewController else { return }
+        navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    // 드롭다운 버튼 눌렀을 때 처리
     @IBAction func dropDownButtonClicked(_ sender: Any) {
         dropDown.show()
         self.dropDownIcon.image = UIImage.init(named: "icon_arrow_up")
     }
-    
 }
 

@@ -343,6 +343,7 @@
                         <outlet property="dropDownIcon" destination="FJd-pz-OBt" id="JVO-Bc-pPg"/>
                         <outlet property="recruitingSwitch" destination="raa-Df-f6W" id="RCU-Fz-2ZR"/>
                         <outlet property="searchBar" destination="Toj-gJ-Y3F" id="ctQ-EB-97i"/>
+                        <outlet property="studyInputView" destination="Rke-nh-48O" id="Lwr-iA-Bhq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRs-zl-2gX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
