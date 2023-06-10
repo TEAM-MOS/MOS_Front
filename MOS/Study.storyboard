@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="1407"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xyu-wO-doU">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="2641"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="test1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vh7-ly-Diq">
                                                 <rect key="frame" x="175" y="197" width="37" height="21"/>
@@ -67,7 +67,7 @@
                             <constraint firstItem="skL-RS-VQO" firstAttribute="bottom" secondItem="yc5-wT-YCN" secondAttribute="bottom" id="LhX-NM-r1a"/>
                             <constraint firstItem="Xyu-wO-doU" firstAttribute="width" secondItem="X12-QB-ZTT" secondAttribute="width" id="QhC-kn-NNP"/>
                             <constraint firstItem="skL-RS-VQO" firstAttribute="trailing" secondItem="yc5-wT-YCN" secondAttribute="trailing" id="SEH-Vp-eKa"/>
-                            <constraint firstItem="Xyu-wO-doU" firstAttribute="height" secondItem="X12-QB-ZTT" secondAttribute="height" id="Tey-TN-zrZ"/>
+                            <constraint firstItem="Xyu-wO-doU" firstAttribute="height" secondItem="X12-QB-ZTT" secondAttribute="height" multiplier="1.76056" id="Tey-TN-zrZ"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="393" height="1500"/>

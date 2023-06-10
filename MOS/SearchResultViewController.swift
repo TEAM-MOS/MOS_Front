@@ -94,8 +94,12 @@ class SearchResultViewController: UIViewController{
     
     
     @objc func viewTapped(_ sender: UITapGestureRecognizer) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "studyDetailVC") as? StudyDetailViewController else { return }
-        navigationController?.pushViewController(nextVC, animated: true)
+        // 다른 파일 스토리보드 가져오기
+        let studyDetailStodyboard = UIStoryboard.init(name: "Study", bundle: nil)
+        // studyDetail 스토리보드에 있는 VC값 가져오기
+        guard let nextVC = studyDetailStodyboard.instantiateViewController(withIdentifier: "studyDetailVC")as? StudyDetailViewController else {return}
+        nextVC.modalPresentationStyle = .fullScreen
+        self.present(nextVC, animated: true, completion: nil)
     }
     
     // 드롭다운 버튼 눌렀을 때 처리
