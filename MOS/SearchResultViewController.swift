@@ -99,7 +99,7 @@ class SearchResultViewController: UIViewController{
         // studyDetail 스토리보드에 있는 VC값 가져오기
         guard let nextVC = studyDetailStodyboard.instantiateViewController(withIdentifier: "studyDetailVC")as? StudyDetailViewController else {return}
         nextVC.modalPresentationStyle = .fullScreen
-        self.present(nextVC, animated: true, completion: nil)
+        navigationController?.show(nextVC, sender: nil) //새로운 방식
     }
     
     // 드롭다운 버튼 눌렀을 때 처리
