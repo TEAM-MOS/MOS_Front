@@ -16,7 +16,7 @@ class StudyDetailViewController: UIViewController {
         backButton.title = ""
         backButton.tintColor = UIColor.black
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
-        
+        self.navigationController?.navigationBar.backgroundColor = UIColor(named: "bc-studyDetail")
         navigationItem.title = "스터디 정보"
         
     }
