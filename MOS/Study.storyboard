@@ -46,7 +46,7 @@
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nb6-vP-jA8">
-                                                <rect key="frame" x="16" y="271" width="361" height="177"/>
+                                                <rect key="frame" x="16" y="271" width="361" height="124"/>
                                                 <connections>
                                                     <segue destination="YLP-K4-Z9p" kind="embed" id="IJf-Pi-FVC"/>
                                                 </connections>
@@ -62,11 +62,12 @@
                                             <constraint firstItem="cKC-oX-16J" firstAttribute="top" secondItem="TA2-nA-w3W" secondAttribute="top" constant="104" id="haX-lv-T2J"/>
                                             <constraint firstAttribute="height" constant="1300" id="m5o-e6-Afx"/>
                                             <constraint firstItem="Nb6-vP-jA8" firstAttribute="leading" secondItem="TA2-nA-w3W" secondAttribute="leading" constant="16" id="ux9-e4-jKe"/>
-                                            <constraint firstAttribute="bottom" secondItem="Nb6-vP-jA8" secondAttribute="bottom" constant="852" id="vi0-SI-vb8"/>
+                                            <constraint firstAttribute="bottom" secondItem="Nb6-vP-jA8" secondAttribute="bottom" constant="905" id="v8h-Rb-8Ug"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TA2-nA-w3W" secondAttribute="bottom" constant="40" id="B5b-d4-ssu"/>
                                     <constraint firstAttribute="trailing" secondItem="TA2-nA-w3W" secondAttribute="trailing" id="RE3-sB-qvd"/>
                                     <constraint firstItem="TA2-nA-w3W" firstAttribute="leading" secondItem="aOD-fn-PjG" secondAttribute="leading" id="Wod-ND-9Vb"/>
                                     <constraint firstItem="TA2-nA-w3W" firstAttribute="top" secondItem="aOD-fn-PjG" secondAttribute="top" id="hGV-do-iUD"/>
@@ -311,21 +312,71 @@
             <objects>
                 <viewController id="YLP-K4-Z9p" customClass="StudyRecruitInfoViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dlC-Jq-qY0">
-                        <rect key="frame" x="0.0" y="0.0" width="361" height="177"/>
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="124"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모집조건" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhH-ea-0qz">
-                                <rect key="frame" x="20" y="16" width="56" height="20"/>
+                                <rect key="frame" x="20.000000000000004" y="15.999999999999998" width="55.333333333333343" height="19.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="V5a-4S-EeP">
+                                <rect key="frame" x="16" y="47.333333333333336" width="226" height="26.000000000000007"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_circle_calendar" translatesAutoresizingMaskIntoConstraints="NO" id="IFl-Qn-aJo">
+                                        <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="26" id="3BE-qV-WM7"/>
+                                            <constraint firstAttribute="height" constant="26" id="QwZ-tR-erZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모집기간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJ4-al-T9N">
+                                        <rect key="frame" x="38" y="0.0" width="48.666666666666657" height="26"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05월 31일~06월 10일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6K-kt-uWr">
+                                        <rect key="frame" x="98.666666666666686" y="0.0" width="127.33333333333331" height="26"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ff2-1U-m9v">
+                                <rect key="frame" x="16.000000000000007" y="77.333333333333329" width="119.66666666666669" height="26"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_circle_member" translatesAutoresizingMaskIntoConstraints="NO" id="wMK-u8-PHY">
+                                        <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="2gx-MZ-wEi"/>
+                                            <constraint firstAttribute="width" constant="26" id="ggF-zo-Z4i"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모집인원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mY-KS-7aM">
+                                        <rect key="frame" x="38" y="0.0" width="48.666666666666657" height="26"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42v-uz-7MT">
+                                        <rect key="frame" x="98.666666666666671" y="0.0" width="21" height="26"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gK3-Jx-czZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="IhH-ea-0qz" firstAttribute="top" secondItem="dlC-Jq-qY0" secondAttribute="top" constant="16" id="78p-uR-t7f"/>
+                            <constraint firstItem="V5a-4S-EeP" firstAttribute="top" secondItem="IhH-ea-0qz" secondAttribute="bottom" constant="12" id="Kdu-qf-hN2"/>
+                            <constraint firstItem="V5a-4S-EeP" firstAttribute="leading" secondItem="gK3-Jx-czZ" secondAttribute="leading" constant="16" id="N20-mJ-Lfk"/>
+                            <constraint firstItem="ff2-1U-m9v" firstAttribute="top" secondItem="V5a-4S-EeP" secondAttribute="bottom" constant="4" id="Wwn-K7-dof"/>
                             <constraint firstItem="IhH-ea-0qz" firstAttribute="leading" secondItem="dlC-Jq-qY0" secondAttribute="leading" constant="20" id="btP-cV-m2g"/>
+                            <constraint firstItem="ff2-1U-m9v" firstAttribute="leading" secondItem="gK3-Jx-czZ" secondAttribute="leading" constant="16" id="haI-4Y-bcK"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -339,6 +390,8 @@
         <image name="ic_home_date" width="13.333333015441895" height="13.333333015441895"/>
         <image name="ic_home_location" width="16" height="16"/>
         <image name="ic_home_members" width="16" height="16"/>
+        <image name="icon_circle_calendar" width="26" height="26"/>
+        <image name="icon_circle_member" width="26" height="26"/>
         <namedColor name="bc-studyDetail">
             <color red="0.97647058823529409" green="0.96078431372549022" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -353,6 +406,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
