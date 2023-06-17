@@ -45,9 +45,8 @@
                                                     <segue destination="gez-JV-vRS" kind="embed" id="wdi-HO-geu"/>
                                                 </connections>
                                             </containerView>
-                                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nb6-vP-jA8">
-                                                <rect key="frame" x="76" y="299" width="240" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nb6-vP-jA8">
+                                                <rect key="frame" x="16" y="271" width="361" height="177"/>
                                                 <connections>
                                                     <segue destination="YLP-K4-Z9p" kind="embed" id="IJf-Pi-FVC"/>
                                                 </connections>
@@ -56,10 +55,14 @@
                                         <color key="backgroundColor" name="bc-studyDetail"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="cKC-oX-16J" secondAttribute="bottom" constant="1041" id="7WT-kB-Nrf"/>
+                                            <constraint firstAttribute="trailing" secondItem="Nb6-vP-jA8" secondAttribute="trailing" constant="16" id="9gT-jc-ZdB"/>
                                             <constraint firstAttribute="trailing" secondItem="cKC-oX-16J" secondAttribute="trailing" constant="16" id="V4G-Kb-d4B"/>
                                             <constraint firstItem="cKC-oX-16J" firstAttribute="leading" secondItem="TA2-nA-w3W" secondAttribute="leading" constant="16" id="ZD0-VA-3kS"/>
+                                            <constraint firstItem="Nb6-vP-jA8" firstAttribute="top" secondItem="cKC-oX-16J" secondAttribute="bottom" constant="12" id="g3X-zp-avn"/>
                                             <constraint firstItem="cKC-oX-16J" firstAttribute="top" secondItem="TA2-nA-w3W" secondAttribute="top" constant="104" id="haX-lv-T2J"/>
                                             <constraint firstAttribute="height" constant="1300" id="m5o-e6-Afx"/>
+                                            <constraint firstItem="Nb6-vP-jA8" firstAttribute="leading" secondItem="TA2-nA-w3W" secondAttribute="leading" constant="16" id="ux9-e4-jKe"/>
+                                            <constraint firstAttribute="bottom" secondItem="Nb6-vP-jA8" secondAttribute="bottom" constant="852" id="vi0-SI-vb8"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -308,14 +311,27 @@
             <objects>
                 <viewController id="YLP-K4-Z9p" customClass="StudyRecruitInfoViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dlC-Jq-qY0">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="177"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모집조건" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhH-ea-0qz">
+                                <rect key="frame" x="20" y="16" width="56" height="20"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gK3-Jx-czZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IhH-ea-0qz" firstAttribute="top" secondItem="dlC-Jq-qY0" secondAttribute="top" constant="16" id="78p-uR-t7f"/>
+                            <constraint firstItem="IhH-ea-0qz" firstAttribute="leading" secondItem="dlC-Jq-qY0" secondAttribute="leading" constant="20" id="btP-cV-m2g"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OdV-p4-tVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1641" y="-282"/>
+            <point key="canvasLocation" x="-1727" y="-255"/>
         </scene>
     </scenes>
     <resources>
