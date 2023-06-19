@@ -16,6 +16,9 @@
         <array key="Pretendard-Medium.ttf">
             <string>Pretendard-Medium</string>
         </array>
+        <array key="Pretendard-Regular.ttf">
+            <string>Pretendard-Regular</string>
+        </array>
         <array key="TimesNewRoman.ttf">
             <string>.SFUI-Regular</string>
         </array>
@@ -244,6 +247,43 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_home_tag4" translatesAutoresizingMaskIntoConstraints="NO" id="e29-TM-RiL">
+                                <rect key="frame" x="20" y="1187" width="51" height="22"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="me3-Sm-AiL">
+                                <rect key="frame" x="16" y="1229" width="361" height="86.333333333333258"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 부족 역량은 그대로일까?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnR-Yl-TNw">
+                                        <rect key="frame" x="63.999999999999986" y="24" width="162.66666666666663" height="17"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취업 준비도 테스트 다시해보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjV-YB-Jbo">
+                                        <rect key="frame" x="64" y="43" width="191" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_test" translatesAutoresizingMaskIntoConstraints="NO" id="91g-GO-NpV">
+                                        <rect key="frame" x="14" y="25.333333333333258" width="36" height="36"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_goToTest" translatesAutoresizingMaskIntoConstraints="NO" id="7tE-nr-dHT">
+                                        <rect key="frame" x="315" y="24.333333333333258" width="38" height="38"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7tE-nr-dHT" firstAttribute="centerY" secondItem="me3-Sm-AiL" secondAttribute="centerY" id="8ZV-Ie-yId"/>
+                                    <constraint firstAttribute="trailing" secondItem="7tE-nr-dHT" secondAttribute="trailing" constant="8" id="B6L-rx-iDC"/>
+                                    <constraint firstItem="LnR-Yl-TNw" firstAttribute="top" secondItem="me3-Sm-AiL" secondAttribute="top" constant="24" id="JYg-gL-dnc"/>
+                                    <constraint firstItem="91g-GO-NpV" firstAttribute="centerY" secondItem="me3-Sm-AiL" secondAttribute="centerY" id="YCQ-h1-eks"/>
+                                    <constraint firstItem="91g-GO-NpV" firstAttribute="leading" secondItem="me3-Sm-AiL" secondAttribute="leading" constant="14" id="cwN-jh-ePH"/>
+                                    <constraint firstAttribute="bottom" secondItem="RjV-YB-Jbo" secondAttribute="bottom" constant="24" id="g2B-Iq-dbS"/>
+                                    <constraint firstItem="RjV-YB-Jbo" firstAttribute="leading" secondItem="LnR-Yl-TNw" secondAttribute="leading" id="jcK-4V-Os8"/>
+                                    <constraint firstItem="RjV-YB-Jbo" firstAttribute="top" secondItem="LnR-Yl-TNw" secondAttribute="bottom" constant="2" id="rJb-b7-f3k"/>
+                                    <constraint firstItem="LnR-Yl-TNw" firstAttribute="leading" secondItem="91g-GO-NpV" secondAttribute="trailing" constant="14" id="sA1-Gb-ppI"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -254,11 +294,15 @@
                             <constraint firstItem="SJ0-ux-nEV" firstAttribute="centerX" secondItem="pEZ-XL-ApP" secondAttribute="centerX" id="5aW-8R-ZdN"/>
                             <constraint firstItem="aGg-nq-kLv" firstAttribute="top" secondItem="pEZ-XL-ApP" secondAttribute="bottom" constant="-110" id="9gu-DX-u9a"/>
                             <constraint firstItem="e6p-Z5-Odt" firstAttribute="trailing" secondItem="OC6-LM-sec" secondAttribute="trailing" id="CVP-gi-mEF"/>
+                            <constraint firstItem="e29-TM-RiL" firstAttribute="top" secondItem="9jc-xc-BsI" secondAttribute="bottom" constant="12" id="CYw-v4-heL"/>
                             <constraint firstItem="hNs-x3-dz3" firstAttribute="top" secondItem="e6p-Z5-Odt" secondAttribute="bottom" constant="32" id="Ct0-5c-fTv"/>
                             <constraint firstItem="YdK-N6-Q8V" firstAttribute="leading" secondItem="oK3-fZ-fxc" secondAttribute="leading" id="EDV-IN-pcb"/>
+                            <constraint firstItem="me3-Sm-AiL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="EEk-GH-fbk"/>
                             <constraint firstItem="OC6-LM-sec" firstAttribute="top" secondItem="YdK-N6-Q8V" secondAttribute="bottom" constant="24" id="GBR-9q-g9C"/>
                             <constraint firstItem="e6p-Z5-Odt" firstAttribute="width" secondItem="OC6-LM-sec" secondAttribute="width" id="HHZ-yn-HDE"/>
+                            <constraint firstItem="me3-Sm-AiL" firstAttribute="top" secondItem="e29-TM-RiL" secondAttribute="bottom" constant="20" id="Jml-vz-4wv"/>
                             <constraint firstItem="uab-eg-g1N" firstAttribute="centerX" secondItem="pEZ-XL-ApP" secondAttribute="centerX" id="KIM-GY-FPo"/>
+                            <constraint firstItem="me3-Sm-AiL" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="KWE-GM-Xzb"/>
                             <constraint firstItem="pEZ-XL-ApP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="MlJ-RA-RnH"/>
                             <constraint firstItem="YdK-N6-Q8V" firstAttribute="top" secondItem="WzX-bg-oBZ" secondAttribute="bottom" constant="24" id="NOX-ku-TPm"/>
                             <constraint firstItem="aGg-nq-kLv" firstAttribute="leading" secondItem="pEZ-XL-ApP" secondAttribute="leading" constant="20" id="Nik-5C-Fl8"/>
@@ -281,6 +325,7 @@
                             <constraint firstItem="SLf-5O-rkW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="48" id="hcR-3K-aGw"/>
                             <constraint firstItem="OC6-LM-sec" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="iX8-2j-hVi"/>
                             <constraint firstItem="rWZ-8Z-jiw" firstAttribute="bottom" secondItem="YdK-N6-Q8V" secondAttribute="bottom" id="lLz-IU-1Ud"/>
+                            <constraint firstItem="e29-TM-RiL" firstAttribute="leading" secondItem="9jc-xc-BsI" secondAttribute="leading" id="uqM-Kg-xVr"/>
                             <constraint firstItem="pEZ-XL-ApP" firstAttribute="top" secondItem="SJ0-ux-nEV" secondAttribute="bottom" constant="-45" id="xM7-rL-fNt"/>
                             <constraint firstItem="WzX-bg-oBZ" firstAttribute="top" secondItem="2r5-S8-csZ" secondAttribute="bottom" constant="40" id="ykg-JT-XT5"/>
                             <constraint firstItem="rWZ-8Z-jiw" firstAttribute="leading" secondItem="YdK-N6-Q8V" secondAttribute="trailing" constant="1" id="zq3-GZ-pWZ"/>
@@ -302,6 +347,9 @@
         <image name="ic_home_category5" width="98" height="98"/>
         <image name="ic_home_category6" width="98" height="98"/>
         <image name="ic_home_detail_arrow" width="32" height="32"/>
+        <image name="ic_home_goToTest" width="38" height="38"/>
+        <image name="ic_home_test" width="36" height="36"/>
+        <image name="img_home_tag4" width="51" height="22"/>
         <image name="view_home_createStudy" width="294" height="96"/>
         <image name="view_home_divider" width="320" height="8"/>
         <image name="view_home_new" width="87.666664123535156" height="55.333332061767578"/>
