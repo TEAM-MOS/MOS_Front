@@ -27,6 +27,15 @@ class SurveyResultInputView: UIView{
            }
        }
     
+    @IBInspectable
+       var categoryName: String = "" {
+           didSet{
+               DispatchQueue.main.async {
+                   self.categoryLabel.text = self.categoryName
+               }
+           }
+       }
+    
     
     @IBInspectable
        var progress: Float = 0 {

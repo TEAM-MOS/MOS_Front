@@ -84,19 +84,19 @@
                                 </buttonConfiguration>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgn-lx-FWN">
-                                <rect key="frame" x="-2" y="245.66666666666663" width="397" height="361"/>
+                                <rect key="frame" x="-2" y="245" width="397" height="362"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_survey_start" translatesAutoresizingMaskIntoConstraints="NO" id="imf-kN-pN3">
-                                        <rect key="frame" x="135" y="20.000000000000028" width="127" height="140.33333333333334"/>
+                                        <rect key="frame" x="135" y="20" width="127" height="140.33333333333334"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취업 준비도 테스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgJ-5x-irg">
-                                        <rect key="frame" x="108.66666666666667" y="220.33333333333334" width="179.66666666666663" height="28"/>
+                                        <rect key="frame" x="110" y="220.33333333333331" width="177" height="28"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2B-Nu-tan">
-                                        <rect key="frame" x="59.666666666666657" y="264.33333333333337" width="277.66666666666674" height="32.666666666666686"/>
+                                        <rect key="frame" x="61" y="264.33333333333331" width="275.33333333333331" height="33.666666666666686"/>
                                         <string key="text">어떤 스터디를 들어야 할 지 모르겠다고요?
 테스트를 통해 나에게 필요한 스터디를 알아보세요!</string>
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
@@ -110,13 +110,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인/적성" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxA-cP-CKG">
-                                        <rect key="frame" x="268" y="52.333333333333343" width="36" height="14"/>
+                                        <rect key="frame" x="268" y="52" width="36" height="14"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                         <color key="textColor" name="gray-2"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1P-Ze-Lkh">
-                                        <rect key="frame" x="108" y="52.333333333333343" width="21" height="14"/>
+                                        <rect key="frame" x="108" y="52" width="21" height="14"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                         <color key="textColor" name="gray-2"/>
                                         <nil key="highlightedColor"/>
@@ -178,7 +178,7 @@
                                 <rect key="frame" x="16" y="0.0" width="361" height="1500"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvJ-iJ-4G0" userLabel="contentView">
-                                        <rect key="frame" x="0.0" y="10" width="361" height="1050.3333333333333"/>
+                                        <rect key="frame" x="0.0" y="10" width="361" height="1050.6666666666667"/>
                                         <subviews>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="Pq5-vX-PRT">
                                                 <rect key="frame" x="2" y="52" width="357" height="4"/>
@@ -209,7 +209,7 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42c-TK-xFf" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                <rect key="frame" x="2" y="270" width="359" height="148.33333333333337"/>
+                                                <rect key="frame" x="2" y="270.33333333333331" width="359" height="148.33333333333331"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="지원하는 직종에 대해 얼마나 잘 알고 있는 질문에 답변할 수 있다."/>
@@ -223,28 +223,28 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="5kY-Xw-xDy" userLabel="category">
-                                                <rect key="frame" x="2" y="68" width="357" height="14"/>
+                                                <rect key="frame" x="2" y="68" width="357" height="14.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pR8-Km-Gix">
-                                                        <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="14"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="14.333333333333334"/>
                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                         <color key="textColor" name="gray-2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자기소개서" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6d-J5-SEx">
-                                                        <rect key="frame" x="89.666666666666686" y="0.0" width="88.333333333333314" height="14"/>
+                                                        <rect key="frame" x="89.666666666666686" y="0.0" width="88.333333333333314" height="14.333333333333334"/>
                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                         <color key="textColor" name="gray-2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="산업&amp;기업 분석" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hG-af-EqP">
-                                                        <rect key="frame" x="179" y="0.0" width="88.666666666666686" height="14"/>
+                                                        <rect key="frame" x="179" y="0.0" width="88.666666666666686" height="14.333333333333334"/>
                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                         <color key="textColor" name="gray-2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사PT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3y-M9-CpJ">
-                                                        <rect key="frame" x="268.66666666666669" y="0.0" width="88.333333333333314" height="14"/>
+                                                        <rect key="frame" x="268.66666666666669" y="0.0" width="88.333333333333314" height="14.333333333333334"/>
                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                         <color key="textColor" name="gray-2"/>
                                                         <nil key="highlightedColor"/>
@@ -256,7 +256,7 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPt-XG-vrA" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                <rect key="frame" x="2" y="438.33333333333326" width="359" height="148"/>
+                                                <rect key="frame" x="2" y="438.66666666666674" width="359" height="148"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="자신의 조직생활에 있어서 장단점을 묻는 질문에 답변할 수 있다."/>
@@ -270,7 +270,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXG-bH-UJh" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                <rect key="frame" x="2" y="606.33333333333337" width="359" height="148"/>
+                                                <rect key="frame" x="2" y="606.66666666666663" width="359" height="148"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="직무와 관련되어 위기상황을 극복한 경험을 묻는 질문에 답변할 수 있다."/>
@@ -284,7 +284,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKA-Yh-6jd" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                <rect key="frame" x="2" y="774.33333333333337" width="359" height="148"/>
+                                                <rect key="frame" x="2" y="774.66666666666663" width="359" height="148"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="새로이 입사할 조직문화에 대한 적응방법을 묻는 질문에 답변할 수 있다."/>
@@ -298,7 +298,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vdg-S9-dCi">
-                                                <rect key="frame" x="2" y="962.33333333333337" width="359" height="48"/>
+                                                <rect key="frame" x="2" y="962.66666666666663" width="359" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="Bpg-VJ-ov6"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="FtI-e6-gsb"/>
@@ -330,7 +330,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZEB-qQ-DZ5" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                <rect key="frame" x="2" y="102" width="359" height="148"/>
+                                                <rect key="frame" x="2" y="102.33333333333331" width="359" height="148"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="148" id="7gF-T2-8QS"/>
@@ -435,7 +435,7 @@
                                         <rect key="frame" x="16" y="0.0" width="361" height="1500"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3u-RZ-Sgt" userLabel="contentView">
-                                                <rect key="frame" x="0.0" y="10" width="361" height="1050.6666666666667"/>
+                                                <rect key="frame" x="0.0" y="10" width="361" height="1051"/>
                                                 <subviews>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fO4-wz-yOu">
                                                         <rect key="frame" x="2" y="52" width="357" height="4"/>
@@ -466,7 +466,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GC5-kK-Yiv" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                        <rect key="frame" x="2" y="270.33333333333331" width="359" height="148.33333333333331"/>
+                                                        <rect key="frame" x="2" y="270.66666666666669" width="359" height="148.33333333333331"/>
                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="자신이 지원하는 기업이나 기관의 인재상, 직무수행에 필요한 능력과 자질 등을 파악했다."/>
@@ -480,28 +480,28 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="L0V-Fg-2FI" userLabel="category">
-                                                        <rect key="frame" x="2" y="68" width="357" height="14"/>
+                                                        <rect key="frame" x="2" y="68" width="357" height="14.333333333333329"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JB3-jL-o8v">
-                                                                <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="14.333333333333334"/>
                                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                 <color key="textColor" name="gray-2"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자기소개서" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0R-xs-Avm">
-                                                                <rect key="frame" x="89.666666666666686" y="0.0" width="88.333333333333314" height="14"/>
+                                                                <rect key="frame" x="89.666666666666686" y="0.0" width="88.333333333333314" height="14.333333333333334"/>
                                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                 <color key="textColor" name="gray-2"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="산업&amp;기업 분석" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPy-LT-28L">
-                                                                <rect key="frame" x="179" y="0.0" width="88.666666666666686" height="14"/>
+                                                                <rect key="frame" x="179" y="0.0" width="88.666666666666686" height="14.333333333333334"/>
                                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                 <color key="textColor" name="gray-2"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사PT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd6-II-18W">
-                                                                <rect key="frame" x="268.66666666666669" y="0.0" width="88.333333333333314" height="14"/>
+                                                                <rect key="frame" x="268.66666666666669" y="0.0" width="88.333333333333314" height="14.333333333333334"/>
                                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                 <color key="textColor" name="gray-2"/>
                                                                 <nil key="highlightedColor"/>
@@ -513,7 +513,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbB-Tx-KLI" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                        <rect key="frame" x="2" y="438.66666666666674" width="359" height="148"/>
+                                                        <rect key="frame" x="2" y="439" width="359" height="148"/>
                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="회사의 요구조건과 맞는 자신의 실적이나 경험을 자기소개서에 녹여낼 수 있다."/>
@@ -527,7 +527,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndB-CE-JQv" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                        <rect key="frame" x="2" y="606.66666666666663" width="359" height="148"/>
+                                                        <rect key="frame" x="2" y="607" width="359" height="148"/>
                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="조직생활에서 자신이 맡았던 역할의 경험을 작성할 수 있다."/>
@@ -541,7 +541,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zl-c8-gyW" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                        <rect key="frame" x="2" y="774.66666666666663" width="359" height="148"/>
+                                                        <rect key="frame" x="2" y="775" width="359" height="148"/>
                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="회사 업무와 삶에 대한 자신의 장기적인 목표의식과 비전을 명확하게 알고 있다."/>
@@ -555,7 +555,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C6j-uQ-iQi">
-                                                        <rect key="frame" x="2" y="962.66666666666663" width="359" height="48"/>
+                                                        <rect key="frame" x="2" y="963" width="359" height="48"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="48" id="2rE-lJ-Tvi"/>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="MTU-EX-o54"/>
@@ -587,7 +587,7 @@
                                                         </buttonConfiguration>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndo-zT-Mf9" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                        <rect key="frame" x="2" y="102.00000000000001" width="359" height="148.33333333333337"/>
+                                                        <rect key="frame" x="2" y="102.33333333333333" width="359" height="148.33333333333337"/>
                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" priority="250" constant="148.33000000000001" id="RDC-Zf-gqq"/>
@@ -700,7 +700,7 @@
                                                 <rect key="frame" x="16" y="0.0" width="361" height="1500"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BoS-hv-qZc" userLabel="contentView">
-                                                        <rect key="frame" x="0.0" y="10" width="361" height="1050.3333333333333"/>
+                                                        <rect key="frame" x="0.0" y="10" width="361" height="1050.6666666666667"/>
                                                         <subviews>
                                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="EC8-kz-PBY">
                                                                 <rect key="frame" x="2" y="52" width="357" height="4"/>
@@ -731,7 +731,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCd-8f-Umm" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                <rect key="frame" x="2" y="270" width="359" height="148.33333333333337"/>
+                                                                <rect key="frame" x="2" y="270.33333333333331" width="359" height="148.33333333333331"/>
                                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="산업 / 직무 분석을 하는 방법에 대해 알고 있다."/>
@@ -745,28 +745,28 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="HE8-vS-66u" userLabel="category">
-                                                                <rect key="frame" x="2" y="68" width="357" height="14"/>
+                                                                <rect key="frame" x="2" y="68" width="357" height="14.333333333333329"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vK-Ss-hTA">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="14"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="14.333333333333334"/>
                                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                         <color key="textColor" name="gray-2"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자기소개서" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPW-7j-hNV">
-                                                                        <rect key="frame" x="89.666666666666686" y="0.0" width="88.333333333333314" height="14"/>
+                                                                        <rect key="frame" x="89.666666666666686" y="0.0" width="88.333333333333314" height="14.333333333333334"/>
                                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                         <color key="textColor" name="gray-2"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="산업&amp;기업 분석" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8P-fH-db1">
-                                                                        <rect key="frame" x="179" y="0.0" width="88.666666666666686" height="14"/>
+                                                                        <rect key="frame" x="179" y="0.0" width="88.666666666666686" height="14.333333333333334"/>
                                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                         <color key="textColor" name="gray-2"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사PT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wb6-1I-XGZ">
-                                                                        <rect key="frame" x="268.66666666666669" y="0.0" width="88.333333333333314" height="14"/>
+                                                                        <rect key="frame" x="268.66666666666669" y="0.0" width="88.333333333333314" height="14.333333333333334"/>
                                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                         <color key="textColor" name="gray-2"/>
                                                                         <nil key="highlightedColor"/>
@@ -778,7 +778,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2g-My-nYd" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                <rect key="frame" x="2" y="438.33333333333326" width="359" height="148"/>
+                                                                <rect key="frame" x="2" y="438.66666666666674" width="359" height="148"/>
                                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="산업 / 직무에 대한 조사결과를 통해 나의 생각을 막힘없이 말할 수 있다."/>
@@ -792,7 +792,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5p-AF-sVn" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                <rect key="frame" x="2" y="606.33333333333337" width="359" height="148"/>
+                                                                <rect key="frame" x="2" y="606.66666666666663" width="359" height="148"/>
                                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="직무를 분석하기 위해 현직자를 만나는 것이 중요하다고 생각한다."/>
@@ -806,7 +806,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ynL-GY-auW">
-                                                                <rect key="frame" x="2" y="962.33333333333337" width="359" height="48"/>
+                                                                <rect key="frame" x="2" y="962.66666666666663" width="359" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="AWA-JV-jpq"/>
                                                                     <constraint firstAttribute="height" constant="48" id="VsF-Tj-1q0"/>
@@ -838,7 +838,7 @@
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdc-um-mma" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                <rect key="frame" x="2" y="102" width="359" height="148"/>
+                                                                <rect key="frame" x="2" y="102.33333333333331" width="359" height="148"/>
                                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" priority="250" constant="148" id="zNY-za-6CX"/>
@@ -855,7 +855,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tsx-nV-9Ok" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                <rect key="frame" x="2" y="774.33333333333337" width="359" height="148"/>
+                                                                <rect key="frame" x="2" y="774.66666666666663" width="359" height="148"/>
                                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="직무를 분석하기 위해 현직자를 만난다면 어떤 질문을 준비해야 할지 잘 알고 있다."/>
@@ -973,7 +973,7 @@
                                                         <rect key="frame" x="16" y="0.0" width="361" height="1500"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7MW-75-Nn6" userLabel="contentView">
-                                                                <rect key="frame" x="0.0" y="10" width="361" height="1050.3333333333333"/>
+                                                                <rect key="frame" x="0.0" y="10" width="361" height="1050.6666666666667"/>
                                                                 <subviews>
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="dkq-Bv-ziy">
                                                                         <rect key="frame" x="2" y="52" width="357" height="4"/>
@@ -1004,7 +1004,7 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bl9-v5-6RC" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                        <rect key="frame" x="2" y="270" width="359" height="148.33333333333337"/>
+                                                                        <rect key="frame" x="2" y="270.33333333333331" width="359" height="148.33333333333331"/>
                                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="사회 전반 주요 이슈와 관련해 스스로 어느 정도의 사고력을 갖추고 있다고 생각한다."/>
@@ -1018,28 +1018,28 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="9V8-N8-7eG" userLabel="category">
-                                                                        <rect key="frame" x="2" y="68" width="357" height="14"/>
+                                                                        <rect key="frame" x="2" y="68" width="357" height="14.333333333333329"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGI-lG-ajb">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="14"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="14.333333333333334"/>
                                                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                                 <color key="textColor" name="gray-2"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자기소개서" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfj-kR-zBp">
-                                                                                <rect key="frame" x="89.666666666666686" y="0.0" width="88.333333333333314" height="14"/>
+                                                                                <rect key="frame" x="89.666666666666686" y="0.0" width="88.333333333333314" height="14.333333333333334"/>
                                                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                                 <color key="textColor" name="gray-2"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="산업&amp;기업 분석" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRN-Pe-KdA">
-                                                                                <rect key="frame" x="179" y="0.0" width="88.666666666666686" height="14"/>
+                                                                                <rect key="frame" x="179" y="0.0" width="88.666666666666686" height="14.333333333333334"/>
                                                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                                 <color key="textColor" name="gray-2"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사PT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1D4-rr-XHU">
-                                                                                <rect key="frame" x="268.66666666666669" y="0.0" width="88.333333333333314" height="14"/>
+                                                                                <rect key="frame" x="268.66666666666669" y="0.0" width="88.333333333333314" height="14.333333333333334"/>
                                                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                                 <color key="textColor" name="gray-2"/>
                                                                                 <nil key="highlightedColor"/>
@@ -1051,7 +1051,7 @@
                                                                         </constraints>
                                                                     </stackView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="21y-Bg-8M8" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                        <rect key="frame" x="2" y="438.33333333333326" width="359" height="148"/>
+                                                                        <rect key="frame" x="2" y="438.66666666666674" width="359" height="148"/>
                                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="평소 정치 / 경제 / 사회 / 문화 / 과학에 관련된 뉴스를 자주 찾아본다."/>
@@ -1065,7 +1065,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Nn-fq-Nxx" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                        <rect key="frame" x="2" y="774.33333333333337" width="359" height="148"/>
+                                                                        <rect key="frame" x="2" y="774.66666666666663" width="359" height="148"/>
                                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="실제 면접에서 시사문제를 어떻게 다루는지 알고 있다."/>
@@ -1079,7 +1079,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bJa-co-HEu">
-                                                                        <rect key="frame" x="2" y="962.33333333333337" width="359" height="48"/>
+                                                                        <rect key="frame" x="2" y="962.66666666666663" width="359" height="48"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="48" id="1oc-nq-QAR"/>
                                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="QUz-wv-n6n"/>
@@ -1111,7 +1111,7 @@
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vtj-Y1-BDf" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                        <rect key="frame" x="2" y="102" width="359" height="148"/>
+                                                                        <rect key="frame" x="2" y="102.33333333333331" width="359" height="148"/>
                                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" priority="250" constant="148" id="iB3-D9-n8y"/>
@@ -1128,7 +1128,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zsk-Sy-ufz" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                        <rect key="frame" x="2" y="606.33333333333337" width="359" height="148"/>
+                                                                        <rect key="frame" x="2" y="606.66666666666663" width="359" height="148"/>
                                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="시사 이슈가 나의 전공과 업무에 어떻게 연관이 되는지, 혹은 어떤 비전을 갖는지 묻는 질문에 대답을 할 수 있다."/>
@@ -1235,7 +1235,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gpp-Sh-b2L" customClass="SurveyResultInputView" customModule="MOS" customModuleProvider="target">
-                                <rect key="frame" x="16" y="110" width="361" height="100"/>
+                                <rect key="frame" x="16" y="110.66666666666669" width="361" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="1" constant="100" id="9GL-at-v3K"/>
@@ -1251,10 +1251,11 @@
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="score" value="15점"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="categoryName" value="면접"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kl-8U-P9L">
-                                <rect key="frame" x="16" y="40" width="222.66666666666666" height="42"/>
+                                <rect key="frame" x="16" y="40" width="220.66666666666666" height="43"/>
                                 <string key="text">내가먼저취뽀님의
 취업 준비도 테스트 결과입니다.</string>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="18"/>
@@ -1262,7 +1263,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llB-hW-jE9" customClass="SurveyResultInputView" customModule="MOS" customModuleProvider="target">
-                                <rect key="frame" x="16" y="228" width="361" height="100"/>
+                                <rect key="frame" x="16" y="228.66666666666663" width="361" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="1" constant="100" id="v7Y-pC-yH8"/>
@@ -1278,10 +1279,11 @@
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="score" value="25점"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="categoryName" value="자기소개서"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2B-HU-CdN" customClass="SurveyResultInputView" customModule="MOS" customModuleProvider="target">
-                                <rect key="frame" x="16" y="346" width="361" height="100"/>
+                                <rect key="frame" x="16" y="346.66666666666669" width="361" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="1" constant="100" id="Rmy-Xv-g5c"/>
@@ -1297,10 +1299,11 @@
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="score" value="30점"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="categoryName" value="산업&amp;기업 분석"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQL-kh-I5v" customClass="SurveyResultInputView" customModule="MOS" customModuleProvider="target">
-                                <rect key="frame" x="16" y="464" width="361" height="100"/>
+                                <rect key="frame" x="16" y="464.66666666666674" width="361" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="1" constant="100" id="KF0-N2-wlf"/>
@@ -1316,6 +1319,7 @@
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="score" value="10점"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="categoryName" value="시사 PT"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBy-MQ-mXH">
@@ -1396,10 +1400,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="A0x-UG-p01"/>
-        <segue reference="Q6G-Vq-no8"/>
+        <segue reference="E3Q-1c-rmC"/>
+        <segue reference="iTy-LK-gJS"/>
         <segue reference="3xO-mL-oMW"/>
-        <segue reference="uHa-xK-A5O"/>
+        <segue reference="zKz-8r-g2D"/>
         <segue reference="Yk5-oC-cVC"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="main"/>
