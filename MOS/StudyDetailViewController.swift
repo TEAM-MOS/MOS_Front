@@ -21,7 +21,18 @@ class StudyDetailViewController: UIViewController {
         
         self.tabBarController?.tabBar.isHidden = true
         
+        
     }
+    
+    @IBAction func registerButtonTapped(_ sender: Any) {
+        
+        // 신청하기 버튼 클릭 시 화면 이동
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "PreQuestionAlertVC") as? PreQuestionAlertViewController else { return }
+        nextVC.modalPresentationStyle = .overCurrentContext
+        self.present(nextVC, animated: true, completion: nil)
+        
+    }
+    
 }
 
 

@@ -52,6 +52,8 @@
 		F304A13F2A4206240066036B /* StudyMemberInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304A13E2A4206240066036B /* StudyMemberInfoViewController.swift */; };
 		F304A1412A420FF90066036B /* StudyInfoTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304A1402A420FF90066036B /* StudyInfoTodoViewController.swift */; };
 		F33B43462A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B43452A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift */; };
+		F3A7F9BC2A4219BC00AE1863 /* PreQuestionAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A7F9BB2A4219BC00AE1863 /* PreQuestionAlertViewController.swift */; };
+		F3A7F9BE2A421DC800AE1863 /* StudyRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A7F9BD2A421DC800AE1863 /* StudyRegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +105,8 @@
 		F304A13E2A4206240066036B /* StudyMemberInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyMemberInfoViewController.swift; sourceTree = "<group>"; };
 		F304A1402A420FF90066036B /* StudyInfoTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyInfoTodoViewController.swift; sourceTree = "<group>"; };
 		F33B43452A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRecruitInfoViewController.swift; sourceTree = "<group>"; };
+		F3A7F9BB2A4219BC00AE1863 /* PreQuestionAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreQuestionAlertViewController.swift; sourceTree = "<group>"; };
+		F3A7F9BD2A421DC800AE1863 /* StudyRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRegisterViewController.swift; sourceTree = "<group>"; };
 		FDBE30F43F34FDAD99EE86F2 /* Pods-MOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOS.debug.xcconfig"; path = "Target Support Files/Pods-MOS/Pods-MOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +179,8 @@
 				F304A13C2A41FDC90066036B /* StudyDetailInfoViewController.swift */,
 				F304A13E2A4206240066036B /* StudyMemberInfoViewController.swift */,
 				F304A1402A420FF90066036B /* StudyInfoTodoViewController.swift */,
+				F3A7F9BB2A4219BC00AE1863 /* PreQuestionAlertViewController.swift */,
+				F3A7F9BD2A421DC800AE1863 /* StudyRegisterViewController.swift */,
 			);
 			path = MOS;
 			sourceTree = "<group>";
@@ -374,8 +380,10 @@
 				2FA1427A2A149024006AA91B /* ViewController.swift in Sources */,
 				2F9DAF532A3222A5007CA960 /* StudyDetailViewController.swift in Sources */,
 				F304A13D2A41FDC90066036B /* StudyDetailInfoViewController.swift in Sources */,
+				F3A7F9BE2A421DC800AE1863 /* StudyRegisterViewController.swift in Sources */,
 				2F2B3E232A1DBE52008B0506 /* TabMenuViewController.swift in Sources */,
 				F304A13F2A4206240066036B /* StudyMemberInfoViewController.swift in Sources */,
+				F3A7F9BC2A4219BC00AE1863 /* PreQuestionAlertViewController.swift in Sources */,
 				2FA142762A149024006AA91B /* AppDelegate.swift in Sources */,
 				5AC619932A170BF300966219 /* SurveyViewController.swift in Sources */,
 				2FA142782A149024006AA91B /* SceneDelegate.swift in Sources */,
