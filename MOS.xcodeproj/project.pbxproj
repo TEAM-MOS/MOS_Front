@@ -50,6 +50,7 @@
 		E6FE083ADFD94888B7BAA4B1 /* Pods_MOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8023C552FBAB477251468C8 /* Pods_MOS.framework */; };
 		F304A13D2A41FDC90066036B /* StudyDetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304A13C2A41FDC90066036B /* StudyDetailInfoViewController.swift */; };
 		F304A13F2A4206240066036B /* StudyMemberInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304A13E2A4206240066036B /* StudyMemberInfoViewController.swift */; };
+		F304A1412A420FF90066036B /* StudyInfoTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304A1402A420FF90066036B /* StudyInfoTodoViewController.swift */; };
 		F33B43462A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B43452A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,7 @@
 		C8023C552FBAB477251468C8 /* Pods_MOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F304A13C2A41FDC90066036B /* StudyDetailInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyDetailInfoViewController.swift; sourceTree = "<group>"; };
 		F304A13E2A4206240066036B /* StudyMemberInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyMemberInfoViewController.swift; sourceTree = "<group>"; };
+		F304A1402A420FF90066036B /* StudyInfoTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyInfoTodoViewController.swift; sourceTree = "<group>"; };
 		F33B43452A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRecruitInfoViewController.swift; sourceTree = "<group>"; };
 		FDBE30F43F34FDAD99EE86F2 /* Pods-MOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOS.debug.xcconfig"; path = "Target Support Files/Pods-MOS/Pods-MOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +174,7 @@
 				F33B43452A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift */,
 				F304A13C2A41FDC90066036B /* StudyDetailInfoViewController.swift */,
 				F304A13E2A4206240066036B /* StudyMemberInfoViewController.swift */,
+				F304A1402A420FF90066036B /* StudyInfoTodoViewController.swift */,
 			);
 			path = MOS;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				5AC619B42A19E5BD00966219 /* SurveyInterviewViewController.swift in Sources */,
 				5ABFE9EA2A1A05840094A316 /* SurveyInputView.swift in Sources */,
 				2FB095862A2631910035FB78 /* DeviceGroup.swift in Sources */,
+				F304A1412A420FF90066036B /* StudyInfoTodoViewController.swift in Sources */,
 				2FD24DA82A24F73B000747D7 /* SearchResultViewController.swift in Sources */,
 				5A444B732A278B590070137A /* StudyInputView.swift in Sources */,
 				2F28E6872A1DDADE00021E72 /* MyPageViewController.swift in Sources */,

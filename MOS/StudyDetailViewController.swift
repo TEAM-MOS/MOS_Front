@@ -19,6 +19,8 @@ class StudyDetailViewController: UIViewController {
         self.navigationController?.navigationBar.backgroundColor = UIColor(named: "bc-studyDetail")
         navigationItem.title = "스터디 정보"
         
+        self.tabBarController?.tabBar.isHidden = true
+        
     }
 }
 
