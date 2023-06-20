@@ -14,6 +14,7 @@ class PagingViewController: UIViewController, LZViewPagerDelegate, LZViewPagerDa
     //MARK: - Outlets
     @IBOutlet weak var viewPager: LZViewPager!
     
+    @IBOutlet weak var backBtn: UIImageView!
     
     //MARK: - Variables
     private var subControllers: [UIViewController] = []
@@ -22,6 +23,11 @@ class PagingViewController: UIViewController, LZViewPagerDelegate, LZViewPagerDa
         super.viewDidLoad()
         viewPagerProperties()
         navigationController?.navigationBar.isHidden = true
+        
+        
+        backBtn.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        backBtn.addGestureRecognizer(tapGesture)
 
         // Do any additional setup after loading the view.
     }
@@ -100,6 +106,11 @@ class PagingViewController: UIViewController, LZViewPagerDelegate, LZViewPagerDa
     func rightMarginForHeader() -> CGFloat{
         return 20
     }
+    
+    @objc func imageTapped() {
+        print(#fileID, #function, #line, "- backButton clicked")
+        self.performSegue(withIdentifier: "navToHome", sender: self)
+        }
 
     
     //MARK: - Actions
