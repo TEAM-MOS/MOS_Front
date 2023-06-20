@@ -1,28 +1,20 @@
 PODS:
   - DeviceKit (4.9.0)
   - DropDown (2.3.13)
-  - LZViewPager (1.2.8):
-    - SnapKit (~> 5.6.0)
-  - SnapKit (5.6.0)
 
 DEPENDENCIES:
   - DeviceKit (~> 4.0)
   - DropDown
-  - LZViewPager
 
 SPEC REPOS:
   trunk:
     - DeviceKit
     - DropDown
-    - LZViewPager
-    - SnapKit
 
 SPEC CHECKSUMS:
   DeviceKit: 847709bf70b78fd9ab765bd571fb9f5f815c3fc1
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
-  LZViewPager: 832bd177210060e1282b67aa1e9cd201ded67a5b
-  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: cde68463db403d0370626a34b6758f1657c433a5
+PODFILE CHECKSUM: 4bd9161c285de3c7ea9f0adebd6af0f8ca0de871
 
 COCOAPODS: 1.12.1
