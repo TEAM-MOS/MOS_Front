@@ -66,6 +66,9 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_star" translatesAutoresizingMaskIntoConstraints="NO" id="VuN-Xp-vzG">
+                                                <rect key="frame" x="230.33333333333334" y="56" width="32.000000000000028" height="32"/>
+                                            </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="view_home_new" translatesAutoresizingMaskIntoConstraints="NO" id="aGg-nq-kLv">
                                                 <rect key="frame" x="26" y="118" width="80" height="50"/>
                                                 <constraints>
@@ -301,6 +304,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="VuN-Xp-vzG" firstAttribute="leading" secondItem="SLf-5O-rkW" secondAttribute="trailing" constant="-15" id="2v2-He-1mH"/>
                                             <constraint firstItem="YdK-N6-Q8V" firstAttribute="top" secondItem="WzX-bg-oBZ" secondAttribute="bottom" constant="24" id="3nv-Le-PkE"/>
                                             <constraint firstItem="e6p-Z5-Odt" firstAttribute="leading" secondItem="OC6-LM-sec" secondAttribute="leading" id="3qL-00-It9"/>
                                             <constraint firstItem="uab-eg-g1N" firstAttribute="centerX" secondItem="pEZ-XL-ApP" secondAttribute="centerX" id="5k8-Sj-mrh"/>
@@ -329,6 +333,7 @@
                                             <constraint firstItem="hNs-x3-dz3" firstAttribute="centerX" secondItem="PtM-0y-nqw" secondAttribute="centerX" id="h01-re-58b"/>
                                             <constraint firstAttribute="trailing" secondItem="2r5-S8-csZ" secondAttribute="trailing" constant="6" id="hCP-k4-2Fr"/>
                                             <constraint firstItem="YdK-N6-Q8V" firstAttribute="leading" secondItem="oK3-fZ-fxc" secondAttribute="leading" id="j3T-dg-InH"/>
+                                            <constraint firstItem="SLf-5O-rkW" firstAttribute="top" secondItem="VuN-Xp-vzG" secondAttribute="bottom" constant="-40" id="kHv-lo-x0M"/>
                                             <constraint firstItem="me3-Sm-AiL" firstAttribute="centerX" secondItem="PtM-0y-nqw" secondAttribute="centerX" id="kcG-nN-ggE"/>
                                             <constraint firstItem="oK3-fZ-fxc" firstAttribute="top" secondItem="pEZ-XL-ApP" secondAttribute="bottom" constant="44" id="m4M-Ef-QDt"/>
                                             <constraint firstItem="me3-Sm-AiL" firstAttribute="leading" secondItem="PtM-0y-nqw" secondAttribute="leading" constant="24" id="mpA-lf-TmC"/>
@@ -413,6 +418,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="date" value="2/24(토)"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="member" value="1/6"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="category" value="인/적성"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="image" value="profile7"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모집 중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaR-AS-lGh">
@@ -426,6 +432,21 @@
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.65000000000000002"/>
                                 <color key="onTintColor" name="main"/>
                             </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IEa-U2-DMb" customClass="StudyInputView" customModule="MOS" customModuleProvider="target">
+                                <rect key="frame" x="24" y="414.33333333333331" width="345" height="127.99999999999994"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="128" id="abT-a7-R07"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="128" id="nXp-B8-OUj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="시사PT 스터디 함께 할 스터디원을 찾습니다!"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="location" value="송파구"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="date" value="8/10(일)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="member" value="3/4"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="시사 PT"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="image" value="profile2"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xFX-uS-JZU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -435,12 +456,15 @@
                             <constraint firstItem="VUc-1d-Agc" firstAttribute="centerX" secondItem="xFX-uS-JZU" secondAttribute="centerX" id="0ea-1N-0WD"/>
                             <constraint firstItem="VUc-1d-Agc" firstAttribute="leading" secondItem="xFX-uS-JZU" secondAttribute="leading" constant="24" id="1BJ-dL-c4k"/>
                             <constraint firstItem="rwF-B6-vm7" firstAttribute="trailing" secondItem="VUc-1d-Agc" secondAttribute="trailing" id="1zN-Os-hK4"/>
+                            <constraint firstItem="IEa-U2-DMb" firstAttribute="leading" secondItem="rwF-B6-vm7" secondAttribute="leading" id="5qm-8k-ciA"/>
+                            <constraint firstItem="IEa-U2-DMb" firstAttribute="top" secondItem="rwF-B6-vm7" secondAttribute="bottom" constant="16" id="8hn-CQ-ozB"/>
                             <constraint firstItem="rwF-B6-vm7" firstAttribute="top" secondItem="VUc-1d-Agc" secondAttribute="bottom" constant="16" id="FVS-XY-m9v"/>
                             <constraint firstItem="CdU-M4-xQ3" firstAttribute="leading" secondItem="yaR-AS-lGh" secondAttribute="trailing" constant="10" id="aem-9z-YOW"/>
                             <constraint firstItem="rwF-B6-vm7" firstAttribute="width" secondItem="VUc-1d-Agc" secondAttribute="width" id="bdn-Ry-lcX"/>
                             <constraint firstItem="yaR-AS-lGh" firstAttribute="top" secondItem="xFX-uS-JZU" secondAttribute="top" constant="20" id="czV-WN-bxF"/>
                             <constraint firstItem="VUc-1d-Agc" firstAttribute="top" secondItem="yaR-AS-lGh" secondAttribute="bottom" constant="28" id="ddo-NL-iuu"/>
                             <constraint firstItem="yaR-AS-lGh" firstAttribute="leading" secondItem="xFX-uS-JZU" secondAttribute="leading" constant="24" id="ns2-5t-x8O"/>
+                            <constraint firstItem="IEa-U2-DMb" firstAttribute="trailing" secondItem="rwF-B6-vm7" secondAttribute="trailing" id="nzN-wL-EFG"/>
                         </constraints>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
@@ -469,11 +493,12 @@
                                     <constraint firstAttribute="height" priority="250" constant="128" id="rcd-OT-DQ7"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="2023년 상반기 네이버 IT직군 면접 준비 스터디원 모집합니다 :)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="배달의 민족 프론트엔드 개발자 같이 준비해요!"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="location" value="송파구"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="date" value="2/14(토)"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="member" value="3/4"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="category" value="산업&amp;기업 분석"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="image" value="profile1"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모집 중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBU-yh-GAO">
@@ -482,16 +507,33 @@
                                 <color key="textColor" name="gray-2"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0s-TC-OjS" customClass="StudyInputView" customModule="MOS" customModuleProvider="target">
+                                <rect key="frame" x="24" y="270.33333333333331" width="345" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="128" id="haw-d9-yFy"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="128" id="qva-0E-W7P"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="2023년 상반기 네이버 IT직군 면접 준비 스터디원 모집합니다 :)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="location" value="노원구"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="date" value="7/08(토)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="member" value="1/6"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="산업&amp;기업 분석"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sQB-p5-edk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="y0s-TC-OjS" firstAttribute="top" secondItem="LsA-gM-QJT" secondAttribute="bottom" constant="16" id="9PM-Fc-ZCZ"/>
+                            <constraint firstItem="y0s-TC-OjS" firstAttribute="trailing" secondItem="LsA-gM-QJT" secondAttribute="trailing" id="Llv-Xo-F3a"/>
                             <constraint firstItem="D9m-b2-HXD" firstAttribute="centerY" secondItem="mBU-yh-GAO" secondAttribute="centerY" id="W9m-Qb-aMW"/>
                             <constraint firstItem="LsA-gM-QJT" firstAttribute="top" secondItem="mBU-yh-GAO" secondAttribute="bottom" constant="28" id="b5Q-JI-HDg"/>
                             <constraint firstItem="D9m-b2-HXD" firstAttribute="leading" secondItem="mBU-yh-GAO" secondAttribute="trailing" constant="10" id="c7X-l2-QHT"/>
                             <constraint firstItem="mBU-yh-GAO" firstAttribute="leading" secondItem="sQB-p5-edk" secondAttribute="leading" constant="24" id="fC0-F4-PaO"/>
                             <constraint firstItem="LsA-gM-QJT" firstAttribute="leading" secondItem="sQB-p5-edk" secondAttribute="leading" constant="24" id="mFU-Ma-Xsp"/>
                             <constraint firstItem="LsA-gM-QJT" firstAttribute="centerX" secondItem="sQB-p5-edk" secondAttribute="centerX" id="mb4-xe-Mbs"/>
+                            <constraint firstItem="y0s-TC-OjS" firstAttribute="leading" secondItem="LsA-gM-QJT" secondAttribute="leading" id="nf7-eA-mWV"/>
                             <constraint firstItem="mBU-yh-GAO" firstAttribute="top" secondItem="sQB-p5-edk" secondAttribute="top" constant="20" id="ojE-ep-GW2"/>
                         </constraints>
                     </view>
@@ -527,11 +569,12 @@
                                     <constraint firstAttribute="height" priority="250" constant="128" id="OrE-xA-cPI"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="2023년 상반기 네이버 IT직군 면접 준비 스터디원 모집합니다 :)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="시사PT 스터디 함께 할 스터디원을 찾습니다!"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="location" value="송파구"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="date" value="2/14(토)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="date" value="8/10(일)"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="member" value="3/4"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="산업&amp;기업 분석"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="시사 PT"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="image" value="profile2"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -578,11 +621,12 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="128" id="tn2-eZ-s5c"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="2023년 상반기 네이버 IT직군 면접 준비 스터디원 모집합니다 :)"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="location" value="송파구"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="인적성 시험 대비 그룹 스터디 참여자 구합니다"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="location" value="중랑구"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="date" value="2/14(토)"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="member" value="3/4"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="산업&amp;기업 분석"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="인/적성"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="image" value="profile3"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -629,11 +673,12 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="128" id="k8d-zE-hnD"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="2023년 상반기 네이버 IT직군 면접 준비 스터디원 모집합니다 :)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="자기소개서 자가 체크리스트를 통해 객관적인 평가를 하며 서로 첨삭해주실 스터디원 찾습니다:)"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="location" value="송파구"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="date" value="2/14(토)"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="member" value="3/4"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="산업&amp;기업 분석"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="자소서"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="image" value="profile4"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -680,11 +725,12 @@
                                     <constraint firstAttribute="height" priority="250" constant="128" id="njt-XX-k2n"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="2023년 상반기 네이버 IT직군 면접 준비 스터디원 모집합니다 :)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="함께하는 면접 스터디 그룹 참가자를 모집합니다. 실전처럼 면접 연습 해봐요!"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="location" value="송파구"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="date" value="2/14(토)"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="member" value="3/4"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="산업&amp;기업 분석"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="면접"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="image" value="profile5"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -731,11 +777,12 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="128" id="sA3-ik-bQ1"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="2023년 상반기 네이버 IT직군 면접 준비 스터디원 모집합니다 :)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="10/08 토익 스피킹 시험 같이 준비해요!"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="location" value="송파구"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="date" value="2/14(토)"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="member" value="3/4"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="산업&amp;기업 분석"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="category" value="어학"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="image" value="profile6"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -822,6 +869,7 @@
         <image name="ic_home_category_back" width="32" height="32"/>
         <image name="ic_home_detail_arrow" width="32" height="32"/>
         <image name="ic_home_goToTest" width="38" height="38"/>
+        <image name="ic_home_star" width="32" height="32"/>
         <image name="ic_home_test" width="36" height="36"/>
         <image name="img_home_tag4" width="51" height="22"/>
         <image name="view_home_createStudy" width="294" height="96"/>
