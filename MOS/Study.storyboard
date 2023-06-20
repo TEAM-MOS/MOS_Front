@@ -30,14 +30,14 @@
             <objects>
                 <viewController storyboardIdentifier="studyDetailVC" id="FPb-CN-tjs" customClass="StudyDetailViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LX9-XX-GgU">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="1340"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOD-fn-PjG">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="1340"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TA2-nA-w3W">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1458"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKC-oX-16J">
                                                 <rect key="frame" x="16" y="16" width="361" height="155"/>
@@ -76,21 +76,33 @@
                                                     <segue destination="IBK-5z-Jqy" kind="embed" id="xnt-cT-Ro6"/>
                                                 </connections>
                                             </containerView>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1L-M7-2LW">
+                                                <rect key="frame" x="20" y="911" width="353" height="241"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" priority="250" constant="241" id="vQv-3g-N5X"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="emK-5n-llE" kind="embed" id="lcn-rk-tBg"/>
+                                                </connections>
+                                            </containerView>
                                         </subviews>
                                         <color key="backgroundColor" name="bc-studyDetail"/>
                                         <constraints>
+                                            <constraint firstItem="D1L-M7-2LW" firstAttribute="top" secondItem="5Iq-wH-BU7" secondAttribute="bottom" constant="12" id="02z-pt-GBf"/>
                                             <constraint firstItem="fNC-hL-xXi" firstAttribute="top" secondItem="Nb6-vP-jA8" secondAttribute="bottom" constant="12" id="7qF-oA-zcn"/>
                                             <constraint firstAttribute="trailing" secondItem="Nb6-vP-jA8" secondAttribute="trailing" constant="16" id="9gT-jc-ZdB"/>
                                             <constraint firstAttribute="trailing" secondItem="5Iq-wH-BU7" secondAttribute="trailing" constant="20" id="EfK-yy-yGE"/>
                                             <constraint firstAttribute="trailing" secondItem="fNC-hL-xXi" secondAttribute="trailing" constant="16" id="GPw-ZX-k9M"/>
                                             <constraint firstItem="fNC-hL-xXi" firstAttribute="leading" secondItem="TA2-nA-w3W" secondAttribute="leading" constant="16" id="H2N-hl-Xme"/>
+                                            <constraint firstAttribute="trailing" secondItem="D1L-M7-2LW" secondAttribute="trailing" constant="20" id="Iih-2V-1GZ"/>
                                             <constraint firstItem="cKC-oX-16J" firstAttribute="top" secondItem="TA2-nA-w3W" secondAttribute="top" constant="16" id="Lkk-cY-g6R"/>
+                                            <constraint firstItem="D1L-M7-2LW" firstAttribute="leading" secondItem="TA2-nA-w3W" secondAttribute="leading" constant="20" id="SbP-CW-h8Q"/>
                                             <constraint firstAttribute="trailing" secondItem="cKC-oX-16J" secondAttribute="trailing" constant="16" id="V4G-Kb-d4B"/>
                                             <constraint firstItem="cKC-oX-16J" firstAttribute="leading" secondItem="TA2-nA-w3W" secondAttribute="leading" constant="16" id="ZD0-VA-3kS"/>
                                             <constraint firstItem="5Iq-wH-BU7" firstAttribute="top" secondItem="fNC-hL-xXi" secondAttribute="bottom" constant="12" id="ZoU-qI-KLI"/>
                                             <constraint firstItem="5Iq-wH-BU7" firstAttribute="leading" secondItem="TA2-nA-w3W" secondAttribute="leading" constant="20" id="aQJ-Yr-hga"/>
                                             <constraint firstItem="Nb6-vP-jA8" firstAttribute="top" secondItem="cKC-oX-16J" secondAttribute="bottom" constant="12" id="ie9-Yy-e4s"/>
-                                            <constraint firstAttribute="height" constant="1300" id="m5o-e6-Afx"/>
+                                            <constraint firstAttribute="height" priority="250" constant="1458" id="m5o-e6-Afx"/>
                                             <constraint firstItem="Nb6-vP-jA8" firstAttribute="leading" secondItem="TA2-nA-w3W" secondAttribute="leading" constant="16" id="ux9-e4-jKe"/>
                                         </constraints>
                                     </view>
@@ -113,7 +125,7 @@
                             <constraint firstItem="aOD-fn-PjG" firstAttribute="top" secondItem="LX9-XX-GgU" secondAttribute="top" id="v9Y-AE-kIk"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="393" height="1340"/>
+                    <size key="freeformSize" width="393" height="1500"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlJ-X0-3Y5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -584,6 +596,74 @@
             </objects>
             <point key="canvasLocation" x="-254" y="35"/>
         </scene>
+        <!--Study Member Info View Controller-->
+        <scene sceneID="5ur-VN-DSs">
+            <objects>
+                <viewController id="emK-5n-llE" customClass="StudyMemberInfoViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dfI-UY-utT">
+                        <rect key="frame" x="0.0" y="0.0" width="353" height="241"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스터디원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqh-bO-mKn">
+                                <rect key="frame" x="20.000000000000004" y="15.999999999999998" width="55.333333333333343" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="함께할 스터디원을 소개할게요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRh-H5-ECh">
+                                <rect key="frame" x="20" y="41.333333333333336" width="165" height="17"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_group_temp" translatesAutoresizingMaskIntoConstraints="NO" id="b6V-sD-E7Y">
+                                <rect key="frame" x="20" y="70.333333333333329" width="104" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="GDp-yK-B08"/>
+                                    <constraint firstAttribute="height" constant="32" id="z00-ea-bda"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스터디장의 승인을 기다리고 있어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHt-aY-8I0">
+                                <rect key="frame" x="20" y="160.33333333333334" width="193" height="17"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_group2_temp" translatesAutoresizingMaskIntoConstraints="NO" id="6d9-tc-97U">
+                                <rect key="frame" x="20" y="189.33333333333334" width="140" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="NsA-zQ-p4d"/>
+                                    <constraint firstAttribute="width" constant="140" id="pjW-sD-KLn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="승인 대기 멤버" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lds-hq-CW4">
+                                <rect key="frame" x="20" y="134.33333333333334" width="91" height="20"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Lds-hq-CW4" firstAttribute="leading" secondItem="dfI-UY-utT" secondAttribute="leading" constant="20" id="6IX-QG-xr8"/>
+                            <constraint firstItem="xqh-bO-mKn" firstAttribute="leading" secondItem="dfI-UY-utT" secondAttribute="leading" constant="20" id="GKk-as-FP3"/>
+                            <constraint firstItem="Lds-hq-CW4" firstAttribute="top" secondItem="b6V-sD-E7Y" secondAttribute="bottom" constant="32" id="La6-lt-T99"/>
+                            <constraint firstItem="6d9-tc-97U" firstAttribute="top" secondItem="QHt-aY-8I0" secondAttribute="bottom" constant="12" id="QQ7-Kk-DMV"/>
+                            <constraint firstItem="eRh-H5-ECh" firstAttribute="leading" secondItem="dfI-UY-utT" secondAttribute="leading" constant="20" id="UAA-wx-JIS"/>
+                            <constraint firstItem="QHt-aY-8I0" firstAttribute="top" secondItem="Lds-hq-CW4" secondAttribute="bottom" constant="6" id="Um2-iY-Kyx"/>
+                            <constraint firstItem="b6V-sD-E7Y" firstAttribute="leading" secondItem="dfI-UY-utT" secondAttribute="leading" constant="20" id="ai2-wx-lvN"/>
+                            <constraint firstItem="QHt-aY-8I0" firstAttribute="leading" secondItem="Lds-hq-CW4" secondAttribute="leading" id="dfo-ww-P8F"/>
+                            <constraint firstItem="xqh-bO-mKn" firstAttribute="top" secondItem="dfI-UY-utT" secondAttribute="top" constant="16" id="eW4-V8-1iF"/>
+                            <constraint firstItem="eRh-H5-ECh" firstAttribute="top" secondItem="xqh-bO-mKn" secondAttribute="bottom" constant="6" id="udZ-Oz-8nJ"/>
+                            <constraint firstItem="b6V-sD-E7Y" firstAttribute="top" secondItem="eRh-H5-ECh" secondAttribute="bottom" constant="12" id="w98-ul-mEd"/>
+                            <constraint firstItem="6d9-tc-97U" firstAttribute="leading" secondItem="QHt-aY-8I0" secondAttribute="leading" id="yej-hu-ZJ1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Je-qk-Nis" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1627" y="192"/>
+        </scene>
     </scenes>
     <resources>
         <image name="circle" width="6" height="6"/>
@@ -593,6 +673,8 @@
         <image name="icon_circle_calendar" width="26" height="26"/>
         <image name="icon_circle_member" width="26" height="26"/>
         <image name="icon_locate_temp" width="122" height="48"/>
+        <image name="user_group2_temp" width="308" height="92"/>
+        <image name="user_group_temp" width="236" height="92"/>
         <namedColor name="bc-studyDetail">
             <color red="0.97647058823529409" green="0.96078431372549022" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

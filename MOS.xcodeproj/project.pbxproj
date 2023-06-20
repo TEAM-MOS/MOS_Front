@@ -49,6 +49,7 @@
 		5AC619B42A19E5BD00966219 /* SurveyInterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC619B32A19E5BD00966219 /* SurveyInterviewViewController.swift */; };
 		E6FE083ADFD94888B7BAA4B1 /* Pods_MOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8023C552FBAB477251468C8 /* Pods_MOS.framework */; };
 		F304A13D2A41FDC90066036B /* StudyDetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304A13C2A41FDC90066036B /* StudyDetailInfoViewController.swift */; };
+		F304A13F2A4206240066036B /* StudyMemberInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304A13E2A4206240066036B /* StudyMemberInfoViewController.swift */; };
 		F33B43462A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B43452A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		9F0823D3883FA48E77D1F2F6 /* Pods-MOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOS.release.xcconfig"; path = "Target Support Files/Pods-MOS/Pods-MOS.release.xcconfig"; sourceTree = "<group>"; };
 		C8023C552FBAB477251468C8 /* Pods_MOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F304A13C2A41FDC90066036B /* StudyDetailInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyDetailInfoViewController.swift; sourceTree = "<group>"; };
+		F304A13E2A4206240066036B /* StudyMemberInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyMemberInfoViewController.swift; sourceTree = "<group>"; };
 		F33B43452A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRecruitInfoViewController.swift; sourceTree = "<group>"; };
 		FDBE30F43F34FDAD99EE86F2 /* Pods-MOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOS.debug.xcconfig"; path = "Target Support Files/Pods-MOS/Pods-MOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +171,7 @@
 				2FE658BC2A3B50AE008D7403 /* StudyOutlineViewController.swift */,
 				F33B43452A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift */,
 				F304A13C2A41FDC90066036B /* StudyDetailInfoViewController.swift */,
+				F304A13E2A4206240066036B /* StudyMemberInfoViewController.swift */,
 			);
 			path = MOS;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				2F9DAF532A3222A5007CA960 /* StudyDetailViewController.swift in Sources */,
 				F304A13D2A41FDC90066036B /* StudyDetailInfoViewController.swift in Sources */,
 				2F2B3E232A1DBE52008B0506 /* TabMenuViewController.swift in Sources */,
+				F304A13F2A4206240066036B /* StudyMemberInfoViewController.swift in Sources */,
 				2FA142762A149024006AA91B /* AppDelegate.swift in Sources */,
 				5AC619932A170BF300966219 /* SurveyViewController.swift in Sources */,
 				2FA142782A149024006AA91B /* SceneDelegate.swift in Sources */,
