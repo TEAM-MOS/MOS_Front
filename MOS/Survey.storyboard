@@ -25,19 +25,19 @@
         <!--Survey View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="SurveyViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="SurveyViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="건너뛰기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVv-IE-8Ns">
-                                <rect key="frame" x="328.33333333333331" y="79" width="48.666666666666686" height="17"/>
+                                <rect key="frame" x="328.33333333333331" y="20" width="48.666666666666686" height="17"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
                                 <color key="textColor" name="gray-2"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cI-hK-Z8E">
-                                <rect key="frame" x="16" y="730" width="361" height="48"/>
+                                <rect key="frame" x="16" y="764" width="361" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="voP-s1-BPG"/>
                                 </constraints>
@@ -84,19 +84,19 @@
                                 </buttonConfiguration>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgn-lx-FWN">
-                                <rect key="frame" x="-2" y="257.66666666666669" width="397" height="362.00000000000006"/>
+                                <rect key="frame" x="-2" y="245.66666666666663" width="397" height="361"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_survey_start" translatesAutoresizingMaskIntoConstraints="NO" id="imf-kN-pN3">
-                                        <rect key="frame" x="135" y="20" width="127" height="140.33333333333334"/>
+                                        <rect key="frame" x="135" y="20.000000000000028" width="127" height="140.33333333333334"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취업 준비도 테스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgJ-5x-irg">
-                                        <rect key="frame" x="110" y="220.33333333333331" width="177" height="28"/>
+                                        <rect key="frame" x="108.66666666666667" y="220.33333333333334" width="179.66666666666663" height="28"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2B-Nu-tan">
-                                        <rect key="frame" x="61" y="264.33333333333331" width="275.33333333333326" height="33.666666666666686"/>
+                                        <rect key="frame" x="59.666666666666657" y="264.33333333333337" width="277.66666666666674" height="32.666666666666686"/>
                                         <string key="text">어떤 스터디를 들어야 할 지 모르겠다고요?
 테스트를 통해 나에게 필요한 스터디를 알아보세요!</string>
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
@@ -110,13 +110,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인/적성" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxA-cP-CKG">
-                                        <rect key="frame" x="268" y="52" width="36" height="14"/>
+                                        <rect key="frame" x="268" y="52.333333333333343" width="36" height="14"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                         <color key="textColor" name="gray-2"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1P-Ze-Lkh">
-                                        <rect key="frame" x="108" y="52" width="21" height="14"/>
+                                        <rect key="frame" x="108" y="52.333333333333343" width="21" height="14"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                         <color key="textColor" name="gray-2"/>
                                         <nil key="highlightedColor"/>
@@ -154,39 +154,43 @@
                             <constraint firstItem="fgn-lx-FWN" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="fyP-na-Izp"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="PB4-0b-BIK"/>
                     <connections>
+                        <outlet property="skipBtn" destination="WVv-IE-8Ns" id="XXf-NH-ZE3"/>
                         <outlet property="startButton" destination="8cI-hK-Z8E" id="Lua-1T-Nr9"/>
+                        <segue destination="irJ-lY-i7m" kind="show" identifier="navToFirstSurvey" id="R1o-fu-MVJ"/>
+                        <segue destination="btY-7y-dGP" kind="show" identifier="Home" id="XOI-Dn-U2Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-69" y="-3"/>
+            <point key="canvasLocation" x="2" y="-4"/>
         </scene>
-        <!--Survey Interview View Controller-->
+        <!--Survey FirstVC-->
         <scene sceneID="rfo-VJ-ygw">
             <objects>
-                <viewController id="irJ-lY-i7m" customClass="SurveyInterviewViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="irJ-lY-i7m" customClass="SurveyFirstVC" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4bx-yF-0t4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEq-Pg-3L6">
-                                <rect key="frame" x="16" y="59" width="361" height="1407"/>
+                                <rect key="frame" x="16" y="0.0" width="361" height="1500"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvJ-iJ-4G0" userLabel="contentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="1050.6666666666667"/>
+                                        <rect key="frame" x="0.0" y="10" width="361" height="1050.3333333333333"/>
                                         <subviews>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="Pq5-vX-PRT">
                                                 <rect key="frame" x="2" y="52" width="357" height="4"/>
                                             </progressView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="82M-oZ-LGr">
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="82M-oZ-LGr">
                                                 <rect key="frame" x="0.0" y="0.0" width="361" height="32"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_survey_back" translatesAutoresizingMaskIntoConstraints="NO" id="H7q-dM-hoh">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_survey_back" translatesAutoresizingMaskIntoConstraints="NO" id="J2s-GT-cdl">
                                                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="32" id="FzG-na-EdJ"/>
-                                                            <constraint firstAttribute="height" constant="32" id="pJC-bd-9uD"/>
+                                                            <constraint firstAttribute="width" constant="32" id="Qc3-Gf-NrQ"/>
+                                                            <constraint firstAttribute="height" constant="32" id="h6p-87-85i"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설문조사" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bl-Lp-g5W">
@@ -205,7 +209,7 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42c-TK-xFf" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                <rect key="frame" x="2" y="270.33333333333331" width="359" height="148.33333333333331"/>
+                                                <rect key="frame" x="2" y="270" width="359" height="148.33333333333337"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="지원하는 직종에 대해 얼마나 잘 알고 있는 질문에 답변할 수 있다."/>
@@ -219,28 +223,28 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="5kY-Xw-xDy" userLabel="category">
-                                                <rect key="frame" x="2" y="68" width="357" height="14.333333333333329"/>
+                                                <rect key="frame" x="2" y="68" width="357" height="14"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pR8-Km-Gix">
-                                                        <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="14.333333333333334"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="14"/>
                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                         <color key="textColor" name="gray-2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자기소개서" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6d-J5-SEx">
-                                                        <rect key="frame" x="89.666666666666686" y="0.0" width="88.333333333333314" height="14.333333333333334"/>
+                                                        <rect key="frame" x="89.666666666666686" y="0.0" width="88.333333333333314" height="14"/>
                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                         <color key="textColor" name="gray-2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="산업&amp;기업 분석" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hG-af-EqP">
-                                                        <rect key="frame" x="179" y="0.0" width="88.666666666666686" height="14.333333333333334"/>
+                                                        <rect key="frame" x="179" y="0.0" width="88.666666666666686" height="14"/>
                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                         <color key="textColor" name="gray-2"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사PT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3y-M9-CpJ">
-                                                        <rect key="frame" x="268.66666666666669" y="0.0" width="88.333333333333314" height="14.333333333333334"/>
+                                                        <rect key="frame" x="268.66666666666669" y="0.0" width="88.333333333333314" height="14"/>
                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                         <color key="textColor" name="gray-2"/>
                                                         <nil key="highlightedColor"/>
@@ -252,7 +256,7 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPt-XG-vrA" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                <rect key="frame" x="2" y="438.66666666666674" width="359" height="148"/>
+                                                <rect key="frame" x="2" y="438.33333333333326" width="359" height="148"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="자신의 조직생활에 있어서 장단점을 묻는 질문에 답변할 수 있다."/>
@@ -266,7 +270,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXG-bH-UJh" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                <rect key="frame" x="2" y="606.66666666666663" width="359" height="148"/>
+                                                <rect key="frame" x="2" y="606.33333333333337" width="359" height="148"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="직무와 관련되어 위기상황을 극복한 경험을 묻는 질문에 답변할 수 있다."/>
@@ -280,7 +284,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKA-Yh-6jd" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                <rect key="frame" x="2" y="774.66666666666663" width="359" height="148"/>
+                                                <rect key="frame" x="2" y="774.33333333333337" width="359" height="148"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="새로이 입사할 조직문화에 대한 적응방법을 묻는 질문에 답변할 수 있다."/>
@@ -294,7 +298,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vdg-S9-dCi">
-                                                <rect key="frame" x="2" y="962.66666666666663" width="359" height="48"/>
+                                                <rect key="frame" x="2" y="962.33333333333337" width="359" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="Bpg-VJ-ov6"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="FtI-e6-gsb"/>
@@ -326,7 +330,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZEB-qQ-DZ5" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                <rect key="frame" x="2" y="102.33333333333334" width="359" height="148"/>
+                                                <rect key="frame" x="2" y="102" width="359" height="148"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="148" id="7gF-T2-8QS"/>
@@ -384,7 +388,7 @@
                                     <constraint firstItem="gvJ-iJ-4G0" firstAttribute="leading" secondItem="ds0-Xf-Sud" secondAttribute="leading" id="7Q7-6T-A2r"/>
                                     <constraint firstItem="gvJ-iJ-4G0" firstAttribute="trailing" secondItem="ds0-Xf-Sud" secondAttribute="trailing" id="UQk-CO-xLB"/>
                                     <constraint firstItem="gvJ-iJ-4G0" firstAttribute="bottom" secondItem="ds0-Xf-Sud" secondAttribute="bottom" id="XeE-ct-Jwh"/>
-                                    <constraint firstItem="gvJ-iJ-4G0" firstAttribute="top" secondItem="ds0-Xf-Sud" secondAttribute="top" id="pQO-V5-yXl"/>
+                                    <constraint firstItem="gvJ-iJ-4G0" firstAttribute="top" secondItem="ds0-Xf-Sud" secondAttribute="top" constant="10" id="pQO-V5-yXl"/>
                                     <constraint firstItem="gvJ-iJ-4G0" firstAttribute="width" secondItem="V4C-fB-jK0" secondAttribute="width" id="rYa-fp-Y53"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="ds0-Xf-Sud"/>
@@ -400,16 +404,25 @@
                             <constraint firstItem="PQ7-xb-5MI" firstAttribute="top" secondItem="FEq-Pg-3L6" secondAttribute="top" id="rdA-K3-05d"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="jsM-Cy-8nQ"/>
                     <size key="freeformSize" width="393" height="1500"/>
+                    <connections>
+                        <outlet property="backBtn" destination="J2s-GT-cdl" id="mZk-iz-pp1"/>
+                        <outlet property="exitBtn" destination="DPb-3t-0hx" id="bcA-0j-Rz7"/>
+                        <outlet property="startButton" destination="vdg-S9-dCi" id="UqM-Vz-Z4n"/>
+                        <segue destination="B9w-rp-Cc9" kind="show" identifier="navToSecondSurvey" id="zKz-8r-g2D"/>
+                        <segue destination="Y6W-OH-hqX" kind="show" identifier="back1" id="Q3E-Tl-ywE"/>
+                        <segue destination="btY-7y-dGP" kind="show" identifier="Home" id="4nh-J5-FUj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kqp-w3-Y7l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="803.81679389312978" y="-2.8169014084507045"/>
+            <point key="canvasLocation" x="849.61832061068696" y="-4.2253521126760569"/>
         </scene>
         <!--Survey Selfintroduce View-->
         <scene sceneID="e3u-Sq-NEe">
             <objects>
-                <viewController id="B9w-rp-Cc9" userLabel="Survey Selfintroduce View" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="B9w-rp-Cc9" userLabel="Survey Selfintroduce View" customClass="SurveySecondVC" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2sO-nC-YX1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -419,10 +432,10 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asn-av-5dA">
-                                        <rect key="frame" x="16" y="59" width="361" height="1407"/>
+                                        <rect key="frame" x="16" y="0.0" width="361" height="1500"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3u-RZ-Sgt" userLabel="contentView">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="1050.6666666666667"/>
+                                                <rect key="frame" x="0.0" y="10" width="361" height="1050.6666666666667"/>
                                                 <subviews>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fO4-wz-yOu">
                                                         <rect key="frame" x="2" y="52" width="357" height="4"/>
@@ -467,28 +480,28 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="L0V-Fg-2FI" userLabel="category">
-                                                        <rect key="frame" x="2" y="68" width="357" height="14.333333333333329"/>
+                                                        <rect key="frame" x="2" y="68" width="357" height="14"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JB3-jL-o8v">
-                                                                <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="14.333333333333334"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="14"/>
                                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                 <color key="textColor" name="gray-2"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자기소개서" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0R-xs-Avm">
-                                                                <rect key="frame" x="89.666666666666686" y="0.0" width="88.333333333333314" height="14.333333333333334"/>
+                                                                <rect key="frame" x="89.666666666666686" y="0.0" width="88.333333333333314" height="14"/>
                                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                 <color key="textColor" name="gray-2"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="산업&amp;기업 분석" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPy-LT-28L">
-                                                                <rect key="frame" x="179" y="0.0" width="88.666666666666686" height="14.333333333333334"/>
+                                                                <rect key="frame" x="179" y="0.0" width="88.666666666666686" height="14"/>
                                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                 <color key="textColor" name="gray-2"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사PT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd6-II-18W">
-                                                                <rect key="frame" x="268.66666666666669" y="0.0" width="88.333333333333314" height="14.333333333333334"/>
+                                                                <rect key="frame" x="268.66666666666669" y="0.0" width="88.333333333333314" height="14"/>
                                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                 <color key="textColor" name="gray-2"/>
                                                                 <nil key="highlightedColor"/>
@@ -573,11 +586,11 @@
                                                             </attributedString>
                                                         </buttonConfiguration>
                                                     </button>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H79-hn-xfZ" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                        <rect key="frame" x="2" y="102.33333333333334" width="359" height="148"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndo-zT-Mf9" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
+                                                        <rect key="frame" x="2" y="102.00000000000001" width="359" height="148.33333333333337"/>
                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" priority="250" constant="148" id="No2-f6-THv"/>
+                                                            <constraint firstAttribute="height" priority="250" constant="148.33000000000001" id="RDC-Zf-gqq"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="성장과정을 통해 본인의 가치관이나 성격이 지원한 직무에 적합한지 표현할 수 있다."/>
@@ -594,20 +607,19 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="C6j-uQ-iQi" firstAttribute="leading" secondItem="6zl-c8-gyW" secondAttribute="leading" id="01z-HP-xce"/>
+                                                    <constraint firstItem="GC5-kK-Yiv" firstAttribute="top" secondItem="ndo-zT-Mf9" secondAttribute="bottom" constant="20" id="2ds-Lf-Jio"/>
                                                     <constraint firstItem="ndB-CE-JQv" firstAttribute="leading" secondItem="HbB-Tx-KLI" secondAttribute="leading" id="3Xi-1k-Iwr"/>
-                                                    <constraint firstItem="H79-hn-xfZ" firstAttribute="leading" secondItem="G3u-RZ-Sgt" secondAttribute="leading" constant="2" id="4xB-lN-0Po"/>
-                                                    <constraint firstItem="H79-hn-xfZ" firstAttribute="top" secondItem="L0V-Fg-2FI" secondAttribute="bottom" constant="20" id="91s-zy-X23"/>
-                                                    <constraint firstItem="GC5-kK-Yiv" firstAttribute="leading" secondItem="H79-hn-xfZ" secondAttribute="leading" id="9yf-Kc-uAA"/>
-                                                    <constraint firstItem="GC5-kK-Yiv" firstAttribute="height" secondItem="H79-hn-xfZ" secondAttribute="height" multiplier="1.00204" priority="250" id="AgG-ot-HUx"/>
                                                     <constraint firstItem="L0V-Fg-2FI" firstAttribute="leading" secondItem="G3u-RZ-Sgt" secondAttribute="leading" constant="2" id="CJ3-26-gl1"/>
                                                     <constraint firstItem="ndB-CE-JQv" firstAttribute="trailing" secondItem="HbB-Tx-KLI" secondAttribute="trailing" id="ES0-xc-FxP"/>
-                                                    <constraint firstAttribute="trailing" secondItem="H79-hn-xfZ" secondAttribute="trailing" id="F3o-hY-1Bo"/>
+                                                    <constraint firstItem="GC5-kK-Yiv" firstAttribute="trailing" secondItem="ndo-zT-Mf9" secondAttribute="trailing" id="KAv-SK-jPg"/>
                                                     <constraint firstAttribute="bottom" secondItem="C6j-uQ-iQi" secondAttribute="bottom" constant="40" id="KnP-Nv-K6A"/>
+                                                    <constraint firstItem="ndo-zT-Mf9" firstAttribute="top" secondItem="L0V-Fg-2FI" secondAttribute="bottom" constant="20" id="LlM-17-wbm"/>
                                                     <constraint firstItem="ndB-CE-JQv" firstAttribute="height" secondItem="HbB-Tx-KLI" secondAttribute="height" priority="250" id="M7b-Uo-Xd3"/>
                                                     <constraint firstItem="fO4-wz-yOu" firstAttribute="leading" secondItem="G3u-RZ-Sgt" secondAttribute="leading" constant="2" id="MTi-m0-x50"/>
                                                     <constraint firstItem="HbB-Tx-KLI" firstAttribute="leading" secondItem="GC5-kK-Yiv" secondAttribute="leading" id="N5g-zv-jOT"/>
                                                     <constraint firstItem="6zl-c8-gyW" firstAttribute="height" secondItem="ndB-CE-JQv" secondAttribute="height" priority="250" id="NXH-Js-37T"/>
                                                     <constraint firstItem="L0V-Fg-2FI" firstAttribute="top" secondItem="fO4-wz-yOu" secondAttribute="bottom" constant="12" id="OCv-aX-W8V"/>
+                                                    <constraint firstItem="GC5-kK-Yiv" firstAttribute="leading" secondItem="ndo-zT-Mf9" secondAttribute="leading" id="P3C-o4-uOc"/>
                                                     <constraint firstItem="MQb-2C-9z5" firstAttribute="top" secondItem="G3u-RZ-Sgt" secondAttribute="top" id="PJF-cz-UqH"/>
                                                     <constraint firstItem="C6j-uQ-iQi" firstAttribute="top" secondItem="6zl-c8-gyW" secondAttribute="bottom" constant="40" id="TAr-eS-jSF"/>
                                                     <constraint firstItem="6zl-c8-gyW" firstAttribute="top" secondItem="ndB-CE-JQv" secondAttribute="bottom" constant="20" id="YHz-y2-0sf"/>
@@ -618,19 +630,20 @@
                                                     <constraint firstItem="CKB-dW-ADV" firstAttribute="centerX" secondItem="G3u-RZ-Sgt" secondAttribute="centerX" id="f4R-fO-Vut"/>
                                                     <constraint firstItem="CKB-dW-ADV" firstAttribute="leading" secondItem="G3u-RZ-Sgt" secondAttribute="leading" id="fhS-Yy-JA6"/>
                                                     <constraint firstItem="C6j-uQ-iQi" firstAttribute="trailing" secondItem="6zl-c8-gyW" secondAttribute="trailing" id="gXA-HX-LLX"/>
+                                                    <constraint firstItem="ndo-zT-Mf9" firstAttribute="leading" secondItem="G3u-RZ-Sgt" secondAttribute="leading" constant="2" id="gtY-Nx-Pau"/>
                                                     <constraint firstItem="HbB-Tx-KLI" firstAttribute="height" secondItem="GC5-kK-Yiv" secondAttribute="height" multiplier="0.997959" priority="250" id="hH0-8A-bVT"/>
                                                     <constraint firstItem="HbB-Tx-KLI" firstAttribute="trailing" secondItem="GC5-kK-Yiv" secondAttribute="trailing" id="kyB-2E-dpb"/>
-                                                    <constraint firstItem="GC5-kK-Yiv" firstAttribute="top" secondItem="H79-hn-xfZ" secondAttribute="bottom" constant="20" id="nav-ow-HNT"/>
                                                     <constraint firstItem="6zl-c8-gyW" firstAttribute="trailing" secondItem="ndB-CE-JQv" secondAttribute="trailing" id="p09-tT-Znf"/>
-                                                    <constraint firstItem="GC5-kK-Yiv" firstAttribute="trailing" secondItem="H79-hn-xfZ" secondAttribute="trailing" id="pa6-CP-i87"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ndo-zT-Mf9" secondAttribute="trailing" id="qLe-G7-qHP"/>
                                                     <constraint firstItem="fO4-wz-yOu" firstAttribute="top" secondItem="CKB-dW-ADV" secondAttribute="bottom" constant="20" id="rxw-jt-OxA"/>
                                                     <constraint firstItem="ndB-CE-JQv" firstAttribute="top" secondItem="HbB-Tx-KLI" secondAttribute="bottom" constant="20" id="wHa-HI-IPb"/>
+                                                    <constraint firstItem="GC5-kK-Yiv" firstAttribute="height" secondItem="ndo-zT-Mf9" secondAttribute="height" priority="250" id="xUC-rC-4OC"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="G3u-RZ-Sgt" firstAttribute="width" secondItem="bbV-Es-KlG" secondAttribute="width" id="BC9-yE-71t"/>
-                                            <constraint firstItem="G3u-RZ-Sgt" firstAttribute="top" secondItem="nWn-lT-vOV" secondAttribute="top" id="LE3-YT-eHj"/>
+                                            <constraint firstItem="G3u-RZ-Sgt" firstAttribute="top" secondItem="nWn-lT-vOV" secondAttribute="top" constant="10" id="LE3-YT-eHj"/>
                                             <constraint firstItem="G3u-RZ-Sgt" firstAttribute="bottom" secondItem="nWn-lT-vOV" secondAttribute="bottom" id="NKo-03-zC7"/>
                                             <constraint firstItem="G3u-RZ-Sgt" firstAttribute="trailing" secondItem="nWn-lT-vOV" secondAttribute="trailing" id="UO2-jb-j9d"/>
                                             <constraint firstItem="G3u-RZ-Sgt" firstAttribute="leading" secondItem="nWn-lT-vOV" secondAttribute="leading" id="m41-DZ-EDK"/>
@@ -652,16 +665,25 @@
                         <viewLayoutGuide key="safeArea" id="nno-8a-AGC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="exh-dU-9Hq"/>
                     <size key="freeformSize" width="393" height="1500"/>
+                    <connections>
+                        <outlet property="backBtn" destination="bRM-bg-lgE" id="Adp-VJ-wMM"/>
+                        <outlet property="exitBtn" destination="Wa3-xz-Ceo" id="qQt-5M-MCT"/>
+                        <outlet property="startButton" destination="C6j-uQ-iQi" id="AlG-Fi-dZo"/>
+                        <segue destination="hwb-SP-u5z" kind="show" identifier="navToThirdSurvey" id="3xO-mL-oMW"/>
+                        <segue destination="irJ-lY-i7m" kind="show" identifier="back2" id="Yk5-oC-cVC"/>
+                        <segue destination="btY-7y-dGP" kind="show" identifier="Home" id="A0x-UG-p01"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sny-rj-WMY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1648" y="-3"/>
+            <point key="canvasLocation" x="1647" y="-4"/>
         </scene>
         <!--Survey Companyanalysis View-->
         <scene sceneID="3Is-ug-H9R">
             <objects>
-                <viewController id="hwb-SP-u5z" userLabel="Survey Companyanalysis View" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="hwb-SP-u5z" userLabel="Survey Companyanalysis View" customClass="SurveyThirdVC" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BSu-cU-B01">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -675,10 +697,10 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FB4-nC-MaF">
-                                                <rect key="frame" x="16" y="59" width="361" height="1407"/>
+                                                <rect key="frame" x="16" y="0.0" width="361" height="1500"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BoS-hv-qZc" userLabel="contentView">
-                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="1050.6666666666667"/>
+                                                        <rect key="frame" x="0.0" y="10" width="361" height="1050.3333333333333"/>
                                                         <subviews>
                                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="EC8-kz-PBY">
                                                                 <rect key="frame" x="2" y="52" width="357" height="4"/>
@@ -709,7 +731,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCd-8f-Umm" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                <rect key="frame" x="2" y="270.33333333333331" width="359" height="148.33333333333331"/>
+                                                                <rect key="frame" x="2" y="270" width="359" height="148.33333333333337"/>
                                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="산업 / 직무 분석을 하는 방법에 대해 알고 있다."/>
@@ -723,28 +745,28 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="HE8-vS-66u" userLabel="category">
-                                                                <rect key="frame" x="2" y="68" width="357" height="14.333333333333329"/>
+                                                                <rect key="frame" x="2" y="68" width="357" height="14"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vK-Ss-hTA">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="14.333333333333334"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="14"/>
                                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                         <color key="textColor" name="gray-2"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자기소개서" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPW-7j-hNV">
-                                                                        <rect key="frame" x="89.666666666666686" y="0.0" width="88.333333333333314" height="14.333333333333334"/>
+                                                                        <rect key="frame" x="89.666666666666686" y="0.0" width="88.333333333333314" height="14"/>
                                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                         <color key="textColor" name="gray-2"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="산업&amp;기업 분석" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8P-fH-db1">
-                                                                        <rect key="frame" x="179" y="0.0" width="88.666666666666686" height="14.333333333333334"/>
+                                                                        <rect key="frame" x="179" y="0.0" width="88.666666666666686" height="14"/>
                                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                         <color key="textColor" name="gray-2"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사PT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wb6-1I-XGZ">
-                                                                        <rect key="frame" x="268.66666666666669" y="0.0" width="88.333333333333314" height="14.333333333333334"/>
+                                                                        <rect key="frame" x="268.66666666666669" y="0.0" width="88.333333333333314" height="14"/>
                                                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                         <color key="textColor" name="gray-2"/>
                                                                         <nil key="highlightedColor"/>
@@ -756,7 +778,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2g-My-nYd" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                <rect key="frame" x="2" y="438.66666666666674" width="359" height="148"/>
+                                                                <rect key="frame" x="2" y="438.33333333333326" width="359" height="148"/>
                                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="산업 / 직무에 대한 조사결과를 통해 나의 생각을 막힘없이 말할 수 있다."/>
@@ -770,7 +792,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5p-AF-sVn" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                <rect key="frame" x="2" y="606.66666666666663" width="359" height="148"/>
+                                                                <rect key="frame" x="2" y="606.33333333333337" width="359" height="148"/>
                                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="직무를 분석하기 위해 현직자를 만나는 것이 중요하다고 생각한다."/>
@@ -783,22 +805,8 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="questionNum" value="4"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C3T-tn-25d" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                <rect key="frame" x="2" y="774.66666666666663" width="359" height="148"/>
-                                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="직무를 분석하기 위해 현직자를 만난다면 어떤 질문을 준비해야 할지 잘 알고 있다."/>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="containerborder">
-                                                                        <integer key="value" value="1"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonborder">
-                                                                        <integer key="value" value="2"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="questionNum" value="5"/>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </view>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ynL-GY-auW">
-                                                                <rect key="frame" x="2" y="962.66666666666663" width="359" height="48"/>
+                                                                <rect key="frame" x="2" y="962.33333333333337" width="359" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="AWA-JV-jpq"/>
                                                                     <constraint firstAttribute="height" constant="48" id="VsF-Tj-1q0"/>
@@ -830,7 +838,7 @@
                                                                 </buttonConfiguration>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdc-um-mma" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                <rect key="frame" x="2" y="102.33333333333334" width="359" height="148"/>
+                                                                <rect key="frame" x="2" y="102" width="359" height="148"/>
                                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" priority="250" constant="148" id="zNY-za-6CX"/>
@@ -846,6 +854,20 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="questionNum" value="1"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tsx-nV-9Ok" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
+                                                                <rect key="frame" x="2" y="774.33333333333337" width="359" height="148"/>
+                                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="직무를 분석하기 위해 현직자를 만난다면 어떤 질문을 준비해야 할지 잘 알고 있다."/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="containerborder">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonborder">
+                                                                        <integer key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="questionNum" value="5"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -856,31 +878,31 @@
                                                             <constraint firstItem="ZCd-8f-Umm" firstAttribute="top" secondItem="hdc-um-mma" secondAttribute="bottom" constant="20" id="7aH-LH-yQz"/>
                                                             <constraint firstItem="HE8-vS-66u" firstAttribute="centerX" secondItem="BoS-hv-qZc" secondAttribute="centerX" id="8ZA-jb-guf"/>
                                                             <constraint firstAttribute="trailing" secondItem="EC8-kz-PBY" secondAttribute="trailing" constant="2" id="9Pk-nk-wbx"/>
-                                                            <constraint firstItem="ynL-GY-auW" firstAttribute="top" secondItem="C3T-tn-25d" secondAttribute="bottom" constant="40" id="9ph-V7-iWf"/>
                                                             <constraint firstItem="u5p-AF-sVn" firstAttribute="trailing" secondItem="G2g-My-nYd" secondAttribute="trailing" id="AQ1-0l-v4T"/>
+                                                            <constraint firstItem="ynL-GY-auW" firstAttribute="top" secondItem="Tsx-nV-9Ok" secondAttribute="bottom" constant="40" id="ARy-h9-pGt"/>
+                                                            <constraint firstItem="Tsx-nV-9Ok" firstAttribute="height" secondItem="u5p-AF-sVn" secondAttribute="height" priority="250" id="D94-Yl-M7F"/>
                                                             <constraint firstItem="G2g-My-nYd" firstAttribute="trailing" secondItem="ZCd-8f-Umm" secondAttribute="trailing" id="H09-kD-dgc"/>
-                                                            <constraint firstItem="C3T-tn-25d" firstAttribute="trailing" secondItem="u5p-AF-sVn" secondAttribute="trailing" id="JMY-9d-ydl"/>
-                                                            <constraint firstItem="C3T-tn-25d" firstAttribute="height" secondItem="u5p-AF-sVn" secondAttribute="height" priority="250" id="LEC-wa-cy1"/>
+                                                            <constraint firstItem="ynL-GY-auW" firstAttribute="trailing" secondItem="Tsx-nV-9Ok" secondAttribute="trailing" id="MGF-fo-2XR"/>
                                                             <constraint firstAttribute="trailing" secondItem="hdc-um-mma" secondAttribute="trailing" id="OXo-aB-cNe"/>
-                                                            <constraint firstItem="ynL-GY-auW" firstAttribute="leading" secondItem="C3T-tn-25d" secondAttribute="leading" id="PFB-yb-VPc"/>
-                                                            <constraint firstItem="C3T-tn-25d" firstAttribute="top" secondItem="u5p-AF-sVn" secondAttribute="bottom" constant="20" id="Pfw-aY-m0b"/>
+                                                            <constraint firstItem="Tsx-nV-9Ok" firstAttribute="leading" secondItem="u5p-AF-sVn" secondAttribute="leading" id="Ubk-pT-E0x"/>
                                                             <constraint firstItem="ZCd-8f-Umm" firstAttribute="height" secondItem="hdc-um-mma" secondAttribute="height" multiplier="1.00204" priority="250" id="W5F-k5-b1v"/>
                                                             <constraint firstItem="HE8-vS-66u" firstAttribute="leading" secondItem="BoS-hv-qZc" secondAttribute="leading" constant="2" id="agI-nd-xyi"/>
                                                             <constraint firstItem="u5p-AF-sVn" firstAttribute="leading" secondItem="G2g-My-nYd" secondAttribute="leading" id="bZ2-4U-r58"/>
                                                             <constraint firstItem="u5p-AF-sVn" firstAttribute="top" secondItem="G2g-My-nYd" secondAttribute="bottom" constant="20" id="d7T-8Q-fCi"/>
                                                             <constraint firstItem="HE8-vS-66u" firstAttribute="top" secondItem="EC8-kz-PBY" secondAttribute="bottom" constant="12" id="eq2-sE-xKF"/>
-                                                            <constraint firstItem="ynL-GY-auW" firstAttribute="trailing" secondItem="C3T-tn-25d" secondAttribute="trailing" id="ewQ-nZ-Vt9"/>
                                                             <constraint firstItem="G2g-My-nYd" firstAttribute="height" secondItem="ZCd-8f-Umm" secondAttribute="height" multiplier="0.997959" priority="250" id="gsy-lJ-Sf2"/>
                                                             <constraint firstItem="hdc-um-mma" firstAttribute="leading" secondItem="BoS-hv-qZc" secondAttribute="leading" constant="2" id="hDU-kc-ODq"/>
                                                             <constraint firstItem="epq-0G-wVH" firstAttribute="centerX" secondItem="BoS-hv-qZc" secondAttribute="centerX" id="hQ4-y4-GJP"/>
                                                             <constraint firstItem="EC8-kz-PBY" firstAttribute="leading" secondItem="BoS-hv-qZc" secondAttribute="leading" constant="2" id="hwp-Ab-5Kv"/>
                                                             <constraint firstAttribute="bottom" secondItem="ynL-GY-auW" secondAttribute="bottom" constant="40" id="mRx-zD-65B"/>
                                                             <constraint firstItem="hdc-um-mma" firstAttribute="top" secondItem="HE8-vS-66u" secondAttribute="bottom" constant="20" id="mYa-ye-kLL"/>
-                                                            <constraint firstItem="C3T-tn-25d" firstAttribute="leading" secondItem="u5p-AF-sVn" secondAttribute="leading" id="ngZ-Ho-Xq1"/>
                                                             <constraint firstItem="G2g-My-nYd" firstAttribute="top" secondItem="ZCd-8f-Umm" secondAttribute="bottom" constant="20" id="olo-Uy-lB2"/>
                                                             <constraint firstItem="ZCd-8f-Umm" firstAttribute="trailing" secondItem="hdc-um-mma" secondAttribute="trailing" id="p9e-If-HTm"/>
+                                                            <constraint firstItem="Tsx-nV-9Ok" firstAttribute="trailing" secondItem="u5p-AF-sVn" secondAttribute="trailing" id="pTK-hy-FJ1"/>
+                                                            <constraint firstItem="ynL-GY-auW" firstAttribute="leading" secondItem="Tsx-nV-9Ok" secondAttribute="leading" id="rCI-o8-nye"/>
                                                             <constraint firstItem="hc1-3n-fn1" firstAttribute="top" secondItem="BoS-hv-qZc" secondAttribute="top" id="rqZ-U1-Rip"/>
                                                             <constraint firstItem="u5p-AF-sVn" firstAttribute="height" secondItem="G2g-My-nYd" secondAttribute="height" priority="250" id="spJ-qs-TPz"/>
+                                                            <constraint firstItem="Tsx-nV-9Ok" firstAttribute="top" secondItem="u5p-AF-sVn" secondAttribute="bottom" constant="20" id="vfB-f0-vsP"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -888,7 +910,7 @@
                                                     <constraint firstItem="BoS-hv-qZc" firstAttribute="trailing" secondItem="lHt-9d-qd9" secondAttribute="trailing" id="5c8-uu-Z8b"/>
                                                     <constraint firstItem="BoS-hv-qZc" firstAttribute="bottom" secondItem="lHt-9d-qd9" secondAttribute="bottom" id="aey-6t-8c7"/>
                                                     <constraint firstItem="BoS-hv-qZc" firstAttribute="width" secondItem="I6V-1r-UAz" secondAttribute="width" id="bbJ-no-Rh7"/>
-                                                    <constraint firstItem="BoS-hv-qZc" firstAttribute="top" secondItem="lHt-9d-qd9" secondAttribute="top" id="kXM-qi-nle"/>
+                                                    <constraint firstItem="BoS-hv-qZc" firstAttribute="top" secondItem="lHt-9d-qd9" secondAttribute="top" constant="10" id="kXM-qi-nle"/>
                                                     <constraint firstItem="BoS-hv-qZc" firstAttribute="leading" secondItem="lHt-9d-qd9" secondAttribute="leading" id="p96-PR-57A"/>
                                                 </constraints>
                                                 <viewLayoutGuide key="contentLayoutGuide" id="lHt-9d-qd9"/>
@@ -912,16 +934,25 @@
                         <viewLayoutGuide key="safeArea" id="rAh-VH-1cl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="eRb-XC-AGz"/>
                     <size key="freeformSize" width="393" height="1500"/>
+                    <connections>
+                        <outlet property="backBtn" destination="BLN-NK-six" id="ccm-NW-QDo"/>
+                        <outlet property="exitBtn" destination="ch9-eI-1I3" id="BIg-07-JLA"/>
+                        <outlet property="startButton" destination="ynL-GY-auW" id="SDB-xI-grz"/>
+                        <segue destination="FBt-ax-cDs" kind="show" identifier="navToLastSurvey" id="Q6G-Vq-no8"/>
+                        <segue destination="B9w-rp-Cc9" kind="show" identifier="back3" id="uHa-xK-A5O"/>
+                        <segue destination="btY-7y-dGP" kind="show" identifier="Home" id="Dva-cE-XDq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YLC-rB-y7R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2497" y="-4"/>
+            <point key="canvasLocation" x="2496.9465648854962" y="-4.2253521126760569"/>
         </scene>
-        <!--View Controller-->
+        <!--Survey LasttVC-->
         <scene sceneID="rau-cn-5Fw">
             <objects>
-                <viewController id="FBt-ax-cDs" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="FBt-ax-cDs" customClass="SurveyLasttVC" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dIm-cJ-ptS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -939,10 +970,10 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dq3-i9-Gwn">
-                                                        <rect key="frame" x="16" y="59" width="361" height="1407"/>
+                                                        <rect key="frame" x="16" y="0.0" width="361" height="1500"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7MW-75-Nn6" userLabel="contentView">
-                                                                <rect key="frame" x="0.0" y="0.0" width="361" height="1050.6666666666667"/>
+                                                                <rect key="frame" x="0.0" y="10" width="361" height="1050.3333333333333"/>
                                                                 <subviews>
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="dkq-Bv-ziy">
                                                                         <rect key="frame" x="2" y="52" width="357" height="4"/>
@@ -973,7 +1004,7 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bl9-v5-6RC" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                        <rect key="frame" x="2" y="270.33333333333331" width="359" height="148.33333333333331"/>
+                                                                        <rect key="frame" x="2" y="270" width="359" height="148.33333333333337"/>
                                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="사회 전반 주요 이슈와 관련해 스스로 어느 정도의 사고력을 갖추고 있다고 생각한다."/>
@@ -987,28 +1018,28 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="9V8-N8-7eG" userLabel="category">
-                                                                        <rect key="frame" x="2" y="68" width="357" height="14.333333333333329"/>
+                                                                        <rect key="frame" x="2" y="68" width="357" height="14"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGI-lG-ajb">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="14.333333333333334"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="14"/>
                                                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                                 <color key="textColor" name="gray-2"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자기소개서" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfj-kR-zBp">
-                                                                                <rect key="frame" x="89.666666666666686" y="0.0" width="88.333333333333314" height="14.333333333333334"/>
+                                                                                <rect key="frame" x="89.666666666666686" y="0.0" width="88.333333333333314" height="14"/>
                                                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                                 <color key="textColor" name="gray-2"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="산업&amp;기업 분석" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRN-Pe-KdA">
-                                                                                <rect key="frame" x="179" y="0.0" width="88.666666666666686" height="14.333333333333334"/>
+                                                                                <rect key="frame" x="179" y="0.0" width="88.666666666666686" height="14"/>
                                                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                                 <color key="textColor" name="gray-2"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사PT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1D4-rr-XHU">
-                                                                                <rect key="frame" x="268.66666666666669" y="0.0" width="88.333333333333314" height="14.333333333333334"/>
+                                                                                <rect key="frame" x="268.66666666666669" y="0.0" width="88.333333333333314" height="14"/>
                                                                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                                                                 <color key="textColor" name="gray-2"/>
                                                                                 <nil key="highlightedColor"/>
@@ -1020,7 +1051,7 @@
                                                                         </constraints>
                                                                     </stackView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="21y-Bg-8M8" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                        <rect key="frame" x="2" y="438.66666666666674" width="359" height="148"/>
+                                                                        <rect key="frame" x="2" y="438.33333333333326" width="359" height="148"/>
                                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="평소 정치 / 경제 / 사회 / 문화 / 과학에 관련된 뉴스를 자주 찾아본다."/>
@@ -1033,22 +1064,8 @@
                                                                             <userDefinedRuntimeAttribute type="string" keyPath="questionNum" value="3"/>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFB-VJ-7Kh" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                        <rect key="frame" x="2" y="606.66666666666663" width="359" height="148"/>
-                                                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="시사 이슈가 나의 전공과 업무에 어떻게 연관이 되는지, 혹은 어떤 비전을 갖는지 묻는 질문에 대답을 할 수 있다."/>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="containerborder">
-                                                                                <integer key="value" value="1"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="buttonborder">
-                                                                                <integer key="value" value="2"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                            <userDefinedRuntimeAttribute type="string" keyPath="questionNum" value="4"/>
-                                                                        </userDefinedRuntimeAttributes>
-                                                                    </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Nn-fq-Nxx" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                        <rect key="frame" x="2" y="774.66666666666663" width="359" height="148"/>
+                                                                        <rect key="frame" x="2" y="774.33333333333337" width="359" height="148"/>
                                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="실제 면접에서 시사문제를 어떻게 다루는지 알고 있다."/>
@@ -1062,7 +1079,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bJa-co-HEu">
-                                                                        <rect key="frame" x="2" y="962.66666666666663" width="359" height="48"/>
+                                                                        <rect key="frame" x="2" y="962.33333333333337" width="359" height="48"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="48" id="1oc-nq-QAR"/>
                                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="QUz-wv-n6n"/>
@@ -1082,10 +1099,10 @@
                                                                         </state>
                                                                         <buttonConfiguration key="configuration" style="filled">
                                                                             <attributedString key="attributedTitle">
-                                                                                <fragment content="다음">
+                                                                                <fragment content="결과보기">
                                                                                     <attributes>
                                                                                         <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                                                        <font key="NSFont" size="18" name="Pretendard-Regular"/>
                                                                                         <font key="NSOriginalFont" metaFont="system" size="18"/>
                                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                                     </attributes>
@@ -1094,7 +1111,7 @@
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vtj-Y1-BDf" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
-                                                                        <rect key="frame" x="2" y="102.33333333333334" width="359" height="148"/>
+                                                                        <rect key="frame" x="2" y="102" width="359" height="148"/>
                                                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" priority="250" constant="148" id="iB3-D9-n8y"/>
@@ -1110,41 +1127,55 @@
                                                                             <userDefinedRuntimeAttribute type="string" keyPath="questionNum" value="1"/>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zsk-Sy-ufz" customClass="SurveyInputView" customModule="MOS" customModuleProvider="target">
+                                                                        <rect key="frame" x="2" y="606.33333333333337" width="359" height="148"/>
+                                                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="시사 이슈가 나의 전공과 업무에 어떻게 연관이 되는지, 혹은 어떤 비전을 갖는지 묻는 질문에 대답을 할 수 있다."/>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="containerborder">
+                                                                                <integer key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="buttonborder">
+                                                                                <integer key="value" value="2"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="questionNum" value="4"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
+                                                                    <constraint firstItem="Zsk-Sy-ufz" firstAttribute="leading" secondItem="21y-Bg-8M8" secondAttribute="leading" id="1hJ-f9-OLI"/>
                                                                     <constraint firstItem="21y-Bg-8M8" firstAttribute="leading" secondItem="Bl9-v5-6RC" secondAttribute="leading" id="2hv-TN-fCG"/>
-                                                                    <constraint firstItem="PFB-VJ-7Kh" firstAttribute="top" secondItem="21y-Bg-8M8" secondAttribute="bottom" constant="20" id="498-jH-fj1"/>
-                                                                    <constraint firstItem="5Nn-fq-Nxx" firstAttribute="leading" secondItem="PFB-VJ-7Kh" secondAttribute="leading" id="6jm-am-HdF"/>
                                                                     <constraint firstItem="dkq-Bv-ziy" firstAttribute="leading" secondItem="7MW-75-Nn6" secondAttribute="leading" constant="2" id="7eT-5r-1BJ"/>
                                                                     <constraint firstItem="9V8-N8-7eG" firstAttribute="leading" secondItem="7MW-75-Nn6" secondAttribute="leading" constant="2" id="9HF-yH-YqZ"/>
+                                                                    <constraint firstItem="Zsk-Sy-ufz" firstAttribute="trailing" secondItem="21y-Bg-8M8" secondAttribute="trailing" id="9nw-gQ-F2A"/>
                                                                     <constraint firstAttribute="trailing" secondItem="Vtj-Y1-BDf" secondAttribute="trailing" id="AKZ-fg-6SQ"/>
-                                                                    <constraint firstItem="PFB-VJ-7Kh" firstAttribute="height" secondItem="21y-Bg-8M8" secondAttribute="height" priority="250" id="CZM-XY-50b"/>
                                                                     <constraint firstItem="Vtj-Y1-BDf" firstAttribute="leading" secondItem="7MW-75-Nn6" secondAttribute="leading" constant="2" id="FLi-p6-Rf3"/>
+                                                                    <constraint firstItem="5Nn-fq-Nxx" firstAttribute="trailing" secondItem="Zsk-Sy-ufz" secondAttribute="trailing" id="Ga3-j3-dH8"/>
                                                                     <constraint firstItem="dkq-Bv-ziy" firstAttribute="top" secondItem="qYK-Pe-CrV" secondAttribute="bottom" constant="20" id="Hxy-vM-pdr"/>
                                                                     <constraint firstItem="Bl9-v5-6RC" firstAttribute="height" secondItem="Vtj-Y1-BDf" secondAttribute="height" multiplier="1.00204" priority="250" id="IKv-z9-DZ8"/>
+                                                                    <constraint firstItem="5Nn-fq-Nxx" firstAttribute="leading" secondItem="Zsk-Sy-ufz" secondAttribute="leading" id="JAq-oy-r3j"/>
                                                                     <constraint firstItem="qYK-Pe-CrV" firstAttribute="leading" secondItem="7MW-75-Nn6" secondAttribute="leading" id="Kot-Kc-ax0"/>
+                                                                    <constraint firstItem="Zsk-Sy-ufz" firstAttribute="top" secondItem="21y-Bg-8M8" secondAttribute="bottom" constant="20" id="ODT-jc-KOt"/>
                                                                     <constraint firstItem="Bl9-v5-6RC" firstAttribute="leading" secondItem="Vtj-Y1-BDf" secondAttribute="leading" id="QHC-vY-B2m"/>
+                                                                    <constraint firstItem="5Nn-fq-Nxx" firstAttribute="top" secondItem="Zsk-Sy-ufz" secondAttribute="bottom" constant="20" id="WWD-Rf-hFN"/>
                                                                     <constraint firstItem="21y-Bg-8M8" firstAttribute="height" secondItem="Bl9-v5-6RC" secondAttribute="height" multiplier="0.997959" priority="250" id="Xe0-Lg-8cZ"/>
                                                                     <constraint firstItem="bJa-co-HEu" firstAttribute="trailing" secondItem="5Nn-fq-Nxx" secondAttribute="trailing" id="c8i-cd-13g"/>
                                                                     <constraint firstItem="qYK-Pe-CrV" firstAttribute="centerX" secondItem="7MW-75-Nn6" secondAttribute="centerX" id="cCy-sS-oRG"/>
                                                                     <constraint firstItem="9V8-N8-7eG" firstAttribute="top" secondItem="dkq-Bv-ziy" secondAttribute="bottom" constant="12" id="cyU-Dx-L6f"/>
                                                                     <constraint firstItem="Vtj-Y1-BDf" firstAttribute="top" secondItem="9V8-N8-7eG" secondAttribute="bottom" constant="20" id="e05-WG-itV"/>
-                                                                    <constraint firstItem="PFB-VJ-7Kh" firstAttribute="leading" secondItem="21y-Bg-8M8" secondAttribute="leading" id="ewB-tY-YIE"/>
                                                                     <constraint firstItem="Bl9-v5-6RC" firstAttribute="top" secondItem="Vtj-Y1-BDf" secondAttribute="bottom" constant="20" id="f3x-KF-2nQ"/>
+                                                                    <constraint firstItem="5Nn-fq-Nxx" firstAttribute="height" secondItem="Zsk-Sy-ufz" secondAttribute="height" priority="250" id="far-5O-p7G"/>
                                                                     <constraint firstAttribute="trailing" secondItem="dkq-Bv-ziy" secondAttribute="trailing" constant="2" id="g3E-zD-O05"/>
-                                                                    <constraint firstItem="5Nn-fq-Nxx" firstAttribute="trailing" secondItem="PFB-VJ-7Kh" secondAttribute="trailing" id="gYt-iH-JaW"/>
                                                                     <constraint firstItem="b4D-AM-bYa" firstAttribute="top" secondItem="7MW-75-Nn6" secondAttribute="top" id="k4c-vB-8ej"/>
                                                                     <constraint firstItem="Bl9-v5-6RC" firstAttribute="trailing" secondItem="Vtj-Y1-BDf" secondAttribute="trailing" id="lAb-fW-QQg"/>
-                                                                    <constraint firstItem="PFB-VJ-7Kh" firstAttribute="trailing" secondItem="21y-Bg-8M8" secondAttribute="trailing" id="mdh-eY-svi"/>
                                                                     <constraint firstItem="21y-Bg-8M8" firstAttribute="top" secondItem="Bl9-v5-6RC" secondAttribute="bottom" constant="20" id="n59-7t-tj4"/>
-                                                                    <constraint firstItem="5Nn-fq-Nxx" firstAttribute="top" secondItem="PFB-VJ-7Kh" secondAttribute="bottom" constant="20" id="pqx-kk-jeP"/>
                                                                     <constraint firstItem="bJa-co-HEu" firstAttribute="leading" secondItem="5Nn-fq-Nxx" secondAttribute="leading" id="qir-Fr-nbM"/>
                                                                     <constraint firstItem="9V8-N8-7eG" firstAttribute="centerX" secondItem="7MW-75-Nn6" secondAttribute="centerX" id="rKW-cN-G8N"/>
                                                                     <constraint firstItem="21y-Bg-8M8" firstAttribute="trailing" secondItem="Bl9-v5-6RC" secondAttribute="trailing" id="rWU-Iu-2bs"/>
                                                                     <constraint firstItem="bJa-co-HEu" firstAttribute="top" secondItem="5Nn-fq-Nxx" secondAttribute="bottom" constant="40" id="rgH-Xn-wcE"/>
-                                                                    <constraint firstItem="5Nn-fq-Nxx" firstAttribute="height" secondItem="PFB-VJ-7Kh" secondAttribute="height" priority="250" id="v6k-zX-kN5"/>
                                                                     <constraint firstAttribute="bottom" secondItem="bJa-co-HEu" secondAttribute="bottom" constant="40" id="vrF-69-fWZ"/>
+                                                                    <constraint firstItem="Zsk-Sy-ufz" firstAttribute="height" secondItem="21y-Bg-8M8" secondAttribute="height" priority="250" id="wa9-Hr-zBE"/>
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
@@ -1152,7 +1183,7 @@
                                                             <constraint firstItem="7MW-75-Nn6" firstAttribute="trailing" secondItem="AVg-Uk-AvG" secondAttribute="trailing" id="Ff9-60-hBw"/>
                                                             <constraint firstItem="7MW-75-Nn6" firstAttribute="width" secondItem="jvg-2b-TBA" secondAttribute="width" id="Fru-Fa-qPK"/>
                                                             <constraint firstItem="7MW-75-Nn6" firstAttribute="leading" secondItem="AVg-Uk-AvG" secondAttribute="leading" id="RtV-SI-WYV"/>
-                                                            <constraint firstItem="7MW-75-Nn6" firstAttribute="top" secondItem="AVg-Uk-AvG" secondAttribute="top" id="W5Z-rc-wdj"/>
+                                                            <constraint firstItem="7MW-75-Nn6" firstAttribute="top" secondItem="AVg-Uk-AvG" secondAttribute="top" constant="10" id="W5Z-rc-wdj"/>
                                                             <constraint firstItem="7MW-75-Nn6" firstAttribute="bottom" secondItem="AVg-Uk-AvG" secondAttribute="bottom" id="a4I-IM-Vph"/>
                                                         </constraints>
                                                         <viewLayoutGuide key="contentLayoutGuide" id="AVg-Uk-AvG"/>
@@ -1180,13 +1211,197 @@
                         <viewLayoutGuide key="safeArea" id="Zv9-MA-BmB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="f8x-0l-PDr"/>
                     <size key="freeformSize" width="393" height="1500"/>
+                    <connections>
+                        <outlet property="backBtn" destination="0B8-Ze-KVK" id="xxN-wY-CgK"/>
+                        <outlet property="exitBtn" destination="AzH-EQ-Tom" id="Vm2-nj-DgQ"/>
+                        <outlet property="startButton" destination="bJa-co-HEu" id="E0G-l0-tFC"/>
+                        <segue destination="SO0-1w-esA" kind="show" identifier="navToResult" id="c9b-DM-4IG"/>
+                        <segue destination="hwb-SP-u5z" kind="show" identifier="back4" id="4vz-w7-4L0"/>
+                        <segue destination="btY-7y-dGP" kind="show" identifier="Home" id="ePT-UP-XPz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTB-WT-mo5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3447" y="-4"/>
+            <point key="canvasLocation" x="3425" y="-3"/>
+        </scene>
+        <!--Survey ResultVC-->
+        <scene sceneID="MM9-Xm-Vm9">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="SO0-1w-esA" customClass="SurveyResultVC" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BpU-LE-ia8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gpp-Sh-b2L" customClass="SurveyResultInputView" customModule="MOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="110" width="361" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="1" constant="100" id="9GL-at-v3K"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" name="main"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="labelcolor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="score" value="15점"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kl-8U-P9L">
+                                <rect key="frame" x="16" y="40" width="222.66666666666666" height="42"/>
+                                <string key="text">내가먼저취뽀님의
+취업 준비도 테스트 결과입니다.</string>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llB-hW-jE9" customClass="SurveyResultInputView" customModule="MOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="228" width="361" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="1" constant="100" id="v7Y-pC-yH8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" name="main"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="labelcolor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="score" value="25점"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2B-HU-CdN" customClass="SurveyResultInputView" customModule="MOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="346" width="361" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="1" constant="100" id="Rmy-Xv-g5c"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.59999999999999998"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" name="main"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="labelcolor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="score" value="30점"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQL-kh-I5v" customClass="SurveyResultInputView" customModule="MOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="464" width="361" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="1" constant="100" id="KF0-N2-wlf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" name="lowScore"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="labelcolor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="score" value="10점"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBy-MQ-mXH">
+                                <rect key="frame" x="16" y="744" width="361" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="KgJ-Cs-MzJ"/>
+                                    <constraint firstAttribute="height" constant="48" id="Z4E-qX-Hti"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="테스트 시작">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="확인">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSOriginalFont" metaFont="system" size="18"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PPe-Yl-WpU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eQL-kh-I5v" firstAttribute="leading" secondItem="S2B-HU-CdN" secondAttribute="leading" id="09s-VU-v1B"/>
+                            <constraint firstItem="eQL-kh-I5v" firstAttribute="top" secondItem="S2B-HU-CdN" secondAttribute="bottom" constant="18" id="21J-q7-K8E"/>
+                            <constraint firstItem="S2B-HU-CdN" firstAttribute="trailing" secondItem="llB-hW-jE9" secondAttribute="trailing" id="D9b-3p-B81"/>
+                            <constraint firstItem="0Kl-8U-P9L" firstAttribute="leading" secondItem="PPe-Yl-WpU" secondAttribute="leading" constant="16" id="J8k-DS-VZx"/>
+                            <constraint firstItem="llB-hW-jE9" firstAttribute="trailing" secondItem="Gpp-Sh-b2L" secondAttribute="trailing" id="Ku2-U5-Gjm"/>
+                            <constraint firstItem="S2B-HU-CdN" firstAttribute="leading" secondItem="llB-hW-jE9" secondAttribute="leading" id="LJM-Vp-Y7q"/>
+                            <constraint firstItem="Gpp-Sh-b2L" firstAttribute="leading" secondItem="PPe-Yl-WpU" secondAttribute="leading" constant="16" id="Lns-QP-SyV"/>
+                            <constraint firstItem="PPe-Yl-WpU" firstAttribute="bottom" secondItem="fBy-MQ-mXH" secondAttribute="bottom" constant="60" id="NTs-IN-RL1"/>
+                            <constraint firstItem="fBy-MQ-mXH" firstAttribute="centerX" secondItem="PPe-Yl-WpU" secondAttribute="centerX" id="Nfz-f0-E9q"/>
+                            <constraint firstItem="Gpp-Sh-b2L" firstAttribute="centerX" secondItem="PPe-Yl-WpU" secondAttribute="centerX" id="PXD-eS-aaz"/>
+                            <constraint firstItem="llB-hW-jE9" firstAttribute="top" secondItem="Gpp-Sh-b2L" secondAttribute="bottom" constant="18" id="U7f-Re-rDw"/>
+                            <constraint firstItem="0Kl-8U-P9L" firstAttribute="top" secondItem="PPe-Yl-WpU" secondAttribute="top" constant="40" id="ZeR-EF-QV3"/>
+                            <constraint firstItem="S2B-HU-CdN" firstAttribute="top" secondItem="llB-hW-jE9" secondAttribute="bottom" constant="18" id="dUp-LT-TSY"/>
+                            <constraint firstItem="llB-hW-jE9" firstAttribute="leading" secondItem="Gpp-Sh-b2L" secondAttribute="leading" id="gTF-64-wOL"/>
+                            <constraint firstItem="eQL-kh-I5v" firstAttribute="trailing" secondItem="S2B-HU-CdN" secondAttribute="trailing" id="kbS-9f-7m2"/>
+                            <constraint firstItem="fBy-MQ-mXH" firstAttribute="leading" secondItem="PPe-Yl-WpU" secondAttribute="leading" constant="16" id="qje-6d-0GW"/>
+                            <constraint firstItem="Gpp-Sh-b2L" firstAttribute="firstBaseline" secondItem="0Kl-8U-P9L" secondAttribute="baseline" constant="32" id="wF1-BF-9t1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rI4-yb-Whx"/>
+                    <connections>
+                        <outlet property="finishButton" destination="fBy-MQ-mXH" id="0fV-fx-Fx0"/>
+                        <segue destination="FBt-ax-cDs" kind="show" identifier="back5" id="iTy-LK-gJS"/>
+                        <segue destination="btY-7y-dGP" kind="show" identifier="Home" id="E3Q-1c-rmC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQ5-ob-CFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4336.6412213740459" y="-4.2253521126760569"/>
+        </scene>
+        <!--TabMenu-->
+        <scene sceneID="QKL-Sv-2Wg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabMenu" referencedIdentifier="TabMenu" id="btY-7y-dGP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5t6-ZE-xUe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="38D-6s-jJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1647" y="-729"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="A0x-UG-p01"/>
+        <segue reference="Q6G-Vq-no8"/>
+        <segue reference="3xO-mL-oMW"/>
+        <segue reference="uHa-xK-A5O"/>
+        <segue reference="Yk5-oC-cVC"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" name="main"/>
     <resources>
         <image name="ic_survey_back" width="32" height="32"/>
@@ -1194,6 +1409,9 @@
         <image name="img_survey_start" width="127.33333587646484" height="140.33332824707031"/>
         <namedColor name="gray-2">
             <color red="0.52156862745098043" green="0.52156862745098043" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="lowScore">
+            <color red="1" green="0.94117647058823528" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="main">
             <color red="0.99607843137254903" green="0.58039215686274515" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

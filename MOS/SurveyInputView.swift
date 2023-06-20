@@ -138,11 +138,13 @@ class SurveyInputView: UIView {
         for (index, button) in buttons.enumerated() {
             let label = labels[index]
             if index == sender.tag {
+                button?.setTitleColor(UIColor(named: "main"), for: .normal)
                 button?.layer.cornerRadius = self.button1.frame.height / 2
                 button?.layer.borderColor = UIColor(named: "main")?.cgColor
                 button?.layer.backgroundColor = UIColor(named: "main-2")?.cgColor
                 label?.textColor = UIColor(named: "main")
             } else {
+                button?.setTitleColor(UIColor.black, for: .normal)
                 button?.layer.borderColor = UIColor(named: "gray-1")?.cgColor
                 button?.layer.backgroundColor = UIColor.white.cgColor
                 label?.textColor = UIColor.black
