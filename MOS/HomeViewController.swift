@@ -9,11 +9,22 @@ import UIKit
 
 class HomeViewController:UIViewController {
     @IBOutlet weak var moveToTestView: UIView!
+    
+    @IBOutlet weak var showMoreStudies: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        showMoreStudies.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        showMoreStudies.addGestureRecognizer(tapGesture)
+        
         applyShadow()
     }
+    
+    @objc func imageTapped() {
+        self.performSegue(withIdentifier: "navToCategory", sender: self)
+        }
     
     fileprivate func applyShadow(){
         print(#fileID, #function, #line, "shadow 적용 함수 접근")

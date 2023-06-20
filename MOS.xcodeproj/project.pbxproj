@@ -39,6 +39,9 @@
 		5A6776BD2A2269B600F1D3DB /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776B42A2269B600F1D3DB /* Pretendard-Light.ttf */; };
 		5A6776BE2A2269B600F1D3DB /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776B52A2269B600F1D3DB /* Pretendard-Black.ttf */; };
 		5A6776C12A2269DA00F1D3DB /* survey_character.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776C02A2269DA00F1D3DB /* survey_character.png */; };
+		5A7AA0D12A41BDCA0087DE3C /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */; };
+		5A7AA0D42A41C1A10087DE3C /* AllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D32A41C1A10087DE3C /* AllViewController.swift */; };
+		5A7AA0D62A41C1DC0087DE3C /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D52A41C1DC0087DE3C /* AnalysisViewController.swift */; };
 		5ABFE9E82A19FF4E0094A316 /* SurveyInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */; };
 		5ABFE9EA2A1A05840094A316 /* SurveyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */; };
 		5AC619912A170A4000966219 /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC619902A170A4000966219 /* Survey.storyboard */; };
@@ -47,6 +50,11 @@
 		5AD249592A3B9C1C00A7BBAC /* SurveyResultInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD249582A3B9C1C00A7BBAC /* SurveyResultInputView.swift */; };
 		5AD2495D2A3BA59E00A7BBAC /* SurveyResultInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AD2495C2A3BA59E00A7BBAC /* SurveyResultInputView.xib */; };
 		5AD249612A406C4000A7BBAC /* SurveyResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD249602A406C4000A7BBAC /* SurveyResultVC.swift */; };
+		5ADA06562A41E5CF00FE76E5 /* currentEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA06552A41E5CF00FE76E5 /* currentEventViewController.swift */; };
+		5ADA06582A41E60900FE76E5 /* PersonnelAptitudeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA06572A41E60900FE76E5 /* PersonnelAptitudeViewController.swift */; };
+		5ADA065A2A41E63100FE76E5 /* SelfIntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA06592A41E63100FE76E5 /* SelfIntroductionViewController.swift */; };
+		5ADA065C2A41E64900FE76E5 /* InterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA065B2A41E64900FE76E5 /* InterviewViewController.swift */; };
+		5ADA065E2A41E67B00FE76E5 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA065D2A41E67B00FE76E5 /* LanguageViewController.swift */; };
 		5AF073AB2A303748004FD8BB /* SurveySecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF073AA2A303748004FD8BB /* SurveySecondVC.swift */; };
 		5AF073AD2A30375C004FD8BB /* SurveyThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF073AC2A30375C004FD8BB /* SurveyThirdVC.swift */; };
 		5AF073AF2A30376D004FD8BB /* SurveyLastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF073AE2A30376D004FD8BB /* SurveyLastVC.swift */; };
@@ -88,6 +96,9 @@
 		5A6776B42A2269B600F1D3DB /* Pretendard-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.ttf"; sourceTree = "<group>"; };
 		5A6776B52A2269B600F1D3DB /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.ttf"; sourceTree = "<group>"; };
 		5A6776C02A2269DA00F1D3DB /* survey_character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = survey_character.png; sourceTree = "<group>"; };
+		5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
+		5A7AA0D32A41C1A10087DE3C /* AllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllViewController.swift; sourceTree = "<group>"; };
+		5A7AA0D52A41C1DC0087DE3C /* AnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
 		5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyInputView.xib; sourceTree = "<group>"; };
 		5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyInputView.swift; sourceTree = "<group>"; };
 		5AC619902A170A4000966219 /* Survey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
@@ -96,6 +107,11 @@
 		5AD249582A3B9C1C00A7BBAC /* SurveyResultInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyResultInputView.swift; sourceTree = "<group>"; };
 		5AD2495C2A3BA59E00A7BBAC /* SurveyResultInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyResultInputView.xib; sourceTree = "<group>"; };
 		5AD249602A406C4000A7BBAC /* SurveyResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyResultVC.swift; sourceTree = "<group>"; };
+		5ADA06552A41E5CF00FE76E5 /* currentEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentEventViewController.swift; sourceTree = "<group>"; };
+		5ADA06572A41E60900FE76E5 /* PersonnelAptitudeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelAptitudeViewController.swift; sourceTree = "<group>"; };
+		5ADA06592A41E63100FE76E5 /* SelfIntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIntroductionViewController.swift; sourceTree = "<group>"; };
+		5ADA065B2A41E64900FE76E5 /* InterviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewViewController.swift; sourceTree = "<group>"; };
+		5ADA065D2A41E67B00FE76E5 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		5AF073AA2A303748004FD8BB /* SurveySecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveySecondVC.swift; sourceTree = "<group>"; };
 		5AF073AC2A30375C004FD8BB /* SurveyThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyThirdVC.swift; sourceTree = "<group>"; };
 		5AF073AE2A30376D004FD8BB /* SurveyLastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyLastVC.swift; sourceTree = "<group>"; };
@@ -137,8 +153,10 @@
 		2FA142742A149024006AA91B /* MOS */ = {
 			isa = PBXGroup;
 			children = (
+				5A7AA0D22A41C1580087DE3C /* Controllers */,
 				5AC619942A17105600966219 /* Resources */,
 				2FA142752A149024006AA91B /* AppDelegate.swift */,
+				5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */,
 				2FA142772A149024006AA91B /* SceneDelegate.swift */,
 				2FA142792A149024006AA91B /* ViewController.swift */,
 				2FA1427B2A149024006AA91B /* Main.storyboard */,
@@ -198,6 +216,20 @@
 				5A6776C02A2269DA00F1D3DB /* survey_character.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		5A7AA0D22A41C1580087DE3C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A7AA0D32A41C1A10087DE3C /* AllViewController.swift */,
+				5A7AA0D52A41C1DC0087DE3C /* AnalysisViewController.swift */,
+				5ADA06552A41E5CF00FE76E5 /* currentEventViewController.swift */,
+				5ADA06572A41E60900FE76E5 /* PersonnelAptitudeViewController.swift */,
+				5ADA06592A41E63100FE76E5 /* SelfIntroductionViewController.swift */,
+				5ADA065B2A41E64900FE76E5 /* InterviewViewController.swift */,
+				5ADA065D2A41E67B00FE76E5 /* LanguageViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		5AC619942A17105600966219 /* Resources */ = {
@@ -363,9 +395,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F28E6812A1DDA4300021E72 /* StudyRoomViewController.swift in Sources */,
+				5A7AA0D62A41C1DC0087DE3C /* AnalysisViewController.swift in Sources */,
 				2F28E67F2A1DD9C700021E72 /* SearchViewController.swift in Sources */,
 				5AF073AB2A303748004FD8BB /* SurveySecondVC.swift in Sources */,
 				2FFCFC442A1DD2B200E2AC95 /* HomeViewController.swift in Sources */,
+				5ADA065C2A41E64900FE76E5 /* InterviewViewController.swift in Sources */,
+				5A7AA0D42A41C1A10087DE3C /* AllViewController.swift in Sources */,
+				5ADA065A2A41E63100FE76E5 /* SelfIntroductionViewController.swift in Sources */,
+				5ADA06582A41E60900FE76E5 /* PersonnelAptitudeViewController.swift in Sources */,
 				2F28E6892A1DDF9A00021E72 /* AddStudyViewController.swift in Sources */,
 				2FA1427A2A149024006AA91B /* ViewController.swift in Sources */,
 				5AF073AD2A30375C004FD8BB /* SurveyThirdVC.swift in Sources */,
@@ -374,6 +411,7 @@
 				5AC619932A170BF300966219 /* SurveyViewController.swift in Sources */,
 				2FA142782A149024006AA91B /* SceneDelegate.swift in Sources */,
 				5AD249592A3B9C1C00A7BBAC /* SurveyResultInputView.swift in Sources */,
+				5A7AA0D12A41BDCA0087DE3C /* PagingViewController.swift in Sources */,
 				5AC619B42A19E5BD00966219 /* SurveyFirstVC.swift in Sources */,
 				5AF073AF2A30376D004FD8BB /* SurveyLastVC.swift in Sources */,
 				5ABFE9EA2A1A05840094A316 /* SurveyInputView.swift in Sources */,
@@ -381,6 +419,8 @@
 				2FD24DA82A24F73B000747D7 /* SearchResultViewController.swift in Sources */,
 				5AD249612A406C4000A7BBAC /* SurveyResultVC.swift in Sources */,
 				5A444B732A278B590070137A /* StudyInputView.swift in Sources */,
+				5ADA06562A41E5CF00FE76E5 /* currentEventViewController.swift in Sources */,
+				5ADA065E2A41E67B00FE76E5 /* LanguageViewController.swift in Sources */,
 				2F28E6872A1DDADE00021E72 /* MyPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
