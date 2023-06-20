@@ -40,7 +40,14 @@ class StudyRegisterViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             self.view.endEditing(true) /// 화면을 누르면 키보드 내려가게 하는 것
         }
-      
+    
+    @IBAction func completeButtonTapped(_ sender: Any) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "CompleteRegisterStudyVC") as? CompleteRegisterStudyViewController else { return }
+        nextVC.modalPresentationStyle = .fullScreen
+        self.present(nextVC, animated: true, completion: nil)
+    }
+    
+    
 }
 extension StudyRegisterViewController : UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {

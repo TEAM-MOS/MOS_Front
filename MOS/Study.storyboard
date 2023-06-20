@@ -701,6 +701,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="답변완료">
                                     <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="completeButtonTapped:" destination="kMc-zd-xcz" eventType="touchUpInside" id="zp5-6O-QZf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0PA-zc-MfB"/>
@@ -732,6 +735,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gvd-9q-ZQH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1136.6412213740457" y="-319.01408450704224"/>
+        </scene>
+        <!--Complete Register Study View Controller-->
+        <scene sceneID="Vt3-rQ-qnP">
+            <objects>
+                <viewController storyboardIdentifier="CompleteRegisterStudyVC" id="oNk-Jn-YwW" customClass="CompleteRegisterStudyViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Km-re-GVI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_colplete" translatesAutoresizingMaskIntoConstraints="NO" id="wlI-xY-c3n">
+                                <rect key="frame" x="172.66666666666666" y="309" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="5cz-3k-TuA"/>
+                                    <constraint firstAttribute="width" constant="48" id="qMr-fL-qvH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스터디 신청이 완료되었습니다" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="av5-DI-y1D">
+                                <rect key="frame" x="79.666666666666686" y="373" width="234" height="24"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGD-da-98e">
+                                <rect key="frame" x="54" y="421" width="285" height="33.666666666666686"/>
+                                <string key="text">스터디 가입 결과는 일주일 이내로 결정되며, 
+[마이페이지] - [스터디 가입내역]에서 확인 가능해요</string>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxF-mW-jbS">
+                                <rect key="frame" x="24" y="712" width="345" height="58"/>
+                                <color key="backgroundColor" name="main"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="3Vs-bg-LrN"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="0.98911581230000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="답변완료">
+                                    <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="completeRegisterButtonTapped:" destination="oNk-Jn-YwW" eventType="touchUpInside" id="LpD-PY-4to"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hWI-WZ-un7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YGD-da-98e" firstAttribute="top" secondItem="av5-DI-y1D" secondAttribute="bottom" constant="24" id="DOc-01-Ii3"/>
+                            <constraint firstItem="hWI-WZ-un7" firstAttribute="bottom" secondItem="QxF-mW-jbS" secondAttribute="bottom" constant="48" id="QcG-Vk-GgB"/>
+                            <constraint firstItem="av5-DI-y1D" firstAttribute="top" secondItem="wlI-xY-c3n" secondAttribute="bottom" constant="16" id="Z8v-7H-nnp"/>
+                            <constraint firstItem="QxF-mW-jbS" firstAttribute="leading" secondItem="hWI-WZ-un7" secondAttribute="leading" constant="24" id="cnv-QC-QKy"/>
+                            <constraint firstItem="YGD-da-98e" firstAttribute="centerX" secondItem="2Km-re-GVI" secondAttribute="centerX" id="dw9-As-bpc"/>
+                            <constraint firstItem="wlI-xY-c3n" firstAttribute="top" secondItem="hWI-WZ-un7" secondAttribute="top" constant="250" id="fFs-Jf-KoV"/>
+                            <constraint firstItem="av5-DI-y1D" firstAttribute="centerX" secondItem="2Km-re-GVI" secondAttribute="centerX" id="gR9-mk-9pX"/>
+                            <constraint firstItem="hWI-WZ-un7" firstAttribute="trailing" secondItem="QxF-mW-jbS" secondAttribute="trailing" constant="24" id="lAu-VN-a2V"/>
+                            <constraint firstItem="wlI-xY-c3n" firstAttribute="centerX" secondItem="2Km-re-GVI" secondAttribute="centerX" id="zwe-9Q-cRP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Q3-Aa-C1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888" y="-319"/>
         </scene>
         <!--Study Detail Info View Controller-->
         <scene sceneID="OxX-Lh-xRc">
@@ -981,6 +1048,7 @@
         <image name="icon_circle_calendar" width="26" height="26"/>
         <image name="icon_circle_member" width="26" height="26"/>
         <image name="icon_locate_temp" width="122" height="48"/>
+        <image name="register_colplete" width="96" height="99"/>
         <image name="user_group2_temp" width="308" height="92"/>
         <image name="user_group_temp" width="236" height="92"/>
         <namedColor name="bc-studyDetail">
