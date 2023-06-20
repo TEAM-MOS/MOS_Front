@@ -15,6 +15,8 @@ class SurveyViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        self.hidesBottomBarWhenPushed = true
+        
         self.startButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         
         skipBtn.isUserInteractionEnabled = true

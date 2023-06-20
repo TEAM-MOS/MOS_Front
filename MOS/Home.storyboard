@@ -376,8 +376,10 @@
                     <size key="freeformSize" width="393" height="1500"/>
                     <connections>
                         <outlet property="moveToTestView" destination="me3-Sm-AiL" id="Z2Z-gx-AWl"/>
+                        <outlet property="navToSurveyBtn" destination="me3-Sm-AiL" id="v9V-Dl-MgN"/>
                         <outlet property="showMoreStudies" destination="rWZ-8Z-jiw" id="z0P-OD-zgA"/>
                         <segue destination="D7u-J8-10K" kind="show" identifier="navToCategory" id="8wO-Hi-NaM"/>
+                        <segue destination="mUU-jE-WWJ" kind="showDetail" identifier="navToSurvey" id="kQI-Tj-1SJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -422,13 +424,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모집 중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaR-AS-lGh">
-                                <rect key="frame" x="23.999999999999996" y="79" width="45.666666666666657" height="19.333333333333329"/>
+                                <rect key="frame" x="24" y="79" width="46" height="19.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                 <color key="textColor" name="gray-2"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CdU-M4-xQ3">
-                                <rect key="frame" x="79.666666666666671" y="73.333333333333329" width="51.000000000000014" height="31"/>
+                                <rect key="frame" x="80" y="73.333333333333329" width="51" height="31"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.65000000000000002"/>
                                 <color key="onTintColor" name="main"/>
                             </switch>
@@ -482,7 +484,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D9m-b2-HXD">
-                                <rect key="frame" x="79.666666666666671" y="73.333333333333329" width="51.000000000000014" height="31"/>
+                                <rect key="frame" x="80" y="73.333333333333329" width="51" height="31"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.65000000000000002"/>
                                 <color key="onTintColor" name="main"/>
                             </switch>
@@ -502,7 +504,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모집 중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBU-yh-GAO">
-                                <rect key="frame" x="23.999999999999996" y="79" width="45.666666666666657" height="19.333333333333329"/>
+                                <rect key="frame" x="24" y="79" width="46" height="19.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                 <color key="textColor" name="gray-2"/>
                                 <nil key="highlightedColor"/>
@@ -552,13 +554,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모집 중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVL-Fq-vQf">
-                                <rect key="frame" x="23.999999999999996" y="79" width="45.666666666666657" height="19.333333333333329"/>
+                                <rect key="frame" x="24" y="79" width="46" height="19.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                 <color key="textColor" name="gray-2"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GEN-ik-sI3">
-                                <rect key="frame" x="79.666666666666671" y="73.333333333333329" width="51.000000000000014" height="31"/>
+                                <rect key="frame" x="80" y="73.333333333333329" width="51" height="31"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.65000000000000002"/>
                                 <color key="onTintColor" name="main"/>
                             </switch>
@@ -604,13 +606,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모집 중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBr-8C-BbC">
-                                <rect key="frame" x="23.999999999999996" y="79" width="45.666666666666657" height="19.333333333333329"/>
+                                <rect key="frame" x="24" y="79" width="46" height="19.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                 <color key="textColor" name="gray-2"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WyH-4Y-DfP">
-                                <rect key="frame" x="79.666666666666671" y="73.333333333333329" width="51.000000000000014" height="31"/>
+                                <rect key="frame" x="80" y="73.333333333333329" width="51" height="31"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.65000000000000002"/>
                                 <color key="onTintColor" name="main"/>
                             </switch>
@@ -656,13 +658,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모집 중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCX-os-l4Y">
-                                <rect key="frame" x="23.999999999999996" y="79" width="45.666666666666657" height="19.333333333333329"/>
+                                <rect key="frame" x="24" y="79" width="46" height="19.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                 <color key="textColor" name="gray-2"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X4t-iX-pxh">
-                                <rect key="frame" x="79.666666666666671" y="73.333333333333329" width="51.000000000000014" height="31"/>
+                                <rect key="frame" x="80" y="73.333333333333329" width="51" height="31"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.65000000000000002"/>
                                 <color key="onTintColor" name="main"/>
                             </switch>
@@ -708,13 +710,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모집 중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DQ-QC-nFR">
-                                <rect key="frame" x="23.999999999999996" y="79" width="45.666666666666657" height="19.333333333333329"/>
+                                <rect key="frame" x="24" y="79" width="46" height="19.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                 <color key="textColor" name="gray-2"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="En6-1S-jPl">
-                                <rect key="frame" x="79.666666666666671" y="73.333333333333329" width="51.000000000000014" height="31"/>
+                                <rect key="frame" x="80" y="73.333333333333329" width="51" height="31"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.65000000000000002"/>
                                 <color key="onTintColor" name="main"/>
                             </switch>
@@ -760,13 +762,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모집 중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zx5-eo-iiB">
-                                <rect key="frame" x="23.999999999999996" y="79" width="45.666666666666657" height="19.333333333333329"/>
+                                <rect key="frame" x="24" y="79" width="46" height="19.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                 <color key="textColor" name="gray-2"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D6A-sL-cCR">
-                                <rect key="frame" x="79.666666666666671" y="73.333333333333329" width="51.000000000000014" height="31"/>
+                                <rect key="frame" x="80" y="73.333333333333329" width="51" height="31"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.65000000000000002"/>
                                 <color key="onTintColor" name="main"/>
                             </switch>
@@ -802,6 +804,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FY9-vn-36i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6021" y="-35"/>
+        </scene>
+        <!--Survey-->
+        <scene sceneID="i4F-b9-Yu1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Survey" referencedIdentifier="Survey" id="mUU-jE-WWJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eeo-L5-Itw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="37Q-Y9-kUf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536" y="-702"/>
         </scene>
         <!--Paging View Controller-->
         <scene sceneID="ONp-Iu-KNN">
@@ -857,7 +869,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YTq-1M-nJX"/>
+        <segue reference="F7r-9E-IxO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ic_home_category1" width="98" height="98"/>

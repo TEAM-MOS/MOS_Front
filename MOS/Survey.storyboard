@@ -25,7 +25,7 @@
         <!--Survey View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="SurveyViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="Survey" storyboardIdentifier="Survey" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="SurveyViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,6 +154,7 @@
                             <constraint firstItem="fgn-lx-FWN" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="fyP-na-Izp"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" id="PB4-0b-BIK"/>
                     <connections>
                         <outlet property="skipBtn" destination="WVv-IE-8Ns" id="XXf-NH-ZE3"/>
@@ -1400,11 +1401,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="E3Q-1c-rmC"/>
+        <segue reference="XOI-Dn-U2Q"/>
         <segue reference="iTy-LK-gJS"/>
         <segue reference="3xO-mL-oMW"/>
         <segue reference="zKz-8r-g2D"/>
-        <segue reference="Yk5-oC-cVC"/>
+        <segue reference="R1o-fu-MVJ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="main"/>
     <resources>

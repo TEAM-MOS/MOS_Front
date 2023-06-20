@@ -12,19 +12,33 @@ class HomeViewController:UIViewController {
     
     @IBOutlet weak var showMoreStudies: UIImageView!
     
+    @IBOutlet weak var navToSurveyBtn: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
+        
+        navToSurveyBtn.isUserInteractionEnabled = true
+        let tap2Gesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped2))
+        navToSurveyBtn.addGestureRecognizer(tap2Gesture)
         
         showMoreStudies.isUserInteractionEnabled = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         showMoreStudies.addGestureRecognizer(tapGesture)
         
         applyShadow()
+        
+
     }
     
     @objc func imageTapped() {
         self.performSegue(withIdentifier: "navToCategory", sender: self)
+        }
+    
+    @objc func imageTapped2() {
+        print(#fileID, #function, #line, "- exitButton clicked")
+        self.performSegue(withIdentifier: "navToSurvey", sender: self)
+        let surveyViewController = SurveyViewController()
+        surveyViewController.hidesBottomBarWhenPushed = true
         }
     
     fileprivate func applyShadow(){
