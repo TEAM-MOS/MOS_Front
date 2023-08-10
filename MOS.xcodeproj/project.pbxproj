@@ -41,13 +41,13 @@
 		5A6776BD2A2269B600F1D3DB /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776B42A2269B600F1D3DB /* Pretendard-Light.ttf */; };
 		5A6776BE2A2269B600F1D3DB /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776B52A2269B600F1D3DB /* Pretendard-Black.ttf */; };
 		5A6776C12A2269DA00F1D3DB /* survey_character.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776C02A2269DA00F1D3DB /* survey_character.png */; };
+		5A6EE3912A853A7B000E841D /* SurveyStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EE3902A853A7B000E841D /* SurveyStartVC.swift */; };
 		5A7AA0D12A41BDCA0087DE3C /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */; };
 		5A7AA0D42A41C1A10087DE3C /* AllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D32A41C1A10087DE3C /* AllViewController.swift */; };
 		5A7AA0D62A41C1DC0087DE3C /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D52A41C1DC0087DE3C /* AnalysisViewController.swift */; };
 		5ABFE9E82A19FF4E0094A316 /* SurveyInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */; };
 		5ABFE9EA2A1A05840094A316 /* SurveyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */; };
 		5AC619912A170A4000966219 /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC619902A170A4000966219 /* Survey.storyboard */; };
-		5AC619932A170BF300966219 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC619922A170BF300966219 /* SurveyViewController.swift */; };
 		5AC619B42A19E5BD00966219 /* SurveyFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC619B32A19E5BD00966219 /* SurveyFirstVC.swift */; };
 		5AD249592A3B9C1C00A7BBAC /* SurveyResultInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD249582A3B9C1C00A7BBAC /* SurveyResultInputView.swift */; };
 		5AD2495D2A3BA59E00A7BBAC /* SurveyResultInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AD2495C2A3BA59E00A7BBAC /* SurveyResultInputView.xib */; };
@@ -108,13 +108,13 @@
 		5A6776B42A2269B600F1D3DB /* Pretendard-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.ttf"; sourceTree = "<group>"; };
 		5A6776B52A2269B600F1D3DB /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.ttf"; sourceTree = "<group>"; };
 		5A6776C02A2269DA00F1D3DB /* survey_character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = survey_character.png; sourceTree = "<group>"; };
+		5A6EE3902A853A7B000E841D /* SurveyStartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStartVC.swift; sourceTree = "<group>"; };
 		5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		5A7AA0D32A41C1A10087DE3C /* AllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllViewController.swift; sourceTree = "<group>"; };
 		5A7AA0D52A41C1DC0087DE3C /* AnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
 		5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyInputView.xib; sourceTree = "<group>"; };
 		5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyInputView.swift; sourceTree = "<group>"; };
 		5AC619902A170A4000966219 /* Survey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
-		5AC619922A170BF300966219 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		5AC619B32A19E5BD00966219 /* SurveyFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyFirstVC.swift; sourceTree = "<group>"; };
 		5AD249582A3B9C1C00A7BBAC /* SurveyResultInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyResultInputView.swift; sourceTree = "<group>"; };
 		5AD2495C2A3BA59E00A7BBAC /* SurveyResultInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyResultInputView.xib; sourceTree = "<group>"; };
@@ -242,12 +242,12 @@
 		5A6EE38D2A852225000E841D /* SurveyViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5AC619922A170BF300966219 /* SurveyViewController.swift */,
 				5AD249602A406C4000A7BBAC /* SurveyResultVC.swift */,
 				5AF073AE2A30376D004FD8BB /* SurveyLastVC.swift */,
 				5AF073AA2A303748004FD8BB /* SurveySecondVC.swift */,
 				5AF073AC2A30375C004FD8BB /* SurveyThirdVC.swift */,
 				5AC619B32A19E5BD00966219 /* SurveyFirstVC.swift */,
+				5A6EE3902A853A7B000E841D /* SurveyStartVC.swift */,
 			);
 			path = SurveyViewController;
 			sourceTree = "<group>";
@@ -469,7 +469,7 @@
 				F304A13F2A4206240066036B /* StudyMemberInfoViewController.swift in Sources */,
 				F3A7F9BC2A4219BC00AE1863 /* PreQuestionAlertViewController.swift in Sources */,
 				2FA142762A149024006AA91B /* AppDelegate.swift in Sources */,
-				5AC619932A170BF300966219 /* SurveyViewController.swift in Sources */,
+				5A6EE3912A853A7B000E841D /* SurveyStartVC.swift in Sources */,
 				2FA142782A149024006AA91B /* SceneDelegate.swift in Sources */,
 				5AD249592A3B9C1C00A7BBAC /* SurveyResultInputView.swift in Sources */,
 				5A7AA0D12A41BDCA0087DE3C /* PagingViewController.swift in Sources */,
