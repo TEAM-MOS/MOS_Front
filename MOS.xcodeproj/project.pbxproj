@@ -180,17 +180,9 @@
 				2FA142792A149024006AA91B /* ViewController.swift */,
 				2FA1427B2A149024006AA91B /* Main.storyboard */,
 				2FA142802A149026006AA91B /* LaunchScreen.storyboard */,
-				5AC619902A170A4000966219 /* Survey.storyboard */,
-				5AC619922A170BF300966219 /* SurveyViewController.swift */,
-				5AC619B32A19E5BD00966219 /* SurveyFirstVC.swift */,
-				5AF073AC2A30375C004FD8BB /* SurveyThirdVC.swift */,
-				5AF073AA2A303748004FD8BB /* SurveySecondVC.swift */,
-				5AF073AE2A30376D004FD8BB /* SurveyLastVC.swift */,
-				5AD249602A406C4000A7BBAC /* SurveyResultVC.swift */,
-				5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */,
-				5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */,
-				5AD2495C2A3BA59E00A7BBAC /* SurveyResultInputView.xib */,
-				5AD249582A3B9C1C00A7BBAC /* SurveyResultInputView.swift */,
+				5A6EE38E2A852376000E841D /* SurveyView */,
+				5A6EE38D2A852225000E841D /* SurveyViewController */,
+				5A6EE38F2A85239B000E841D /* SurveyInputViewsController */,
 				2FA142832A149026006AA91B /* Info.plist */,
 				5A67766A2A1E1ECF00F1D3DB /* Assets.xcassets */,
 				2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */,
@@ -245,6 +237,38 @@
 				5A6776C02A2269DA00F1D3DB /* survey_character.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		5A6EE38D2A852225000E841D /* SurveyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5AC619922A170BF300966219 /* SurveyViewController.swift */,
+				5AD249602A406C4000A7BBAC /* SurveyResultVC.swift */,
+				5AF073AE2A30376D004FD8BB /* SurveyLastVC.swift */,
+				5AF073AA2A303748004FD8BB /* SurveySecondVC.swift */,
+				5AF073AC2A30375C004FD8BB /* SurveyThirdVC.swift */,
+				5AC619B32A19E5BD00966219 /* SurveyFirstVC.swift */,
+			);
+			path = SurveyViewController;
+			sourceTree = "<group>";
+		};
+		5A6EE38E2A852376000E841D /* SurveyView */ = {
+			isa = PBXGroup;
+			children = (
+				5AD2495C2A3BA59E00A7BBAC /* SurveyResultInputView.xib */,
+				5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */,
+				5AC619902A170A4000966219 /* Survey.storyboard */,
+			);
+			path = SurveyView;
+			sourceTree = "<group>";
+		};
+		5A6EE38F2A85239B000E841D /* SurveyInputViewsController */ = {
+			isa = PBXGroup;
+			children = (
+				5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */,
+				5AD249582A3B9C1C00A7BBAC /* SurveyResultInputView.swift */,
+			);
+			path = SurveyInputViewsController;
 			sourceTree = "<group>";
 		};
 		5A7AA0D22A41C1580087DE3C /* Controllers */ = {
@@ -435,7 +459,6 @@
 				5ADA065A2A41E63100FE76E5 /* SelfIntroductionViewController.swift in Sources */,
 				5ADA06582A41E60900FE76E5 /* PersonnelAptitudeViewController.swift in Sources */,
 				2F28E6892A1DDF9A00021E72 /* AddStudyViewController.swift in Sources */,
-				2FE658BD2A3B50AE008D7403 /* StudyOutlineViewController.swift in Sources */,
 				2FA1427A2A149024006AA91B /* ViewController.swift in Sources */,
 				5AF073AD2A30375C004FD8BB /* SurveyThirdVC.swift in Sources */,
 				2F9DAF532A3222A5007CA960 /* StudyDetailViewController.swift in Sources */,
