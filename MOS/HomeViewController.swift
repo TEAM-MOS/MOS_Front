@@ -37,7 +37,7 @@ class HomeViewController:UIViewController {
     @objc func imageTapped2() {
         print(#fileID, #function, #line, "- exitButton clicked")
         self.performSegue(withIdentifier: "navToSurvey", sender: self)
-        let surveyViewController = SurveyFirstVC()
+        let surveyViewController = SurveyOneVC()
         surveyViewController.hidesBottomBarWhenPushed = true
         }
     
