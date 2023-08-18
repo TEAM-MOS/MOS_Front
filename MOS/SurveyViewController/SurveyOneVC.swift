@@ -88,13 +88,8 @@ class SurveyOneVC: UIViewController {
           }
     
     @IBAction func backBtnTapped(_ sender: UIButton) {
-        if currentQuestionIndex > 0 {
-            currentQuestionIndex -= 1
-            updateQuestion()
-        } else {
-            // 첫 번째 질문일 경우 back1 세그웨이 수행
-            performSegue(withIdentifier: "back1", sender: self)
-        }
+        currentQuestionIndex -= 1
+        updateQuestion()
     }
     
     func updateQuestion() {
