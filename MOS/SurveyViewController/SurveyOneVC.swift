@@ -20,17 +20,28 @@ class SurveyOneVC: UIViewController {
     @IBOutlet weak var btnThree: UIView!
     @IBOutlet weak var btnFour: UIView!
     @IBOutlet weak var btnFive: UIView!
-    @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var exitBtn: UIImageView!
-    @IBOutlet weak var backBtn: UIImageView!
+    @IBOutlet weak var question: UILabel!
+    @IBOutlet weak var questionNum: UILabel!
     
     var selectedButton: UIView?
     var buttonToCheckBoxMap: [UIView: UIImageView] = [:]
+    var currentQuestionIndex = 0
+    let questions = [
+            "산업분석을 하기 위해서 산업 보다 기업을 먼저 정해야한다고 생각한다.",
+            "산업 / 직무 분석을 하는 방법에 대해 알고 있다.",
+            "산업 / 직무에 대한 조사결과를 통해 나의 생각을 막힘없이 말할 수 있다.",
+            "직무를 분석하기 위해 현직자를 만나는 것이 중요하다고 생각한다.",
+            "직무를 분석하기 위해 현직자를 만난다면 어떤 질문을 준비해야 할지 잘 알고 있다.",
+            "사회 전반 주요 이슈에 대한 자신의 생각을 자신있게 말할 수 있다."
+        ]
     
     
     override func viewDidLoad() {
           super.viewDidLoad()
           // Do any additional setup after loading the view.
+        
+        updateQuestion()
 
         configureButtonView(btnOne)
         configureButtonView(btnTwo)
@@ -60,10 +71,6 @@ class SurveyOneVC: UIViewController {
                 let tapGesture5 = UITapGestureRecognizer(target: self, action: #selector(buttonTapped(_:)))
                 btnFive.addGestureRecognizer(tapGesture5)
           
-          backBtn.isUserInteractionEnabled = true
-          let tapBackBtn = UITapGestureRecognizer(target: self, action: #selector(backBtnTapped))
-          backBtn.addGestureRecognizer(tapBackBtn)
-          
           exitBtn.isUserInteractionEnabled = true
           let tap2Gesture = UITapGestureRecognizer(target: self, action: #selector(exitBtnTapped))
           exitBtn.addGestureRecognizer(tap2Gesture)
@@ -74,32 +81,53 @@ class SurveyOneVC: UIViewController {
           self.performSegue(withIdentifier: "navToSecondSurvey", sender: self)
           }
       
-      @objc func backBtnTapped() {
-          print(#fileID, #function, #line, "- backButton clicked")
-          self.performSegue(withIdentifier: "back1", sender: self)
-          }
       
       @objc func exitBtnTapped() {
           print(#fileID, #function, #line, "- exitButton clicked")
           self.performSegue(withIdentifier: "Home", sender: self)
           }
     
+    @IBAction func backBtnTapped(_ sender: UIButton) {
+        if currentQuestionIndex > 0 {
+            currentQuestionIndex -= 1
+            updateQuestion()
+        } else {
+            // 첫 번째 질문일 경우 back1 세그웨이 수행
+            performSegue(withIdentifier: "back1", sender: self)
+        }
+    }
+    
+    func updateQuestion() {
+            question.text = questions[currentQuestionIndex]
+            questionNum.text = "Q \(currentQuestionIndex + 1)/\(questions.count)"
+        }
+    
     @objc func buttonTapped(_ sender: UITapGestureRecognizer) {
             if let buttonView = sender.view {
                 if buttonView == selectedButton {
-                    // 같은 버튼을 두 번 클릭한 경우 선택 해제
-                    toggleButtonColors(buttonView)
-                    selectedButton = nil
-                } else {
-                    // 다른 버튼을 클릭한 경우
-                    toggleButtonColors(buttonView)
-                    if let selectedButton = selectedButton {
-                        toggleButtonColors(selectedButton)
-                    }
-                    selectedButton = buttonView
+                    // 이미 선택된 버튼을 다시 클릭한 경우 아무 작업도 수행하지 않습니다.
+                    return
                 }
+                
+                toggleButtonColors(buttonView)
+                
+                if let selectedButton = selectedButton {
+                    toggleButtonColors(selectedButton)
+                }
+                
+                selectedButton = buttonView
+                
                 if let checkBoxImage = buttonToCheckBoxMap[buttonView] {
                     toggleCheckBoxImage(checkBoxImage)
+                    
+                    // 질문 및 질문 번호 업데이트
+                    currentQuestionIndex += 1
+                    if currentQuestionIndex < questions.count {
+                        updateQuestion()
+                    } else {
+                        // 모든 질문이 끝난 경우 다음 화면으로 이동
+                        self.performSegue(withIdentifier: "navToSecondSurvey", sender: self)
+                    }
                 }
             }
         }
@@ -129,17 +157,17 @@ class SurveyOneVC: UIViewController {
         }
     
     func toggleCheckBoxImage(_ checkBoxImage: UIImageView) {
-            if checkBoxImage.image == UIImage(named: "image_survey_checkbox") {
-                checkBoxImage.image = UIImage(named: "survey_checked")
-                // 다른 체크박스 이미지를 원래 이미지로 돌려놓기
-                for (_, checkBox) in buttonToCheckBoxMap {
-                    if checkBox != checkBoxImage {
-                        checkBox.image = UIImage(named: "image_survey_checkbox")
-                    }
-                }
-            } else {
-                checkBoxImage.image = UIImage(named: "survey_checked")
+            if checkBoxImage.image == UIImage(named: "survey_checked") {
+                // 이미 선택된 경우는 아무런 작업을 수행하지 않습니다.
+                return
             }
+            
+            // 모든 체크박스 이미지를 초기화
+            for (_, checkBox) in buttonToCheckBoxMap {
+                checkBox.image = UIImage(named: "img_survey_checkbox")
+            }
+            
+            // 선택된 체크박스 이미지 변경
+            checkBoxImage.image = UIImage(named: "survey_checked")
         }
-
   }

@@ -11,89 +11,53 @@ import UIKit
 @IBDesignable
 class SurveyInputView: UIView {
     
-    @IBOutlet var questionNumBackground: UIView!
+    @IBOutlet weak var checkBoxOne: UIImageView!
+    @IBOutlet weak var checkBoxTwo: UIImageView!
+    @IBOutlet weak var checkBoxThree: UIImageView!
+    @IBOutlet weak var checkBoxFour: UIImageView!
+    @IBOutlet weak var checkBoxFive: UIImageView!
+    @IBOutlet weak var categoryView: UIView!
+    @IBOutlet weak var btnOne: UIView!
+    @IBOutlet weak var btnTwo: UIView!
+    @IBOutlet weak var btnThree: UIView!
+    @IBOutlet weak var btnFour: UIView!
+    @IBOutlet weak var btnFive: UIView!
+    @IBOutlet weak var exitBtn: UIButton!
+    @IBOutlet weak var backBtn: UIButton!
     
-    @IBOutlet var questionNumLabel: UILabel!
-    
-    @IBOutlet var containerView: UIView!
-    
-    @IBOutlet weak var questionLabel: UILabel!
-    
-    @IBOutlet weak var button5: UIButton!
-    
-    @IBOutlet weak var button4: UIButton!
-    
-    @IBOutlet weak var button3: UIButton!
-    
-    @IBOutlet weak var button2: UIButton!
-
-    @IBOutlet weak var button1: UIButton!
-    
-    @IBOutlet var button5Label: UILabel!
-    @IBOutlet var button4Label: UILabel!
-    @IBOutlet var button3Label: UILabel!
-    @IBOutlet var button2Label: UILabel!
-    @IBOutlet var button1Label: UILabel!
-    
-    // 인터페이스 빌더에서 속성 넣기
-    @IBInspectable
-    var title: String = "" {
-        didSet {
-            DispatchQueue.main.async {
-                self.questionLabel.text = self.title
-            }
-        }
-    }
-    
-    @IBInspectable
-       var containerborder: CGFloat = 0 {
-           didSet {
-               DispatchQueue.main.async {
-                   self.containerView.layer.borderWidth = self.containerborder
-                   self.containerView.layer.borderColor = UIColor(named: "gray-2")?.cgColor
-                   self.containerView.layer.cornerRadius = 10
-               }
-           }
-       }
-    
-    @IBInspectable
-        var buttonborder: CGFloat = 0 {
-            didSet {
-                DispatchQueue.main.async {
-                    self.button1.layer.cornerRadius = self.button1.frame.height/2
-                    self.button1.layer.borderWidth = self.containerborder
-                    self.button1.layer.borderColor = UIColor(named: "gray-2")?.cgColor
-                    self.button2.layer.cornerRadius = self.button1.frame.height/2
-                    self.button2.layer.borderWidth = self.containerborder
-                    self.button2.layer.borderColor = UIColor(named: "gray-2")?.cgColor
-                    self.button3.layer.cornerRadius = self.button1.frame.height/2
-                    self.button3.layer.borderWidth = self.containerborder
-                    self.button3.layer.borderColor = UIColor(named: "gray-2")?.cgColor
-                    self.button4.layer.cornerRadius = self.button1.frame.height/2
-                    self.button4.layer.borderWidth = self.containerborder
-                    self.button4.layer.borderColor = UIColor(named: "gray-2")?.cgColor
-                    self.button5.layer.cornerRadius = self.button5.frame.height/2
-                    self.button5.layer.borderWidth = self.containerborder
-                    self.button5.layer.borderColor = UIColor(named: "gray-2")?.cgColor
-                }
-            }
-        }
-    
-    @IBInspectable
-    var questionNum: String = "" {
-        didSet {
-            DispatchQueue.main.async {
-                let questionNumCornerRadius = self.questionNumBackground.frame.height / 2
-                self.questionNumBackground.layer.cornerRadius = questionNumCornerRadius
-                self.questionNumLabel.text = self.questionNum
-            }
-        }
-    }
+    var selectedButton: UIView?
+    var buttonToCheckBoxMap: [UIView: UIImageView] = [:]
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        applyNib()
-        applyAction()
+        configureButtonView(btnOne)
+        configureButtonView(btnTwo)
+        configureButtonView(btnThree)
+        configureButtonView(btnFour)
+        configureButtonView(btnFive)
+        configureCategoryView()
+        
+        buttonToCheckBoxMap[btnOne] = checkBoxOne
+        buttonToCheckBoxMap[btnTwo] = checkBoxTwo
+        buttonToCheckBoxMap[btnThree] = checkBoxThree
+        buttonToCheckBoxMap[btnFour] = checkBoxFour
+        buttonToCheckBoxMap[btnFive] = checkBoxFive
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(buttonTapped(_:)))
+                btnOne.addGestureRecognizer(tapGesture)
+                
+                let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(buttonTapped(_:)))
+                btnTwo.addGestureRecognizer(tapGesture2)
+                
+                let tapGesture3 = UITapGestureRecognizer(target: self, action: #selector(buttonTapped(_:)))
+                btnThree.addGestureRecognizer(tapGesture3)
+                
+                let tapGesture4 = UITapGestureRecognizer(target: self, action: #selector(buttonTapped(_:)))
+                btnFour.addGestureRecognizer(tapGesture4)
+                
+                let tapGesture5 = UITapGestureRecognizer(target: self, action: #selector(buttonTapped(_:)))
+                btnFive.addGestureRecognizer(tapGesture5)
+          
     }
     
     override init(frame: CGRect) {
@@ -121,34 +85,64 @@ class SurveyInputView: UIView {
             view.trailingAnchor.constraint(equalTo: self.trailingAnchor)
         ])
     }
-    
-    fileprivate func applyAction() {
-        let buttons = [button1, button2, button3, button4, button5]
-        for (index, button) in buttons.enumerated() {
-            button?.tag = index
-            button?.addTarget(self, action: #selector(onButtonClicked(sender:)), for: .touchUpInside)
-        }
-    }
-    
-    @objc func onButtonClicked(sender: UIButton) {
-        print(#fileID, #function, #line, "- button clicked")
-        let buttons = [button1, button2, button3, button4, button5]
-        let labels = [button1Label, button2Label, button3Label, button4Label, button5Label]
-        
-        for (index, button) in buttons.enumerated() {
-            let label = labels[index]
-            if index == sender.tag {
-                button?.setTitleColor(UIColor(named: "main"), for: .normal)
-                button?.layer.cornerRadius = self.button1.frame.height / 2
-                button?.layer.borderColor = UIColor(named: "main")?.cgColor
-                button?.layer.backgroundColor = UIColor(named: "main-2")?.cgColor
-                label?.textColor = UIColor(named: "main")
-            } else {
-                button?.setTitleColor(UIColor.black, for: .normal)
-                button?.layer.borderColor = UIColor(named: "gray-1")?.cgColor
-                button?.layer.backgroundColor = UIColor.white.cgColor
-                label?.textColor = UIColor.black
-            }
-        }
-    }
+  
+  @objc func buttonTapped(_ sender: UITapGestureRecognizer) {
+      if let buttonView = sender.view {
+          if buttonView == selectedButton {
+              // 이미 선택된 버튼을 다시 클릭한 경우 아무 작업도 수행하지 않습니다.
+              return
+          }
+          
+          toggleButtonColors(buttonView)
+          
+          if let selectedButton = selectedButton {
+              toggleButtonColors(selectedButton)
+          }
+          
+          selectedButton = buttonView
+          
+          if let checkBoxImage = buttonToCheckBoxMap[buttonView] {
+              toggleCheckBoxImage(checkBoxImage)
+          }
+      }
+  }
+  
+  func configureButtonView(_ buttonView: UIView) {
+          buttonView.layer.cornerRadius = 8
+          buttonView.layer.borderWidth = 1
+          buttonView.layer.borderColor = UIColor(red: 0.929, green: 0.929, blue: 0.929, alpha: 1.0).cgColor // EDEDED
+          buttonView.backgroundColor = .clear
+      }
+  
+  func configureCategoryView() {
+          categoryView.layer.cornerRadius = 8
+          categoryView.layer.borderWidth = 1
+          categoryView.layer.borderColor = UIColor(red: 0.933, green: 0.933, blue: 0.933, alpha: 1.0).cgColor // EEEEEE
+          categoryView.backgroundColor = UIColor(red: 0.965, green: 0.965, blue: 0.965, alpha: 1.0) // F6F6F6
+      }
+  
+  func toggleButtonColors(_ buttonView: UIView) {
+          if buttonView.layer.borderColor == UIColor(red: 0.929, green: 0.929, blue: 0.929, alpha: 1.0).cgColor {
+              buttonView.layer.borderColor = UIColor(red: 1.0, green: 0.898, blue: 0.870, alpha: 1.0).cgColor // FFE5DE
+              buttonView.backgroundColor = UIColor(red: 1.0, green: 0.953, blue: 0.941, alpha: 1.0) // FFF3F0
+          } else {
+              buttonView.layer.borderColor = UIColor(red: 0.929, green: 0.929, blue: 0.929, alpha: 1.0).cgColor // EDEDED
+              buttonView.backgroundColor = .clear
+          }
+      }
+  
+  func toggleCheckBoxImage(_ checkBoxImage: UIImageView) {
+          if checkBoxImage.image == UIImage(named: "survey_checked") {
+              // 이미 선택된 경우는 아무런 작업을 수행하지 않습니다.
+              return
+          }
+          
+          // 모든 체크박스 이미지를 초기화
+          for (_, checkBox) in buttonToCheckBoxMap {
+              checkBox.image = UIImage(named: "img_survey_checkbox")
+          }
+          
+          // 선택된 체크박스 이미지 변경
+          checkBoxImage.image = UIImage(named: "survey_checked")
+      }
 }
