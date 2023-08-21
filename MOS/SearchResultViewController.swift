@@ -107,5 +107,13 @@ class SearchResultViewController: UIViewController{
         dropDown.show()
         self.dropDownIcon.image = UIImage.init(named: "icon_arrow_up")
     }
+    
+    
+    @IBAction func tempButton(_ sender: Any) {
+        let studyDetailStodyboard = UIStoryboard.init(name: "Search", bundle: nil)
+        guard let nextVC = studyDetailStodyboard.instantiateViewController(withIdentifier: "StudyListVC")as? StudyListViewController else {return}
+        nextVC.modalPresentationStyle = .fullScreen
+        navigationController?.show(nextVC, sender: nil) //새로운 방식
+    }
 }
 
