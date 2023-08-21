@@ -23,6 +23,7 @@ class SurveyOneVC: UIViewController {
     @IBOutlet weak var exitBtn: UIImageView!
     @IBOutlet weak var question: UILabel!
     @IBOutlet weak var questionNum: UILabel!
+    @IBOutlet weak var backBtn: UIButton!
     
     var selectedButton: UIView?
     var buttonToCheckBoxMap: [UIView: UIImageView] = [:]
@@ -74,6 +75,11 @@ class SurveyOneVC: UIViewController {
           exitBtn.isUserInteractionEnabled = true
           let tap2Gesture = UITapGestureRecognizer(target: self, action: #selector(exitBtnTapped))
           exitBtn.addGestureRecognizer(tap2Gesture)
+        
+        backBtn.isUserInteractionEnabled = true
+        let backBtnClick = UITapGestureRecognizer(target: self, action: #selector(backBtnTapped))
+        backBtn.addGestureRecognizer(backBtnClick)
+        
       }
 
       @objc func startBtnTapped() {
@@ -87,9 +93,22 @@ class SurveyOneVC: UIViewController {
           self.performSegue(withIdentifier: "Home", sender: self)
           }
     
-    @IBAction func backBtnTapped(_ sender: UIButton) {
-        currentQuestionIndex -= 1
-        updateQuestion()
+    @objc func backBtnTapped() {
+        if currentQuestionIndex > 0 {
+                currentQuestionIndex -= 1
+                updateQuestion()
+
+                // Reset the selected button and checkbox for the previous question
+                if let selectedButton = selectedButton {
+                    toggleButtonColors(selectedButton)
+                    buttonToCheckBoxMap[selectedButton]?.image = UIImage(named: "img_survey_checkbox")
+                }
+
+                selectedButton = nil
+            } else {
+                // Perform the segue to the start screen
+                self.performSegue(withIdentifier: "navToStart", sender: self)
+            }
     }
     
     func updateQuestion() {
