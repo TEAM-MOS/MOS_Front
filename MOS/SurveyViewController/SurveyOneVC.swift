@@ -117,35 +117,46 @@ class SurveyOneVC: UIViewController {
         }
     
     @objc func buttonTapped(_ sender: UITapGestureRecognizer) {
-            if let buttonView = sender.view {
-                if buttonView == selectedButton {
-                    // 이미 선택된 버튼을 다시 클릭한 경우 아무 작업도 수행하지 않습니다.
-                    return
-                }
+        if let buttonView = sender.view {
+            if buttonView == selectedButton {
+                // 이미 선택된 버튼을 다시 클릭한 경우 아무 작업도 수행하지 않습니다.
+                return
+            }
+            
+            toggleButtonColors(buttonView)
+            
+            if let selectedButton = selectedButton {
+                toggleButtonColors(selectedButton)
+            }
+            
+            selectedButton = buttonView
+            
+            if let checkBoxImage = buttonToCheckBoxMap[buttonView] {
+                toggleCheckBoxImage(checkBoxImage)
                 
-                toggleButtonColors(buttonView)
-                
-                if let selectedButton = selectedButton {
-                    toggleButtonColors(selectedButton)
-                }
-                
-                selectedButton = buttonView
-                
-                if let checkBoxImage = buttonToCheckBoxMap[buttonView] {
-                    toggleCheckBoxImage(checkBoxImage)
-                    
-                    // 질문 및 질문 번호 업데이트
-                    currentQuestionIndex += 1
-                    if currentQuestionIndex < questions.count {
-                        updateQuestion()
-                    } else {
-                        // 모든 질문이 끝난 경우 다음 화면으로 이동
-                        self.performSegue(withIdentifier: "navToSecondSurvey", sender: self)
+                if checkBoxImage.image == UIImage(named: "survey_checked") {
+                    // Delay the question update to give users a chance to see the selected button
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                        // 질문 및 질문 번호 업데이트
+                        self.currentQuestionIndex += 1
+                        if self.currentQuestionIndex < self.questions.count {
+                            self.updateQuestion()
+                        } else {
+                            // 모든 질문이 끝난 경우 다음 화면으로 이동
+                            self.performSegue(withIdentifier: "navToSecondSurvey", sender: self)
+                        }
+                        
+                        // Reset the UI after the question update
+                        self.toggleButtonColors(buttonView)
+                        self.buttonToCheckBoxMap[buttonView]?.image = UIImage(named: "img_survey_checkbox")
+                        self.selectedButton = nil
                     }
                 }
             }
         }
-    
+    }
+            
+     
     func configureButtonView(_ buttonView: UIView) {
             buttonView.layer.cornerRadius = 8
             buttonView.layer.borderWidth = 1
