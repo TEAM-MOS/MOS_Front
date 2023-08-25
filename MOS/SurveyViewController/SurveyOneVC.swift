@@ -28,6 +28,8 @@ class SurveyOneVC: UIViewController {
     var selectedButton: UIView?
     var buttonToCheckBoxMap: [UIView: UIImageView] = [:]
     var currentQuestionIndex = 0
+    var scores: [Int] = Array(repeating: 0, count: 20)
+    var buttonToScoreMap: [UIView: Int] = [:]
     let questions = [
             "산업분석을 하기 위해서 산업 보다 기업을 먼저 정해야한다고 생각한다.",
             "산업 / 직무 분석을 하는 방법에 대해 알고 있다.",
@@ -53,9 +55,15 @@ class SurveyOneVC: UIViewController {
     
     
     override func viewDidLoad() {
-          super.viewDidLoad()
-          // Do any additional setup after loading the view.
+      super.viewDidLoad()
+      // Do any additional setup after loading the view.
         
+        buttonToScoreMap[btnOne] = 0
+        buttonToScoreMap[btnTwo] = 1
+        buttonToScoreMap[btnThree] = 2
+        buttonToScoreMap[btnFour] = 3
+        buttonToScoreMap[btnFive] = 4
+
         updateQuestion()
 
         configureButtonView(btnOne)
@@ -131,43 +139,48 @@ class SurveyOneVC: UIViewController {
         }
     
     @objc func buttonTapped(_ sender: UITapGestureRecognizer) {
-        if let buttonView = sender.view {
-            if buttonView == selectedButton {
-                // 이미 선택된 버튼을 다시 클릭한 경우 아무 작업도 수행하지 않습니다.
-                return
-            }
-            
-            toggleButtonColors(buttonView)
-            
-            if let selectedButton = selectedButton {
-                toggleButtonColors(selectedButton)
-            }
-            
-            selectedButton = buttonView
-            
-            if let checkBoxImage = buttonToCheckBoxMap[buttonView] {
-                toggleCheckBoxImage(checkBoxImage)
+        if let buttonView = sender.view, let score = buttonToScoreMap[buttonView] {
+            scores[currentQuestionIndex] = score// 해당 버튼에 대한 점수를 배열에 저장
+            print("Scores:", scores)
+
+            if let buttonView = sender.view {
+                if buttonView == selectedButton {
+                    // 이미 선택된 버튼을 다시 클릭한 경우 아무 작업도 수행하지 않습니다.
+                    return
+                }
                 
-                if checkBoxImage.image == UIImage(named: "survey_checked") {
-                    // Delay the question update to give users a chance to see the selected button
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                        // 질문 및 질문 번호 업데이트
-                        self.currentQuestionIndex += 1
-                        if self.currentQuestionIndex < self.questions.count {
-                            self.updateQuestion()
-                        } else {
-                            // 모든 질문이 끝난 경우 다음 화면으로 이동
-                            self.performSegue(withIdentifier: "navToSecondSurvey", sender: self)
+                toggleButtonColors(buttonView)
+                
+                if let selectedButton = selectedButton {
+                    toggleButtonColors(selectedButton)
+                }
+                
+                selectedButton = buttonView
+                
+                if let checkBoxImage = buttonToCheckBoxMap[buttonView] {
+                    toggleCheckBoxImage(checkBoxImage)
+                    
+                    if checkBoxImage.image == UIImage(named: "survey_checked") {
+                        // Delay the question update to give users a chance to see the selected button
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                            // 질문 및 질문 번호 업데이트
+                            self.currentQuestionIndex += 1
+                            if self.currentQuestionIndex < self.questions.count {
+                                self.updateQuestion()
+                            } else {
+                                // 모든 질문이 끝난 경우 다음 화면으로 이동
+                                self.performSegue(withIdentifier: "navToSecondSurvey", sender: self)
+                            }
+                            
+                            // Reset the UI after the question update
+                            self.toggleButtonColors(buttonView)
+                            self.buttonToCheckBoxMap[buttonView]?.image = UIImage(named: "img_survey_checkbox")
+                            self.selectedButton = nil
                         }
-                        
-                        // Reset the UI after the question update
-                        self.toggleButtonColors(buttonView)
-                        self.buttonToCheckBoxMap[buttonView]?.image = UIImage(named: "img_survey_checkbox")
-                        self.selectedButton = nil
                     }
                 }
             }
-        }
+                }
     }
             
      
