@@ -8,7 +8,8 @@
 import UIKit
 import DropDown
 
-class SearchResultViewController: UIViewController{
+class SearchResultViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
     
     var search_text = ""
     @IBOutlet weak var searchBar: UITextField!
@@ -16,7 +17,26 @@ class SearchResultViewController: UIViewController{
     @IBOutlet weak var dropButtonView: UIView!
     @IBOutlet weak var dropDownIcon: UIImageView!
     @IBOutlet weak var dropButtonText: UITextField!
-    @IBOutlet weak var studyInputView: StudyInputView!
+
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return StudyList.list.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        // 재사용 가능한 셀을 가져옴 (indexPath 번째)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StudyListCell", for: indexPath) as? StudyListCollectionViewCell else {
+            // casting 실패 시
+            return UICollectionViewCell()
+        }
+        
+        let studyListCell = StudyList.list[indexPath.item]
+        // indexPath 안에는 섹션에 대한 정보, 섹션에 들어가는 데이터 정보 등이 있다
+        cell.configure(studyListCell)
+        return cell
+    }
+
     
     // DropDown 버튼 객체 생성
     let dropDown = DropDown()
@@ -24,9 +44,25 @@ class SearchResultViewController: UIViewController{
     // DropDown 버튼 아이템 리스트
     let dropDownItemList = ["인기순", "최신순"]
     
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        
+        let leadingConstraint = collectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20)
+        
+        leadingConstraint.isActive = true
+        
+        let trailingConstraint = collectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20)
+        trailingConstraint.isActive = true
+        
+
         // 검색 textField
         searchBar.setupLeftSideImage(ImageViewNamed: "icon_searchBar")
         
@@ -44,9 +80,12 @@ class SearchResultViewController: UIViewController{
         
         // 스터디 상세 페이지로 이동
         // viewMap: View 객체
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
-        studyInputView.addGestureRecognizer(tapGestureRecognizer)
+//        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+//        studyInputView.addGestureRecognizer(tapGestureRecognizer)
     }
+    
+
+    
     
     // DropDown 버튼 UI
     func dropDownUI() {
@@ -117,3 +156,22 @@ class SearchResultViewController: UIViewController{
     }
 }
 
+
+// ====== ✨ collection view dynamic height ======
+// 타이틀 사이즈에 따른 height값 조절
+extension SearchResultViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+           let studyList = StudyList.list[indexPath.item]
+           
+           let titleFont = UIFont.systemFont(ofSize: 17) // 적절한 폰트 사용
+           let titleText = studyList.title
+           let titleMaxWidth = collectionView.bounds.width /* 패딩이나 제약조건 조절 */
+           
+           let titleHeight = titleText.height(withConstrainedWidth: titleMaxWidth, font: titleFont)
+           
+           // 제목 레이블 높이를 기반으로 원하는 셀 높이 계산
+        let cellHeight = titleHeight + 130.0 /* 다른 셀 요소에 대한 높이 추가 */
+           
+           return CGSize(width: collectionView.bounds.width, height: cellHeight)
+       }
+}
