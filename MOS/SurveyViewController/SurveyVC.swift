@@ -170,7 +170,7 @@ class SurveyVC: UIViewController {
                                 self.updateQuestion()
                             } else {
                                 // 모든 질문이 끝난 경우 다음 화면으로 이동
-                                self.performSegue(withIdentifier: "navToSecondSurvey", sender: self)
+                                self.performSegue(withIdentifier: "navToResult", sender: self)
                             }
                             
                             // Reset the UI after the question update
