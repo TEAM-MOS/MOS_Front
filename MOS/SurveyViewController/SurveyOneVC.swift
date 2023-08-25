@@ -142,6 +142,7 @@ class SurveyOneVC: UIViewController {
         if let buttonView = sender.view, let score = buttonToScoreMap[buttonView] {
             scores[currentQuestionIndex] = score// 해당 버튼에 대한 점수를 배열에 저장
             print("Scores:", scores)
+            calculateCategoryScores()
 
             if let buttonView = sender.view {
                 if buttonView == selectedButton {
@@ -206,6 +207,20 @@ class SurveyOneVC: UIViewController {
                 buttonView.layer.borderColor = UIColor(red: 0.929, green: 0.929, blue: 0.929, alpha: 1.0).cgColor // EDEDED
                 buttonView.backgroundColor = .clear
             }
+        }
+    
+    func calculateCategoryScores() {
+            // 각 카테고리 별로 선택된 버튼들의 점수 합산
+            let categoryOneScore = scores[0..<5].reduce(0, +)
+            let categoryTwoScore = scores[5..<10].reduce(0, +)
+            let categoryThreeScore = scores[10..<15].reduce(0, +)
+            let categoryFourScore = scores[15..<20].reduce(0, +)
+
+            // 이후에 categoryOneScore, categoryTwoScore, categoryThreeScore, categoryFourScore 사용
+            print("Category One Score:", categoryOneScore)
+            print("Category Two Score:", categoryTwoScore)
+            print("Category Three Score:", categoryThreeScore)
+            print("Category Four Score:", categoryFourScore)
         }
     
     func toggleCheckBoxImage(_ checkBoxImage: UIImageView) {
