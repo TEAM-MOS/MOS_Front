@@ -45,21 +45,14 @@
 		5A7AA0D12A41BDCA0087DE3C /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */; };
 		5A7AA0D42A41C1A10087DE3C /* AllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D32A41C1A10087DE3C /* AllViewController.swift */; };
 		5A7AA0D62A41C1DC0087DE3C /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D52A41C1DC0087DE3C /* AnalysisViewController.swift */; };
-		5ABFE9E82A19FF4E0094A316 /* SurveyInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */; };
-		5ABFE9EA2A1A05840094A316 /* SurveyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */; };
 		5AC619912A170A4000966219 /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC619902A170A4000966219 /* Survey.storyboard */; };
-		5AC619B42A19E5BD00966219 /* SurveyOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC619B32A19E5BD00966219 /* SurveyOneVC.swift */; };
-		5AD249592A3B9C1C00A7BBAC /* SurveyResultInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD249582A3B9C1C00A7BBAC /* SurveyResultInputView.swift */; };
-		5AD2495D2A3BA59E00A7BBAC /* SurveyResultInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AD2495C2A3BA59E00A7BBAC /* SurveyResultInputView.xib */; };
+		5AC619B42A19E5BD00966219 /* SurveyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC619B32A19E5BD00966219 /* SurveyVC.swift */; };
 		5AD249612A406C4000A7BBAC /* SurveyResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD249602A406C4000A7BBAC /* SurveyResultVC.swift */; };
 		5ADA06562A41E5CF00FE76E5 /* currentEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA06552A41E5CF00FE76E5 /* currentEventViewController.swift */; };
 		5ADA06582A41E60900FE76E5 /* PersonnelAptitudeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA06572A41E60900FE76E5 /* PersonnelAptitudeViewController.swift */; };
 		5ADA065A2A41E63100FE76E5 /* SelfIntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA06592A41E63100FE76E5 /* SelfIntroductionViewController.swift */; };
 		5ADA065C2A41E64900FE76E5 /* InterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA065B2A41E64900FE76E5 /* InterviewViewController.swift */; };
 		5ADA065E2A41E67B00FE76E5 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA065D2A41E67B00FE76E5 /* LanguageViewController.swift */; };
-		5AF073AB2A303748004FD8BB /* SurveyTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF073AA2A303748004FD8BB /* SurveyTwoVC.swift */; };
-		5AF073AD2A30375C004FD8BB /* SurveyThreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF073AC2A30375C004FD8BB /* SurveyThreeVC.swift */; };
-		5AF073AF2A30376D004FD8BB /* SurveyFourVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF073AE2A30376D004FD8BB /* SurveyFourVC.swift */; };
 		E6FE083ADFD94888B7BAA4B1 /* Pods_MOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8023C552FBAB477251468C8 /* Pods_MOS.framework */; };
 		F304A13D2A41FDC90066036B /* StudyDetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304A13C2A41FDC90066036B /* StudyDetailInfoViewController.swift */; };
 		F304A13F2A4206240066036B /* StudyMemberInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304A13E2A4206240066036B /* StudyMemberInfoViewController.swift */; };
@@ -112,21 +105,14 @@
 		5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		5A7AA0D32A41C1A10087DE3C /* AllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllViewController.swift; sourceTree = "<group>"; };
 		5A7AA0D52A41C1DC0087DE3C /* AnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
-		5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyInputView.xib; sourceTree = "<group>"; };
-		5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyInputView.swift; sourceTree = "<group>"; };
 		5AC619902A170A4000966219 /* Survey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
-		5AC619B32A19E5BD00966219 /* SurveyOneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyOneVC.swift; sourceTree = "<group>"; };
-		5AD249582A3B9C1C00A7BBAC /* SurveyResultInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyResultInputView.swift; sourceTree = "<group>"; };
-		5AD2495C2A3BA59E00A7BBAC /* SurveyResultInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyResultInputView.xib; sourceTree = "<group>"; };
+		5AC619B32A19E5BD00966219 /* SurveyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyVC.swift; sourceTree = "<group>"; };
 		5AD249602A406C4000A7BBAC /* SurveyResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyResultVC.swift; sourceTree = "<group>"; };
 		5ADA06552A41E5CF00FE76E5 /* currentEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentEventViewController.swift; sourceTree = "<group>"; };
 		5ADA06572A41E60900FE76E5 /* PersonnelAptitudeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelAptitudeViewController.swift; sourceTree = "<group>"; };
 		5ADA06592A41E63100FE76E5 /* SelfIntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIntroductionViewController.swift; sourceTree = "<group>"; };
 		5ADA065B2A41E64900FE76E5 /* InterviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewViewController.swift; sourceTree = "<group>"; };
 		5ADA065D2A41E67B00FE76E5 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
-		5AF073AA2A303748004FD8BB /* SurveyTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyTwoVC.swift; sourceTree = "<group>"; };
-		5AF073AC2A30375C004FD8BB /* SurveyThreeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyThreeVC.swift; sourceTree = "<group>"; };
-		5AF073AE2A30376D004FD8BB /* SurveyFourVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyFourVC.swift; sourceTree = "<group>"; };
 		9F0823D3883FA48E77D1F2F6 /* Pods-MOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOS.release.xcconfig"; path = "Target Support Files/Pods-MOS/Pods-MOS.release.xcconfig"; sourceTree = "<group>"; };
 		C8023C552FBAB477251468C8 /* Pods_MOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F304A13C2A41FDC90066036B /* StudyDetailInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyDetailInfoViewController.swift; sourceTree = "<group>"; };
@@ -182,7 +168,6 @@
 				2FA142802A149026006AA91B /* LaunchScreen.storyboard */,
 				5A6EE38E2A852376000E841D /* SurveyView */,
 				5A6EE38D2A852225000E841D /* SurveyViewController */,
-				5A6EE38F2A85239B000E841D /* SurveyInputViewsController */,
 				2FA142832A149026006AA91B /* Info.plist */,
 				5A67766A2A1E1ECF00F1D3DB /* Assets.xcassets */,
 				2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */,
@@ -243,10 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				5AD249602A406C4000A7BBAC /* SurveyResultVC.swift */,
-				5AF073AE2A30376D004FD8BB /* SurveyFourVC.swift */,
-				5AF073AA2A303748004FD8BB /* SurveyTwoVC.swift */,
-				5AF073AC2A30375C004FD8BB /* SurveyThreeVC.swift */,
-				5AC619B32A19E5BD00966219 /* SurveyOneVC.swift */,
+				5AC619B32A19E5BD00966219 /* SurveyVC.swift */,
 				5A6EE3942A8AAE90000E841D /* SurveyStartVC.swift */,
 			);
 			path = SurveyViewController;
@@ -255,20 +237,9 @@
 		5A6EE38E2A852376000E841D /* SurveyView */ = {
 			isa = PBXGroup;
 			children = (
-				5AD2495C2A3BA59E00A7BBAC /* SurveyResultInputView.xib */,
-				5ABFE9E72A19FF4E0094A316 /* SurveyInputView.xib */,
 				5AC619902A170A4000966219 /* Survey.storyboard */,
 			);
 			path = SurveyView;
-			sourceTree = "<group>";
-		};
-		5A6EE38F2A85239B000E841D /* SurveyInputViewsController */ = {
-			isa = PBXGroup;
-			children = (
-				5ABFE9E92A1A05840094A316 /* SurveyInputView.swift */,
-				5AD249582A3B9C1C00A7BBAC /* SurveyResultInputView.swift */,
-			);
-			path = SurveyInputViewsController;
 			sourceTree = "<group>";
 		};
 		5A7AA0D22A41C1580087DE3C /* Controllers */ = {
@@ -373,8 +344,6 @@
 			files = (
 				5A6776BC2A2269B600F1D3DB /* Pretendard-ExtraLight.ttf in Resources */,
 				5A6776BB2A2269B600F1D3DB /* Pretendard-Thin.ttf in Resources */,
-				5AD2495D2A3BA59E00A7BBAC /* SurveyResultInputView.xib in Resources */,
-				5ABFE9E82A19FF4E0094A316 /* SurveyInputView.xib in Resources */,
 				5A67766B2A1E1ECF00F1D3DB /* Assets.xcassets in Resources */,
 				5A6776BA2A2269B600F1D3DB /* Pretendard-Regular.ttf in Resources */,
 				2FA142822A149026006AA91B /* LaunchScreen.storyboard in Resources */,
@@ -453,7 +422,6 @@
 				F33B43462A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift in Sources */,
 				5A6EE3952A8AAE90000E841D /* SurveyStartVC.swift in Sources */,
 				2F28E67F2A1DD9C700021E72 /* SearchViewController.swift in Sources */,
-				5AF073AB2A303748004FD8BB /* SurveyTwoVC.swift in Sources */,
 				2FFCFC442A1DD2B200E2AC95 /* HomeViewController.swift in Sources */,
 				5ADA065C2A41E64900FE76E5 /* InterviewViewController.swift in Sources */,
 				5A7AA0D42A41C1A10087DE3C /* AllViewController.swift in Sources */,
@@ -461,7 +429,6 @@
 				5ADA06582A41E60900FE76E5 /* PersonnelAptitudeViewController.swift in Sources */,
 				2F28E6892A1DDF9A00021E72 /* AddStudyViewController.swift in Sources */,
 				2FA1427A2A149024006AA91B /* ViewController.swift in Sources */,
-				5AF073AD2A30375C004FD8BB /* SurveyThreeVC.swift in Sources */,
 				2F9DAF532A3222A5007CA960 /* StudyDetailViewController.swift in Sources */,
 				F304A13D2A41FDC90066036B /* StudyDetailInfoViewController.swift in Sources */,
 				F3A7F9BE2A421DC800AE1863 /* StudyRegisterViewController.swift in Sources */,
@@ -471,11 +438,8 @@
 				F3A7F9BC2A4219BC00AE1863 /* PreQuestionAlertViewController.swift in Sources */,
 				2FA142762A149024006AA91B /* AppDelegate.swift in Sources */,
 				2FA142782A149024006AA91B /* SceneDelegate.swift in Sources */,
-				5AD249592A3B9C1C00A7BBAC /* SurveyResultInputView.swift in Sources */,
 				5A7AA0D12A41BDCA0087DE3C /* PagingViewController.swift in Sources */,
-				5AC619B42A19E5BD00966219 /* SurveyOneVC.swift in Sources */,
-				5AF073AF2A30376D004FD8BB /* SurveyFourVC.swift in Sources */,
-				5ABFE9EA2A1A05840094A316 /* SurveyInputView.swift in Sources */,
+				5AC619B42A19E5BD00966219 /* SurveyVC.swift in Sources */,
 				2FB095862A2631910035FB78 /* DeviceGroup.swift in Sources */,
 				F304A1412A420FF90066036B /* StudyInfoTodoViewController.swift in Sources */,
 				2FD24DA82A24F73B000747D7 /* SearchResultViewController.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-class SurveyOneVC: UIViewController {
+class SurveyVC: UIViewController {
    
     @IBOutlet weak var checkBoxOne: UIImageView!
     @IBOutlet weak var checkBoxTwo: UIImageView!
