@@ -7,8 +7,7 @@
 
 import Foundation
 import UIKit
-class SurveyVC: UIViewController {
-   
+class SurveyVC: UIViewController{
     @IBOutlet weak var checkBoxOne: UIImageView!
     @IBOutlet weak var checkBoxTwo: UIImageView!
     @IBOutlet weak var checkBoxThree: UIImageView!
@@ -53,16 +52,31 @@ class SurveyVC: UIViewController {
             "새로이 입사할 조직문화에 대한 적응방법을 묻는 질문에 답변할 수 있다."
         ]
     
+    var categoryOneScore: Int = 0
+    var categoryTwoScore: Int = 0
+    var categoryThreeScore: Int = 0
+    var categoryFourScore: Int = 0
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "navToResult", let destinationVC = segue.destination as? SurveyResultVC {
+            // 전환될 뷰 컨트롤러가 SurveyResultVC인 경우
+            print("점수 전달 성공!")
+            destinationVC.categoryOneScore = scores[0..<5].reduce(0, +)
+            destinationVC.categoryTwoScore = scores[5..<10].reduce(0, +)
+            destinationVC.categoryThreeScore = scores[10..<15].reduce(0, +)
+            destinationVC.categoryFourScore = scores[15..<20].reduce(0, +)
+        }
+    }
     
     override func viewDidLoad() {
       super.viewDidLoad()
       // Do any additional setup after loading the view.
         
-        buttonToScoreMap[btnOne] = 0
-        buttonToScoreMap[btnTwo] = 1
-        buttonToScoreMap[btnThree] = 2
-        buttonToScoreMap[btnFour] = 3
-        buttonToScoreMap[btnFive] = 4
+        buttonToScoreMap[btnOne] = 1
+        buttonToScoreMap[btnTwo] = 2
+        buttonToScoreMap[btnThree] = 3
+        buttonToScoreMap[btnFour] = 4
+        buttonToScoreMap[btnFive] = 5
 
         updateQuestion()
 
@@ -142,7 +156,10 @@ class SurveyVC: UIViewController {
         if let buttonView = sender.view, let score = buttonToScoreMap[buttonView] {
             scores[currentQuestionIndex] = score// 해당 버튼에 대한 점수를 배열에 저장
             print("Scores:", scores)
-            calculateCategoryScores()
+            
+            if currentQuestionIndex == 19{
+                calculateCategoryScores()
+            }
 
             if let buttonView = sender.view {
                 if buttonView == selectedButton {
@@ -211,16 +228,17 @@ class SurveyVC: UIViewController {
     
     func calculateCategoryScores() {
             // 각 카테고리 별로 선택된 버튼들의 점수 합산
-            let categoryOneScore = scores[0..<5].reduce(0, +)
-            let categoryTwoScore = scores[5..<10].reduce(0, +)
-            let categoryThreeScore = scores[10..<15].reduce(0, +)
-            let categoryFourScore = scores[15..<20].reduce(0, +)
+            categoryOneScore = scores[0..<5].reduce(0, +)
+            categoryTwoScore = scores[5..<10].reduce(0, +)
+            categoryThreeScore = scores[10..<15].reduce(0, +)
+            categoryFourScore = scores[15..<20].reduce(0, +)
 
             // 이후에 categoryOneScore, categoryTwoScore, categoryThreeScore, categoryFourScore 사용
             print("Category One Score:", categoryOneScore)
             print("Category Two Score:", categoryTwoScore)
             print("Category Three Score:", categoryThreeScore)
             print("Category Four Score:", categoryFourScore)
+        
         }
     
     func toggleCheckBoxImage(_ checkBoxImage: UIImageView) {
