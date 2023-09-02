@@ -299,29 +299,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="survey_mohum_character" translatesAutoresizingMaskIntoConstraints="NO" id="uEI-FV-zSz">
-                                <rect key="frame" x="91" y="161" width="211" height="166.66666666666663"/>
+                                <rect key="frame" x="38" y="49.999999999999986" width="317" height="179.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uEI-FV-zSz" secondAttribute="height" multiplier="293:166" id="fH1-87-CsI"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/ 100점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuA-PY-kNh">
-                                <rect key="frame" x="171.66666666666666" y="343.66666666666669" width="65.333333333333343" height="24"/>
+                                <rect key="frame" x="171.66666666666666" y="249.66666666666663" width="65.333333333333343" height="24"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="68점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyk-by-rv7">
-                                <rect key="frame" x="124.33333333333333" y="343.66666666666669" width="43.333333333333329" height="24"/>
+                                <rect key="frame" x="124.33333333333333" y="249.66666666666663" width="43.333333333333329" height="24"/>
                                 <color key="tintColor" red="0.94117647410000005" green="0.60000002379999995" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
                                 <color key="textColor" red="0.94117647410000005" green="0.60000002379999995" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당신은 취업할 준비가 끝난 모험 단계입니다.            자신에게 믿음을 갖고 출발해봅시다!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoW-PS-yfz">
-                                <rect key="frame" x="16" y="383.66666666666669" width="361" height="38.333333333333314"/>
+                                <rect key="frame" x="16" y="293.66666666666669" width="361" height="38.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bla-eb-6sA">
-                                <rect key="frame" x="16" y="438" width="361" height="240"/>
+                                <rect key="frame" x="16" y="352" width="361" height="240"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="survey_result_graph" translatesAutoresizingMaskIntoConstraints="NO" id="0Xz-p5-Den">
                                         <rect key="frame" x="100" y="22" width="241" height="180"/>
@@ -336,13 +339,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사 PT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbW-ei-3yz">
-                                        <rect key="frame" x="55.333333333333329" y="80.333333333333371" width="38.666666666666671" height="14.333333333333329"/>
+                                        <rect key="frame" x="55.333333333333329" y="80.333333333333314" width="38.666666666666671" height="14.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                         <color key="textColor" red="0.60424558080000002" green="0.60424558080000002" blue="0.60424558080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEk-UD-0b6">
-                                        <rect key="frame" x="73" y="118.66666666666663" width="21" height="14.333333333333343"/>
+                                        <rect key="frame" x="73" y="118.66666666666669" width="21" height="14.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                         <color key="textColor" red="0.60424558080000002" green="0.60424558080000002" blue="0.60424558080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -401,13 +404,13 @@
                                         </constraints>
                                     </progressView>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PWv-x4-gLL">
-                                        <rect key="frame" x="101.66666666666667" y="82.333333333333371" width="239.33333333333331" height="17"/>
+                                        <rect key="frame" x="101.66666666666667" y="82.333333333333314" width="239.33333333333331" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="pbU-6D-2Xf"/>
                                         </constraints>
                                     </progressView>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ASA-Os-NhL">
-                                        <rect key="frame" x="101.66666666666667" y="120.66666666666663" width="239.33333333333331" height="17"/>
+                                        <rect key="frame" x="101.66666666666667" y="120.66666666666669" width="239.33333333333331" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="zOE-bT-5yG"/>
                                         </constraints>
@@ -451,7 +454,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pLW-0z-sAt">
-                                <rect key="frame" x="16" y="704" width="361" height="48"/>
+                                <rect key="frame" x="16" y="632" width="361" height="48"/>
                                 <color key="backgroundColor" red="0.94117647410000005" green="0.60000002379999995" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="MXo-yV-hAM"/>
@@ -467,24 +470,28 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="btY-7y-dGP" kind="show" identifier="navToHome" id="erG-QG-u9q"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hdN-G8-bne"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Bla-eb-6sA" firstAttribute="top" secondItem="uoW-PS-yfz" secondAttribute="bottom" constant="16" id="6tw-lQ-zHT"/>
-                            <constraint firstItem="BuA-PY-kNh" firstAttribute="top" secondItem="uEI-FV-zSz" secondAttribute="bottom" constant="16" id="CWG-RI-oYi"/>
+                            <constraint firstItem="Bla-eb-6sA" firstAttribute="top" secondItem="uoW-PS-yfz" secondAttribute="bottom" constant="20" id="6tw-lQ-zHT"/>
+                            <constraint firstItem="uEI-FV-zSz" firstAttribute="top" secondItem="hdN-G8-bne" secondAttribute="top" constant="50" id="Blb-2i-XLs"/>
+                            <constraint firstItem="BuA-PY-kNh" firstAttribute="top" secondItem="uEI-FV-zSz" secondAttribute="bottom" constant="20" id="CWG-RI-oYi"/>
                             <constraint firstItem="hyk-by-rv7" firstAttribute="top" secondItem="BuA-PY-kNh" secondAttribute="top" id="GsI-KL-cbG"/>
-                            <constraint firstItem="pLW-0z-sAt" firstAttribute="top" secondItem="Bla-eb-6sA" secondAttribute="bottom" constant="26" id="HwR-r7-P29"/>
-                            <constraint firstItem="hdN-G8-bne" firstAttribute="bottom" secondItem="pLW-0z-sAt" secondAttribute="bottom" constant="100" id="KXa-5s-5OQ"/>
+                            <constraint firstItem="pLW-0z-sAt" firstAttribute="top" secondItem="Bla-eb-6sA" secondAttribute="bottom" constant="40" id="HwR-r7-P29"/>
                             <constraint firstItem="uEI-FV-zSz" firstAttribute="centerX" secondItem="0mF-M2-jBw" secondAttribute="centerX" id="Qt2-mI-4Zy"/>
                             <constraint firstItem="pLW-0z-sAt" firstAttribute="centerX" secondItem="hdN-G8-bne" secondAttribute="centerX" id="VGw-Id-kt0"/>
-                            <constraint firstItem="uoW-PS-yfz" firstAttribute="top" secondItem="BuA-PY-kNh" secondAttribute="bottom" constant="16" id="ceZ-Ah-Tra"/>
+                            <constraint firstItem="uoW-PS-yfz" firstAttribute="top" secondItem="BuA-PY-kNh" secondAttribute="bottom" constant="20" id="ceZ-Ah-Tra"/>
                             <constraint firstItem="Bla-eb-6sA" firstAttribute="leading" secondItem="hdN-G8-bne" secondAttribute="leading" constant="16" id="cjz-hs-9bA"/>
                             <constraint firstItem="Bla-eb-6sA" firstAttribute="centerX" secondItem="0mF-M2-jBw" secondAttribute="centerX" id="fkH-QM-Eqv"/>
                             <constraint firstItem="hdN-G8-bne" firstAttribute="trailing" secondItem="BuA-PY-kNh" secondAttribute="trailing" constant="156" id="g7o-vz-9Kh"/>
                             <constraint firstItem="pLW-0z-sAt" firstAttribute="leading" secondItem="hdN-G8-bne" secondAttribute="leading" constant="16" id="jWF-jd-H1o"/>
                             <constraint firstItem="BuA-PY-kNh" firstAttribute="leading" secondItem="hyk-by-rv7" secondAttribute="trailing" constant="4" id="k0C-FC-aCs"/>
+                            <constraint firstItem="uEI-FV-zSz" firstAttribute="leading" secondItem="hdN-G8-bne" secondAttribute="leading" constant="38" id="oKe-ev-uer"/>
                             <constraint firstItem="uoW-PS-yfz" firstAttribute="centerX" secondItem="0mF-M2-jBw" secondAttribute="centerX" id="tHF-lD-bAO"/>
                             <constraint firstItem="uoW-PS-yfz" firstAttribute="leading" secondItem="hdN-G8-bne" secondAttribute="leading" constant="16" id="w5N-v2-3i4"/>
                         </constraints>
@@ -495,6 +502,7 @@
                         <outlet property="categoryOneProgressBar" destination="8Jj-nP-u3B" id="HOm-up-Ubb"/>
                         <outlet property="categoryThreeProgressBar" destination="ASA-Os-NhL" id="MZe-wl-UBb"/>
                         <outlet property="categoryTwoProgressBar" destination="PWv-x4-gLL" id="R6V-nJ-B7z"/>
+                        <outlet property="finishButton" destination="pLW-0z-sAt" id="cSh-TQ-QZi"/>
                         <outlet property="graphbackground" destination="Bla-eb-6sA" id="5mL-JE-JMl"/>
                         <outlet property="resultCharacter" destination="uEI-FV-zSz" id="y1Z-e3-PDA"/>
                         <outlet property="totalScore" destination="hyk-by-rv7" id="xx6-nL-oAJ"/>
@@ -638,7 +646,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Fcx-KX-38f"/>
+        <segue reference="erG-QG-u9q"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="main"/>
     <resources>

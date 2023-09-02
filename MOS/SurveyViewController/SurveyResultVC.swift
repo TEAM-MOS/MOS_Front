@@ -16,6 +16,8 @@ class SurveyResultVC: UIViewController{
     
     @IBOutlet weak var totalScore: UILabel!
     @IBOutlet weak var resultCharacter: UIImageView!
+    @IBOutlet weak var finishButton: UIButton!
+    
     var categoryOneScore: Int = 0
     var categoryTwoScore: Int = 0
     var categoryThreeScore: Int = 0
@@ -24,12 +26,21 @@ class SurveyResultVC: UIViewController{
     
         override func viewDidLoad() {
             super.viewDidLoad()
+            finishButton.layer.cornerRadius = 8
             updateProgressBar()
             updateViewBackground(graphbackground)
             updateTotalScore()
+            
+            finishButton.isUserInteractionEnabled = true
+            let finishBtnClick = UITapGestureRecognizer(target: self, action: #selector(finishBtnTapped))
+            finishButton.addGestureRecognizer(finishBtnClick)
 
             
         }
+    
+    @objc func finishBtnTapped() {
+        self.performSegue(withIdentifier: "navToHome", sender: self)
+    }
     
     func updateProgressBar() {
         let maxScorePerCategory = 25.0 // The maximum score per category
