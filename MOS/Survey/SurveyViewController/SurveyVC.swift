@@ -176,7 +176,7 @@ class SurveyVC: UIViewController{
             categoryImage.image = UIImage(named: "survey_category4")
             categoryName.text = "PART4. 면접"
             categoryName.textColor = UIColor(hex: "C04393")
-            starView.image = UIImage(named: "survey_star2")
+            starView.image = UIImage(named: "survey_star4")
         }
     }
     

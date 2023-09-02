@@ -170,8 +170,7 @@
 				2FA142792A149024006AA91B /* ViewController.swift */,
 				2FA1427B2A149024006AA91B /* Main.storyboard */,
 				2FA142802A149026006AA91B /* LaunchScreen.storyboard */,
-				5A6EE38E2A852376000E841D /* SurveyView */,
-				5A6EE38D2A852225000E841D /* SurveyViewController */,
+				5A3FE53E2AA3C27B009E7E37 /* Survey */,
 				2FA142832A149026006AA91B /* Info.plist */,
 				5A67766A2A1E1ECF00F1D3DB /* Assets.xcassets */,
 				2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */,
@@ -204,6 +203,25 @@
 			path = MOS;
 			sourceTree = "<group>";
 		};
+		5A3FE53E2AA3C27B009E7E37 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				5A6EE38E2A852376000E841D /* SurveyView */,
+				5A6EE38D2A852225000E841D /* SurveyViewController */,
+				5A3FE53F2AA3C328009E7E37 /* Utilities */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		5A3FE53F2AA3C328009E7E37 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5A3FE53A2A98D784009E7E37 /* RoundedProgressView.swift */,
+				5A3FE53C2AA3A7B5009E7E37 /* UIColor.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		5A6776AC2A22699B00F1D3DB /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,8 +252,6 @@
 				5AD249602A406C4000A7BBAC /* SurveyResultVC.swift */,
 				5AC619B32A19E5BD00966219 /* SurveyVC.swift */,
 				5A6EE3942A8AAE90000E841D /* SurveyStartVC.swift */,
-				5A3FE53A2A98D784009E7E37 /* RoundedProgressView.swift */,
-				5A3FE53C2AA3A7B5009E7E37 /* UIColor.swift */,
 			);
 			path = SurveyViewController;
 			sourceTree = "<group>";
