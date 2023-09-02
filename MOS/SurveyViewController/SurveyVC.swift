@@ -23,7 +23,8 @@ class SurveyVC: UIViewController{
     @IBOutlet weak var question: UILabel!
     @IBOutlet weak var questionNum: UILabel!
     @IBOutlet weak var backBtn: UIButton!
-    
+    @IBOutlet weak var categoryImage: UIImageView!
+    @IBOutlet weak var categoryName: UILabel!
     var selectedButton: UIView?
     var buttonToCheckBoxMap: [UIView: UIImageView] = [:]
     var currentQuestionIndex = 0
@@ -148,9 +149,28 @@ class SurveyVC: UIViewController{
     }
     
     func updateQuestion() {
-            question.text = questions[currentQuestionIndex]
-            questionNum.text = "Q \(currentQuestionIndex + 1)/\(questions.count)"
+        question.text = questions[currentQuestionIndex]
+        questionNum.text = "Q \(currentQuestionIndex + 1)/\(questions.count)"
+        
+        // 질문 번호에 따라 적절한 카테고리 이미지 및 이름을 설정
+        if currentQuestionIndex >= 0 && currentQuestionIndex < 5 {
+            // 질문 1~5에 해당하는 카테고리 이미지 및 이름 설정
+            categoryImage.image = UIImage(named: "survey_category1")
+            categoryName.text = "PART1. 산업 & 기업 분석"
+        } else if currentQuestionIndex >= 5 && currentQuestionIndex < 10 {
+            // 질문 6~10에 해당하는 카테고리 이미지 및 이름 설정
+            categoryImage.image = UIImage(named: "survey_category2")
+            categoryName.text = "PART2. 시사PT"
+        } else if currentQuestionIndex >= 10 && currentQuestionIndex < 15 {
+            // 질문 11~15에 해당하는 카테고리 이미지 및 이름 설정
+            categoryImage.image = UIImage(named: "survey_category3")
+            categoryName.text = "PART3. 자기소개서"
+        } else if currentQuestionIndex >= 15 && currentQuestionIndex < 20 {
+            // 질문 16~20에 해당하는 카테고리 이미지 및 이름 설정
+            categoryImage.image = UIImage(named: "survey_category4")
+            categoryName.text = "PART4. 면접"
         }
+    }
     
     @objc func buttonTapped(_ sender: UITapGestureRecognizer) {
         if let buttonView = sender.view, let score = buttonToScoreMap[buttonView] {

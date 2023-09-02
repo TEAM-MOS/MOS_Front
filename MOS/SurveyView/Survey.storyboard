@@ -272,6 +272,8 @@
                         <outlet property="btnOne" destination="G5e-ep-wWC" id="c9a-XF-1My"/>
                         <outlet property="btnThree" destination="50G-8g-Wg4" id="avt-OX-ed9"/>
                         <outlet property="btnTwo" destination="Ksj-X3-6ZX" id="aTk-uZ-Fad"/>
+                        <outlet property="categoryImage" destination="CaG-dB-uAh" id="2vO-w7-cTJ"/>
+                        <outlet property="categoryName" destination="V5u-94-bAa" id="18T-x8-SS7"/>
                         <outlet property="categoryView" destination="mXC-36-KbD" id="szq-xO-BXV"/>
                         <outlet property="checkBoxFive" destination="W2x-5S-wM2" id="l9W-PK-8pT"/>
                         <outlet property="checkBoxFour" destination="elE-GZ-rc9" id="K03-Zt-LW9"/>
@@ -635,7 +637,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XOI-Dn-U2Q"/>
+        <segue reference="Fcx-KX-38f"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="main"/>
     <resources>

@@ -44,7 +44,7 @@ class SurveyResultVC: UIViewController{
         categoryFourProgressBar.progress = categoryFourProgress
         
             if categoryOneProgress < 0.6 {
-                    categoryOneProgressBar.progressTintColor = lowProgressBarColor
+                categoryOneProgressBar.progressTintColor = lowProgressBarColor
                 }
             if categoryTwoProgress < 0.6 {
                 categoryTwoProgressBar.progressTintColor = lowProgressBarColor

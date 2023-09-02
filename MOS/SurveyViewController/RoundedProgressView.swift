@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+
 class RoundedProgressView: UIView {
     private var progressLayer: CAShapeLayer!
     private var progressColor: UIColor = .gray
@@ -45,4 +46,10 @@ class RoundedProgressView: UIView {
         maskLayer.path = progressPath.cgPath
         progressLayer.mask = maskLayer
     }
+    
+    // Add a method to set the progress
+    func setProgress(_ value: Float) {
+        progress = value
+    }
 }
+
