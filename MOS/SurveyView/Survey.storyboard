@@ -234,7 +234,6 @@
                         <constraints>
                             <constraint firstItem="m86-pw-00o" firstAttribute="leading" secondItem="9ON-Kq-08q" secondAttribute="leading" constant="-20" id="1Yx-Oa-0rd"/>
                             <constraint firstItem="Sjr-K1-rIV" firstAttribute="top" secondItem="mXC-36-KbD" secondAttribute="bottom" constant="24" id="2hb-Ei-QWz"/>
-                            <constraint firstItem="Tly-eq-Wbd" firstAttribute="leading" secondItem="Sjr-K1-rIV" secondAttribute="trailing" constant="-84" id="97V-7g-KlS"/>
                             <constraint firstItem="GDT-Aa-iV3" firstAttribute="top" secondItem="Sjr-K1-rIV" secondAttribute="bottom" constant="24" id="BIT-6x-cTK"/>
                             <constraint firstItem="Tly-eq-Wbd" firstAttribute="top" secondItem="Sjr-K1-rIV" secondAttribute="bottom" constant="-35" id="BhQ-Yo-Kpm"/>
                             <constraint firstItem="GDT-Aa-iV3" firstAttribute="leading" secondItem="Sjr-K1-rIV" secondAttribute="leading" id="F93-Xj-lbY"/>
@@ -261,6 +260,7 @@
                             <constraint firstItem="50G-8g-Wg4" firstAttribute="trailing" secondItem="Ksj-X3-6ZX" secondAttribute="trailing" id="nTZ-nM-Qa1"/>
                             <constraint firstItem="50G-8g-Wg4" firstAttribute="leading" secondItem="Ksj-X3-6ZX" secondAttribute="leading" id="qrl-fT-e7n"/>
                             <constraint firstItem="Ksj-X3-6ZX" firstAttribute="trailing" secondItem="G5e-ep-wWC" secondAttribute="trailing" id="tOZ-DY-22R"/>
+                            <constraint firstItem="Sjr-K1-rIV" firstAttribute="leading" secondItem="Tly-eq-Wbd" secondAttribute="trailing" constant="-35" id="v0A-ef-w2k"/>
                             <constraint firstItem="Ksj-X3-6ZX" firstAttribute="top" secondItem="G5e-ep-wWC" secondAttribute="bottom" constant="12" id="wZY-Lt-alU"/>
                         </constraints>
                     </view>
@@ -283,6 +283,7 @@
                         <outlet property="exitBtn" destination="nlb-kG-AUd" id="ND7-pH-A2v"/>
                         <outlet property="question" destination="GDT-Aa-iV3" id="ybz-Kz-fvr"/>
                         <outlet property="questionNum" destination="Sjr-K1-rIV" id="5eU-UE-9yL"/>
+                        <outlet property="starView" destination="Tly-eq-Wbd" id="wXA-sG-9GI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Eq-rJ-tEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

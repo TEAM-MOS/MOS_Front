@@ -25,6 +25,7 @@ class SurveyVC: UIViewController{
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryName: UILabel!
+    @IBOutlet weak var starView: UIImageView!
     var selectedButton: UIView?
     var buttonToCheckBoxMap: [UIView: UIImageView] = [:]
     var currentQuestionIndex = 0
@@ -157,18 +158,25 @@ class SurveyVC: UIViewController{
             // 질문 1~5에 해당하는 카테고리 이미지 및 이름 설정
             categoryImage.image = UIImage(named: "survey_category1")
             categoryName.text = "PART1. 산업 & 기업 분석"
+            categoryName.textColor = UIColor(hex: "FE947B")
         } else if currentQuestionIndex >= 5 && currentQuestionIndex < 10 {
             // 질문 6~10에 해당하는 카테고리 이미지 및 이름 설정
             categoryImage.image = UIImage(named: "survey_category2")
             categoryName.text = "PART2. 시사PT"
+            categoryName.textColor = UIColor(hex: "6739FC")
+            starView.image = UIImage(named: "survey_star2")
         } else if currentQuestionIndex >= 10 && currentQuestionIndex < 15 {
             // 질문 11~15에 해당하는 카테고리 이미지 및 이름 설정
             categoryImage.image = UIImage(named: "survey_category3")
             categoryName.text = "PART3. 자기소개서"
+            categoryName.textColor = UIColor(hex: "0CA2EA")
+            starView.image = UIImage(named: "survey_star3")
         } else if currentQuestionIndex >= 15 && currentQuestionIndex < 20 {
             // 질문 16~20에 해당하는 카테고리 이미지 및 이름 설정
             categoryImage.image = UIImage(named: "survey_category4")
             categoryName.text = "PART4. 면접"
+            categoryName.textColor = UIColor(hex: "C04393")
+            starView.image = UIImage(named: "survey_star4")
         }
     }
     
@@ -198,7 +206,10 @@ class SurveyVC: UIViewController{
                 if let checkBoxImage = buttonToCheckBoxMap[buttonView] {
                     toggleCheckBoxImage(checkBoxImage)
                     
-                    if checkBoxImage.image == UIImage(named: "survey_checked") {
+                    if checkBoxImage.image == UIImage(named: "survey_checked") ||
+                       checkBoxImage.image == UIImage(named: "survey_checked2") ||
+                       checkBoxImage.image == UIImage(named: "survey_checked3") ||
+                       checkBoxImage.image == UIImage(named: "survey_checked4") {
                         // Delay the question update to give users a chance to see the selected button
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                             // 질문 및 질문 번호 업데이트
@@ -237,12 +248,29 @@ class SurveyVC: UIViewController{
         }
     
     func toggleButtonColors(_ buttonView: UIView) {
-            if buttonView.layer.borderColor == UIColor(red: 0.929, green: 0.929, blue: 0.929, alpha: 1.0).cgColor {
-                buttonView.layer.borderColor = UIColor(red: 1.0, green: 0.898, blue: 0.870, alpha: 1.0).cgColor // FFE5DE
-                buttonView.backgroundColor = UIColor(red: 1.0, green: 0.953, blue: 0.941, alpha: 1.0) // FFF3F0
-            } else {
-                buttonView.layer.borderColor = UIColor(red: 0.929, green: 0.929, blue: 0.929, alpha: 1.0).cgColor // EDEDED
-                buttonView.backgroundColor = .clear
+        
+        if buttonView.layer.borderColor == UIColor(red: 0.929, green: 0.929, blue: 0.929, alpha: 1.0).cgColor {
+            
+            if currentQuestionIndex >= 0 && currentQuestionIndex < 5 {
+                // 1~5 범위인 경우, 버튼 색상을 설정 (분홍색)
+                buttonView.layer.borderColor = UIColor(hex: "FFE5DE").cgColor
+                buttonView.backgroundColor = UIColor(hex: "FFF3F0" )
+            } else if currentQuestionIndex >= 5 && currentQuestionIndex < 10 {
+                // 6~10 범위인 경우, 버튼 색상을 설정 (보라색)
+                buttonView.layer.borderColor = UIColor(hex: "D2C3FF").cgColor
+                buttonView.backgroundColor = UIColor(hex: "E3DAFF" )
+            } else if currentQuestionIndex >= 10 && currentQuestionIndex < 15 {
+                // 11~15 범위인 경우, 버튼 색상을 설정 (주황색)
+                buttonView.layer.borderColor = UIColor(hex: "BEE9FE").cgColor
+                buttonView.backgroundColor = UIColor(hex: "D9F3FF" )
+            } else if currentQuestionIndex >= 15 && currentQuestionIndex < 20 {
+                // 16~20 범위인 경우, 버튼 색상을 설정 (노란색)
+                buttonView.layer.borderColor = UIColor(hex: "FFCAEC").cgColor
+                buttonView.backgroundColor = UIColor(hex: "FFDAF2" )
+            }
+        }else {
+            buttonView.layer.borderColor = UIColor(red: 0.929, green: 0.929, blue: 0.929, alpha: 1.0).cgColor // EDEDED
+            buttonView.backgroundColor = .clear
             }
         }
     
@@ -262,7 +290,10 @@ class SurveyVC: UIViewController{
         }
     
     func toggleCheckBoxImage(_ checkBoxImage: UIImageView) {
-            if checkBoxImage.image == UIImage(named: "survey_checked") {
+        if checkBoxImage.image == UIImage(named: "survey_checked") ||
+           checkBoxImage.image == UIImage(named: "survey_checked2") ||
+           checkBoxImage.image == UIImage(named: "survey_checked3") ||
+           checkBoxImage.image == UIImage(named: "survey_checked4") {
                 // 이미 선택된 경우는 아무런 작업을 수행하지 않습니다.
                 return
             }
@@ -272,7 +303,18 @@ class SurveyVC: UIViewController{
                 checkBox.image = UIImage(named: "img_survey_checkbox")
             }
             
-            // 선택된 체크박스 이미지 변경
-            checkBoxImage.image = UIImage(named: "survey_checked")
+        if currentQuestionIndex >= 0 && currentQuestionIndex < 5 {
+                // 1~5 범위인 경우, 체크박스 이미지를 설정
+                checkBoxImage.image = UIImage(named: "survey_checked")
+            } else if currentQuestionIndex >= 5 && currentQuestionIndex < 10 {
+                // 6~10 범위인 경우, 체크박스 이미지를 설정
+                checkBoxImage.image = UIImage(named: "survey_checked2")
+            } else if currentQuestionIndex >= 10 && currentQuestionIndex < 15 {
+                // 11~15 범위인 경우, 체크박스 이미지를 설정
+                checkBoxImage.image = UIImage(named: "survey_checked3")
+            } else if currentQuestionIndex >= 15 && currentQuestionIndex < 20 {
+                // 16~20 범위인 경우, 체크박스 이미지를 설정
+                checkBoxImage.image = UIImage(named: "survey_checked4")
+            }
         }
   }

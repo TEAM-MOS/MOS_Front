@@ -29,6 +29,7 @@
 		2FFCFC422A1DD2A200E2AC95 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */; };
 		2FFCFC442A1DD2B200E2AC95 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */; };
 		5A3FE53B2A98D784009E7E37 /* RoundedProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3FE53A2A98D784009E7E37 /* RoundedProgressView.swift */; };
+		5A3FE53D2AA3A7B5009E7E37 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3FE53C2AA3A7B5009E7E37 /* UIColor.swift */; };
 		5A444B6E2A2789DC0070137A /* StudyInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A444B6D2A2789DC0070137A /* StudyInputView.xib */; };
 		5A444B732A278B590070137A /* StudyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A444B722A278B590070137A /* StudyInputView.swift */; };
 		5A67766B2A1E1ECF00F1D3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A67766A2A1E1ECF00F1D3DB /* Assets.xcassets */; };
@@ -90,6 +91,7 @@
 		2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5A3FE53A2A98D784009E7E37 /* RoundedProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedProgressView.swift; sourceTree = "<group>"; };
+		5A3FE53C2AA3A7B5009E7E37 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		5A444B6D2A2789DC0070137A /* StudyInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudyInputView.xib; sourceTree = "<group>"; };
 		5A444B722A278B590070137A /* StudyInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyInputView.swift; sourceTree = "<group>"; };
 		5A67766A2A1E1ECF00F1D3DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				5AC619B32A19E5BD00966219 /* SurveyVC.swift */,
 				5A6EE3942A8AAE90000E841D /* SurveyStartVC.swift */,
 				5A3FE53A2A98D784009E7E37 /* RoundedProgressView.swift */,
+				5A3FE53C2AA3A7B5009E7E37 /* UIColor.swift */,
 			);
 			path = SurveyViewController;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				2F28E67F2A1DD9C700021E72 /* SearchViewController.swift in Sources */,
 				2FFCFC442A1DD2B200E2AC95 /* HomeViewController.swift in Sources */,
 				5ADA065C2A41E64900FE76E5 /* InterviewViewController.swift in Sources */,
+				5A3FE53D2AA3A7B5009E7E37 /* UIColor.swift in Sources */,
 				5A7AA0D42A41C1A10087DE3C /* AllViewController.swift in Sources */,
 				5ADA065A2A41E63100FE76E5 /* SelfIntroductionViewController.swift in Sources */,
 				5ADA06582A41E60900FE76E5 /* PersonnelAptitudeViewController.swift in Sources */,
