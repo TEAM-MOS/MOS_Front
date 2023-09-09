@@ -299,32 +299,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="survey_mohum_character" translatesAutoresizingMaskIntoConstraints="NO" id="uEI-FV-zSz">
-                                <rect key="frame" x="38" y="49.999999999999986" width="317" height="179.66666666666663"/>
+                                <rect key="frame" x="38" y="121.99999999999999" width="317" height="179.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="uEI-FV-zSz" secondAttribute="height" multiplier="293:166" id="fH1-87-CsI"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/ 100점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuA-PY-kNh">
-                                <rect key="frame" x="171.66666666666666" y="249.66666666666663" width="65.333333333333343" height="24"/>
+                                <rect key="frame" x="171.66666666666666" y="321.66666666666669" width="65.333333333333343" height="24"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="68점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyk-by-rv7">
-                                <rect key="frame" x="124.33333333333333" y="249.66666666666663" width="43.333333333333329" height="24"/>
+                                <rect key="frame" x="124.33333333333333" y="321.66666666666669" width="43.333333333333329" height="24"/>
                                 <color key="tintColor" red="0.94117647410000005" green="0.60000002379999995" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
                                 <color key="textColor" red="0.94117647410000005" green="0.60000002379999995" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당신은 취업할 준비가 끝난 모험 단계입니다.            자신에게 믿음을 갖고 출발해봅시다!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoW-PS-yfz">
-                                <rect key="frame" x="16" y="293.66666666666669" width="361" height="38.333333333333314"/>
+                                <rect key="frame" x="16" y="365.66666666666669" width="361" height="38.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bla-eb-6sA">
-                                <rect key="frame" x="16" y="352" width="361" height="240"/>
+                                <rect key="frame" x="16" y="424" width="361" height="240"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="survey_result_graph" translatesAutoresizingMaskIntoConstraints="NO" id="0Xz-p5-Den">
                                         <rect key="frame" x="100" y="22" width="241" height="180"/>
@@ -345,7 +345,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자기소개서" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEk-UD-0b6">
-                                        <rect key="frame" x="42" y="118.66666666666669" width="52" height="14.333333333333343"/>
+                                        <rect key="frame" x="42" y="118.66666666666663" width="52" height="14.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                         <color key="textColor" red="0.60424558080000002" green="0.60424558080000002" blue="0.60424558080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -404,7 +404,7 @@
                                         </constraints>
                                     </progressView>
                                     <progressView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ASA-Os-NhL" customClass="RoundedProgressView" customModule="MOS" customModuleProvider="target">
-                                        <rect key="frame" x="101.66666666666667" y="120.66666666666669" width="239.33333333333331" height="17"/>
+                                        <rect key="frame" x="101.66666666666667" y="120.66666666666663" width="239.33333333333331" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="zOE-bT-5yG"/>
                                         </constraints>
@@ -454,7 +454,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pLW-0z-sAt">
-                                <rect key="frame" x="16" y="632" width="361" height="48"/>
+                                <rect key="frame" x="16" y="704" width="361" height="48"/>
                                 <color key="backgroundColor" red="0.94117647410000005" green="0.60000002379999995" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="MXo-yV-hAM"/>
@@ -464,8 +464,8 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="홈화면 바로가기">
                                             <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" size="18" name="Pretendard-SemiBold"/>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="18" name="Pretendard-Bold"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -479,11 +479,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Bla-eb-6sA" firstAttribute="top" secondItem="uoW-PS-yfz" secondAttribute="bottom" constant="20" id="6tw-lQ-zHT"/>
-                            <constraint firstItem="uEI-FV-zSz" firstAttribute="top" secondItem="hdN-G8-bne" secondAttribute="top" constant="50" id="Blb-2i-XLs"/>
                             <constraint firstItem="BuA-PY-kNh" firstAttribute="top" secondItem="uEI-FV-zSz" secondAttribute="bottom" constant="20" id="CWG-RI-oYi"/>
                             <constraint firstItem="hyk-by-rv7" firstAttribute="top" secondItem="BuA-PY-kNh" secondAttribute="top" id="GsI-KL-cbG"/>
                             <constraint firstItem="pLW-0z-sAt" firstAttribute="top" secondItem="Bla-eb-6sA" secondAttribute="bottom" constant="40" id="HwR-r7-P29"/>
                             <constraint firstItem="uEI-FV-zSz" firstAttribute="centerX" secondItem="0mF-M2-jBw" secondAttribute="centerX" id="Qt2-mI-4Zy"/>
+                            <constraint firstItem="hdN-G8-bne" firstAttribute="bottom" secondItem="pLW-0z-sAt" secondAttribute="bottom" constant="100" id="Urv-tQ-2RH"/>
                             <constraint firstItem="pLW-0z-sAt" firstAttribute="centerX" secondItem="hdN-G8-bne" secondAttribute="centerX" id="VGw-Id-kt0"/>
                             <constraint firstItem="uoW-PS-yfz" firstAttribute="top" secondItem="BuA-PY-kNh" secondAttribute="bottom" constant="20" id="ceZ-Ah-Tra"/>
                             <constraint firstItem="Bla-eb-6sA" firstAttribute="leading" secondItem="hdN-G8-bne" secondAttribute="leading" constant="16" id="cjz-hs-9bA"/>
@@ -527,7 +527,7 @@
                                 <color key="textColor" name="gray-2"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cI-hK-Z8E">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cI-hK-Z8E">
                                 <rect key="frame" x="16" y="704" width="361" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="voP-s1-BPG"/>
@@ -550,7 +550,7 @@
                                         <fragment content="테스트하러">
                                             <attributes>
                                                 <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Pretendard-Bold"/>
                                                 <font key="NSOriginalFont" metaFont="system" size="18"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
@@ -558,7 +558,7 @@
                                         <fragment content=" ">
                                             <attributes>
                                                 <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Pretendard-Bold"/>
                                                 <font key="NSOriginalFont" size="12" name="Helvetica"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
@@ -566,7 +566,7 @@
                                         <fragment content="가기">
                                             <attributes>
                                                 <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <font key="NSFont" size="18" name="Pretendard-Bold"/>
                                                 <font key="NSOriginalFont" metaFont="system" size="18"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
@@ -578,7 +578,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgn-lx-FWN">
-                                <rect key="frame" x="-2" y="259.66666666666663" width="397" height="332.66666666666663"/>
+                                <rect key="frame" x="-2" y="257.33333333333337" width="397" height="337.33333333333337"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_testStart" translatesAutoresizingMaskIntoConstraints="NO" id="imf-kN-pN3">
                                         <rect key="frame" x="80" y="0.0" width="237" height="151"/>
@@ -590,10 +590,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2B-Nu-tan">
-                                        <rect key="frame" x="61" y="235" width="275.33333333333331" height="33.666666666666686"/>
+                                        <rect key="frame" x="41.333333333333343" y="235" width="314.66666666666663" height="38.333333333333314"/>
                                         <string key="text">어떤 스터디를 들어야 할 지 모르겠다고요?
 테스트를 통해 나에게 필요한 스터디를 알아보세요!</string>
-                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                         <color key="textColor" name="gray-2"/>
                                         <nil key="highlightedColor"/>
                                     </label>
