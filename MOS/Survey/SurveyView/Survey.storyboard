@@ -344,14 +344,14 @@
                                         <color key="textColor" red="0.60424558080000002" green="0.60424558080000002" blue="0.60424558080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEk-UD-0b6">
-                                        <rect key="frame" x="73" y="118.66666666666669" width="21" height="14.333333333333343"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자기소개서" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEk-UD-0b6">
+                                        <rect key="frame" x="42" y="118.66666666666669" width="52" height="14.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                         <color key="textColor" red="0.60424558080000002" green="0.60424558080000002" blue="0.60424558080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="산업&amp;기업 분석" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWb-8v-YaB">
-                                        <rect key="frame" x="21" y="157" width="73" height="14.333333333333343"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWb-8v-YaB">
+                                        <rect key="frame" x="73" y="157" width="21" height="14.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
                                         <color key="textColor" red="0.60424558080000002" green="0.60424558080000002" blue="0.60424558080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -502,6 +502,7 @@
                         <outlet property="categoryOneProgressBar" destination="8Jj-nP-u3B" id="HOm-up-Ubb"/>
                         <outlet property="categoryThreeProgressBar" destination="ASA-Os-NhL" id="MZe-wl-UBb"/>
                         <outlet property="categoryTwoProgressBar" destination="PWv-x4-gLL" id="R6V-nJ-B7z"/>
+                        <outlet property="contentLabel" destination="uoW-PS-yfz" id="6e2-xL-5jB"/>
                         <outlet property="finishButton" destination="pLW-0z-sAt" id="cSh-TQ-QZi"/>
                         <outlet property="graphbackground" destination="Bla-eb-6sA" id="5mL-JE-JMl"/>
                         <outlet property="resultCharacter" destination="uEI-FV-zSz" id="y1Z-e3-PDA"/>

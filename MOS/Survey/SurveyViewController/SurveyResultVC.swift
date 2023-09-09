@@ -19,6 +19,7 @@ class SurveyResultVC: UIViewController {
     @IBOutlet weak var resultCharacter: UIImageView!
     @IBOutlet weak var finishButton: UIButton!
     
+    @IBOutlet weak var contentLabel: UILabel!
     var categoryOneScore: Int = 0
     var categoryTwoScore: Int = 0
     var categoryThreeScore: Int = 0
@@ -65,13 +66,36 @@ class SurveyResultVC: UIViewController {
         let total = categoryOneScore + categoryTwoScore + categoryThreeScore + categoryFourScore
         totalScore.text = "\(total)점"
         
-        if total < 40 {
+        var lackingSkills = ""
+        
+        if categoryOneProgressBar.progress < 0.6 {
+            lackingSkills += "산업 & 기업 분석, "
+        }
+        if categoryTwoProgressBar.progress < 0.6 {
+            lackingSkills += "시사 PT, "
+        }
+        if categoryThreeProgressBar.progress < 0.6 {
+            lackingSkills += "자기소개서, "
+        }
+        if categoryFourProgressBar.progress < 0.6 {
+            lackingSkills += "면접, "
+        }
+        
+        if !lackingSkills.isEmpty {
+            lackingSkills = String(lackingSkills.dropLast(2)) // 마지막에 추가된 ", " 제거
+        }
+        
+        if categoryOneProgressBar.progress < 0.6 && categoryTwoProgressBar.progress < 0.6 && categoryThreeProgressBar.progress < 0.6 && categoryFourProgressBar.progress < 0.6  {
             resultCharacter.image = UIImage(named: "survey_monandol_character")
-        } else if (40 < total) && (total < 60) {
+            contentLabel.text = "당신은 취업을 준비를 막 시작한 모난돌 단계입니다.\n부족한 역량: \(lackingSkills)"
+        } else if categoryOneProgressBar.progress < 0.6 || categoryTwoProgressBar.progress < 0.6 || categoryThreeProgressBar.progress < 0.6  || categoryFourProgressBar.progress < 0.6 {
             resultCharacter.image = UIImage(named: "survey_mole_character")
+            contentLabel.text = "당신은 취업할 준비가 좀 더 필요한 모래 단계입니다.\n부족한 역량: \(lackingSkills)"
         } else {
             resultCharacter.image = UIImage(named: "survey_mohum_character")
+            contentLabel.text = "당신은 취업할 준비가 끝난 모험 단계입니다.\n자신에게 믿음을 갖고 출발해봅시다!"
         }
     }
 }
+
 
