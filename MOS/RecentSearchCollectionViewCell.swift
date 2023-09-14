@@ -21,9 +21,12 @@ class RecentSearchCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         self.layer.borderColor = UIColor.gray.cgColor
         self.layer.borderWidth = 1
-        self.layer.cornerRadius = recentSearchText.frame.size.height / 2.0
+        self.layer.cornerRadius = recentSearchText.frame.size.height / 2.5
         self.backgroundColor = .lightGray
-        self.recentSearchText.textColor = .white
+        self.recentSearchText.textColor = .black
+        let leadingConstraint = recentSearchBcView.leadingAnchor.constraint(equalTo: recentSearchText.leadingAnchor, constant: -20)
+               // Activate the constraint
+               leadingConstraint.isActive = true
     }
 }
 
