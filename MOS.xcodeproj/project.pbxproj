@@ -480,7 +480,6 @@
 				2F8270E02A8F7B9100CE7BE1 /* StudyListViewController.swift in Sources */,
 				2FA142762A149024006AA91B /* AppDelegate.swift in Sources */,
 				2FA142782A149024006AA91B /* SceneDelegate.swift in Sources */,
-				5AD249592A3B9C1C00A7BBAC /* SurveyResultInputView.swift in Sources */,
 				2F5BA7622A9B278200E9A444 /* RecentSearchLayout.swift in Sources */,
 				5A3FE53B2A98D784009E7E37 /* RoundedProgressView.swift in Sources */,
 				5A7AA0D12A41BDCA0087DE3C /* PagingViewController.swift in Sources */,
@@ -640,6 +639,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76W6K6R528;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -672,6 +672,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 76W6K6R528;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
