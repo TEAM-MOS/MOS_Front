@@ -43,7 +43,7 @@ class HomeViewController:UIViewController {
     
     fileprivate func applyShadow(){
         print(#fileID, #function, #line, "shadow 적용 함수 접근")
-        self.moveToTestView.layer.cornerRadius = 16
+        self.moveToTestView.layer.cornerRadius = 8
         self.moveToTestView.layer.shadowColor = UIColor.gray.cgColor //색상
         self.moveToTestView.layer.shadowOpacity = 0.1 //alpha값
         self.moveToTestView.layer.shadowRadius = 10 //반경

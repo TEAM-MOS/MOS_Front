@@ -296,32 +296,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="survey_mohum_character" translatesAutoresizingMaskIntoConstraints="NO" id="uEI-FV-zSz">
-                                <rect key="frame" x="38" y="142" width="317" height="179.66666666666663"/>
+                                <rect key="frame" x="38" y="162" width="317" height="179.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="uEI-FV-zSz" secondAttribute="height" multiplier="293:166" id="fH1-87-CsI"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/ 100점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuA-PY-kNh">
-                                <rect key="frame" x="171.66666666666666" y="341.66666666666669" width="65.333333333333343" height="24"/>
-                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="68점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyk-by-rv7">
-                                <rect key="frame" x="124.33333333333333" y="341.66666666666669" width="43.333333333333329" height="24"/>
-                                <color key="tintColor" red="0.94117647410000005" green="0.60000002379999995" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
-                                <color key="textColor" red="0.94117647410000005" green="0.60000002379999995" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="B7E-XF-rFw">
+                                <rect key="frame" x="140.66666666666666" y="381.66666666666669" width="111.66666666666666" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="68점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyk-by-rv7">
+                                        <rect key="frame" x="0.0" y="0.0" width="43.333333333333336" height="24"/>
+                                        <color key="tintColor" red="0.94117647410000005" green="0.60000002379999995" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
+                                        <color key="textColor" red="0.94117647410000005" green="0.60000002379999995" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/ 100점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuA-PY-kNh">
+                                        <rect key="frame" x="46.333333333333336" y="0.0" width="65.333333333333314" height="24"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당신은 취업할 준비가 끝난 모험 단계입니다.            자신에게 믿음을 갖고 출발해봅시다!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoW-PS-yfz">
-                                <rect key="frame" x="16" y="385.66666666666669" width="361" height="38.333333333333314"/>
+                                <rect key="frame" x="16" y="425.66666666666669" width="361" height="38.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bla-eb-6sA">
-                                <rect key="frame" x="16" y="444" width="361" height="240"/>
+                                <rect key="frame" x="16" y="484" width="361" height="240"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="survey_result_graph" translatesAutoresizingMaskIntoConstraints="NO" id="0Xz-p5-Den">
                                         <rect key="frame" x="100" y="22" width="241" height="180"/>
@@ -451,7 +456,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pLW-0z-sAt">
-                                <rect key="frame" x="16" y="724" width="361" height="48"/>
+                                <rect key="frame" x="16" y="764" width="361" height="48"/>
                                 <color key="backgroundColor" red="0.94117647410000005" green="0.60000002379999995" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="MXo-yV-hAM"/>
@@ -476,21 +481,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Bla-eb-6sA" firstAttribute="top" secondItem="uoW-PS-yfz" secondAttribute="bottom" constant="20" id="6tw-lQ-zHT"/>
-                            <constraint firstItem="BuA-PY-kNh" firstAttribute="top" secondItem="uEI-FV-zSz" secondAttribute="bottom" constant="20" id="CWG-RI-oYi"/>
-                            <constraint firstItem="hyk-by-rv7" firstAttribute="top" secondItem="BuA-PY-kNh" secondAttribute="top" id="GsI-KL-cbG"/>
                             <constraint firstItem="pLW-0z-sAt" firstAttribute="top" secondItem="Bla-eb-6sA" secondAttribute="bottom" constant="40" id="HwR-r7-P29"/>
                             <constraint firstItem="uEI-FV-zSz" firstAttribute="centerX" secondItem="0mF-M2-jBw" secondAttribute="centerX" id="Qt2-mI-4Zy"/>
-                            <constraint firstItem="hdN-G8-bne" firstAttribute="bottom" secondItem="pLW-0z-sAt" secondAttribute="bottom" constant="80" id="Urv-tQ-2RH"/>
+                            <constraint firstItem="hdN-G8-bne" firstAttribute="bottom" secondItem="pLW-0z-sAt" secondAttribute="bottom" constant="40" id="Urv-tQ-2RH"/>
                             <constraint firstItem="pLW-0z-sAt" firstAttribute="centerX" secondItem="hdN-G8-bne" secondAttribute="centerX" id="VGw-Id-kt0"/>
-                            <constraint firstItem="uoW-PS-yfz" firstAttribute="top" secondItem="BuA-PY-kNh" secondAttribute="bottom" constant="20" id="ceZ-Ah-Tra"/>
                             <constraint firstItem="Bla-eb-6sA" firstAttribute="leading" secondItem="hdN-G8-bne" secondAttribute="leading" constant="16" id="cjz-hs-9bA"/>
                             <constraint firstItem="Bla-eb-6sA" firstAttribute="centerX" secondItem="0mF-M2-jBw" secondAttribute="centerX" id="fkH-QM-Eqv"/>
-                            <constraint firstItem="hdN-G8-bne" firstAttribute="trailing" secondItem="BuA-PY-kNh" secondAttribute="trailing" constant="156" id="g7o-vz-9Kh"/>
+                            <constraint firstItem="B7E-XF-rFw" firstAttribute="centerX" secondItem="hdN-G8-bne" secondAttribute="centerX" id="gbF-AS-0sm"/>
                             <constraint firstItem="pLW-0z-sAt" firstAttribute="leading" secondItem="hdN-G8-bne" secondAttribute="leading" constant="16" id="jWF-jd-H1o"/>
-                            <constraint firstItem="BuA-PY-kNh" firstAttribute="leading" secondItem="hyk-by-rv7" secondAttribute="trailing" constant="4" id="k0C-FC-aCs"/>
                             <constraint firstItem="uEI-FV-zSz" firstAttribute="leading" secondItem="hdN-G8-bne" secondAttribute="leading" constant="38" id="oKe-ev-uer"/>
+                            <constraint firstItem="uoW-PS-yfz" firstAttribute="top" secondItem="BuA-PY-kNh" secondAttribute="bottom" constant="20" id="p9I-wA-YDz"/>
                             <constraint firstItem="uoW-PS-yfz" firstAttribute="centerX" secondItem="0mF-M2-jBw" secondAttribute="centerX" id="tHF-lD-bAO"/>
                             <constraint firstItem="uoW-PS-yfz" firstAttribute="leading" secondItem="hdN-G8-bne" secondAttribute="leading" constant="16" id="w5N-v2-3i4"/>
+                            <constraint firstItem="BuA-PY-kNh" firstAttribute="top" secondItem="uEI-FV-zSz" secondAttribute="bottom" constant="40" id="zeL-QU-9Oo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BZY-jp-hhO"/>
@@ -645,7 +648,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Fcx-KX-38f"/>
+        <segue reference="erG-QG-u9q"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="main"/>
     <resources>
