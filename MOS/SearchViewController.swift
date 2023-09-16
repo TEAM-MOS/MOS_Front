@@ -51,7 +51,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
         collectionView.dataSource = self
         
         let layout = TagFlowLayout()
-        layout.estimatedItemSize = CGSize(width: 140, height: 40)
+        layout.estimatedItemSize = CGSize(width: 100, height: 40)
         collectionView.collectionViewLayout = layout
         
         // 검색 textField
@@ -161,6 +161,24 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: 200, height: 30)
     }
+    
+    
+    // ========= ✨ Dynamic width =========
+    // 텍스트 길이에 따른 cell 너비값 조절
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecentSearchCollectionViewCell", for: indexPath) as? RecentSearchCollectionViewCell else {
+                return .zero
+            }
+        cell.recentSearchText.text = getSearchDatas[indexPath.section][indexPath.row]
+            // ✅ sizeToFit() : 텍스트에 맞게 사이즈가 조절
+            cell.recentSearchText.sizeToFit()
+
+            // ✅ cellWidth = 글자수에 맞는 UILabel 의 width + 20(여백)
+            let cellWidth = cell.recentSearchText.frame.width + 50
+
+            return CGSize(width: cellWidth, height: 42)
+        }
+
     
     
     
