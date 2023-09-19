@@ -346,7 +346,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y3F-mP-85S">
-                                                    <rect key="frame" x="24" y="4" width="344" height="158"/>
+                                                    <rect key="frame" x="4" y="4" width="384" height="158"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54B-nZ-rAg">
@@ -499,11 +499,11 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="y3F-mP-85S" firstAttribute="leading" secondItem="wWQ-XZ-NPQ" secondAttribute="leading" constant="24" id="7ee-eI-jPD"/>
+                                                <constraint firstItem="y3F-mP-85S" firstAttribute="leading" secondItem="wWQ-XZ-NPQ" secondAttribute="leading" constant="4" id="7ee-eI-jPD"/>
                                                 <constraint firstItem="5gb-r8-k1e" firstAttribute="top" secondItem="54B-nZ-rAg" secondAttribute="top" id="7h4-1d-uUE"/>
                                                 <constraint firstItem="XpA-lP-gpN" firstAttribute="top" secondItem="H65-5p-hx1" secondAttribute="bottom" constant="16" id="9iw-5C-Fgp"/>
                                                 <constraint firstItem="XpA-lP-gpN" firstAttribute="leading" secondItem="wWQ-XZ-NPQ" secondAttribute="leading" constant="20" id="Fiq-6t-ZBW"/>
-                                                <constraint firstAttribute="trailing" secondItem="y3F-mP-85S" secondAttribute="trailing" constant="24" id="GkF-87-vmZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="y3F-mP-85S" secondAttribute="trailing" constant="4" id="GkF-87-vmZ"/>
                                                 <constraint firstAttribute="trailing" secondItem="H65-5p-hx1" secondAttribute="trailing" constant="20" id="KR8-9P-EtQ"/>
                                                 <constraint firstItem="H65-5p-hx1" firstAttribute="leading" secondItem="wWQ-XZ-NPQ" secondAttribute="leading" constant="20" id="OT9-z4-mvU"/>
                                                 <constraint firstItem="54B-nZ-rAg" firstAttribute="leading" secondItem="wWQ-XZ-NPQ" secondAttribute="leading" constant="20" id="Xnw-jh-Xj3"/>
