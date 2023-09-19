@@ -40,6 +40,7 @@ class HomeViewController: UIViewController {
         studyCollectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         studyCollectionView.dataSource = self
         studyCollectionView.delegate = self
+        studyCollectionView.isScrollEnabled = false
     }
 
     @objc func imageTapped() {

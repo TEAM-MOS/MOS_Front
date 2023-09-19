@@ -300,9 +300,22 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="392" height="166"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yV3-Ux-pyl">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yV3-Ux-pyl" customClass="StudyListCollectionViewCell" customModule="MOS" customModuleProvider="target">
                                                                     <rect key="frame" x="4" y="4" width="384" height="158"/>
                                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <connections>
+                                                                        <outlet property="bcView" destination="D0g-4j-ZOc" id="Z9z-eS-kfP"/>
+                                                                        <outlet property="bcView_date" destination="bG1-9I-D4e" id="rP1-wZ-RbA"/>
+                                                                        <outlet property="bcView_location" destination="aUu-n0-ANH" id="VDq-17-J7d"/>
+                                                                        <outlet property="bcView_member" destination="GPz-pE-J6c" id="ejL-kr-rhB"/>
+                                                                        <outlet property="category" destination="loq-bu-PEO" id="6mt-Xa-1pT"/>
+                                                                        <outlet property="category_bc" destination="4KE-g9-7PN" id="X3g-CC-ktw"/>
+                                                                        <outlet property="date" destination="0LR-k4-sEE" id="Jwa-lS-phu"/>
+                                                                        <outlet property="image" destination="opK-xF-5E6" id="TNp-Ke-TQv"/>
+                                                                        <outlet property="location" destination="5Mi-mz-u4f" id="gri-xW-TWw"/>
+                                                                        <outlet property="member" destination="qLq-RJ-93g" id="DHf-6i-uyB"/>
+                                                                        <outlet property="title" destination="FFw-uk-hyy" id="xYc-DH-BES"/>
+                                                                    </connections>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4KE-g9-7PN">
                                                                     <rect key="frame" x="20" y="18" width="109" height="29"/>
