@@ -11,7 +11,7 @@ import DropDown
 class SearchResultViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     
-    var search_text = ""
+    var search_text: String?
     @IBOutlet weak var searchBar: UITextField!
     @IBOutlet weak var recruitingSwitch: UISwitch!
     @IBOutlet weak var dropButtonView: UIView!
@@ -49,6 +49,8 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchBar.text = search_text ?? ""
         
         collectionView.dataSource = self
         collectionView.delegate = self

@@ -90,6 +90,15 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
             saveRecentSearchKeyword(keyword)
             print("Save: \(keyword)")
         }
+        
+        // 텍스트 데이터를 포함한 화면 전달
+        guard let searchResultVC = storyboard?.instantiateViewController(withIdentifier: "SearchResultVC") as? SearchResultViewController else { return }
+        searchResultVC.search_text = searchBar.text
+        navigationController?.pushViewController(searchResultVC, animated: true)
+        
+        let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil) // title 부분 수정
+            backBarButtonItem.tintColor = .black
+            self.navigationItem.backBarButtonItem = backBarButtonItem
     }
     
     func saveRecentSearchKeyword(_ keyword: String) {
@@ -194,6 +203,8 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
             backBarButtonItem.tintColor = .black
             self.navigationItem.backBarButtonItem = backBarButtonItem
     }
+    
+
 }
 
 // 검색 textField 좌측 아이콘 추가
