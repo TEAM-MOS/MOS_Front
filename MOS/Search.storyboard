@@ -59,26 +59,26 @@
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최근 검색어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYT-UA-OFx">
-                                <rect key="frame" x="23.999999999999993" y="205" width="91.333333333333314" height="24"/>
-                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
+                                <rect key="frame" x="24.000000000000007" y="205" width="86.666666666666686" height="23"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="추천 검색어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMa-x2-ut3">
-                                <rect key="frame" x="24" y="328" width="99" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천 검색어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMa-x2-ut3">
+                                <rect key="frame" x="23.999999999999993" y="335" width="91.333333333333314" height="24"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNx-KF-cUT">
-                                <rect key="frame" x="0.0" y="293" width="393" height="8"/>
+                                <rect key="frame" x="0.0" y="300" width="393" height="8"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="8" id="Oky-dC-glm"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8k-4r-AaC">
-                                <rect key="frame" x="24" y="365" width="93" height="40"/>
+                                <rect key="frame" x="24" y="372" width="93" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="f8k-4r-AaC" secondAttribute="height" multiplier="86:37" id="3mt-5p-3Kz"/>
                                 </constraints>
@@ -89,13 +89,13 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zff-8S-2Bs">
-                                <rect key="frame" x="24" y="353" width="345" height="4"/>
+                                <rect key="frame" x="24" y="360" width="345" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="4" id="H9A-qg-kch"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duX-yi-loD">
-                                <rect key="frame" x="125" y="365" width="86.333333333333314" height="40.666666666666686"/>
+                                <rect key="frame" x="125" y="372" width="86.333333333333314" height="40.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="duX-yi-loD" secondAttribute="height" multiplier="90:38" constant="-10.210526315789465" id="dzH-qv-UVb"/>
                                 </constraints>
@@ -103,7 +103,7 @@
                                 <state key="normal" backgroundImage="search_samsung"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cI4-1b-43f">
-                                <rect key="frame" x="219.33333333333331" y="365" width="131.33333333333331" height="41.333333333333314"/>
+                                <rect key="frame" x="219.33333333333331" y="372" width="131.33333333333331" height="41.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cI4-1b-43f" secondAttribute="height" multiplier="35:11" id="qMg-rx-SAW"/>
                                 </constraints>
@@ -111,7 +111,7 @@
                                 <state key="normal" backgroundImage="search_sk"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPh-F9-2wI">
-                                <rect key="frame" x="24.000000000000007" y="417" width="127.66666666666669" height="39.333333333333314"/>
+                                <rect key="frame" x="24.000000000000007" y="424" width="127.66666666666669" height="39.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MPh-F9-2wI" secondAttribute="height" multiplier="130:41" constant="3" id="WDp-CR-WO0"/>
                                 </constraints>
@@ -119,7 +119,7 @@
                                 <state key="normal" backgroundImage="search_hyundai"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdu-m7-Klt">
-                                <rect key="frame" x="159.66666666666666" y="417" width="96.666666666666657" height="39.666666666666686"/>
+                                <rect key="frame" x="159.66666666666666" y="424" width="96.666666666666657" height="39.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cdu-m7-Klt" secondAttribute="height" multiplier="101:42" constant="1.4047619047619122" id="vMn-Pm-JKq"/>
                                 </constraints>
@@ -127,28 +127,28 @@
                                 <state key="normal" backgroundImage="search_naver"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaW-Qo-1FY">
-                                <rect key="frame" x="264.33333333333331" y="417" width="100" height="40.333333333333314"/>
+                                <rect key="frame" x="264.33333333333331" y="424" width="100" height="40.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="WaW-Qo-1FY" secondAttribute="height" multiplier="49:20" constant="1.5499999999999972" id="xgg-kE-lTB"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" backgroundImage="search_lg"/>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="RecentSearchCollectionView" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bRp-Ft-AgI">
-                                <rect key="frame" x="24" y="237" width="345" height="48"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="RecentSearchCollectionView" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bRp-Ft-AgI">
+                                <rect key="frame" x="24" y="236" width="345" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="mCE-i3-SdV"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OUt-YS-tNT">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OUt-YS-tNT">
                                     <size key="itemSize" width="128" height="51"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="RecentSearchCollectionViewCell" reuseIdentifier="RecentSearchCollectionViewCell" id="E6Y-Hd-Fqu" customClass="RecentSearchCollectionViewCell" customModule="MOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="51"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" restorationIdentifier="RecentSearchCollectionViewCell" reuseIdentifier="RecentSearchCollectionViewCell" id="E6Y-Hd-Fqu" customClass="RecentSearchCollectionViewCell" customModule="MOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-1.6666666666666667" width="128" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RbL-g5-VkR">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="51"/>
@@ -173,7 +173,7 @@
                                                                         <constraint firstAttribute="width" constant="32" id="MC8-Jj-X5q"/>
                                                                     </constraints>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                    <state key="normal" title="Button" image="ic_survey_exit"/>
+                                                                    <state key="normal" title="Button" image="icon_cancel"/>
                                                                     <connections>
                                                                         <action selector="recentSearchDeleteButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8hJ-mX-pNe"/>
                                                                     </connections>
@@ -181,6 +181,7 @@
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstItem="cWf-t3-wDy" firstAttribute="centerY" secondItem="KtQ-2P-Dr1" secondAttribute="centerY" id="YFn-5c-9Pg"/>
+                                                                <constraint firstItem="KtQ-2P-Dr1" firstAttribute="leading" secondItem="so3-aE-GcB" secondAttribute="leading" constant="16" id="ZEp-47-STt"/>
                                                                 <constraint firstItem="KtQ-2P-Dr1" firstAttribute="top" secondItem="so3-aE-GcB" secondAttribute="top" id="iFb-NI-qHj"/>
                                                                 <constraint firstAttribute="height" constant="46" id="q6z-aX-9i7"/>
                                                                 <constraint firstItem="KtQ-2P-Dr1" firstAttribute="leading" secondItem="so3-aE-GcB" secondAttribute="leading" id="qlL-5A-ay3"/>
@@ -198,6 +199,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="xuA-M1-Vzb" secondAttribute="trailing" id="Fwe-Op-nfZ"/>
                                                 <constraint firstItem="xuA-M1-Vzb" firstAttribute="top" secondItem="RbL-g5-VkR" secondAttribute="top" id="fgT-MR-TDU"/>
+                                                <constraint firstItem="xuA-M1-Vzb" firstAttribute="leading" secondItem="RbL-g5-VkR" secondAttribute="leading" id="hbS-Xr-tqx"/>
                                                 <constraint firstAttribute="bottom" secondItem="xuA-M1-Vzb" secondAttribute="bottom" id="sMk-lg-be8"/>
                                                 <constraint firstItem="xuA-M1-Vzb" firstAttribute="leading" secondItem="RbL-g5-VkR" secondAttribute="leading" id="vP9-Y5-cO5"/>
                                             </constraints>
@@ -223,7 +225,7 @@
                             <constraint firstItem="MgQ-QF-yg3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="K5P-Wl-WKT"/>
                             <constraint firstItem="MPh-F9-2wI" firstAttribute="leading" secondItem="f8k-4r-AaC" secondAttribute="leading" id="Lf9-Nk-YpD"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MgQ-QF-yg3" secondAttribute="trailing" constant="24" id="M2h-Sm-aZ8"/>
-                            <constraint firstItem="JNx-KF-cUT" firstAttribute="top" secondItem="bRp-Ft-AgI" secondAttribute="bottom" constant="8" id="NzN-pD-Nio"/>
+                            <constraint firstItem="JNx-KF-cUT" firstAttribute="top" secondItem="bRp-Ft-AgI" secondAttribute="bottom" constant="16" id="NzN-pD-Nio"/>
                             <constraint firstItem="sYT-UA-OFx" firstAttribute="top" secondItem="MgQ-QF-yg3" secondAttribute="bottom" constant="40" id="OcK-uM-tpB"/>
                             <constraint firstItem="WaW-Qo-1FY" firstAttribute="leading" secondItem="cdu-m7-Klt" secondAttribute="trailing" constant="8" symbolic="YES" id="SMW-Sj-k9m"/>
                             <constraint firstItem="cdu-m7-Klt" firstAttribute="top" secondItem="MPh-F9-2wI" secondAttribute="top" id="TeI-1Q-sH3"/>
@@ -280,13 +282,13 @@
                                 <textInputTraits key="textInputTraits" keyboardType="alphabet" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모집 중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="on5-0E-KoE">
-                                <rect key="frame" x="23.999999999999996" y="143" width="45.666666666666657" height="19.333333333333343"/>
+                                <rect key="frame" x="24" y="143" width="46" height="18.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                 <color key="textColor" name="gray-2"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raa-Df-f6W">
-                                <rect key="frame" x="79.666666666666671" y="137.33333333333334" width="51.000000000000014" height="31"/>
+                                <rect key="frame" x="80" y="137" width="51" height="31"/>
                                 <color key="onTintColor" red="0.99607843139999996" green="0.58039215690000001" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vII-Pi-WuT">
@@ -329,7 +331,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Iec-0z-MnZ">
-                                <rect key="frame" x="0.0" y="192.33333333333331" width="393" height="659.66666666666674"/>
+                                <rect key="frame" x="0.0" y="192" width="393" height="660"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fAw-al-v0B">
                                     <size key="itemSize" width="392" height="166"/>
@@ -350,10 +352,10 @@
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54B-nZ-rAg">
-                                                    <rect key="frame" x="20" y="18" width="109" height="29"/>
+                                                    <rect key="frame" x="20.000000000000007" y="18" width="109.66666666666669" height="28.333333333333329"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" insetsLayoutMarginsFromSafeArea="NO" text="산업&amp;기업 분석" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hE-Jz-eO7">
-                                                            <rect key="frame" x="12" y="6" width="85" height="17"/>
+                                                            <rect key="frame" x="12" y="6" width="85.666666666666671" height="16.333333333333332"/>
                                                             <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="14"/>
                                                             <color key="textColor" name="main"/>
                                                             <nil key="highlightedColor"/>
@@ -375,13 +377,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023년 상반기 네이버 IT직군 면접 준비 스터디원 모집합니다 :)" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H65-5p-hx1">
-                                                    <rect key="frame" x="20" y="63" width="352" height="40.666666666666657"/>
+                                                    <rect key="frame" x="20" y="63" width="352" height="39.666666666666657"/>
                                                     <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="XpA-lP-gpN">
-                                                    <rect key="frame" x="20.000000000000014" y="119.66666666666669" width="239.33333333333337" height="30"/>
+                                                    <rect key="frame" x="20" y="118.66666666666669" width="237" height="30"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UUL-h6-K1e">
                                                             <rect key="frame" x="0.0" y="0.0" width="72.333333333333329" height="30"/>
@@ -397,7 +399,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="송파구" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyv-hS-Rzv">
-                                                                            <rect key="frame" x="28.000000000000004" y="6.6666666666666572" width="36.333333333333343" height="17"/>
+                                                                            <rect key="frame" x="28.000000000000004" y="7" width="36.333333333333343" height="16.333333333333332"/>
                                                                             <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="14"/>
                                                                             <color key="textColor" name="gray-2"/>
                                                                             <nil key="highlightedColor"/>
@@ -435,7 +437,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2/14(토)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAc-Uc-PNR">
-                                                                            <rect key="frame" x="30.000000000000018" y="6.6666666666666572" width="54.333333333333343" height="17"/>
+                                                                            <rect key="frame" x="30.000000000000018" y="7" width="54.333333333333343" height="16.333333333333332"/>
                                                                             <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="14"/>
                                                                             <color key="textColor" name="gray-2"/>
                                                                             <nil key="highlightedColor"/>
@@ -459,10 +461,10 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vxf-eF-fVI">
-                                                            <rect key="frame" x="176.66666666666666" y="0.0" width="62.666666666666657" height="30"/>
+                                                            <rect key="frame" x="176.66666666666666" y="0.0" width="60.333333333333343" height="30"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7n-Ia-0tQ">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="62.666666666666664" height="30"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="60.333333333333336" height="30"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_members" translatesAutoresizingMaskIntoConstraints="NO" id="Q2v-Jj-Wmg">
                                                                             <rect key="frame" x="8" y="7" width="16" height="16"/>
@@ -472,7 +474,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="3/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cF6-ne-BHo">
-                                                                            <rect key="frame" x="30" y="6.6666666666666572" width="22.666666666666671" height="17"/>
+                                                                            <rect key="frame" x="30" y="7" width="20.333333333333329" height="16.333333333333332"/>
                                                                             <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="14"/>
                                                                             <color key="textColor" name="gray-2"/>
                                                                             <nil key="highlightedColor"/>
@@ -590,10 +592,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKc-3P-Xal">
-                                                    <rect key="frame" x="16" y="18" width="89" height="22.333333333333329"/>
+                                                    <rect key="frame" x="16" y="18" width="89.333333333333329" height="22"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" insetsLayoutMarginsFromSafeArea="NO" text="산업&amp;기업 분석" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQT-f4-p8B">
-                                                            <rect key="frame" x="8" y="4.0000000000000009" width="73" height="14.333333333333336"/>
+                                                            <rect key="frame" x="8" y="4" width="73.333333333333329" height="14"/>
                                                             <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="12"/>
                                                             <color key="textColor" name="main"/>
                                                             <nil key="highlightedColor"/>
@@ -615,13 +617,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023년 상반기 네이버 IT직군 면접 준비 스터디원 모집합니다 :)" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6f-0e-X9Q">
-                                                    <rect key="frame" x="16" y="60" width="361" height="40.666666666666657"/>
+                                                    <rect key="frame" x="16" y="60" width="361" height="39.666666666666657"/>
                                                     <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="yx5-am-a99">
-                                                    <rect key="frame" x="16.000000000000014" y="116.66666666666669" width="227.33333333333337" height="24"/>
+                                                    <rect key="frame" x="16" y="115.66666666666667" width="225" height="24.000000000000014"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="29P-5q-hEB">
                                                             <rect key="frame" x="0.0" y="0.0" width="68.333333333333329" height="24"/>
@@ -637,7 +639,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="송파구" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7y-EE-hJD">
-                                                                            <rect key="frame" x="20.000000000000004" y="3.6666666666666572" width="42.333333333333343" height="17"/>
+                                                                            <rect key="frame" x="20.000000000000004" y="4" width="42.333333333333343" height="16.333333333333332"/>
                                                                             <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="14"/>
                                                                             <color key="textColor" name="gray-2"/>
                                                                             <nil key="highlightedColor"/>
@@ -675,7 +677,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2/14(토)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xF6-K6-9pp">
-                                                                            <rect key="frame" x="26.000000000000004" y="3.6666666666666572" width="60.333333333333343" height="17"/>
+                                                                            <rect key="frame" x="26.000000000000004" y="4" width="60.333333333333343" height="16.333333333333332"/>
                                                                             <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="14"/>
                                                                             <color key="textColor" name="gray-2"/>
                                                                             <nil key="highlightedColor"/>
@@ -699,10 +701,10 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mWK-cz-iBT">
-                                                            <rect key="frame" x="172.66666666666666" y="0.0" width="54.666666666666657" height="24"/>
+                                                            <rect key="frame" x="172.66666666666666" y="0.0" width="52.333333333333343" height="24"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAZ-WG-ZWr">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="54.666666666666664" height="24"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="52.333333333333336" height="24"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_members" translatesAutoresizingMaskIntoConstraints="NO" id="jIg-we-xYT">
                                                                             <rect key="frame" x="4" y="4" width="16" height="16"/>
@@ -712,7 +714,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="3/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGf-CF-hOg">
-                                                                            <rect key="frame" x="24" y="3.6666666666666572" width="22.666666666666671" height="17"/>
+                                                                            <rect key="frame" x="24" y="4" width="20.333333333333329" height="16.333333333333332"/>
                                                                             <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="14"/>
                                                                             <color key="textColor" name="gray-2"/>
                                                                             <nil key="highlightedColor"/>
@@ -786,8 +788,8 @@
         <image name="ic_home_date" width="13.333333015441895" height="13.333333015441895"/>
         <image name="ic_home_location" width="16" height="16"/>
         <image name="ic_home_members" width="16" height="16"/>
-        <image name="ic_survey_exit" width="13.666666984558105" height="13.666666984558105"/>
         <image name="icon_arrow_down" width="14" height="14"/>
+        <image name="icon_cancel" width="10.666666984558105" height="11"/>
         <image name="search_hyundai" width="200" height="64"/>
         <image name="search_kakao" width="152" height="64"/>
         <image name="search_lg" width="162" height="64"/>

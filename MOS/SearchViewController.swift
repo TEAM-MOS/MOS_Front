@@ -50,9 +50,10 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        let layout = TagFlowLayout()
-        layout.estimatedItemSize = CGSize(width: 100, height: 40)
-        collectionView.collectionViewLayout = layout
+// 최근 검색어 cell 세로 스크롤 설정
+//        let layout = TagFlowLayout()
+//        layout.estimatedItemSize = CGSize(width: 100, height: 40)
+//        collectionView.collectionViewLayout = layout
         
         // 검색 textField
         searchBar.setupLeftSideImage(ImageViewNamed: "icon_searchBar")
@@ -157,10 +158,10 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
         }
         collectionView.reloadData()
     }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: 200, height: 30)
-    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+//        return CGSize(width: 200, height: 30)
+//    }
     
     
     // ========= ✨ Dynamic width =========
@@ -188,6 +189,10 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SearchResultVC") as? SearchResultViewController else { return }
         nextVC.search_text = "카카오"
         navigationController?.pushViewController(nextVC, animated: true)
+        
+        let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil) // title 부분 수정
+            backBarButtonItem.tintColor = .black
+            self.navigationItem.backBarButtonItem = backBarButtonItem
     }
 }
 

@@ -68,8 +68,7 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
         
         // searchBar의 검색 텍스트 설정
         searchBar.text = search_text
-        
-        self.navigationItem.setHidesBackButton(true, animated: true)
+     
         
         // 모집 중 스위치 사이즈 조절
         recruitingSwitch.transform = CGAffineTransformMakeScale(0.75, 0.75);

@@ -20,12 +20,12 @@ class RecentSearchCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.recentSearchText.adjustsFontSizeToFitWidth = true
-        self.layer.borderColor = UIColor.lightGray.cgColor
+        self.layer.borderColor = UIColor(named: "gray-1")?.cgColor
         self.layer.borderWidth = 1
-        self.layer.cornerRadius = recentSearchText.frame.size.height / 2.5
+        self.layer.cornerRadius = recentSearchText.frame.size.height / 2.2
         self.backgroundColor = .lightGray
         self.recentSearchText.textColor = .black
-        let leadingConstraint = recentSearchBcView.leadingAnchor.constraint(equalTo: recentSearchText.leadingAnchor, constant: -12)
+        let leadingConstraint = recentSearchBcView.leadingAnchor.constraint(equalTo: recentSearchText.leadingAnchor, constant: -16)
         // Activate the constraint
         leadingConstraint.isActive = true
     }
