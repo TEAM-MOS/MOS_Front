@@ -10,22 +10,22 @@ import UIKit
 class AllViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // 콜렉션 뷰 생성 및 설정
         collectionView.dataSource = self
         collectionView.delegate = self
-
+        
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         
         let leadingConstraint = collectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20)
         leadingConstraint.isActive = true
-
+        
         let trailingConstraint = collectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20)
         trailingConstraint.isActive = true
-
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -45,33 +45,33 @@ class AllViewController: UIViewController, UICollectionViewDataSource, UICollect
         cell.configure(studyListCell)
         return cell
     }
-
     
-
+    
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 extension AllViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-           let studyList = StudyList.listAll[indexPath.item]
-           
-           let titleFont = UIFont.systemFont(ofSize: 17) // 적절한 폰트 사용
-           let titleText = studyList.title
-           let titleMaxWidth = collectionView.bounds.width /* 패딩이나 제약조건 조절 */
-           
-           let titleHeight = titleText.height(withConstrainedWidth: titleMaxWidth, font: titleFont)
-           
-           // 제목 레이블 높이를 기반으로 원하는 셀 높이 계산
+        let studyList = StudyList.listAll[indexPath.item]
+        
+        let titleFont = UIFont.systemFont(ofSize: 17) // 적절한 폰트 사용
+        let titleText = studyList.title
+        let titleMaxWidth = collectionView.bounds.width /* 패딩이나 제약조건 조절 */
+        
+        let titleHeight = titleText.height(withConstrainedWidth: titleMaxWidth, font: titleFont)
+        
+        // 제목 레이블 높이를 기반으로 원하는 셀 높이 계산
         let cellHeight = titleHeight + 130.0 /* 다른 셀 요소에 대한 높이 추가 */
-           
-           return CGSize(width: collectionView.bounds.width, height: cellHeight)
-       }
+        
+        return CGSize(width: collectionView.bounds.width, height: cellHeight)
+    }
 }
