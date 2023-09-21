@@ -14,8 +14,6 @@ class StudyDetailInfoViewController:UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("너는")
-        
     }
     
     

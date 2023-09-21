@@ -32,5 +32,5 @@ struct StudyDetail {
 
 
 extension StudyDetail {
-    static var list = StudyDetail(category: "1", status: "2", createdDate: "3", title: "4", location: "5", startDate: "6", endDate: "7", currentmemberCount: 8, recruitMemberCount: 9, recruitStartPeriod: "10", recruitEndPeriod: "11", studyMode: "12", studyCreator: "13", studyDayWeek: "14", studyGoal: "15", studyRule: "16", studyIntroduction: "17", currentUserImg: "18", waitingUserImg: "19", studyTodoList: "20")
+    static var list = StudyDetail(category: "산업&기업 분석", status: "모집중", createdDate: "2023-01-21T16:20:09.000+00:00", title: "2023년 상반기 네이버 IT직군 면접 준비 스터디원 모집합니다 :)", location: "송파구", startDate: "2023-01-23T16:20:09.000+00:00", endDate: "2023-01-27T16:20:09.000+00:00", currentmemberCount: 8, recruitMemberCount: 9, recruitStartPeriod: "10", recruitEndPeriod: "11", studyMode: "12", studyCreator: "13", studyDayWeek: "14", studyGoal: "15", studyRule: "16", studyIntroduction: "17", currentUserImg: "18", waitingUserImg: "19", studyTodoList: "20")
 }

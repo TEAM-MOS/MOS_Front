@@ -9,7 +9,13 @@ import UIKit
 
 class StudyDetailViewController: UIViewController {
     
+    @IBOutlet var studyDetailView: UIView!
+    @IBOutlet weak var containerVC1: UIView!
+    
+    
+    var newHeightt = 0.0
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,8 +38,8 @@ class StudyDetailViewController: UIViewController {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "PreQuestionAlertVC") as? PreQuestionAlertViewController else { return }
         nextVC.modalPresentationStyle = .overCurrentContext
         self.present(nextVC, animated: true, completion: nil)
-        
     }
+
     
 }
 
