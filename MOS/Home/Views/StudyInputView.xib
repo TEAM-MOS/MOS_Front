@@ -56,7 +56,7 @@
                         <constraint firstItem="hru-kC-Zf0" firstAttribute="leading" secondItem="YU9-Jf-LHo" secondAttribute="leading" constant="8" id="akG-L5-CLa"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023년 상반기 네이버 IT직군 면접 준비 스터디원 모집합니다 :)" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTg-Dt-aXN">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023년 상반기 네이버 IT직군 면접 준비 스터디원 모집합니다 :)" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTg-Dt-aXN">
                     <rect key="frame" x="16" y="52.333333333333343" width="361" height="40.666666666666657"/>
                     <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
                     <nil key="textColor"/>

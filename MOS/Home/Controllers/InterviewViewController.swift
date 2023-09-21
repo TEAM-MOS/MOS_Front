@@ -8,9 +8,13 @@
 import UIKit
 
 class InterviewViewController: UIViewController {
+    @IBOutlet weak var recruitingSwitch: UISwitch!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // 모집 중 스위치 사이즈 조절
+        recruitingSwitch.transform = CGAffineTransformMakeScale(0.75, 0.75);
 
         // Do any additional setup after loading the view.
     }

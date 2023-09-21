@@ -10,9 +10,13 @@ import UIKit
 class AnalysisViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var recruitingSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // 모집 중 스위치 사이즈 조절
+        recruitingSwitch.transform = CGAffineTransformMakeScale(0.75, 0.75);
         
         // 콜렉션 뷰 생성 및 설정
         collectionView.dataSource = self

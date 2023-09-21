@@ -90,7 +90,7 @@ class PagingViewController: UIViewController, LZViewPagerDelegate, LZViewPagerDa
     }
     
     func colorForIndicator(at index: Int) -> UIColor{
-        return UIColor(named: "main") ?? UIColor.black
+        return UIColor.black
     }
     
     func widthForButton(at index: Int) -> CGFloat {
