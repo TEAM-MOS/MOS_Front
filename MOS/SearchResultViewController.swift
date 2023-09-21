@@ -77,10 +77,10 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
         dropDownUI()
         setDropDownButton()
         
-        // 스터디 상세 페이지로 이동
-        // viewMap: View 객체
-//        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
-//        studyInputView.addGestureRecognizer(tapGestureRecognizer)
+         // 스터디 상세 페이지로 이동
+         // viewMap: View 객체
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+        collectionView.addGestureRecognizer(tapGestureRecognizer)
     }
 
     

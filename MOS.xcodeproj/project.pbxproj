@@ -17,6 +17,7 @@
 		2F28E68B2A1DDFBE00021E72 /* AddStudy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F28E68A2A1DDFBE00021E72 /* AddStudy.storyboard */; };
 		2F2B3E232A1DBE52008B0506 /* TabMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B3E222A1DBE52008B0506 /* TabMenuViewController.swift */; };
 		2F2B3E252A1DBE74008B0506 /* TabMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */; };
+		2F2D15DA2ABC4C5A00ECBD5D /* StudyDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D15D92ABC4C5A00ECBD5D /* StudyDetailModel.swift */; };
 		2F5BA7622A9B278200E9A444 /* RecentSearchLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BA7612A9B278200E9A444 /* RecentSearchLayout.swift */; };
 		2F8270E02A8F7B9100CE7BE1 /* StudyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8270DF2A8F7B9100CE7BE1 /* StudyListViewController.swift */; };
 		2F8270E22A8F7EEB00CE7BE1 /* StudyListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8270E12A8F7EEB00CE7BE1 /* StudyListModel.swift */; };
@@ -30,6 +31,7 @@
 		2FA142822A149026006AA91B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA142802A149026006AA91B /* LaunchScreen.storyboard */; };
 		2FB095862A2631910035FB78 /* DeviceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB095852A2631910035FB78 /* DeviceGroup.swift */; };
 		2FD24DA82A24F73B000747D7 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD24DA72A24F73B000747D7 /* SearchResultViewController.swift */; };
+		2FD8EF952ABC5C7F002A6F3B /* StudyOutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD8EF942ABC5C7F002A6F3B /* StudyOutlineViewController.swift */; };
 		2FF25FE02A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF25FDF2A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift */; };
 		2FFCFC422A1DD2A200E2AC95 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */; };
 		2FFCFC442A1DD2B200E2AC95 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */; };
@@ -81,6 +83,7 @@
 		2F28E68A2A1DDFBE00021E72 /* AddStudy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddStudy.storyboard; sourceTree = "<group>"; };
 		2F2B3E222A1DBE52008B0506 /* TabMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuViewController.swift; sourceTree = "<group>"; };
 		2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabMenu.storyboard; sourceTree = "<group>"; };
+		2F2D15D92ABC4C5A00ECBD5D /* StudyDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyDetailModel.swift; sourceTree = "<group>"; };
 		2F5BA7612A9B278200E9A444 /* RecentSearchLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchLayout.swift; sourceTree = "<group>"; };
 		2F8270DF2A8F7B9100CE7BE1 /* StudyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListViewController.swift; sourceTree = "<group>"; };
 		2F8270E12A8F7EEB00CE7BE1 /* StudyListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListModel.swift; sourceTree = "<group>"; };
@@ -96,9 +99,9 @@
 		2FA142832A149026006AA91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FB095852A2631910035FB78 /* DeviceGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGroup.swift; sourceTree = "<group>"; };
 		2FD24DA72A24F73B000747D7 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		2FD8EF942ABC5C7F002A6F3B /* StudyOutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyOutlineViewController.swift; sourceTree = "<group>"; };
 		2FDDEEA72AB2BDBC00080BF5 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		2FDDEEA82AB2BDBD00080BF5 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		2FE658BC2A3B50AE008D7403 /* StudyOutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyOutlineViewController.swift; sourceTree = "<group>"; };
 		2FF25FDF2A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -207,8 +210,9 @@
 				5A444B6D2A2789DC0070137A /* StudyInputView.xib */,
 				5A444B722A278B590070137A /* StudyInputView.swift */,
 				2F9DAF542A3222B9007CA960 /* Study.storyboard */,
+				2F2D15D92ABC4C5A00ECBD5D /* StudyDetailModel.swift */,
 				2F9DAF522A3222A5007CA960 /* StudyDetailViewController.swift */,
-				2FE658BC2A3B50AE008D7403 /* StudyOutlineViewController.swift */,
+				2FD8EF942ABC5C7F002A6F3B /* StudyOutlineViewController.swift */,
 				F33B43452A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift */,
 				F304A13C2A41FDC90066036B /* StudyDetailInfoViewController.swift */,
 				F304A13E2A4206240066036B /* StudyMemberInfoViewController.swift */,
@@ -461,6 +465,7 @@
 				5A7AA0D62A41C1DC0087DE3C /* AnalysisViewController.swift in Sources */,
 				2F8270E62A8F808000CE7BE1 /* StudyListCollectionViewCell.swift in Sources */,
 				F33B43462A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift in Sources */,
+				2F2D15DA2ABC4C5A00ECBD5D /* StudyDetailModel.swift in Sources */,
 				5A6EE3952A8AAE90000E841D /* SurveyStartVC.swift in Sources */,
 				2FF25FE02A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift in Sources */,
 				2F28E67F2A1DD9C700021E72 /* SearchViewController.swift in Sources */,
@@ -478,6 +483,7 @@
 				F3A7F9BE2A421DC800AE1863 /* StudyRegisterViewController.swift in Sources */,
 				F3A7F9C02A422C4700AE1863 /* CompleteRegisterStudyViewController.swift in Sources */,
 				2F2B3E232A1DBE52008B0506 /* TabMenuViewController.swift in Sources */,
+				2FD8EF952ABC5C7F002A6F3B /* StudyOutlineViewController.swift in Sources */,
 				F304A13F2A4206240066036B /* StudyMemberInfoViewController.swift in Sources */,
 				F3A7F9BC2A4219BC00AE1863 /* PreQuestionAlertViewController.swift in Sources */,
 				2F8270E02A8F7B9100CE7BE1 /* StudyListViewController.swift in Sources */,
