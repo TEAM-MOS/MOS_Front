@@ -174,21 +174,18 @@
 		2FA142742A149024006AA91B /* MOS */ = {
 			isa = PBXGroup;
 			children = (
-				5A7AA0D22A41C1580087DE3C /* Controllers */,
 				5AC619942A17105600966219 /* Resources */,
 				2FA142752A149024006AA91B /* AppDelegate.swift */,
-				5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */,
 				2FA142772A149024006AA91B /* SceneDelegate.swift */,
 				2FA142792A149024006AA91B /* ViewController.swift */,
 				2FA1427B2A149024006AA91B /* Main.storyboard */,
 				2FA142802A149026006AA91B /* LaunchScreen.storyboard */,
 				5A3FE53E2AA3C27B009E7E37 /* Survey */,
+				5AF8165D2ABC607B009B04D7 /* Home */,
 				2FA142832A149026006AA91B /* Info.plist */,
 				5A67766A2A1E1ECF00F1D3DB /* Assets.xcassets */,
 				2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */,
 				2F2B3E222A1DBE52008B0506 /* TabMenuViewController.swift */,
-				2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */,
-				2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */,
 				2F28E67C2A1DD9BA00021E72 /* Search.storyboard */,
 				2F8270DF2A8F7B9100CE7BE1 /* StudyListViewController.swift */,
 				2F8270E12A8F7EEB00CE7BE1 /* StudyListModel.swift */,
@@ -204,8 +201,6 @@
 				2F28E6842A1DDAD300021E72 /* MyPage.storyboard */,
 				2F28E6862A1DDADE00021E72 /* MyPageViewController.swift */,
 				2FB095852A2631910035FB78 /* DeviceGroup.swift */,
-				5A444B6D2A2789DC0070137A /* StudyInputView.xib */,
-				5A444B722A278B590070137A /* StudyInputView.swift */,
 				2F9DAF542A3222B9007CA960 /* Study.storyboard */,
 				2F9DAF522A3222A5007CA960 /* StudyDetailViewController.swift */,
 				2FE658BC2A3B50AE008D7403 /* StudyOutlineViewController.swift */,
@@ -223,8 +218,8 @@
 		5A3FE53E2AA3C27B009E7E37 /* Survey */ = {
 			isa = PBXGroup;
 			children = (
-				5A6EE38E2A852376000E841D /* SurveyView */,
-				5A6EE38D2A852225000E841D /* SurveyViewController */,
+				5A6EE38E2A852376000E841D /* Views */,
+				5A6EE38D2A852225000E841D /* Controllers */,
 				5A3FE53F2AA3C328009E7E37 /* Utilities */,
 			);
 			path = Survey;
@@ -263,27 +258,29 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
-		5A6EE38D2A852225000E841D /* SurveyViewController */ = {
+		5A6EE38D2A852225000E841D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				5AD249602A406C4000A7BBAC /* SurveyResultVC.swift */,
 				5AC619B32A19E5BD00966219 /* SurveyVC.swift */,
 				5A6EE3942A8AAE90000E841D /* SurveyStartVC.swift */,
 			);
-			path = SurveyViewController;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		5A6EE38E2A852376000E841D /* SurveyView */ = {
+		5A6EE38E2A852376000E841D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				5AC619902A170A4000966219 /* Survey.storyboard */,
 			);
-			path = SurveyView;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		5A7AA0D22A41C1580087DE3C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */,
+				5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */,
 				5A7AA0D32A41C1A10087DE3C /* AllViewController.swift */,
 				5A7AA0D52A41C1DC0087DE3C /* AnalysisViewController.swift */,
 				5ADA06552A41E5CF00FE76E5 /* currentEventViewController.swift */,
@@ -291,6 +288,7 @@
 				5ADA06592A41E63100FE76E5 /* SelfIntroductionViewController.swift */,
 				5ADA065B2A41E64900FE76E5 /* InterviewViewController.swift */,
 				5ADA065D2A41E67B00FE76E5 /* LanguageViewController.swift */,
+				5A444B722A278B590070137A /* StudyInputView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -302,6 +300,24 @@
 				5A6776AC2A22699B00F1D3DB /* Font */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		5AF8165D2ABC607B009B04D7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5AF8165E2ABC60A9009B04D7 /* Views */,
+				5A7AA0D22A41C1580087DE3C /* Controllers */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5AF8165E2ABC60A9009B04D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */,
+				5A444B6D2A2789DC0070137A /* StudyInputView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		7F51805F66C8A8191B140654 /* Frameworks */ = {
