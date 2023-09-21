@@ -42,10 +42,14 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
             button_kakao.heightAnchor.constraint(equalToConstant: 40)
             print("5인치")
         }
+
+ 
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -64,6 +68,8 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
         //        recentSearchButtonView?.layer.borderColor = UIColor.systemGray6.cgColor
         //        recentSearchButtonView?.layer.borderWidth = 1
         //        recentSearchButtonView?.layer.cornerRadius = 16
+        print("리로드 데이터")
+
         getSearchDatas = [getRecentSearchKeywords()]
         
         print("데이터 가져오기 \(getSearchDatas)")
@@ -79,6 +85,10 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder() // 키보드 숨기기
         performSearch() // 검색 액션 실행
+        
+        // 최근 검색어 화면에 바로 load
+            self.getSearchDatas = [self.getRecentSearchKeywords()]
+           self.collectionView.reloadData()
         return true
     }
     
@@ -95,28 +105,14 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
         guard let searchResultVC = storyboard?.instantiateViewController(withIdentifier: "SearchResultVC") as? SearchResultViewController else { return }
         searchResultVC.search_text = searchBar.text
         navigationController?.pushViewController(searchResultVC, animated: true)
-        
+
         let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil) // title 부분 수정
         backBarButtonItem.tintColor = .black
         self.navigationItem.backBarButtonItem = backBarButtonItem
+        
     }
     
-    func saveRecentSearchKeyword(_ keyword: String) {
-        var recentKeywords = UserDefaults.standard.stringArray(forKey: "RecentSearchKeywords") ?? []
-        
-        // 이미 저장된 검색어라면 중복 제거
-        if let index = recentKeywords.firstIndex(of: keyword) {
-            recentKeywords.remove(at: index)
-        }
-        
-        // 새로운 검색어 추가
-        recentKeywords.insert(keyword, at: 0)
-        
-        // 최근 검색어 목록을 UserDefaults에 저장
-        UserDefaults.standard.set(recentKeywords, forKey: "RecentSearchKeywords")
-        print("현재까지 저장된 \(recentKeywords)")
-    }
-    
+
     
     func getRecentSearchKeywords() -> [String] {
         return UserDefaults.standard.stringArray(forKey: "RecentSearchKeywords") ?? []
@@ -144,21 +140,18 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
                                                             for: indexPath) as? RecentSearchCollectionViewCell else {
             return RecentSearchCollectionViewCell()
         }
-        
         cell.recentSearchText.text = getSearchDatas[indexPath.section][indexPath.row]
-        
+
         cell.recentSearchText.preferredMaxLayoutWidth = collectionView.frame.width - 16
         
         cell.deleteButton.row = indexPath.row
         cell.deleteButton.section = indexPath.section
         cell.deleteButton.addTarget(self, action:#selector(deleteTapped(_:)), for: .touchUpInside)
-        
         //        if selected.contains(getSearchDatas[indexPath.section]) {
         //            cell.backgroundColor = UIColor(red: 88/255, green: 86/255, blue: 214/255, alpha: 1)
         //        } else {
         //            cell.backgroundColor = .lightGray
         //        }
-        
         return cell
     }
     
@@ -170,7 +163,6 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
         } else {
             selected.append(text)
         }
-        collectionView.reloadData()
     }
     //
     //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
@@ -194,9 +186,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
         return CGSize(width: cellWidth, height: 42)
     }
     
-    
-    
-    
+
     
     @IBAction func kakaoButtonPressed(_ sender: Any) {
         // 카카오 버튼 클릭
@@ -204,11 +194,29 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
         nextVC.search_text = "카카오"
         navigationController?.pushViewController(nextVC, animated: true)
         
+        
+        
         let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil) // title 부분 수정
         backBarButtonItem.tintColor = .black
         self.navigationItem.backBarButtonItem = backBarButtonItem
     }
     
+    func saveRecentSearchKeyword(_ keyword: String) {
+        var recentKeywords = UserDefaults.standard.stringArray(forKey: "RecentSearchKeywords") ?? []
+        
+        // 이미 저장된 검색어라면 중복 제거
+        if let index = recentKeywords.firstIndex(of: keyword) {
+            recentKeywords.remove(at: index)
+        }
+        
+        // 새로운 검색어 추가
+        recentKeywords.insert(keyword, at: 0)
+        
+        // 최근 검색어 목록을 UserDefaults에 저장
+        UserDefaults.standard.set(recentKeywords, forKey: "RecentSearchKeywords")
+        print("현재까지 저장된 \(recentKeywords)")
+
+    }
     
 }
 
@@ -235,7 +243,6 @@ extension SearchViewController {
         collectionView.reloadData()
     }
 }
-
 
 // 최근 검색어가 비어있을 때 화면
 extension UICollectionView {
