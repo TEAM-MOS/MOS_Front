@@ -64,7 +64,7 @@ class StudyListCollectionViewCell: UICollectionViewCell {
     }
     
     private func setupShadow() {
-        print("shadow 함수 호출")
+        //print("shadow 함수 호출")
         self.bcView.layer.cornerRadius = 16 // 셀의 모서리를 둥글게 만들기 위해 설정
         self.bcView.layer.shadowColor = UIColor(red: 0.91, green: 0.91, blue: 0.91, alpha: 1).cgColor
         self.bcView.layer.shadowOpacity = 1

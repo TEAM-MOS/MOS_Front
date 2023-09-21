@@ -9,11 +9,13 @@ import UIKit
 
 class StudyDetailInfoViewController:UIViewController {
     
+    @IBOutlet weak var infoText: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        infoText.text = StudyDetail.list.studyRule
         
     }
     

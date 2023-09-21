@@ -9,8 +9,6 @@ import UIKit
 import DropDown
 
 class SearchResultViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    
-    
     var search_text: String?
     @IBOutlet weak var searchBar: UITextField!
     @IBOutlet weak var recruitingSwitch: UISwitch!
@@ -79,12 +77,11 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
         dropDownUI()
         setDropDownButton()
         
-        // 스터디 상세 페이지로 이동
-        // viewMap: View 객체
-//        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
-//        studyInputView.addGestureRecognizer(tapGestureRecognizer)
+         // 스터디 상세 페이지로 이동
+         // viewMap: View 객체
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+        collectionView.addGestureRecognizer(tapGestureRecognizer)
     }
-    
 
     
     
@@ -131,7 +128,7 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
             self!.dropDownIcon.image = UIImage.init(named: "icon_arrow_down")
         }
     }
-    
+
     
     @objc func viewTapped(_ sender: UITapGestureRecognizer) {
         // 다른 파일 스토리보드 가져오기

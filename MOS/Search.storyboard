@@ -181,7 +181,6 @@
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstItem="cWf-t3-wDy" firstAttribute="centerY" secondItem="KtQ-2P-Dr1" secondAttribute="centerY" id="YFn-5c-9Pg"/>
-                                                                <constraint firstItem="KtQ-2P-Dr1" firstAttribute="leading" secondItem="so3-aE-GcB" secondAttribute="leading" constant="16" id="ZEp-47-STt"/>
                                                                 <constraint firstItem="KtQ-2P-Dr1" firstAttribute="top" secondItem="so3-aE-GcB" secondAttribute="top" id="iFb-NI-qHj"/>
                                                                 <constraint firstAttribute="height" constant="46" id="q6z-aX-9i7"/>
                                                                 <constraint firstItem="KtQ-2P-Dr1" firstAttribute="leading" secondItem="so3-aE-GcB" secondAttribute="leading" id="qlL-5A-ay3"/>
