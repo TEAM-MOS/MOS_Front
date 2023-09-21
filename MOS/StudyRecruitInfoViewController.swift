@@ -8,7 +8,10 @@
 import UIKit
 
 class StudyRecruitInfoViewController: UIViewController{
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 }
