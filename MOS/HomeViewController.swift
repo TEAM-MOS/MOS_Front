@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var showMoreStudies: UIImageView!
     @IBOutlet weak var navToSurveyBtn: UIView!
     @IBOutlet weak var studyCollectionView: UICollectionView!
-    @IBOutlet weak var category1Btn: UIImageView!
+    
     var pagingViewController: PagingViewController?
     
     override func viewDidLoad() {
@@ -43,14 +43,30 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func category1BtnTapped(_ sender: UITapGestureRecognizer) {
-        self.performSegue(withIdentifier: "navToCategory", sender: self)
+        self.performSegue(withIdentifier: "navToCategory", sender: 1)
+    }
+    @IBAction func category2BtnTapped(_ sender: UITapGestureRecognizer) {
+        self.performSegue(withIdentifier: "navToCategory", sender: 2)
+    }
+    @IBAction func category3btnTapped(_ sender: UITapGestureRecognizer) {
+        self.performSegue(withIdentifier: "navToCategory", sender: 3)
     }
     
+    @IBAction func category4BtnTapped(_ sender: UITapGestureRecognizer) {
+        self.performSegue(withIdentifier: "navToCategory", sender: 4)
+    }
+    @IBAction func category5BtnTapped(_ sender: UITapGestureRecognizer) {
+        self.performSegue(withIdentifier: "navToCategory", sender: 5)
+    }
+    
+    @IBAction func category6BtnTapped(_ sender: UITapGestureRecognizer) {
+        self.performSegue(withIdentifier: "navToCategory", sender: 6)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "navToCategory" {
-            if let pagingViewController = segue.destination as? PagingViewController {
+            if let pagingViewController = segue.destination as? PagingViewController, let pageIndex = sender as? Int {
                 // 원하는 페이지로 selectedPageIndex를 설정
-                pagingViewController.selectedPageIndex = 1 // 예: 1은 산업•기업 분석 페이지
+                pagingViewController.selectedPageIndex = pageIndex
             }
         }
     }
