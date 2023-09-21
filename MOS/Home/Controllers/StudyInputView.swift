@@ -128,10 +128,10 @@ class StudyInputView: UIView{
         self.locationView.layer.cornerRadius = 4
         self.categoryView.layer.cornerRadius = 12
         self.studyInputView.layer.cornerRadius = 16
-        self.studyInputView.layer.shadowColor = UIColor(named: "gray-2")?.cgColor //색상
-        self.studyInputView.layer.shadowOpacity = 0.1 //alpha값
-        self.studyInputView.layer.shadowRadius = 10 //반경
-        self.studyInputView.layer.shadowOffset = CGSize(width: 0, height: 0) //위치조정
+        self.studyInputView.layer.shadowColor = UIColor(red: 0.908, green: 0.908, blue: 0.908, alpha: 1).cgColor
+        self.studyInputView.layer.shadowOpacity = 1 //alpha값
+        self.studyInputView.layer.shadowRadius = 4 //반경
+        self.studyInputView.layer.shadowOffset = CGSize(width: 2, height: 2) //위치조정
         self.studyInputView.layer.masksToBounds = false
         self.leaderImage.layer.cornerRadius = self.leaderImage.frame.size.width / 2
         self.leaderImage.clipsToBounds = true
