@@ -12,6 +12,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var showMoreStudies: UIImageView!
     @IBOutlet weak var navToSurveyBtn: UIView!
     @IBOutlet weak var studyCollectionView: UICollectionView!
+    @IBOutlet weak var category1Btn: UIImageView!
+    var pagingViewController: PagingViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +40,19 @@ class HomeViewController: UIViewController {
         
         let trailingConstraint = studyCollectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20)
         trailingConstraint.isActive = true
+    }
+    
+    @IBAction func category1BtnTapped(_ sender: UITapGestureRecognizer) {
+        self.performSegue(withIdentifier: "navToCategory", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "navToCategory" {
+            if let pagingViewController = segue.destination as? PagingViewController {
+                // 원하는 페이지로 selectedPageIndex를 설정
+                pagingViewController.selectedPageIndex = 1 // 예: 1은 산업•기업 분석 페이지
+            }
+        }
     }
     
     @objc func imageTapped() {

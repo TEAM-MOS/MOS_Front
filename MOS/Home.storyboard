@@ -101,19 +101,24 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2r5-S8-csZ">
-                                                <rect key="frame" x="6" y="313.66666666666669" width="381" height="249.00000000000006"/>
+                                                <rect key="frame" x="6" y="313.66666666666669" width="381" height="248.66666666666669"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="i2N-qh-yUs">
-                                                        <rect key="frame" x="0.0" y="0.0" width="381" height="114.66666666666667"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="381" height="114.33333333333333"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xzf-vL-NDv">
-                                                                <rect key="frame" x="0.0" y="0.0" width="127" height="114.66666666666667"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="127" height="114.33333333333333"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_category1" translatesAutoresizingMaskIntoConstraints="NO" id="55M-MQ-QOy">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="127" height="90.333333333333329"/>
-                                                                    </imageView>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gD-yq-eUd">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="127" height="90"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                                        <connections>
+                                                                            <action selector="category1BtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="m1f-8B-CiB"/>
+                                                                        </connections>
+                                                                    </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="산업&amp;기업 분석" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XO-z6-lrV">
-                                                                        <rect key="frame" x="0.0" y="100.33333333333331" width="127" height="14.333333333333329"/>
+                                                                        <rect key="frame" x="0.0" y="100" width="127" height="14.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="12"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -121,13 +126,13 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G7D-Ng-qP0">
-                                                                <rect key="frame" x="127" y="0.0" width="127" height="114.66666666666667"/>
+                                                                <rect key="frame" x="127" y="0.0" width="127" height="114.33333333333333"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_category2" translatesAutoresizingMaskIntoConstraints="NO" id="Hv6-8z-Fa1">
                                                                         <rect key="frame" x="0.0" y="0.0" width="127" height="90"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사 PT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdt-Cr-pTk">
-                                                                        <rect key="frame" x="0.0" y="100" width="127" height="14.666666666666671"/>
+                                                                        <rect key="frame" x="0.0" y="100" width="127" height="14.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="12"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -135,13 +140,13 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fCI-h8-Opr">
-                                                                <rect key="frame" x="254" y="0.0" width="127" height="114.66666666666667"/>
+                                                                <rect key="frame" x="254" y="0.0" width="127" height="114.33333333333333"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ic_home_category3" translatesAutoresizingMaskIntoConstraints="NO" id="cs0-c7-T8D">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_category3" translatesAutoresizingMaskIntoConstraints="NO" id="cs0-c7-T8D">
                                                                         <rect key="frame" x="0.0" y="0.0" width="127" height="90"/>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="인/적성" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EO1-KS-MYj">
-                                                                        <rect key="frame" x="0.0" y="100" width="127" height="14.666666666666671"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인/적성" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EO1-KS-MYj">
+                                                                        <rect key="frame" x="0.0" y="100" width="127" height="14.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="12"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -151,7 +156,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Lqw-Uj-KgX">
-                                                        <rect key="frame" x="0.0" y="134.66666666666663" width="381" height="114.33333333333331"/>
+                                                        <rect key="frame" x="0.0" y="134.33333333333331" width="381" height="114.33333333333331"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ct5-mL-Nzb">
                                                                 <rect key="frame" x="0.0" y="0.0" width="127" height="114.33333333333333"/>
@@ -160,7 +165,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="127" height="90"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자소서" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFj-Hs-VTa">
-                                                                        <rect key="frame" x="0.0" y="100.00000000000006" width="127" height="14.333333333333329"/>
+                                                                        <rect key="frame" x="0.0" y="100" width="127" height="14.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="12"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -174,7 +179,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="127" height="90"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiU-lR-itj">
-                                                                        <rect key="frame" x="0.0" y="100.00000000000006" width="127" height="14.333333333333329"/>
+                                                                        <rect key="frame" x="0.0" y="100" width="127" height="14.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="12"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -188,7 +193,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="127" height="90"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="어학" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DI3-Fd-cIp">
-                                                                        <rect key="frame" x="0.0" y="100.00000000000006" width="127" height="14.333333333333329"/>
+                                                                        <rect key="frame" x="0.0" y="100" width="127" height="14.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="12"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -200,20 +205,20 @@
                                                 </subviews>
                                             </stackView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="view_home_divider" translatesAutoresizingMaskIntoConstraints="NO" id="WzX-bg-oBZ">
-                                                <rect key="frame" x="3" y="602.66666666666663" width="387" height="8"/>
+                                                <rect key="frame" x="3" y="602.33333333333337" width="387" height="8"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="8" id="Bql-gt-dsb"/>
                                                     <constraint firstAttribute="height" constant="8" id="owE-Qz-LW7"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 모집 중인 스터디" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdK-N6-Q8V">
-                                                <rect key="frame" x="24" y="634.66666666666663" width="152.66666666666666" height="32"/>
+                                                <rect key="frame" x="24" y="634.33333333333337" width="152.66666666666666" height="32"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_detail_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="rWZ-8Z-jiw">
-                                                <rect key="frame" x="177.66666666666666" y="634.66666666666663" width="32" height="32"/>
+                                                <rect key="frame" x="177.66666666666666" y="634.33333333333337" width="32" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="32" id="ehp-IZ-eZf"/>
                                                     <constraint firstAttribute="height" constant="32" id="tTc-mJ-h0P"/>
@@ -281,7 +286,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5VX-3Q-mtb">
-                                                <rect key="frame" x="0.0" y="690.66666666666663" width="393" height="380.99999999999989"/>
+                                                <rect key="frame" x="0.0" y="690.33333333333337" width="393" height="381.33333333333337"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="flt-Qm-NTJ">
                                                     <size key="itemSize" width="128" height="128"/>

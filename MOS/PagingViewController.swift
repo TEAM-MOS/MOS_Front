@@ -18,6 +18,8 @@ class PagingViewController: UIViewController, LZViewPagerDelegate, LZViewPagerDa
     
     //MARK: - Variables
     private var subControllers: [UIViewController] = []
+    var selectedPageIndex: Int = 0
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +30,8 @@ class PagingViewController: UIViewController, LZViewPagerDelegate, LZViewPagerDa
         backBtn.isUserInteractionEnabled = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         backBtn.addGestureRecognizer(tapGesture)
+        
+        viewPager.select(index: selectedPageIndex, animated: false)
 
         // Do any additional setup after loading the view.
     }
