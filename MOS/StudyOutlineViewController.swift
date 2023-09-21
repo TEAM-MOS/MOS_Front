@@ -30,7 +30,6 @@ class StudyOutlineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         category.text = StudyDetail.list.category
         status.text = StudyDetail.list.status
         studyTitle.text = StudyDetail.list.title
