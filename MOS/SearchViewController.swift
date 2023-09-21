@@ -15,8 +15,8 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
     
     // 최근 검색어
     /*
-    @IBOutlet weak var recentSearchButtonText: UILabel!
-    @IBOutlet weak var recentSearchButtonView: UIView!
+     @IBOutlet weak var recentSearchButtonText: UILabel!
+     @IBOutlet weak var recentSearchButtonView: UIView!
      */
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -50,9 +50,10 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        let layout = TagFlowLayout()
-        layout.estimatedItemSize = CGSize(width: 100, height: 40)
-        collectionView.collectionViewLayout = layout
+        // 최근 검색어 cell 세로 스크롤 설정
+        //        let layout = TagFlowLayout()
+        //        layout.estimatedItemSize = CGSize(width: 100, height: 40)
+        //        collectionView.collectionViewLayout = layout
         
         // 검색 textField
         searchBar.setupLeftSideImage(ImageViewNamed: "icon_searchBar")
@@ -60,18 +61,18 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
         searchBar.delegate = self
         
         // 최근 검색어 버튼 border
-//        recentSearchButtonView?.layer.borderColor = UIColor.systemGray6.cgColor
-//        recentSearchButtonView?.layer.borderWidth = 1
-//        recentSearchButtonView?.layer.cornerRadius = 16
+        //        recentSearchButtonView?.layer.borderColor = UIColor.systemGray6.cgColor
+        //        recentSearchButtonView?.layer.borderWidth = 1
+        //        recentSearchButtonView?.layer.cornerRadius = 16
         getSearchDatas = [getRecentSearchKeywords()]
         
         print("데이터 가져오기 \(getSearchDatas)")
         
-//        if getSearchDatas.isEmpty {
-//            self.recentSearchButtonText?.text = ""
-//        } else {
-//            self.recentSearchButtonText.text = getSearchDatas[0]
-//        }
+        //        if getSearchDatas.isEmpty {
+        //            self.recentSearchButtonText?.text = ""
+        //        } else {
+        //            self.recentSearchButtonText.text = getSearchDatas[0]
+        //        }
     }
     
     // UITextFieldDelegate 메소드 - 사용자가 'Return' 또는 'Search' 버튼을 눌렀을 때 호출됨
@@ -89,6 +90,15 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
             saveRecentSearchKeyword(keyword)
             print("Save: \(keyword)")
         }
+        
+        // 텍스트 데이터를 포함한 화면 전달
+        guard let searchResultVC = storyboard?.instantiateViewController(withIdentifier: "SearchResultVC") as? SearchResultViewController else { return }
+        searchResultVC.search_text = searchBar.text
+        navigationController?.pushViewController(searchResultVC, animated: true)
+        
+        let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil) // title 부분 수정
+        backBarButtonItem.tintColor = .black
+        self.navigationItem.backBarButtonItem = backBarButtonItem
     }
     
     func saveRecentSearchKeyword(_ keyword: String) {
@@ -121,6 +131,11 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if getSearchDatas[section].count == 0 {
+            collectionView.setEmptyMessage("최근에 검색한 내용이 없어요")
+        } else {
+            collectionView.restore()
+        }
         return getSearchDatas[section].count
     }
     
@@ -133,16 +148,16 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
         cell.recentSearchText.text = getSearchDatas[indexPath.section][indexPath.row]
         
         cell.recentSearchText.preferredMaxLayoutWidth = collectionView.frame.width - 16
-
+        
         cell.deleteButton.row = indexPath.row
         cell.deleteButton.section = indexPath.section
         cell.deleteButton.addTarget(self, action:#selector(deleteTapped(_:)), for: .touchUpInside)
-
-//        if selected.contains(getSearchDatas[indexPath.section]) {
-//            cell.backgroundColor = UIColor(red: 88/255, green: 86/255, blue: 214/255, alpha: 1)
-//        } else {
-//            cell.backgroundColor = .lightGray
-//        }
+        
+        //        if selected.contains(getSearchDatas[indexPath.section]) {
+        //            cell.backgroundColor = UIColor(red: 88/255, green: 86/255, blue: 214/255, alpha: 1)
+        //        } else {
+        //            cell.backgroundColor = .lightGray
+        //        }
         
         return cell
     }
@@ -157,28 +172,28 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
         }
         collectionView.reloadData()
     }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: 200, height: 30)
-    }
+    //
+    //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+    //        return CGSize(width: 200, height: 30)
+    //    }
     
     
     // ========= ✨ Dynamic width =========
     // 텍스트 길이에 따른 cell 너비값 조절
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecentSearchCollectionViewCell", for: indexPath) as? RecentSearchCollectionViewCell else {
-                return .zero
-            }
-        cell.recentSearchText.text = getSearchDatas[indexPath.section][indexPath.row]
-            // ✅ sizeToFit() : 텍스트에 맞게 사이즈가 조절
-            cell.recentSearchText.sizeToFit()
-
-            // ✅ cellWidth = 글자수에 맞는 UILabel 의 width + 20(여백)
-            let cellWidth = cell.recentSearchText.frame.width + 50
-
-            return CGSize(width: cellWidth, height: 42)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecentSearchCollectionViewCell", for: indexPath) as? RecentSearchCollectionViewCell else {
+            return .zero
         }
-
+        cell.recentSearchText.text = getSearchDatas[indexPath.section][indexPath.row]
+        // ✅ sizeToFit() : 텍스트에 맞게 사이즈가 조절
+        cell.recentSearchText.sizeToFit()
+        
+        // ✅ cellWidth = 글자수에 맞는 UILabel 의 width + 20(여백)
+        let cellWidth = cell.recentSearchText.frame.width + 50
+        
+        return CGSize(width: cellWidth, height: 42)
+    }
+    
     
     
     
@@ -188,7 +203,13 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SearchResultVC") as? SearchResultViewController else { return }
         nextVC.search_text = "카카오"
         navigationController?.pushViewController(nextVC, animated: true)
+        
+        let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil) // title 부분 수정
+        backBarButtonItem.tintColor = .black
+        self.navigationItem.backBarButtonItem = backBarButtonItem
     }
+    
+    
 }
 
 // 검색 textField 좌측 아이콘 추가
@@ -212,5 +233,27 @@ extension SearchViewController {
         selected = selected.filter{$0 != text}
         getSearchDatas[indexPath.section].remove(at: indexPath.row)
         collectionView.reloadData()
+    }
+}
+
+
+// 최근 검색어가 비어있을 때 화면
+extension UICollectionView {
+    
+    func setEmptyMessage(_ message: String) {
+        let messageLabel: UILabel = {
+            let label = UILabel()
+            label.text = message
+            label.textColor = .lightGray
+            label.numberOfLines = 0;
+            label.textAlignment = .left;
+            label.sizeToFit()
+            return label
+        }()
+        self.backgroundView = messageLabel;
+    }
+    
+    func restore() {
+        self.backgroundView = nil
     }
 }

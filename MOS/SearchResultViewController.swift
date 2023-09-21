@@ -11,7 +11,7 @@ import DropDown
 class SearchResultViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     
-    var search_text = ""
+    var search_text: String?
     @IBOutlet weak var searchBar: UITextField!
     @IBOutlet weak var recruitingSwitch: UISwitch!
     @IBOutlet weak var dropButtonView: UIView!
@@ -50,6 +50,8 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchBar.text = search_text ?? ""
+        
         collectionView.dataSource = self
         collectionView.delegate = self
         
@@ -68,8 +70,7 @@ class SearchResultViewController: UIViewController, UICollectionViewDelegate, UI
         
         // searchBar의 검색 텍스트 설정
         searchBar.text = search_text
-        
-        self.navigationItem.setHidesBackButton(true, animated: true)
+     
         
         // 모집 중 스위치 사이즈 조절
         recruitingSwitch.transform = CGAffineTransformMakeScale(0.75, 0.75);
