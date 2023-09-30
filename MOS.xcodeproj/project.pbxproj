@@ -30,6 +30,7 @@
 		2FA1427D2A149024006AA91B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA1427B2A149024006AA91B /* Main.storyboard */; };
 		2FA142822A149026006AA91B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA142802A149026006AA91B /* LaunchScreen.storyboard */; };
 		2FB095862A2631910035FB78 /* DeviceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB095852A2631910035FB78 /* DeviceGroup.swift */; };
+		2FC144852AC8067400A642AD /* StudyBasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC144842AC8067400A642AD /* StudyBasicInfoViewController.swift */; };
 		2FD24DA82A24F73B000747D7 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD24DA72A24F73B000747D7 /* SearchResultViewController.swift */; };
 		2FD8EF952ABC5C7F002A6F3B /* StudyOutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD8EF942ABC5C7F002A6F3B /* StudyOutlineViewController.swift */; };
 		2FF25FE02A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF25FDF2A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift */; };
@@ -98,6 +99,7 @@
 		2FA142812A149026006AA91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FA142832A149026006AA91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FB095852A2631910035FB78 /* DeviceGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGroup.swift; sourceTree = "<group>"; };
+		2FC144842AC8067400A642AD /* StudyBasicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyBasicInfoViewController.swift; sourceTree = "<group>"; };
 		2FD24DA72A24F73B000747D7 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		2FD8EF942ABC5C7F002A6F3B /* StudyOutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyOutlineViewController.swift; sourceTree = "<group>"; };
 		2FDDEEA72AB2BDBC00080BF5 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				2F9DAF522A3222A5007CA960 /* StudyDetailViewController.swift */,
 				2FD8EF942ABC5C7F002A6F3B /* StudyOutlineViewController.swift */,
 				F33B43452A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift */,
+				2FC144842AC8067400A642AD /* StudyBasicInfoViewController.swift */,
 				F304A13C2A41FDC90066036B /* StudyDetailInfoViewController.swift */,
 				F304A13E2A4206240066036B /* StudyMemberInfoViewController.swift */,
 				F304A1402A420FF90066036B /* StudyInfoTodoViewController.swift */,
@@ -487,6 +490,7 @@
 				2F28E67F2A1DD9C700021E72 /* SearchViewController.swift in Sources */,
 				2FFCFC442A1DD2B200E2AC95 /* HomeViewController.swift in Sources */,
 				2F8270E22A8F7EEB00CE7BE1 /* StudyListModel.swift in Sources */,
+				2FC144852AC8067400A642AD /* StudyBasicInfoViewController.swift in Sources */,
 				5ADA065C2A41E64900FE76E5 /* InterviewViewController.swift in Sources */,
 				5A3FE53D2AA3A7B5009E7E37 /* UIColor.swift in Sources */,
 				5A7AA0D42A41C1A10087DE3C /* AllViewController.swift in Sources */,

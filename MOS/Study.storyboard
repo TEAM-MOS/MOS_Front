@@ -464,15 +464,20 @@
                             <constraint firstItem="ff2-1U-m9v" firstAttribute="leading" secondItem="gK3-Jx-czZ" secondAttribute="leading" constant="16" id="haI-4Y-bcK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="studyRecruitDate" destination="Z6K-kt-uWr" id="K4t-tv-INg"/>
+                        <outlet property="studyRecruitNum" destination="42v-uz-7MT" id="wAf-So-jkk"/>
+                        <outlet property="studyRecruitView" destination="dlC-Jq-qY0" id="LsS-n2-od2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OdV-p4-tVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1727" y="-255"/>
+            <point key="canvasLocation" x="-1622" y="-263"/>
         </scene>
-        <!--Study Recruit Info View Controller-->
+        <!--Study Basic Info View Controller-->
         <scene sceneID="zsX-os-Tzf">
             <objects>
-                <viewController id="IBK-5z-Jqy" customClass="StudyRecruitInfoViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IBK-5z-Jqy" customClass="StudyBasicInfoViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nnO-PN-RHe">
                         <rect key="frame" x="0.0" y="0.0" width="363" height="186"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -850,7 +855,7 @@
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="248" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsn-dt-D01">
                                 <rect key="frame" x="36" y="91" width="283" height="281"/>
-                                <mutableString key="text">⚠️ 지각비 안내
+                                <string key="text">⚠️ 지각비 안내
 미리 얘기하지 않고 지각할 경우 5분 당 500원씩 벌금을 걷고, 스터디 마지막날 팀원들끼리 나눠갖는 것으로 하겠습니다. 시간 꼭 잘 지켜주세요!
 
 🗳️ 스터디 진행 방식
@@ -859,7 +864,7 @@
 
 💔 가입 전 주의사항
 조기취업한 경우 제외하고 무단 이탈, 지각, 결석은 안 돼요! 가입 시 신중하게 고려해주세요.
-스터디 진행 전 과제 준비는 필수입니다! 지각과 마찬가지로 금액을 정해서 벌금을 걷겠습니다~</mutableString>
+스터디 진행 전 과제 준비는 필수입니다! 지각과 마찬가지로 금액을 정해서 벌금을 걷겠습니다~</string>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1068,10 +1073,10 @@
             <color red="0.97647058823529409" green="0.96078431372549022" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="category-1">
-            <color red="1" green="0.94117647058823528" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.96470588235294119" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="category-3">
-            <color red="1" green="0.96862745098039216" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.98431372549019602" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="gray-2">
             <color red="0.52156862745098043" green="0.52156862745098043" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
