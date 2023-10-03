@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddStudyViewController: UIViewController{
+class CreateStudyViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
     }
