@@ -10,5 +10,6 @@ import UIKit
 class CreateStudyViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
     }
 }
