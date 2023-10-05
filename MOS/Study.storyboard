@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -57,8 +57,8 @@
                                                     <segue destination="YLP-K4-Z9p" kind="embed" id="IJf-Pi-FVC"/>
                                                 </connections>
                                             </containerView>
-                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Iq-wH-BU7">
-                                                <rect key="frame" x="20" y="528" width="355" height="382"/>
+                                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Iq-wH-BU7">
+                                                <rect key="frame" x="20" y="528" width="355" height="163"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="382" id="Fzg-3Z-uHx"/>
                                                 </constraints>
@@ -155,7 +155,9 @@
                     <size key="freeformSize" width="395" height="1500"/>
                     <connections>
                         <outlet property="containerVC1" destination="cKC-oX-16J" id="0Ms-hU-BfT"/>
+                        <outlet property="containerVC2" destination="5Iq-wH-BU7" id="xxz-t1-dv5"/>
                         <outlet property="heightConst" destination="Qjz-7b-iSm" id="uRN-Zr-hl0"/>
+                        <outlet property="heightConst2" destination="Fzg-3Z-uHx" id="q97-jb-tLE"/>
                         <outlet property="studyDetailView" destination="LX9-XX-GgU" id="VXF-l6-XLT"/>
                     </connections>
                 </viewController>
@@ -827,17 +829,17 @@
             <objects>
                 <viewController id="MVT-cL-EUT" customClass="StudyDetailInfoViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Shv-WL-jOt">
-                        <rect key="frame" x="0.0" y="0.0" width="355" height="382"/>
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="163"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="상세정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGn-fK-AAo">
-                                <rect key="frame" x="20.000000000000004" y="7.9999999999999982" width="55.333333333333343" height="19.333333333333329"/>
+                                <rect key="frame" x="20.000000000000004" y="15.999999999999998" width="55.333333333333343" height="19.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Q3o-24-b7o">
-                                <rect key="frame" x="20" y="39.333333333333336" width="183.33333333333334" height="17"/>
+                                <rect key="frame" x="20" y="47.333333333333336" width="183.33333333333334" height="17.000000000000007"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스터디 목표" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8Y-g5-SQq">
                                         <rect key="frame" x="0.0" y="0.0" width="64.333333333333329" height="17"/>
@@ -853,43 +855,48 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="248" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsn-dt-D01">
-                                <rect key="frame" x="36" y="91" width="283" height="281"/>
-                                <string key="text">⚠️ 지각비 안내
-미리 얘기하지 않고 지각할 경우 5분 당 500원씩 벌금을 걷고, 스터디 마지막날 팀원들끼리 나눠갖는 것으로 하겠습니다. 시간 꼭 잘 지켜주세요!
-
-🗳️ 스터디 진행 방식
-각자 분석해온 기업에 대해 발표하는 시간을 가져요.
-기업을 똑같이 정해서 준비해오면 부족한 부분에 대해 보완할 수 있어서 좋을 것 같습니다 :-)
-
-💔 가입 전 주의사항
-조기취업한 경우 제외하고 무단 이탈, 지각, 결석은 안 돼요! 가입 시 신중하게 고려해주세요.
-스터디 진행 전 과제 준비는 필수입니다! 지각과 마찬가지로 금액을 정해서 벌금을 걷겠습니다~</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스터디 규칙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sf-mu-W9a">
+                                <rect key="frame" x="20" y="76.333333333333329" width="64.333333333333329" height="17"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚠️ 지각비 안내 ⚠️ 지각비 안내⚠️ 지각비 안내" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5j-Xy-Wik">
+                                <rect key="frame" x="32" y="105.33333333333333" width="291" height="17"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j5i-hQ-uUs">
+                                <rect key="frame" x="50" y="136.33333333333334" width="240" height="26.666666666666657"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lwT-0w-Vkf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Q3o-24-b7o" firstAttribute="top" secondItem="UGn-fK-AAo" secondAttribute="bottom" constant="12" id="6OH-l7-Qol"/>
-                            <constraint firstItem="Lsn-dt-D01" firstAttribute="bottom" secondItem="lwT-0w-Vkf" secondAttribute="bottom" constant="24" id="F7f-VI-mdC"/>
+                            <constraint firstItem="c5j-Xy-Wik" firstAttribute="top" secondItem="1Sf-mu-W9a" secondAttribute="bottom" constant="12" id="Bk9-DO-w29"/>
+                            <constraint firstItem="c5j-Xy-Wik" firstAttribute="leading" secondItem="lwT-0w-Vkf" secondAttribute="leading" constant="32" id="IRD-M0-CjB"/>
+                            <constraint firstItem="1Sf-mu-W9a" firstAttribute="top" secondItem="Q3o-24-b7o" secondAttribute="bottom" constant="12" id="LSM-Of-saX"/>
+                            <constraint firstItem="j5i-hQ-uUs" firstAttribute="top" secondItem="c5j-Xy-Wik" secondAttribute="bottom" constant="14" id="Um1-38-guV"/>
                             <constraint firstItem="UGn-fK-AAo" firstAttribute="leading" secondItem="Shv-WL-jOt" secondAttribute="leading" constant="20" id="YBQ-en-opx"/>
-                            <constraint firstItem="UGn-fK-AAo" firstAttribute="top" secondItem="Shv-WL-jOt" secondAttribute="top" constant="8" id="fQa-Za-n4M"/>
+                            <constraint firstItem="UGn-fK-AAo" firstAttribute="top" secondItem="Shv-WL-jOt" secondAttribute="top" constant="16" id="fQa-Za-n4M"/>
                             <constraint firstItem="Q3o-24-b7o" firstAttribute="leading" secondItem="Shv-WL-jOt" secondAttribute="leading" constant="20" id="fng-ql-NG9"/>
-                            <constraint firstItem="Lsn-dt-D01" firstAttribute="leading" secondItem="lwT-0w-Vkf" secondAttribute="leading" constant="36" id="fvT-PV-zLC"/>
-                            <constraint firstItem="Lsn-dt-D01" firstAttribute="top" secondItem="lwT-0w-Vkf" secondAttribute="top" constant="32" id="iNk-ZM-HDM"/>
-                            <constraint firstItem="lwT-0w-Vkf" firstAttribute="trailing" secondItem="Lsn-dt-D01" secondAttribute="trailing" constant="36" id="osi-xG-oOT"/>
+                            <constraint firstItem="lwT-0w-Vkf" firstAttribute="trailing" secondItem="c5j-Xy-Wik" secondAttribute="trailing" constant="32" id="gFU-RF-c2H"/>
+                            <constraint firstAttribute="bottom" secondItem="j5i-hQ-uUs" secondAttribute="bottom" id="m0m-0t-XDf"/>
+                            <constraint firstItem="j5i-hQ-uUs" firstAttribute="leading" secondItem="Shv-WL-jOt" secondAttribute="leading" constant="50" id="muk-Uo-TWf"/>
+                            <constraint firstItem="1Sf-mu-W9a" firstAttribute="leading" secondItem="lwT-0w-Vkf" secondAttribute="leading" constant="20" id="qvf-Qi-DNL"/>
+                            <constraint firstAttribute="trailing" secondItem="j5i-hQ-uUs" secondAttribute="trailing" constant="65" id="z3g-JN-WYe"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="infoText" destination="Lsn-dt-D01" id="SoL-sw-UwP"/>
+                        <outlet property="infoText" destination="c5j-Xy-Wik" id="mlS-ta-WHs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4TH-c0-Er1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-254.19847328244273" y="34.507042253521128"/>
+            <point key="canvasLocation" x="-254.19847328244273" y="34.154929577464792"/>
         </scene>
         <!--Study Member Info View Controller-->
         <scene sceneID="5ur-VN-DSs">
@@ -1088,7 +1095,7 @@
             <color red="0.99607843137254903" green="0.58039215686274515" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
