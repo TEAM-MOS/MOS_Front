@@ -28,6 +28,7 @@
         <!--Study Detail View Controller-->
         <scene sceneID="PW5-qi-kib">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jlJ-X0-3Y5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="studyDetailVC" id="FPb-CN-tjs" customClass="StudyDetailViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LX9-XX-GgU">
                         <rect key="frame" x="0.0" y="0.0" width="395" height="1500"/>
@@ -57,8 +58,8 @@
                                                     <segue destination="YLP-K4-Z9p" kind="embed" id="IJf-Pi-FVC"/>
                                                 </connections>
                                             </containerView>
-                                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Iq-wH-BU7">
-                                                <rect key="frame" x="20" y="528" width="355" height="163"/>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Iq-wH-BU7">
+                                                <rect key="frame" x="20" y="528" width="355" height="382"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="382" id="Fzg-3Z-uHx"/>
                                                 </constraints>
@@ -94,7 +95,7 @@
                                                 </connections>
                                             </containerView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKc-De-dgN">
-                                                <rect key="frame" x="0.0" y="1446" width="395" height="54"/>
+                                                <rect key="frame" x="0.0" y="1431" width="395" height="54"/>
                                                 <color key="backgroundColor" name="main"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="54" id="seO-79-hNV"/>
@@ -112,12 +113,13 @@
                                             <constraint firstItem="D1L-M7-2LW" firstAttribute="top" secondItem="5Iq-wH-BU7" secondAttribute="bottom" constant="12" id="02z-pt-GBf"/>
                                             <constraint firstItem="fNC-hL-xXi" firstAttribute="top" secondItem="Nb6-vP-jA8" secondAttribute="bottom" constant="12" id="7qF-oA-zcn"/>
                                             <constraint firstAttribute="trailing" secondItem="Nb6-vP-jA8" secondAttribute="trailing" constant="16" id="9gT-jc-ZdB"/>
+                                            <constraint firstAttribute="bottom" secondItem="PKc-De-dgN" secondAttribute="bottom" constant="15" id="CZD-d9-D65"/>
+                                            <constraint firstItem="PKc-De-dgN" firstAttribute="top" secondItem="msi-tV-kM2" secondAttribute="bottom" constant="16" id="CZS-Rg-r4j"/>
                                             <constraint firstItem="msi-tV-kM2" firstAttribute="leading" secondItem="TA2-nA-w3W" secondAttribute="leading" constant="20" id="Csh-Fn-aJ5"/>
                                             <constraint firstAttribute="trailing" secondItem="5Iq-wH-BU7" secondAttribute="trailing" constant="20" id="EfK-yy-yGE"/>
                                             <constraint firstAttribute="trailing" secondItem="fNC-hL-xXi" secondAttribute="trailing" constant="16" id="GPw-ZX-k9M"/>
                                             <constraint firstItem="fNC-hL-xXi" firstAttribute="leading" secondItem="TA2-nA-w3W" secondAttribute="leading" constant="16" id="H2N-hl-Xme"/>
                                             <constraint firstAttribute="trailing" secondItem="D1L-M7-2LW" secondAttribute="trailing" constant="20" id="Iih-2V-1GZ"/>
-                                            <constraint firstAttribute="bottom" secondItem="PKc-De-dgN" secondAttribute="bottom" id="LCu-HZ-gah"/>
                                             <constraint firstItem="cKC-oX-16J" firstAttribute="top" secondItem="TA2-nA-w3W" secondAttribute="top" constant="16" id="Lkk-cY-g6R"/>
                                             <constraint firstItem="D1L-M7-2LW" firstAttribute="leading" secondItem="TA2-nA-w3W" secondAttribute="leading" constant="20" id="SbP-CW-h8Q"/>
                                             <constraint firstItem="msi-tV-kM2" firstAttribute="top" secondItem="D1L-M7-2LW" secondAttribute="bottom" constant="12" id="Uoo-ia-JM0"/>
@@ -128,7 +130,6 @@
                                             <constraint firstItem="5Iq-wH-BU7" firstAttribute="leading" secondItem="TA2-nA-w3W" secondAttribute="leading" constant="20" id="aQJ-Yr-hga"/>
                                             <constraint firstItem="PKc-De-dgN" firstAttribute="leading" secondItem="TA2-nA-w3W" secondAttribute="leading" id="aYU-0t-P3p"/>
                                             <constraint firstItem="Nb6-vP-jA8" firstAttribute="top" secondItem="cKC-oX-16J" secondAttribute="bottom" constant="12" id="ie9-Yy-e4s"/>
-                                            <constraint firstAttribute="height" priority="250" constant="1500" id="m5o-e6-Afx"/>
                                             <constraint firstItem="Nb6-vP-jA8" firstAttribute="leading" secondItem="TA2-nA-w3W" secondAttribute="leading" constant="16" id="ux9-e4-jKe"/>
                                             <constraint firstAttribute="trailing" secondItem="PKc-De-dgN" secondAttribute="trailing" id="vFH-KB-Ftq"/>
                                         </constraints>
@@ -161,7 +162,6 @@
                         <outlet property="studyDetailView" destination="LX9-XX-GgU" id="VXF-l6-XLT"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jlJ-X0-3Y5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-997.70992366412213" y="-91.549295774647888"/>
         </scene>
@@ -829,7 +829,7 @@
             <objects>
                 <viewController id="MVT-cL-EUT" customClass="StudyDetailInfoViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Shv-WL-jOt">
-                        <rect key="frame" x="0.0" y="0.0" width="355" height="163"/>
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="382"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="상세정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGn-fK-AAo">
@@ -868,7 +868,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j5i-hQ-uUs">
-                                <rect key="frame" x="50" y="136.33333333333334" width="240" height="26.666666666666657"/>
+                                <rect key="frame" x="50" y="136.33333333333337" width="240" height="245.66666666666663"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
