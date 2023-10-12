@@ -164,6 +164,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F553F5D2AD7BD15005FDEAB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2F553F5E2AD7BD86005FDEAB /* Views */,
+				2F553F5F2AD7BD8E005FDEAB /* Controllers */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		2F553F5E2AD7BD86005FDEAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F28E67C2A1DD9BA00021E72 /* Search.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F553F5F2AD7BD8E005FDEAB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F28E67E2A1DD9C700021E72 /* SearchViewController.swift */,
+				2FF25FDF2A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift */,
+				2F5BA7612A9B278200E9A444 /* RecentSearchLayout.swift */,
+				2FD24DA72A24F73B000747D7 /* SearchResultViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		2FA142692A149024006AA91B = {
 			isa = PBXGroup;
 			children = (
@@ -198,21 +226,58 @@
 				2FA142832A149026006AA91B /* Info.plist */,
 				2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */,
 				2F2B3E222A1DBE52008B0506 /* TabMenuViewController.swift */,
-				2F28E67C2A1DD9BA00021E72 /* Search.storyboard */,
-				2F8270DF2A8F7B9100CE7BE1 /* StudyListViewController.swift */,
-				2F8270E12A8F7EEB00CE7BE1 /* StudyListModel.swift */,
-				2F8270E52A8F808000CE7BE1 /* StudyListCollectionViewCell.swift */,
-				2F28E67E2A1DD9C700021E72 /* SearchViewController.swift */,
-				2FF25FDF2A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift */,
-				2F5BA7612A9B278200E9A444 /* RecentSearchLayout.swift */,
-				2FD24DA72A24F73B000747D7 /* SearchResultViewController.swift */,
+				2FC177AA2AD7D83700873B50 /* Study */,
+				2F553F5D2AD7BD15005FDEAB /* Search */,
 				2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */,
 				2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */,
 				2F28E6842A1DDAD300021E72 /* MyPage.storyboard */,
 				2F28E6862A1DDADE00021E72 /* MyPageViewController.swift */,
 				2FB095852A2631910035FB78 /* DeviceGroup.swift */,
-				2F9DAF542A3222B9007CA960 /* Study.storyboard */,
+				2FC177A92AD7D81A00873B50 /* Model */,
+				F3A7F9BB2A4219BC00AE1863 /* PreQuestionAlertViewController.swift */,
+			);
+			path = MOS;
+			sourceTree = "<group>";
+		};
+		2FC177A82AD7D80500873B50 /* StudyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2FC177AB2AD7D84700873B50 /* Views */,
+				2FC177AC2AD7D86600873B50 /* Controllers */,
+			);
+			path = StudyDetail;
+			sourceTree = "<group>";
+		};
+		2FC177A92AD7D81A00873B50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F8270E12A8F7EEB00CE7BE1 /* StudyListModel.swift */,
 				2F2D15D92ABC4C5A00ECBD5D /* StudyDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FC177AA2AD7D83700873B50 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				2FC177A82AD7D80500873B50 /* StudyDetail */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		2FC177AB2AD7D84700873B50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F9DAF542A3222B9007CA960 /* Study.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2FC177AC2AD7D86600873B50 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F8270DF2A8F7B9100CE7BE1 /* StudyListViewController.swift */,
+				2F8270E52A8F808000CE7BE1 /* StudyListCollectionViewCell.swift */,
 				2F9DAF522A3222A5007CA960 /* StudyDetailViewController.swift */,
 				2FD8EF942ABC5C7F002A6F3B /* StudyOutlineViewController.swift */,
 				F33B43452A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift */,
@@ -220,11 +285,10 @@
 				F304A13C2A41FDC90066036B /* StudyDetailInfoViewController.swift */,
 				F304A13E2A4206240066036B /* StudyMemberInfoViewController.swift */,
 				F304A1402A420FF90066036B /* StudyInfoTodoViewController.swift */,
-				F3A7F9BB2A4219BC00AE1863 /* PreQuestionAlertViewController.swift */,
 				F3A7F9BD2A421DC800AE1863 /* StudyRegisterViewController.swift */,
 				F3A7F9BF2A422C4700AE1863 /* CompleteRegisterStudyViewController.swift */,
 			);
-			path = MOS;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		5A3FE53E2AA3C27B009E7E37 /* Survey */ = {
