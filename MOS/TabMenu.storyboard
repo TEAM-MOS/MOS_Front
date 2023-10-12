@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="-1718" y="-506"/>
         </scene>
-        <!--AddStudyVC-->
+        <!--CreateStudyVC-->
         <scene sceneID="CVL-eJ-08H">
             <objects>
-                <viewControllerPlaceholder storyboardName="AddStudy" referencedIdentifier="AddStudyVC" id="b7o-y4-QbX" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="CreateStudy" referencedIdentifier="CreateStudyVC" id="b7o-y4-QbX" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Bl1-DX-xKr"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qen-Z0-409" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
