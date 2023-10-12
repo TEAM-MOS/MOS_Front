@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -254,7 +255,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스터디 개설" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xo0-cO-Wdl">
-                                <rect key="frame" x="159.66666666666666" y="71" width="73.666666666666657" height="32"/>
+                                <rect key="frame" x="160" y="71" width="73.333333333333314" height="32"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -280,68 +281,61 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="스터디 첫 To-Do를 등록해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOd-2h-UvG">
-                                <rect key="frame" x="16" y="195.33333333333334" width="235" height="21"/>
+                                <rect key="frame" x="16" y="195.33333333333334" width="236" height="21.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="첫 스터디 날까지 해야할 일을 등록해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72D-lH-w4h">
-                                <rect key="frame" x="16" y="228.33333333333334" width="203.66666666666666" height="14"/>
+                                <rect key="frame" x="16" y="229" width="202" height="14.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                 <color key="textColor" red="0.60424558080000002" green="0.60424558080000002" blue="0.60424558080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모든 스터디원의 TO DO LIST의 할 일로 등록됩니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2l-9o-x0h">
-                                <rect key="frame" x="15.999999999999986" y="248.33333333333334" width="247.66666666666663" height="14.000000000000028"/>
+                                <rect key="frame" x="15.999999999999986" y="249.33333333333334" width="243.66666666666663" height="14.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                 <color key="textColor" red="0.60424558080000002" green="0.60424558080000002" blue="0.60424558080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="스터디 To Do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xg8-PV-jfF">
-                                <rect key="frame" x="15.999999999999993" y="302.33333333333331" width="101.33333333333331" height="21.666666666666686"/>
+                                <rect key="frame" x="15.999999999999993" y="303.66666666666669" width="101.33333333333331" height="21.666666666666686"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6sU-el-exD">
-                                <rect key="frame" x="16" y="344" width="361" height="300"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6sU-el-exD">
+                                <rect key="frame" x="16" y="345.33333333333331" width="361" height="299.99999999999994"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="qB5-sR-ylS"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="checked cell" id="BaV-sc-nMd" customClass="CheckTableViewCell" customModule="MOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="361" height="58.333332061767578"/>
+                                        <rect key="frame" x="0.0" y="50" width="361" height="48.333332061767578"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BaV-sc-nMd" id="ABJ-H2-7Oa">
-                                            <rect key="frame" x="0.0" y="0.0" width="361" height="58.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="48.333332061767578"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R89-ce-ReL">
-                                                    <rect key="frame" x="20.000000000000004" y="13.999999999999998" width="41.333333333333343" height="30.333333333333329"/>
+                                                    <rect key="frame" x="20.000000000000004" y="13.999999999999998" width="41.333333333333343" height="20.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gq9-l6-05Y">
-                                                    <rect key="frame" x="319" y="18" width="22" height="22.333333333333329"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="22" id="R8e-TH-Kib"/>
-                                                        <constraint firstAttribute="height" constant="22" id="UqG-JC-8i7"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="321" y="13.333333333333336" width="20" height="22"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" title="Button" image="createStudy_delete_todo"/>
+                                                    <state key="normal" image="createStudy_delete_todo"/>
                                                 </button>
                                             </subviews>
+                                            <color key="backgroundColor" name="category-1"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="R89-ce-ReL" secondAttribute="bottom" id="1hz-hN-lhb"/>
                                                 <constraint firstItem="gq9-l6-05Y" firstAttribute="trailing" secondItem="ABJ-H2-7Oa" secondAttribute="trailingMargin" constant="16" id="9Bf-j1-fSZ"/>
-                                                <constraint firstItem="gq9-l6-05Y" firstAttribute="top" secondItem="ABJ-H2-7Oa" secondAttribute="topMargin" constant="7" id="A1y-ro-Pfh"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="gq9-l6-05Y" secondAttribute="bottom" constant="7" id="KeL-hb-Pru"/>
-                                                <constraint firstItem="R89-ce-ReL" firstAttribute="top" secondItem="ABJ-H2-7Oa" secondAttribute="top" id="KtK-UT-lZy"/>
                                                 <constraint firstItem="R89-ce-ReL" firstAttribute="leading" secondItem="ABJ-H2-7Oa" secondAttribute="leading" constant="20" symbolic="YES" id="TdI-mC-l76"/>
+                                                <constraint firstItem="gq9-l6-05Y" firstAttribute="centerY" secondItem="ABJ-H2-7Oa" secondAttribute="centerY" id="YSs-3U-JCb"/>
                                                 <constraint firstAttribute="bottom" secondItem="R89-ce-ReL" secondAttribute="bottom" constant="14" id="bLD-AE-m9T"/>
-                                                <constraint firstItem="R89-ce-ReL" firstAttribute="leading" secondItem="ABJ-H2-7Oa" secondAttribute="leading" constant="20" symbolic="YES" id="ejI-Ze-dYn"/>
                                                 <constraint firstItem="gq9-l6-05Y" firstAttribute="trailing" secondItem="ABJ-H2-7Oa" secondAttribute="trailingMargin" id="pvl-Ou-KNN"/>
                                                 <constraint firstItem="R89-ce-ReL" firstAttribute="top" secondItem="ABJ-H2-7Oa" secondAttribute="top" constant="14" id="tvO-UV-hQV"/>
                                             </constraints>
@@ -354,7 +348,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sil-aP-axj">
-                                <rect key="frame" x="16" y="664" width="361" height="44"/>
+                                <rect key="frame" x="16" y="665.33333333333337" width="361" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Sil-aP-axj" secondAttribute="height" multiplier="361:44" id="W3Q-yJ-Tb1"/>
                                 </constraints>
@@ -416,6 +410,9 @@
         <image name="ic_home_category5" width="88.333335876464844" height="88"/>
         <image name="ic_home_category6" width="88.333335876464844" height="88"/>
         <image name="ic_home_category_back" width="32" height="32"/>
+        <namedColor name="category-1">
+            <color red="1" green="0.96470588235294119" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
