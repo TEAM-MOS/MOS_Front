@@ -318,7 +318,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R89-ce-ReL">
-                                                    <rect key="frame" x="20.000000000000004" y="13.999999999999998" width="41.333333333333343" height="20.333333333333329"/>
+                                                    <rect key="frame" x="20" y="13.999999999999998" width="292.66666666666669" height="20.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -337,6 +337,7 @@
                                                 <constraint firstItem="R89-ce-ReL" firstAttribute="leading" secondItem="ABJ-H2-7Oa" secondAttribute="leading" constant="20" symbolic="YES" id="TdI-mC-l76"/>
                                                 <constraint firstAttribute="trailing" secondItem="gq9-l6-05Y" secondAttribute="trailing" constant="12" id="Vr7-Cc-aSu"/>
                                                 <constraint firstAttribute="bottom" secondItem="R89-ce-ReL" secondAttribute="bottom" constant="14" id="bLD-AE-m9T"/>
+                                                <constraint firstItem="gq9-l6-05Y" firstAttribute="leading" secondItem="R89-ce-ReL" secondAttribute="trailing" constant="12" id="jzf-UW-lCo"/>
                                                 <constraint firstItem="gq9-l6-05Y" firstAttribute="top" secondItem="ABJ-H2-7Oa" secondAttribute="top" constant="12" id="tQQ-fC-9yW"/>
                                                 <constraint firstItem="R89-ce-ReL" firstAttribute="top" secondItem="ABJ-H2-7Oa" secondAttribute="top" constant="14" id="tvO-UV-hQV"/>
                                             </constraints>

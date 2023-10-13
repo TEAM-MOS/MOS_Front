@@ -51,6 +51,18 @@ extension RegisterTodoController: UITableViewDataSource {
 
 extension RegisterTodoController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 56
+        // 해당 셀의 텍스트를 가져와서 셀의 높이를 계산
+        let cellText = todos[indexPath.row].title
+        let label = UILabel()
+        label.text = cellText
+        label.numberOfLines = 0 // 여러 줄의 텍스트 지원
+        label.font = UIFont(name: "pretendard", size: 20)
+        
+        // 원하는 간격(8)을 추가하여 셀의 높이 계산
+        let desiredSpacing: CGFloat = 32
+        let labelHeight = label.sizeThatFits(CGSize(width: tableView.frame.width, height: .greatestFiniteMagnitude)).height
+        let cellHeight = labelHeight + desiredSpacing
+
+        return cellHeight
     }
 }
