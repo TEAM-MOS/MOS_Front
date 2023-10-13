@@ -26,6 +26,7 @@ class RegisterTodoController: UIViewController{
         
         // 데이터 소스와 델리게이트를 설정
         tableView.dataSource = self
+        tableView.delegate = self
     }
 }
 
@@ -48,3 +49,8 @@ extension RegisterTodoController: UITableViewDataSource {
     }
 }
 
+extension RegisterTodoController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 56
+    }
+}

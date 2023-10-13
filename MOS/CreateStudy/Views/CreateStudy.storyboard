@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -324,19 +323,21 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gq9-l6-05Y">
-                                                    <rect key="frame" x="321" y="13.333333333333336" width="20" height="22"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gq9-l6-05Y">
+                                                    <rect key="frame" x="324.66666666666669" y="11.999999999999998" width="24.333333333333314" height="24.333333333333329"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="gq9-l6-05Y" secondAttribute="height" multiplier="1:1" id="GTk-zT-sGz"/>
+                                                    </constraints>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="createStudy_delete_todo"/>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" name="category-1"/>
                                             <constraints>
-                                                <constraint firstItem="gq9-l6-05Y" firstAttribute="trailing" secondItem="ABJ-H2-7Oa" secondAttribute="trailingMargin" constant="16" id="9Bf-j1-fSZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="gq9-l6-05Y" secondAttribute="bottom" constant="12" id="44w-Hb-Vc1"/>
                                                 <constraint firstItem="R89-ce-ReL" firstAttribute="leading" secondItem="ABJ-H2-7Oa" secondAttribute="leading" constant="20" symbolic="YES" id="TdI-mC-l76"/>
-                                                <constraint firstItem="gq9-l6-05Y" firstAttribute="centerY" secondItem="ABJ-H2-7Oa" secondAttribute="centerY" id="YSs-3U-JCb"/>
+                                                <constraint firstAttribute="trailing" secondItem="gq9-l6-05Y" secondAttribute="trailing" constant="12" id="Vr7-Cc-aSu"/>
                                                 <constraint firstAttribute="bottom" secondItem="R89-ce-ReL" secondAttribute="bottom" constant="14" id="bLD-AE-m9T"/>
-                                                <constraint firstItem="gq9-l6-05Y" firstAttribute="trailing" secondItem="ABJ-H2-7Oa" secondAttribute="trailingMargin" id="pvl-Ou-KNN"/>
+                                                <constraint firstItem="gq9-l6-05Y" firstAttribute="top" secondItem="ABJ-H2-7Oa" secondAttribute="top" constant="12" id="tQQ-fC-9yW"/>
                                                 <constraint firstItem="R89-ce-ReL" firstAttribute="top" secondItem="ABJ-H2-7Oa" secondAttribute="top" constant="14" id="tvO-UV-hQV"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -410,9 +411,6 @@
         <image name="ic_home_category5" width="88.333335876464844" height="88"/>
         <image name="ic_home_category6" width="88.333335876464844" height="88"/>
         <image name="ic_home_category_back" width="32" height="32"/>
-        <namedColor name="category-1">
-            <color red="1" green="0.96470588235294119" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
