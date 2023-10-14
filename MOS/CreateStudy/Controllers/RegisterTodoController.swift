@@ -10,6 +10,7 @@ import UIKit
 
 class RegisterTodoController: UIViewController{
     
+    @IBOutlet weak var addCellBtn: UIButton!
     var todos = [
         Todo(title: "Make vanilla pudding."),
         Todo(title: "Put pudding in a mayo jar."),
@@ -26,7 +27,19 @@ class RegisterTodoController: UIViewController{
         
         // 데이터 소스와 델리게이트를 설정
         tableView.dataSource = self
+        // addCellBtn의 액션 설정
+        addCellBtn.addTarget(self, action: #selector(addCell), for: .touchUpInside)
     }
+    
+    @objc func addCell() {
+           // 새로운 할 일 항목 생성
+           let newTodo = Todo(title: "")
+           todos.append(newTodo)
+           
+           // 테이블 뷰에 행을 추가하고 새로운 항목을 표시
+           let indexPath = IndexPath(row: todos.count - 1, section: 0)
+           tableView.insertRows(at: [indexPath], with: .automatic)
+       }
 }
 
 extension RegisterTodoController: UITableViewDataSource {
@@ -45,6 +58,9 @@ extension RegisterTodoController: UITableViewDataSource {
         let todo = todos[indexPath.row]
         
         cell.set(title: todo.title, checked: todo.isComplete)
+        
+        // 첫 번째 셀인 경우에만 삭제 버튼을 숨김
+        cell.deleteBtn.isHidden = (indexPath.row == 0)
         
         return cell
     }

@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -311,20 +312,14 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="checked cell" id="BaV-sc-nMd" customClass="CheckTableViewCell" customModule="MOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="361" height="48.333332061767578"/>
+                                        <rect key="frame" x="0.0" y="50" width="361" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BaV-sc-nMd" id="ABJ-H2-7Oa">
-                                            <rect key="frame" x="0.0" y="0.0" width="361" height="48.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="58"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R89-ce-ReL">
-                                                    <rect key="frame" x="20" y="13.999999999999998" width="292.66666666666669" height="20.333333333333329"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gq9-l6-05Y">
-                                                    <rect key="frame" x="324.66666666666669" y="11.999999999999998" width="24.333333333333314" height="24.333333333333329"/>
+                                                    <rect key="frame" x="315" y="12" width="34" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="gq9-l6-05Y" secondAttribute="height" multiplier="1:1" id="GTk-zT-sGz"/>
                                                     </constraints>
@@ -334,20 +329,26 @@
                                                         <action selector="clickedWith_sender:" destination="BaV-sc-nMd" eventType="touchUpInside" id="IgJ-GB-Ba2"/>
                                                     </connections>
                                                 </button>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="내용을 입력해주세요." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5d-et-IQX">
+                                                    <rect key="frame" x="12" y="12" width="291" height="34"/>
+                                                    <color key="backgroundColor" name="category-1"/>
+                                                    <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="gq9-l6-05Y" secondAttribute="bottom" constant="12" id="44w-Hb-Vc1"/>
-                                                <constraint firstItem="R89-ce-ReL" firstAttribute="leading" secondItem="ABJ-H2-7Oa" secondAttribute="leading" constant="20" symbolic="YES" id="TdI-mC-l76"/>
+                                                <constraint firstAttribute="bottom" secondItem="j5d-et-IQX" secondAttribute="bottom" constant="12" id="5BV-SS-553"/>
+                                                <constraint firstItem="j5d-et-IQX" firstAttribute="leading" secondItem="ABJ-H2-7Oa" secondAttribute="leading" constant="12" id="SrQ-OU-iTy"/>
                                                 <constraint firstAttribute="trailing" secondItem="gq9-l6-05Y" secondAttribute="trailing" constant="12" id="Vr7-Cc-aSu"/>
-                                                <constraint firstAttribute="bottom" secondItem="R89-ce-ReL" secondAttribute="bottom" constant="14" id="bLD-AE-m9T"/>
-                                                <constraint firstItem="gq9-l6-05Y" firstAttribute="leading" secondItem="R89-ce-ReL" secondAttribute="trailing" constant="12" id="jzf-UW-lCo"/>
+                                                <constraint firstItem="j5d-et-IQX" firstAttribute="top" secondItem="ABJ-H2-7Oa" secondAttribute="top" constant="12" id="ceu-a9-tMb"/>
+                                                <constraint firstItem="gq9-l6-05Y" firstAttribute="leading" secondItem="j5d-et-IQX" secondAttribute="trailing" constant="12" id="pcs-Cv-uRW"/>
                                                 <constraint firstItem="gq9-l6-05Y" firstAttribute="top" secondItem="ABJ-H2-7Oa" secondAttribute="top" constant="12" id="tQQ-fC-9yW"/>
-                                                <constraint firstItem="R89-ce-ReL" firstAttribute="top" secondItem="ABJ-H2-7Oa" secondAttribute="top" constant="14" id="tvO-UV-hQV"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="deleteBtn" destination="gq9-l6-05Y" id="Ua7-bR-O5q"/>
-                                            <outlet property="label" destination="R89-ce-ReL" id="AnA-kW-pPK"/>
+                                            <outlet property="todoText" destination="j5d-et-IQX" id="bim-D7-bN8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -396,6 +397,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ckc-5x-pdX"/>
                     <connections>
+                        <outlet property="addCellBtn" destination="Sil-aP-axj" id="iGh-Xg-hPQ"/>
                         <outlet property="addTextFieldBtn" destination="Sil-aP-axj" id="3AW-3D-MbE"/>
                         <outlet property="tableView" destination="6sU-el-exD" id="Xc9-r4-mBK"/>
                     </connections>
@@ -418,6 +420,9 @@
         <image name="ic_home_category5" width="88.333335876464844" height="88"/>
         <image name="ic_home_category6" width="88.333335876464844" height="88"/>
         <image name="ic_home_category_back" width="32" height="32"/>
+        <namedColor name="category-1">
+            <color red="1" green="0.96470588235294119" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

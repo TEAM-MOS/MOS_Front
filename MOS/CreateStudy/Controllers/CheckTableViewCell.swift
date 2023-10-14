@@ -12,7 +12,7 @@ protocol DeleteTableViewCellDelegate: AnyObject {
 }
 
 class CheckTableViewCell: UITableViewCell {
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var todoText: UITextField!
     @IBOutlet weak var deleteBtn: UIButton!
     
     weak var delegate: DeleteTableViewCellDelegate?
@@ -36,7 +36,7 @@ class CheckTableViewCell: UITableViewCell {
     }
     
     func set(title: String, checked: Bool) {
-        label.text = title
+        todoText.text = title
     }
     
     override func layoutSubviews() {
