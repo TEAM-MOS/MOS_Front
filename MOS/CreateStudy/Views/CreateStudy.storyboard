@@ -330,6 +330,9 @@
                                                     </constraints>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="createStudy_delete_todo"/>
+                                                    <connections>
+                                                        <action selector="clickedWith_sender:" destination="BaV-sc-nMd" eventType="touchUpInside" id="IgJ-GB-Ba2"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -348,6 +351,9 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="delegate" destination="65f-Xg-jie" id="ROI-6p-y1f"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sil-aP-axj">
                                 <rect key="frame" x="16" y="665.33333333333337" width="361" height="44"/>

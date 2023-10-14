@@ -10,7 +10,7 @@ import UIKit
 
 class RegisterTodoController: UIViewController{
     
-    let todos = [
+    var todos = [
         Todo(title: "Make vanilla pudding."),
         Todo(title: "Put pudding in a mayo jar."),
         Todo(title: "Eat it in a public place."),
@@ -26,7 +26,6 @@ class RegisterTodoController: UIViewController{
         
         // 데이터 소스와 델리게이트를 설정
         tableView.dataSource = self
-        tableView.delegate = self
     }
 }
 
@@ -40,6 +39,8 @@ extension RegisterTodoController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "checked cell", for: indexPath) as! CheckTableViewCell
+        
+        cell.delegate = self
         
         let todo = todos[indexPath.row]
         
@@ -62,7 +63,22 @@ extension RegisterTodoController: UITableViewDelegate {
         let desiredSpacing: CGFloat = 32
         let labelHeight = label.sizeThatFits(CGSize(width: tableView.frame.width, height: .greatestFiniteMagnitude)).height
         let cellHeight = labelHeight + desiredSpacing
-
+        
         return cellHeight
     }
+}
+
+extension RegisterTodoController: DeleteTableViewCellDelegate {
+    func didClickDeleteButton(_ cell: CheckTableViewCell, didDeleteBtneClicked: Bool) {
+        guard let indexPath = tableView.indexPath(for: cell) else {
+                    return
+                }
+                
+                // 해당 indexPath에 해당하는 항목을 배열에서 제거
+                todos.remove(at: indexPath.row)
+                
+                // 테이블 뷰에서 해당 셀을 삭제
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+    }
+    
 }
