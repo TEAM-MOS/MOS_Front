@@ -19,11 +19,14 @@ class RegisterTodoController: UIViewController{
     
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var addTextFieldBtn: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addCellBtn.layer.borderWidth=1
+        addCellBtn.layer.cornerRadius = 4
+        addCellBtn.layer.borderColor = UIColor(named:"mainColor")?.cgColor
         
         // 데이터 소스와 델리게이트를 설정
         tableView.dataSource = self
@@ -80,7 +83,7 @@ extension RegisterTodoController: UITableViewDelegate {
         let labelHeight = label.sizeThatFits(CGSize(width: tableView.frame.width, height: .greatestFiniteMagnitude)).height
         let cellHeight = labelHeight + desiredSpacing
         
-        return cellHeight
+        return 56
     }
     
 }

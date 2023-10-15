@@ -49,7 +49,7 @@ class CheckTableViewCell: UITableViewCell {
     
     private func setupLayout() {
         self.contentView.layer.cornerRadius = 8
-        self.contentView.backgroundColor = UIColor(hex: "FFE7E7")
+        self.contentView.backgroundColor = UIColor(named: "subColor")
         self.contentView.clipsToBounds = true
     }
     
