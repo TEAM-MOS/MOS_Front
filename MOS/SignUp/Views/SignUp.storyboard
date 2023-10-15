@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Bold.ttf">
+            <string>Pretendard-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SignUpViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0S-qy-RFn">
+                                <rect key="frame" x="24" y="171" width="42" height="18.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kK0-Se-Rg1">
+                                <rect key="frame" x="24" y="255.66666666666663" width="132" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="9zZ-kp-iKO"/>
+                                    <constraint firstAttribute="width" constant="132" id="mCt-uh-pLJ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="이메일 중복확인" image="checkmark.circle" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="checkmark.circle" catalog="system" symbolScale="small"/>
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" name="gray-2"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" 이메일 중복확인">
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="Pretendard-Medium"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" name="gray-2"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDN-t4-fha">
+                                <rect key="frame" x="24" y="329.66666666666669" width="56" height="18.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="10자 이상 영문, 숫자, 특수기호 조합" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wAP-1B-2Bo">
+                                <rect key="frame" x="24" y="356.33333333333331" width="345" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="aaq-0i-OTH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 확인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpV-RZ-89n">
+                                <rect key="frame" x="24" y="438.33333333333331" width="87" height="18.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FYW-9l-V2d">
+                                <rect key="frame" x="24" y="465" width="345" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="AqC-0z-Wkf"/>
+                                    <constraint firstAttribute="height" constant="42" id="FTL-qH-dsQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfz-jd-k93">
+                                <rect key="frame" x="24" y="730" width="345" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Njy-zF-Ney"/>
+                                </constraints>
+                                <color key="tintColor" name="gray-2"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="회원가입" cornerStyle="fixed">
+                                    <backgroundConfiguration key="background" cornerRadius="8">
+                                        <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
+                                </buttonConfiguration>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일을 입력해주세요" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ItL-38-9nE">
+                                <rect key="frame" x="24" y="197.66666666666666" width="345" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="8yc-5X-wOz"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ItL-38-9nE" firstAttribute="top" secondItem="P0S-qy-RFn" secondAttribute="bottom" constant="8" id="4V6-4C-tNs"/>
+                            <constraint firstItem="FYW-9l-V2d" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="6Pt-8G-HJD"/>
+                            <constraint firstItem="RpV-RZ-89n" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="D8C-ei-dNA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FYW-9l-V2d" secondAttribute="trailing" constant="24" id="Eo0-U3-d9R"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wAP-1B-2Bo" secondAttribute="trailing" constant="24" id="Jcb-R0-rPP"/>
+                            <constraint firstItem="ItL-38-9nE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="OXo-SZ-Ese"/>
+                            <constraint firstItem="P0S-qy-RFn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="112" id="TUF-Cr-yLF"/>
+                            <constraint firstItem="RpV-RZ-89n" firstAttribute="top" secondItem="wAP-1B-2Bo" secondAttribute="bottom" constant="40" id="UT3-pc-Kf8"/>
+                            <constraint firstItem="P0S-qy-RFn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="Znz-TW-hJ3"/>
+                            <constraint firstItem="wAP-1B-2Bo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="cGG-GT-XLg"/>
+                            <constraint firstItem="NDN-t4-fha" firstAttribute="top" secondItem="kK0-Se-Rg1" secondAttribute="bottom" constant="40" id="cNV-uv-aDH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="hfz-jd-k93" secondAttribute="bottom" constant="40" id="deb-o4-eZa"/>
+                            <constraint firstItem="NDN-t4-fha" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="gFq-BC-6Ka"/>
+                            <constraint firstItem="kK0-Se-Rg1" firstAttribute="top" secondItem="ItL-38-9nE" secondAttribute="bottom" constant="16" id="ld5-6c-cNO"/>
+                            <constraint firstItem="wAP-1B-2Bo" firstAttribute="top" secondItem="NDN-t4-fha" secondAttribute="bottom" constant="8" id="nHY-Ux-tzk"/>
+                            <constraint firstItem="kK0-Se-Rg1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="nzC-Uv-T8k"/>
+                            <constraint firstItem="hfz-jd-k93" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="vrw-V2-KSI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ItL-38-9nE" secondAttribute="trailing" constant="24" id="w12-1A-uSL"/>
+                            <constraint firstItem="FYW-9l-V2d" firstAttribute="top" secondItem="RpV-RZ-89n" secondAttribute="bottom" constant="8" id="zXi-e5-0MQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hfz-jd-k93" secondAttribute="trailing" constant="24" id="zxP-kf-yjS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="checkPasswordTextField" destination="FYW-9l-V2d" id="ja3-RL-two"/>
+                        <outlet property="emailTextField" destination="ItL-38-9nE" id="YgI-FK-xaq"/>
+                        <outlet property="passwordTextField" destination="wAP-1B-2Bo" id="YSj-L9-PUa"/>
+                        <outlet property="signUpButton" destination="hfz-jd-k93" id="SvZ-jw-Wf8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.343511450381679" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark.circle" catalog="system" width="128" height="123"/>
+        <namedColor name="gray-2">
+            <color red="0.52156862745098043" green="0.52156862745098043" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

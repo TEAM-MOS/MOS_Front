@@ -31,6 +31,8 @@
 		2FA142822A149026006AA91B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA142802A149026006AA91B /* LaunchScreen.storyboard */; };
 		2FB095862A2631910035FB78 /* DeviceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB095852A2631910035FB78 /* DeviceGroup.swift */; };
 		2FC144852AC8067400A642AD /* StudyBasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC144842AC8067400A642AD /* StudyBasicInfoViewController.swift */; };
+		2FC177B12AD7DB2000873B50 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC177B02AD7DB2000873B50 /* SignUp.storyboard */; };
+		2FC177B32AD7DB5500873B50 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC177B22AD7DB5500873B50 /* SignUpViewController.swift */; };
 		2FD24DA82A24F73B000747D7 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD24DA72A24F73B000747D7 /* SearchResultViewController.swift */; };
 		2FD8EF952ABC5C7F002A6F3B /* StudyOutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD8EF942ABC5C7F002A6F3B /* StudyOutlineViewController.swift */; };
 		2FF25FE02A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF25FDF2A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift */; };
@@ -103,6 +105,8 @@
 		2FA142832A149026006AA91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FB095852A2631910035FB78 /* DeviceGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGroup.swift; sourceTree = "<group>"; };
 		2FC144842AC8067400A642AD /* StudyBasicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyBasicInfoViewController.swift; sourceTree = "<group>"; };
+		2FC177B02AD7DB2000873B50 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		2FC177B22AD7DB5500873B50 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2FD24DA72A24F73B000747D7 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		2FD8EF942ABC5C7F002A6F3B /* StudyOutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyOutlineViewController.swift; sourceTree = "<group>"; };
 		2FDDEEA72AB2BDBC00080BF5 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
@@ -226,6 +230,7 @@
 				2FA142832A149026006AA91B /* Info.plist */,
 				2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */,
 				2F2B3E222A1DBE52008B0506 /* TabMenuViewController.swift */,
+				2FC177AD2AD7DAB000873B50 /* SignUp */,
 				2FC177AA2AD7D83700873B50 /* Study */,
 				2F553F5D2AD7BD15005FDEAB /* Search */,
 				2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */,
@@ -287,6 +292,31 @@
 				F304A1402A420FF90066036B /* StudyInfoTodoViewController.swift */,
 				F3A7F9BD2A421DC800AE1863 /* StudyRegisterViewController.swift */,
 				F3A7F9BF2A422C4700AE1863 /* CompleteRegisterStudyViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2FC177AD2AD7DAB000873B50 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				2FC177AE2AD7DACF00873B50 /* Views */,
+				2FC177AF2AD7DAD500873B50 /* Controllers */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		2FC177AE2AD7DACF00873B50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2FC177B02AD7DB2000873B50 /* SignUp.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2FC177AF2AD7DAD500873B50 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2FC177B22AD7DB5500873B50 /* SignUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -516,6 +546,7 @@
 				2F28E6852A1DDAD300021E72 /* MyPage.storyboard in Resources */,
 				2F2B3E252A1DBE74008B0506 /* TabMenu.storyboard in Resources */,
 				5A6776BE2A2269B600F1D3DB /* Pretendard-Black.ttf in Resources */,
+				2FC177B12AD7DB2000873B50 /* SignUp.storyboard in Resources */,
 				2F28E67D2A1DD9BA00021E72 /* Search.storyboard in Resources */,
 				2F9DAF552A3222B9007CA960 /* Study.storyboard in Resources */,
 				5A6776B82A2269B600F1D3DB /* Pretendard-SemiBold.ttf in Resources */,
@@ -601,6 +632,7 @@
 				2F9DAF532A3222A5007CA960 /* StudyDetailViewController.swift in Sources */,
 				F304A13D2A41FDC90066036B /* StudyDetailInfoViewController.swift in Sources */,
 				F3A7F9BE2A421DC800AE1863 /* StudyRegisterViewController.swift in Sources */,
+				2FC177B32AD7DB5500873B50 /* SignUpViewController.swift in Sources */,
 				F3A7F9C02A422C4700AE1863 /* CompleteRegisterStudyViewController.swift in Sources */,
 				2F2B3E232A1DBE52008B0506 /* TabMenuViewController.swift in Sources */,
 				2FD8EF952ABC5C7F002A6F3B /* StudyOutlineViewController.swift in Sources */,
@@ -777,7 +809,7 @@
 				INFOPLIST_FILE = MOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SignUp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -810,7 +842,7 @@
 				INFOPLIST_FILE = MOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SignUp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
