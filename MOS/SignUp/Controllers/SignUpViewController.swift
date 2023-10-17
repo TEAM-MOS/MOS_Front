@@ -42,11 +42,13 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         //3개 텍스트필드가 채워졌는지, 비밀번호가 일치하는지 확인.
         if !(self.emailTextField.text?.isEmpty ?? true)
             && !(self.passwordTextField.text?.isEmpty ?? true)
-            && isSameBothTextField(passwordTextField, checkPasswordTextField) {
+            && isSameBothTextField(passwordTextField, checkPasswordTextField) && isValidEmail(emailTextField.text ?? "") && isValidPassword(passwordTextField.text ?? "") {
             updateNextButton(willActive: true)
         }
         else {
             updateNextButton(willActive: false)
+            self.signUpButton.tintColor = UIColor(named: "gray-2    ")
+            self.signUpButton.configuration?.background.backgroundColor = UIColor(named: "inactive_button_bg")
         }
     }
     
