@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F0BA3EC2AE0351E009D0353 /* TempPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0BA3EB2AE0351E009D0353 /* TempPasswordViewController.swift */; };
+		2F20E2CA2ADFD24E00A943C7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F20E2C92ADFD24E00A943C7 /* Login.storyboard */; };
+		2F20E2CC2ADFD26300A943C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20E2CB2ADFD26300A943C7 /* LoginViewController.swift */; };
+		2F20E2CE2ADFD27700A943C7 /* FindPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20E2CD2ADFD27600A943C7 /* FindPasswordViewController.swift */; };
+		2F20E2D02ADFD28900A943C7 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20E2CF2ADFD28900A943C7 /* ResetPasswordViewController.swift */; };
 		2F28E67D2A1DD9BA00021E72 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F28E67C2A1DD9BA00021E72 /* Search.storyboard */; };
 		2F28E67F2A1DD9C700021E72 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28E67E2A1DD9C700021E72 /* SearchViewController.swift */; };
 		2F28E6812A1DDA4300021E72 /* StudyRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */; };
@@ -81,6 +86,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F0BA3EB2AE0351E009D0353 /* TempPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempPasswordViewController.swift; sourceTree = "<group>"; };
+		2F20E2C92ADFD24E00A943C7 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		2F20E2CB2ADFD26300A943C7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2F20E2CD2ADFD27600A943C7 /* FindPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordViewController.swift; sourceTree = "<group>"; };
+		2F20E2CF2ADFD28900A943C7 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		2F28E67C2A1DD9BA00021E72 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		2F28E67E2A1DD9C700021E72 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoomViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +182,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F20E2C62ADFD20E00A943C7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F20E2C72ADFD21E00A943C7 /* Views */,
+				2F20E2C82ADFD22400A943C7 /* Controllers */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F20E2C72ADFD21E00A943C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F20E2C92ADFD24E00A943C7 /* Login.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F20E2C82ADFD22400A943C7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F20E2CB2ADFD26300A943C7 /* LoginViewController.swift */,
+				2F20E2CD2ADFD27600A943C7 /* FindPasswordViewController.swift */,
+				2F0BA3EB2AE0351E009D0353 /* TempPasswordViewController.swift */,
+				2F20E2CF2ADFD28900A943C7 /* ResetPasswordViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		2F37F4C42ADEBD7F005BB63A /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +284,7 @@
 				2FA142832A149026006AA91B /* Info.plist */,
 				2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */,
 				2F2B3E222A1DBE52008B0506 /* TabMenuViewController.swift */,
+				2F20E2C62ADFD20E00A943C7 /* Login */,
 				2FC177AD2AD7DAB000873B50 /* SignUp */,
 				2F553F5D2AD7BD15005FDEAB /* Search */,
 				2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */,
@@ -558,6 +597,7 @@
 				2FFCFC422A1DD2A200E2AC95 /* Home.storyboard in Resources */,
 				5A6776B62A2269B600F1D3DB /* Pretendard-Bold.ttf in Resources */,
 				2F28E6832A1DDA5F00021E72 /* StudyRoom.storyboard in Resources */,
+				2F20E2CA2ADFD24E00A943C7 /* Login.storyboard in Resources */,
 				2F28E6852A1DDAD300021E72 /* MyPage.storyboard in Resources */,
 				2F2B3E252A1DBE74008B0506 /* TabMenu.storyboard in Resources */,
 				5A6776BE2A2269B600F1D3DB /* Pretendard-Black.ttf in Resources */,
@@ -651,9 +691,11 @@
 				F3A7F9C02A422C4700AE1863 /* CompleteRegisterStudyViewController.swift in Sources */,
 				2F2B3E232A1DBE52008B0506 /* TabMenuViewController.swift in Sources */,
 				2FD8EF952ABC5C7F002A6F3B /* StudyOutlineViewController.swift in Sources */,
+				2F20E2CE2ADFD27700A943C7 /* FindPasswordViewController.swift in Sources */,
 				F304A13F2A4206240066036B /* StudyMemberInfoViewController.swift in Sources */,
 				F3A7F9BC2A4219BC00AE1863 /* PreQuestionAlertViewController.swift in Sources */,
 				2F8270E02A8F7B9100CE7BE1 /* StudyListViewController.swift in Sources */,
+				2F0BA3EC2AE0351E009D0353 /* TempPasswordViewController.swift in Sources */,
 				2FA142762A149024006AA91B /* AppDelegate.swift in Sources */,
 				2FA142782A149024006AA91B /* SceneDelegate.swift in Sources */,
 				2F5BA7622A9B278200E9A444 /* RecentSearchLayout.swift in Sources */,
@@ -663,12 +705,14 @@
 				2F37F4C82ADEBE9B005BB63A /* PopUpActionViewController.swift in Sources */,
 				2FB095862A2631910035FB78 /* DeviceGroup.swift in Sources */,
 				F304A1412A420FF90066036B /* StudyInfoTodoViewController.swift in Sources */,
+				2F20E2CC2ADFD26300A943C7 /* LoginViewController.swift in Sources */,
 				2FD24DA82A24F73B000747D7 /* SearchResultViewController.swift in Sources */,
 				5AD249612A406C4000A7BBAC /* SurveyResultVC.swift in Sources */,
 				5A444B732A278B590070137A /* StudyInputView.swift in Sources */,
 				5ADA06562A41E5CF00FE76E5 /* currentEventViewController.swift in Sources */,
 				5ADA065E2A41E67B00FE76E5 /* LanguageViewController.swift in Sources */,
 				2F28E6872A1DDADE00021E72 /* MyPageViewController.swift in Sources */,
+				2F20E2D02ADFD28900A943C7 /* ResetPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -825,7 +869,7 @@
 				INFOPLIST_FILE = MOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = SignUp;
+				INFOPLIST_KEY_UIMainStoryboardFile = TabMenu;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -858,7 +902,7 @@
 				INFOPLIST_FILE = MOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = SignUp;
+				INFOPLIST_KEY_UIMainStoryboardFile = TabMenu;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
