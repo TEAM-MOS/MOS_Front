@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CreateStudyViewController: UIViewController{
+class ChooseCategoryVC: UIViewController{
 
     
     @IBOutlet weak var testBtn: UIButton!

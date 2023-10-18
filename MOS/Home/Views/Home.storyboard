@@ -97,7 +97,7 @@
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                         <state key="normal" image="ic_home_category1"/>
                                                                         <connections>
-                                                                            <action selector="category4BtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hIb-8Z-Ie4"/>
+                                                                            <action selector="category1BtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Q4u-7B-XD4"/>
                                                                         </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="산업&amp;기업 분석" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MN1-bo-Vh8">
@@ -116,7 +116,7 @@
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                         <state key="normal" image="ic_home_category2"/>
                                                                         <connections>
-                                                                            <action selector="category5BtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ue7-AJ-gyU"/>
+                                                                            <action selector="category2BtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uF2-Iu-e78"/>
                                                                         </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사 PT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9Z-dA-D3g">
@@ -135,6 +135,7 @@
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                         <state key="normal" image="ic_home_category3"/>
                                                                         <connections>
+                                                                            <action selector="category3btnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hMD-3k-Xek"/>
                                                                             <action selector="category6BtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="OyP-Cr-c5u"/>
                                                                         </connections>
                                                                     </button>
@@ -201,9 +202,6 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="104.33333333333333"/>
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                         <state key="normal" image="ic_home_category6"/>
-                                                                        <connections>
-                                                                            <action selector="category6BtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5ES-vf-33t"/>
-                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="어학" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DI3-Fd-cIp">
                                                                         <rect key="frame" x="0.0" y="116.33333333333337" width="104.33333333333333" height="14.333333333333343"/>
@@ -1261,7 +1259,7 @@
             <color red="0.52156862745098043" green="0.52156862745098043" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="main">
-            <color red="0.99607843137254903" green="0.58039215686274515" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

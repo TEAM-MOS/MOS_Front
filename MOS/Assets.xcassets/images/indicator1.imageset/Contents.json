@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "2_1x.png",
+      "filename" : "studyCreateIndicator1_1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "2_2x.png",
+      "filename" : "studyCreateIndicator1_2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "2_3x.png",
+      "filename" : "studyCreateIndicator1_3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
