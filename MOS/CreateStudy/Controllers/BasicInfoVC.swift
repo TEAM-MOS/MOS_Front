@@ -18,10 +18,16 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var secondMoodCheckBox: UIImageView!
     @IBOutlet weak var thirdMoodCheckBox: UIImageView!
     
+    @IBOutlet weak var MaxMemberNum: UILabel!
+    @IBOutlet weak var memberCountUp: UIButton!
+    @IBOutlet weak var memberCountDown: UIButton!
+    
     // 스터디명 저장 변수
     var studyTitleText: String?
     // 추구하는 스터디 분위기 저장 변수
     var studyMood: String?
+    // MaxMemberNum 변수
+    var maxMemberCount: Int = 4
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +43,10 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
         addTapGesture(to: thirdMood, with: thirdMoodCheckBox, mood: "easy")
         
         // UITextFieldDelegate를 설정
-         studyTitle.delegate = self
+        studyTitle.delegate = self
+        
+        // 초기 MaxMemberNum 설정
+        MaxMemberNum.text = String(maxMemberCount)
     }
     
     func setupView(_ view: UIView, with checkBox: UIImageView) {
@@ -81,21 +90,35 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-            // 새로운 텍스트 입력을 포함한 전체 텍스트
+        // 새로운 텍스트 입력을 포함한 전체 텍스트
         let updatedText = (textField.text! as NSString).replacingCharacters(in: range, with: string)
-            
-            // 글자 수 제한 (20자)
-            let maxLength = 20
-            return updatedText.count <= maxLength
-        }
+        
+        // 글자 수 제한 (20자)
+        let maxLength = 20
+        return updatedText.count <= maxLength
+    }
     
     // 텍스트 필드 입력 종료 시 호출
-        func textFieldDidEndEditing(_ textField: UITextField) {
-            if textField == studyTitle {
-                // studyTitle TextField에서 입력이 종료될 때 실행할 코드
-                if let text = textField.text {
-                    studyTitleText = text
-                }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == studyTitle {
+            // studyTitle TextField에서 입력이 종료될 때 실행할 코드
+            if let text = textField.text {
+                studyTitleText = text
             }
         }
+    }
+    
+    @IBAction func memberCountUpTapped(_ sender: UIButton) {
+        if maxMemberCount < 10 {
+            maxMemberCount += 1
+            MaxMemberNum.text = String(maxMemberCount)
+        }
+    }
+    
+    @IBAction func memberCountDownTapped(_ sender: UIButton) {
+        if maxMemberCount > 1 {
+            maxMemberCount -= 1
+            MaxMemberNum.text = String(maxMemberCount)
+        }
+    }
 }

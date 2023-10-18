@@ -385,11 +385,17 @@
                                 <rect key="frame" x="24" y="607" width="91" height="36"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="createStudy_minus"/>
+                                <connections>
+                                    <action selector="memberCountDownTapped:" destination="81f-aj-SMe" eventType="touchUpInside" id="zX8-8h-VX3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3h-3F-eXk">
                                 <rect key="frame" x="278" y="607" width="91" height="36"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="createStudy_plus"/>
+                                <connections>
+                                    <action selector="memberCountUpTapped:" destination="81f-aj-SMe" eventType="touchUpInside" id="zrO-Km-3Y9"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCD-gr-Pj9">
                                 <rect key="frame" x="117" y="607" width="159" height="36"/>
@@ -519,10 +525,13 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="393" height="1200"/>
                     <connections>
+                        <outlet property="MaxMemberNum" destination="zgL-hs-BTb" id="LxP-3A-EEs"/>
                         <outlet property="SecondMood" destination="AUq-MS-q5p" id="VST-6c-m3I"/>
                         <outlet property="ThirdMood" destination="Bfu-rd-t6L" id="kC4-fj-pST"/>
                         <outlet property="firstMood" destination="OMi-s4-jYS" id="1pU-9S-Sr0"/>
                         <outlet property="firstMoodCheckBox" destination="nyx-Dp-3xN" id="SgF-t7-Nlu"/>
+                        <outlet property="memberCountDown" destination="EWe-zs-IxK" id="iwi-7W-Rng"/>
+                        <outlet property="memberCountUp" destination="B3h-3F-eXk" id="O20-KU-b2Q"/>
                         <outlet property="secondMoodCheckBox" destination="Scb-mM-l0e" id="8P9-gD-n5Q"/>
                         <outlet property="studyTitle" destination="OVj-bz-zEj" id="0wd-OA-ZNl"/>
                         <outlet property="thirdMoodCheckBox" destination="uQK-m4-4ej" id="Gdj-im-GzB"/>
@@ -712,7 +721,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="znU-zl-60c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1732" y="4"/>
+            <point key="canvasLocation" x="1938" y="4"/>
         </scene>
     </scenes>
     <resources>
