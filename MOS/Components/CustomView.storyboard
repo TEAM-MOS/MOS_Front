@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pop Up Action View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController restorationIdentifier="PopUpActionVC" storyboardIdentifier="PopUpActionVC" id="Y6W-OH-hqX" customClass="PopUpActionViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JgX-ui-4s9">
+                                <rect key="frame" x="20" y="346" width="353" height="160"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사용 가능한 이메일입니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzR-Fv-uPi">
+                                        <rect key="frame" x="86.666666666666671" y="36" width="179.66666666666663" height="21.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사용하시겠습니까?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QA0-WK-ob9">
+                                        <rect key="frame" x="124.66666666666666" y="63.666666666666686" width="104" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIw-xI-li3">
+                                        <rect key="frame" x="0.0" y="112" width="353" height="48"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnJ-VK-5hB">
+                                                <rect key="frame" x="0.0" y="0.0" width="232" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="232" id="cLP-G9-9Fq"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="네" cornerStyle="fixed">
+                                                    <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                        <color key="backgroundColor" name=" mainColor"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="allowButtonDidTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iea-Ud-c6X"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UF-W1-vJu">
+                                                <rect key="frame" x="232" y="0.0" width="121" height="48"/>
+                                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="아니요" cornerStyle="fixed">
+                                                    <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                        <color key="backgroundColor" name="gray-1"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="cancelButtonDidTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fbv-o3-NoP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="l2t-zo-c1Q"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="QA0-WK-ob9" firstAttribute="top" secondItem="ZzR-Fv-uPi" secondAttribute="bottom" constant="6" id="0UN-Pa-HX8"/>
+                                    <constraint firstAttribute="trailing" secondItem="WIw-xI-li3" secondAttribute="trailing" id="4En-KZ-XIW"/>
+                                    <constraint firstItem="WIw-xI-li3" firstAttribute="leading" secondItem="JgX-ui-4s9" secondAttribute="leading" id="APh-zQ-FjF"/>
+                                    <constraint firstItem="ZzR-Fv-uPi" firstAttribute="centerX" secondItem="JgX-ui-4s9" secondAttribute="centerX" id="HtU-J8-gHt"/>
+                                    <constraint firstAttribute="height" constant="160" id="cDP-QP-c4l"/>
+                                    <constraint firstAttribute="bottom" secondItem="WIw-xI-li3" secondAttribute="bottom" id="e3T-cq-hDG"/>
+                                    <constraint firstItem="ZzR-Fv-uPi" firstAttribute="top" secondItem="JgX-ui-4s9" secondAttribute="top" constant="36" id="tqr-B4-QwC"/>
+                                    <constraint firstItem="QA0-WK-ob9" firstAttribute="centerX" secondItem="JgX-ui-4s9" secondAttribute="centerX" id="vfA-Ua-zcR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JgX-ui-4s9" secondAttribute="trailing" constant="20" id="EA5-ta-KXZ"/>
+                            <constraint firstItem="JgX-ui-4s9" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="UjQ-XC-1xd"/>
+                            <constraint firstItem="JgX-ui-4s9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="bPu-wh-Aft"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="allowButton" destination="GnJ-VK-5hB" id="bCQ-ea-BJ0"/>
+                        <outlet property="cancelButton" destination="8UF-W1-vJu" id="Xnq-Na-cki"/>
+                        <outlet property="popUpView" destination="JgX-ui-4s9" id="w0b-Js-xCL"/>
+                        <outlet property="subTitleText" destination="QA0-WK-ob9" id="0iG-Zx-uCl"/>
+                        <outlet property="titleText" destination="ZzR-Fv-uPi" id="kto-g5-YJo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name=" mainColor">
+            <color red="1" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray-1">
+            <color white="0.84705883264541626" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <systemColor name="quaternarySystemFillColor">
+            <color red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

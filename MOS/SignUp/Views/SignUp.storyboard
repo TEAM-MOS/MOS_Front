@@ -53,6 +53,9 @@
                                     </attributedString>
                                     <color key="baseForegroundColor" name="gray-2"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="emailConfirmButtonDidTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="awh-t6-LV0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDN-t4-fha">
                                 <rect key="frame" x="24" y="329.66666666666669" width="56" height="18.666666666666686"/>

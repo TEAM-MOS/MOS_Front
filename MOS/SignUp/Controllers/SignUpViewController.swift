@@ -8,7 +8,7 @@
 import UIKit
 
 @available(iOS 15.0, *)
-class SignUpViewController: UIViewController, UITextFieldDelegate {
+class SignUpViewController: UIViewController, UITextFieldDelegate, PopUpDelegate {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -67,7 +67,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                 self.emailTextField.layer.borderWidth = 1
             }
         }
-
+        
         
         var tempPasswordText = self.passwordTextField.text
         
@@ -97,11 +97,11 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                 self.checkPasswordTextField.layer.borderColor = UIColor.systemGray6.cgColor
                 self.checkPasswordTextField.layer.borderWidth = 1
             }
-                 
-                
+            
+            
             
         }
-
+        
     }
     
     func setTextFieldStyle() {
@@ -165,6 +165,16 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         self.emailTextField.addTarget(self, action: #selector(self.TextFieldDidChanged(_:)), for: .editingChanged)
         self.passwordTextField.addTarget(self, action: #selector(self.TextFieldDidChanged(_:)), for: .editingChanged)
         self.checkPasswordTextField.addTarget(self, action: #selector(self.TextFieldDidChanged(_:)), for: .editingChanged)
-        
     }
+    
+    @IBAction func emailConfirmButtonDidTapped(_ sender: Any) {
+        PopUpActionViewController.showPopup(parentVC: self)
+    }
+    
+    func handleAction(action: Bool) {
+        if (action) {
+            // API post
+          }
+       }
+    
 }
