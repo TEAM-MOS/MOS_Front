@@ -8,8 +8,9 @@
 import Foundation
 import UIKit
 
-class BasicInfoVC: UIViewController{
+class BasicInfoVC: UIViewController,UITextFieldDelegate{
     
+    @IBOutlet weak var studyTitle: UITextField!
     @IBOutlet weak var firstMood: UIView!
     @IBOutlet weak var secondMood: UIView!
     @IBOutlet weak var thirdMood: UIView!
@@ -17,6 +18,8 @@ class BasicInfoVC: UIViewController{
     @IBOutlet weak var secondMoodCheckBox: UIImageView!
     @IBOutlet weak var thirdMoodCheckBox: UIImageView!
     
+    // 스터디명 저장 변수
+    var studyTitleText: String?
     // 추구하는 스터디 분위기 저장 변수
     var studyMood: String?
     
@@ -32,6 +35,9 @@ class BasicInfoVC: UIViewController{
         addTapGesture(to: firstMood, with: firstMoodCheckBox, mood: "Hard")
         addTapGesture(to: secondMood, with: secondMoodCheckBox, mood: "soso")
         addTapGesture(to: thirdMood, with: thirdMoodCheckBox, mood: "easy")
+        
+        // UITextFieldDelegate를 설정
+         studyTitle.delegate = self
     }
     
     func setupView(_ view: UIView, with checkBox: UIImageView) {
@@ -73,4 +79,23 @@ class BasicInfoVC: UIViewController{
             checkBox?.image = UIImage(named: "createStudy_unclicked")
         }
     }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+            // 새로운 텍스트 입력을 포함한 전체 텍스트
+        let updatedText = (textField.text! as NSString).replacingCharacters(in: range, with: string)
+            
+            // 글자 수 제한 (20자)
+            let maxLength = 20
+            return updatedText.count <= maxLength
+        }
+    
+    // 텍스트 필드 입력 종료 시 호출
+        func textFieldDidEndEditing(_ textField: UITextField) {
+            if textField == studyTitle {
+                // studyTitle TextField에서 입력이 종료될 때 실행할 코드
+                if let text = textField.text {
+                    studyTitleText = text
+                }
+            }
+        }
 }

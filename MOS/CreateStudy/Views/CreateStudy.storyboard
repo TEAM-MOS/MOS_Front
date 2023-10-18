@@ -524,6 +524,7 @@
                         <outlet property="firstMood" destination="OMi-s4-jYS" id="1pU-9S-Sr0"/>
                         <outlet property="firstMoodCheckBox" destination="nyx-Dp-3xN" id="SgF-t7-Nlu"/>
                         <outlet property="secondMoodCheckBox" destination="Scb-mM-l0e" id="8P9-gD-n5Q"/>
+                        <outlet property="studyTitle" destination="OVj-bz-zEj" id="0wd-OA-ZNl"/>
                         <outlet property="thirdMoodCheckBox" destination="uQK-m4-4ej" id="Gdj-im-GzB"/>
                     </connections>
                 </viewController>
