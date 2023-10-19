@@ -13,7 +13,7 @@
 		2F28E6832A1DDA5F00021E72 /* StudyRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */; };
 		2F28E6852A1DDAD300021E72 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F28E6842A1DDAD300021E72 /* MyPage.storyboard */; };
 		2F28E6872A1DDADE00021E72 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28E6862A1DDADE00021E72 /* MyPageViewController.swift */; };
-		2F28E6892A1DDF9A00021E72 /* CreateStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28E6882A1DDF9900021E72 /* CreateStudyViewController.swift */; };
+		2F28E6892A1DDF9A00021E72 /* ChooseCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28E6882A1DDF9900021E72 /* ChooseCategoryVC.swift */; };
 		2F28E68B2A1DDFBE00021E72 /* CreateStudy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F28E68A2A1DDFBE00021E72 /* CreateStudy.storyboard */; };
 		2F2B3E232A1DBE52008B0506 /* TabMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B3E222A1DBE52008B0506 /* TabMenuViewController.swift */; };
 		2F2B3E252A1DBE74008B0506 /* TabMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */; };
@@ -51,6 +51,7 @@
 		5A6776BD2A2269B600F1D3DB /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776B42A2269B600F1D3DB /* Pretendard-Light.ttf */; };
 		5A6776BE2A2269B600F1D3DB /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776B52A2269B600F1D3DB /* Pretendard-Black.ttf */; };
 		5A6776C12A2269DA00F1D3DB /* survey_character.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776C02A2269DA00F1D3DB /* survey_character.png */; };
+		5A6AC6EC2AE0399600668492 /* BasicInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AC6EB2AE0399600668492 /* BasicInfoVC.swift */; };
 		5A6EE3952A8AAE90000E841D /* SurveyStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EE3942A8AAE90000E841D /* SurveyStartVC.swift */; };
 		5A7AA0D12A41BDCA0087DE3C /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */; };
 		5A7AA0D42A41C1A10087DE3C /* AllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D32A41C1A10087DE3C /* AllViewController.swift */; };
@@ -83,7 +84,7 @@
 		2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudyRoom.storyboard; sourceTree = "<group>"; };
 		2F28E6842A1DDAD300021E72 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		2F28E6862A1DDADE00021E72 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
-		2F28E6882A1DDF9900021E72 /* CreateStudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStudyViewController.swift; sourceTree = "<group>"; };
+		2F28E6882A1DDF9900021E72 /* ChooseCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCategoryVC.swift; sourceTree = "<group>"; };
 		2F28E68A2A1DDFBE00021E72 /* CreateStudy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateStudy.storyboard; sourceTree = "<group>"; };
 		2F2B3E222A1DBE52008B0506 /* TabMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuViewController.swift; sourceTree = "<group>"; };
 		2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabMenu.storyboard; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 		5A6776B42A2269B600F1D3DB /* Pretendard-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.ttf"; sourceTree = "<group>"; };
 		5A6776B52A2269B600F1D3DB /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.ttf"; sourceTree = "<group>"; };
 		5A6776C02A2269DA00F1D3DB /* survey_character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = survey_character.png; sourceTree = "<group>"; };
+		5A6AC6EB2AE0399600668492 /* BasicInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInfoVC.swift; sourceTree = "<group>"; };
 		5A6EE3942A8AAE90000E841D /* SurveyStartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStartVC.swift; sourceTree = "<group>"; };
 		5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		5A7AA0D32A41C1A10087DE3C /* AllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllViewController.swift; sourceTree = "<group>"; };
@@ -334,7 +336,8 @@
 		5ADD7C542ACC09780093661A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2F28E6882A1DDF9900021E72 /* CreateStudyViewController.swift */,
+				2F28E6882A1DDF9900021E72 /* ChooseCategoryVC.swift */,
+				5A6AC6EB2AE0399600668492 /* BasicInfoVC.swift */,
 				5ADD7C552AD70ADA0093661A /* RegisterTodoController.swift */,
 				5ADD7C572AD7261F0093661A /* Todo.swift */,
 				5ADD7C592AD72F580093661A /* CheckTableViewCell.swift */,
@@ -532,7 +535,7 @@
 				5A7AA0D42A41C1A10087DE3C /* AllViewController.swift in Sources */,
 				5ADA065A2A41E63100FE76E5 /* SelfIntroductionViewController.swift in Sources */,
 				5ADA06582A41E60900FE76E5 /* PersonnelAptitudeViewController.swift in Sources */,
-				2F28E6892A1DDF9A00021E72 /* CreateStudyViewController.swift in Sources */,
+				2F28E6892A1DDF9A00021E72 /* ChooseCategoryVC.swift in Sources */,
 				2FA1427A2A149024006AA91B /* ViewController.swift in Sources */,
 				2F9DAF532A3222A5007CA960 /* StudyDetailViewController.swift in Sources */,
 				F304A13D2A41FDC90066036B /* StudyDetailInfoViewController.swift in Sources */,
@@ -547,6 +550,7 @@
 				2FA142782A149024006AA91B /* SceneDelegate.swift in Sources */,
 				2F5BA7622A9B278200E9A444 /* RecentSearchLayout.swift in Sources */,
 				5A3FE53B2A98D784009E7E37 /* RoundedProgressView.swift in Sources */,
+				5A6AC6EC2AE0399600668492 /* BasicInfoVC.swift in Sources */,
 				5A7AA0D12A41BDCA0087DE3C /* PagingViewController.swift in Sources */,
 				5AC619B42A19E5BD00966219 /* SurveyVC.swift in Sources */,
 				2FB095862A2631910035FB78 /* DeviceGroup.swift in Sources */,
