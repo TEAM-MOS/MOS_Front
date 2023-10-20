@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import DatePicker
 
 class BasicInfoVC: UIViewController,UITextFieldDelegate{
     
@@ -22,6 +23,8 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var memberCountUp: UIButton!
     @IBOutlet weak var memberCountDown: UIButton!
     
+    @IBOutlet weak var startDate: UIButton!
+    @IBOutlet weak var startDatePicker: UIDatePicker!
     // 스터디명 저장 변수
     var studyTitleText: String?
     // 추구하는 스터디 분위기 저장 변수
@@ -32,21 +35,40 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         // 추구하는 스터디 분위기 버튼 스타일 설정
         setupView(firstMood, with: firstMoodCheckBox)
         setupView(secondMood, with: secondMoodCheckBox)
         setupView(thirdMood, with: thirdMoodCheckBox)
         
         // 각 뷰에 탭 제스처 추가
-        addTapGesture(to: firstMood, with: firstMoodCheckBox, mood: "Hard")
-        addTapGesture(to: secondMood, with: secondMoodCheckBox, mood: "soso")
-        addTapGesture(to: thirdMood, with: thirdMoodCheckBox, mood: "easy")
+        addTapGesture(to: firstMood, with: firstMoodCheckBox, mood: "빡공모드")
+        addTapGesture(to: secondMood, with: secondMoodCheckBox, mood: "성실모드")
+        addTapGesture(to: thirdMood, with: thirdMoodCheckBox, mood: "해피모드")
         
         // UITextFieldDelegate를 설정
         studyTitle.delegate = self
         
         // 초기 MaxMemberNum 설정
         MaxMemberNum.text = String(maxMemberCount)
+    }
+    
+    @IBAction func DateButton(_ sender: UIButton) {
+        let minDate = DatePickerHelper.shared.dateFrom(day: 18, month: 08, year: 1990)!
+        let maxDate = DatePickerHelper.shared.dateFrom(day: 18, month: 08, year: 2030)!
+        let today = Date()
+        // Create picker object
+        let datePicker = DatePicker()
+        // Setup
+        datePicker.setup(beginWith: today, min: minDate, max: maxDate) { (selected, date) in
+            if selected, let selectedDate = date {
+                self.startDate.titleLabel?.text = selectedDate.string()
+            } else {
+                print("Cancelled")
+            }
+        }
+        // Display
+        datePicker.show(in: self, on: sender)
     }
     
     func setupView(_ view: UIView, with checkBox: UIImageView) {
