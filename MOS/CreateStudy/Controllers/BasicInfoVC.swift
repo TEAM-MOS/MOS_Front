@@ -62,7 +62,9 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
         // Setup
         datePicker.setup(beginWith: today, min: minDate, max: maxDate) { (selected, date) in
             if selected, let selectedDate = date {
-                self.startDate.titleLabel?.text = selectedDate.string()
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy년 MM월 dd일"
+                self.startDate.titleLabel?.text = dateFormatter.string(from: selectedDate)
             } else {
                 print("Cancelled")
             }
