@@ -289,7 +289,6 @@
 				2F20E2C62ADFD20E00A943C7 /* Login */,
 				2FC177AD2AD7DAB000873B50 /* SignUp */,
 				2F553F5D2AD7BD15005FDEAB /* Search */,
-				2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */,
 				2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */,
 				2F28E6842A1DDAD300021E72 /* MyPage.storyboard */,
 				2F28E6862A1DDADE00021E72 /* MyPageViewController.swift */,
@@ -487,6 +486,7 @@
 				5A6AC6EB2AE0399600668492 /* BasicInfoVC.swift */,
 				5ADD7C552AD70ADA0093661A /* RegisterTodoController.swift */,
 				5ADD7C572AD7261F0093661A /* Todo.swift */,
+				2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */,
 				5ADD7C592AD72F580093661A /* CheckTableViewCell.swift */,
 			);
 			path = Controllers;

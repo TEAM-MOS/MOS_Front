@@ -4,9 +4,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -240,7 +240,7 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="1107"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qwc-q7-U0t" userLabel="contentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="975.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1019.6666666666666"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스터디 기본 정보를 입력해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMG-4o-R75">
                                                 <rect key="frame" x="16" y="112" width="256" height="24"/>
@@ -255,7 +255,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*필수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjB-BP-ctg">
-                                                <rect key="frame" x="86.333333333333329" y="725" width="41" height="21.666666666666629"/>
+                                                <rect key="frame" x="86.333333333333329" y="769" width="41" height="21.666666666666629"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
                                                 <color key="textColor" name="mainColor"/>
                                                 <nil key="highlightedColor"/>
@@ -285,14 +285,14 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zNg-u0-Lzm">
-                                                <rect key="frame" x="16" y="762.66666666666663" width="361" height="32"/>
+                                                <rect key="frame" x="16" y="806.66666666666663" width="361" height="32"/>
                                                 <segments>
                                                     <segment title="오프라인"/>
                                                     <segment title="온라인"/>
                                                 </segments>
                                             </segmentedControl>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="장소를 입력해주세요.(ex. 송파구)" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="gEd-IY-5V0">
-                                                <rect key="frame" x="16" y="809.66666666666663" width="361" height="42"/>
+                                                <rect key="frame" x="16" y="853.66666666666663" width="361" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="dzz-33-Fla"/>
                                                 </constraints>
@@ -327,35 +327,25 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DhT-Yn-QEo">
-                                                <rect key="frame" x="16" y="660.66666666666663" width="361" height="34.333333333333371"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMw-Ez-e2b">
-                                                        <rect key="frame" x="0.0" y="0.0" width="174" height="34.333333333333336"/>
-                                                        <color key="tintColor" name="gray-2"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="스터디 시작 일자"/>
-                                                        <connections>
-                                                            <action selector="DateButton:" destination="81f-aj-SMe" eventType="touchUpInside" id="fFZ-ah-Rkf"/>
-                                                        </connections>
-                                                    </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdb-J6-Hk8">
-                                                        <rect key="frame" x="182" y="0.0" width="13" height="34.333333333333336"/>
-                                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXw-qx-jEc">
-                                                        <rect key="frame" x="203" y="0.0" width="158" height="34.333333333333336"/>
-                                                        <color key="tintColor" red="0.60424558080000002" green="0.60424558080000002" blue="0.60424558080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="스터디 종료 일자"/>
-                                                        <connections>
-                                                            <action selector="DateButton:" destination="81f-aj-SMe" eventType="touchUpInside" id="PAz-qK-6Cy"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMw-Ez-e2b">
+                                                <rect key="frame" x="16" y="660.66666666666663" width="361" height="35"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="스터디 시작 일자"/>
+                                                <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="  스터디 시작 일자">
+                                                    <imageReference key="image" image="calendar" catalog="system" symbolScale="medium" renderingMode="hierarchical">
+                                                        <hierarchicalColors>
+                                                            <color systemColor="labelColor"/>
+                                                            <color systemColor="secondaryLabelColor"/>
+                                                            <color systemColor="tertiaryLabelColor"/>
+                                                        </hierarchicalColors>
+                                                    </imageReference>
+                                                    <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="startDateButton:" destination="81f-aj-SMe" eventType="touchUpInside" id="qtr-rb-x0h"/>
+                                                </connections>
+                                            </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex) [네이버] 토익스터디" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="OVj-bz-zEj">
                                                 <rect key="frame" x="16" y="213.66666666666669" width="361" height="42"/>
                                                 <constraints>
@@ -370,7 +360,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3h-3F-eXk">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3h-3F-eXk">
                                                 <rect key="frame" x="286" y="557" width="91" height="36"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="createStudy_plus"/>
@@ -378,11 +368,11 @@
                                                     <action selector="memberCountUpTapped:" destination="81f-aj-SMe" eventType="touchUpInside" id="zrO-Km-3Y9"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sCD-gr-Pj9">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCD-gr-Pj9">
                                                 <rect key="frame" x="109" y="557" width="175" height="36"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgL-hs-BTb">
-                                                        <rect key="frame" x="38.333333333333343" y="8.3333333333333695" width="23.666666666666671" height="19.333333333333329"/>
+                                                        <rect key="frame" x="75.666666666666657" y="8.3333333333333695" width="23.666666666666671" height="19.333333333333329"/>
                                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -391,12 +381,11 @@
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <constraints>
                                                     <constraint firstItem="zgL-hs-BTb" firstAttribute="centerX" secondItem="sCD-gr-Pj9" secondAttribute="centerX" id="7Tv-EX-tAL"/>
-                                                    <constraint firstAttribute="width" constant="100" id="a15-Q9-JX0"/>
                                                     <constraint firstItem="zgL-hs-BTb" firstAttribute="centerY" secondItem="sCD-gr-Pj9" secondAttribute="centerY" id="sgL-GI-tBS"/>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XG6-aL-fhn">
-                                                <rect key="frame" x="16" y="891.66666666666663" width="361" height="44"/>
+                                                <rect key="frame" x="16" y="935.66666666666663" width="361" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="vEe-WA-0Yz"/>
                                                 </constraints>
@@ -423,7 +412,7 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_category_back" translatesAutoresizingMaskIntoConstraints="NO" id="Yvg-zC-zFf">
                                                 <rect key="frame" x="16" y="0.0" width="32" height="32"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWe-zs-IxK">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWe-zs-IxK">
                                                 <rect key="frame" x="16" y="557" width="91" height="36"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="createStudy_minus"/>
@@ -488,11 +477,24 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="진행방식" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gs-TZ-Ok5">
-                                                <rect key="frame" x="16.000000000000004" y="725" width="62.333333333333343" height="21.666666666666629"/>
+                                                <rect key="frame" x="16.000000000000004" y="769" width="62.333333333333343" height="21.666666666666629"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXw-qx-jEc">
+                                                <rect key="frame" x="16" y="703.66666666666663" width="361" height="35"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="스터디 종료 일자"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="  스터디 종료 일자">
+                                                    <imageReference key="image" image="calendar" catalog="system" symbolScale="medium"/>
+                                                    <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="endDateButton:" destination="81f-aj-SMe" eventType="touchUpInside" id="i5E-4C-9Ax"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -500,7 +502,7 @@
                                             <constraint firstAttribute="trailing" secondItem="KcI-2M-Qj3" secondAttribute="trailing" constant="50" id="3sV-Zm-ZXK"/>
                                             <constraint firstItem="3Mu-2t-kMP" firstAttribute="top" secondItem="VMG-4o-R75" secondAttribute="bottom" constant="40" id="43F-gh-zJp"/>
                                             <constraint firstItem="CWY-1z-Ih5" firstAttribute="bottom" secondItem="fge-J4-3Mj" secondAttribute="bottom" id="4kR-aD-Csy"/>
-                                            <constraint firstItem="DhT-Yn-QEo" firstAttribute="leading" secondItem="tuq-lY-Tce" secondAttribute="leading" id="50V-go-aIf"/>
+                                            <constraint firstItem="3Gs-TZ-Ok5" firstAttribute="top" secondItem="CjB-BP-ctg" secondAttribute="top" id="4t7-dU-IHS"/>
                                             <constraint firstItem="sCD-gr-Pj9" firstAttribute="leading" secondItem="EWe-zs-IxK" secondAttribute="trailing" constant="2" id="5ag-Fm-wWr"/>
                                             <constraint firstItem="zNg-u0-Lzm" firstAttribute="leading" secondItem="3Gs-TZ-Ok5" secondAttribute="leading" id="5mC-qx-2s5"/>
                                             <constraint firstItem="B3h-3F-eXk" firstAttribute="bottom" secondItem="EWe-zs-IxK" secondAttribute="bottom" id="5sv-In-eSF"/>
@@ -509,11 +511,11 @@
                                             <constraint firstItem="XG6-aL-fhn" firstAttribute="top" secondItem="gEd-IY-5V0" secondAttribute="bottom" constant="40" id="8BI-PD-jVh"/>
                                             <constraint firstAttribute="trailing" secondItem="OVj-bz-zEj" secondAttribute="trailing" constant="16" id="BRo-Yz-KE5"/>
                                             <constraint firstItem="EWe-zs-IxK" firstAttribute="top" secondItem="fge-J4-3Mj" secondAttribute="bottom" constant="16" id="Bya-cm-em5"/>
-                                            <constraint firstItem="rMw-Ez-e2b" firstAttribute="top" secondItem="tuq-lY-Tce" secondAttribute="bottom" constant="16" id="CQ3-CE-BS9"/>
                                             <constraint firstItem="CjB-BP-ctg" firstAttribute="leading" secondItem="3Gs-TZ-Ok5" secondAttribute="trailing" constant="8" id="EIo-vN-uUW"/>
                                             <constraint firstItem="gEd-IY-5V0" firstAttribute="top" secondItem="zNg-u0-Lzm" secondAttribute="bottom" constant="16" id="Edb-BT-S8R"/>
                                             <constraint firstItem="dLS-0s-kce" firstAttribute="top" secondItem="L8q-yc-Mko" secondAttribute="top" id="FNC-Cy-xuD"/>
                                             <constraint firstItem="gEd-IY-5V0" firstAttribute="leading" secondItem="zNg-u0-Lzm" secondAttribute="leading" id="FS7-c3-mdG"/>
+                                            <constraint firstItem="IXw-qx-jEc" firstAttribute="trailing" secondItem="rMw-Ez-e2b" secondAttribute="trailing" id="GmX-hR-ekx"/>
                                             <constraint firstItem="hBe-7W-KnH" firstAttribute="leading" secondItem="3Mu-2t-kMP" secondAttribute="trailing" constant="8" id="I8c-La-iX7"/>
                                             <constraint firstItem="gEd-IY-5V0" firstAttribute="trailing" secondItem="zNg-u0-Lzm" secondAttribute="trailing" id="J3w-BS-cUr"/>
                                             <constraint firstItem="pB8-e4-KmQ" firstAttribute="top" secondItem="Yvg-zC-zFf" secondAttribute="top" id="JdE-jH-RCc"/>
@@ -525,9 +527,8 @@
                                             <constraint firstItem="jRF-2j-6fb" firstAttribute="top" secondItem="tuq-lY-Tce" secondAttribute="top" id="OLT-BD-usS"/>
                                             <constraint firstItem="Bfu-rd-t6L" firstAttribute="top" secondItem="AUq-MS-q5p" secondAttribute="bottom" constant="8" id="OXf-iC-P1z"/>
                                             <constraint firstItem="pB8-e4-KmQ" firstAttribute="centerX" secondItem="Qwc-q7-U0t" secondAttribute="centerX" id="P06-At-FEm"/>
-                                            <constraint firstItem="IXw-qx-jEc" firstAttribute="trailing" secondItem="B3h-3F-eXk" secondAttribute="trailing" id="RkG-ik-6TO"/>
+                                            <constraint firstItem="3Gs-TZ-Ok5" firstAttribute="top" secondItem="IXw-qx-jEc" secondAttribute="bottom" constant="30.333333333333371" id="RSc-6b-Hi0"/>
                                             <constraint firstItem="OVj-bz-zEj" firstAttribute="leading" secondItem="3Mu-2t-kMP" secondAttribute="leading" id="SCe-Bb-ffR"/>
-                                            <constraint firstItem="3Gs-TZ-Ok5" firstAttribute="top" secondItem="rMw-Ez-e2b" secondAttribute="bottom" constant="30" id="Sbd-yy-L2Z"/>
                                             <constraint firstItem="3Mu-2t-kMP" firstAttribute="leading" secondItem="VMG-4o-R75" secondAttribute="leading" id="Twz-R6-ybd"/>
                                             <constraint firstItem="OMi-s4-jYS" firstAttribute="top" secondItem="L8q-yc-Mko" secondAttribute="bottom" constant="16" id="UQZ-u0-yJy"/>
                                             <constraint firstItem="Bfu-rd-t6L" firstAttribute="trailing" secondItem="AUq-MS-q5p" secondAttribute="trailing" id="VOi-aL-a1e"/>
@@ -550,17 +551,22 @@
                                             <constraint firstItem="tuq-lY-Tce" firstAttribute="top" secondItem="EWe-zs-IxK" secondAttribute="bottom" constant="30" id="hoc-mj-uf5"/>
                                             <constraint firstItem="L8q-yc-Mko" firstAttribute="leading" secondItem="OVj-bz-zEj" secondAttribute="leading" id="j57-yR-Won"/>
                                             <constraint firstItem="jRF-2j-6fb" firstAttribute="leading" secondItem="tuq-lY-Tce" secondAttribute="trailing" constant="8" id="kdR-W5-Gbu"/>
-                                            <constraint firstItem="3Gs-TZ-Ok5" firstAttribute="leading" secondItem="rMw-Ez-e2b" secondAttribute="leading" id="ko9-rU-cTf"/>
                                             <constraint firstItem="Bfu-rd-t6L" firstAttribute="leading" secondItem="AUq-MS-q5p" secondAttribute="leading" id="lKt-3q-A1v"/>
+                                            <constraint firstItem="rMw-Ez-e2b" firstAttribute="top" secondItem="tuq-lY-Tce" secondAttribute="bottom" constant="16" id="lvc-Yp-tBd"/>
                                             <constraint firstItem="KcI-2M-Qj3" firstAttribute="top" secondItem="pB8-e4-KmQ" secondAttribute="bottom" constant="20" id="mo8-Vv-h2W"/>
                                             <constraint firstItem="dLS-0s-kce" firstAttribute="bottom" secondItem="L8q-yc-Mko" secondAttribute="bottom" id="nr3-iU-pYM"/>
                                             <constraint firstItem="CjB-BP-ctg" firstAttribute="top" secondItem="3Gs-TZ-Ok5" secondAttribute="top" id="ogw-pE-1xT"/>
                                             <constraint firstItem="KcI-2M-Qj3" firstAttribute="leading" secondItem="Qwc-q7-U0t" secondAttribute="leading" constant="50" id="p04-dP-K52"/>
+                                            <constraint firstItem="IXw-qx-jEc" firstAttribute="leading" secondItem="rMw-Ez-e2b" secondAttribute="leading" id="pmq-nx-Lq1"/>
+                                            <constraint firstItem="rMw-Ez-e2b" firstAttribute="trailing" secondItem="B3h-3F-eXk" secondAttribute="trailing" id="qgf-Im-nrY"/>
+                                            <constraint firstItem="IXw-qx-jEc" firstAttribute="top" secondItem="rMw-Ez-e2b" secondAttribute="bottom" constant="8" symbolic="YES" id="qvf-5f-LML"/>
                                             <constraint firstItem="AUq-MS-q5p" firstAttribute="top" secondItem="OMi-s4-jYS" secondAttribute="bottom" constant="8" id="urs-Zo-cRn"/>
+                                            <constraint firstItem="rMw-Ez-e2b" firstAttribute="leading" secondItem="tuq-lY-Tce" secondAttribute="leading" id="usG-20-HJ6"/>
                                             <constraint firstItem="AUq-MS-q5p" firstAttribute="leading" secondItem="OMi-s4-jYS" secondAttribute="leading" id="utG-Um-W88"/>
                                             <constraint firstItem="tuq-lY-Tce" firstAttribute="leading" secondItem="EWe-zs-IxK" secondAttribute="leading" id="v4Q-Lo-MqZ"/>
                                             <constraint firstItem="B3h-3F-eXk" firstAttribute="leading" secondItem="sCD-gr-Pj9" secondAttribute="trailing" constant="2" id="x1u-7E-JFU"/>
                                             <constraint firstItem="B3h-3F-eXk" firstAttribute="trailing" secondItem="Bfu-rd-t6L" secondAttribute="trailing" id="xTO-yH-I0V"/>
+                                            <constraint firstItem="3Gs-TZ-Ok5" firstAttribute="leading" secondItem="rMw-Ez-e2b" secondAttribute="leading" id="y6Q-Kn-0y3"/>
                                             <constraint firstItem="XG6-aL-fhn" firstAttribute="trailing" secondItem="gEd-IY-5V0" secondAttribute="trailing" id="yTf-mm-69w"/>
                                             <constraint firstItem="OMi-s4-jYS" firstAttribute="trailing" secondItem="OVj-bz-zEj" secondAttribute="trailing" id="ybf-VE-A3i"/>
                                             <constraint firstItem="OVj-bz-zEj" firstAttribute="top" secondItem="3Mu-2t-kMP" secondAttribute="bottom" constant="16" id="yfO-N0-iK2"/>
@@ -596,6 +602,7 @@
                         <outlet property="MaxMemberNum" destination="zgL-hs-BTb" id="LxP-3A-EEs"/>
                         <outlet property="SecondMood" destination="AUq-MS-q5p" id="VST-6c-m3I"/>
                         <outlet property="ThirdMood" destination="Bfu-rd-t6L" id="kC4-fj-pST"/>
+                        <outlet property="endDate" destination="IXw-qx-jEc" id="C6I-kH-rqz"/>
                         <outlet property="firstMood" destination="OMi-s4-jYS" id="1pU-9S-Sr0"/>
                         <outlet property="firstMoodCheckBox" destination="nyx-Dp-3xN" id="SgF-t7-Nlu"/>
                         <outlet property="memberCountDown" destination="EWe-zs-IxK" id="iwi-7W-Rng"/>
@@ -796,6 +803,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="createStudy_category1" width="87" height="85.666664123535156"/>
         <image name="createStudy_category2" width="87" height="84"/>
         <image name="createStudy_category3" width="87" height="86"/>
@@ -813,9 +821,6 @@
         <image name="img_survey_checkbox" width="18.333333969116211" height="18.333333969116211"/>
         <image name="indicator1" width="206" height="25"/>
         <image name="indicator2" width="209" height="25"/>
-        <namedColor name="gray-2">
-            <color red="0.52156862745098043" green="0.52156862745098043" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
         <namedColor name="main-2">
             <color red="1" green="0.95294117647058818" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -825,11 +830,20 @@
         <namedColor name="subColor">
             <color red="1" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
