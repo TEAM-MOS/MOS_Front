@@ -45,6 +45,8 @@
 		2FF25FE02A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF25FDF2A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift */; };
 		2FFCFC422A1DD2A200E2AC95 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */; };
 		2FFCFC442A1DD2B200E2AC95 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */; };
+		5A0E75A22AE82A6B00476BCE /* RulePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0E75A12AE82A6B00476BCE /* RulePopUp.swift */; };
+		5A0E75A42AE832DE00476BCE /* RulePopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E75A32AE832DE00476BCE /* RulePopUp.xib */; };
 		5A3FE53B2A98D784009E7E37 /* RoundedProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3FE53A2A98D784009E7E37 /* RoundedProgressView.swift */; };
 		5A3FE53D2AA3A7B5009E7E37 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3FE53C2AA3A7B5009E7E37 /* UIColor.swift */; };
 		5A444B6E2A2789DC0070137A /* StudyInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A444B6D2A2789DC0070137A /* StudyInputView.xib */; };
@@ -130,6 +132,8 @@
 		2FF25FDF2A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5A0E75A12AE82A6B00476BCE /* RulePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulePopUp.swift; sourceTree = "<group>"; };
+		5A0E75A32AE832DE00476BCE /* RulePopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RulePopUp.xib; sourceTree = "<group>"; };
 		5A3FE53A2A98D784009E7E37 /* RoundedProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedProgressView.swift; sourceTree = "<group>"; };
 		5A3FE53C2AA3A7B5009E7E37 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		5A444B6D2A2789DC0070137A /* StudyInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudyInputView.xib; sourceTree = "<group>"; };
@@ -286,6 +290,7 @@
 				5ADD7C522ACC093E0093661A /* CreateStudy */,
 				5A67766A2A1E1ECF00F1D3DB /* Assets.xcassets */,
 				2FA142832A149026006AA91B /* Info.plist */,
+				2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */,
 				2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */,
 				2F2B3E222A1DBE52008B0506 /* TabMenuViewController.swift */,
 				2F20E2C62ADFD20E00A943C7 /* Login */,
@@ -477,6 +482,7 @@
 			isa = PBXGroup;
 			children = (
 				2F28E68A2A1DDFBE00021E72 /* CreateStudy.storyboard */,
+				5A0E75A32AE832DE00476BCE /* RulePopUp.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -488,9 +494,9 @@
 				5A6AC6EB2AE0399600668492 /* BasicInfoVC.swift */,
 				5ADD7C552AD70ADA0093661A /* RegisterTodoController.swift */,
 				5ADD7C572AD7261F0093661A /* Todo.swift */,
-				2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */,
 				5ADD7C592AD72F580093661A /* CheckTableViewCell.swift */,
 				5A56B1FD2AE8184900DA8CF6 /* DetailInfoVC.swift */,
+				5A0E75A12AE82A6B00476BCE /* RulePopUp.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -617,6 +623,7 @@
 				5A6776B92A2269B600F1D3DB /* Pretendard-ExtraBold.ttf in Resources */,
 				5A6776C12A2269DA00F1D3DB /* survey_character.png in Resources */,
 				5A444B6E2A2789DC0070137A /* StudyInputView.xib in Resources */,
+				5A0E75A42AE832DE00476BCE /* RulePopUp.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,6 +693,7 @@
 				5ADA065C2A41E64900FE76E5 /* InterviewViewController.swift in Sources */,
 				5A3FE53D2AA3A7B5009E7E37 /* UIColor.swift in Sources */,
 				5A7AA0D42A41C1A10087DE3C /* AllViewController.swift in Sources */,
+				5A0E75A22AE82A6B00476BCE /* RulePopUp.swift in Sources */,
 				5ADA065A2A41E63100FE76E5 /* SelfIntroductionViewController.swift in Sources */,
 				5ADA06582A41E60900FE76E5 /* PersonnelAptitudeViewController.swift in Sources */,
 				2F28E6892A1DDF9A00021E72 /* ChooseCategoryVC.swift in Sources */,

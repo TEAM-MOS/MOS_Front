@@ -8,6 +8,8 @@
 import UIKit
 
 class DetsilInfoVC: UIViewController {
+    
+    var rulePopUp: RulePopUp!
 
     @IBOutlet weak var sunLabel: UILabel!
     @IBOutlet weak var satLabel: UILabel!
@@ -32,14 +34,15 @@ class DetsilInfoVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
-        setupView(sunView)
-        setupView(satView)
-        setupView(friView)
-        setupView(thursView)
-        setupView(wedView)
-        setupView(TueView)
-        setupView(MonView)
+        setupWeekView(sunView)
+        setupWeekView(satView)
+        setupWeekView(friView)
+        setupWeekView(thursView)
+        setupWeekView(wedView)
+        setupWeekView(TueView)
+        setupWeekView(MonView)
         
         // Add tap gesture recognizers to views
         addTapGestureToView(sunView, day: "SUN")
@@ -50,8 +53,18 @@ class DetsilInfoVC: UIViewController {
         addTapGestureToView(TueView, day: "TUE")
         addTapGestureToView(MonView, day: "MON")
     }
+    
+    func setupRuleView(_ view: UIView) {
+        view.layer.borderWidth = 1
+        view.layer.cornerRadius = 6
+        view.layer.backgroundColor = UIColor(hex: "FFE7E7").cgColor
+        view.layer.borderColor = UIColor(hex: "FF5454").cgColor
+        
+        // Initialize the tap count for each view to 0
+        tapCount[view] = 0
+    }
 
-    func setupView(_ view: UIView) {
+    func setupWeekView(_ view: UIView) {
         view.layer.borderWidth = 1
         view.layer.cornerRadius = 8
         view.layer.backgroundColor = UIColor(hex: "FFFFFF").cgColor
@@ -115,6 +128,17 @@ class DetsilInfoVC: UIViewController {
         default: return nil
         }
     }
+    
+    @IBAction func ruleBtnClicked(_ sender: Any){
+        self.rulePopUp = RulePopUp(frame: self.view.frame)
+        self.rulePopUp.closeBtn.addTarget(self, action: #selector(closeBtnTapped), for:.touchUpInside)
+        self.view.addSubview(rulePopUp)
+    }
+    
+    @objc func closeBtnTapped(){
+        self.rulePopUp.removeFromSuperview()
+    }
+
 }
 
 

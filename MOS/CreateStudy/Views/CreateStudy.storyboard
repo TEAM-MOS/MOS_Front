@@ -827,19 +827,19 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스터디 규칙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aO4-iY-Irh">
-                                <rect key="frame" x="16" y="519.33333333333337" width="82.333333333333329" height="21.666666666666629"/>
+                                <rect key="frame" x="16" y="519.33333333333337" width="82.333333333333329" height="31"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*필수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGE-Mf-Soc">
-                                <rect key="frame" x="106.33333333333333" y="519.33333333333337" width="40.999999999999986" height="21.666666666666629"/>
+                                <rect key="frame" x="106.33333333333333" y="519.33333333333337" width="40.999999999999986" height="31"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
                                 <color key="textColor" name="mainColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="ex) 지각시, 지각비를 내야해요." minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="H3G-Zo-nR5">
-                                <rect key="frame" x="16" y="605" width="363" height="160"/>
+                                <rect key="frame" x="16" y="614.33333333333337" width="363" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="7bV-rj-aZz"/>
                                 </constraints>
@@ -847,17 +847,36 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="규칙 선택 버튼을 통해 스터디 규칙을 선택 할 수 있어요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqA-6d-Y6p">
-                                <rect key="frame" x="16" y="549" width="301.66666666666669" height="17"/>
+                                <rect key="frame" x="16" y="558.33333333333337" width="301.66666666666669" height="17"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구체적인 규칙의 경우, 직접 적어서 추가할 수 있어요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8TQ-Ij-mfZ">
-                                <rect key="frame" x="16" y="572" width="286" height="17"/>
+                                <rect key="frame" x="16" y="581.33333333333337" width="286" height="17"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iL4-8C-kXs">
+                                <rect key="frame" x="306.33333333333331" y="519.33333333333337" width="72.666666666666686" height="31"/>
+                                <color key="tintColor" name="mainColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="규칙선택"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="규칙선택">
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="Pretendard-Bold"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ruleBtnClicked:" destination="3Vj-t0-zO4" eventType="touchUpInside" id="WgF-jQ-EID"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9o1-3a-sGT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -892,6 +911,7 @@
                             <constraint firstItem="w8X-2n-Pj2" firstAttribute="leading" secondItem="nH5-da-slg" secondAttribute="leading" id="ZMd-Cs-dIy"/>
                             <constraint firstItem="q9c-S7-L6U" firstAttribute="top" secondItem="kEM-Vp-nZa" secondAttribute="bottom" constant="32" id="cCE-2o-1A6"/>
                             <constraint firstItem="D3A-9R-wn7" firstAttribute="centerX" secondItem="9o1-3a-sGT" secondAttribute="centerX" id="dRD-ht-geD"/>
+                            <constraint firstItem="iL4-8C-kXs" firstAttribute="top" secondItem="hGE-Mf-Soc" secondAttribute="top" id="f0t-Qz-Isi"/>
                             <constraint firstItem="s5s-uA-dbz" firstAttribute="leading" secondItem="9o1-3a-sGT" secondAttribute="leading" constant="50" id="flA-oY-boJ"/>
                             <constraint firstItem="m8w-1H-h77" firstAttribute="top" secondItem="VJW-s5-Nm5" secondAttribute="top" id="iER-4Y-Tkn"/>
                             <constraint firstItem="sgp-Yz-Sej" firstAttribute="leading" secondItem="q9c-S7-L6U" secondAttribute="leading" id="jOd-aB-Ict"/>
@@ -901,8 +921,10 @@
                             <constraint firstItem="kEM-Vp-nZa" firstAttribute="leading" secondItem="p7m-aK-1zV" secondAttribute="leading" id="lOO-JO-D8G"/>
                             <constraint firstItem="s5s-uA-dbz" firstAttribute="top" secondItem="D3A-9R-wn7" secondAttribute="bottom" constant="20" id="uIM-C0-MG3"/>
                             <constraint firstItem="m8w-1H-h77" firstAttribute="bottom" secondItem="VJW-s5-Nm5" secondAttribute="bottom" id="vqk-9J-IR7"/>
+                            <constraint firstItem="iL4-8C-kXs" firstAttribute="bottom" secondItem="hGE-Mf-Soc" secondAttribute="bottom" id="wJK-cm-gLb"/>
                             <constraint firstItem="JqA-6d-Y6p" firstAttribute="top" secondItem="aO4-iY-Irh" secondAttribute="bottom" constant="8" id="wPJ-Wu-KF7"/>
                             <constraint firstItem="HIR-WN-qcl" firstAttribute="bottom" secondItem="q9c-S7-L6U" secondAttribute="bottom" id="xfK-Oh-Yk5"/>
+                            <constraint firstItem="9o1-3a-sGT" firstAttribute="trailing" secondItem="iL4-8C-kXs" secondAttribute="trailing" constant="16" id="zWL-cs-Wa5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pgP-sQ-xx1"/>
@@ -927,7 +949,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjn-bK-fpp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1706" y="4"/>
+            <point key="canvasLocation" x="1704.5801526717557" y="3.5211267605633805"/>
         </scene>
         <!--Register Todo Controller-->
         <scene sceneID="E7l-Yd-hQl">
