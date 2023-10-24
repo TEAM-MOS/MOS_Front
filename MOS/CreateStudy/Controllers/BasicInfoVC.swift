@@ -26,6 +26,8 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var startDate: UIButton!
     @IBOutlet weak var endDate: UIButton!
     // 스터디명 저장 변수
+    @IBOutlet weak var placeSegment: UISegmentedControl!
+    @IBOutlet weak var placeTextField: UITextField!
     var studyTitleText: String?
     // 추구하는 스터디 분위기 저장 변수
     var studyMood: String?
@@ -62,6 +64,16 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
         
         // 초기 MaxMemberNum 설정
         MaxMemberNum.text = String(maxMemberCount)
+    }
+
+
+    @IBAction func placeSegmentValueChanged(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 1 {
+            // 선택된 세그먼트가 0일 때 (온라인 버튼일 때)
+            placeTextField.isHidden = true // 숨김
+        } else {
+            placeTextField.isHidden = false // 다른 경우에는 보임
+        }
     }
     
     @IBAction func startDateButton(_ sender: UIButton) {

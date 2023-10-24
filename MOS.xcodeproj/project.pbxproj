@@ -49,6 +49,7 @@
 		5A3FE53D2AA3A7B5009E7E37 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3FE53C2AA3A7B5009E7E37 /* UIColor.swift */; };
 		5A444B6E2A2789DC0070137A /* StudyInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A444B6D2A2789DC0070137A /* StudyInputView.xib */; };
 		5A444B732A278B590070137A /* StudyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A444B722A278B590070137A /* StudyInputView.swift */; };
+		5A56B1FE2AE8184900DA8CF6 /* DetailInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56B1FD2AE8184900DA8CF6 /* DetailInfoVC.swift */; };
 		5A67766B2A1E1ECF00F1D3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A67766A2A1E1ECF00F1D3DB /* Assets.xcassets */; };
 		5A6776B62A2269B600F1D3DB /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776AD2A2269B600F1D3DB /* Pretendard-Bold.ttf */; };
 		5A6776B72A2269B600F1D3DB /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776AE2A2269B600F1D3DB /* Pretendard-Medium.ttf */; };
@@ -133,6 +134,7 @@
 		5A3FE53C2AA3A7B5009E7E37 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		5A444B6D2A2789DC0070137A /* StudyInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudyInputView.xib; sourceTree = "<group>"; };
 		5A444B722A278B590070137A /* StudyInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyInputView.swift; sourceTree = "<group>"; };
+		5A56B1FD2AE8184900DA8CF6 /* DetailInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoVC.swift; sourceTree = "<group>"; };
 		5A67766A2A1E1ECF00F1D3DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A6776AD2A2269B600F1D3DB /* Pretendard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.ttf"; sourceTree = "<group>"; };
 		5A6776AE2A2269B600F1D3DB /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.ttf"; sourceTree = "<group>"; };
@@ -488,6 +490,7 @@
 				5ADD7C572AD7261F0093661A /* Todo.swift */,
 				2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */,
 				5ADD7C592AD72F580093661A /* CheckTableViewCell.swift */,
+				5A56B1FD2AE8184900DA8CF6 /* DetailInfoVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -707,6 +710,7 @@
 				5A7AA0D12A41BDCA0087DE3C /* PagingViewController.swift in Sources */,
 				5AC619B42A19E5BD00966219 /* SurveyVC.swift in Sources */,
 				2F37F4C82ADEBE9B005BB63A /* PopUpActionViewController.swift in Sources */,
+				5A56B1FE2AE8184900DA8CF6 /* DetailInfoVC.swift in Sources */,
 				2FB095862A2631910035FB78 /* DeviceGroup.swift in Sources */,
 				F304A1412A420FF90066036B /* StudyInfoTodoViewController.swift in Sources */,
 				2F20E2CC2ADFD26300A943C7 /* LoginViewController.swift in Sources */,
