@@ -36,7 +36,13 @@ class ChooseCategoryVC: UIViewController{
         @IBAction func categoryButtonTapped(_ sender: UIButton) {
             // 선택한 카테고리 번호 저장
             selectedCategory = sender.tag
-            performSegue(withIdentifier: "step2", sender: nil)
+            // Storyboard에서 "BasicInfoVC"의 식별자에 해당하는 뷰 컨트롤러를 가져옵니다.
+            if let basicInfoVC = storyboard?.instantiateViewController(withIdentifier: "BasicInfoVC") as? BasicInfoVC {
+                // 선택한 카테고리 번호를 다음 뷰 컨트롤러에 전달
+                basicInfoVC.selectedCategory = selectedCategory
+                // 모달로 다음 뷰 컨트롤러를 표시합니다.
+                present(basicInfoVC, animated: false, completion: nil)
+            }
         }
     
     // 세그웨이 실행 전에 데이터를 전달

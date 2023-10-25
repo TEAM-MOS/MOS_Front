@@ -10,7 +10,7 @@ import UIKit
 import DatePicker
 
 class BasicInfoVC: UIViewController,UITextFieldDelegate{
-    
+
     @IBOutlet weak var studyTitle: UITextField!
     @IBOutlet weak var firstMood: UIView!
     @IBOutlet weak var secondMood: UIView!
@@ -83,6 +83,7 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
             placeTextField.isHidden = false // 다른 경우에는 보임
         }
     }
+    
     
     @IBAction func startDateButton(_ sender: UIButton) {
         let minDate = DatePickerHelper.shared.dateFrom(day: 18, month: 08, year: 1990)!
