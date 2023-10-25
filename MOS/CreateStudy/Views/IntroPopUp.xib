@@ -20,7 +20,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroPopUp" customModule="MOS" customModuleProvider="target">
             <connections>
+                <outlet property="contentview" destination="tJ3-sX-PDJ" id="l8s-cx-LJ5"/>
                 <outlet property="introPopUpCloseBtn" destination="fPa-oq-yWB" id="SGa-qz-eKa"/>
+                <outlet property="rootview" destination="El5-fm-Pya" id="aMA-Ny-QGR"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

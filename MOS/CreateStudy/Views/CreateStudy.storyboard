@@ -857,14 +857,29 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iL4-8C-kXs">
-                                                <rect key="frame" x="307.33333333333331" y="460.33333333333337" width="72.666666666666686" height="31"/>
+                                                <rect key="frame" x="304" y="460.33333333333337" width="76" height="31"/>
+                                                <color key="backgroundColor" name="subColor"/>
                                                 <color key="tintColor" name="mainColor"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="규칙선택"/>
-                                                <buttonConfiguration key="configuration" style="tinted">
+                                                <buttonConfiguration key="configuration" style="plain">
                                                     <attributedString key="attributedTitle">
-                                                        <fragment content="규칙선택">
+                                                        <fragment content="규칙">
                                                             <attributes>
+                                                                <color key="NSColor" red="0.92549026010000002" green="0.3803921938" blue="0.35686278339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <font key="NSFont" size="14" name="Pretendard-Bold"/>
+                                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.92549026010000002" green="0.3803921938" blue="0.35686278339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="선택">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.92549026010000002" green="0.3803921938" blue="0.35686278339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <font key="NSFont" size="14" name="Pretendard-Bold"/>
                                                                 <font key="NSOriginalFont" size="12" name="Helvetica"/>
                                                             </attributes>
@@ -902,16 +917,31 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaO-kN-VEp">
-                                                <rect key="frame" x="307.33333333333331" y="715.33333333333337" width="72.666666666666686" height="31"/>
+                                                <rect key="frame" x="304.33333333333331" y="715.33333333333337" width="75.666666666666686" height="31"/>
+                                                <color key="backgroundColor" name="subColor"/>
                                                 <color key="tintColor" name="mainColor"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="규칙선택"/>
-                                                <buttonConfiguration key="configuration" style="tinted">
+                                                <buttonConfiguration key="configuration" style="plain">
                                                     <attributedString key="attributedTitle">
-                                                        <fragment content="규칙선택">
+                                                        <fragment content="예시">
                                                             <attributes>
                                                                 <font key="NSFont" size="14" name="Pretendard-Bold"/>
                                                                 <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Pretendard-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="보기">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="Pretendard-Bold"/>
+                                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -1084,6 +1114,8 @@
                         <outlet property="TueLabel" destination="BUC-HG-wF4" id="EdI-CV-yma"/>
                         <outlet property="TueView" destination="nre-Pi-xyJ" id="UJ6-Nd-6qb"/>
                         <outlet property="friView" destination="gCW-6a-njt" id="yrl-Cn-edb"/>
+                        <outlet property="popUpView1" destination="iL4-8C-kXs" id="Whl-0i-9ky"/>
+                        <outlet property="popUpView2" destination="xaO-kN-VEp" id="4fc-B1-2Ua"/>
                         <outlet property="questionTextView" destination="dJf-Sa-ifM" id="H53-oj-1lw"/>
                         <outlet property="satLabel" destination="ekl-Sp-qP3" id="U7a-Nr-Kxi"/>
                         <outlet property="satView" destination="GrA-iN-tAV" id="BW8-VO-YG5"/>

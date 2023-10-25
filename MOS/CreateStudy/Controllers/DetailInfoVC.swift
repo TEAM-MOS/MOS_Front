@@ -12,6 +12,8 @@ class DetsilInfoVC: UIViewController {
     var rulePopUp: RulePopUp!
     var introPopUp: IntroPopUp!
 
+    @IBOutlet weak var popUpView2: UIButton!
+    @IBOutlet weak var popUpView1: UIButton!
     @IBOutlet weak var sunLabel: UILabel!
     @IBOutlet weak var satLabel: UILabel!
     @IBOutlet weak var FriLabel: UILabel!
@@ -38,6 +40,9 @@ class DetsilInfoVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        popUpView1.layer.cornerRadius = 4
+        popUpView2.layer.cornerRadius = 4
         
         studyRuleTextField.layer.cornerRadius = 8
         studyRuleTextField.layer.borderColor = UIColor(hex: "F2F2F2").cgColor

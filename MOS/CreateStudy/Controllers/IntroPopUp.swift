@@ -10,6 +10,8 @@ import UIKit
 
 class IntroPopUp: UIView {
     
+    @IBOutlet weak var rootview: UIView!
+    @IBOutlet weak var contentview: UIView!
     @IBOutlet weak var introPopUpCloseBtn: UIButton!
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -18,6 +20,9 @@ class IntroPopUp: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         xibSetup(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
+        
+        rootview.layer.cornerRadius = 16
+        contentview.layer.cornerRadius = 8
 
     }
                     
