@@ -11,6 +11,8 @@ target 'MOS' do
   pod 'LZViewPager'
   pod 'DatePicker', '~> 1.3.0'
   pod 'Fastis', '~> 2.0'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 
 post_install do |installer|
     installer.generated_projects.each do |project|

@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.8.0)
   - DatePicker (1.3.1):
     - Extended
   - DeviceKit (4.9.0)
@@ -12,16 +13,20 @@ PODS:
     - SnapKit (~> 5.6.0)
   - PrettyCards (1.0.5)
   - SnapKit (5.6.0)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
+  - Alamofire
   - DatePicker (~> 1.3.0)
   - DeviceKit (~> 4.0)
   - DropDown
   - Fastis (~> 2.0)
   - LZViewPager
+  - SwiftyJSON
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - DatePicker
     - DeviceKit
     - DropDown
@@ -31,8 +36,10 @@ SPEC REPOS:
     - LZViewPager
     - PrettyCards
     - SnapKit
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
   DatePicker: 05ddbd2b57d00ce6f44c1f0611ced32f948d33a6
   DeviceKit: 847709bf70b78fd9ab765bd571fb9f5f815c3fc1
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
@@ -42,7 +49,8 @@ SPEC CHECKSUMS:
   LZViewPager: 832bd177210060e1282b67aa1e9cd201ded67a5b
   PrettyCards: 2b078f2396a42f7f0c4d6624b875149dcb49d3ed
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 9ac7386fc46f9d973062d788359823087e21c498
+PODFILE CHECKSUM: f66aa15422a1a1784672dea18942bc06d74d7cc3
 
 COCOAPODS: 1.12.1
