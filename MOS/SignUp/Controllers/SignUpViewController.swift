@@ -10,11 +10,14 @@ import UIKit
 @available(iOS 15.0, *)
 class SignUpViewController: UIViewController, UITextFieldDelegate, PopUpDelegate {
     
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var checkPasswordTextField: UITextField!
     
     @IBOutlet weak var signUpButton: UIButton!
+    
+    var ResultModel: SignUpResultModel!
     
     
     override func viewDidLoad() {
@@ -167,14 +170,29 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, PopUpDelegate
         self.checkPasswordTextField.addTarget(self, action: #selector(self.TextFieldDidChanged(_:)), for: .editingChanged)
     }
     
-    @IBAction func emailConfirmButtonDidTapped(_ sender: Any) {
-        PopUpActionViewController.showPopup(parentVC: self)
-    }
     
     func handleAction(action: Bool) {
         if (action) {
             // API post
           }
        }
+    
+    
+    @IBAction func emailConfirmButtonDidTapped(_ sender: Any) {
+        PopUpActionViewController.showPopup(parentVC: self)
+    }
+    
+
+    @IBAction func signUpPost(_ sender: Any) {
+        // API post
+        let parmeterData = SignUpModel(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
+        
+        print(parmeterData)
+        
+        SignUpPost.instance.SignUpPosting(parameters: parmeterData) { result in self.ResultModel = result }
+        
+        print("회원가입 성공!")
+    }
+    
     
 }

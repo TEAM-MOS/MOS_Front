@@ -9,6 +9,8 @@ target 'MOS' do
   pod 'DeviceKit', '~> 4.0'
   pod 'DropDown'
   pod 'LZViewPager'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 
 post_install do |installer|
     installer.generated_projects.each do |project|

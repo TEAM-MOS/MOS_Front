@@ -21,7 +21,7 @@
         <!--Login View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="LoginViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="LoginVC" storyboardIdentifier="LoginVC" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,7 +143,6 @@
         <!--비밀번호 찾기-->
         <scene sceneID="gob-zx-MAa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LfG-oL-O8g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController restorationIdentifier="FindPasswordVC" storyboardIdentifier="FindPasswordVC" id="C2r-7m-UFt" customClass="FindPasswordViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g5u-xb-4DX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -196,6 +195,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="비밀번호 찾기" id="D5G-Ly-9vR"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LfG-oL-O8g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1711" y="-35"/>
         </scene>
