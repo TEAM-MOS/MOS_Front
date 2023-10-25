@@ -26,9 +26,11 @@
 		2F37F4C62ADEBE2B005BB63A /* CustomView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F37F4C52ADEBE2B005BB63A /* CustomView.storyboard */; };
 		2F37F4C82ADEBE9B005BB63A /* PopUpActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F37F4C72ADEBE9B005BB63A /* PopUpActionViewController.swift */; };
 		2F5BA7622A9B278200E9A444 /* RecentSearchLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BA7612A9B278200E9A444 /* RecentSearchLayout.swift */; };
+		2F707F332AE97FF600FB1F82 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F707F322AE97FF600FB1F82 /* APIConstants.swift */; };
 		2F8270E02A8F7B9100CE7BE1 /* StudyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8270DF2A8F7B9100CE7BE1 /* StudyListViewController.swift */; };
 		2F8270E22A8F7EEB00CE7BE1 /* StudyListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8270E12A8F7EEB00CE7BE1 /* StudyListModel.swift */; };
 		2F8270E62A8F808000CE7BE1 /* StudyListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8270E52A8F808000CE7BE1 /* StudyListCollectionViewCell.swift */; };
+		2F8E489E2AE0F3B6005A6C6E /* SignUpPostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8E489D2AE0F3B6005A6C6E /* SignUpPostAPI.swift */; };
 		2F9DAF532A3222A5007CA960 /* StudyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9DAF522A3222A5007CA960 /* StudyDetailViewController.swift */; };
 		2F9DAF552A3222B9007CA960 /* Study.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DAF542A3222B9007CA960 /* Study.storyboard */; };
 		2FA142762A149024006AA91B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA142752A149024006AA91B /* AppDelegate.swift */; };
@@ -111,9 +113,11 @@
 		2F37F4C52ADEBE2B005BB63A /* CustomView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomView.storyboard; sourceTree = "<group>"; };
 		2F37F4C72ADEBE9B005BB63A /* PopUpActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpActionViewController.swift; sourceTree = "<group>"; };
 		2F5BA7612A9B278200E9A444 /* RecentSearchLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchLayout.swift; sourceTree = "<group>"; };
+		2F707F322AE97FF600FB1F82 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		2F8270DF2A8F7B9100CE7BE1 /* StudyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListViewController.swift; sourceTree = "<group>"; };
 		2F8270E12A8F7EEB00CE7BE1 /* StudyListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListModel.swift; sourceTree = "<group>"; };
 		2F8270E52A8F808000CE7BE1 /* StudyListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F8E489D2AE0F3B6005A6C6E /* SignUpPostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPostAPI.swift; sourceTree = "<group>"; };
 		2F9DAF522A3222A5007CA960 /* StudyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyDetailViewController.swift; sourceTree = "<group>"; };
 		2F9DAF542A3222B9007CA960 /* Study.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Study.storyboard; sourceTree = "<group>"; };
 		2FA142722A149024006AA91B /* MOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -259,6 +263,22 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		2F707F312AE97FE300FB1F82 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2F707F322AE97FF600FB1F82 /* APIConstants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2F8E489C2AE0F3A0005A6C6E /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				2F8E489D2AE0F3B6005A6C6E /* SignUpPostAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
 		2FA142692A149024006AA91B = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +320,8 @@
 				2F20E2C62ADFD20E00A943C7 /* Login */,
 				2FC177AD2AD7DAB000873B50 /* SignUp */,
 				2F553F5D2AD7BD15005FDEAB /* Search */,
+				2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */,
+				2F707F312AE97FE300FB1F82 /* Network */,
 				2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */,
 				2F28E6842A1DDAD300021E72 /* MyPage.storyboard */,
 				2F28E6862A1DDADE00021E72 /* MyPageViewController.swift */,
@@ -364,6 +386,7 @@
 		2FC177AD2AD7DAB000873B50 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				2F8E489C2AE0F3A0005A6C6E /* APIs */,
 				2FC177AE2AD7DACF00873B50 /* Views */,
 				2FC177AF2AD7DAD500873B50 /* Controllers */,
 			);
