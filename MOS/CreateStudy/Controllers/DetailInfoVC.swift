@@ -10,6 +10,7 @@ import UIKit
 class DetsilInfoVC: UIViewController {
     
     var rulePopUp: RulePopUp!
+    var introPopUp: IntroPopUp!
 
     @IBOutlet weak var sunLabel: UILabel!
     @IBOutlet weak var satLabel: UILabel!
@@ -26,7 +27,9 @@ class DetsilInfoVC: UIViewController {
     @IBOutlet weak var TueView: UIView!
     @IBOutlet weak var MonView: UIView!
     @IBOutlet weak var studyRuleTextField: UITextView!
+    @IBOutlet weak var studyIntroduceTextView: UITextView!
     
+    @IBOutlet weak var questionTextView: UITextView!
     // Dictionary to store the tap count for each view
     var tapCount: [UIView: Int] = [:]
     
@@ -37,9 +40,19 @@ class DetsilInfoVC: UIViewController {
         super.viewDidLoad()
         
         studyRuleTextField.layer.cornerRadius = 8
-        studyRuleTextField.layer.borderColor = UIColor(hex: "E8E8E8").cgColor
-        studyRuleTextField.layer.backgroundColor = UIColor(hex: "FFFFFF").cgColor
+        studyRuleTextField.layer.borderColor = UIColor(hex: "F2F2F2").cgColor
+        studyRuleTextField.layer.backgroundColor = UIColor(hex: "F2F2F2").cgColor
         studyRuleTextField.layer.borderWidth = 1
+        
+        studyIntroduceTextView.layer.cornerRadius = 8
+        studyIntroduceTextView.layer.borderColor = UIColor(hex: "F2F2F2").cgColor
+        studyIntroduceTextView.layer.backgroundColor = UIColor(hex: "F2F2F2").cgColor
+        studyIntroduceTextView.layer.borderWidth = 1
+        
+        questionTextView.layer.cornerRadius = 8
+        questionTextView.layer.borderColor = UIColor(hex: "F2F2F2").cgColor
+        questionTextView.layer.backgroundColor = UIColor(hex: "F2F2F2").cgColor
+        questionTextView.layer.borderWidth = 1
         
         
         setupWeekView(sunView)
@@ -145,6 +158,16 @@ class DetsilInfoVC: UIViewController {
     @objc func closeBtnTapped(){
         self.rulePopUp.removeFromSuperview()
         updateStudyRuleTextField()
+    }
+    
+    @IBAction func inroBtnClicked(_ sender: Any){
+        self.introPopUp = IntroPopUp(frame: self.view.frame)
+        self.introPopUp.introPopUpCloseBtn.addTarget(self, action: #selector(closeinroBtnTapped), for:.touchUpInside)
+        self.view.addSubview(introPopUp)
+    }
+    
+    @objc func closeinroBtnTapped(){
+        self.introPopUp.removeFromSuperview()
     }
     
     func updateStudyRuleTextField() {

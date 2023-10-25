@@ -68,6 +68,8 @@
 		5A7AA0D12A41BDCA0087DE3C /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */; };
 		5A7AA0D42A41C1A10087DE3C /* AllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D32A41C1A10087DE3C /* AllViewController.swift */; };
 		5A7AA0D62A41C1DC0087DE3C /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D52A41C1DC0087DE3C /* AnalysisViewController.swift */; };
+		5AA0154A2AE974320062258C /* IntroPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AA015492AE974320062258C /* IntroPopUp.xib */; };
+		5AA0154C2AE978CA0062258C /* IntroPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0154B2AE978CA0062258C /* IntroPopUp.swift */; };
 		5AC619912A170A4000966219 /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC619902A170A4000966219 /* Survey.storyboard */; };
 		5AC619B42A19E5BD00966219 /* SurveyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC619B32A19E5BD00966219 /* SurveyVC.swift */; };
 		5AD249612A406C4000A7BBAC /* SurveyResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD249602A406C4000A7BBAC /* SurveyResultVC.swift */; };
@@ -155,6 +157,8 @@
 		5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		5A7AA0D32A41C1A10087DE3C /* AllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllViewController.swift; sourceTree = "<group>"; };
 		5A7AA0D52A41C1DC0087DE3C /* AnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
+		5AA015492AE974320062258C /* IntroPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroPopUp.xib; sourceTree = "<group>"; };
+		5AA0154B2AE978CA0062258C /* IntroPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPopUp.swift; sourceTree = "<group>"; };
 		5AC619902A170A4000966219 /* Survey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
 		5AC619B32A19E5BD00966219 /* SurveyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyVC.swift; sourceTree = "<group>"; };
 		5AD249602A406C4000A7BBAC /* SurveyResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyResultVC.swift; sourceTree = "<group>"; };
@@ -483,6 +487,7 @@
 			children = (
 				2F28E68A2A1DDFBE00021E72 /* CreateStudy.storyboard */,
 				5A0E75A32AE832DE00476BCE /* RulePopUp.xib */,
+				5AA015492AE974320062258C /* IntroPopUp.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -497,6 +502,7 @@
 				5ADD7C592AD72F580093661A /* CheckTableViewCell.swift */,
 				5A56B1FD2AE8184900DA8CF6 /* DetailInfoVC.swift */,
 				5A0E75A12AE82A6B00476BCE /* RulePopUp.swift */,
+				5AA0154B2AE978CA0062258C /* IntroPopUp.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -612,6 +618,7 @@
 				2F20E2CA2ADFD24E00A943C7 /* Login.storyboard in Resources */,
 				2F28E6852A1DDAD300021E72 /* MyPage.storyboard in Resources */,
 				2F2B3E252A1DBE74008B0506 /* TabMenu.storyboard in Resources */,
+				5AA0154A2AE974320062258C /* IntroPopUp.xib in Resources */,
 				5A6776BE2A2269B600F1D3DB /* Pretendard-Black.ttf in Resources */,
 				2FC177B12AD7DB2000873B50 /* SignUp.storyboard in Resources */,
 				2F28E67D2A1DD9BA00021E72 /* Search.storyboard in Resources */,
@@ -685,6 +692,7 @@
 				5A6EE3952A8AAE90000E841D /* SurveyStartVC.swift in Sources */,
 				5ADD7C582AD7261F0093661A /* Todo.swift in Sources */,
 				2FF25FE02A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift in Sources */,
+				5AA0154C2AE978CA0062258C /* IntroPopUp.swift in Sources */,
 				2F28E67F2A1DD9C700021E72 /* SearchViewController.swift in Sources */,
 				2FFCFC442A1DD2B200E2AC95 /* HomeViewController.swift in Sources */,
 				2F8270E22A8F7EEB00CE7BE1 /* StudyListModel.swift in Sources */,

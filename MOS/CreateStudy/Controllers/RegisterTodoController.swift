@@ -12,9 +12,7 @@ class RegisterTodoController: UIViewController{
     
     @IBOutlet weak var addCellBtn: UIButton!
     var todos = [
-        Todo(title: "Make vanilla pudding."),
-        Todo(title: "Put pudding in a mayo jar."),
-        Todo(title: "Eat it in a public place."),
+        Todo(title: "두근두근 첫 스터디 날!"),
     ]
     
     
