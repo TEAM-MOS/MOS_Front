@@ -24,13 +24,16 @@ class RulePopUp: UIView {
     @IBOutlet weak var sixthRuleView: UIView!
     @IBOutlet weak var closeBtn: UIButton!
     
+    // 이전에 선택한 뷰를 추적하기 위한 변수
+    var selectedViews: [UIView] = []
+    
     required init?(coder : NSCoder) {
         super.init(coder: coder)
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        xibSetup(frame: CGRect(x:0, y:0, width: frame.width, height: frame.height))
+        xibSetup(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
         
         setupView(firstRuleView, with: firstRuleCheckBox)
         setupView(secondRuleView, with: secondRuleCheckBox)
@@ -49,34 +52,30 @@ class RulePopUp: UIView {
     }
     
     func addTapGesture(to view: UIView, with checkBox: UIImageView) {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-        view.addGestureRecognizer(tapGesture)
-        view.tag = 0
-        checkBox.tag = view.tag
-    }
-    
-    @objc func handleTap(_ sender: UITapGestureRecognizer) {
-        if let tappedView = sender.view, let mood = tappedView.accessibilityLabel {
-            resetCheckBoxes()
-            tappedView.layer.borderColor = UIColor(red: 255/255, green: 231/255, blue: 231/255, alpha: 1).cgColor
-            tappedView.layer.backgroundColor = UIColor(red: 255/255, green: 231/255, blue: 231/255, alpha: 1).cgColor
-            
-            if let checkBox = tappedView.subviews.compactMap({ $0 as? UIImageView }).first {
-                checkBox.image = UIImage(named: "createStudy_clicked")
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+            view.addGestureRecognizer(tapGesture)
+            view.tag = 0
+            checkBox.tag = view.tag
+            checkBox.image = UIImage(named: "createStudy_unclicked") // 초기 이미지 설정
+        }
+
+        @objc func handleTap(_ sender: UITapGestureRecognizer) {
+            if let tappedView = sender.view {
+                if let checkBox = tappedView.subviews.compactMap({ $0 as? UIImageView }).first {
+                    if checkBox.image == UIImage(named: "createStudy_clicked") {
+                        // 이미 선택된 경우 원래 스타일과 이미지로 복구
+                        tappedView.layer.borderColor = UIColor(hex: "EDEDED").cgColor
+                        tappedView.layer.backgroundColor = UIColor(hex: "FFFFFF").cgColor
+                        checkBox.image = UIImage(named: "createStudy_unclicked")
+                    } else {
+                        // 선택되지 않은 경우 스타일 및 이미지 변경
+                        tappedView.layer.borderColor = UIColor(red: 255/255, green: 231/255, blue: 231/255, alpha: 1).cgColor
+                        tappedView.layer.backgroundColor = UIColor(red: 255/255, green: 231/255, blue: 231/255, alpha: 1).cgColor
+                        checkBox.image = UIImage(named: "createStudy_clicked")
+                    }
+                }
             }
         }
-    }
-    
-    func resetCheckBoxes() {
-        for view in [firstRuleView, secondRuleView, thirdRuleView, fourthRuleView, fifthRuleView, sixthRuleView] {
-            view?.layer.borderColor = UIColor(red: 237/255, green: 237/255, blue: 237/255, alpha: 1).cgColor
-            view?.layer.backgroundColor = UIColor(hex: "FFFFFF").cgColor
-        }
-        
-        for checkBox in [firstRuleCheckBox, secondRuleCheckBox, thirdRuleCheckBox, fourthRuleCheckBox,fifthRuleCheckBox, sixthRuleCheckBox] {
-            checkBox?.image = UIImage(named: "createStudy_unclicked")
-        }
-    }
     
     func setupView(_ view: UIView, with checkBox: UIImageView) {
         view.layer.borderWidth = 1
@@ -86,16 +85,27 @@ class RulePopUp: UIView {
         checkBox.image = UIImage(named: "createStudy_unclicked")
     }
     
-    func xibSetup(frame: CGRect){
+    func xibSetup(frame: CGRect) {
         let view = loadXib()
-        view.frame=frame
+        view.frame = frame
         addSubview(view)
     }
     
-    func loadXib() -> UIView{
+    func loadXib() -> UIView {
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: "RulePopUp", bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil).first as? UIView
         return view!
     }
 }
+
+// 배열에서 특정 객체 제거하는 확장 함수
+extension Array where Element: Equatable {
+    mutating func remove(object: Element) {
+        if let index = firstIndex(of: object) {
+            remove(at: index)
+        }
+    }
+}
+
+
