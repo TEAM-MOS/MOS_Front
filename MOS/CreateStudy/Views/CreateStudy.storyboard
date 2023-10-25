@@ -55,7 +55,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Png-5h-UbK">
                                                 <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="130.66666666666666"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxl-t6-jcr">
+                                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxl-t6-jcr">
                                                         <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="104.33333333333333"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" priority="250" constant="88" id="BId-Ip-IZ3"/>
@@ -65,6 +65,7 @@
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="createStudy_category1"/>
                                                         <connections>
+                                                            <action selector="categoryButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1mx-N5-Big"/>
                                                             <segue destination="81f-aj-SMe" kind="show" identifier="step2" id="fzn-oB-8LR"/>
                                                         </connections>
                                                     </button>
@@ -79,10 +80,13 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="xfW-oV-C61">
                                                 <rect key="frame" x="120.33333333333334" y="0.0" width="104.33333333333334" height="130.66666666666666"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tro-JN-gc2">
+                                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tro-JN-gc2">
                                                         <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="104.33333333333333"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="createStudy_category2"/>
+                                                        <connections>
+                                                            <action selector="categoryButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0MF-9p-g6G"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시사 PT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KU-oC-la1">
                                                         <rect key="frame" x="0.0" y="116.33333333333331" width="104.33333333333333" height="14.333333333333343"/>
@@ -95,10 +99,13 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Y5w-zp-Q8I">
                                                 <rect key="frame" x="240.66666666666671" y="0.0" width="104.33333333333334" height="130.66666666666666"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g92-mM-uh1">
+                                                    <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g92-mM-uh1">
                                                         <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="104.33333333333333"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="createStudy_category3"/>
+                                                        <connections>
+                                                            <action selector="categoryButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gsM-QQ-6v0"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인/적성" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6b-Oy-MP8">
                                                         <rect key="frame" x="0.0" y="116.33333333333331" width="104.33333333333333" height="14.333333333333343"/>
@@ -116,7 +123,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="gtG-Pf-xHY">
                                                 <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="130.66666666666666"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89v-NZ-uED">
+                                                    <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89v-NZ-uED">
                                                         <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="104.33333333333333"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="89v-NZ-uED" secondAttribute="height" multiplier="1:1" id="1qJ-uf-xoe"/>
@@ -125,6 +132,9 @@
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="createStudy_category4"/>
+                                                        <connections>
+                                                            <action selector="categoryButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iHg-jF-vfn"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자소서" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="084-DO-BkG">
                                                         <rect key="frame" x="0.0" y="116.33333333333331" width="104.33333333333333" height="14.333333333333343"/>
@@ -137,10 +147,13 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Hfm-re-vU2">
                                                 <rect key="frame" x="120.33333333333334" y="0.0" width="104.33333333333334" height="130.66666666666666"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myS-Do-rl9">
+                                                    <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myS-Do-rl9">
                                                         <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="104.33333333333333"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="createStudy_category5"/>
+                                                        <connections>
+                                                            <action selector="categoryButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3ce-tm-wB8"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="면접" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvg-lK-yqS">
                                                         <rect key="frame" x="0.0" y="116.33333333333331" width="104.33333333333333" height="14.333333333333343"/>
@@ -153,10 +166,13 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="opl-89-v96">
                                                 <rect key="frame" x="240.66666666666671" y="0.0" width="104.33333333333334" height="130.66666666666666"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8m-uS-Vaa">
+                                                    <button opaque="NO" tag="6" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8m-uS-Vaa">
                                                         <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="104.33333333333333"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="createStudy_category6"/>
+                                                        <connections>
+                                                            <action selector="categoryButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Wwd-Zu-gj4"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="어학" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lt2-Ag-t7W">
                                                         <rect key="frame" x="0.0" y="116.33333333333331" width="104.33333333333333" height="14.333333333333343"/>
@@ -171,17 +187,11 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스터디 개설" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f39-3e-QLB">
-                                <rect key="frame" x="160" y="71" width="73.333333333333314" height="32"/>
-                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                <rect key="frame" x="160" y="71" width="73" height="32"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_category_back" translatesAutoresizingMaskIntoConstraints="NO" id="i4g-p0-UMR">
-                                <rect key="frame" x="16" y="71" width="32" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="32" id="Ys1-fJ-9mL"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="어떤 스터디를 만들고 싶으세요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpG-3R-VfK">
                                 <rect key="frame" x="24.000000000000014" y="215" width="249.33333333333337" height="24"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
@@ -200,29 +210,46 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7S-lf-L1x">
+                                <rect key="frame" x="16" y="71" width="32" height="32"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ic_home_category_back"/>
+                                <connections>
+                                    <action selector="backBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="owd-wi-yRj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="i4g-p0-UMR" secondAttribute="top" constant="-12" id="2NO-85-yFr"/>
                             <constraint firstItem="Sgj-ji-ghN" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="780-bZ-Q1D"/>
+                            <constraint firstItem="f39-3e-QLB" firstAttribute="top" secondItem="w7S-lf-L1x" secondAttribute="top" id="8WE-YV-oqW"/>
+                            <constraint firstItem="w7S-lf-L1x" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="9Wt-vc-mWi"/>
                             <constraint firstItem="kTq-Ws-qIq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="9jx-As-i0G"/>
+                            <constraint firstItem="f39-3e-QLB" firstAttribute="bottom" secondItem="w7S-lf-L1x" secondAttribute="bottom" id="D1X-1P-GlH"/>
                             <constraint firstItem="Oq1-06-sfg" firstAttribute="leading" secondItem="hpG-3R-VfK" secondAttribute="leading" id="HbI-Dv-WDA"/>
                             <constraint firstItem="Oq1-06-sfg" firstAttribute="top" secondItem="kTq-Ws-qIq" secondAttribute="bottom" constant="30" id="M2e-ay-BLn"/>
-                            <constraint firstItem="f39-3e-QLB" firstAttribute="top" secondItem="i4g-p0-UMR" secondAttribute="top" id="ZUd-Qa-VjL"/>
                             <constraint firstItem="Sgj-ji-ghN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="bLH-xs-RSZ"/>
                             <constraint firstItem="f39-3e-QLB" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="cfU-wK-JD9"/>
                             <constraint firstItem="hpG-3R-VfK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="d6M-yx-230"/>
                             <constraint firstItem="Sgj-ji-ghN" firstAttribute="top" secondItem="hpG-3R-VfK" secondAttribute="bottom" constant="40" id="dy4-HM-zQI"/>
                             <constraint firstItem="hpG-3R-VfK" firstAttribute="top" secondItem="Oq1-06-sfg" secondAttribute="bottom" constant="8" id="eoi-oE-Qz2"/>
-                            <constraint firstItem="f39-3e-QLB" firstAttribute="bottom" secondItem="i4g-p0-UMR" secondAttribute="bottom" id="i7j-8g-ToV"/>
                             <constraint firstItem="kTq-Ws-qIq" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="ibK-Ku-omE"/>
-                            <constraint firstItem="i4g-p0-UMR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="odv-2e-0Rb"/>
+                            <constraint firstItem="w7S-lf-L1x" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="12" id="v2B-Pz-ymy"/>
                             <constraint firstItem="kTq-Ws-qIq" firstAttribute="top" secondItem="f39-3e-QLB" secondAttribute="bottom" constant="20" id="wqh-Rx-YtZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vpD-I7-36N"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="backBtn" destination="w7S-lf-L1x" id="xWL-9l-zCR"/>
+                        <outlet property="category1Btn" destination="Oxl-t6-jcr" id="dJJ-Bf-2Og"/>
+                        <outlet property="category2Btn" destination="tro-JN-gc2" id="iFc-cu-GBl"/>
+                        <outlet property="category3Btn" destination="g92-mM-uh1" id="B37-CP-ELb"/>
+                        <outlet property="category4Btn" destination="89v-NZ-uED" id="Bix-U5-PMn"/>
+                        <outlet property="category5Btn" destination="myS-Do-rl9" id="eCh-EY-Btv"/>
+                        <outlet property="category6Btn" destination="n8m-uS-Vaa" id="Zis-BG-gLm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

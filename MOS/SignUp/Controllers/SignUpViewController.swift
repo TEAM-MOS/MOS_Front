@@ -17,7 +17,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, PopUpDelegate
     
     @IBOutlet weak var signUpButton: UIButton!
     
-    var ResultModel: SignUpResultModel!
+    //var ResultModel: SignUpResultModel!
     
     
     override func viewDidLoad() {
@@ -184,15 +184,13 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, PopUpDelegate
     
 
     @IBAction func signUpPost(_ sender: Any) {
-        // API post
-        let parmeterData = SignUpModel(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
-        
-        print(parmeterData)
-        
-        SignUpPost.instance.SignUpPosting(parameters: parmeterData) { result in self.ResultModel = result }
-        
-        print("회원가입 성공!")
+//        // API post
+//        let parmeterData = SignUpModel(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
+//
+//        print(parmeterData)
+//
+//        SignUpPost.instance.SignUpPosting(parameters: parmeterData) { result in self.ResultModel = result }
+//
+//        print("회원가입 성공!")
     }
-    
-    
 }
