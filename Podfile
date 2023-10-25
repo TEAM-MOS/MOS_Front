@@ -9,6 +9,8 @@ target 'MOS' do
   pod 'DeviceKit', '~> 4.0'
   pod 'DropDown'
   pod 'LZViewPager'
+  pod 'DatePicker', '~> 1.3.0'
+  pod 'Fastis', '~> 2.0'
   pod 'Alamofire'
   pod 'SwiftyJSON'
 

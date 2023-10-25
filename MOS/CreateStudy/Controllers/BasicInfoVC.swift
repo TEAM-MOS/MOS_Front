@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import DatePicker
 
 class BasicInfoVC: UIViewController,UITextFieldDelegate{
     
@@ -22,15 +23,31 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var memberCountUp: UIButton!
     @IBOutlet weak var memberCountDown: UIButton!
     
+    @IBOutlet weak var startDate: UIButton!
+    @IBOutlet weak var endDate: UIButton!
     // 스터디명 저장 변수
+    @IBOutlet weak var placeSegment: UISegmentedControl!
+    @IBOutlet weak var placeTextField: UITextField!
     var studyTitleText: String?
     // 추구하는 스터디 분위기 저장 변수
     var studyMood: String?
+    // 진행기간 저장 변수
+    var postStartDate: String?
+    var postEndDate: String?
+    
     // MaxMemberNum 변수
     var maxMemberCount: Int = 4
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        startDate.layer.cornerRadius = 8
+        startDate.layer.borderColor = UIColor(hex: "E8E8E8").cgColor
+        startDate.layer.borderWidth = 1
+        endDate.layer.cornerRadius = 8
+        endDate.layer.borderColor = UIColor(hex: "E8E8E8").cgColor
+        endDate.layer.borderWidth = 1
         
         // 추구하는 스터디 분위기 버튼 스타일 설정
         setupView(firstMood, with: firstMoodCheckBox)
@@ -38,9 +55,9 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
         setupView(thirdMood, with: thirdMoodCheckBox)
         
         // 각 뷰에 탭 제스처 추가
-        addTapGesture(to: firstMood, with: firstMoodCheckBox, mood: "Hard")
-        addTapGesture(to: secondMood, with: secondMoodCheckBox, mood: "soso")
-        addTapGesture(to: thirdMood, with: thirdMoodCheckBox, mood: "easy")
+        addTapGesture(to: firstMood, with: firstMoodCheckBox, mood: "빡공모드")
+        addTapGesture(to: secondMood, with: secondMoodCheckBox, mood: "성실모드")
+        addTapGesture(to: thirdMood, with: thirdMoodCheckBox, mood: "해피모드")
         
         // UITextFieldDelegate를 설정
         studyTitle.delegate = self
@@ -48,6 +65,66 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
         // 초기 MaxMemberNum 설정
         MaxMemberNum.text = String(maxMemberCount)
     }
+
+
+    @IBAction func placeSegmentValueChanged(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 1 {
+            // 선택된 세그먼트가 0일 때 (온라인 버튼일 때)
+            placeTextField.isHidden = true // 숨김
+        } else {
+            placeTextField.isHidden = false // 다른 경우에는 보임
+        }
+    }
+    
+    @IBAction func startDateButton(_ sender: UIButton) {
+        let minDate = DatePickerHelper.shared.dateFrom(day: 18, month: 08, year: 1990)!
+        let maxDate = DatePickerHelper.shared.dateFrom(day: 18, month: 08, year: 2030)!
+        let today = Date()
+        // Create picker object
+        let datePicker = DatePicker()
+        // Setup
+        datePicker.setup(beginWith: today, min: minDate, max: maxDate) { (selected, date) in
+            if selected, let selectedDate = date {
+                let toPostDateFormatter = DateFormatter()
+                toPostDateFormatter.dateFormat = "yyyy-MM-dd"
+                let toPostDate = toPostDateFormatter.string(from: selectedDate)
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "  yyyy년 MM월 dd일 부터"
+                let selectedDateString = dateFormatter.string(from: selectedDate)
+                self.startDate.setTitle(selectedDateString, for: .normal)
+                self.postStartDate = toPostDate
+            } else {
+                print("Cancelled")
+            }
+        }
+        // Display
+        datePicker.show(in: self, on: sender)
+    }
+    
+    @IBAction func endDateButton(_ sender: UIButton) {
+        let minDate = DatePickerHelper.shared.dateFrom(day: 18, month: 08, year: 1990)!
+            let maxDate = DatePickerHelper.shared.dateFrom(day: 18, month: 08, year: 2030)!
+            let today = Date()
+            // Create picker object
+            let datePicker = DatePicker()
+            // Setup
+            datePicker.setup(beginWith: today, min: minDate, max: maxDate) { (selected, date) in
+                if selected, let selectedDate = date {
+                    let toPostDateFormatter = DateFormatter()
+                    toPostDateFormatter.dateFormat = "yyyy-MM-dd"
+                    let toPostDate = toPostDateFormatter.string(from: selectedDate)
+                    let dateFormatter = DateFormatter()
+                    dateFormatter.dateFormat = "  yyyy년 MM월 dd일 까지"
+                    let selectedDateString = dateFormatter.string(from: selectedDate)
+                    self.endDate.setTitle(selectedDateString, for: .normal)
+                    self.postEndDate = toPostDate
+                } else {
+                    print("Cancelled")
+                }
+            }
+            // Display
+            datePicker.show(in: self, on: sender)
+        }
     
     func setupView(_ view: UIView, with checkBox: UIImageView) {
         view.layer.borderWidth = 1
