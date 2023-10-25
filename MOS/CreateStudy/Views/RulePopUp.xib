@@ -21,6 +21,19 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RulePopUp" customModule="MOS" customModuleProvider="target">
             <connections>
                 <outlet property="closeBtn" destination="LR2-4z-LAZ" id="HbY-Tr-vZz"/>
+                <outlet property="fifthRuleCheckBox" destination="s59-wg-LLU" id="by0-uI-ooW"/>
+                <outlet property="fifthRuleView" destination="eay-Uc-MIC" id="Hx6-iI-Dmg"/>
+                <outlet property="firstRuleCheckBox" destination="Xpb-5m-ESI" id="47f-nf-7FY"/>
+                <outlet property="firstRuleView" destination="cjD-Bc-PfC" id="UDx-z8-MKz"/>
+                <outlet property="fourthRuleCheckBox" destination="XBD-fE-q7V" id="MtT-og-qha"/>
+                <outlet property="fourthRuleView" destination="KTk-cj-h3p" id="76a-9j-C1D"/>
+                <outlet property="rootView" destination="F3w-Vz-EIA" id="CuU-ps-3jf"/>
+                <outlet property="secondRuleCheckBox" destination="bl4-5i-3KQ" id="78c-TT-gFJ"/>
+                <outlet property="secondRuleView" destination="OQN-fr-vAe" id="een-Ei-Baz"/>
+                <outlet property="sixthRuleCheckBox" destination="qZX-CX-duk" id="kLE-ki-Wf5"/>
+                <outlet property="sixthRuleView" destination="Ni4-nl-rvC" id="KOt-B2-hrQ"/>
+                <outlet property="thirdRuleCheckBox" destination="Mom-rH-4r9" id="csm-hx-Pea"/>
+                <outlet property="thirdRuleView" destination="VPZ-q6-baB" id="WnO-KI-kFm"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
