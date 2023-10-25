@@ -25,7 +25,7 @@ class DetsilInfoVC: UIViewController {
     @IBOutlet weak var wedView: UIView!
     @IBOutlet weak var TueView: UIView!
     @IBOutlet weak var MonView: UIView!
-    @IBOutlet weak var studyRuleTextField: UITextField!
+    @IBOutlet weak var studyRuleTextField: UITextView!
     
     // Dictionary to store the tap count for each view
     var tapCount: [UIView: Int] = [:]
@@ -36,7 +36,12 @@ class DetsilInfoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        studyRuleTextField.layer.cornerRadius = 8
+        studyRuleTextField.layer.borderColor = UIColor(hex: "E8E8E8").cgColor
+        studyRuleTextField.layer.backgroundColor = UIColor(hex: "FFFFFF").cgColor
+        studyRuleTextField.layer.borderWidth = 1
+        
+        
         setupWeekView(sunView)
         setupWeekView(satView)
         setupWeekView(friView)
@@ -44,6 +49,7 @@ class DetsilInfoVC: UIViewController {
         setupWeekView(wedView)
         setupWeekView(TueView)
         setupWeekView(MonView)
+        
         
         // Add tap gesture recognizers to views
         addTapGestureToView(sunView, day: "SUN")
@@ -145,22 +151,22 @@ class DetsilInfoVC: UIViewController {
         let ruleTexts: [String] = rulePopUp.selectedViews.map { view in
                switch view.tag {
                case 0:
-                   return "서로를 존중하고 매너있게 대화를 나눠요."
+                   return "🌟 서로를 존중하고 매너있게 대화를 나눠요."
                case 1:
-                   return "지각시, 지각비를 내야해요."
+                   return "🌟 지각시, 지각비를 내야해요."
                case 2:
-                   return "연애나 친목을 금지해요."
+                   return "🌟 연애나 친목을 금지해요."
                case 3:
-                   return "지스터디에 발표 시, 열심히 준비하신 분은 투표를 통해 당일 모임비에서 제외시켜드려요."
+                   return "🌟 스터디에 발표 시, 열심히 준비하신 분은 투표를 통해 당일 모임비에서 제외시켜드려요."
                case 4:
-                   return "스터디 과제 꼭 해오기. 안해올 경우, 패널티 부여."
+                   return "🌟 스터디 과제 꼭 해오기. 안해올 경우, 패널티 부여."
                case 5:
-                   return "스터디 당일 연락두절 되지 않기."
+                   return "🌟 스터디 당일 연락두절 되지 않기."
                default:
                    return ""
                }
            }
-           studyRuleTextField.text = ruleTexts.joined(separator: "\n")
+           studyRuleTextField.text = ruleTexts.joined(separator: "\n\n")
        }
 
 }
