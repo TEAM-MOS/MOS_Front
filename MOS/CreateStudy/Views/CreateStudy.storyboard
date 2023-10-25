@@ -939,6 +939,7 @@
                         <outlet property="friView" destination="gCW-6a-njt" id="yrl-Cn-edb"/>
                         <outlet property="satLabel" destination="ekl-Sp-qP3" id="U7a-Nr-Kxi"/>
                         <outlet property="satView" destination="GrA-iN-tAV" id="BW8-VO-YG5"/>
+                        <outlet property="studyRuleTextField" destination="H3G-Zo-nR5" id="fYx-JT-vvE"/>
                         <outlet property="sunLabel" destination="tPi-Tu-WCc" id="lbP-9L-AbE"/>
                         <outlet property="sunView" destination="Ala-nL-UbQ" id="jKG-fF-zfk"/>
                         <outlet property="thursLabel" destination="44U-K3-6Im" id="DQD-Fy-pTV"/>
