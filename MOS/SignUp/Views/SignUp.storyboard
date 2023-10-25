@@ -99,6 +99,9 @@
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="signUpPost:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nCA-Lz-P0N"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일을 입력해주세요" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ItL-38-9nE">
                                 <rect key="frame" x="24" y="125.66666666666669" width="345" height="42"/>
