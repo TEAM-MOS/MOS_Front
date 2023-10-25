@@ -73,6 +73,11 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
         // 초기 MaxMemberNum 설정
         MaxMemberNum.text = String(maxMemberCount)
     }
+    
+    @IBAction func backBtnTapped(_ sender: UIButton) {
+        dismiss(animated: false, completion: nil)
+    }
+
 
 
     @IBAction func placeSegmentValueChanged(_ sender: UISegmentedControl) {
