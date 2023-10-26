@@ -186,13 +186,11 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, PopUpDelegate
     @IBAction func signUpPost(_ sender: Any) {
         // API post
         let parmeterData = SignUpModel(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
-        
+
         print(parmeterData)
-        
+
         SignUpPost.instance.SignUpPosting(parameters: parmeterData) { result in self.ResultModel = result }
-        
+
         print("회원가입 성공!")
     }
-    
-    
 }

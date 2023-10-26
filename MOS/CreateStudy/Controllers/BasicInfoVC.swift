@@ -10,7 +10,7 @@ import UIKit
 import DatePicker
 
 class BasicInfoVC: UIViewController,UITextFieldDelegate{
-    
+
     @IBOutlet weak var studyTitle: UITextField!
     @IBOutlet weak var firstMood: UIView!
     @IBOutlet weak var secondMood: UIView!
@@ -28,6 +28,9 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     // 스터디명 저장 변수
     @IBOutlet weak var placeSegment: UISegmentedControl!
     @IBOutlet weak var placeTextField: UITextField!
+    
+    //카테고리 번호를 받아오는 변수
+    var selectedCategory: Int?
     var studyTitleText: String?
     // 추구하는 스터디 분위기 저장 변수
     var studyMood: String?
@@ -41,6 +44,11 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let category = selectedCategory {
+                    print("선택한 카테고리 번호: \(category)")
+                    // 여기에 선택한 카테고리와 관련된 작업을 수행
+                }
         
         startDate.layer.cornerRadius = 8
         startDate.layer.borderColor = UIColor(hex: "E8E8E8").cgColor
@@ -65,6 +73,11 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
         // 초기 MaxMemberNum 설정
         MaxMemberNum.text = String(maxMemberCount)
     }
+    
+    @IBAction func backBtnTapped(_ sender: UIButton) {
+        dismiss(animated: false, completion: nil)
+    }
+
 
 
     @IBAction func placeSegmentValueChanged(_ sender: UISegmentedControl) {
@@ -75,6 +88,7 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
             placeTextField.isHidden = false // 다른 경우에는 보임
         }
     }
+    
     
     @IBAction func startDateButton(_ sender: UIButton) {
         let minDate = DatePickerHelper.shared.dateFrom(day: 18, month: 08, year: 1990)!
