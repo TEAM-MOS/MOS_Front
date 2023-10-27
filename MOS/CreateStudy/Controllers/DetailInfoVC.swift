@@ -7,10 +7,20 @@
 
 import UIKit
 
-class DetsilInfoVC: UIViewController {
+class DetailInfoVC: UIViewController {
     
     var rulePopUp: RulePopUp!
     var introPopUp: IntroPopUp!
+    
+    //이전 화면에서 받아온 값
+    var selectedCategory: Int?
+    var studyTitleText: String?
+    var studyMood: String?
+    var postStartDate: String?
+    var postEndDate: String?
+    var maxMemberCount: Int = 4
+    var isOnline: Bool = false
+    var place: String?
 
     @IBOutlet weak var popUpView2: UIButton!
     @IBOutlet weak var popUpView1: UIButton!
@@ -40,6 +50,16 @@ class DetsilInfoVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // 로그로 변수들의 값 확인
+        print("selectedCategory: \(selectedCategory ?? -1)")
+        print("studyTitleText: \(studyTitleText ?? "N/A")")
+        print("studyMood: \(studyMood ?? "N/A")")
+        print("postStartDate: \(postStartDate ?? "N/A")")
+        print("postEndDate: \(postEndDate ?? "N/A")")
+        print("maxMemberCount: \(maxMemberCount)")
+        print("isOnline: \(isOnline)")
+        print("place: \(place ?? "N/A")")
         
         popUpView1.layer.cornerRadius = 4
         popUpView2.layer.cornerRadius = 4
@@ -163,6 +183,10 @@ class DetsilInfoVC: UIViewController {
     @objc func closeBtnTapped(){
         self.rulePopUp.removeFromSuperview()
         updateStudyRuleTextField()
+    }
+    
+    @IBAction func backBtnTapped(_ sender: UIButton) {
+        dismiss(animated: false, completion: nil)
     }
     
     @IBAction func inroBtnClicked(_ sender: Any){

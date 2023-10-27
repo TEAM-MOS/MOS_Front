@@ -29,21 +29,27 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var placeSegment: UISegmentedControl!
     @IBOutlet weak var placeTextField: UITextField!
     
-    //카테고리 번호를 받아오는 변수
+    
+    // 카테고리 번호를 받아오는 변수
     var selectedCategory: Int?
+    // 스터디명 저장 변수
     var studyTitleText: String?
     // 추구하는 스터디 분위기 저장 변수
     var studyMood: String?
     // 진행기간 저장 변수
     var postStartDate: String?
     var postEndDate: String?
-    
-    // MaxMemberNum 변수
+    // 모집인원 저장 변수
     var maxMemberCount: Int = 4
+    
+    var isOnline: Bool = false
+    
+    var place: String?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        placeTextField.delegate = self
         
         if let category = selectedCategory {
                     print("선택한 카테고리 번호: \(category)")
@@ -83,9 +89,11 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     @IBAction func placeSegmentValueChanged(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 1 {
             // 선택된 세그먼트가 0일 때 (온라인 버튼일 때)
-            placeTextField.isHidden = true // 숨김
+            isOnline = true
+            placeTextField.isHidden = true
         } else {
-            placeTextField.isHidden = false // 다른 경우에는 보임
+            isOnline = false
+            placeTextField.isHidden = false
         }
     }
     
@@ -189,12 +197,23 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
         return updatedText.count <= maxLength
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           textField.resignFirstResponder() // 키보드 닫기
+           return true
+       }
+    
     // 텍스트 필드 입력 종료 시 호출
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == studyTitle {
             // studyTitle TextField에서 입력이 종료될 때 실행할 코드
             if let text = textField.text {
                 studyTitleText = text
+            }
+        }
+        
+        if textField == placeTextField {
+            if let text = textField.text {
+                place = text
             }
         }
     }
@@ -212,4 +231,25 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
             MaxMemberNum.text = String(maxMemberCount)
         }
     }
+    
+    @IBAction func nextButtonTapped(_ sender: UIButton) {
+        
+        placeTextField.resignFirstResponder()
+        
+        if let detailInfoVC = storyboard?.instantiateViewController(withIdentifier: "DetailInfoVC") as? DetailInfoVC {
+                // 변수들을 다음 뷰 컨트롤러에 전달
+                detailInfoVC.selectedCategory = selectedCategory
+                detailInfoVC.studyTitleText = studyTitleText
+                detailInfoVC.studyMood = studyMood
+                detailInfoVC.postStartDate = postStartDate
+                detailInfoVC.postEndDate = postEndDate
+                detailInfoVC.maxMemberCount = maxMemberCount
+                detailInfoVC.isOnline = isOnline
+                detailInfoVC.place = place
+
+                present(detailInfoVC, animated: false, completion: nil)
+            }
+    }
 }
+
+

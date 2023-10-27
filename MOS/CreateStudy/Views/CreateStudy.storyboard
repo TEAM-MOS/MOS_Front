@@ -436,7 +436,7 @@
                                                     <color key="baseBackgroundColor" name="mainColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="3Vj-t0-zO4" kind="show" identifier="step3" id="oXf-FA-1aD"/>
+                                                    <action selector="nextButtonTapped:" destination="81f-aj-SMe" eventType="touchUpInside" id="cr2-Gb-k6j"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*필수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWY-1z-Ih5">
@@ -666,10 +666,10 @@
             </objects>
             <point key="canvasLocation" x="916.79389312977094" y="3.5211267605633805"/>
         </scene>
-        <!--Detsil InfoVC-->
+        <!--DetailInfoVC-->
         <scene sceneID="Ywi-Oj-fn0">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="3Vj-t0-zO4" customClass="DetsilInfoVC" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailInfoVC" title="DetailInfoVC" modalPresentationStyle="fullScreen" id="3Vj-t0-zO4" customClass="DetailInfoVC" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7o6-yX-19e">
                         <rect key="frame" x="0.0" y="0.0" width="396" height="1400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1046,6 +1046,9 @@
                                                 <rect key="frame" x="16" y="12" width="32" height="32"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="ic_home_category_back"/>
+                                                <connections>
+                                                    <action selector="backBtnTapped:" destination="3Vj-t0-zO4" eventType="touchUpInside" id="Gh9-Vu-kuu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
