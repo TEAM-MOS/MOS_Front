@@ -1282,14 +1282,14 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="checked cell" id="BaV-sc-nMd" customClass="CheckTableViewCell" customModule="MOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="361" height="49.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="50" width="361" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BaV-sc-nMd" id="ABJ-H2-7Oa">
-                                            <rect key="frame" x="0.0" y="0.0" width="361" height="49.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gq9-l6-05Y">
-                                                    <rect key="frame" x="323.33333333333331" y="12.000000000000002" width="25.666666666666686" height="25.666666666666671"/>
+                                                    <rect key="frame" x="324" y="12" width="25" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="gq9-l6-05Y" secondAttribute="height" multiplier="1:1" id="GTk-zT-sGz"/>
                                                     </constraints>
@@ -1300,7 +1300,7 @@
                                                     </connections>
                                                 </button>
                                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="내용을 입력해주세요." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5d-et-IQX">
-                                                    <rect key="frame" x="12" y="12.000000000000002" width="299.33333333333331" height="25.666666666666671"/>
+                                                    <rect key="frame" x="12" y="12" width="300" height="25"/>
                                                     <color key="backgroundColor" name="subColor"/>
                                                     <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -1444,6 +1444,9 @@
                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" name="mainColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="gotoHomeBtnTapped:" destination="bCF-X7-LP9" eventType="touchUpInside" id="Ij9-fX-WlU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dge-18-X0U"/>

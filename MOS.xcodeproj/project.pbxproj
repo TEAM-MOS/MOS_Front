@@ -523,11 +523,11 @@
 				5A6AC6EB2AE0399600668492 /* BasicInfoVC.swift */,
 				5A56B1FD2AE8184900DA8CF6 /* DetailInfoVC.swift */,
 				5ADD7C552AD70ADA0093661A /* RegisterTodoVC.swift */,
+				5A76B7B42AEBBE0C00C9BFDE /* FinishVC.swift */,
 				5ADD7C572AD7261F0093661A /* Todo.swift */,
 				5ADD7C592AD72F580093661A /* CheckTableViewCell.swift */,
 				5A0E75A12AE82A6B00476BCE /* RulePopUp.swift */,
 				5AA0154B2AE978CA0062258C /* IntroPopUp.swift */,
-				5A76B7B42AEBBE0C00C9BFDE /* FinishVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

@@ -10,7 +10,7 @@ import UIKit
 import DatePicker
 
 class BasicInfoVC: UIViewController,UITextFieldDelegate{
-
+    
     @IBOutlet weak var onlineBtn4: UIButton!
     @IBOutlet weak var onlineBtn3: UIButton!
     @IBOutlet weak var onlineBtn2: UIButton!
@@ -59,9 +59,9 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
         placeTextField.delegate = self
         
         if let category = selectedCategory {
-                    print("선택한 카테고리 번호: \(category)")
-                    // 여기에 선택한 카테고리와 관련된 작업을 수행
-                }
+            print("선택한 카테고리 번호: \(category)")
+            // 여기에 선택한 카테고리와 관련된 작업을 수행
+        }
         
         startDate.layer.cornerRadius = 8
         startDate.layer.borderColor = UIColor(hex: "E8E8E8").cgColor
@@ -88,11 +88,17 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     }
     
     @IBAction func backBtnTapped(_ sender: UIButton) {
-        dismiss(animated: false, completion: nil)
+        guard let navigationControllers = self.navigationController?.viewControllers else { return }
+        for viewController in navigationControllers {
+            if let previousVC = viewController as? ChooseCategoryVC {
+                self.navigationController?.popToViewController(previousVC, animated: false)
+                break
+            }
+        }
     }
-
-
-
+    
+    
+    
     @IBAction func placeSegmentValueChanged(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 1 {
             // 선택된 세그먼트가 0일 때 (온라인 버튼일 때)
@@ -134,28 +140,28 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     
     @IBAction func endDateButton(_ sender: UIButton) {
         let minDate = DatePickerHelper.shared.dateFrom(day: 18, month: 08, year: 1990)!
-            let maxDate = DatePickerHelper.shared.dateFrom(day: 18, month: 08, year: 2030)!
-            let today = Date()
-            // Create picker object
-            let datePicker = DatePicker()
-            // Setup
-            datePicker.setup(beginWith: today, min: minDate, max: maxDate) { (selected, date) in
-                if selected, let selectedDate = date {
-                    let toPostDateFormatter = DateFormatter()
-                    toPostDateFormatter.dateFormat = "yyyy-MM-dd"
-                    let toPostDate = toPostDateFormatter.string(from: selectedDate)
-                    let dateFormatter = DateFormatter()
-                    dateFormatter.dateFormat = "  yyyy년 MM월 dd일 까지"
-                    let selectedDateString = dateFormatter.string(from: selectedDate)
-                    self.endDate.setTitle(selectedDateString, for: .normal)
-                    self.postEndDate = toPostDate
-                } else {
-                    print("Cancelled")
-                }
+        let maxDate = DatePickerHelper.shared.dateFrom(day: 18, month: 08, year: 2030)!
+        let today = Date()
+        // Create picker object
+        let datePicker = DatePicker()
+        // Setup
+        datePicker.setup(beginWith: today, min: minDate, max: maxDate) { (selected, date) in
+            if selected, let selectedDate = date {
+                let toPostDateFormatter = DateFormatter()
+                toPostDateFormatter.dateFormat = "yyyy-MM-dd"
+                let toPostDate = toPostDateFormatter.string(from: selectedDate)
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "  yyyy년 MM월 dd일 까지"
+                let selectedDateString = dateFormatter.string(from: selectedDate)
+                self.endDate.setTitle(selectedDateString, for: .normal)
+                self.postEndDate = toPostDate
+            } else {
+                print("Cancelled")
             }
-            // Display
-            datePicker.show(in: self, on: sender)
         }
+        // Display
+        datePicker.show(in: self, on: sender)
+    }
     
     func setupView(_ view: UIView, with checkBox: UIImageView) {
         view.layer.borderWidth = 1
@@ -207,9 +213,9 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-           textField.resignFirstResponder() // 키보드 닫기
-           return true
-       }
+        textField.resignFirstResponder() // 키보드 닫기
+        return true
+    }
     
     // 텍스트 필드 입력 종료 시 호출
     func textFieldDidEndEditing(_ textField: UITextField) {
@@ -246,19 +252,19 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
         placeTextField.resignFirstResponder()
         
         if let detailInfoVC = storyboard?.instantiateViewController(withIdentifier: "DetailInfoVC") as? DetailInfoVC {
-                // 변수들을 다음 뷰 컨트롤러에 전달
-                detailInfoVC.selectedCategory = selectedCategory
-                detailInfoVC.studyTitleText = studyTitleText
-                detailInfoVC.studyMood = studyMood
-                detailInfoVC.postStartDate = postStartDate
-                detailInfoVC.postEndDate = postEndDate
-                detailInfoVC.maxMemberCount = maxMemberCount
-                detailInfoVC.isOnline = isOnline
-                detailInfoVC.place = place
-                detailInfoVC.onlinePlatform = onlinePlatform
-
-                present(detailInfoVC, animated: false, completion: nil)
-            }
+            // 변수들을 다음 뷰 컨트롤러에 전달
+            detailInfoVC.selectedCategory = selectedCategory
+            detailInfoVC.studyTitleText = studyTitleText
+            detailInfoVC.studyMood = studyMood
+            detailInfoVC.postStartDate = postStartDate
+            detailInfoVC.postEndDate = postEndDate
+            detailInfoVC.maxMemberCount = maxMemberCount
+            detailInfoVC.isOnline = isOnline
+            detailInfoVC.place = place
+            detailInfoVC.onlinePlatform = onlinePlatform
+            
+            self.navigationController?.pushViewController(detailInfoVC, animated: false)
+        }
     }
     
     @IBAction func onlineBtnTapped(_ sender: UIButton) {
@@ -267,7 +273,7 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
         onlineBtn2.setBackgroundImage(UIImage(named: "createStduy_discord"), for: .normal)
         onlineBtn3.setBackgroundImage(UIImage(named: "createStduy_googleMeet"), for: .normal)
         onlineBtn4.setBackgroundImage(UIImage(named: "createStduy_etc"), for: .normal)
-
+        
         // 눌린 버튼에 따라 배경 이미지 설정
         switch sender {
         case onlineBtn1:

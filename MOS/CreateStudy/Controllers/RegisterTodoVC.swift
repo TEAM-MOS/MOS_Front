@@ -113,12 +113,18 @@ extension RegisterTodoVC: DeleteTableViewCellDelegate {
     @IBAction func nextButtonTapped(_ sender: UIButton) {
         
         if let finishVC = storyboard?.instantiateViewController(withIdentifier: "FinishVC") as? FinishVC {
-                present(finishVC, animated: false, completion: nil)
+            self.navigationController?.pushViewController(finishVC, animated: false)
             }
     }
     
     @IBAction func backBtnTapped(_ sender: UIButton) {
-        dismiss(animated: false, completion: nil)
+        guard let navigationControllers = self.navigationController?.viewControllers else { return }
+        for viewController in navigationControllers {
+            if let previousVC = viewController as? DetailInfoVC {
+                self.navigationController?.popToViewController(previousVC, animated: false)
+                break
+            }
+        }
     }
     
 }

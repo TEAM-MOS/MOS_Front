@@ -188,7 +188,13 @@ class DetailInfoVC: UIViewController {
     }
     
     @IBAction func backBtnTapped(_ sender: UIButton) {
-        dismiss(animated: false, completion: nil)
+        guard let navigationControllers = self.navigationController?.viewControllers else { return }
+        for viewController in navigationControllers {
+            if let previousVC = viewController as? BasicInfoVC {
+                self.navigationController?.popToViewController(previousVC, animated: false)
+                break
+            }
+        }
     }
     
     @IBAction func inroBtnClicked(_ sender: Any){
@@ -237,8 +243,8 @@ class DetailInfoVC: UIViewController {
             registerTodoVC.place = place
             registerTodoVC.onlinePlatform = onlinePlatform
 
-                present(registerTodoVC, animated: false, completion: nil)
-            }
+            self.navigationController?.pushViewController(registerTodoVC, animated: false)
+        }
     }
 
 }
