@@ -222,6 +222,24 @@ class DetailInfoVC: UIViewController {
            }
            studyRuleTextField.text = ruleTexts.joined(separator: "\n\n")
        }
+    
+    @IBAction func nextButtonTapped(_ sender: UIButton) {
+        
+        if let registerTodoVC = storyboard?.instantiateViewController(withIdentifier: "RegisterTodoVC") as? RegisterTodoVC {
+                // 변수들을 다음 뷰 컨트롤러에 전달
+            registerTodoVC.selectedCategory = selectedCategory
+            registerTodoVC.studyTitleText = studyTitleText
+            registerTodoVC.studyMood = studyMood
+            registerTodoVC.postStartDate = postStartDate
+            registerTodoVC.postEndDate = postEndDate
+            registerTodoVC.maxMemberCount = maxMemberCount
+            registerTodoVC.isOnline = isOnline
+            registerTodoVC.place = place
+            registerTodoVC.onlinePlatform = onlinePlatform
+
+                present(registerTodoVC, animated: false, completion: nil)
+            }
+    }
 
 }
 

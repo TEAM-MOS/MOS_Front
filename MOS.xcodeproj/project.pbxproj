@@ -67,6 +67,7 @@
 		5A6776C12A2269DA00F1D3DB /* survey_character.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776C02A2269DA00F1D3DB /* survey_character.png */; };
 		5A6AC6EC2AE0399600668492 /* BasicInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AC6EB2AE0399600668492 /* BasicInfoVC.swift */; };
 		5A6EE3952A8AAE90000E841D /* SurveyStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EE3942A8AAE90000E841D /* SurveyStartVC.swift */; };
+		5A76B7B52AEBBE0C00C9BFDE /* FinishVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A76B7B42AEBBE0C00C9BFDE /* FinishVC.swift */; };
 		5A7AA0D12A41BDCA0087DE3C /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */; };
 		5A7AA0D42A41C1A10087DE3C /* AllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D32A41C1A10087DE3C /* AllViewController.swift */; };
 		5A7AA0D62A41C1DC0087DE3C /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D52A41C1DC0087DE3C /* AnalysisViewController.swift */; };
@@ -80,7 +81,7 @@
 		5ADA065A2A41E63100FE76E5 /* SelfIntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA06592A41E63100FE76E5 /* SelfIntroductionViewController.swift */; };
 		5ADA065C2A41E64900FE76E5 /* InterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA065B2A41E64900FE76E5 /* InterviewViewController.swift */; };
 		5ADA065E2A41E67B00FE76E5 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA065D2A41E67B00FE76E5 /* LanguageViewController.swift */; };
-		5ADD7C562AD70ADA0093661A /* RegisterTodoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD7C552AD70ADA0093661A /* RegisterTodoController.swift */; };
+		5ADD7C562AD70ADA0093661A /* RegisterTodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD7C552AD70ADA0093661A /* RegisterTodoVC.swift */; };
 		5ADD7C582AD7261F0093661A /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD7C572AD7261F0093661A /* Todo.swift */; };
 		5ADD7C5A2AD72F580093661A /* CheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD7C592AD72F580093661A /* CheckTableViewCell.swift */; };
 		E6FE083ADFD94888B7BAA4B1 /* Pods_MOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8023C552FBAB477251468C8 /* Pods_MOS.framework */; };
@@ -158,6 +159,7 @@
 		5A6776C02A2269DA00F1D3DB /* survey_character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = survey_character.png; sourceTree = "<group>"; };
 		5A6AC6EB2AE0399600668492 /* BasicInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInfoVC.swift; sourceTree = "<group>"; };
 		5A6EE3942A8AAE90000E841D /* SurveyStartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStartVC.swift; sourceTree = "<group>"; };
+		5A76B7B42AEBBE0C00C9BFDE /* FinishVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishVC.swift; sourceTree = "<group>"; };
 		5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		5A7AA0D32A41C1A10087DE3C /* AllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllViewController.swift; sourceTree = "<group>"; };
 		5A7AA0D52A41C1DC0087DE3C /* AnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
@@ -171,7 +173,7 @@
 		5ADA06592A41E63100FE76E5 /* SelfIntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIntroductionViewController.swift; sourceTree = "<group>"; };
 		5ADA065B2A41E64900FE76E5 /* InterviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewViewController.swift; sourceTree = "<group>"; };
 		5ADA065D2A41E67B00FE76E5 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
-		5ADD7C552AD70ADA0093661A /* RegisterTodoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTodoController.swift; sourceTree = "<group>"; };
+		5ADD7C552AD70ADA0093661A /* RegisterTodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTodoVC.swift; sourceTree = "<group>"; };
 		5ADD7C572AD7261F0093661A /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		5ADD7C592AD72F580093661A /* CheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTableViewCell.swift; sourceTree = "<group>"; };
 		9F0823D3883FA48E77D1F2F6 /* Pods-MOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOS.release.xcconfig"; path = "Target Support Files/Pods-MOS/Pods-MOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -519,12 +521,13 @@
 			children = (
 				2F28E6882A1DDF9900021E72 /* ChooseCategoryVC.swift */,
 				5A6AC6EB2AE0399600668492 /* BasicInfoVC.swift */,
-				5ADD7C552AD70ADA0093661A /* RegisterTodoController.swift */,
+				5A56B1FD2AE8184900DA8CF6 /* DetailInfoVC.swift */,
+				5ADD7C552AD70ADA0093661A /* RegisterTodoVC.swift */,
 				5ADD7C572AD7261F0093661A /* Todo.swift */,
 				5ADD7C592AD72F580093661A /* CheckTableViewCell.swift */,
-				5A56B1FD2AE8184900DA8CF6 /* DetailInfoVC.swift */,
 				5A0E75A12AE82A6B00476BCE /* RulePopUp.swift */,
 				5AA0154B2AE978CA0062258C /* IntroPopUp.swift */,
+				5A76B7B42AEBBE0C00C9BFDE /* FinishVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -706,7 +709,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F28E6812A1DDA4300021E72 /* StudyRoomViewController.swift in Sources */,
-				5ADD7C562AD70ADA0093661A /* RegisterTodoController.swift in Sources */,
+				5ADD7C562AD70ADA0093661A /* RegisterTodoVC.swift in Sources */,
 				5A7AA0D62A41C1DC0087DE3C /* AnalysisViewController.swift in Sources */,
 				2F8270E62A8F808000CE7BE1 /* StudyListCollectionViewCell.swift in Sources */,
 				F33B43462A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift in Sources */,
@@ -738,6 +741,7 @@
 				2F20E2CE2ADFD27700A943C7 /* FindPasswordViewController.swift in Sources */,
 				F304A13F2A4206240066036B /* StudyMemberInfoViewController.swift in Sources */,
 				F3A7F9BC2A4219BC00AE1863 /* PreQuestionAlertViewController.swift in Sources */,
+				5A76B7B52AEBBE0C00C9BFDE /* FinishVC.swift in Sources */,
 				2F8270E02A8F7B9100CE7BE1 /* StudyListViewController.swift in Sources */,
 				2F0BA3EC2AE0351E009D0353 /* TempPasswordViewController.swift in Sources */,
 				2FA142762A149024006AA91B /* AppDelegate.swift in Sources */,

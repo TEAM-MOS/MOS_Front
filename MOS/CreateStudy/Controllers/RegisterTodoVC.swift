@@ -8,7 +8,18 @@
 import Foundation
 import UIKit
 
-class RegisterTodoController: UIViewController{
+class RegisterTodoVC: UIViewController{
+    
+    //이전 화면에서 받아온 값
+    var selectedCategory: Int?
+    var studyTitleText: String?
+    var studyMood: String?
+    var postStartDate: String?
+    var postEndDate: String?
+    var maxMemberCount: Int = 4
+    var isOnline: Bool = false
+    var place: String?
+    var onlinePlatform: Int?
     
     @IBOutlet weak var addCellBtn: UIButton!
     var todos = [
@@ -43,7 +54,7 @@ class RegisterTodoController: UIViewController{
        }
 }
 
-extension RegisterTodoController: UITableViewDataSource {
+extension RegisterTodoVC: UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -67,7 +78,7 @@ extension RegisterTodoController: UITableViewDataSource {
     }
 }
 
-extension RegisterTodoController: UITableViewDelegate {
+extension RegisterTodoVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         // 해당 셀의 텍스트를 가져와서 셀의 높이를 계산
         let cellText = todos[indexPath.row].title
@@ -86,7 +97,7 @@ extension RegisterTodoController: UITableViewDelegate {
     
 }
 
-extension RegisterTodoController: DeleteTableViewCellDelegate {
+extension RegisterTodoVC: DeleteTableViewCellDelegate {
     func didClickDeleteButton(_ cell: CheckTableViewCell, didDeleteBtneClicked: Bool) {
         guard let indexPath = tableView.indexPath(for: cell) else {
                     return
@@ -97,6 +108,17 @@ extension RegisterTodoController: DeleteTableViewCellDelegate {
                 
                 // 테이블 뷰에서 해당 셀을 삭제
                 tableView.deleteRows(at: [indexPath], with: .automatic)
+    }
+    
+    @IBAction func nextButtonTapped(_ sender: UIButton) {
+        
+        if let finishVC = storyboard?.instantiateViewController(withIdentifier: "FinishVC") as? FinishVC {
+                present(finishVC, animated: false, completion: nil)
+            }
+    }
+    
+    @IBAction func backBtnTapped(_ sender: UIButton) {
+        dismiss(animated: false, completion: nil)
     }
     
 }
