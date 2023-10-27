@@ -21,6 +21,7 @@ class DetailInfoVC: UIViewController {
     var maxMemberCount: Int = 4
     var isOnline: Bool = false
     var place: String?
+    var onlinePlatform: Int?
 
     @IBOutlet weak var popUpView2: UIButton!
     @IBOutlet weak var popUpView1: UIButton!
@@ -60,6 +61,7 @@ class DetailInfoVC: UIViewController {
         print("maxMemberCount: \(maxMemberCount)")
         print("isOnline: \(isOnline)")
         print("place: \(place ?? "N/A")")
+        print("onlinePlatFormNum: \(onlinePlatform ?? -1)")
         
         popUpView1.layer.cornerRadius = 4
         popUpView2.layer.cornerRadius = 4

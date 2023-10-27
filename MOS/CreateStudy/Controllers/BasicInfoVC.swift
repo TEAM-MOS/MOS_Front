@@ -11,6 +11,10 @@ import DatePicker
 
 class BasicInfoVC: UIViewController,UITextFieldDelegate{
 
+    @IBOutlet weak var onlineBtn4: UIButton!
+    @IBOutlet weak var onlineBtn3: UIButton!
+    @IBOutlet weak var onlineBtn2: UIButton!
+    @IBOutlet weak var onlineBtn1: UIButton!
     @IBOutlet weak var studyTitle: UITextField!
     @IBOutlet weak var firstMood: UIView!
     @IBOutlet weak var secondMood: UIView!
@@ -28,6 +32,7 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     // 스터디명 저장 변수
     @IBOutlet weak var placeSegment: UISegmentedControl!
     @IBOutlet weak var placeTextField: UITextField!
+    @IBOutlet weak var onlineBtns: UIStackView!
     
     
     // 카테고리 번호를 받아오는 변수
@@ -41,10 +46,12 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     var postEndDate: String?
     // 모집인원 저장 변수
     var maxMemberCount: Int = 4
-    
+    // 온라인인지 오프라인지 저장 변수
     var isOnline: Bool = false
-    
+    // 오프라인일 경우 장소 저장 변수
     var place: String?
+    // 온라인일 경우 플랫폼 저장 변수
+    var onlinePlatform: Int?
     
     
     override func viewDidLoad() {
@@ -91,9 +98,11 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
             // 선택된 세그먼트가 0일 때 (온라인 버튼일 때)
             isOnline = true
             placeTextField.isHidden = true
+            onlineBtns.isHidden = false
         } else {
             isOnline = false
             placeTextField.isHidden = false
+            onlineBtns.isHidden = true
         }
     }
     
@@ -246,9 +255,36 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
                 detailInfoVC.maxMemberCount = maxMemberCount
                 detailInfoVC.isOnline = isOnline
                 detailInfoVC.place = place
+                detailInfoVC.onlinePlatform = onlinePlatform
 
                 present(detailInfoVC, animated: false, completion: nil)
             }
+    }
+    
+    @IBAction func onlineBtnTapped(_ sender: UIButton) {
+        // 모든 버튼 초기화 (배경 이미지를 선택되지 않은 이미지로 설정)
+        onlineBtn1.setBackgroundImage(UIImage(named: "createStduy_zoom"), for: .normal)
+        onlineBtn2.setBackgroundImage(UIImage(named: "createStduy_discord"), for: .normal)
+        onlineBtn3.setBackgroundImage(UIImage(named: "createStduy_googleMeet"), for: .normal)
+        onlineBtn4.setBackgroundImage(UIImage(named: "createStduy_etc"), for: .normal)
+
+        // 눌린 버튼에 따라 배경 이미지 설정
+        switch sender {
+        case onlineBtn1:
+            onlineBtn1.setBackgroundImage(UIImage(named: "zoom_selected"), for: .normal)
+            onlinePlatform = 1
+        case onlineBtn2:
+            onlineBtn2.setBackgroundImage(UIImage(named: "discord_selected"), for: .normal)
+            onlinePlatform = 2
+        case onlineBtn3:
+            onlineBtn3.setBackgroundImage(UIImage(named: "googleMeet_selected"), for: .normal)
+            onlinePlatform = 3
+        case onlineBtn4:
+            onlineBtn4.setBackgroundImage(UIImage(named: "etc_selected"), for: .normal)
+            onlinePlatform = 4
+        default:
+            break
+        }
     }
 }
 
