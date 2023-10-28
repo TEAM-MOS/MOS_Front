@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailInfoVC: UIViewController {
+class DetailInfoVC: UIViewController, UITextViewDelegate {
     
     var rulePopUp: RulePopUp!
     var introPopUp: IntroPopUp!
@@ -70,17 +70,20 @@ class DetailInfoVC: UIViewController {
         studyRuleTextField.layer.borderColor = UIColor(hex: "F2F2F2").cgColor
         studyRuleTextField.layer.backgroundColor = UIColor(hex: "F2F2F2").cgColor
         studyRuleTextField.layer.borderWidth = 1
+        studyRuleTextField.delegate = self
+        studyRuleTextField.textContainerInset = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
         
         studyIntroduceTextView.layer.cornerRadius = 8
         studyIntroduceTextView.layer.borderColor = UIColor(hex: "F2F2F2").cgColor
         studyIntroduceTextView.layer.backgroundColor = UIColor(hex: "F2F2F2").cgColor
         studyIntroduceTextView.layer.borderWidth = 1
+        studyIntroduceTextView.textContainerInset = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
         
         questionTextView.layer.cornerRadius = 8
         questionTextView.layer.borderColor = UIColor(hex: "F2F2F2").cgColor
         questionTextView.layer.backgroundColor = UIColor(hex: "F2F2F2").cgColor
         questionTextView.layer.borderWidth = 1
-        
+        questionTextView.textContainerInset = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
         
         setupWeekView(sunView)
         setupWeekView(satView)
@@ -207,6 +210,15 @@ class DetailInfoVC: UIViewController {
         self.introPopUp.removeFromSuperview()
     }
     
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            // 사용자가 엔터 키를 눌렀을 때
+            textView.insertText("\n🌟 ")
+            return false
+        }
+        return true
+    }
+    
     func updateStudyRuleTextField() {
         let ruleTexts: [String] = rulePopUp.selectedViews.map { view in
                switch view.tag {
@@ -226,7 +238,7 @@ class DetailInfoVC: UIViewController {
                    return ""
                }
            }
-           studyRuleTextField.text = ruleTexts.joined(separator: "\n\n")
+           studyRuleTextField.text = ruleTexts.joined(separator: "\n")
        }
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
@@ -246,6 +258,8 @@ class DetailInfoVC: UIViewController {
             self.navigationController?.pushViewController(registerTodoVC, animated: false)
         }
     }
+    
+    
 
 }
 
