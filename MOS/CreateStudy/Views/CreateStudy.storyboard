@@ -765,6 +765,9 @@
                                                     <segment title="요일 확정"/>
                                                     <segment title="팀원 협의"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="weekendSegmentValueChanged:" destination="3Vj-t0-zO4" eventType="valueChanged" id="TMI-F8-LAg"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스터디 목표" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9c-S7-L6U">
                                                 <rect key="frame" x="16" y="348.66666666666669" width="82.333333333333329" height="21.666666666666686"/>
@@ -1207,6 +1210,7 @@
                         <outlet property="TueLabel" destination="BUC-HG-wF4" id="EdI-CV-yma"/>
                         <outlet property="TueView" destination="nre-Pi-xyJ" id="UJ6-Nd-6qb"/>
                         <outlet property="friView" destination="gCW-6a-njt" id="yrl-Cn-edb"/>
+                        <outlet property="goalTextField" destination="sgp-Yz-Sej" id="uR4-wb-Wtx"/>
                         <outlet property="popUpView1" destination="iL4-8C-kXs" id="Whl-0i-9ky"/>
                         <outlet property="popUpView2" destination="xaO-kN-VEp" id="4fc-B1-2Ua"/>
                         <outlet property="questionTextView" destination="dJf-Sa-ifM" id="H53-oj-1lw"/>
@@ -1220,6 +1224,8 @@
                         <outlet property="thursView" destination="Ggy-33-7CO" id="xCd-gU-jsA"/>
                         <outlet property="wedLabel" destination="OuI-ZW-rxR" id="zfE-53-pUx"/>
                         <outlet property="wedView" destination="4e6-yC-Dqp" id="aRr-8L-wPH"/>
+                        <outlet property="weekendBtns" destination="kEM-Vp-nZa" id="INp-nr-rFL"/>
+                        <outlet property="weekendSegment" destination="p7m-aK-1zV" id="ZJf-29-bn1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjn-bK-fpp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1467,7 +1473,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar" catalog="system" width="128" height="107"/>
+        <image name="calendar" catalog="system" width="32" height="32"/>
         <image name="createStudy_category1" width="87" height="85.666664123535156"/>
         <image name="createStudy_category2" width="87" height="84"/>
         <image name="createStudy_category3" width="87" height="86"/>

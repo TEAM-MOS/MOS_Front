@@ -23,6 +23,9 @@ class DetailInfoVC: UIViewController, UITextViewDelegate {
     var place: String?
     var onlinePlatform: Int?
 
+    @IBOutlet weak var goalTextField: UITextField!
+    @IBOutlet weak var weekendSegment: UISegmentedControl!
+    @IBOutlet weak var weekendBtns: UIStackView!
     @IBOutlet weak var popUpView2: UIButton!
     @IBOutlet weak var popUpView1: UIButton!
     @IBOutlet weak var sunLabel: UILabel!
@@ -256,6 +259,15 @@ class DetailInfoVC: UIViewController, UITextViewDelegate {
             registerTodoVC.onlinePlatform = onlinePlatform
 
             self.navigationController?.pushViewController(registerTodoVC, animated: false)
+        }
+    }
+    
+    @IBAction func weekendSegmentValueChanged(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 1 {
+            // weekendSegment의 값이 1일 때 (두 번째 세그먼트 선택 시)
+            weekendBtns.isHidden = true
+        } else {
+            weekendBtns.isHidden = false
         }
     }
     
