@@ -12,16 +12,20 @@ class RegisterTodoVC: UIViewController{
     
     var ResultModel: CreateStudyResultModel!
     
-    //이전 화면에서 받아온 값
-    var selectedCategory: Int?
-    var studyTitleText: String?
-    var studyMood: String?
-    var postStartDate: String?
-    var postEndDate: String?
-    var maxMemberCount: Int = 4
-    var isOnline: Bool = false
-    var place: String?
-    var onlinePlatform: Int?
+    // API post
+    let studyTitleText = "모집중 테스트3"
+    let goal = "자격증 취득"
+    let rules = "열품타 하루 5시간 이상"
+    let quest = "공시를 준비해 본 적 있나요?"
+    let category = "category1"
+    let intro = "공시스터디 입니다."
+    let maxMember = 10
+    let mod = "빡공모드"
+    let onOff = true
+    let online = 2
+    let startDate = "2023-09-20"
+    let endDate = "2024-03-31"
+    let studyDays = ["MON", "SUN"]
     
     @IBOutlet weak var addCellBtn: UIButton!
     var todos = [
@@ -112,27 +116,33 @@ extension RegisterTodoVC: DeleteTableViewCellDelegate {
         tableView.deleteRows(at: [indexPath], with: .automatic)
     }
     
-//    @IBAction func nextButtonTapped(_ sender: UIButton) {
-//        // API post
-//        let parmeterData = RequestData(title: studyTitleText, goal: <#T##String#>, rules: <#T##String#>, quest: <#T##String#>, category: String, intro: <#T##String#>, maxMember: <#T##Int#>, mod: <#T##String#>, onOff: <#T##Bool#>, online: <#T##Int#>, startDate: <#T##String#>, endDate: <#T##String#>, studyDayEntities: <#T##[StudyDayEntity]#>)(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
-//        
-//        print(parmeterData)
-//        
-//        CreateStudyPost.instance.createStudyPosting(parameters: parmeterData) { result in
-//            switch result {
-//            case .success(let resultModel):
-//                self.ResultModel = resultModel
-//            case .failure(let error):
-//                // Handle the error as needed
-//                print("Error: \(error)")
-//            }
-//            
-//            //        if let finishVC = storyboard?.instantiateViewController(withIdentifier: "FinishVC") as? FinishVC {
-//            //            self.navigationController?.pushViewController(finishVC, animated: false)
-//            //            }
-//        }
-//        
-//    }
+    @IBAction func nextButtonTapped(_ sender: UIButton) {
+        // RequestData를 생성
+        let parameterData = RequestData(
+            title: studyTitleText,
+            goal: goal,
+            rules: rules,
+            quest: quest,
+            category: category,
+            intro: intro,
+            maxMember: maxMember,
+            mod: mod,
+            onOff: onOff,
+            online: online,
+            startDate: startDate,
+            endDate: endDate,
+            studyDayEntities: studyDays.map { StudyDayEntity(studyDays: $0) }
+        )
+
+        // API 호출
+       
+        print(parameterData)
+
+        CreateStudyPost.instance.createStudyPosting(parameters: parameterData) { result in self.ResultModel = result }
+
+        print("스터디 생성 서버통신 성공!")
+
+    }
     
     @IBAction func backBtnTapped(_ sender: UIButton) {
         guard let navigationControllers = self.navigationController?.viewControllers else { return }

@@ -248,15 +248,15 @@ class DetailInfoVC: UIViewController, UITextViewDelegate {
         
         if let registerTodoVC = storyboard?.instantiateViewController(withIdentifier: "RegisterTodoVC") as? RegisterTodoVC {
                 // 변수들을 다음 뷰 컨트롤러에 전달
-            registerTodoVC.selectedCategory = selectedCategory
-            registerTodoVC.studyTitleText = studyTitleText
-            registerTodoVC.studyMood = studyMood
-            registerTodoVC.postStartDate = postStartDate
-            registerTodoVC.postEndDate = postEndDate
-            registerTodoVC.maxMemberCount = maxMemberCount
-            registerTodoVC.isOnline = isOnline
-            registerTodoVC.place = place
-            registerTodoVC.onlinePlatform = onlinePlatform
+//            registerTodoVC.selectedCategory = selectedCategory
+//            registerTodoVC.studyTitleText = studyTitleText
+//            registerTodoVC.studyMood = studyMood
+//            registerTodoVC.postStartDate = postStartDate
+//            registerTodoVC.postEndDate = postEndDate
+//            registerTodoVC.maxMemberCount = maxMemberCount
+//            registerTodoVC.isOnline = isOnline
+//            registerTodoVC.place = place
+//            registerTodoVC.onlinePlatform = onlinePlatform
 
             self.navigationController?.pushViewController(registerTodoVC, animated: false)
         }
