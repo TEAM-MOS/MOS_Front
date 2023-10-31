@@ -16,6 +16,7 @@ class FinishVC: UIViewController{
     
     
     @IBAction func gotoHomeBtnTapped(_ sender: Any) {
+        
         if let tabBarController = self.tabBarController {
                tabBarController.selectedIndex = 0
            }
@@ -25,4 +26,5 @@ class FinishVC: UIViewController{
                navigationController.popToRootViewController(animated: true)
            }
     }
+    
 }

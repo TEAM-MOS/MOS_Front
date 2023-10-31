@@ -1473,7 +1473,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar" catalog="system" width="32" height="32"/>
+        <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="createStudy_category1" width="87" height="85.666664123535156"/>
         <image name="createStudy_category2" width="87" height="84"/>
         <image name="createStudy_category3" width="87" height="86"/>

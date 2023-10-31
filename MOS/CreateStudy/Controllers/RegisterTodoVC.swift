@@ -10,6 +10,8 @@ import UIKit
 
 class RegisterTodoVC: UIViewController{
     
+    var ResultModel: CreateStudyResultModel!
+    
     //이전 화면에서 받아온 값
     var selectedCategory: Int?
     var studyTitleText: String?
@@ -100,22 +102,37 @@ extension RegisterTodoVC: UITableViewDelegate {
 extension RegisterTodoVC: DeleteTableViewCellDelegate {
     func didClickDeleteButton(_ cell: CheckTableViewCell, didDeleteBtneClicked: Bool) {
         guard let indexPath = tableView.indexPath(for: cell) else {
-                    return
-                }
-                
-                // 해당 indexPath에 해당하는 항목을 배열에서 제거
-                todos.remove(at: indexPath.row)
-                
-                // 테이블 뷰에서 해당 셀을 삭제
-                tableView.deleteRows(at: [indexPath], with: .automatic)
+            return
+        }
+        
+        // 해당 indexPath에 해당하는 항목을 배열에서 제거
+        todos.remove(at: indexPath.row)
+        
+        // 테이블 뷰에서 해당 셀을 삭제
+        tableView.deleteRows(at: [indexPath], with: .automatic)
     }
     
-    @IBAction func nextButtonTapped(_ sender: UIButton) {
-        
-        if let finishVC = storyboard?.instantiateViewController(withIdentifier: "FinishVC") as? FinishVC {
-            self.navigationController?.pushViewController(finishVC, animated: false)
-            }
-    }
+//    @IBAction func nextButtonTapped(_ sender: UIButton) {
+//        // API post
+//        let parmeterData = RequestData(title: studyTitleText, goal: <#T##String#>, rules: <#T##String#>, quest: <#T##String#>, category: String, intro: <#T##String#>, maxMember: <#T##Int#>, mod: <#T##String#>, onOff: <#T##Bool#>, online: <#T##Int#>, startDate: <#T##String#>, endDate: <#T##String#>, studyDayEntities: <#T##[StudyDayEntity]#>)(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
+//        
+//        print(parmeterData)
+//        
+//        CreateStudyPost.instance.createStudyPosting(parameters: parmeterData) { result in
+//            switch result {
+//            case .success(let resultModel):
+//                self.ResultModel = resultModel
+//            case .failure(let error):
+//                // Handle the error as needed
+//                print("Error: \(error)")
+//            }
+//            
+//            //        if let finishVC = storyboard?.instantiateViewController(withIdentifier: "FinishVC") as? FinishVC {
+//            //            self.navigationController?.pushViewController(finishVC, animated: false)
+//            //            }
+//        }
+//        
+//    }
     
     @IBAction func backBtnTapped(_ sender: UIButton) {
         guard let navigationControllers = self.navigationController?.viewControllers else { return }
@@ -126,5 +143,5 @@ extension RegisterTodoVC: DeleteTableViewCellDelegate {
             }
         }
     }
-    
 }
+    
