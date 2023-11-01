@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "ic_home_member_1x.png",
+      "filename" : "ic_person.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ic_home_member_2x.png",
+      "filename" : "ic_person 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "ic_home_member_3x.png",
+      "filename" : "ic_person 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

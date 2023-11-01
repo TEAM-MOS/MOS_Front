@@ -243,25 +243,34 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="me3-Sm-AiL">
                                                 <rect key="frame" x="24" y="1002.3333333333334" width="345" height="86.333333333333371"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 부족 역량은 그대로일까?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnR-Yl-TNw">
-                                                        <rect key="frame" x="75.999999999999986" y="24" width="162.66666666666663" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 부족 역량 확인 할 수 있는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnR-Yl-TNw">
+                                                        <rect key="frame" x="88.000000000000014" y="24" width="166.33333333333337" height="17"/>
                                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취업 준비도 테스트 다시해보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjV-YB-Jbo">
-                                                        <rect key="frame" x="76" y="43" width="191" height="19.333333333333329"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취업 준비도 테스트 하러 가기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjV-YB-Jbo">
+                                                        <rect key="frame" x="88" y="43" width="181" height="19.333333333333329"/>
                                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_test" translatesAutoresizingMaskIntoConstraints="NO" id="91g-GO-NpV">
-                                                        <rect key="frame" x="14" y="20.000000000000004" width="48" height="46.333333333333343"/>
+                                                        <rect key="frame" x="14" y="13.333333333333485" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="2DW-S3-hz4"/>
+                                                            <constraint firstAttribute="width" constant="60" id="95g-1j-rPi"/>
+                                                        </constraints>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_goToTest" translatesAutoresizingMaskIntoConstraints="NO" id="7tE-nr-dHT">
-                                                        <rect key="frame" x="299" y="24.333333333333485" width="38" height="38"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_gototest 1" translatesAutoresizingMaskIntoConstraints="NO" id="7tE-nr-dHT">
+                                                        <rect key="frame" x="297" y="23.333333333333485" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="QhJ-Pe-AY2"/>
+                                                            <constraint firstAttribute="height" constant="40" id="oy2-oF-Mjx"/>
+                                                        </constraints>
                                                     </imageView>
                                                 </subviews>
+                                                <color key="backgroundColor" name="bc-studyDetail"/>
                                                 <constraints>
                                                     <constraint firstItem="7tE-nr-dHT" firstAttribute="centerY" secondItem="me3-Sm-AiL" secondAttribute="centerY" id="8ZV-Ie-yId"/>
                                                     <constraint firstAttribute="trailing" secondItem="7tE-nr-dHT" secondAttribute="trailing" constant="8" id="B6L-rx-iDC"/>
@@ -1253,12 +1262,15 @@
         <image name="ic_home_category_back" width="32" height="32"/>
         <image name="ic_home_date" width="13" height="13"/>
         <image name="ic_home_detail_arrow" width="32" height="32"/>
-        <image name="ic_home_goToTest" width="38" height="38"/>
-        <image name="ic_home_location" width="16" height="16"/>
+        <image name="ic_home_gototest 1" width="152" height="152"/>
+        <image name="ic_home_location" width="21.333333969116211" height="20.666666030883789"/>
         <image name="ic_home_members" width="16" height="16"/>
-        <image name="ic_home_test" width="48" height="46.333332061767578"/>
+        <image name="ic_home_test" width="74" height="75.333335876464844"/>
         <namedColor name=" mainColor">
             <color red="1" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bc-studyDetail">
+            <color red="0.97647058823529409" green="0.96078431372549022" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="category-1">
             <color red="1" green="0.96470588235294119" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

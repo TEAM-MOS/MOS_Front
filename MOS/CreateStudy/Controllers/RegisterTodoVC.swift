@@ -21,8 +21,9 @@ class RegisterTodoVC: UIViewController{
     let intro = "공시스터디 입니다."
     let maxMember = 10
     let mod = "빡공모드"
-    let onOff = true
-    let online = 2
+    let onOff = false
+    let online: Int? = nil
+    let location = "송파구"
     let startDate = "2023-09-20"
     let endDate = "2024-03-31"
     let studyDays = ["MON", "SUN"]
@@ -129,19 +130,24 @@ extension RegisterTodoVC: DeleteTableViewCellDelegate {
             mod: mod,
             onOff: onOff,
             online: online,
+            location: location,
             startDate: startDate,
             endDate: endDate,
             studyDayEntities: studyDays.map { StudyDayEntity(studyDays: $0) }
         )
 
         // API 호출
-       
-        print(parameterData)
-
-        CreateStudyPost.instance.createStudyPosting(parameters: parameterData) { result in self.ResultModel = result }
-
-        print("스터디 생성 서버통신 성공!")
-
+        CreateStudyPost.instance.createStudyPosting(parameters: parameterData) { [weak self] result in
+            switch result {
+            case .success(let resultModel):
+                self?.ResultModel = resultModel
+                print("스터디 생성 서버통신 성공!")
+                // 성공 시 다음 화면으로 이동하는 코드를 추가할 수 있습니다.
+            case .failure(let error):
+                // Handle the error as needed
+                print("Error: \(error)")
+            }
+        }
     }
     
     @IBAction func backBtnTapped(_ sender: UIButton) {
