@@ -40,7 +40,7 @@ class RoundedProgressView: UIView {
         if progress < 0.6 {
             progressBarLayer.fillColor = UIColor(named: "gray-2")?.cgColor
         } else {
-            progressBarLayer.fillColor = UIColor(named: "main")?.cgColor
+            progressBarLayer.fillColor = UIColor(named: "gray-1")?.cgColor
         }
         
         // Add the progress bar layer to the view's layer
