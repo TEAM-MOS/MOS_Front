@@ -40,8 +40,7 @@ class ChooseCategoryVC: UIViewController{
             if let basicInfoVC = storyboard?.instantiateViewController(withIdentifier: "BasicInfoVC") as? BasicInfoVC {
                 // 선택한 카테고리 번호를 다음 뷰 컨트롤러에 전달
                 basicInfoVC.selectedCategory = selectedCategory
-                // 모달로 다음 뷰 컨트롤러를 표시합니다.
-                present(basicInfoVC, animated: false, completion: nil)
+                self.navigationController?.pushViewController(basicInfoVC, animated: false)
             }
         }
     

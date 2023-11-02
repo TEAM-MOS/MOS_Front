@@ -31,31 +31,31 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="El5-fm-Pya">
-                    <rect key="frame" x="20" y="299" width="353" height="239.33333333333337"/>
+                    <rect key="frame" x="20" y="299" width="353" height="240"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스터디 소개에서는 어떤 활동을 하게 될 지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuS-G6-ymt">
-                            <rect key="frame" x="45.666666666666686" y="59.999999999999993" width="262" height="18.666666666666664"/>
+                            <rect key="frame" x="47" y="59.999999999999993" width="259.33333333333331" height="18.666666666666664"/>
                             <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                             <color key="textColor" red="0.60424558080000002" green="0.60424558080000002" blue="0.60424558080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스터디 소개 예시" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFx-mY-bIA">
-                            <rect key="frame" x="110.33333333333333" y="30" width="132.33333333333337" height="24"/>
+                            <rect key="frame" x="111.33333333333336" y="30" width="130.66666666666663" height="24"/>
                             <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스터디 진행 방식을 적어주시면 좋아요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAJ-Mp-jVk">
-                            <rect key="frame" x="54.666666666666671" y="80.666666666666686" width="243.66666666666663" height="18.666666666666671"/>
+                            <rect key="frame" x="55.666666666666671" y="80.666666666666686" width="241.66666666666663" height="18.666666666666671"/>
                             <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                             <color key="textColor" red="0.60424558080000002" green="0.60424558080000002" blue="0.60424558080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJ3-sX-PDJ">
-                            <rect key="frame" x="12" y="119.33333333333331" width="329" height="100"/>
+                            <rect key="frame" x="12" y="119.33333333333331" width="329" height="100.66666666666669"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🗳️ 스터디 진행 방식 각자 분석해온 기업에 대해 발표하는 시간을 가져요. 기업을 똑같이 정해서 준비해오면 부족한 부분에 대해 보완할 수 있어서 좋을 것 같습니다 :-)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtF-ml-WLM">
-                                    <rect key="frame" x="6" y="6" width="317" height="74.666666666666671"/>
+                                    <rect key="frame" x="12" y="12" width="305" height="76.666666666666671"/>
                                     <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -63,10 +63,10 @@
                             </subviews>
                             <color key="backgroundColor" name="subColor"/>
                             <constraints>
-                                <constraint firstItem="MtF-ml-WLM" firstAttribute="leading" secondItem="tJ3-sX-PDJ" secondAttribute="leading" constant="6" id="6Nr-11-O9L"/>
-                                <constraint firstItem="MtF-ml-WLM" firstAttribute="top" secondItem="tJ3-sX-PDJ" secondAttribute="top" constant="6" id="7sX-CH-l9b"/>
-                                <constraint firstAttribute="height" constant="100" id="ax2-iZ-Jfq"/>
-                                <constraint firstAttribute="trailing" secondItem="MtF-ml-WLM" secondAttribute="trailing" constant="6" id="kce-Ej-4Hw"/>
+                                <constraint firstItem="MtF-ml-WLM" firstAttribute="leading" secondItem="tJ3-sX-PDJ" secondAttribute="leading" constant="12" id="6Nr-11-O9L"/>
+                                <constraint firstItem="MtF-ml-WLM" firstAttribute="top" secondItem="tJ3-sX-PDJ" secondAttribute="top" constant="12" id="7sX-CH-l9b"/>
+                                <constraint firstAttribute="bottom" secondItem="MtF-ml-WLM" secondAttribute="bottom" constant="12" id="Oko-9N-4fy"/>
+                                <constraint firstAttribute="trailing" secondItem="MtF-ml-WLM" secondAttribute="trailing" constant="12" id="kce-Ej-4Hw"/>
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPa-oq-yWB">
@@ -106,7 +106,7 @@
             <connections>
                 <outlet property="introPopUpCloseBtn" destination="fPa-oq-yWB" id="ng6-oi-hU3"/>
             </connections>
-            <point key="canvasLocation" x="16" y="105"/>
+            <point key="canvasLocation" x="14.503816793893129" y="104.92957746478874"/>
         </view>
     </objects>
     <resources>

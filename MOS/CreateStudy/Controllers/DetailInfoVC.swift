@@ -7,11 +7,25 @@
 
 import UIKit
 
-class DetsilInfoVC: UIViewController {
+class DetailInfoVC: UIViewController, UITextViewDelegate {
     
     var rulePopUp: RulePopUp!
     var introPopUp: IntroPopUp!
+    
+    //이전 화면에서 받아온 값
+    var selectedCategory: Int?
+    var studyTitleText: String?
+    var studyMood: String?
+    var postStartDate: String?
+    var postEndDate: String?
+    var maxMemberCount: Int = 4
+    var isOnline: Bool = false
+    var place: String?
+    var onlinePlatform: Int?
 
+    @IBOutlet weak var goalTextField: UITextField!
+    @IBOutlet weak var weekendSegment: UISegmentedControl!
+    @IBOutlet weak var weekendBtns: UIStackView!
     @IBOutlet weak var popUpView2: UIButton!
     @IBOutlet weak var popUpView1: UIButton!
     @IBOutlet weak var sunLabel: UILabel!
@@ -41,6 +55,17 @@ class DetsilInfoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 로그로 변수들의 값 확인
+        print("selectedCategory: \(selectedCategory ?? -1)")
+        print("studyTitleText: \(studyTitleText ?? "N/A")")
+        print("studyMood: \(studyMood ?? "N/A")")
+        print("postStartDate: \(postStartDate ?? "N/A")")
+        print("postEndDate: \(postEndDate ?? "N/A")")
+        print("maxMemberCount: \(maxMemberCount)")
+        print("isOnline: \(isOnline)")
+        print("place: \(place ?? "N/A")")
+        print("onlinePlatFormNum: \(onlinePlatform ?? -1)")
+        
         popUpView1.layer.cornerRadius = 4
         popUpView2.layer.cornerRadius = 4
         
@@ -48,17 +73,20 @@ class DetsilInfoVC: UIViewController {
         studyRuleTextField.layer.borderColor = UIColor(hex: "F2F2F2").cgColor
         studyRuleTextField.layer.backgroundColor = UIColor(hex: "F2F2F2").cgColor
         studyRuleTextField.layer.borderWidth = 1
+        studyRuleTextField.delegate = self
+        studyRuleTextField.textContainerInset = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
         
         studyIntroduceTextView.layer.cornerRadius = 8
         studyIntroduceTextView.layer.borderColor = UIColor(hex: "F2F2F2").cgColor
         studyIntroduceTextView.layer.backgroundColor = UIColor(hex: "F2F2F2").cgColor
         studyIntroduceTextView.layer.borderWidth = 1
+        studyIntroduceTextView.textContainerInset = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
         
         questionTextView.layer.cornerRadius = 8
         questionTextView.layer.borderColor = UIColor(hex: "F2F2F2").cgColor
         questionTextView.layer.backgroundColor = UIColor(hex: "F2F2F2").cgColor
         questionTextView.layer.borderWidth = 1
-        
+        questionTextView.textContainerInset = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
         
         setupWeekView(sunView)
         setupWeekView(satView)
@@ -165,6 +193,16 @@ class DetsilInfoVC: UIViewController {
         updateStudyRuleTextField()
     }
     
+    @IBAction func backBtnTapped(_ sender: UIButton) {
+        guard let navigationControllers = self.navigationController?.viewControllers else { return }
+        for viewController in navigationControllers {
+            if let previousVC = viewController as? BasicInfoVC {
+                self.navigationController?.popToViewController(previousVC, animated: false)
+                break
+            }
+        }
+    }
+    
     @IBAction func inroBtnClicked(_ sender: Any){
         self.introPopUp = IntroPopUp(frame: self.view.frame)
         self.introPopUp.introPopUpCloseBtn.addTarget(self, action: #selector(closeinroBtnTapped), for:.touchUpInside)
@@ -173,6 +211,15 @@ class DetsilInfoVC: UIViewController {
     
     @objc func closeinroBtnTapped(){
         self.introPopUp.removeFromSuperview()
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            // 사용자가 엔터 키를 눌렀을 때
+            textView.insertText("\n🌟 ")
+            return false
+        }
+        return true
     }
     
     func updateStudyRuleTextField() {
@@ -194,8 +241,37 @@ class DetsilInfoVC: UIViewController {
                    return ""
                }
            }
-           studyRuleTextField.text = ruleTexts.joined(separator: "\n\n")
+           studyRuleTextField.text = ruleTexts.joined(separator: "\n")
        }
+    
+    @IBAction func nextButtonTapped(_ sender: UIButton) {
+        
+        if let registerTodoVC = storyboard?.instantiateViewController(withIdentifier: "RegisterTodoVC") as? RegisterTodoVC {
+                // 변수들을 다음 뷰 컨트롤러에 전달
+//            registerTodoVC.selectedCategory = selectedCategory
+//            registerTodoVC.studyTitleText = studyTitleText
+//            registerTodoVC.studyMood = studyMood
+//            registerTodoVC.postStartDate = postStartDate
+//            registerTodoVC.postEndDate = postEndDate
+//            registerTodoVC.maxMemberCount = maxMemberCount
+//            registerTodoVC.isOnline = isOnline
+//            registerTodoVC.place = place
+//            registerTodoVC.onlinePlatform = onlinePlatform
+
+            self.navigationController?.pushViewController(registerTodoVC, animated: false)
+        }
+    }
+    
+    @IBAction func weekendSegmentValueChanged(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 1 {
+            // weekendSegment의 값이 1일 때 (두 번째 세그먼트 선택 시)
+            weekendBtns.isHidden = true
+        } else {
+            weekendBtns.isHidden = false
+        }
+    }
+    
+    
 
 }
 
