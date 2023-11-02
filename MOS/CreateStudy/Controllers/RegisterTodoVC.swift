@@ -118,6 +118,9 @@ extension RegisterTodoVC: DeleteTableViewCellDelegate {
     }
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
+        if let finishVC = storyboard?.instantiateViewController(withIdentifier: "FinishVC") as? FinishVC {
+            self.navigationController?.pushViewController(finishVC, animated: false)
+        }
         // RequestData를 생성
         let parameterData = RequestData(
             title: studyTitleText,
@@ -137,17 +140,18 @@ extension RegisterTodoVC: DeleteTableViewCellDelegate {
         )
 
         // API 호출
-        CreateStudyPost.instance.createStudyPosting(parameters: parameterData) { [weak self] result in
-            switch result {
-            case .success(let resultModel):
-                self?.ResultModel = resultModel
-                print("스터디 생성 서버통신 성공!")
-                // 성공 시 다음 화면으로 이동하는 코드를 추가할 수 있습니다.
-            case .failure(let error):
-                // Handle the error as needed
-                print("Error: \(error)")
-            }
-        }
+//        CreateStudyPost.instance.createStudyPosting(parameters: parameterData) { [weak self] result in
+//            switch result {
+//            case .success(let resultModel):
+//                self?.ResultModel = resultModel
+//                print("스터디 생성 서버통신 성공!")
+//                // 성공 시 다음 화면으로 이동하는 코드를 추가할 수 있습니다.
+//            case .failure(let error):
+//                // Handle the error as needed
+//                print("Error: \(error)")
+//            }
+//        }
+        
     }
     
     @IBAction func backBtnTapped(_ sender: UIButton) {
