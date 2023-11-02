@@ -45,10 +45,8 @@
 		2FF25FE02A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF25FDF2A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift */; };
 		2FFCFC422A1DD2A200E2AC95 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */; };
 		2FFCFC442A1DD2B200E2AC95 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */; };
-		5A06F8F42AED015400D9F5B3 /* createStudyPostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06F8F32AED015400D9F5B3 /* createStudyPostAPI.swift */; };
 		5A0E75A22AE82A6B00476BCE /* RulePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0E75A12AE82A6B00476BCE /* RulePopUp.swift */; };
 		5A0E75A42AE832DE00476BCE /* RulePopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E75A32AE832DE00476BCE /* RulePopUp.xib */; };
-		5A2646642AEA394900B4CE31 /* SignUpPostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2646632AEA394900B4CE31 /* SignUpPostAPI.swift */; };
 		5A2646662AEA39AB00B4CE31 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2646652AEA39AB00B4CE31 /* APIConstants.swift */; };
 		5A3FE53B2A98D784009E7E37 /* RoundedProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3FE53A2A98D784009E7E37 /* RoundedProgressView.swift */; };
 		5A3FE53D2AA3A7B5009E7E37 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3FE53C2AA3A7B5009E7E37 /* UIColor.swift */; };
@@ -72,6 +70,8 @@
 		5A7AA0D12A41BDCA0087DE3C /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */; };
 		5A7AA0D42A41C1A10087DE3C /* AllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D32A41C1A10087DE3C /* AllViewController.swift */; };
 		5A7AA0D62A41C1DC0087DE3C /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AA0D52A41C1DC0087DE3C /* AnalysisViewController.swift */; };
+		5A8BF2132AF35B4D00C58D45 /* CreateStudyPostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8BF2122AF35B4D00C58D45 /* CreateStudyPostAPI.swift */; };
+		5A8BF2162AF35BBC00C58D45 /* SignUpPostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8BF2152AF35BBC00C58D45 /* SignUpPostAPI.swift */; };
 		5AA0154A2AE974320062258C /* IntroPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AA015492AE974320062258C /* IntroPopUp.xib */; };
 		5AA0154C2AE978CA0062258C /* IntroPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0154B2AE978CA0062258C /* IntroPopUp.swift */; };
 		5AC619912A170A4000966219 /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC619902A170A4000966219 /* Survey.storyboard */; };
@@ -138,10 +138,8 @@
 		2FF25FDF2A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		2FFCFC412A1DD2A200E2AC95 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2FFCFC432A1DD2B200E2AC95 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		5A06F8F32AED015400D9F5B3 /* createStudyPostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createStudyPostAPI.swift; sourceTree = "<group>"; };
 		5A0E75A12AE82A6B00476BCE /* RulePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulePopUp.swift; sourceTree = "<group>"; };
 		5A0E75A32AE832DE00476BCE /* RulePopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RulePopUp.xib; sourceTree = "<group>"; };
-		5A2646632AEA394900B4CE31 /* SignUpPostAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpPostAPI.swift; path = ../../../../../Downloads/SignUpPostAPI.swift; sourceTree = "<group>"; };
 		5A2646652AEA39AB00B4CE31 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		5A3FE53A2A98D784009E7E37 /* RoundedProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedProgressView.swift; sourceTree = "<group>"; };
 		5A3FE53C2AA3A7B5009E7E37 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -165,6 +163,8 @@
 		5A7AA0D02A41BDCA0087DE3C /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		5A7AA0D32A41C1A10087DE3C /* AllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllViewController.swift; sourceTree = "<group>"; };
 		5A7AA0D52A41C1DC0087DE3C /* AnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
+		5A8BF2122AF35B4D00C58D45 /* CreateStudyPostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStudyPostAPI.swift; sourceTree = "<group>"; };
+		5A8BF2152AF35BBC00C58D45 /* SignUpPostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPostAPI.swift; sourceTree = "<group>"; };
 		5AA015492AE974320062258C /* IntroPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroPopUp.xib; sourceTree = "<group>"; };
 		5AA0154B2AE978CA0062258C /* IntroPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPopUp.swift; sourceTree = "<group>"; };
 		5AC619902A170A4000966219 /* Survey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
@@ -275,14 +275,6 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		2F8E489C2AE0F3A0005A6C6E /* APIs */ = {
-			isa = PBXGroup;
-			children = (
-				5A2646632AEA394900B4CE31 /* SignUpPostAPI.swift */,
-			);
-			path = APIs;
-			sourceTree = "<group>";
-		};
 		2FA142692A149024006AA91B = {
 			isa = PBXGroup;
 			children = (
@@ -389,7 +381,7 @@
 		2FC177AD2AD7DAB000873B50 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				2F8E489C2AE0F3A0005A6C6E /* APIs */,
+				5A8BF2142AF35B8A00C58D45 /* APIs */,
 				2FC177AE2AD7DACF00873B50 /* Views */,
 				2FC177AF2AD7DAD500873B50 /* Controllers */,
 			);
@@ -410,14 +402,6 @@
 				2FC177B22AD7DB5500873B50 /* SignUpViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		5A06F8EE2AED00A100D9F5B3 /* APIs */ = {
-			isa = PBXGroup;
-			children = (
-				5A06F8F32AED015400D9F5B3 /* createStudyPostAPI.swift */,
-			);
-			path = APIs;
 			sourceTree = "<group>";
 		};
 		5A3FE53E2AA3C27B009E7E37 /* Survey */ = {
@@ -498,6 +482,22 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		5A8BF2112AF35B1600C58D45 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				5A8BF2122AF35B4D00C58D45 /* CreateStudyPostAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		5A8BF2142AF35B8A00C58D45 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				5A8BF2152AF35BBC00C58D45 /* SignUpPostAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
 		5AC619942A17105600966219 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -510,7 +510,7 @@
 		5ADD7C522ACC093E0093661A /* CreateStudy */ = {
 			isa = PBXGroup;
 			children = (
-				5A06F8EE2AED00A100D9F5B3 /* APIs */,
+				5A8BF2112AF35B1600C58D45 /* APIs */,
 				5ADD7C532ACC096C0093661A /* Views */,
 				5ADD7C542ACC09780093661A /* Controllers */,
 			);
@@ -731,6 +731,7 @@
 				5AA0154C2AE978CA0062258C /* IntroPopUp.swift in Sources */,
 				2F28E67F2A1DD9C700021E72 /* SearchViewController.swift in Sources */,
 				2FFCFC442A1DD2B200E2AC95 /* HomeViewController.swift in Sources */,
+				5A8BF2162AF35BBC00C58D45 /* SignUpPostAPI.swift in Sources */,
 				2F8270E22A8F7EEB00CE7BE1 /* StudyListModel.swift in Sources */,
 				2FC144852AC8067400A642AD /* StudyBasicInfoViewController.swift in Sources */,
 				5ADD7C5A2AD72F580093661A /* CheckTableViewCell.swift in Sources */,
@@ -749,7 +750,6 @@
 				F3A7F9C02A422C4700AE1863 /* CompleteRegisterStudyViewController.swift in Sources */,
 				2F2B3E232A1DBE52008B0506 /* TabMenuViewController.swift in Sources */,
 				2FD8EF952ABC5C7F002A6F3B /* StudyOutlineViewController.swift in Sources */,
-				5A06F8F42AED015400D9F5B3 /* createStudyPostAPI.swift in Sources */,
 				2F20E2CE2ADFD27700A943C7 /* FindPasswordViewController.swift in Sources */,
 				F304A13F2A4206240066036B /* StudyMemberInfoViewController.swift in Sources */,
 				F3A7F9BC2A4219BC00AE1863 /* PreQuestionAlertViewController.swift in Sources */,
@@ -758,6 +758,7 @@
 				2F0BA3EC2AE0351E009D0353 /* TempPasswordViewController.swift in Sources */,
 				2FA142762A149024006AA91B /* AppDelegate.swift in Sources */,
 				5A2646662AEA39AB00B4CE31 /* APIConstants.swift in Sources */,
+				5A8BF2132AF35B4D00C58D45 /* CreateStudyPostAPI.swift in Sources */,
 				2FA142782A149024006AA91B /* SceneDelegate.swift in Sources */,
 				2F5BA7622A9B278200E9A444 /* RecentSearchLayout.swift in Sources */,
 				5A3FE53B2A98D784009E7E37 /* RoundedProgressView.swift in Sources */,
@@ -765,7 +766,6 @@
 				5A7AA0D12A41BDCA0087DE3C /* PagingViewController.swift in Sources */,
 				5AC619B42A19E5BD00966219 /* SurveyVC.swift in Sources */,
 				2F37F4C82ADEBE9B005BB63A /* PopUpActionViewController.swift in Sources */,
-				5A2646642AEA394900B4CE31 /* SignUpPostAPI.swift in Sources */,
 				5A56B1FE2AE8184900DA8CF6 /* DetailInfoVC.swift in Sources */,
 				2FB095862A2631910035FB78 /* DeviceGroup.swift in Sources */,
 				F304A1412A420FF90066036B /* StudyInfoTodoViewController.swift in Sources */,

@@ -2,7 +2,7 @@
 //  SignUpPostAPI.swift
 //  MOS
 //
-//  Created by yeonsu on 10/19/23.
+//  Created by 김지은 on 2023/11/02.
 //
 
 import Foundation
