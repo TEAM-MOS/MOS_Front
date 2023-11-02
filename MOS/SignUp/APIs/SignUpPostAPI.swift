@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Alamofire
+import Alamofire 
 
 struct SignUpModel: Encodable {
     var email: String
