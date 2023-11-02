@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "survey4.png",
+      "filename" : "ic_survey_start.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "survey4 1.png",
+      "filename" : "ic_survey_start 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "survey4 2.png",
+      "filename" : "ic_survey_start 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

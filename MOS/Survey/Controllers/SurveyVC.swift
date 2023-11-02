@@ -158,25 +158,26 @@ class SurveyVC: UIViewController{
             // 질문 1~5에 해당하는 카테고리 이미지 및 이름 설정
             categoryImage.image = UIImage(named: "survey_category1")
             categoryName.text = "PART1. 산업 & 기업 분석"
-            categoryName.textColor = UIColor(hex: "FE947B")
+            categoryName.textColor = UIColor(hex: "FF4D00")
+            categoryView.backgroundColor = UIColor(hex: "FFF0E2")
         } else if currentQuestionIndex >= 5 && currentQuestionIndex < 10 {
             // 질문 6~10에 해당하는 카테고리 이미지 및 이름 설정
             categoryImage.image = UIImage(named: "survey_category2")
             categoryName.text = "PART2. 시사PT"
             categoryName.textColor = UIColor(hex: "6739FC")
-            starView.image = UIImage(named: "survey_star2")
+            categoryView.backgroundColor = UIColor(hex: "ECC6FF")
         } else if currentQuestionIndex >= 10 && currentQuestionIndex < 15 {
             // 질문 11~15에 해당하는 카테고리 이미지 및 이름 설정
             categoryImage.image = UIImage(named: "survey_category3")
             categoryName.text = "PART3. 자기소개서"
             categoryName.textColor = UIColor(hex: "0CA2EA")
-            starView.image = UIImage(named: "survey_star3")
+            categoryView.backgroundColor = UIColor(hex: "C5E2FF")
         } else if currentQuestionIndex >= 15 && currentQuestionIndex < 20 {
             // 질문 16~20에 해당하는 카테고리 이미지 및 이름 설정
             categoryImage.image = UIImage(named: "survey_category4")
             categoryName.text = "PART4. 면접"
             categoryName.textColor = UIColor(hex: "C04393")
-            starView.image = UIImage(named: "survey_star4")
+            categoryView.backgroundColor = UIColor(hex: "FFDAF2")
         }
     }
     
@@ -242,9 +243,6 @@ class SurveyVC: UIViewController{
     
     func configureCategoryView() {
             categoryView.layer.cornerRadius = 8
-            categoryView.layer.borderWidth = 1
-            categoryView.layer.borderColor = UIColor(red: 0.933, green: 0.933, blue: 0.933, alpha: 1.0).cgColor // EEEEEE
-            categoryView.backgroundColor = UIColor(red: 0.965, green: 0.965, blue: 0.965, alpha: 1.0) // F6F6F6
         }
     
     func toggleButtonColors(_ buttonView: UIView) {
@@ -253,19 +251,19 @@ class SurveyVC: UIViewController{
             
             if currentQuestionIndex >= 0 && currentQuestionIndex < 5 {
                 // 1~5 범위인 경우, 버튼 색상을 설정 (분홍색)
-                buttonView.layer.borderColor = UIColor(hex: "FFE5DE").cgColor
-                buttonView.backgroundColor = UIColor(hex: "FFF3F0" )
+                buttonView.layer.borderColor = UIColor(hex: "FFF0E2").cgColor
+                buttonView.backgroundColor = UIColor(hex: "FFF0E2" )
             } else if currentQuestionIndex >= 5 && currentQuestionIndex < 10 {
                 // 6~10 범위인 경우, 버튼 색상을 설정 (보라색)
-                buttonView.layer.borderColor = UIColor(hex: "D2C3FF").cgColor
-                buttonView.backgroundColor = UIColor(hex: "E3DAFF" )
+                buttonView.layer.borderColor = UIColor(hex: "ECC6FF").cgColor
+                buttonView.backgroundColor = UIColor(hex: "ECC6FF" )
             } else if currentQuestionIndex >= 10 && currentQuestionIndex < 15 {
                 // 11~15 범위인 경우, 버튼 색상을 설정 (주황색)
-                buttonView.layer.borderColor = UIColor(hex: "BEE9FE").cgColor
-                buttonView.backgroundColor = UIColor(hex: "D9F3FF" )
+                buttonView.layer.borderColor = UIColor(hex: "C5E2FF").cgColor
+                buttonView.backgroundColor = UIColor(hex: "C5E2FF" )
             } else if currentQuestionIndex >= 15 && currentQuestionIndex < 20 {
                 // 16~20 범위인 경우, 버튼 색상을 설정 (노란색)
-                buttonView.layer.borderColor = UIColor(hex: "FFCAEC").cgColor
+                buttonView.layer.borderColor = UIColor(hex: "FFDAF2").cgColor
                 buttonView.backgroundColor = UIColor(hex: "FFDAF2" )
             }
         }else {
