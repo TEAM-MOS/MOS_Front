@@ -703,6 +703,7 @@
                         <outlet property="onlineBtns" destination="Z11-mb-1qp" id="QXs-JY-XLk"/>
                         <outlet property="placeSegment" destination="zNg-u0-Lzm" id="ox3-Q1-Emy"/>
                         <outlet property="placeTextField" destination="gEd-IY-5V0" id="TKn-3r-BLL"/>
+                        <outlet property="scrollView" destination="HG4-ZV-oeL" id="RBE-wH-gOZ"/>
                         <outlet property="secondMood" destination="AUq-MS-q5p" id="qTF-lz-yVr"/>
                         <outlet property="secondMoodCheckBox" destination="Scb-mM-l0e" id="8P9-gD-n5Q"/>
                         <outlet property="startDate" destination="rMw-Ez-e2b" id="cli-BA-jPf"/>

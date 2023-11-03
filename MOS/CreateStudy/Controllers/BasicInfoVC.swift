@@ -11,6 +11,7 @@ import DatePicker
 
 class BasicInfoVC: UIViewController,UITextFieldDelegate{
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var onlineBtn4: UIButton!
     @IBOutlet weak var onlineBtn3: UIButton!
     @IBOutlet weak var onlineBtn2: UIButton!
@@ -34,6 +35,7 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var placeTextField: UITextField!
     @IBOutlet weak var onlineBtns: UIStackView!
     
+    var tapGestureRecognizer: UITapGestureRecognizer?
     
     // 카테고리 번호를 받아오는 변수
     var selectedCategory: Int?
@@ -57,6 +59,14 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         placeTextField.delegate = self
+        
+        // UITapGestureRecognizer 초기화
+            tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+            view.addGestureRecognizer(tapGestureRecognizer!)
+        
+        // 키보드 등장 및 사라짐 알림 등록
+                NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+                NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
         if let category = selectedCategory {
             print("선택한 카테고리 번호: \(category)")
@@ -86,6 +96,11 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
         // 초기 MaxMemberNum 설정
         MaxMemberNum.text = String(maxMemberCount)
     }
+    
+    deinit {
+           // 알림 등록 해제
+           NotificationCenter.default.removeObserver(self)
+       }
     
     @IBAction func backBtnTapped(_ sender: UIButton) {
         guard let navigationControllers = self.navigationController?.viewControllers else { return }
@@ -179,6 +194,19 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
         view.accessibilityLabel = mood // 분위기에 대한 문자열 레이블 추가
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // UITapGestureRecognizer 해제
+        if let tapGestureRecognizer = tapGestureRecognizer {
+            view.removeGestureRecognizer(tapGestureRecognizer)
+        }
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true) // 키보드를 내립니다.
+    }
+    
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
         if let tappedView = sender.view, let mood = tappedView.accessibilityLabel {
             studyMood = mood // 선택한 분위기 저장
@@ -232,6 +260,28 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
             }
         }
     }
+    
+    @objc func keyboardWillShow(notification: Notification) {
+            if let keyboardFrame = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+                // 키보드 높이 가져오기
+                let keyboardHeight = keyboardFrame.height
+
+                // UITextField가 키보드에 가려질 때 스크롤
+                if let textFieldFrame = placeTextField.superview?.convert(placeTextField.frame, to: view) {
+                    let textFieldBottomY = textFieldFrame.origin.y + textFieldFrame.height + 300
+                    let visibleContentHeight = view.frame.height - keyboardHeight
+                    if textFieldBottomY > visibleContentHeight {
+                        let offset = textFieldBottomY - visibleContentHeight
+                        scrollView.setContentOffset(CGPoint(x: 0, y: offset), animated: true)
+                    }
+                }
+            }
+        }
+
+        @objc func keyboardWillHide() {
+            // 키보드가 사라질 때 스크롤 뷰 원래 위치로 되돌리기
+            scrollView.setContentOffset(.zero, animated: true)
+        }
     
     @IBAction func memberCountUpTapped(_ sender: UIButton) {
         if maxMemberCount < 10 {
