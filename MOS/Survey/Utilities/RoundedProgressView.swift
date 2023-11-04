@@ -23,6 +23,12 @@ class RoundedProgressView: UIView {
         }
     }
     
+    var lowestProgress: Float = 0.0 {
+        didSet {
+            setNeedsLayout()
+        }
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -37,7 +43,7 @@ class RoundedProgressView: UIView {
         progressBarLayer.path = progressPath.cgPath
         
         // Set the fill color for the progress bar
-        if progress < 0.6 {
+        if progress == lowestProgress {
             progressBarLayer.fillColor = UIColor(named: "gray-2")?.cgColor
         } else {
             progressBarLayer.fillColor = UIColor(named: "gray-1")?.cgColor

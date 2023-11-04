@@ -47,11 +47,20 @@ class SurveyResultVC: UIViewController {
         let categoryTwoProgress = Float(categoryTwoScore) / Float(maxScorePerCategory)
         let categoryThreeProgress = Float(categoryThreeScore) / Float(maxScorePerCategory)
         let categoryFourProgress = Float(categoryFourScore) / Float(maxScorePerCategory)
+        // Find the lowest progress
+        let lowestProgress = min(categoryOneProgress, categoryTwoProgress, categoryThreeProgress, categoryFourProgress)
         
         categoryOneProgressBar.progress = categoryOneProgress
+        categoryOneProgressBar.lowestProgress = lowestProgress
+                
         categoryTwoProgressBar.progress = categoryTwoProgress
+        categoryTwoProgressBar.lowestProgress = lowestProgress
+        
         categoryThreeProgressBar.progress = categoryThreeProgress
+        categoryThreeProgressBar.lowestProgress = lowestProgress
+        
         categoryFourProgressBar.progress = categoryFourProgress
+        categoryFourProgressBar.lowestProgress = lowestProgress
     }
 
     
