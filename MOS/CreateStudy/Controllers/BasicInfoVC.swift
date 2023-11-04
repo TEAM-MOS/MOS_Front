@@ -267,21 +267,23 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
 
             if placeTextField.isFirstResponder {
                 if let textFieldFrame = placeTextField.superview?.convert(placeTextField.frame, to: view) {
-                    let textFieldBottomY = textFieldFrame.origin.y + textFieldFrame.height + 300
+                    let textFieldBottomY = textFieldFrame.origin.y + textFieldFrame.height
                     let visibleContentHeight = view.frame.height - keyboardHeight
+
                     if textFieldBottomY > visibleContentHeight {
                         let offset = textFieldBottomY - visibleContentHeight
-                        scrollView.setContentOffset(CGPoint(x: 0, y: offset), animated: true)
+                        scrollView.contentOffset.y += offset // 현재 스크롤 위치에 offset을 더하여 고정
                     }
                 }
             }
         }
     }
 
-        @objc func keyboardWillHide() {
-            // 키보드가 사라질 때 스크롤 뷰 원래 위치로 되돌리기
-            scrollView.setContentOffset(.zero, animated: true)
-        }
+    @objc func keyboardWillHide() {
+        // 키보드가 사라질 때 스크롤 뷰 원래 위치로 되돌리기
+        scrollView.setContentOffset(.zero, animated: true)
+    }
+
     
     @IBAction func memberCountUpTapped(_ sender: UIButton) {
         if maxMemberCount < 10 {
