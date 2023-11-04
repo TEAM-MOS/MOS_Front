@@ -49,6 +49,8 @@ class HomeViewController: UIViewController {
     @IBAction func category6BtnTapped(_ sender: UITapGestureRecognizer) {
         self.performSegue(withIdentifier: "navToCategory", sender: 6)
     }
+
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "navToCategory" {
             if let pagingViewController = segue.destination as? PagingViewController, let pageIndex = sender as? Int {
@@ -74,6 +76,11 @@ class HomeViewController: UIViewController {
         self.moveToTestView.layer.cornerRadius = 16
         self.moveToTestView.layer.backgroundColor = UIColor(hex: "FF5454").cgColor
         self.moveToTestView.layer.masksToBounds = false
+    }
+    @IBAction func createStudyBtnTapped(_ sender: Any) {
+        if let tabBarController = self.tabBarController {
+                tabBarController.selectedIndex = 2 // 0은 첫 번째 탭을 나타냅니다. 적절한 인덱스로 변경하세요.
+            }
     }
 }
 

@@ -65,6 +65,9 @@
                                                     <constraint firstAttribute="width" secondItem="3Ay-NY-JJd" secondAttribute="height" multiplier="324:116" id="5FF-rB-3NO"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="createStudyBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6cS-JT-5xc"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모두의 스터디" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLf-5O-rkW">
                                                 <rect key="frame" x="23.999999999999993" y="26" width="108.33333333333331" height="24"/>
@@ -76,12 +79,6 @@
                                                 <rect key="frame" x="23.999999999999986" y="232.66666666666669" width="224.66666666666663" height="21.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
                                                 <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전체보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEm-an-g6e">
-                                                <rect key="frame" x="320.33333333333331" y="237.33333333333331" width="48.666666666666686" height="17"/>
-                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2r5-S8-csZ">
@@ -142,7 +139,6 @@
                                                                         <state key="normal" image="ic_home_category3"/>
                                                                         <connections>
                                                                             <action selector="category3btnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hMD-3k-Xek"/>
-                                                                            <action selector="category6BtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="OyP-Cr-c5u"/>
                                                                         </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인/적성" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgM-81-gTC">
@@ -208,6 +204,9 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="104.33333333333333"/>
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                         <state key="normal" image="ic_home_category6"/>
+                                                                        <connections>
+                                                                            <action selector="category6BtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4T9-Ry-qec"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="어학" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DI3-Fd-cIp">
                                                                         <rect key="frame" x="0.0" y="116.33333333333337" width="104.33333333333333" height="14.333333333333343"/>
@@ -376,7 +375,6 @@
                                             <constraint firstItem="2r5-S8-csZ" firstAttribute="top" secondItem="oK3-fZ-fxc" secondAttribute="bottom" constant="16" id="TdZ-pZ-hcX"/>
                                             <constraint firstItem="me3-Sm-AiL" firstAttribute="top" secondItem="uFM-Q8-LzU" secondAttribute="bottom" constant="16" id="UC9-gn-H1V"/>
                                             <constraint firstItem="3Ay-NY-JJd" firstAttribute="leading" secondItem="PtM-0y-nqw" secondAttribute="leading" id="UWD-WS-5En"/>
-                                            <constraint firstItem="UEm-an-g6e" firstAttribute="bottom" secondItem="oK3-fZ-fxc" secondAttribute="bottom" id="V1b-k9-la3"/>
                                             <constraint firstItem="3Ay-NY-JJd" firstAttribute="centerX" secondItem="PtM-0y-nqw" secondAttribute="centerX" id="YNs-70-VIG"/>
                                             <constraint firstItem="3aQ-zQ-rKZ" firstAttribute="top" secondItem="YdK-N6-Q8V" secondAttribute="bottom" constant="16" id="Yil-1y-LRl"/>
                                             <constraint firstItem="oK3-fZ-fxc" firstAttribute="leading" secondItem="SLf-5O-rkW" secondAttribute="leading" id="Z2f-Ez-im1"/>
@@ -386,7 +384,6 @@
                                             <constraint firstAttribute="trailing" secondItem="2r5-S8-csZ" secondAttribute="trailing" constant="24" id="hCP-k4-2Fr"/>
                                             <constraint firstItem="YdK-N6-Q8V" firstAttribute="leading" secondItem="oK3-fZ-fxc" secondAttribute="leading" id="j3T-dg-InH"/>
                                             <constraint firstItem="me3-Sm-AiL" firstAttribute="centerX" secondItem="PtM-0y-nqw" secondAttribute="centerX" id="kcG-nN-ggE"/>
-                                            <constraint firstItem="UEm-an-g6e" firstAttribute="trailing" secondItem="2r5-S8-csZ" secondAttribute="trailing" id="lJP-n1-5tE"/>
                                             <constraint firstItem="me3-Sm-AiL" firstAttribute="leading" secondItem="PtM-0y-nqw" secondAttribute="leading" constant="24" id="mpA-lf-TmC"/>
                                             <constraint firstItem="uFM-Q8-LzU" firstAttribute="top" secondItem="9jc-xc-BsI" secondAttribute="bottom" constant="6" id="oGB-Wc-elT"/>
                                             <constraint firstItem="SLf-5O-rkW" firstAttribute="leading" secondItem="PtM-0y-nqw" secondAttribute="leading" constant="24" id="rWp-Vo-Bjb"/>
@@ -426,7 +423,7 @@
                         <outlet property="moveToTestView" destination="me3-Sm-AiL" id="Z2Z-gx-AWl"/>
                         <outlet property="navToSurveyBtn" destination="me3-Sm-AiL" id="v9V-Dl-MgN"/>
                         <outlet property="showMoreStudies" destination="rWZ-8Z-jiw" id="z0P-OD-zgA"/>
-                        <segue destination="D7u-J8-10K" kind="show" identifier="navToCategory" id="8wO-Hi-NaM"/>
+                        <segue destination="D7u-J8-10K" kind="show" identifier="navToCategory" animates="NO" id="8wO-Hi-NaM"/>
                         <segue destination="mUU-jE-WWJ" kind="showDetail" identifier="navToSurvey" id="kQI-Tj-1SJ"/>
                     </connections>
                 </viewController>
@@ -1238,7 +1235,6 @@
                     <connections>
                         <outlet property="backBtn" destination="Ygf-61-XuB" id="lQe-I8-dZT"/>
                         <outlet property="viewPager" destination="xye-7H-PYN" id="T5h-e0-D2s"/>
-                        <segue destination="Y6W-OH-hqX" kind="show" identifier="navToHome" id="YTq-1M-nJX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gVs-4u-xYo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1246,10 +1242,6 @@
             <point key="canvasLocation" x="913.74045801526711" y="-35.211267605633807"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="8wO-Hi-NaM"/>
-        <segue reference="YTq-1M-nJX"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="home_createStudy_Btn" width="20.333333969116211" height="17.333333969116211"/>
         <image name="home_main_character" width="139.33332824707031" height="143"/>
