@@ -19,7 +19,7 @@ class ChooseCategoryVC: UIViewController{
     @IBOutlet weak var category6Btn: UIButton!
     
     // 카테고리 번호를 저장할 변수
-    var selectedCategory: Int?
+    var selectedCategory: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class ChooseCategoryVC: UIViewController{
     // 각 카테고리 버튼을 탭했을 때 호출되는 메서드
         @IBAction func categoryButtonTapped(_ sender: UIButton) {
             // 선택한 카테고리 번호 저장
-            selectedCategory = sender.tag
+            selectedCategory = "category\(sender.tag)"
             // Storyboard에서 "BasicInfoVC"의 식별자에 해당하는 뷰 컨트롤러를 가져옵니다.
             if let basicInfoVC = storyboard?.instantiateViewController(withIdentifier: "BasicInfoVC") as? BasicInfoVC {
                 // 선택한 카테고리 번호를 다음 뷰 컨트롤러에 전달

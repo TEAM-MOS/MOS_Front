@@ -38,7 +38,7 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     var tapGestureRecognizer: UITapGestureRecognizer?
     
     // 카테고리 번호를 받아오는 변수
-    var selectedCategory: Int?
+    var selectedCategory: String?
     // 스터디명 저장 변수
     var studyTitleText: String?
     // 추구하는 스터디 분위기 저장 변수
@@ -311,7 +311,7 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
             detailInfoVC.studyMood = studyMood
             detailInfoVC.postStartDate = postStartDate
             detailInfoVC.postEndDate = postEndDate
-            detailInfoVC.maxMemberCount = maxMemberCount
+            detailInfoVC.maxMember = maxMemberCount
             detailInfoVC.isOnline = isOnline
             detailInfoVC.place = place
             detailInfoVC.onlinePlatform = onlinePlatform

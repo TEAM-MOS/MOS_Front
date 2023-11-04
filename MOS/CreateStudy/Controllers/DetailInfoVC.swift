@@ -7,22 +7,29 @@
 
 import UIKit
 
-class DetailInfoVC: UIViewController, UITextViewDelegate {
+class DetailInfoVC: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     
     var rulePopUp: RulePopUp!
     var introPopUp: IntroPopUp!
     
     //이전 화면에서 받아온 값
-    var selectedCategory: Int?
+    var selectedCategory: String?
     var studyTitleText: String?
     var studyMood: String?
     var postStartDate: String?
     var postEndDate: String?
-    var maxMemberCount: Int = 4
+    var maxMember: Int = 4
     var isOnline: Bool = false
     var place: String?
     var onlinePlatform: Int?
-
+    
+    //해당 화면에서 받을 값
+    var goal: String? = nil
+    var rules: String? = nil
+    var quest: String? = nil
+    var intro: String? = nil
+    var studyDays: [String] = []
+    
     @IBOutlet weak var goalTextField: UITextField!
     @IBOutlet weak var weekendSegment: UISegmentedControl!
     @IBOutlet weak var weekendBtns: UIStackView!
@@ -42,9 +49,8 @@ class DetailInfoVC: UIViewController, UITextViewDelegate {
     @IBOutlet weak var wedView: UIView!
     @IBOutlet weak var TueView: UIView!
     @IBOutlet weak var MonView: UIView!
-    @IBOutlet weak var studyRuleTextField: UITextView!
+    @IBOutlet weak var studyRuleTextView: UITextView!
     @IBOutlet weak var studyIntroduceTextView: UITextView!
-    
     @IBOutlet weak var questionTextView: UITextView!
     // Dictionary to store the tap count for each view
     var tapCount: [UIView: Int] = [:]
@@ -55,26 +61,20 @@ class DetailInfoVC: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 로그로 변수들의 값 확인
-        print("selectedCategory: \(selectedCategory ?? -1)")
-        print("studyTitleText: \(studyTitleText ?? "N/A")")
-        print("studyMood: \(studyMood ?? "N/A")")
-        print("postStartDate: \(postStartDate ?? "N/A")")
-        print("postEndDate: \(postEndDate ?? "N/A")")
-        print("maxMemberCount: \(maxMemberCount)")
-        print("isOnline: \(isOnline)")
-        print("place: \(place ?? "N/A")")
-        print("onlinePlatFormNum: \(onlinePlatform ?? -1)")
+        goalTextField.delegate = self
+        studyRuleTextView.delegate = self
+        studyIntroduceTextView.delegate = self
+        questionTextView.delegate = self
         
         popUpView1.layer.cornerRadius = 4
         popUpView2.layer.cornerRadius = 4
         
-        studyRuleTextField.layer.cornerRadius = 8
-        studyRuleTextField.layer.borderColor = UIColor(hex: "F2F2F2").cgColor
-        studyRuleTextField.layer.backgroundColor = UIColor(hex: "F2F2F2").cgColor
-        studyRuleTextField.layer.borderWidth = 1
-        studyRuleTextField.delegate = self
-        studyRuleTextField.textContainerInset = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
+        studyRuleTextView.layer.cornerRadius = 8
+        studyRuleTextView.layer.borderColor = UIColor(hex: "F2F2F2").cgColor
+        studyRuleTextView.layer.backgroundColor = UIColor(hex: "F2F2F2").cgColor
+        studyRuleTextView.layer.borderWidth = 1
+        studyRuleTextView.delegate = self
+        studyRuleTextView.textContainerInset = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
         
         studyIntroduceTextView.layer.cornerRadius = 8
         studyIntroduceTextView.layer.borderColor = UIColor(hex: "F2F2F2").cgColor
@@ -116,7 +116,7 @@ class DetailInfoVC: UIViewController, UITextViewDelegate {
         // Initialize the tap count for each view to 0
         tapCount[view] = 0
     }
-
+    
     func setupWeekView(_ view: UIView) {
         view.layer.borderWidth = 1
         view.layer.cornerRadius = 8
@@ -125,6 +125,24 @@ class DetailInfoVC: UIViewController, UITextViewDelegate {
         
         // Initialize the tap count for each view to 0
         tapCount[view] = 0
+    }
+    
+    // UITextView 입력이 끝났을 때 호출되는 UITextViewDelegate 메서드
+        func textViewDidEndEditing(_ textView: UITextView) {
+            if textView == studyRuleTextView {
+                rules = textView.text
+            } else if textView == studyIntroduceTextView {
+                intro = textView.text
+            } else if textView == questionTextView {
+                quest = textView.text
+            }
+        }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == goalTextField {
+            // goalTextField에서 입력이 끝났을 때 goal 값을 변경
+            goal = textField.text
+        }
     }
     
     func addTapGestureToView(_ view: UIView, day: String) {
@@ -224,40 +242,44 @@ class DetailInfoVC: UIViewController, UITextViewDelegate {
     
     func updateStudyRuleTextField() {
         let ruleTexts: [String] = rulePopUp.selectedViews.map { view in
-               switch view.tag {
-               case 0:
-                   return "🌟 서로를 존중하고 매너있게 대화를 나눠요."
-               case 1:
-                   return "🌟 지각시, 지각비를 내야해요."
-               case 2:
-                   return "🌟 연애나 친목을 금지해요."
-               case 3:
-                   return "🌟 스터디에 발표 시, 열심히 준비하신 분은 투표를 통해 당일 모임비에서 제외시켜드려요."
-               case 4:
-                   return "🌟 스터디 과제 꼭 해오기. 안해올 경우, 패널티 부여."
-               case 5:
-                   return "🌟 스터디 당일 연락두절 되지 않기."
-               default:
-                   return ""
-               }
-           }
-           studyRuleTextField.text = ruleTexts.joined(separator: "\n")
-       }
+            switch view.tag {
+            case 0:
+                return "🌟 서로를 존중하고 매너있게 대화를 나눠요."
+            case 1:
+                return "🌟 지각시, 지각비를 내야해요."
+            case 2:
+                return "🌟 연애나 친목을 금지해요."
+            case 3:
+                return "🌟 스터디에 발표 시, 열심히 준비하신 분은 투표를 통해 당일 모임비에서 제외시켜드려요."
+            case 4:
+                return "🌟 스터디 과제 꼭 해오기. 안해올 경우, 패널티 부여."
+            case 5:
+                return "🌟 스터디 당일 연락두절 되지 않기."
+            default:
+                return ""
+            }
+        }
+        studyRuleTextView.text = ruleTexts.joined(separator: "\n")
+    }
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
         
         if let registerTodoVC = storyboard?.instantiateViewController(withIdentifier: "RegisterTodoVC") as? RegisterTodoVC {
-                // 변수들을 다음 뷰 컨트롤러에 전달
-//            registerTodoVC.selectedCategory = selectedCategory
-//            registerTodoVC.studyTitleText = studyTitleText
-//            registerTodoVC.studyMood = studyMood
-//            registerTodoVC.postStartDate = postStartDate
-//            registerTodoVC.postEndDate = postEndDate
-//            registerTodoVC.maxMemberCount = maxMemberCount
-//            registerTodoVC.isOnline = isOnline
-//            registerTodoVC.place = place
-//            registerTodoVC.onlinePlatform = onlinePlatform
-
+            // 변수들을 다음 뷰 컨트롤러에 전달
+            registerTodoVC.category = selectedCategory
+            registerTodoVC.studyTitleText = studyTitleText
+            registerTodoVC.mod = studyMood
+            registerTodoVC.startDate = postStartDate
+            registerTodoVC.endDate = postEndDate
+            registerTodoVC.maxMember = maxMember
+            registerTodoVC.onOff = isOnline
+            registerTodoVC.location = place
+            registerTodoVC.online = onlinePlatform
+            registerTodoVC.goal = goal
+            registerTodoVC.rules = rules
+            registerTodoVC.quest = quest
+            registerTodoVC.intro = intro
+            
             self.navigationController?.pushViewController(registerTodoVC, animated: false)
         }
     }
@@ -271,8 +293,6 @@ class DetailInfoVC: UIViewController, UITextViewDelegate {
         }
     }
     
-    
-
 }
 
 

@@ -13,19 +13,19 @@ class RegisterTodoVC: UIViewController{
     var ResultModel: CreateStudyResultModel!
     
     // API post
-    let studyTitleText = "모집중 테스트3"
-    let goal = "자격증 취득"
-    let rules = "열품타 하루 5시간 이상"
-    let quest = "공시를 준비해 본 적 있나요?"
-    let category = "category1"
-    let intro = "공시스터디 입니다."
-    let maxMember = 10
-    let mod = "빡공모드"
-    let onOff = false
-    let online: Int? = nil
-    let location = "송파구"
-    let startDate = "2023-09-20"
-    let endDate = "2024-03-31"
+    var category: String?
+    var studyTitleText: String?
+    var mod: String?
+    var startDate: String?
+    var endDate: String?
+    var maxMember: Int = 4
+    var onOff: Bool = false
+    var location: String?
+    var online: Int?
+    var goal: String?
+    var rules: String?
+    var quest: String?
+    var intro: String?
     let studyDays = ["MON", "SUN"]
     
     @IBOutlet weak var addCellBtn: UIButton!
@@ -43,6 +43,23 @@ class RegisterTodoVC: UIViewController{
         addCellBtn.layer.borderWidth=1
         addCellBtn.layer.cornerRadius = 4
         addCellBtn.layer.borderColor = UIColor(named:"mainColor")?.cgColor
+        
+        // 로그로 변수들의 값 확인
+        print("selectedCategory: \(category ?? "N/A")")
+        print("studyTitleText: \(studyTitleText ?? "N/A")")
+        print("studyMood: \(mod ?? "N/A")")
+        print("postStartDate: \(startDate ?? "N/A")")
+        print("postEndDate: \(endDate ?? "N/A")")
+        print("maxMemberCount: \(maxMember)")
+        print("isOnline: \(onOff)")
+        print("place: \(location ?? "N/A")")
+        print("onlinePlatFormNum: \(online ?? -1)")
+        print("goal: \(goal ?? "N/A")")
+        print("rules: \(rules ?? "N/A")")
+        print("quest: \(quest ?? "N/A")")
+        print("intro: \(intro ?? "N/A")")
+        print("studyDays: \(studyDays)")
+
         
         // 데이터 소스와 델리게이트를 설정
         tableView.dataSource = self
@@ -123,34 +140,34 @@ extension RegisterTodoVC: DeleteTableViewCellDelegate {
         }
         // RequestData를 생성
         let parameterData = RequestData(
-            title: studyTitleText,
-            goal: goal,
-            rules: rules,
-            quest: quest,
-            category: category,
-            intro: intro,
+            title: studyTitleText!,
+            goal: goal!,
+            rules: rules!,
+            quest: quest!,
+            category: category!,
+            intro: intro ?? "",
             maxMember: maxMember,
-            mod: mod,
+            mod: mod!,
             onOff: onOff,
             online: online,
             location: location,
-            startDate: startDate,
-            endDate: endDate,
+            startDate: startDate!,
+            endDate: endDate!,
             studyDayEntities: studyDays.map { StudyDayEntity(studyDays: $0) }
         )
 
-        // API 호출
-//        CreateStudyPost.instance.createStudyPosting(parameters: parameterData) { [weak self] result in
-//            switch result {
-//            case .success(let resultModel):
-//                self?.ResultModel = resultModel
-//                print("스터디 생성 서버통신 성공!")
-//                // 성공 시 다음 화면으로 이동하는 코드를 추가할 수 있습니다.
-//            case .failure(let error):
-//                // Handle the error as needed
-//                print("Error: \(error)")
-//            }
-//        }
+        
+        CreateStudyPost.instance.createStudyPosting(parameters: parameterData) { [weak self] result in
+            switch result {
+            case .success(let resultModel):
+                self?.ResultModel = resultModel
+                print("스터디 생성 서버통신 성공!")
+                // 성공 시 다음 화면으로 이동하는 코드를 추가할 수 있습니다.
+            case .failure(let error):
+                // Handle the error as needed
+                print("Error: \(error)")
+            }
+        }
         
     }
     
