@@ -65,8 +65,8 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
             view.addGestureRecognizer(tapGestureRecognizer!)
         
         // 키보드 등장 및 사라짐 알림 등록
-                NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-                NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
         if let category = selectedCategory {
             print("선택한 카테고리 번호: \(category)")
@@ -262,11 +262,10 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     }
     
     @objc func keyboardWillShow(notification: Notification) {
-            if let keyboardFrame = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-                // 키보드 높이 가져오기
-                let keyboardHeight = keyboardFrame.height
+        if let keyboardFrame = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            let keyboardHeight = keyboardFrame.height
 
-                // UITextField가 키보드에 가려질 때 스크롤
+            if placeTextField.isFirstResponder {
                 if let textFieldFrame = placeTextField.superview?.convert(placeTextField.frame, to: view) {
                     let textFieldBottomY = textFieldFrame.origin.y + textFieldFrame.height + 300
                     let visibleContentHeight = view.frame.height - keyboardHeight
@@ -277,6 +276,7 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
                 }
             }
         }
+    }
 
         @objc func keyboardWillHide() {
             // 키보드가 사라질 때 스크롤 뷰 원래 위치로 되돌리기
@@ -302,6 +302,7 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
         placeTextField.resignFirstResponder()
         
         if let detailInfoVC = storyboard?.instantiateViewController(withIdentifier: "DetailInfoVC") as? DetailInfoVC {
+
             // 변수들을 다음 뷰 컨트롤러에 전달
             detailInfoVC.selectedCategory = selectedCategory
             detailInfoVC.studyTitleText = studyTitleText
