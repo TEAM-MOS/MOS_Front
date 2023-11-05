@@ -79,8 +79,7 @@ class HomeViewController: UIViewController {
     }
     @IBAction func createStudyBtnTapped(_ sender: Any) {
         if let tabBarController = self.tabBarController {
-                tabBarController.selectedIndex = 2 // 0은 첫 번째 탭을 나타냅니다. 적절한 인덱스로 변경하세요.
-            }
+                tabBarController.selectedIndex = 2            }
     }
 }
 
