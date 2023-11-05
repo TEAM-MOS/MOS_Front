@@ -240,9 +240,33 @@
                     <view key="view" contentMode="scaleToFill" id="e8Y-Kn-PdI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="프로필보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoR-sY-mlX">
+                                <rect key="frame" x="161.66666666666666" y="71" width="70" height="20"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6p-nK-mPh">
+                                <rect key="frame" x="16" y="71" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="0nf-5j-5yE"/>
+                                    <constraint firstAttribute="height" constant="32" id="FHP-3D-57o"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_home_category_back"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Fxe-Od-Ixu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A6p-nK-mPh" firstAttribute="top" secondItem="yoR-sY-mlX" secondAttribute="top" id="26Y-Es-uzO"/>
+                            <constraint firstItem="yoR-sY-mlX" firstAttribute="top" secondItem="Fxe-Od-Ixu" secondAttribute="top" constant="12" id="jTK-3A-msn"/>
+                            <constraint firstItem="yoR-sY-mlX" firstAttribute="centerX" secondItem="Fxe-Od-Ixu" secondAttribute="centerX" id="qfU-2y-gyV"/>
+                            <constraint firstItem="A6p-nK-mPh" firstAttribute="leading" secondItem="Fxe-Od-Ixu" secondAttribute="leading" constant="16" id="wiI-kj-Etd"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T4A-e3-UHN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -250,6 +274,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_home_category_back" width="32" height="32"/>
         <image name="ic_home_detail_arrow" width="32" height="32"/>
         <namedColor name="subColor">
             <color red="1" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
