@@ -14,6 +14,9 @@
         <array key="Pretendard-Bold.ttf">
             <string>Pretendard-Bold</string>
         </array>
+        <array key="Pretendard-Regular.ttf">
+            <string>Pretendard-Regular</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Sign Up View Controller-->
@@ -329,6 +332,7 @@
                                     <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="finishButtonDidTapped:" destination="iIJ-bw-o0D" eventType="touchUpInside" id="zQA-IA-SfD"/>
                                     <action selector="signUpPost:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="JvA-9P-6WG"/>
                                 </connections>
                             </button>
@@ -377,11 +381,76 @@
             </objects>
             <point key="canvasLocation" x="726" y="-2"/>
         </scene>
+        <!--Complete Sign Up View Controller-->
+        <scene sceneID="PQw-kr-ULq">
+            <objects>
+                <viewController restorationIdentifier="CompleteSignUp" storyboardIdentifier="CompleteSignUp" id="SUW-FX-QJp" customClass="CompleteSignUpViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hKJ-yM-38u">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_colplete" translatesAutoresizingMaskIntoConstraints="NO" id="baz-Du-Ysq">
+                                <rect key="frame" x="172.66666666666666" y="309" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="5zU-Cj-Muv"/>
+                                    <constraint firstAttribute="height" constant="48" id="WHR-SG-cNj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입이 완료되었습니다" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqs-01-Ije">
+                                <rect key="frame" x="90.333333333333329" y="373" width="212.33333333333337" height="24"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모스와 함께 취업까지 달려봐요!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3a5-Bp-d4P">
+                                <rect key="frame" x="110.66666666666667" y="421" width="171.66666666666663" height="17"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgH-ka-kmU">
+                                <rect key="frame" x="24" y="722" width="345" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="aoe-aY-O7b"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="0.98911581230000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그인 하러가기">
+                                    <backgroundConfiguration key="background" cornerRadius="8">
+                                        <color key="backgroundColor" name="main"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToLoginVC:" destination="SUW-FX-QJp" eventType="touchUpInside" id="oHg-Jv-GaZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fzk-7x-QyW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fzk-7x-QyW" firstAttribute="trailing" secondItem="hgH-ka-kmU" secondAttribute="trailing" constant="24" id="2Qt-cb-LVV"/>
+                            <constraint firstItem="pqs-01-Ije" firstAttribute="top" secondItem="baz-Du-Ysq" secondAttribute="bottom" constant="16" id="3hV-Dj-H5l"/>
+                            <constraint firstItem="Fzk-7x-QyW" firstAttribute="bottom" secondItem="hgH-ka-kmU" secondAttribute="bottom" constant="48" id="8f7-Q7-Mvu"/>
+                            <constraint firstItem="3a5-Bp-d4P" firstAttribute="centerX" secondItem="hKJ-yM-38u" secondAttribute="centerX" id="9lF-dt-Dce"/>
+                            <constraint firstItem="3a5-Bp-d4P" firstAttribute="top" secondItem="pqs-01-Ije" secondAttribute="bottom" constant="24" id="AAT-d0-LKU"/>
+                            <constraint firstItem="baz-Du-Ysq" firstAttribute="top" secondItem="Fzk-7x-QyW" secondAttribute="top" constant="250" id="Gth-44-QBC"/>
+                            <constraint firstItem="hgH-ka-kmU" firstAttribute="leading" secondItem="Fzk-7x-QyW" secondAttribute="leading" constant="24" id="gGM-Ni-4Ss"/>
+                            <constraint firstItem="baz-Du-Ysq" firstAttribute="centerX" secondItem="hKJ-yM-38u" secondAttribute="centerX" id="lac-mt-YeU"/>
+                            <constraint firstItem="pqs-01-Ije" firstAttribute="centerX" secondItem="hKJ-yM-38u" secondAttribute="centerX" id="zkA-wT-Le2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lFn-SW-0Zc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1459" y="-2"/>
+        </scene>
     </scenes>
     <resources>
         <image name="basic_profileImg" width="200" height="200"/>
         <image name="camera" width="64" height="64"/>
         <image name="checkmark.circle" catalog="system" width="128" height="123"/>
+        <image name="register_colplete" width="96" height="99"/>
         <namedColor name="gray-2">
             <color red="0.52156862745098043" green="0.52156862745098043" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

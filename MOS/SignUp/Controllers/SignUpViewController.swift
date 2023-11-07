@@ -7,7 +7,6 @@
 
 import UIKit
 
-@available(iOS 15.0, *)
 class SignUpViewController: UIViewController, UITextFieldDelegate, PopUpDelegate {
     
     
@@ -55,8 +54,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, PopUpDelegate
         }
         else {
             updateNextButton(willActive: false)
-            self.signUpButton.tintColor = UIColor(named: "gray-2    ")
-            self.signUpButton.configuration?.background.backgroundColor = UIColor(named: "inactive_button_bg")
+            self.signUpButton.tintColor = UIColor(named: "gray-2")
+            self.signUpButton.backgroundColor = UIColor(named: "inactive_button_bg")
         }
     }
     
@@ -145,7 +144,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, PopUpDelegate
         if(willActive == true) {
             //다음 버튼 색 변경
             self.signUpButton.tintColor = .white
-            self.signUpButton.configuration?.background.backgroundColor = UIColor(named: "main")
+            self.signUpButton.backgroundColor = UIColor(named: "main")
             //다음 페이지 연결
             print("다음 버튼 활성화")
         }

@@ -49,4 +49,12 @@ class SetProfileViewController: UIViewController {
         goalTextField.leftViewMode = .always
     }
     
+    @IBAction func finishButtonDidTapped(_ sender: Any) {
+        if !(self.nicknameTextField.text?.isEmpty ?? true) && !(self.goalTextField.text?.isEmpty ?? true) {
+            guard let CompleteVC = storyboard?.instantiateViewController(withIdentifier: "CompleteSignUp") as? CompleteSignUpViewController else { return }
+            navigationController?.pushViewController(CompleteVC, animated: false)
+        }
+    }
+    
+    
 }

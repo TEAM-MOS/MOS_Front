@@ -7,7 +7,6 @@
 
 import UIKit
 
-@available(iOS 15.0, *)
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
