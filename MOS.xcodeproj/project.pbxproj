@@ -12,6 +12,7 @@
 		2F20E2CC2ADFD26300A943C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20E2CB2ADFD26300A943C7 /* LoginViewController.swift */; };
 		2F20E2CE2ADFD27700A943C7 /* FindPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20E2CD2ADFD27600A943C7 /* FindPasswordViewController.swift */; };
 		2F20E2D02ADFD28900A943C7 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20E2CF2ADFD28900A943C7 /* ResetPasswordViewController.swift */; };
+		2F2406192AFA488700E52705 /* SetProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2406182AFA488700E52705 /* SetProfileViewController.swift */; };
 		2F28E67D2A1DD9BA00021E72 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F28E67C2A1DD9BA00021E72 /* Search.storyboard */; };
 		2F28E67F2A1DD9C700021E72 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28E67E2A1DD9C700021E72 /* SearchViewController.swift */; };
 		2F28E6812A1DDA4300021E72 /* StudyRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */; };
@@ -103,6 +104,7 @@
 		2F20E2CB2ADFD26300A943C7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2F20E2CD2ADFD27600A943C7 /* FindPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordViewController.swift; sourceTree = "<group>"; };
 		2F20E2CF2ADFD28900A943C7 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		2F2406182AFA488700E52705 /* SetProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetProfileViewController.swift; sourceTree = "<group>"; };
 		2F28E67C2A1DD9BA00021E72 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		2F28E67E2A1DD9C700021E72 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoomViewController.swift; sourceTree = "<group>"; };
@@ -414,6 +416,7 @@
 			isa = PBXGroup;
 			children = (
 				2FC177B22AD7DB5500873B50 /* SignUpViewController.swift */,
+				2F2406182AFA488700E52705 /* SetProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -756,6 +759,7 @@
 				5A8BF2162AF35BBC00C58D45 /* SignUpPostAPI.swift in Sources */,
 				2F8270E22A8F7EEB00CE7BE1 /* StudyListModel.swift in Sources */,
 				2FC144852AC8067400A642AD /* StudyBasicInfoViewController.swift in Sources */,
+				2F2406192AFA488700E52705 /* SetProfileViewController.swift in Sources */,
 				5ADD7C5A2AD72F580093661A /* CheckTableViewCell.swift in Sources */,
 				5ADA065C2A41E64900FE76E5 /* InterviewViewController.swift in Sources */,
 				5A3FE53D2AA3A7B5009E7E37 /* UIColor.swift in Sources */,

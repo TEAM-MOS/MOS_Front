@@ -1,0 +1,34 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_106_2042)">
+<circle cx="100" cy="100" r="98.5" fill="white" stroke="#DDDDDD" stroke-width="3"/>
+<circle cx="99.9996" cy="101.961" r="80.3922" fill="#F3F3F3"/>
+<g filter="url(#filter0_f_106_2042)">
+<ellipse cx="51.3923" cy="74.4905" rx="34.2307" ry="15.9679" transform="rotate(-44.0416 51.3923 74.4905)" fill="#FFF5F5"/>
+</g>
+<path d="M92 110C94.7778 113.018 102.667 117.244 112 110" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="68" cy="106.5" rx="9" ry="4.5" fill="#FF4141"/>
+<ellipse cx="136" cy="106.5" rx="9" ry="4.5" fill="#FF4141"/>
+<path d="M90 96.5C90 98.9853 87.9853 101 85.5 101C83.0147 101 81 98.9853 81 96.5C81 94.0147 83.0147 92 85.5 92C87.9853 92 90 94.0147 90 96.5Z" fill="black"/>
+<path d="M123 96.5C123 98.9853 120.985 101 118.5 101C116.015 101 114 98.9853 114 96.5C114 94.0147 116.015 92 118.5 92C120.985 92 123 94.0147 123 96.5Z" fill="black"/>
+<path d="M92 110C94.7778 113.018 102.667 117.244 112 110" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="68" cy="106.5" rx="9" ry="4.5" fill="#FF4141"/>
+<ellipse cx="136" cy="106.5" rx="9" ry="4.5" fill="#FF4141"/>
+<path d="M90 96.5C90 98.9853 87.9853 101 85.5 101C83.0147 101 81 98.9853 81 96.5C81 94.0147 83.0147 92 85.5 92C87.9853 92 90 94.0147 90 96.5Z" fill="black"/>
+<path d="M123 96.5C123 98.9853 120.985 101 118.5 101C116.015 101 114 98.9853 114 96.5C114 94.0147 116.015 92 118.5 92C120.985 92 123 94.0147 123 96.5Z" fill="black"/>
+<path d="M92 110C94.7778 113.018 102.667 117.244 112 110" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="68" cy="106.5" rx="9" ry="4.5" fill="#FF4141"/>
+<ellipse cx="136" cy="106.5" rx="9" ry="4.5" fill="#FF4141"/>
+<path d="M90 96.5C90 98.9853 87.9853 101 85.5 101C83.0147 101 81 98.9853 81 96.5C81 94.0147 83.0147 92 85.5 92C87.9853 92 90 94.0147 90 96.5Z" fill="black"/>
+<path d="M123 96.5C123 98.9853 120.985 101 118.5 101C116.015 101 114 98.9853 114 96.5C114 94.0147 116.015 92 118.5 92C120.985 92 123 94.0147 123 96.5Z" fill="black"/>
+</g>
+<defs>
+<filter id="filter0_f_106_2042" x="-75.6084" y="-51.9357" width="254.002" height="252.852" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_106_2042"/>
+</filter>
+<clipPath id="clip0_106_2042">
+<rect width="200" height="200" fill="white"/>
+</clipPath>
+</defs>
+</svg>
