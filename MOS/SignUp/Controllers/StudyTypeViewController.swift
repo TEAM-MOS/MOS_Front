@@ -8,9 +8,49 @@
 import UIKit
 
 class StudyTypeViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+    }
+    
+    let maxSelectedButtons = 2
+    var selectedButtons: [UIButton] = []
+    var selectedButtonText: [String] = []
+    
+    @IBAction func tagButtonDidTapped(_ sender: UIButton) {
+        
+        if selectedButtons.contains(sender) {
+            deselectButton(sender)
+        } else {
+            if selectedButtons.count >= maxSelectedButtons {
+                if let buttonToDeselect = selectedButtons.first {
+                    deselectButton(buttonToDeselect)
+                }
+            }
+            selectButton(sender)
+        }
+    }
+    
+    func selectButton(_ button: UIButton) {
+        button.isSelected = true
+        selectedButtons.append(button)
+        selectedButtonText.append(button.title(for: .normal) ?? "")
+        button.backgroundColor = UIColor(named: "category-5")
+        button.layer.cornerRadius = 8
+    }
+    
+    func deselectButton(_ button: UIButton) {
+        button.isSelected = false
+        if let index = selectedButtons.firstIndex(of: button) {
+            selectedButtons.remove(at: index)
+        }
+        button.backgroundColor = UIColor.clear
+        button.layer.cornerRadius = 8
+    }
+    
+    @IBAction func completeButtonDidTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        print(selectedButtonText)
     }
 }

@@ -405,7 +405,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5ko-4h-lRJ">
                                 <rect key="frame" x="24" y="118" width="345" height="496"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TjW-Jt-QjQ">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TjW-Jt-QjQ">
                                         <rect key="frame" x="0.0" y="0.0" width="345" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="jep-3J-Laj"/>
@@ -420,8 +420,11 @@
                                             <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                             <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tagButtonDidTapped:" destination="uWk-yF-DnA" eventType="touchUpInside" id="Add-GH-6iL"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjU-t4-LOX">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjU-t4-LOX">
                                         <rect key="frame" x="0.0" y="64" width="345" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="7Wp-KX-L4X"/>
@@ -436,8 +439,11 @@
                                             <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                             <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tagButtonDidTapped:" destination="uWk-yF-DnA" eventType="touchUpInside" id="gvi-xg-XcH"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEQ-Lx-poW">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEQ-Lx-poW">
                                         <rect key="frame" x="0.0" y="128" width="345" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="qLA-8g-gtv"/>
@@ -452,8 +458,11 @@
                                             <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                             <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tagButtonDidTapped:" destination="uWk-yF-DnA" eventType="touchUpInside" id="AId-m4-zUO"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdn-eH-C1G">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdn-eH-C1G">
                                         <rect key="frame" x="0.0" y="192" width="345" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="E8S-Uv-zRj"/>
@@ -468,8 +477,11 @@
                                             <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                             <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tagButtonDidTapped:" destination="uWk-yF-DnA" eventType="touchUpInside" id="Fbm-bz-6nd"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnk-GF-BCB">
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnk-GF-BCB">
                                         <rect key="frame" x="0.0" y="256" width="345" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="8Hq-RP-QYP"/>
@@ -484,8 +496,11 @@
                                             <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                             <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tagButtonDidTapped:" destination="uWk-yF-DnA" eventType="touchUpInside" id="jrI-JC-BSh"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8j-Cj-reK">
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8j-Cj-reK">
                                         <rect key="frame" x="0.0" y="320" width="345" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="VYq-VM-3Jf"/>
@@ -500,8 +515,11 @@
                                             <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                             <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tagButtonDidTapped:" destination="uWk-yF-DnA" eventType="touchUpInside" id="vfk-i7-shk"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cs-tE-Yvu">
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cs-tE-Yvu">
                                         <rect key="frame" x="0.0" y="384" width="345" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="hZF-fA-pud"/>
@@ -516,8 +534,11 @@
                                             <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                             <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tagButtonDidTapped:" destination="uWk-yF-DnA" eventType="touchUpInside" id="Yxq-MJ-1Sy"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFf-ID-gr3">
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFf-ID-gr3">
                                         <rect key="frame" x="0.0" y="448" width="345" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="dNs-Qq-YZb"/>
@@ -532,6 +553,9 @@
                                             <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                             <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="tagButtonDidTapped:" destination="uWk-yF-DnA" eventType="touchUpInside" id="R4s-81-Pgh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -548,6 +572,9 @@
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="completeButtonDidTapped:" destination="uWk-yF-DnA" eventType="touchUpInside" id="TQI-zS-BVD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="42L-eN-C5Z"/>
