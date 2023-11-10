@@ -14,6 +14,9 @@
         <array key="Pretendard-Bold.ttf">
             <string>Pretendard-Bold</string>
         </array>
+        <array key="Pretendard-Medium.ttf">
+            <string>Pretendard-Medium</string>
+        </array>
         <array key="Pretendard-Regular.ttf">
             <string>Pretendard-Regular</string>
         </array>
@@ -317,6 +320,10 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="studyTypeButtonDidTapped:" destination="iIJ-bw-o0D" eventType="touchUpInside" id="Qbn-Ba-RmF"/>
+                                    <segue destination="uWk-yF-DnA" kind="presentation" id="Fx5-9a-5Xf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEX-AC-WAs">
                                 <rect key="frame" x="24" y="730" width="345" height="48"/>
@@ -380,6 +387,187 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LA1-Fi-jyS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="726" y="-2"/>
+        </scene>
+        <!--Study Type View Controller-->
+        <scene sceneID="gTN-vk-1Xs">
+            <objects>
+                <viewController id="uWk-yF-DnA" customClass="StudyTypeViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SMN-yq-FXe" customClass="IntroPopUp" customModule="MOS" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="본인이 생각했을 때 가장 자신과 비슷한 스터디 성향을 선택해주세요 (최대 2개)" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMr-de-LSq">
+                                <rect key="frame" x="24" y="38" width="345" height="48"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5ko-4h-lRJ">
+                                <rect key="frame" x="24" y="118" width="345" height="496"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TjW-Jt-QjQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="jep-3J-Laj"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="🕑 시간을 잘 지켜요"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="🕑 시간을 잘 지켜요" cornerStyle="fixed">
+                                            <backgroundConfiguration key="background" cornerRadius="8">
+                                                <color key="strokeColor" name="gray-1"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjU-t4-LOX">
+                                        <rect key="frame" x="0.0" y="64" width="345" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="7Wp-KX-L4X"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="🕑 시간을 잘 지켜요"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="👂 경청해요" cornerStyle="fixed">
+                                            <backgroundConfiguration key="background" cornerRadius="8">
+                                                <color key="strokeColor" name="gray-1"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEQ-Lx-poW">
+                                        <rect key="frame" x="0.0" y="128" width="345" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="qLA-8g-gtv"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="🕑 시간을 잘 지켜요"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="💡 아이디어가 넘쳐나요" cornerStyle="fixed">
+                                            <backgroundConfiguration key="background" cornerRadius="8">
+                                                <color key="strokeColor" name="gray-1"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdn-eH-C1G">
+                                        <rect key="frame" x="0.0" y="192" width="345" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="E8S-Uv-zRj"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="🕑 시간을 잘 지켜요"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="👍 칭찬을 아끼지 않아요" cornerStyle="fixed">
+                                            <backgroundConfiguration key="background" cornerRadius="8">
+                                                <color key="strokeColor" name="gray-1"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnk-GF-BCB">
+                                        <rect key="frame" x="0.0" y="256" width="345" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="8Hq-RP-QYP"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="🕑 시간을 잘 지켜요"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="❓ 질문에 두려움이 없어요" cornerStyle="fixed">
+                                            <backgroundConfiguration key="background" cornerRadius="8">
+                                                <color key="strokeColor" name="gray-1"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8j-Cj-reK">
+                                        <rect key="frame" x="0.0" y="320" width="345" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="VYq-VM-3Jf"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="🕑 시간을 잘 지켜요"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="🔥 열정이 가득해요" cornerStyle="fixed">
+                                            <backgroundConfiguration key="background" cornerRadius="8">
+                                                <color key="strokeColor" name="gray-1"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cs-tE-Yvu">
+                                        <rect key="frame" x="0.0" y="384" width="345" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="hZF-fA-pud"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="🕑 시간을 잘 지켜요"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="📗 내 지식을 공유해요" cornerStyle="fixed">
+                                            <backgroundConfiguration key="background" cornerRadius="8">
+                                                <color key="strokeColor" name="gray-1"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFf-ID-gr3">
+                                        <rect key="frame" x="0.0" y="448" width="345" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="dNs-Qq-YZb"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="🕑 시간을 잘 지켜요"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="🎶 분위기 메이커예요" cornerStyle="fixed">
+                                            <backgroundConfiguration key="background" cornerRadius="8">
+                                                <color key="strokeColor" name="gray-1"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0r2-Iq-UbW">
+                                <rect key="frame" x="24" y="762" width="345" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="2i1-A9-KuE"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="선택완료">
+                                    <backgroundConfiguration key="background" cornerRadius="8">
+                                        <color key="backgroundColor" name="main"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="42L-eN-C5Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="42L-eN-C5Z" firstAttribute="trailing" secondItem="0r2-Iq-UbW" secondAttribute="trailing" constant="24" id="5NO-hN-9yc"/>
+                            <constraint firstItem="lMr-de-LSq" firstAttribute="leading" secondItem="42L-eN-C5Z" secondAttribute="leading" constant="24" id="7ML-ng-XiO"/>
+                            <constraint firstItem="42L-eN-C5Z" firstAttribute="bottom" secondItem="0r2-Iq-UbW" secondAttribute="bottom" constant="32" id="FIb-fU-Ydo"/>
+                            <constraint firstItem="0r2-Iq-UbW" firstAttribute="leading" secondItem="42L-eN-C5Z" secondAttribute="leading" constant="24" id="GYT-uF-PMR"/>
+                            <constraint firstItem="42L-eN-C5Z" firstAttribute="trailing" secondItem="5ko-4h-lRJ" secondAttribute="trailing" constant="24" id="Xdc-H4-AG6"/>
+                            <constraint firstAttribute="trailing" secondItem="lMr-de-LSq" secondAttribute="trailing" constant="24" id="XlC-cK-gT2"/>
+                            <constraint firstItem="5ko-4h-lRJ" firstAttribute="top" secondItem="lMr-de-LSq" secondAttribute="bottom" constant="32" id="fXq-lf-IDz"/>
+                            <constraint firstItem="5ko-4h-lRJ" firstAttribute="leading" secondItem="42L-eN-C5Z" secondAttribute="leading" constant="24" id="g3e-nv-32H"/>
+                            <constraint firstItem="lMr-de-LSq" firstAttribute="top" secondItem="42L-eN-C5Z" secondAttribute="top" constant="38" id="zG9-Sd-Utc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6su-ik-Zhd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="746"/>
         </scene>
         <!--Complete Sign Up View Controller-->
         <scene sceneID="PQw-kr-ULq">
@@ -451,6 +639,9 @@
         <image name="camera" width="64" height="64"/>
         <image name="checkmark.circle" catalog="system" width="128" height="123"/>
         <image name="register_colplete" width="96" height="99"/>
+        <namedColor name="gray-1">
+            <color white="0.84705883264541626" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
         <namedColor name="gray-2">
             <color red="0.52156862745098043" green="0.52156862745098043" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
@@ -461,10 +652,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
