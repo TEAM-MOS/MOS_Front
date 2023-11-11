@@ -12,6 +12,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var showMoreStudies: UIImageView!
     @IBOutlet weak var navToSurveyBtn: UIView!
     
+    @IBOutlet weak var recruitingStudy1: StudyInputView!
+    @IBOutlet weak var recruitingStudy2: StudyInputView!
+    
     var pagingViewController: PagingViewController?
     
     override func viewDidLoad() {
@@ -27,7 +30,36 @@ class HomeViewController: UIViewController {
         showMoreStudies.addGestureRecognizer(tapGesture)
         
         applyShadow()
+        fetchRecruitingStudies()
     }
+    
+    func fetchRecruitingStudies() {
+        RecruitingStudyGet.instance.recruitingStudyGet { [weak self] result in
+            // Check if result is an array
+            if let results = result as? [RecuritingStudyResultModel] {
+                // Update the first StudyInputView with the first result if available
+                if let firstResult = results.first {
+                    self?.updateStudyInputView((self?.recruitingStudy1)!, with: firstResult)
+                }
+
+                // Update the second StudyInputView with the second result if available
+                if results.count > 1 {
+                    self?.updateStudyInputView((self?.recruitingStudy2)!, with: results[1])
+                }
+            }
+        }
+    }
+
+
+
+    func updateStudyInputView(_ studyInputView: StudyInputView, with data: RecuritingStudyResultModel) {
+        studyInputView.titleLabel.text = data.title
+        studyInputView.locationLabel.text = data.location
+        studyInputView.dateLabel.text = data.startDate
+        studyInputView.memberLabel.text = "\(data.memberNum)"  // Assuming memberNum is Int
+        studyInputView.categoryLabel.text = data.category
+    }
+
     
     @IBAction func category1BtnTapped(_ sender: UITapGestureRecognizer) {
         self.performSegue(withIdentifier: "navToCategory", sender: 1)

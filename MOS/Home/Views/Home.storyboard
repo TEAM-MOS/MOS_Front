@@ -422,6 +422,8 @@
                     <connections>
                         <outlet property="moveToTestView" destination="me3-Sm-AiL" id="Z2Z-gx-AWl"/>
                         <outlet property="navToSurveyBtn" destination="me3-Sm-AiL" id="v9V-Dl-MgN"/>
+                        <outlet property="recruitingStudy1" destination="3aQ-zQ-rKZ" id="X9I-IX-Kw1"/>
+                        <outlet property="recruitingStudy2" destination="axS-Gv-1rL" id="gtw-pT-mYT"/>
                         <outlet property="showMoreStudies" destination="rWZ-8Z-jiw" id="z0P-OD-zgA"/>
                         <segue destination="D7u-J8-10K" kind="show" identifier="navToCategory" animates="NO" id="8wO-Hi-NaM"/>
                         <segue destination="mUU-jE-WWJ" kind="showDetail" identifier="navToSurvey" id="kQI-Tj-1SJ"/>
