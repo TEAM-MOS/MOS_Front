@@ -11,5 +11,6 @@ import UIKit
 class MyPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
     }
 }

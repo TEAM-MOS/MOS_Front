@@ -55,9 +55,30 @@ class HomeViewController: UIViewController {
     func updateStudyInputView(_ studyInputView: StudyInputView, with data: RecuritingStudyResultModel) {
         studyInputView.titleLabel.text = data.title
         studyInputView.locationLabel.text = data.location
-        studyInputView.dateLabel.text = data.startDate
-        studyInputView.memberLabel.text = "\(data.memberNum)"  // Assuming memberNum is Int
+        if let startDate = formatDate(data.startDate) {
+                studyInputView.dateLabel.text = startDate
+            } else {
+                studyInputView.dateLabel.text = "Invalid Date"
+            }
+        let membersText = "\(data.memberNum)/\(data.maxMember)"
+        studyInputView.memberLabel.text = membersText
         studyInputView.categoryLabel.text = data.category
+        studyInputView.image = data.leaderImageUrl
+    }
+    
+    func formatDate(_ dateString: String) -> String? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        if let date = dateFormatter.date(from: dateString) {
+            // Format the date as "2/15(토)"
+            dateFormatter.dateFormat = "M/d(EEE)"
+            dateFormatter.locale = Locale(identifier: "ko_KR") // Set locale to Korean for day of the week
+            let formattedDate = dateFormatter.string(from: date)
+            return formattedDate
+        } else {
+            return nil
+        }
     }
 
     
