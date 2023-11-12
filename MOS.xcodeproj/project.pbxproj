@@ -77,6 +77,7 @@
 		5AC619912A170A4000966219 /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC619902A170A4000966219 /* Survey.storyboard */; };
 		5AC619B42A19E5BD00966219 /* SurveyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC619B32A19E5BD00966219 /* SurveyVC.swift */; };
 		5AD249612A406C4000A7BBAC /* SurveyResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD249602A406C4000A7BBAC /* SurveyResultVC.swift */; };
+		5AD2E7222B01686000A9437B /* MypageGetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD2E7212B01686000A9437B /* MypageGetAPI.swift */; };
 		5ADA06562A41E5CF00FE76E5 /* currentEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA06552A41E5CF00FE76E5 /* currentEventViewController.swift */; };
 		5ADA06582A41E60900FE76E5 /* PersonnelAptitudeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA06572A41E60900FE76E5 /* PersonnelAptitudeViewController.swift */; };
 		5ADA065A2A41E63100FE76E5 /* SelfIntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA06592A41E63100FE76E5 /* SelfIntroductionViewController.swift */; };
@@ -171,6 +172,7 @@
 		5AC619902A170A4000966219 /* Survey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
 		5AC619B32A19E5BD00966219 /* SurveyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyVC.swift; sourceTree = "<group>"; };
 		5AD249602A406C4000A7BBAC /* SurveyResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyResultVC.swift; sourceTree = "<group>"; };
+		5AD2E7212B01686000A9437B /* MypageGetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageGetAPI.swift; sourceTree = "<group>"; };
 		5ADA06552A41E5CF00FE76E5 /* currentEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentEventViewController.swift; sourceTree = "<group>"; };
 		5ADA06572A41E60900FE76E5 /* PersonnelAptitudeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelAptitudeViewController.swift; sourceTree = "<group>"; };
 		5ADA06592A41E63100FE76E5 /* SelfIntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIntroductionViewController.swift; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 				2FC177A92AD7D81A00873B50 /* Model */,
 				2F37F4C42ADEBD7F005BB63A /* Components */,
 				2FC177AA2AD7D83700873B50 /* Study */,
+				5AD2E71D2B01168B00A9437B /* Mypage */,
 				5A3FE53E2AA3C27B009E7E37 /* Survey */,
 				5AF8165D2ABC607B009B04D7 /* Home */,
 				5ADD7C522ACC093E0093661A /* CreateStudy */,
@@ -320,8 +323,6 @@
 				2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */,
 				2F707F312AE97FE300FB1F82 /* Network */,
 				2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */,
-				2F28E6842A1DDAD300021E72 /* MyPage.storyboard */,
-				2F28E6862A1DDADE00021E72 /* MyPageViewController.swift */,
 				2FB095852A2631910035FB78 /* DeviceGroup.swift */,
 				F3A7F9BB2A4219BC00AE1863 /* PreQuestionAlertViewController.swift */,
 			);
@@ -507,6 +508,40 @@
 				5A6776AC2A22699B00F1D3DB /* Font */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		5AD2E71D2B01168B00A9437B /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				5AD2E7202B01682A00A9437B /* APIs */,
+				5AD2E71F2B0116D400A9437B /* Controllers */,
+				5AD2E71E2B0116C700A9437B /* Views */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
+		5AD2E71E2B0116C700A9437B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F28E6842A1DDAD300021E72 /* MyPage.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5AD2E71F2B0116D400A9437B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F28E6862A1DDADE00021E72 /* MyPageViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5AD2E7202B01682A00A9437B /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				5AD2E7212B01686000A9437B /* MypageGetAPI.swift */,
+			);
+			path = APIs;
 			sourceTree = "<group>";
 		};
 		5ADD7C522ACC093E0093661A /* CreateStudy */ = {
@@ -748,6 +783,7 @@
 				5ADD7C5A2AD72F580093661A /* CheckTableViewCell.swift in Sources */,
 				5ADA065C2A41E64900FE76E5 /* InterviewViewController.swift in Sources */,
 				5A3FE53D2AA3A7B5009E7E37 /* UIColor.swift in Sources */,
+				5AD2E7222B01686000A9437B /* MypageGetAPI.swift in Sources */,
 				5A7AA0D42A41C1A10087DE3C /* AllViewController.swift in Sources */,
 				5A0E75A22AE82A6B00476BCE /* RulePopUp.swift in Sources */,
 				5ADA065A2A41E63100FE76E5 /* SelfIntroductionViewController.swift in Sources */,

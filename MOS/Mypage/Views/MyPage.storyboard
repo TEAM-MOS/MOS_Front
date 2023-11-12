@@ -228,6 +228,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="Kly-b6-NJX"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="myImage" destination="CQu-IL-EF8" id="yNC-hH-39e"/>
+                        <outlet property="mypageName" destination="nLI-xl-q7j" id="dye-bz-SxE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -266,13 +270,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAz-og-DrL">
-                                <rect key="frame" x="76" y="127.99999999999999" width="31.333333333333329" height="14.333333333333329"/>
+                                <rect key="frame" x="76" y="128" width="31.333333333333329" height="14"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내가먼저취뽀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ez1-se-0a5">
-                                <rect key="frame" x="76" y="146.33333333333334" width="94" height="21"/>
+                                <rect key="frame" x="76" y="146" width="94" height="21"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -298,13 +302,13 @@
                                 <rect key="frame" x="16" y="256.33333333333331" width="361" height="56"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="목표기업 / 직무" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nez-WB-U0r">
-                                        <rect key="frame" x="55.999999999999993" y="8" width="72.333333333333314" height="14.333333333333336"/>
+                                        <rect key="frame" x="56" y="8" width="73" height="14"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CJ제일제당 / 콘텐츠 마케팅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNL-ds-Uvt">
-                                        <rect key="frame" x="56.000000000000014" y="26.333333333333371" width="175.33333333333337" height="19.333333333333329"/>
+                                        <rect key="frame" x="56.000000000000014" y="26" width="175.33333333333337" height="19.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -328,13 +332,13 @@
                                 <rect key="frame" x="16" y="320.33333333333331" width="361" height="56"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="목표기업 / 직무" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8W-ZZ-Pza">
-                                        <rect key="frame" x="56" y="8" width="72.333333333333314" height="14.333333333333336"/>
+                                        <rect key="frame" x="56" y="8" width="72.333333333333314" height="14"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CJ제일제당 / 콘텐츠 마케팅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epK-Vw-axb">
-                                        <rect key="frame" x="56" y="26.333333333333371" width="175.33333333333337" height="19.333333333333329"/>
+                                        <rect key="frame" x="56" y="26" width="175.33333333333337" height="19.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -354,8 +358,8 @@
                                     <constraint firstAttribute="height" constant="24" id="eqt-8B-ywC"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취업 목표" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijf-4i-L0b">
-                                <rect key="frame" x="16" y="416.33333333333331" width="59" height="19.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="취업 목표" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijf-4i-L0b">
+                                <rect key="frame" x="16" y="439" width="59" height="19.333333333333371"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -383,7 +387,6 @@
                             <constraint firstItem="Ijf-4i-L0b" firstAttribute="leading" secondItem="oQm-gF-jOr" secondAttribute="leading" id="cp0-fG-GB5"/>
                             <constraint firstItem="L4l-I1-Z4X" firstAttribute="leading" secondItem="A6p-nK-mPh" secondAttribute="leading" id="cxV-kW-2z7"/>
                             <constraint firstItem="ujz-6i-otk" firstAttribute="bottom" secondItem="oQm-gF-jOr" secondAttribute="bottom" constant="-16" id="eD9-a2-8id"/>
-                            <constraint firstItem="Ijf-4i-L0b" firstAttribute="top" secondItem="oQm-gF-jOr" secondAttribute="bottom" constant="40" id="eln-n7-dQf"/>
                             <constraint firstItem="oQm-gF-jOr" firstAttribute="leading" secondItem="cgW-XZ-u2v" secondAttribute="leading" id="fIa-e1-hvC"/>
                             <constraint firstItem="oQm-gF-jOr" firstAttribute="top" secondItem="cgW-XZ-u2v" secondAttribute="bottom" constant="8" id="ghy-Ht-Qlb"/>
                             <constraint firstItem="yoR-sY-mlX" firstAttribute="top" secondItem="Fxe-Od-Ixu" secondAttribute="top" constant="12" id="jTK-3A-msn"/>

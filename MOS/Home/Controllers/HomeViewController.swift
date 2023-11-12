@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var moveToTestView: UIView!
@@ -54,16 +55,49 @@ class HomeViewController: UIViewController {
 
     func updateStudyInputView(_ studyInputView: StudyInputView, with data: RecuritingStudyResultModel) {
         studyInputView.titleLabel.text = data.title
-        studyInputView.locationLabel.text = data.location
-        if let startDate = formatDate(data.startDate) {
-                studyInputView.dateLabel.text = startDate
-            } else {
-                studyInputView.dateLabel.text = "Invalid Date"
+        if data.location != nil {
+            studyInputView.locationLabel.text = data.location
+        } else {
+            studyInputView.locationLabel.isHidden = true
+            studyInputView.locationImage.image = UIImage(named: "zoom_selected")
+            studyInputView.locationImage.contentMode = .scaleAspectFit
+
+            // Assuming there are width and height constraints for locationImage
+            var widthConstraint: NSLayoutConstraint?
+            var heightConstraint: NSLayoutConstraint?
+
+            for constraint in studyInputView.locationImage.constraints {
+                if constraint.firstAttribute == .width {
+                    widthConstraint = constraint
+                } else if constraint.firstAttribute == .height {
+                    heightConstraint = constraint
+                }
             }
+
+            // Update constraints if found
+            widthConstraint?.constant = 62
+            heightConstraint?.constant = 24
+
+            // Update layout
+            studyInputView.layoutIfNeeded()
+        }
+        
+        if let startDate = formatDate(data.startDate) {
+            studyInputView.dateLabel.text = startDate
+        } else {
+            studyInputView.dateLabel.text = "Invalid Date"
+        }
         let membersText = "\(data.memberNum)/\(data.maxMember)"
         studyInputView.memberLabel.text = membersText
         studyInputView.categoryLabel.text = data.category
-        studyInputView.image = data.leaderImageUrl
+        if let leaderImageUrl = data.leaderImageUrl, let url = URL(string: leaderImageUrl) {
+            // Load the image if leaderImageUrl is not null and is a valid URL
+            studyInputView.leaderImage.kf.setImage(with: url)
+        } else {
+            // Set a default image if leaderImageUrl is null or an invalid URL
+            studyInputView.leaderImage.image = UIImage(named: "AppIcon")
+        }
+    
     }
     
     func formatDate(_ dateString: String) -> String? {

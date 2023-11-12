@@ -22,6 +22,7 @@ class StudyInputView: UIView{
     @IBOutlet weak var memberLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
     
+    @IBOutlet weak var locationImage: UIImageView!
     
     @IBInspectable
     var image: String = "" {

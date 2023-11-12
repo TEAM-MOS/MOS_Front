@@ -9,6 +9,7 @@ PODS:
     - JTAppleCalendar (~> 8.0.0)
     - PrettyCards (~> 1.0.0)
   - JTAppleCalendar (8.0.5)
+  - Kingfisher (6.3.1)
   - LZViewPager (1.2.8):
     - SnapKit (~> 5.6.0)
   - PrettyCards (1.0.5)
@@ -21,6 +22,7 @@ DEPENDENCIES:
   - DeviceKit (~> 4.0)
   - DropDown
   - Fastis (~> 2.0)
+  - Kingfisher (~> 6.0)
   - LZViewPager
   - SwiftyJSON
 
@@ -33,6 +35,7 @@ SPEC REPOS:
     - Extended
     - Fastis
     - JTAppleCalendar
+    - Kingfisher
     - LZViewPager
     - PrettyCards
     - SnapKit
@@ -46,11 +49,12 @@ SPEC CHECKSUMS:
   Extended: c463225e0c29b2823847866c1b106827772ac678
   Fastis: 842bc586c7c6639cc3ce16903e67bd7cae689157
   JTAppleCalendar: 16c6501b22cb27520372c28b0a2e0b12c8d0cd73
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   LZViewPager: 832bd177210060e1282b67aa1e9cd201ded67a5b
   PrettyCards: 2b078f2396a42f7f0c4d6624b875149dcb49d3ed
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: ba3d43f2fcb5ce381c896c3742f9ee89a3eff71a
+PODFILE CHECKSUM: f8ca7ebd95713926fd4d6ce6a79792390a7bfc2e
 
 COCOAPODS: 1.12.1
