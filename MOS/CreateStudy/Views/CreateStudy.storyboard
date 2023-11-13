@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="-721" y="4"/>
         </scene>
-        <!--Choose CategoryVC-->
+        <!--CreateStudyVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="CreateStudyVC" hidesBottomBarWhenPushed="YES" id="Y6W-OH-hqX" customClass="ChooseCategoryVC" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="CreateStudyVC" storyboardIdentifier="CreateStudyVC" title="CreateStudyVC" hidesBottomBarWhenPushed="YES" id="Y6W-OH-hqX" customClass="ChooseCategoryVC" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -703,6 +703,7 @@
                         <outlet property="onlineBtns" destination="Z11-mb-1qp" id="QXs-JY-XLk"/>
                         <outlet property="placeSegment" destination="zNg-u0-Lzm" id="ox3-Q1-Emy"/>
                         <outlet property="placeTextField" destination="gEd-IY-5V0" id="TKn-3r-BLL"/>
+                        <outlet property="scrollView" destination="HG4-ZV-oeL" id="RBE-wH-gOZ"/>
                         <outlet property="secondMood" destination="AUq-MS-q5p" id="qTF-lz-yVr"/>
                         <outlet property="secondMoodCheckBox" destination="Scb-mM-l0e" id="8P9-gD-n5Q"/>
                         <outlet property="startDate" destination="rMw-Ez-e2b" id="cli-BA-jPf"/>
@@ -1213,11 +1214,11 @@
                         <outlet property="goalTextField" destination="sgp-Yz-Sej" id="uR4-wb-Wtx"/>
                         <outlet property="popUpView1" destination="iL4-8C-kXs" id="Whl-0i-9ky"/>
                         <outlet property="popUpView2" destination="xaO-kN-VEp" id="4fc-B1-2Ua"/>
-                        <outlet property="questionTextView" destination="dJf-Sa-ifM" id="H53-oj-1lw"/>
+                        <outlet property="questionTextView" destination="dJf-Sa-ifM" id="QnO-ob-YTx"/>
                         <outlet property="satLabel" destination="ekl-Sp-qP3" id="U7a-Nr-Kxi"/>
                         <outlet property="satView" destination="GrA-iN-tAV" id="BW8-VO-YG5"/>
-                        <outlet property="studyIntroduceTextView" destination="JzH-E4-Ofy" id="hGb-S7-OWg"/>
-                        <outlet property="studyRuleTextField" destination="2gR-X5-RWp" id="zX2-LD-4b9"/>
+                        <outlet property="studyIntroduceTextView" destination="JzH-E4-Ofy" id="l5n-wL-AGd"/>
+                        <outlet property="studyRuleTextView" destination="2gR-X5-RWp" id="mzq-rA-Sji"/>
                         <outlet property="sunLabel" destination="tPi-Tu-WCc" id="lbP-9L-AbE"/>
                         <outlet property="sunView" destination="Ala-nL-UbQ" id="jKG-fF-zfk"/>
                         <outlet property="thursLabel" destination="44U-K3-6Im" id="DQD-Fy-pTV"/>

@@ -19,8 +19,8 @@ class PagingViewController: UIViewController, LZViewPagerDelegate, LZViewPagerDa
     //MARK: - Variables
     private var subControllers: [UIViewController] = []
     var selectedPageIndex: Int = 0
-
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewPagerProperties()
@@ -32,11 +32,11 @@ class PagingViewController: UIViewController, LZViewPagerDelegate, LZViewPagerDa
         backBtn.addGestureRecognizer(tapGesture)
         
         viewPager.select(index: selectedPageIndex, animated: false)
-
+        
         // Do any additional setup after loading the view.
     }
     
-
+    
     //MARK: - Properties
     func viewPagerProperties() {
         viewPager.delegate = self
@@ -112,11 +112,13 @@ class PagingViewController: UIViewController, LZViewPagerDelegate, LZViewPagerDa
     }
     
     @objc func imageTapped() {
-        print(#fileID, #function, #line, "- backButton clicked")
-        self.performSegue(withIdentifier: "navToHome", sender: self)
+        guard let navigationControllers = self.navigationController?.viewControllers else { return }
+        for viewController in navigationControllers {
+            if let previousVC = viewController as? HomeViewController {
+                self.navigationController?.popToViewController(previousVC, animated: false)
+                break
+            }
         }
-
-    
-    //MARK: - Actions
-
+        
+    }
 }
