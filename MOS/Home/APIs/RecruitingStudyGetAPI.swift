@@ -9,7 +9,7 @@ import Alamofire
 
 class RecruitingStudyGet {
     static let instance = RecruitingStudyGet()
-    let authToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2Nlc3NUb2tlbiIsImV4cCI6MTcwMDE1OTA4MCwiZW1haWwiOiJzYWxseWtpbTIwMThAbmF2ZXIuY29tIn0._bWCMI9Zi_z9hL-tdGrhYELt-XFN3Wu0Z4ck6267OUKEkomdqwDqT-9hnSFDwTd1q9nzE4qlAbaXnv2N7lT7uw"
+    let authToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2Nlc3NUb2tlbiIsImV4cCI6MTcwMDI0NDUxMSwiZW1haWwiOiJzYWxseWtpbTIwMThAbmF2ZXIuY29tIn0.qaH6tBCSSwHQ3qGhXwoMvjM1-XutOKSmpzTN_Y1n4az546QW0jUcUQjdcmpPnbavqsOCMb2EBxt0DCMXG_iyvA"
 
     func recruitingStudyGet(handler: @escaping (_ result: [RecuritingStudyResultModel]) -> Void) {
         let url = APIConstants.baseURL + "/studyRoom/recruiting"
