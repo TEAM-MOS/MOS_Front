@@ -24,6 +24,11 @@ class MyPageViewController: UIViewController {
         approvalDetail.addGestureRecognizer(tapGesture)
         approvalDetail.isUserInteractionEnabled = true
     }
+    @IBAction func profileDetailBtnTapped(_ sender: UIButton) {
+            if let profileVC = storyboard?.instantiateViewController(withIdentifier: "ProfileVC") as? ProfileVC {
+                navigationController?.pushViewController(profileVC, animated: false)
+            }
+        }
     
     @objc func approvalDetailTapped() {
         if let approvalDetailVC = storyboard?.instantiateViewController(withIdentifier: "ApprovalDetailVC") as? ApprovalDetailVC{

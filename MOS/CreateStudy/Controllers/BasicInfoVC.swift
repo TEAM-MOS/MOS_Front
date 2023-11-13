@@ -307,13 +307,13 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
 
             // 변수들을 다음 뷰 컨트롤러에 전달
             detailInfoVC.selectedCategory = selectedCategory
-            detailInfoVC.studyTitleText = studyTitleText
+            detailInfoVC.studyTitleText = studyTitle.text
             detailInfoVC.studyMood = studyMood
             detailInfoVC.postStartDate = postStartDate
             detailInfoVC.postEndDate = postEndDate
             detailInfoVC.maxMember = maxMemberCount
             detailInfoVC.isOnline = isOnline
-            detailInfoVC.place = place
+            detailInfoVC.place = placeTextField.text
             detailInfoVC.onlinePlatform = onlinePlatform
             
             self.navigationController?.pushViewController(detailInfoVC, animated: false)
