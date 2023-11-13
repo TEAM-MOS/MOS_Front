@@ -9,7 +9,8 @@ import UIKit
 class MyPageViewController: UIViewController {
     @IBOutlet weak var myImage: UIImageView!
     @IBOutlet weak var mypageName: UILabel!
-
+    @IBOutlet weak var approvalDetail: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
@@ -17,8 +18,17 @@ class MyPageViewController: UIViewController {
         
         myImage.layer.cornerRadius = myImage.bounds.width / 2
         myImage.layer.masksToBounds = true
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(approvalDetailTapped))
+        approvalDetail.addGestureRecognizer(tapGesture)
+        approvalDetail.isUserInteractionEnabled = true
     }
-
+    
+    @objc func approvalDetailTapped() {
+        if let approvalDetailVC = storyboard?.instantiateViewController(withIdentifier: "ApprovalDetailVC") as? ApprovalDetailVC{
+            navigationController?.pushViewController(approvalDetailVC, animated: false)}
+    }
+    
     func getProfile() {
         MypageGet.instance.mypageGet { [weak self] result in
             // Check if result is not nil
@@ -28,10 +38,10 @@ class MyPageViewController: UIViewController {
             }
         }
     }
-
+    
     func updateUI(with mypageResult: MypageResultModel) {
         mypageName.text = mypageResult.nickname
-
+        
         if let imageUrlString = mypageResult.imageUrl, let imageUrl = URL(string: imageUrlString) {
             myImage.kf.setImage(with: imageUrl)
         } else {
