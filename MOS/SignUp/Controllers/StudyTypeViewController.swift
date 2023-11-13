@@ -7,11 +7,24 @@
 
 import UIKit
 
+protocol SendUpdateDelegate {
+    func sendUpdate(studyType: [String])
+    
+}
+
 class StudyTypeViewController: UIViewController {
+    
+    var delegate: SendUpdateDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        delegate?.sendUpdate(studyType: selectedButtonText)
     }
     
     let maxSelectedButtons = 2
@@ -52,5 +65,7 @@ class StudyTypeViewController: UIViewController {
     @IBAction func completeButtonDidTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
         print(selectedButtonText)
+        
+        
     }
 }

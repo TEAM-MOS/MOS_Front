@@ -7,12 +7,33 @@
 
 import UIKit
 
-class SetProfileViewController: UIViewController {
+class SetProfileViewController: UIViewController, SendUpdateDelegate {
+    
+    func sendUpdate(studyType: [String]) {
+        
+        if studyType.isEmpty == false {
+            selectStudyTypeButton.setTitle(studyType.first, for: .normal)
+            
+            if studyType.count == 1 {
+                selectStudyTypeButton2.isHidden = true
+            } else if studyType.count >= 2 {
+                selectStudyTypeButton2.setTitle(studyType[1], for: .normal)
+                selectStudyTypeButton2.isHidden = false
+            }
+        }
+    }
+    
+    
     
     @IBOutlet weak var nicknameTextField: UITextField!
     @IBOutlet weak var goalTextField: UITextField!
     @IBOutlet weak var startDateTextField: UITextField!
     @IBOutlet weak var endDateTextField: UITextField!
+    @IBOutlet weak var selectStudyTypeButton: UIButton!
+    @IBOutlet weak var selectStudyTypeButton2: UIButton!
+    
+    
+    
     
     let startDatePicker = UIDatePicker()
     let endDatePicker = UIDatePicker()
@@ -28,16 +49,12 @@ class SetProfileViewController: UIViewController {
         
         textField.layer.cornerRadius = 8
     }
-
-
-
     
     @objc func dateChange(_ sender: UIDatePicker) {
         startDateTextField.text = dateFormat(date: sender.date)
         endDateTextField.text = dateFormat(date: sender.date)
         endDatePicker.minimumDate = sender.date
     }
-
     
     private func dateFormat(date: Date) -> String {
         let formatter = DateFormatter()
@@ -54,15 +71,24 @@ class SetProfileViewController: UIViewController {
         startDateTextField.isUserInteractionEnabled = true
         endDateTextField.isUserInteractionEnabled = true
         
+        selectStudyTypeButton2.isHidden = true
+        
         setTextFieldUI(textField: nicknameTextField)
         setTextFieldUI(textField: goalTextField)
         
         setupDatePicker(datePicker: startDatePicker, textField: startDateTextField, placeholder: "시작 날짜")
         setupDatePicker(datePicker: endDatePicker, textField: endDateTextField, placeholder: "종료 날짜", minimumDate: startDatePicker.date)
-
+        
         setupToolBar()
         
         dismissKeyboard()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "selectType" {
+            guard let studyTypeVC: StudyTypeViewController = segue.destination as? StudyTypeViewController else { return }
+            studyTypeVC.delegate = self
+        }
     }
     
     func setTextFieldStyle() {
@@ -118,7 +144,7 @@ class SetProfileViewController: UIViewController {
     
     private func setTextFieldUI(textField: UITextField) {
         textField.layer.cornerRadius = 8
-
+        
         textField.layer.borderColor = UIColor.systemGray6.cgColor
         
         textField.layer.borderWidth = 1
@@ -152,6 +178,4 @@ class SetProfileViewController: UIViewController {
             navigationController?.pushViewController(CompleteVC, animated: false)
         }
     }
-    
-    
 }
