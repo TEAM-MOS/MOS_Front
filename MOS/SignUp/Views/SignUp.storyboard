@@ -318,6 +318,7 @@
                                     <backgroundConfiguration key="background">
                                         <color key="strokeColor" red="0.60392156860000001" green="0.60392156860000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                     <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
