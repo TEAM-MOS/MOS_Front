@@ -14,6 +14,9 @@ class MyPageViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
         getProfile()
+        
+        myImage.layer.cornerRadius = myImage.bounds.width / 2
+        myImage.layer.masksToBounds = true
     }
 
     func getProfile() {
