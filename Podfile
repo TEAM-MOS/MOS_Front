@@ -1,4 +1,4 @@
-# Uncomment the next line to define a global platform for your project
+# 햐Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
 target 'MOS' do
@@ -14,6 +14,7 @@ target 'MOS' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'Tabman', '~> 3.0'
+  pod 'Kingfisher', '~> 6.0'
 
 post_install do |installer|
     installer.generated_projects.each do |project|
