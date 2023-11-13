@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "survey_checked_1x.png",
+      "filename" : "check1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "survey_checked_2x.png",
+      "filename" : "check1 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "survey_checked_3x.png",
+      "filename" : "check1 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
