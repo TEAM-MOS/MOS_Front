@@ -12,6 +12,8 @@
 		2F20E2CC2ADFD26300A943C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20E2CB2ADFD26300A943C7 /* LoginViewController.swift */; };
 		2F20E2CE2ADFD27700A943C7 /* FindPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20E2CD2ADFD27600A943C7 /* FindPasswordViewController.swift */; };
 		2F20E2D02ADFD28900A943C7 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F20E2CF2ADFD28900A943C7 /* ResetPasswordViewController.swift */; };
+		2F2406192AFA488700E52705 /* SetProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2406182AFA488700E52705 /* SetProfileViewController.swift */; };
+		2F24061D2AFA682A00E52705 /* CompleteSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F24061C2AFA682A00E52705 /* CompleteSignUpViewController.swift */; };
 		2F28E67D2A1DD9BA00021E72 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F28E67C2A1DD9BA00021E72 /* Search.storyboard */; };
 		2F28E67F2A1DD9C700021E72 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28E67E2A1DD9C700021E72 /* SearchViewController.swift */; };
 		2F28E6812A1DDA4300021E72 /* StudyRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */; };
@@ -25,10 +27,14 @@
 		2F2D15DA2ABC4C5A00ECBD5D /* StudyDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2D15D92ABC4C5A00ECBD5D /* StudyDetailModel.swift */; };
 		2F37F4C62ADEBE2B005BB63A /* CustomView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F37F4C52ADEBE2B005BB63A /* CustomView.storyboard */; };
 		2F37F4C82ADEBE9B005BB63A /* PopUpActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F37F4C72ADEBE9B005BB63A /* PopUpActionViewController.swift */; };
+		2F461FF12AF9096200870073 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F461FF02AF9096200870073 /* KeyChain.swift */; };
 		2F5BA7622A9B278200E9A444 /* RecentSearchLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BA7612A9B278200E9A444 /* RecentSearchLayout.swift */; };
 		2F8270E02A8F7B9100CE7BE1 /* StudyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8270DF2A8F7B9100CE7BE1 /* StudyListViewController.swift */; };
 		2F8270E22A8F7EEB00CE7BE1 /* StudyListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8270E12A8F7EEB00CE7BE1 /* StudyListModel.swift */; };
 		2F8270E62A8F808000CE7BE1 /* StudyListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8270E52A8F808000CE7BE1 /* StudyListCollectionViewCell.swift */; };
+		2F928D142AFDF54400DE96C7 /* StudyTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F928D132AFDF54400DE96C7 /* StudyTypeViewController.swift */; };
+		2F97C2632B0216960013BC93 /* SetProfileAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F97C2622B0216960013BC93 /* SetProfileAPI.swift */; };
+		2F97C2692B0224580013BC93 /* AddTodoPostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F97C2682B0224580013BC93 /* AddTodoPostAPI.swift */; };
 		2F9DAF532A3222A5007CA960 /* StudyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9DAF522A3222A5007CA960 /* StudyDetailViewController.swift */; };
 		2F9DAF552A3222B9007CA960 /* Study.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DAF542A3222B9007CA960 /* Study.storyboard */; };
 		2FA142762A149024006AA91B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA142752A149024006AA91B /* AppDelegate.swift */; };
@@ -40,6 +46,7 @@
 		2FC144852AC8067400A642AD /* StudyBasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC144842AC8067400A642AD /* StudyBasicInfoViewController.swift */; };
 		2FC177B12AD7DB2000873B50 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC177B02AD7DB2000873B50 /* SignUp.storyboard */; };
 		2FC177B32AD7DB5500873B50 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC177B22AD7DB5500873B50 /* SignUpViewController.swift */; };
+		2FC514052AF36C3900C7C7AD /* LoginPostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC514042AF36C3900C7C7AD /* LoginPostAPI.swift */; };
 		2FD24DA82A24F73B000747D7 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD24DA72A24F73B000747D7 /* SearchResultViewController.swift */; };
 		2FD8EF952ABC5C7F002A6F3B /* StudyOutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD8EF942ABC5C7F002A6F3B /* StudyOutlineViewController.swift */; };
 		2FF25FE02A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF25FDF2A98D181004EA0F5 /* RecentSearchCollectionViewCell.swift */; };
@@ -101,6 +108,8 @@
 		2F20E2CB2ADFD26300A943C7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2F20E2CD2ADFD27600A943C7 /* FindPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordViewController.swift; sourceTree = "<group>"; };
 		2F20E2CF2ADFD28900A943C7 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		2F2406182AFA488700E52705 /* SetProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetProfileViewController.swift; sourceTree = "<group>"; };
+		2F24061C2AFA682A00E52705 /* CompleteSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpViewController.swift; sourceTree = "<group>"; };
 		2F28E67C2A1DD9BA00021E72 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		2F28E67E2A1DD9C700021E72 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoomViewController.swift; sourceTree = "<group>"; };
@@ -114,10 +123,14 @@
 		2F2D15D92ABC4C5A00ECBD5D /* StudyDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyDetailModel.swift; sourceTree = "<group>"; };
 		2F37F4C52ADEBE2B005BB63A /* CustomView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomView.storyboard; sourceTree = "<group>"; };
 		2F37F4C72ADEBE9B005BB63A /* PopUpActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpActionViewController.swift; sourceTree = "<group>"; };
+		2F461FF02AF9096200870073 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		2F5BA7612A9B278200E9A444 /* RecentSearchLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchLayout.swift; sourceTree = "<group>"; };
 		2F8270DF2A8F7B9100CE7BE1 /* StudyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListViewController.swift; sourceTree = "<group>"; };
 		2F8270E12A8F7EEB00CE7BE1 /* StudyListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListModel.swift; sourceTree = "<group>"; };
 		2F8270E52A8F808000CE7BE1 /* StudyListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F928D132AFDF54400DE96C7 /* StudyTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTypeViewController.swift; sourceTree = "<group>"; };
+		2F97C2622B0216960013BC93 /* SetProfileAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetProfileAPI.swift; sourceTree = "<group>"; };
+		2F97C2682B0224580013BC93 /* AddTodoPostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoPostAPI.swift; sourceTree = "<group>"; };
 		2F9DAF522A3222A5007CA960 /* StudyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyDetailViewController.swift; sourceTree = "<group>"; };
 		2F9DAF542A3222B9007CA960 /* Study.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Study.storyboard; sourceTree = "<group>"; };
 		2FA142722A149024006AA91B /* MOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +144,7 @@
 		2FC144842AC8067400A642AD /* StudyBasicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyBasicInfoViewController.swift; sourceTree = "<group>"; };
 		2FC177B02AD7DB2000873B50 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		2FC177B22AD7DB5500873B50 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2FC514042AF36C3900C7C7AD /* LoginPostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPostAPI.swift; sourceTree = "<group>"; };
 		2FD24DA72A24F73B000747D7 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		2FD8EF942ABC5C7F002A6F3B /* StudyOutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyOutlineViewController.swift; sourceTree = "<group>"; };
 		2FDDEEA72AB2BDBC00080BF5 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
@@ -205,6 +219,7 @@
 		2F20E2C62ADFD20E00A943C7 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				2FC514012AF36BF200C7C7AD /* APIs */,
 				2F20E2C72ADFD21E00A943C7 /* Views */,
 				2F20E2C82ADFD22400A943C7 /* Controllers */,
 			);
@@ -237,6 +252,14 @@
 				2F37F4C72ADEBE9B005BB63A /* PopUpActionViewController.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		2F461FEF2AF9091E00870073 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				2F461FF02AF9096200870073 /* KeyChain.swift */,
+			);
+			path = KeyChain;
 			sourceTree = "<group>";
 		};
 		2F553F5D2AD7BD15005FDEAB /* Search */ = {
@@ -275,6 +298,40 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		2F97C2642B021B6E0013BC93 /* StudyRoom */ = {
+			isa = PBXGroup;
+			children = (
+				2F97C2672B021B9E0013BC93 /* APIs */,
+				2F97C2652B021B800013BC93 /* Views */,
+				2F97C2662B021B860013BC93 /* Controllers */,
+			);
+			path = StudyRoom;
+			sourceTree = "<group>";
+		};
+		2F97C2652B021B800013BC93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F97C2662B021B860013BC93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2F97C2672B021B9E0013BC93 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				2F97C2682B0224580013BC93 /* AddTodoPostAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
 		2FA142692A149024006AA91B = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +353,7 @@
 		2FA142742A149024006AA91B /* MOS */ = {
 			isa = PBXGroup;
 			children = (
+				2F97C2642B021B6E0013BC93 /* StudyRoom */,
 				5AC619942A17105600966219 /* Resources */,
 				2FA142752A149024006AA91B /* AppDelegate.swift */,
 				2FA142772A149024006AA91B /* SceneDelegate.swift */,
@@ -312,12 +370,11 @@
 				2FA142832A149026006AA91B /* Info.plist */,
 				2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */,
 				2F2B3E222A1DBE52008B0506 /* TabMenuViewController.swift */,
+				2F461FEF2AF9091E00870073 /* KeyChain */,
 				2F20E2C62ADFD20E00A943C7 /* Login */,
 				2FC177AD2AD7DAB000873B50 /* SignUp */,
 				2F553F5D2AD7BD15005FDEAB /* Search */,
-				2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */,
 				2F707F312AE97FE300FB1F82 /* Network */,
-				2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */,
 				2F28E6842A1DDAD300021E72 /* MyPage.storyboard */,
 				2F28E6862A1DDADE00021E72 /* MyPageViewController.swift */,
 				2FB095852A2631910035FB78 /* DeviceGroup.swift */,
@@ -400,8 +457,19 @@
 			isa = PBXGroup;
 			children = (
 				2FC177B22AD7DB5500873B50 /* SignUpViewController.swift */,
+				2F2406182AFA488700E52705 /* SetProfileViewController.swift */,
+				2F24061C2AFA682A00E52705 /* CompleteSignUpViewController.swift */,
+				2F928D132AFDF54400DE96C7 /* StudyTypeViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2FC514012AF36BF200C7C7AD /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				2FC514042AF36C3900C7C7AD /* LoginPostAPI.swift */,
+			);
+			path = APIs;
 			sourceTree = "<group>";
 		};
 		5A3FE53E2AA3C27B009E7E37 /* Survey */ = {
@@ -494,6 +562,7 @@
 			isa = PBXGroup;
 			children = (
 				5A8BF2152AF35BBC00C58D45 /* SignUpPostAPI.swift */,
+				2F97C2622B0216960013BC93 /* SetProfileAPI.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -724,6 +793,7 @@
 				5A7AA0D62A41C1DC0087DE3C /* AnalysisViewController.swift in Sources */,
 				2F8270E62A8F808000CE7BE1 /* StudyListCollectionViewCell.swift in Sources */,
 				F33B43462A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift in Sources */,
+				2F97C2632B0216960013BC93 /* SetProfileAPI.swift in Sources */,
 				2F2D15DA2ABC4C5A00ECBD5D /* StudyDetailModel.swift in Sources */,
 				5A6EE3952A8AAE90000E841D /* SurveyStartVC.swift in Sources */,
 				5ADD7C582AD7261F0093661A /* Todo.swift in Sources */,
@@ -734,6 +804,8 @@
 				5A8BF2162AF35BBC00C58D45 /* SignUpPostAPI.swift in Sources */,
 				2F8270E22A8F7EEB00CE7BE1 /* StudyListModel.swift in Sources */,
 				2FC144852AC8067400A642AD /* StudyBasicInfoViewController.swift in Sources */,
+				2F2406192AFA488700E52705 /* SetProfileViewController.swift in Sources */,
+				2F928D142AFDF54400DE96C7 /* StudyTypeViewController.swift in Sources */,
 				5ADD7C5A2AD72F580093661A /* CheckTableViewCell.swift in Sources */,
 				5ADA065C2A41E64900FE76E5 /* InterviewViewController.swift in Sources */,
 				5A3FE53D2AA3A7B5009E7E37 /* UIColor.swift in Sources */,
@@ -756,6 +828,7 @@
 				5A76B7B52AEBBE0C00C9BFDE /* FinishVC.swift in Sources */,
 				2F8270E02A8F7B9100CE7BE1 /* StudyListViewController.swift in Sources */,
 				2F0BA3EC2AE0351E009D0353 /* TempPasswordViewController.swift in Sources */,
+				2F461FF12AF9096200870073 /* KeyChain.swift in Sources */,
 				2FA142762A149024006AA91B /* AppDelegate.swift in Sources */,
 				5A2646662AEA39AB00B4CE31 /* APIConstants.swift in Sources */,
 				5A8BF2132AF35B4D00C58D45 /* CreateStudyPostAPI.swift in Sources */,
@@ -771,8 +844,11 @@
 				F304A1412A420FF90066036B /* StudyInfoTodoViewController.swift in Sources */,
 				2F20E2CC2ADFD26300A943C7 /* LoginViewController.swift in Sources */,
 				2FD24DA82A24F73B000747D7 /* SearchResultViewController.swift in Sources */,
+				2FC514052AF36C3900C7C7AD /* LoginPostAPI.swift in Sources */,
+				2F24061D2AFA682A00E52705 /* CompleteSignUpViewController.swift in Sources */,
 				5AD249612A406C4000A7BBAC /* SurveyResultVC.swift in Sources */,
 				5A444B732A278B590070137A /* StudyInputView.swift in Sources */,
+				2F97C2692B0224580013BC93 /* AddTodoPostAPI.swift in Sources */,
 				5ADA06562A41E5CF00FE76E5 /* currentEventViewController.swift in Sources */,
 				5ADA065E2A41E67B00FE76E5 /* LanguageViewController.swift in Sources */,
 				2F28E6872A1DDADE00021E72 /* MyPageViewController.swift in Sources */,
@@ -933,7 +1009,7 @@
 				INFOPLIST_FILE = MOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = TabMenu;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -966,7 +1042,7 @@
 				INFOPLIST_FILE = MOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = TabMenu;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
