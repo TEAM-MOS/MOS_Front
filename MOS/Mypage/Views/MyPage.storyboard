@@ -499,6 +499,10 @@
                         </constraints>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="approvalView" destination="55j-ax-ceK" id="kDp-sL-Sqh"/>
+                        <outlet property="studyTitleView" destination="RGg-kA-bPD" id="jPu-Ip-kPa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yI6-ji-XRp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
