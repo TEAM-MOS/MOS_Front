@@ -10,5 +10,11 @@ import UIKit
 class StudyRoomViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+    }
+    
+    func setNavigationBar() {
+        self.navigationController?.navigationItem.title = "타이틀임당"
     }
 }
