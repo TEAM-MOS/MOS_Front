@@ -14,6 +14,7 @@ class ApprovalDetailVC: UIViewController {
     @IBOutlet weak var approvalView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hidesBottomBarWhenPushed = true
         
         // studyTitleView의 배경색과 왼쪽 모서리 corner-radius 설정
        studyTitleView.backgroundColor = UIColor(hex: "F3F3F3")

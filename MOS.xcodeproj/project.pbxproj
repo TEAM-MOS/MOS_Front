@@ -95,6 +95,7 @@
 		5AD2E7B32B02A8AE00A9437B /* CreateStudy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD2E7A62B02A8AE00A9437B /* CreateStudy.storyboard */; };
 		5AD2E7B42B02A8AE00A9437B /* RulePopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AD2E7A72B02A8AE00A9437B /* RulePopUp.xib */; };
 		5AD2E7B52B02A8AE00A9437B /* IntroPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AD2E7A82B02A8AE00A9437B /* IntroPopUp.xib */; };
+		5AD2E7B72B02B41700A9437B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD2E7B62B02B41700A9437B /* ProfileVC.swift */; };
 		E6FE083ADFD94888B7BAA4B1 /* Pods_MOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8023C552FBAB477251468C8 /* Pods_MOS.framework */; };
 		F304A13D2A41FDC90066036B /* StudyDetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304A13C2A41FDC90066036B /* StudyDetailInfoViewController.swift */; };
 		F304A13F2A4206240066036B /* StudyMemberInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304A13E2A4206240066036B /* StudyMemberInfoViewController.swift */; };
@@ -198,6 +199,7 @@
 		5AD2E7A62B02A8AE00A9437B /* CreateStudy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateStudy.storyboard; sourceTree = "<group>"; };
 		5AD2E7A72B02A8AE00A9437B /* RulePopUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RulePopUp.xib; sourceTree = "<group>"; };
 		5AD2E7A82B02A8AE00A9437B /* IntroPopUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroPopUp.xib; sourceTree = "<group>"; };
+		5AD2E7B62B02B41700A9437B /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		9F0823D3883FA48E77D1F2F6 /* Pods-MOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOS.release.xcconfig"; path = "Target Support Files/Pods-MOS/Pods-MOS.release.xcconfig"; sourceTree = "<group>"; };
 		C8023C552FBAB477251468C8 /* Pods_MOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F304A13C2A41FDC90066036B /* StudyDetailInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyDetailInfoViewController.swift; sourceTree = "<group>"; };
@@ -542,6 +544,7 @@
 			children = (
 				5AD2E7292B0286A800A9437B /* ApprovalDetailVC.swift */,
 				5AD2E72A2B0286A800A9437B /* MyPageViewController.swift */,
+				5AD2E7B62B02B41700A9437B /* ProfileVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -890,6 +893,7 @@
 				5AD2E72D2B0286A800A9437B /* MypageGetAPI.swift in Sources */,
 				2F37F4C82ADEBE9B005BB63A /* PopUpActionViewController.swift in Sources */,
 				5AD2E74C2B02964E00A9437B /* InterviewViewController.swift in Sources */,
+				5AD2E7B72B02B41700A9437B /* ProfileVC.swift in Sources */,
 				5AD2E7912B02976E00A9437B /* RoundedProgressView.swift in Sources */,
 				5AD2E7922B02976E00A9437B /* SurveyResultVC.swift in Sources */,
 				2FB095862A2631910035FB78 /* DeviceGroup.swift in Sources */,
