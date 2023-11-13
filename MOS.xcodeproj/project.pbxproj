@@ -18,8 +18,6 @@
 		2F28E67F2A1DD9C700021E72 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28E67E2A1DD9C700021E72 /* SearchViewController.swift */; };
 		2F28E6812A1DDA4300021E72 /* StudyRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */; };
 		2F28E6832A1DDA5F00021E72 /* StudyRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */; };
-		2F28E6852A1DDAD300021E72 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F28E6842A1DDAD300021E72 /* MyPage.storyboard */; };
-		2F28E6872A1DDADE00021E72 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28E6862A1DDADE00021E72 /* MyPageViewController.swift */; };
 		2F28E6892A1DDF9A00021E72 /* ChooseCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28E6882A1DDF9900021E72 /* ChooseCategoryVC.swift */; };
 		2F28E68B2A1DDFBE00021E72 /* CreateStudy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F28E68A2A1DDFBE00021E72 /* CreateStudy.storyboard */; };
 		2F2B3E232A1DBE52008B0506 /* TabMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B3E222A1DBE52008B0506 /* TabMenuViewController.swift */; };
@@ -84,6 +82,10 @@
 		5AC619912A170A4000966219 /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC619902A170A4000966219 /* Survey.storyboard */; };
 		5AC619B42A19E5BD00966219 /* SurveyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC619B32A19E5BD00966219 /* SurveyVC.swift */; };
 		5AD249612A406C4000A7BBAC /* SurveyResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD249602A406C4000A7BBAC /* SurveyResultVC.swift */; };
+		5AD2E72D2B0286A800A9437B /* MypageGetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD2E7272B0286A800A9437B /* MypageGetAPI.swift */; };
+		5AD2E72E2B0286A800A9437B /* ApprovalDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD2E7292B0286A800A9437B /* ApprovalDetailVC.swift */; };
+		5AD2E72F2B0286A800A9437B /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD2E72A2B0286A800A9437B /* MyPageViewController.swift */; };
+		5AD2E7302B0286A800A9437B /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD2E72C2B0286A800A9437B /* MyPage.storyboard */; };
 		5ADA06562A41E5CF00FE76E5 /* currentEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA06552A41E5CF00FE76E5 /* currentEventViewController.swift */; };
 		5ADA06582A41E60900FE76E5 /* PersonnelAptitudeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA06572A41E60900FE76E5 /* PersonnelAptitudeViewController.swift */; };
 		5ADA065A2A41E63100FE76E5 /* SelfIntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA06592A41E63100FE76E5 /* SelfIntroductionViewController.swift */; };
@@ -114,8 +116,6 @@
 		2F28E67E2A1DD9C700021E72 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoomViewController.swift; sourceTree = "<group>"; };
 		2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudyRoom.storyboard; sourceTree = "<group>"; };
-		2F28E6842A1DDAD300021E72 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
-		2F28E6862A1DDADE00021E72 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		2F28E6882A1DDF9900021E72 /* ChooseCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCategoryVC.swift; sourceTree = "<group>"; };
 		2F28E68A2A1DDFBE00021E72 /* CreateStudy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateStudy.storyboard; sourceTree = "<group>"; };
 		2F2B3E222A1DBE52008B0506 /* TabMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +184,10 @@
 		5AC619902A170A4000966219 /* Survey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
 		5AC619B32A19E5BD00966219 /* SurveyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyVC.swift; sourceTree = "<group>"; };
 		5AD249602A406C4000A7BBAC /* SurveyResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyResultVC.swift; sourceTree = "<group>"; };
+		5AD2E7272B0286A800A9437B /* MypageGetAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MypageGetAPI.swift; sourceTree = "<group>"; };
+		5AD2E7292B0286A800A9437B /* ApprovalDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApprovalDetailVC.swift; sourceTree = "<group>"; };
+		5AD2E72A2B0286A800A9437B /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		5AD2E72C2B0286A800A9437B /* MyPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		5ADA06552A41E5CF00FE76E5 /* currentEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentEventViewController.swift; sourceTree = "<group>"; };
 		5ADA06572A41E60900FE76E5 /* PersonnelAptitudeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelAptitudeViewController.swift; sourceTree = "<group>"; };
 		5ADA06592A41E63100FE76E5 /* SelfIntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIntroductionViewController.swift; sourceTree = "<group>"; };
@@ -353,6 +357,7 @@
 		2FA142742A149024006AA91B /* MOS */ = {
 			isa = PBXGroup;
 			children = (
+				5AD2E7252B0286A800A9437B /* Mypage */,
 				2F97C2642B021B6E0013BC93 /* StudyRoom */,
 				5AC619942A17105600966219 /* Resources */,
 				2FA142752A149024006AA91B /* AppDelegate.swift */,
@@ -375,8 +380,6 @@
 				2FC177AD2AD7DAB000873B50 /* SignUp */,
 				2F553F5D2AD7BD15005FDEAB /* Search */,
 				2F707F312AE97FE300FB1F82 /* Network */,
-				2F28E6842A1DDAD300021E72 /* MyPage.storyboard */,
-				2F28E6862A1DDADE00021E72 /* MyPageViewController.swift */,
 				2FB095852A2631910035FB78 /* DeviceGroup.swift */,
 				F3A7F9BB2A4219BC00AE1863 /* PreQuestionAlertViewController.swift */,
 			);
@@ -576,6 +579,41 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		5AD2E7252B0286A800A9437B /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				5AD2E7262B0286A800A9437B /* APIs */,
+				5AD2E7282B0286A800A9437B /* Controllers */,
+				5AD2E72B2B0286A800A9437B /* Views */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
+		5AD2E7262B0286A800A9437B /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				5AD2E7272B0286A800A9437B /* MypageGetAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		5AD2E7282B0286A800A9437B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5AD2E7292B0286A800A9437B /* ApprovalDetailVC.swift */,
+				5AD2E72A2B0286A800A9437B /* MyPageViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5AD2E72B2B0286A800A9437B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5AD2E72C2B0286A800A9437B /* MyPage.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5ADD7C522ACC093E0093661A /* CreateStudy */ = {
 			isa = PBXGroup;
 			children = (
@@ -719,9 +757,9 @@
 				2FA142822A149026006AA91B /* LaunchScreen.storyboard in Resources */,
 				2FFCFC422A1DD2A200E2AC95 /* Home.storyboard in Resources */,
 				5A6776B62A2269B600F1D3DB /* Pretendard-Bold.ttf in Resources */,
+				5AD2E7302B0286A800A9437B /* MyPage.storyboard in Resources */,
 				2F28E6832A1DDA5F00021E72 /* StudyRoom.storyboard in Resources */,
 				2F20E2CA2ADFD24E00A943C7 /* Login.storyboard in Resources */,
-				2F28E6852A1DDAD300021E72 /* MyPage.storyboard in Resources */,
 				2F2B3E252A1DBE74008B0506 /* TabMenu.storyboard in Resources */,
 				5AA0154A2AE974320062258C /* IntroPopUp.xib in Resources */,
 				5A6776BE2A2269B600F1D3DB /* Pretendard-Black.ttf in Resources */,
@@ -803,6 +841,7 @@
 				2FFCFC442A1DD2B200E2AC95 /* HomeViewController.swift in Sources */,
 				5A8BF2162AF35BBC00C58D45 /* SignUpPostAPI.swift in Sources */,
 				2F8270E22A8F7EEB00CE7BE1 /* StudyListModel.swift in Sources */,
+				5AD2E72F2B0286A800A9437B /* MyPageViewController.swift in Sources */,
 				2FC144852AC8067400A642AD /* StudyBasicInfoViewController.swift in Sources */,
 				2F2406192AFA488700E52705 /* SetProfileViewController.swift in Sources */,
 				2F928D142AFDF54400DE96C7 /* StudyTypeViewController.swift in Sources */,
@@ -816,6 +855,7 @@
 				2F28E6892A1DDF9A00021E72 /* ChooseCategoryVC.swift in Sources */,
 				2FA1427A2A149024006AA91B /* ViewController.swift in Sources */,
 				2F9DAF532A3222A5007CA960 /* StudyDetailViewController.swift in Sources */,
+				5AD2E72E2B0286A800A9437B /* ApprovalDetailVC.swift in Sources */,
 				F304A13D2A41FDC90066036B /* StudyDetailInfoViewController.swift in Sources */,
 				F3A7F9BE2A421DC800AE1863 /* StudyRegisterViewController.swift in Sources */,
 				2FC177B32AD7DB5500873B50 /* SignUpViewController.swift in Sources */,
@@ -836,6 +876,7 @@
 				2F5BA7622A9B278200E9A444 /* RecentSearchLayout.swift in Sources */,
 				5A3FE53B2A98D784009E7E37 /* RoundedProgressView.swift in Sources */,
 				5A6AC6EC2AE0399600668492 /* BasicInfoVC.swift in Sources */,
+				5AD2E72D2B0286A800A9437B /* MypageGetAPI.swift in Sources */,
 				5A7AA0D12A41BDCA0087DE3C /* PagingViewController.swift in Sources */,
 				5AC619B42A19E5BD00966219 /* SurveyVC.swift in Sources */,
 				2F37F4C82ADEBE9B005BB63A /* PopUpActionViewController.swift in Sources */,
@@ -851,7 +892,6 @@
 				2F97C2692B0224580013BC93 /* AddTodoPostAPI.swift in Sources */,
 				5ADA06562A41E5CF00FE76E5 /* currentEventViewController.swift in Sources */,
 				5ADA065E2A41E67B00FE76E5 /* LanguageViewController.swift in Sources */,
-				2F28E6872A1DDADE00021E72 /* MyPageViewController.swift in Sources */,
 				2F20E2D02ADFD28900A943C7 /* ResetPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
