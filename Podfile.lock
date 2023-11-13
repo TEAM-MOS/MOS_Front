@@ -11,9 +11,12 @@ PODS:
   - JTAppleCalendar (8.0.5)
   - LZViewPager (1.2.8):
     - SnapKit (~> 5.6.0)
+  - Pageboy (4.0.2)
   - PrettyCards (1.0.5)
   - SnapKit (5.6.0)
   - SwiftyJSON (5.0.1)
+  - Tabman (3.0.2):
+    - Pageboy (~> 4.0.2)
 
 DEPENDENCIES:
   - Alamofire
@@ -23,6 +26,7 @@ DEPENDENCIES:
   - Fastis (~> 2.0)
   - LZViewPager
   - SwiftyJSON
+  - Tabman (~> 3.0)
 
 SPEC REPOS:
   trunk:
@@ -34,9 +38,11 @@ SPEC REPOS:
     - Fastis
     - JTAppleCalendar
     - LZViewPager
+    - Pageboy
     - PrettyCards
     - SnapKit
     - SwiftyJSON
+    - Tabman
 
 SPEC CHECKSUMS:
   Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
@@ -47,10 +53,12 @@ SPEC CHECKSUMS:
   Fastis: 842bc586c7c6639cc3ce16903e67bd7cae689157
   JTAppleCalendar: 16c6501b22cb27520372c28b0a2e0b12c8d0cd73
   LZViewPager: 832bd177210060e1282b67aa1e9cd201ded67a5b
+  Pageboy: 34ff11e8d1041b81769d5bcde9b19a0cb7218bd9
   PrettyCards: 2b078f2396a42f7f0c4d6624b875149dcb49d3ed
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  Tabman: 6326ec3a792da1c2a6e79c7eddb56af7b591c9d6
 
-PODFILE CHECKSUM: ba3d43f2fcb5ce381c896c3742f9ee89a3eff71a
+PODFILE CHECKSUM: d5178a98e9124d49a9447dd8914a6aacf6c6e44d
 
 COCOAPODS: 1.12.1

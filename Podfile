@@ -13,6 +13,7 @@ target 'MOS' do
   pod 'Fastis', '~> 2.0'
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'Tabman', '~> 3.0'
 
 post_install do |installer|
     installer.generated_projects.each do |project|
