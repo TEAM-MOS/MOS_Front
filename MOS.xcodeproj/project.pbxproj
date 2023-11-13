@@ -33,6 +33,8 @@
 		2F8270E22A8F7EEB00CE7BE1 /* StudyListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8270E12A8F7EEB00CE7BE1 /* StudyListModel.swift */; };
 		2F8270E62A8F808000CE7BE1 /* StudyListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8270E52A8F808000CE7BE1 /* StudyListCollectionViewCell.swift */; };
 		2F928D142AFDF54400DE96C7 /* StudyTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F928D132AFDF54400DE96C7 /* StudyTypeViewController.swift */; };
+		2F97C2632B0216960013BC93 /* SetProfileAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F97C2622B0216960013BC93 /* SetProfileAPI.swift */; };
+		2F97C2692B0224580013BC93 /* AddTodoPostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F97C2682B0224580013BC93 /* AddTodoPostAPI.swift */; };
 		2F9DAF532A3222A5007CA960 /* StudyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9DAF522A3222A5007CA960 /* StudyDetailViewController.swift */; };
 		2F9DAF552A3222B9007CA960 /* Study.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9DAF542A3222B9007CA960 /* Study.storyboard */; };
 		2FA142762A149024006AA91B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA142752A149024006AA91B /* AppDelegate.swift */; };
@@ -127,6 +129,8 @@
 		2F8270E12A8F7EEB00CE7BE1 /* StudyListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListModel.swift; sourceTree = "<group>"; };
 		2F8270E52A8F808000CE7BE1 /* StudyListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListCollectionViewCell.swift; sourceTree = "<group>"; };
 		2F928D132AFDF54400DE96C7 /* StudyTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTypeViewController.swift; sourceTree = "<group>"; };
+		2F97C2622B0216960013BC93 /* SetProfileAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetProfileAPI.swift; sourceTree = "<group>"; };
+		2F97C2682B0224580013BC93 /* AddTodoPostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoPostAPI.swift; sourceTree = "<group>"; };
 		2F9DAF522A3222A5007CA960 /* StudyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyDetailViewController.swift; sourceTree = "<group>"; };
 		2F9DAF542A3222B9007CA960 /* Study.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Study.storyboard; sourceTree = "<group>"; };
 		2FA142722A149024006AA91B /* MOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -294,6 +298,40 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		2F97C2642B021B6E0013BC93 /* StudyRoom */ = {
+			isa = PBXGroup;
+			children = (
+				2F97C2672B021B9E0013BC93 /* APIs */,
+				2F97C2652B021B800013BC93 /* Views */,
+				2F97C2662B021B860013BC93 /* Controllers */,
+			);
+			path = StudyRoom;
+			sourceTree = "<group>";
+		};
+		2F97C2652B021B800013BC93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F97C2662B021B860013BC93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2F97C2672B021B9E0013BC93 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				2F97C2682B0224580013BC93 /* AddTodoPostAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
 		2FA142692A149024006AA91B = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +353,7 @@
 		2FA142742A149024006AA91B /* MOS */ = {
 			isa = PBXGroup;
 			children = (
+				2F97C2642B021B6E0013BC93 /* StudyRoom */,
 				5AC619942A17105600966219 /* Resources */,
 				2FA142752A149024006AA91B /* AppDelegate.swift */,
 				2FA142772A149024006AA91B /* SceneDelegate.swift */,
@@ -335,9 +374,7 @@
 				2F20E2C62ADFD20E00A943C7 /* Login */,
 				2FC177AD2AD7DAB000873B50 /* SignUp */,
 				2F553F5D2AD7BD15005FDEAB /* Search */,
-				2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */,
 				2F707F312AE97FE300FB1F82 /* Network */,
-				2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */,
 				2F28E6842A1DDAD300021E72 /* MyPage.storyboard */,
 				2F28E6862A1DDADE00021E72 /* MyPageViewController.swift */,
 				2FB095852A2631910035FB78 /* DeviceGroup.swift */,
@@ -525,6 +562,7 @@
 			isa = PBXGroup;
 			children = (
 				5A8BF2152AF35BBC00C58D45 /* SignUpPostAPI.swift */,
+				2F97C2622B0216960013BC93 /* SetProfileAPI.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -755,6 +793,7 @@
 				5A7AA0D62A41C1DC0087DE3C /* AnalysisViewController.swift in Sources */,
 				2F8270E62A8F808000CE7BE1 /* StudyListCollectionViewCell.swift in Sources */,
 				F33B43462A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift in Sources */,
+				2F97C2632B0216960013BC93 /* SetProfileAPI.swift in Sources */,
 				2F2D15DA2ABC4C5A00ECBD5D /* StudyDetailModel.swift in Sources */,
 				5A6EE3952A8AAE90000E841D /* SurveyStartVC.swift in Sources */,
 				5ADD7C582AD7261F0093661A /* Todo.swift in Sources */,
@@ -809,6 +848,7 @@
 				2F24061D2AFA682A00E52705 /* CompleteSignUpViewController.swift in Sources */,
 				5AD249612A406C4000A7BBAC /* SurveyResultVC.swift in Sources */,
 				5A444B732A278B590070137A /* StudyInputView.swift in Sources */,
+				2F97C2692B0224580013BC93 /* AddTodoPostAPI.swift in Sources */,
 				5ADA06562A41E5CF00FE76E5 /* currentEventViewController.swift in Sources */,
 				5ADA065E2A41E67B00FE76E5 /* LanguageViewController.swift in Sources */,
 				2F28E6872A1DDADE00021E72 /* MyPageViewController.swift in Sources */,
