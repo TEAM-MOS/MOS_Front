@@ -33,22 +33,16 @@ class StudyListCollectionViewCell: UICollectionViewCell {
         
         if category.text == "산업&기업 분석" {
             category.textColor = UIColor(named: "label-category-1")
-            category_bc.backgroundColor = UIColor(named: "category-1")
         } else if category.text == "인/적성" {
             category.textColor = UIColor(named: "label-category-3")
-            category_bc.backgroundColor = UIColor(named: "category-3")
         } else if category.text == "어학" {
             category.textColor = UIColor(named: "label-category-6")
-            category_bc.backgroundColor = UIColor(named: "category-6")
         } else if category.text == "면접" {
             category.textColor = UIColor(named: "label-category-5")
-            category_bc.backgroundColor = UIColor(named: "category-5")
         } else if category.text == "시사 PT" {
             category.textColor = UIColor(named: "label-category-2")
-            category_bc.backgroundColor = UIColor(named: "category-2")
         } else if category.text == "자소서" {
             category.textColor = UIColor(named: "label-category-4")
-            category_bc.backgroundColor = UIColor(named: "category-4")
         }
         
         category_bc.layer.cornerRadius = category_bc.frame.height / 2
@@ -60,17 +54,12 @@ class StudyListCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        setupShadow()
+        setCornerRadius()
     }
     
-    private func setupShadow() {
+    private func setCornerRadius() {
         //print("shadow 함수 호출")
         self.bcView.layer.cornerRadius = 16 // 셀의 모서리를 둥글게 만들기 위해 설정
-        self.bcView.layer.shadowColor = UIColor(red: 0.91, green: 0.91, blue: 0.91, alpha: 1).cgColor
-        self.bcView.layer.shadowOpacity = 1
-        self.bcView.layer.shadowOffset = CGSize(width: 1, height: 1)
-        self.bcView.layer.shadowRadius = 4
-        self.bcView.layer.masksToBounds = false
         
     }
 }
