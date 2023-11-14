@@ -11,7 +11,7 @@ class MyPageViewController: UIViewController {
     @IBOutlet weak var myImage: UIImageView!
     @IBOutlet weak var mypageName: UILabel!
     @IBOutlet weak var approvalDetail: UIStackView!
-    
+    @IBOutlet weak var myStudy: UIStackView!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
@@ -24,7 +24,12 @@ class MyPageViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(approvalDetailTapped))
         approvalDetail.addGestureRecognizer(tapGesture)
         approvalDetail.isUserInteractionEnabled = true
+        
+        let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(mystudyTapped))
+        myStudy.addGestureRecognizer(tapGesture2)
+        myStudy.isUserInteractionEnabled = true
     }
+    
     @IBAction func profileDetailBtnTapped(_ sender: UIButton) {
             if let profileVC = storyboard?.instantiateViewController(withIdentifier: "ProfileVC") as? ProfileVC {
                 navigationController?.pushViewController(profileVC, animated: false)
@@ -34,6 +39,11 @@ class MyPageViewController: UIViewController {
     @objc func approvalDetailTapped() {
         if let approvalDetailVC = storyboard?.instantiateViewController(withIdentifier: "ApprovalDetailVC") as? ApprovalDetailVC{
             navigationController?.pushViewController(approvalDetailVC, animated: false)}
+    }
+    
+    @objc func mystudyTapped() {
+        if let myStudyVC = storyboard?.instantiateViewController(withIdentifier: "MystudyVC") as? MystudyVC{
+            navigationController?.pushViewController(myStudyVC, animated: false)}
     }
     
     func getProfile() {

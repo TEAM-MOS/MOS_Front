@@ -240,6 +240,7 @@
                     <connections>
                         <outlet property="approvalDetail" destination="hrj-OM-2OX" id="jir-vC-2Lb"/>
                         <outlet property="myImage" destination="CQu-IL-EF8" id="yNC-hH-39e"/>
+                        <outlet property="myStudy" destination="aZF-vp-udl" id="4d0-lF-jaS"/>
                         <outlet property="mypageName" destination="nLI-xl-q7j" id="dye-bz-SxE"/>
                     </connections>
                 </viewController>
@@ -473,10 +474,10 @@
             </objects>
             <point key="canvasLocation" x="1527" y="-35"/>
         </scene>
-        <!--View Controller-->
+        <!--MystudyVC-->
         <scene sceneID="uZB-J6-gwd">
             <objects>
-                <viewController id="MJi-kG-ROm" sceneMemberID="viewController">
+                <viewController restorationIdentifier="MystudyVC" storyboardIdentifier="MystudyVC" title="MystudyVC" id="MJi-kG-ROm" customClass="MystudyVC" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oXo-Bm-McQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -490,6 +491,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="ic_home_category_back"/>
                                 <connections>
+                                    <action selector="backBtnTapped:" destination="MJi-kG-ROm" eventType="touchUpInside" id="6Sy-n2-OO1"/>
                                     <action selector="backBtnTapped:" destination="YdN-HT-i77" eventType="touchUpInside" id="UwH-BS-DuO"/>
                                 </connections>
                             </button>
@@ -511,7 +513,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="어학" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3A-vf-4hk">
                                         <rect key="frame" x="12.000000000000002" y="12" width="27.666666666666671" height="20"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
-                                        <color key="textColor" name="label-category-1"/>
+                                        <color key="textColor" name="label-category-3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="토익스터디은 선택이 아닌 필수 스터디" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXd-HU-rXB">
@@ -521,7 +523,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" name="category-1"/>
+                                <color key="backgroundColor" name="category-3"/>
                                 <constraints>
                                     <constraint firstItem="cXd-HU-rXB" firstAttribute="leading" secondItem="Jft-EY-UEA" secondAttribute="leading" constant="12" id="MY2-OG-3XQ"/>
                                     <constraint firstAttribute="trailing" secondItem="cXd-HU-rXB" secondAttribute="trailing" constant="12" id="p5T-td-cil"/>
@@ -659,10 +661,13 @@
         <image name="mypage_calendar" width="96" height="97"/>
         <image name="mypage_taget_company" width="96" height="97"/>
         <namedColor name="category-1">
-            <color red="1" green="0.96470588235294119" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.96862745098039216" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="label-category-1">
-            <color red="0.97647058823529409" green="0.3843137254901961" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="category-3">
+            <color red="0.94117647058823528" green="1" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="label-category-3">
+            <color red="0.24313725490196078" green="0.80000000000000004" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="subColor">
             <color red="1" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
