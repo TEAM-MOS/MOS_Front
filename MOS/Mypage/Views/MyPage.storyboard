@@ -457,6 +457,12 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="image" destination="L4l-I1-Z4X" id="zoX-Xf-eXa"/>
+                        <outlet property="nickname" destination="ez1-se-0a5" id="DfB-dd-wo4"/>
+                        <outlet property="startDate" destination="epK-Vw-axb" id="V01-w3-4fV"/>
+                        <outlet property="targetCompany" destination="fNL-ds-Uvt" id="WWU-Ye-029"/>
+                        <outlet property="tend1" destination="wY8-MP-lSp" id="HSb-1k-s3d"/>
+                        <outlet property="tend2" destination="gly-VW-2C6" id="7TW-fb-Uf4"/>
                         <outlet property="view1" destination="cgW-XZ-u2v" id="ss0-9e-jWC"/>
                         <outlet property="view2" destination="oQm-gF-jOr" id="Tmg-nd-JSp"/>
                         <outlet property="view3" destination="m3g-fI-mPP" id="iQk-3L-T3D"/>

@@ -10,28 +10,31 @@ import Alamofire
 
 class MypageGet {
     static let instance = MypageGet()
-    let authToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2Nlc3NUb2tlbiIsImV4cCI6MTcwMDI0NDUxMSwiZW1haWwiOiJzYWxseWtpbTIwMThAbmF2ZXIuY29tIn0.qaH6tBCSSwHQ3qGhXwoMvjM1-XutOKSmpzTN_Y1n4az546QW0jUcUQjdcmpPnbavqsOCMb2EBxt0DCMXG_iyvA"
-
+    let accessToken = KeyChain.read(account: "MosAccessToken")
+    
     func mypageGet(handler: @escaping (_ result: MypageResultModel?) -> Void) {
-        let url = APIConstants.baseURL + "/profile"
-        let headers: HTTPHeaders = [
-            .contentType("application/json"),
-            .authorization("Bearer \(authToken)")
-        ]
-
-        AF.request(url, method: .get, headers: headers).response { response in
-            switch response.result {
-            case .success(let data):
-                do {
-                    let jsonResult = try JSONDecoder().decode(MypageResponseModel.self, from: data!)
-                    handler(jsonResult.data)
-                } catch {
-                    print("Error decoding JSON:", error)
+        if let unwrappedToken = accessToken {
+            print(unwrappedToken)
+            let url = APIConstants.baseURL + "/profile"
+            let headers: HTTPHeaders = [
+                .contentType("application/json"),
+                .authorization("Bearer \(unwrappedToken)")
+            ]
+            
+            AF.request(url, method: .get, headers: headers).response { response in
+                switch response.result {
+                case .success(let data):
+                    do {
+                        let jsonResult = try JSONDecoder().decode(MypageResponseModel.self, from: data!)
+                        handler(jsonResult.data)
+                    } catch {
+                        print("Error decoding JSON:", error)
+                        handler(nil)
+                    }
+                case .failure(let error):
+                    print("Network request failed:", error)
                     handler(nil)
                 }
-            case .failure(let error):
-                print("Network request failed:", error)
-                handler(nil)
             }
         }
     }
