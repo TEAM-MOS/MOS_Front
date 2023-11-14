@@ -34,22 +34,31 @@ class HomeViewController: UIViewController {
         fetchRecruitingStudies()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            
+            // Fetch recruiting studies when the view is about to appear
+            fetchRecruitingStudies()
+        }
+    
     func fetchRecruitingStudies() {
         RecruitingStudyGet.instance.recruitingStudyGet { [weak self] result in
             // Check if result is an array
             if let results = result as? [RecuritingStudyResultModel] {
-                // Update the first StudyInputView with the first result if available
-                if let firstResult = results.first {
-                    self?.updateStudyInputView((self?.recruitingStudy1)!, with: firstResult)
+                // Update the first StudyInputView with the last result if available
+                if let lastResult = results.last {
+                    self?.updateStudyInputView((self?.recruitingStudy1)!, with: lastResult)
                 }
 
-                // Update the second StudyInputView with the second result if available
+                // Update the second StudyInputView with the second-to-last result if available
                 if results.count > 1 {
-                    self?.updateStudyInputView((self?.recruitingStudy2)!, with: results[1])
+                    let secondToLastIndex = results.count - 2
+                    self?.updateStudyInputView((self?.recruitingStudy2)!, with: results[secondToLastIndex])
                 }
             }
         }
     }
+
 
 
 

@@ -27,6 +27,7 @@ class ApprovalDetailVC: UIViewController {
        approvalView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
     
     }
+    
     @IBAction func backBtnTapped(_ sender: UIButton) {
         guard let navigationControllers = self.navigationController?.viewControllers else { return }
         for viewController in navigationControllers {

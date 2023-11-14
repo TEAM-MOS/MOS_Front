@@ -33,36 +33,40 @@ struct RequestData: Codable {
 
 class CreateStudyPost {
     static let instance = CreateStudyPost()
-    let authToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2Nlc3NUb2tlbiIsImV4cCI6MTY5OTY4ODIxMywiZW1haWwiOiJkbXN0aGYxMjI1QG5hdmVyLmNvbSJ9.ich63gsfxbxRC8Gzn4jxhUSxqpgRI3TzIxs46_TrwDb5wazUbWxtWuJsIhufIF17TNXRwj6jeriBVIW95rNZfA"
+    let accessToken = KeyChain.read(account: "MosAccessToken")
     
     func createStudyPosting(parameters: RequestData, handler:@escaping (_ result: CreateStudyResultModel) ->(Void)) {
-        let url = APIConstants.baseURL + "/studyRoom/create"
-               let headers:HTTPHeaders = [
-                   .contentType("application/json"),
-                   .authorization("Bearer \(authToken)")
-               ]
-               
-               AF.request(url, method:.post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers).response { response in
-                   switch response.result {
-                   case .success(let data):
-                       print(String(decoding: data!, as: UTF8.self))
-                       _ = String(decoding: data!, as: UTF8.self)
-                       do {
-                           let json = try JSONSerialization.jsonObject(with: data!, options: .fragmentsAllowed)
-                           print(json)
-                           
-                           let jsonResult = try
-                           JSONDecoder().decode(CreateStudyResultModel.self, from: data!)
-                           handler(jsonResult)
-                       }catch {
-                           print(String(describing:error))
-                       }
-                   case .failure(let error):
-                       print(String(String(describing: error)))
-                   }
-               }
-           }
-       }
+        if let unwrappedToken = accessToken {
+            print(unwrappedToken)
+            
+            let url = APIConstants.baseURL + "/studyRoom/create"
+            let headers:HTTPHeaders = [
+                .contentType("application/json"),
+                .authorization("Bearer \(unwrappedToken)")
+            ]
+            
+            AF.request(url, method:.post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers).response { response in
+                switch response.result {
+                case .success(let data):
+                    print(String(decoding: data!, as: UTF8.self))
+                    _ = String(decoding: data!, as: UTF8.self)
+                    do {
+                        let json = try JSONSerialization.jsonObject(with: data!, options: .fragmentsAllowed)
+                        print(json)
+                        
+                        let jsonResult = try
+                        JSONDecoder().decode(CreateStudyResultModel.self, from: data!)
+                        handler(jsonResult)
+                    }catch {
+                        print(String(describing:error))
+                    }
+                case .failure(let error):
+                    print(String(String(describing: error)))
+                }
+            }
+        }
+    }
+}
 
 
 struct CreateStudyResultModel: Codable {
