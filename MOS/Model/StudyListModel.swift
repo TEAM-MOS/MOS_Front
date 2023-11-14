@@ -27,7 +27,7 @@ extension StudyList {
 }
 
 extension StudyList {
-    static let listAnalysis: [StudyList] = [ StudyList(category: "산업&기업 분석", title: "2023년 상반기 네이버 IT직군 면접 준비 스터디원 모집합니다 :)", imageName: "ic_home_category1", location: "송파구", date: "2/14(토)", member: "3/4"), StudyList(category: "산업&기업 분석", title: "2023년 상반기 네이버 IT직군 면접 준비 스터디원 모집합니다", imageName: "profile1", location: "동작구", date: "3/12(월)", member: "1/4")]
+    static let listAnalysis: [StudyList] = [ StudyList(category: "산업&기업 분석", title: "2023년 상반기 네이버 IT직군 면접 준비 스터디원 모집합니다 :)", imageName: "profile1", location: "송파구", date: "2/14(토)", member: "3/4"), StudyList(category: "산업&기업 분석", title: "산업의 흐름을 읽어라! 산업 기업 분석 스터디 참가자 모집", imageName: "profile2", location: "동작구", date: "3/12(월)", member: "1/4"),StudyList(category: "산업&기업 분석", title: "전략적으로 성장하는 기업을 파헤치다! 산업 기업 분석 스터디 참가 신청하세요", imageName: "profile3", location: "동작구", date: "3/12(월)", member: "1/4"),StudyList(category: "산업&기업 분석", title: "산업의 트렌드와 기업의 전략을 공부하는 스터디, 참여자를 모집합니다", imageName: "profile4", location: "동작구", date: "3/12(월)", member: "1/4"),StudyList(category: "산업&기업 분석", title: "산업별 동향을 살피는 산업 기업 분석 스터디 참가자를 모집합니다", imageName: "profile5", location: "동작구", date: "3/12(월)", member: "1/4"),StudyList(category: "산업&기업 분석", title: "비즈니스 인사이트를 얻는 산업 기업 분석 스터디, 함께 할 동료를 찾습니다", imageName: "profile6", location: "동작구", date: "3/12(월)", member: "1/4") ]
 }
 
 extension StudyList {

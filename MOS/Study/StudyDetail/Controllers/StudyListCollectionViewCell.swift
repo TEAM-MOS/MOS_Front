@@ -60,6 +60,9 @@ class StudyListCollectionViewCell: UICollectionViewCell {
     private func setCornerRadius() {
         //print("shadow 함수 호출")
         self.bcView.layer.cornerRadius = 16 // 셀의 모서리를 둥글게 만들기 위해 설정
+        image.contentMode = .scaleAspectFill
+        image.layer.cornerRadius = image.bounds.width / 2
+        image.layer.masksToBounds = true
         
     }
 }
