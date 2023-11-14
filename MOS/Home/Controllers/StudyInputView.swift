@@ -84,8 +84,8 @@ class StudyInputView: UIView{
                               self.studyInputView.backgroundColor = UIColor(named: "category-2")
                               self.categoryLabel.textColor = UIColor(named: "label-category-2")
                           case "인/적성":
-                              self.studyInputView.backgroundColor = UIColor(named: "category-3")
-                              self.categoryLabel.textColor = UIColor(named: "label-category-3")
+                              self.studyInputView.backgroundColor = UIColor(named: "category-2")
+                              self.categoryLabel.textColor = UIColor(named: "label-category-2")
                           case "자소서":
                               self.studyInputView.backgroundColor = UIColor(named: "category-4")
                               self.categoryLabel.textColor = UIColor(named: "label-category-4")
@@ -93,8 +93,8 @@ class StudyInputView: UIView{
                               self.studyInputView.backgroundColor = UIColor(named: "category-5")
                               self.categoryLabel.textColor = UIColor(named: "label-category-5")
                           case "어학":
-                              self.studyInputView.backgroundColor = UIColor(named: "category-6")
-                              self.categoryLabel.textColor = UIColor(named: "label-category-6")
+                              self.studyInputView.backgroundColor = UIColor(named: "category-3")
+                              self.categoryLabel.textColor = UIColor(named: "label-category-3")
                           default:
                               // 기본 배경색을 설정하거나 다른 처리를 수행합니다.
                               self.categoryView.backgroundColor = UIColor.white
