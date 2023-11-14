@@ -236,7 +236,7 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
         let updatedText = (textField.text! as NSString).replacingCharacters(in: range, with: string)
         
         // 글자 수 제한 (20자)
-        let maxLength = 20
+        let maxLength = 40
         return updatedText.count <= maxLength
     }
     
