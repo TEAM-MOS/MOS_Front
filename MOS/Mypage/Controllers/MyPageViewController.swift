@@ -17,6 +17,7 @@ class MyPageViewController: UIViewController {
         navigationController?.navigationBar.isHidden = true
         getProfile()
         
+        myImage.contentMode = .scaleAspectFill
         myImage.layer.cornerRadius = myImage.bounds.width / 2
         myImage.layer.masksToBounds = true
         

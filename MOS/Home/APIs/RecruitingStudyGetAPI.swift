@@ -9,28 +9,35 @@ import Alamofire
 
 class RecruitingStudyGet {
     static let instance = RecruitingStudyGet()
-    let authToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhY2Nlc3NUb2tlbiIsImV4cCI6MTcwMDI0NDUxMSwiZW1haWwiOiJzYWxseWtpbTIwMThAbmF2ZXIuY29tIn0.qaH6tBCSSwHQ3qGhXwoMvjM1-XutOKSmpzTN_Y1n4az546QW0jUcUQjdcmpPnbavqsOCMb2EBxt0DCMXG_iyvA"
+    let accessToken = KeyChain.read(account: "MosAccessToken")
 
     func recruitingStudyGet(handler: @escaping (_ result: [RecuritingStudyResultModel]) -> Void) {
-        let url = APIConstants.baseURL + "/studyRoom/recruiting"
-        let headers: HTTPHeaders = [
-            .contentType("application/json"),
-            .authorization("Bearer \(authToken)")
-        ]
+        if let unwrappedToken = accessToken {
+            print(unwrappedToken)
+            
+            let url = APIConstants.baseURL + "/studyRoom/recruiting"
+            let headers: HTTPHeaders = [
+                .contentType("application/json"),
+                .authorization("Bearer \(unwrappedToken)")
+            ]
 
-        AF.request(url, method: .get, headers: headers).response { response in
-            switch response.result {
-            case .success(let data):
-                print(String(decoding: data!, as: UTF8.self))
-                do {
-                    let jsonResult = try JSONDecoder().decode([RecuritingStudyResultModel].self, from: data!)
-                    handler(jsonResult)
-                } catch {
-                    print("Error decoding JSON:", error)
+            AF.request(url, method: .get, headers: headers).response { response in
+                switch response.result {
+                case .success(let data):
+                    print(String(decoding: data!, as: UTF8.self))
+                    do {
+                        let jsonResult = try JSONDecoder().decode([RecuritingStudyResultModel].self, from: data!)
+                        handler(jsonResult)
+                    } catch {
+                        print("Error decoding JSON:", error)
+                    }
+                case .failure(let error):
+                    print("Network request failed:", error)
                 }
-            case .failure(let error):
-                print("Network request failed:", error)
             }
+        } else {
+            print("Error: AccessToken is nil")
+            // Handle the case where accessToken is nil, for example, request a new token or handle the error appropriately.
         }
     }
 }
