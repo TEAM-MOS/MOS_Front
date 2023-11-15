@@ -33,16 +33,22 @@ class StudyListCollectionViewCell: UICollectionViewCell {
         
         if category.text == "산업&기업 분석" {
             category.textColor = UIColor(named: "label-category-1")
+            bcView.backgroundColor = UIColor(named: "category-1")
         } else if category.text == "인/적성" {
             category.textColor = UIColor(named: "label-category-3")
+            bcView.backgroundColor = UIColor(named: "category-3")
         } else if category.text == "어학" {
             category.textColor = UIColor(named: "label-category-6")
+            bcView.backgroundColor = UIColor(named: "category-6")
         } else if category.text == "면접" {
             category.textColor = UIColor(named: "label-category-5")
+            bcView.backgroundColor = UIColor(named: "category-5")
         } else if category.text == "시사 PT" {
             category.textColor = UIColor(named: "label-category-2")
+            bcView.backgroundColor = UIColor(named: "category-2")
         } else if category.text == "자소서" {
             category.textColor = UIColor(named: "label-category-4")
+            bcView.backgroundColor = UIColor(named: "category-4")
         }
         
         category_bc.layer.cornerRadius = category_bc.frame.height / 2

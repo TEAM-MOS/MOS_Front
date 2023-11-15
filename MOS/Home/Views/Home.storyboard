@@ -442,7 +442,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aaL-bk-EAM">
-                                <rect key="frame" x="0.0" y="128.33333333333331" width="393" height="689.66666666666674"/>
+                                <rect key="frame" x="0.0" y="120.33333333333331" width="393" height="697.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HkR-1q-DQL">
                                     <size key="itemSize" width="392" height="166"/>
@@ -472,7 +472,6 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" name="category-1"/>
                                                     <constraints>
                                                         <constraint firstItem="kbW-oA-Fhk" firstAttribute="top" secondItem="cAD-MI-GNE" secondAttribute="top" constant="6" id="2LT-bf-lOo"/>
                                                         <constraint firstItem="kbW-oA-Fhk" firstAttribute="centerY" secondItem="cAD-MI-GNE" secondAttribute="centerY" id="AQL-3C-FX1"/>
@@ -662,7 +661,7 @@
                             <constraint firstItem="CdU-M4-xQ3" firstAttribute="centerY" secondItem="yaR-AS-lGh" secondAttribute="centerY" id="0Jc-Hz-vSO"/>
                             <constraint firstItem="xFX-uS-JZU" firstAttribute="bottom" secondItem="aaL-bk-EAM" secondAttribute="bottom" id="5ak-11-RVP"/>
                             <constraint firstItem="aaL-bk-EAM" firstAttribute="leading" secondItem="xFX-uS-JZU" secondAttribute="leading" id="CzX-BR-wKd"/>
-                            <constraint firstItem="aaL-bk-EAM" firstAttribute="top" secondItem="CdU-M4-xQ3" secondAttribute="bottom" constant="24" id="Zrf-ad-4To"/>
+                            <constraint firstItem="aaL-bk-EAM" firstAttribute="top" secondItem="CdU-M4-xQ3" secondAttribute="bottom" constant="16" id="Zrf-ad-4To"/>
                             <constraint firstItem="CdU-M4-xQ3" firstAttribute="leading" secondItem="yaR-AS-lGh" secondAttribute="trailing" constant="10" id="aem-9z-YOW"/>
                             <constraint firstItem="yaR-AS-lGh" firstAttribute="top" secondItem="xFX-uS-JZU" secondAttribute="top" constant="20" id="czV-WN-bxF"/>
                             <constraint firstItem="xFX-uS-JZU" firstAttribute="trailing" secondItem="aaL-bk-EAM" secondAttribute="trailing" id="f2B-Te-Ctu"/>
@@ -688,7 +687,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2Jq-Cw-cM8">
-                                <rect key="frame" x="0.0" y="128.33333333333331" width="393" height="689.66666666666674"/>
+                                <rect key="frame" x="0.0" y="120.33333333333331" width="393" height="697.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g19-g4-itW">
                                     <size key="itemSize" width="392" height="166"/>
@@ -909,7 +908,7 @@
                             <constraint firstItem="sQB-p5-edk" firstAttribute="bottom" secondItem="2Jq-Cw-cM8" secondAttribute="bottom" id="Un7-zc-XQ1"/>
                             <constraint firstItem="D9m-b2-HXD" firstAttribute="centerY" secondItem="mBU-yh-GAO" secondAttribute="centerY" id="W9m-Qb-aMW"/>
                             <constraint firstItem="D9m-b2-HXD" firstAttribute="leading" secondItem="mBU-yh-GAO" secondAttribute="trailing" constant="10" id="c7X-l2-QHT"/>
-                            <constraint firstItem="2Jq-Cw-cM8" firstAttribute="top" secondItem="D9m-b2-HXD" secondAttribute="bottom" constant="24" id="dVI-UU-Ani"/>
+                            <constraint firstItem="2Jq-Cw-cM8" firstAttribute="top" secondItem="D9m-b2-HXD" secondAttribute="bottom" constant="16" id="dVI-UU-Ani"/>
                             <constraint firstItem="mBU-yh-GAO" firstAttribute="leading" secondItem="sQB-p5-edk" secondAttribute="leading" constant="24" id="fC0-F4-PaO"/>
                             <constraint firstItem="mBU-yh-GAO" firstAttribute="top" secondItem="sQB-p5-edk" secondAttribute="top" constant="20" id="ojE-ep-GW2"/>
                         </constraints>
