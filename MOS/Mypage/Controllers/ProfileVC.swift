@@ -10,6 +10,7 @@ import UIKit
 
 class ProfileVC: UIViewController {
     
+    @IBOutlet weak var btnEdit: UIButton!
     @IBOutlet weak var tend2: UILabel!
     @IBOutlet weak var tend1: UILabel!
     @IBOutlet weak var startDate: UILabel!
@@ -24,6 +25,7 @@ class ProfileVC: UIViewController {
         super.viewDidLoad()
         //getProfile()
         
+        btnEdit.layer.cornerRadius = 4
         view1.backgroundColor = UIColor(hex: "F9F9F9")
         view1.layer.cornerRadius = 8
         view2.backgroundColor = UIColor(hex: "F9F9F9")
@@ -36,7 +38,7 @@ class ProfileVC: UIViewController {
         image.contentMode = .scaleAspectFill
         image.layer.cornerRadius = image.bounds.width / 2
         image.layer.masksToBounds = true
-        image.image = UIImage(named: "profile1")
+        image.image = UIImage(named: "profile3")
         nickname.text = "내가먼저취뽀"
         
     }

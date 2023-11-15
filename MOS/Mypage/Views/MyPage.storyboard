@@ -242,6 +242,7 @@
                         <outlet property="myImage" destination="CQu-IL-EF8" id="yNC-hH-39e"/>
                         <outlet property="myStudy" destination="aZF-vp-udl" id="4d0-lF-jaS"/>
                         <outlet property="mypageName" destination="nLI-xl-q7j" id="dye-bz-SxE"/>
+                        <outlet property="profileBtn" destination="Adb-uf-ALr" id="WEk-G9-jx3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -458,6 +459,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="btnEdit" destination="2FY-qK-PjH" id="oyV-EF-NEg"/>
                         <outlet property="image" destination="L4l-I1-Z4X" id="zoX-Xf-eXa"/>
                         <outlet property="nickname" destination="ez1-se-0a5" id="DfB-dd-wo4"/>
                         <outlet property="startDate" destination="epK-Vw-axb" id="V01-w3-4fV"/>

@@ -11,6 +11,7 @@ class MyPageViewController: UIViewController {
     @IBOutlet weak var myImage: UIImageView!
     @IBOutlet weak var mypageName: UILabel!
     @IBOutlet weak var approvalDetail: UIStackView!
+    @IBOutlet weak var profileBtn: UIButton!
     @IBOutlet weak var myStudy: UIStackView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,10 +19,11 @@ class MyPageViewController: UIViewController {
         navigationController?.hidesBottomBarWhenPushed = true
         //getProfile()
         
+        profileBtn.layer.cornerRadius = 4
         myImage.contentMode = .scaleAspectFill
         myImage.layer.cornerRadius = myImage.bounds.width / 2
         myImage.layer.masksToBounds = true
-        myImage.image = UIImage(named: "profile1")
+        myImage.image = UIImage(named: "profile3")
         mypageName.text = "내가먼저취뽀"
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(approvalDetailTapped))
