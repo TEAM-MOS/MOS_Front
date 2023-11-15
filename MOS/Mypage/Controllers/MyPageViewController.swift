@@ -16,11 +16,13 @@ class MyPageViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
         navigationController?.hidesBottomBarWhenPushed = true
-        getProfile()
+        //getProfile()
         
         myImage.contentMode = .scaleAspectFill
         myImage.layer.cornerRadius = myImage.bounds.width / 2
         myImage.layer.masksToBounds = true
+        myImage.image = UIImage(named: "profile1")
+        mypageName.text = "내가먼저취뽀"
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(approvalDetailTapped))
         approvalDetail.addGestureRecognizer(tapGesture)
@@ -51,26 +53,25 @@ class MyPageViewController: UIViewController {
             navigationController?.pushViewController(myStudyVC, animated: false)}
     }
     
-    func getProfile() {
-        MypageGet.instance.mypageGet { [weak self] result in
-            // Check if result is not nil
-            if let mypageResult = result {
-                // Update UI elements with the received data
-                self?.updateUI(with: mypageResult)
-            }
-        }
-    }
-    
-    func updateUI(with mypageResult: MypageResultModel) {
-        mypageName.text = mypageResult.nickname
-        
-        if let imageUrlString = mypageResult.imageUrl, let imageUrl = URL(string: imageUrlString) {
-            myImage.kf.setImage(with: imageUrl)
-        } else {
-            // Set a default image if imageUrl is nil or an invalid URL
-            print("이미지 없음")
-            myImage.image = UIImage(named: "defaultImage")
-        }
-    }
+//    func getProfile() {
+//        MypageGet.instance.mypageGet { [weak self] result in
+//            // Check if result is not nil
+//            if let mypageResult = result {
+//                // Update UI elements with the received data
+//                self?.updateUI(with: mypageResult)
+//            }
+//        }
+//    }
+//
+//    func updateUI(with mypageResult: MypageResultModel) {
+//        mypageName.text = mypageResult.nickname
+//
+//        if let imageUrlString = mypageResult.imageUrl, let imageUrl = URL(string: imageUrlString) {
+//            myImage.kf.setImage(with: imageUrl)
+//        } else {
+//            // Set a default image if imageUrl is nil or an invalid URL
+//            myImage.image = UIImage(named: "profile1")
+//        }
+//    }
 }
 
