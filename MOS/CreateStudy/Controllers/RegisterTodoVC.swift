@@ -43,6 +43,7 @@ class RegisterTodoVC: UIViewController{
         addCellBtn.layer.borderWidth=1
         addCellBtn.layer.cornerRadius = 4
         addCellBtn.layer.borderColor = UIColor(named:"mainColor")?.cgColor
+        hideKeyboard()
         
         // 로그로 변수들의 값 확인
         print("selectedCategory: \(category ?? "N/A")")
@@ -76,7 +77,18 @@ class RegisterTodoVC: UIViewController{
            let indexPath = IndexPath(row: todos.count - 1, section: 0)
            tableView.insertRows(at: [indexPath], with: .automatic)
        }
+    
+    func hideKeyboard() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self,action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
+
 
 extension RegisterTodoVC: UITableViewDataSource {
     

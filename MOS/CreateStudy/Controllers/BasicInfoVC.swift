@@ -36,6 +36,7 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var onlineBtns: UIStackView!
     
     var tapGestureRecognizer: UITapGestureRecognizer?
+    var originalScrollViewOffset: CGPoint = .zero
     
     // 카테고리 번호를 받아오는 변수
     var selectedCategory: String?
@@ -59,6 +60,7 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         placeTextField.delegate = self
+        originalScrollViewOffset = scrollView.contentOffset
         
         // UITapGestureRecognizer 초기화
             tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
@@ -262,27 +264,32 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     }
     
     @objc func keyboardWillShow(notification: Notification) {
-        if let keyboardFrame = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-            let keyboardHeight = keyboardFrame.height
+            if let keyboardFrame = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+                let keyboardHeight = keyboardFrame.height
 
-            if placeTextField.isFirstResponder {
-                if let textFieldFrame = placeTextField.superview?.convert(placeTextField.frame, to: view) {
-                    let textFieldBottomY = textFieldFrame.origin.y + textFieldFrame.height
-                    let visibleContentHeight = view.frame.height - keyboardHeight
+                if placeTextField.isFirstResponder {
+                    if let textFieldFrame = placeTextField.superview?.convert(placeTextField.frame, to: view) {
+                        let textFieldBottomY = textFieldFrame.origin.y + textFieldFrame.height
+                        let visibleContentHeight = view.frame.height - keyboardHeight
 
-                    if textFieldBottomY > visibleContentHeight {
-                        let offset = textFieldBottomY - visibleContentHeight
-                        scrollView.contentOffset.y += offset // 현재 스크롤 위치에 offset을 더하여 고정
+                        if textFieldBottomY > visibleContentHeight {
+                            let offset = textFieldBottomY - visibleContentHeight
+                            scrollView.contentOffset.y += offset // 현재 스크롤 위치에 offset을 더하여 고정
+
+                            // 수정: 키보드가 올라갈 때의 스크롤 뷰 위치 저장
+                            originalScrollViewOffset = scrollView.contentOffset
+                            originalScrollViewOffset.y -= keyboardHeight - 140
+                        }
                     }
                 }
             }
         }
-    }
 
-    @objc func keyboardWillHide() {
-        // 키보드가 사라질 때 스크롤 뷰 원래 위치로 되돌리기
-        scrollView.setContentOffset(.zero, animated: true)
-    }
+        @objc func keyboardWillHide() {
+            // 수정: 키보드가 사라질 때 스크롤 뷰를 저장한 위치로 되돌리기
+            scrollView.setContentOffset(originalScrollViewOffset, animated: true)
+        }
+
 
     
     @IBAction func memberCountUpTapped(_ sender: UIButton) {

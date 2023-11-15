@@ -30,6 +30,7 @@ class DetailInfoVC: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     var intro: String? = nil
     var studyDays: [String] = []
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var goalTextField: UITextField!
     @IBOutlet weak var weekendSegment: UISegmentedControl!
     @IBOutlet weak var weekendBtns: UIStackView!
@@ -61,6 +62,8 @@ class DetailInfoVC: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+
         goalTextField.delegate = self
         studyRuleTextView.delegate = self
         studyIntroduceTextView.delegate = self
@@ -105,6 +108,8 @@ class DetailInfoVC: UIViewController, UITextViewDelegate, UITextFieldDelegate {
         addTapGestureToView(wedView, day: "WED")
         addTapGestureToView(TueView, day: "TUE")
         addTapGestureToView(MonView, day: "MON")
+        
+        hideKeyboard()
     }
     
     func setupRuleView(_ view: UIView) {
@@ -128,15 +133,15 @@ class DetailInfoVC: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     }
     
     // UITextView 입력이 끝났을 때 호출되는 UITextViewDelegate 메서드
-        func textViewDidEndEditing(_ textView: UITextView) {
-            if textView == studyRuleTextView {
-                rules = textView.text
-            } else if textView == studyIntroduceTextView {
-                intro = textView.text
-            } else if textView == questionTextView {
-                quest = textView.text
-            }
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView == studyRuleTextView {
+            rules = textView.text
+        } else if textView == studyIntroduceTextView {
+            intro = textView.text
+        } else if textView == questionTextView {
+            quest = textView.text
         }
+    }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == goalTextField {
@@ -182,6 +187,28 @@ class DetailInfoVC: UIViewController, UITextViewDelegate, UITextFieldDelegate {
         }
     }
     
+    @objc func keyboardWillShow(notification: Notification) {
+        if let keyboardFrame = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            let keyboardHeight = keyboardFrame.height
+
+            if studyRuleTextView.isFirstResponder || studyIntroduceTextView.isFirstResponder || questionTextView.isFirstResponder {
+                // 기존 코드와 유사하게 원하는 UITextView를 찾아내고
+                let textView = studyRuleTextView.isFirstResponder ? studyRuleTextView : (studyIntroduceTextView.isFirstResponder ? studyIntroduceTextView : questionTextView)
+
+                if let textViewFrame = textView?.superview?.convert(textView!.frame, to: view) {
+                    let textViewBottomY = textViewFrame.origin.y + textViewFrame.height
+                    let visibleContentHeight = view.frame.height - keyboardHeight
+
+                    if textViewBottomY > visibleContentHeight {
+                        let offset = textViewBottomY - visibleContentHeight
+                        scrollView.contentOffset.y += offset // 현재 스크롤 위치에 offset을 더하여 고정
+                    }
+                }
+            }
+        }
+    }
+
+    
     func changeLabelTextColor(_ label: UILabel?, color: UIColor) {
         label?.textColor = color
     }
@@ -219,6 +246,16 @@ class DetailInfoVC: UIViewController, UITextViewDelegate, UITextFieldDelegate {
                 break
             }
         }
+    }
+    
+    func hideKeyboard() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self,action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     @IBAction func inroBtnClicked(_ sender: Any){
