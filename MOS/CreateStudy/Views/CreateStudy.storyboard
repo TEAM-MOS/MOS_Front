@@ -1217,6 +1217,7 @@
                         <outlet property="questionTextView" destination="dJf-Sa-ifM" id="QnO-ob-YTx"/>
                         <outlet property="satLabel" destination="ekl-Sp-qP3" id="U7a-Nr-Kxi"/>
                         <outlet property="satView" destination="GrA-iN-tAV" id="BW8-VO-YG5"/>
+                        <outlet property="scrollView" destination="HeY-WZ-gDR" id="3zY-Pb-yL3"/>
                         <outlet property="studyIntroduceTextView" destination="JzH-E4-Ofy" id="l5n-wL-AGd"/>
                         <outlet property="studyRuleTextView" destination="2gR-X5-RWp" id="mzq-rA-Sji"/>
                         <outlet property="sunLabel" destination="tPi-Tu-WCc" id="lbP-9L-AbE"/>
@@ -1497,7 +1498,7 @@
         <image name="indicator3" width="209" height="25"/>
         <image name="indicator4" width="209" height="24"/>
         <namedColor name="category-1">
-            <color red="1" green="0.96470588235294119" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.96862745098039216" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="main-2">
             <color red="1" green="0.95294117647058818" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
