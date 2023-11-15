@@ -152,6 +152,7 @@ class HomeViewController: UIViewController {
             if let pagingViewController = segue.destination as? PagingViewController, let pageIndex = sender as? Int {
                 // 원하는 페이지로 selectedPageIndex를 설정
                 pagingViewController.selectedPageIndex = pageIndex
+                pagingViewController.hidesBottomBarWhenPushed = true
             }
         }
     }

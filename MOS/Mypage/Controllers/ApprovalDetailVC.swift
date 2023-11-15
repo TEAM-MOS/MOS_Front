@@ -29,14 +29,6 @@ class ApprovalDetailVC: UIViewController {
     }
     
     @IBAction func backBtnTapped(_ sender: UIButton) {
-        guard let navigationControllers = self.navigationController?.viewControllers else { return }
-        for viewController in navigationControllers {
-            print(viewController)
-            if let previousVC = viewController as? MyPageViewController {
-                self.navigationController?.popToViewController(previousVC, animated: false)
-                break
-            }
-        }
-
+        self.navigationController?.popViewController(animated: false)
     }
 }

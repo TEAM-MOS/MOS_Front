@@ -15,6 +15,7 @@ class MyPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
+        navigationController?.hidesBottomBarWhenPushed = true
         getProfile()
         
         myImage.contentMode = .scaleAspectFill
@@ -32,17 +33,21 @@ class MyPageViewController: UIViewController {
     
     @IBAction func profileDetailBtnTapped(_ sender: UIButton) {
             if let profileVC = storyboard?.instantiateViewController(withIdentifier: "ProfileVC") as? ProfileVC {
+                profileVC.hidesBottomBarWhenPushed = true
                 navigationController?.pushViewController(profileVC, animated: false)
             }
         }
     
     @objc func approvalDetailTapped() {
-        if let approvalDetailVC = storyboard?.instantiateViewController(withIdentifier: "ApprovalDetailVC") as? ApprovalDetailVC{
-            navigationController?.pushViewController(approvalDetailVC, animated: false)}
+        if let approvalDetailVC = storyboard?.instantiateViewController(withIdentifier: "ApprovalDetailVC") as? ApprovalDetailVC {
+                    approvalDetailVC.hidesBottomBarWhenPushed = true
+                    navigationController?.pushViewController(approvalDetailVC, animated: false)
+                }
     }
     
     @objc func mystudyTapped() {
         if let myStudyVC = storyboard?.instantiateViewController(withIdentifier: "MystudyVC") as? MystudyVC{
+            myStudyVC.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(myStudyVC, animated: false)}
     }
     
