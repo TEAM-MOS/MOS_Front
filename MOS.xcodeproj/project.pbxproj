@@ -65,6 +65,8 @@
 		5A6776BE2A2269B600F1D3DB /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776B52A2269B600F1D3DB /* Pretendard-Black.ttf */; };
 		5A6776C12A2269DA00F1D3DB /* survey_character.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A6776C02A2269DA00F1D3DB /* survey_character.png */; };
 		5A8BF2162AF35BBC00C58D45 /* SignUpPostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8BF2152AF35BBC00C58D45 /* SignUpPostAPI.swift */; };
+		5AD037DC2B091A26001D3E1A /* PopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AD037DB2B091A26001D3E1A /* PopUp.xib */; };
+		5AD037DE2B091AC3001D3E1A /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD037DD2B091AC3001D3E1A /* PopUp.swift */; };
 		5AD2E72D2B0286A800A9437B /* MypageGetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD2E7272B0286A800A9437B /* MypageGetAPI.swift */; };
 		5AD2E72E2B0286A800A9437B /* ApprovalDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD2E7292B0286A800A9437B /* ApprovalDetailVC.swift */; };
 		5AD2E72F2B0286A800A9437B /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD2E72A2B0286A800A9437B /* MyPageViewController.swift */; };
@@ -170,6 +172,8 @@
 		5A6776B52A2269B600F1D3DB /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.ttf"; sourceTree = "<group>"; };
 		5A6776C02A2269DA00F1D3DB /* survey_character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = survey_character.png; sourceTree = "<group>"; };
 		5A8BF2152AF35BBC00C58D45 /* SignUpPostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPostAPI.swift; sourceTree = "<group>"; };
+		5AD037DB2B091A26001D3E1A /* PopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUp.xib; sourceTree = "<group>"; };
+		5AD037DD2B091AC3001D3E1A /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
 		5AD2E7272B0286A800A9437B /* MypageGetAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MypageGetAPI.swift; sourceTree = "<group>"; };
 		5AD2E7292B0286A800A9437B /* ApprovalDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApprovalDetailVC.swift; sourceTree = "<group>"; };
 		5AD2E72A2B0286A800A9437B /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
@@ -585,6 +589,7 @@
 				5AD2E72A2B0286A800A9437B /* MyPageViewController.swift */,
 				5AD2E7B62B02B41700A9437B /* ProfileVC.swift */,
 				5AD2E7B82B03545700A9437B /* MyStudyVC.swift */,
+				5AD037DD2B091AC3001D3E1A /* PopUp.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -593,6 +598,7 @@
 			isa = PBXGroup;
 			children = (
 				5AD2E72C2B0286A800A9437B /* MyPage.storyboard */,
+				5AD037DB2B091A26001D3E1A /* PopUp.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -768,6 +774,7 @@
 				5AD2E7B32B02A8AE00A9437B /* CreateStudy.storyboard in Resources */,
 				5A67766B2A1E1ECF00F1D3DB /* Assets.xcassets in Resources */,
 				2F37F4C62ADEBE2B005BB63A /* CustomView.storyboard in Resources */,
+				5AD037DC2B091A26001D3E1A /* PopUp.xib in Resources */,
 				5A6776BA2A2269B600F1D3DB /* Pretendard-Regular.ttf in Resources */,
 				5A3538852B05C21F00D900C5 /* Survey.storyboard in Resources */,
 				2FA142822A149026006AA91B /* LaunchScreen.storyboard in Resources */,
@@ -860,6 +867,7 @@
 				2F8270E22A8F7EEB00CE7BE1 /* StudyListModel.swift in Sources */,
 				5AD2E7AB2B02A8AE00A9437B /* DetailInfoVC.swift in Sources */,
 				5AD2E7AC2B02A8AE00A9437B /* ChooseCategoryVC.swift in Sources */,
+				5AD037DE2B091AC3001D3E1A /* PopUp.swift in Sources */,
 				5AD2E74E2B02964E00A9437B /* LanguageViewController.swift in Sources */,
 				5AD2E72F2B0286A800A9437B /* MyPageViewController.swift in Sources */,
 				5AD2E7AF2B02A8AE00A9437B /* FinishVC.swift in Sources */,

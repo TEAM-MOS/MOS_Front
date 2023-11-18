@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 class MystudyVC: UIViewController {
     
+    var popUp: PopUp!
     
     @IBOutlet weak var bgVIiew: UIView!
     @IBOutlet weak var profile6: UIImageView!
@@ -46,6 +47,15 @@ class MystudyVC: UIViewController {
             }
         }
         
+    }
+    @IBAction func profileBtnTapped(_ sender: Any) {
+        self.popUp = PopUp(frame: self.view.frame)
+        self.popUp.nextBtn.addTarget(self, action: #selector(nextBtnTapped), for:.touchUpInside)
+        self.view.addSubview(popUp)
+    }
+    
+    @objc func nextBtnTapped(){
+        self.popUp.removeFromSuperview()
     }
 }
 

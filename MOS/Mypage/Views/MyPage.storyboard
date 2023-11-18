@@ -601,6 +601,20 @@
                                             <constraint firstAttribute="width" constant="20" id="u3C-Bw-4qA"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S4c-jO-3Qn">
+                                        <rect key="frame" x="12" y="123.33333333333331" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0OR-C8-kJC"/>
+                                            <constraint firstAttribute="width" constant="40" id="nXj-kD-sWe"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="profileBtnTapped:" destination="MJi-kG-ROm" eventType="touchUpInside" id="swr-tT-3qz"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" name="category-1"/>
                                 <constraints>
@@ -615,6 +629,7 @@
                                     <constraint firstItem="7CT-lL-rtg" firstAttribute="leading" secondItem="gIX-mY-lAw" secondAttribute="leading" id="FFc-EQ-uJn"/>
                                     <constraint firstItem="UMu-6e-LPt" firstAttribute="top" secondItem="wdb-wr-BkL" secondAttribute="top" id="Hkq-47-mhG"/>
                                     <constraint firstItem="4XY-OB-Y41" firstAttribute="top" secondItem="o6y-wd-2aV" secondAttribute="top" id="Lj9-r1-jlu"/>
+                                    <constraint firstItem="S4c-jO-3Qn" firstAttribute="leading" secondItem="gIX-mY-lAw" secondAttribute="leading" id="MTr-TE-OGn"/>
                                     <constraint firstItem="cXd-HU-rXB" firstAttribute="leading" secondItem="Jft-EY-UEA" secondAttribute="leading" constant="12" id="MY2-OG-3XQ"/>
                                     <constraint firstItem="MYV-Hz-Ize" firstAttribute="bottom" secondItem="7h2-8e-2zr" secondAttribute="bottom" id="R3O-yK-WES"/>
                                     <constraint firstAttribute="bottom" secondItem="wZ5-Fc-PTl" secondAttribute="bottom" constant="20" id="SO4-bW-AWC"/>
@@ -630,6 +645,7 @@
                                     <constraint firstItem="k1v-c5-AQQ" firstAttribute="leading" secondItem="7CT-lL-rtg" secondAttribute="leading" id="fyV-xp-kDV"/>
                                     <constraint firstItem="gVE-7a-g2D" firstAttribute="leading" secondItem="o6y-wd-2aV" secondAttribute="leading" id="kGa-wo-2ts"/>
                                     <constraint firstItem="gIX-mY-lAw" firstAttribute="leading" secondItem="gVE-7a-g2D" secondAttribute="leading" id="n7X-ki-cgL"/>
+                                    <constraint firstItem="S4c-jO-3Qn" firstAttribute="top" secondItem="gIX-mY-lAw" secondAttribute="top" id="npC-An-PkB"/>
                                     <constraint firstItem="7h2-8e-2zr" firstAttribute="leading" secondItem="wZ5-Fc-PTl" secondAttribute="trailing" constant="6" id="o8Y-gA-xrO"/>
                                     <constraint firstItem="4XY-OB-Y41" firstAttribute="bottom" secondItem="o6y-wd-2aV" secondAttribute="bottom" id="p4A-5n-No1"/>
                                     <constraint firstAttribute="trailing" secondItem="cXd-HU-rXB" secondAttribute="trailing" constant="12" id="p5T-td-cil"/>
