@@ -11,12 +11,12 @@ class Mystudy2VC: UIViewController {
     
     var popUp: PopUp!
     
-    @IBOutlet weak var bgVIiew: UIView!
-    @IBOutlet weak var profile6: UIImageView!
     @IBOutlet weak var profile5: UIImageView!
     @IBOutlet weak var profile4: UIImageView!
-    @IBOutlet weak var profile3: UIImageView!
     @IBOutlet weak var profile2: UIImageView!
+    @IBOutlet weak var bgVIiew: UIView!
+    @IBOutlet weak var profile6: UIImageView!
+    @IBOutlet weak var profile3: UIImageView!
     @IBOutlet weak var profile1: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,8 +38,16 @@ class Mystudy2VC: UIViewController {
     }
     
     @IBAction func backBtnTapped(_ sender: UIButton) {
-        performSegue(withIdentifier: "toMyPage", sender: nil)
+        guard let navigationControllers = self.navigationController?.viewControllers else { return }
+        for viewController in navigationControllers {
+            print(viewController)
+            if let previousVC = viewController as? MyPageViewController {
+                self.navigationController?.popToViewController(previousVC, animated: false)
+                break
+            }
+        }
     }
+    
     @IBAction func profileBtnTapped(_ sender: Any) {
         self.popUp = PopUp(frame: self.view.frame)
         self.popUp.nextBtn.addTarget(self, action: #selector(nextBtnTapped), for:.touchUpInside)

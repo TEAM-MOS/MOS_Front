@@ -55,12 +55,9 @@ class MystudyVC: UIViewController {
     }
     
     @objc func nextBtnTapped(){
-        let storyboard = UIStoryboard(name: "MyPage", bundle: nil)
-        if let secondProfileVC = storyboard.instantiateViewController(withIdentifier: "SecondProfile") as? SecondProfile {
-            // 모달로 화면 전환
-            secondProfileVC.modalPresentationStyle = .fullScreen
-            self.present(secondProfileVC, animated: false, completion: nil)
-        }
+        if let secondProfile = storyboard?.instantiateViewController(withIdentifier: "SecondProfile") as? SecondProfile {
+                    navigationController?.pushViewController(secondProfile, animated: false)
+                }
     }
 }
 
