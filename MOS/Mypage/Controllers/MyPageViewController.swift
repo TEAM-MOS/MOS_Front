@@ -8,6 +8,7 @@ import UIKit
 import Kingfisher
 
 class MyPageViewController: UIViewController {
+    @IBOutlet weak var dot: UIImageView!
     @IBOutlet weak var myImage: UIImageView!
     @IBOutlet weak var mypageName: UILabel!
     @IBOutlet weak var approvalDetail: UIStackView!
@@ -51,6 +52,7 @@ class MyPageViewController: UIViewController {
     
     @objc func mystudyTapped() {
         if let myStudyVC = storyboard?.instantiateViewController(withIdentifier: "MystudyVC") as? MystudyVC{
+            dot.isHidden = true
             myStudyVC.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(myStudyVC, animated: false)}
     }

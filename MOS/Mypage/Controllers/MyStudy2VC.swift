@@ -1,23 +1,23 @@
 //
-//  MyStudy.swift
+//  MyStudy2VC.swift
 //  MOS
 //
-//  Created by 김지은 on 2023/11/14.
+//  Created by 김지은 on 2023/11/19.
 //
 
 import Foundation
 import UIKit
-class MystudyVC: UIViewController {
+class Mystudy2VC: UIViewController {
     
     var popUp: PopUp!
     
-    @IBOutlet weak var bgVIiew: UIView!
-    @IBOutlet weak var profile6: UIImageView!
     @IBOutlet weak var profile5: UIImageView!
     @IBOutlet weak var profile4: UIImageView!
+    @IBOutlet weak var profile2: UIImageView!
+    @IBOutlet weak var bgVIiew: UIView!
+    @IBOutlet weak var profile6: UIImageView!
     @IBOutlet weak var profile3: UIImageView!
     @IBOutlet weak var profile1: UIImageView!
-    @IBOutlet weak var profile2: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hidesBottomBarWhenPushed = true
@@ -46,8 +46,8 @@ class MystudyVC: UIViewController {
                 break
             }
         }
-        
     }
+    
     @IBAction func profileBtnTapped(_ sender: Any) {
         self.popUp = PopUp(frame: self.view.frame)
         self.popUp.nextBtn.addTarget(self, action: #selector(nextBtnTapped), for:.touchUpInside)
@@ -55,9 +55,6 @@ class MystudyVC: UIViewController {
     }
     
     @objc func nextBtnTapped(){
-        if let secondProfile = storyboard?.instantiateViewController(withIdentifier: "SecondProfile") as? SecondProfile {
-                    navigationController?.pushViewController(secondProfile, animated: false)
-                }
+        self.popUp.removeFromSuperview()
     }
 }
-

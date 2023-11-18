@@ -45,7 +45,7 @@
                                             <segue destination="Y6W-OH-hqX" kind="show" identifier="navToStart" animates="NO" id="myc-TT-vN7"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취업 준비도 테스트" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWm-U5-brB">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="부족 역량 테스트" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWm-U5-brB">
                                         <rect key="frame" x="32" y="0.0" width="289" height="24"/>
                                         <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="18"/>
                                         <nil key="textColor"/>
@@ -576,8 +576,8 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="survey_start" translatesAutoresizingMaskIntoConstraints="NO" id="imf-kN-pN3">
                                         <rect key="frame" x="110" y="0.0" width="177" height="187.66666666666666"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취업 준비도 테스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgJ-5x-irg">
-                                        <rect key="frame" x="110" y="227.66666666666666" width="177" height="28"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="부족 역량 테스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgJ-5x-irg">
+                                        <rect key="frame" x="120.33333333333333" y="227.66666666666666" width="156.33333333333337" height="28"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -643,7 +643,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="s2K-hf-ELo"/>
+        <segue reference="myc-TT-vN7"/>
         <segue reference="erG-QG-u9q"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="main"/>
@@ -656,7 +656,7 @@
         <image name="survey_result_graph" width="206.66667175292969" height="191"/>
         <image name="survey_start" width="199.33332824707031" height="187.66667175292969"/>
         <namedColor name="category-1">
-            <color red="1" green="0.96470588235294119" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.96862745098039216" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="category1">
             <color red="1" green="0.94117647058823528" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -665,7 +665,7 @@
             <color red="0.52156862745098043" green="0.52156862745098043" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="label-category-1">
-            <color red="0.97647058823529409" green="0.3843137254901961" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.9882352941176471" green="0.37254901960784315" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="main">
             <color red="1" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
