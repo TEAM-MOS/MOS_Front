@@ -67,6 +67,8 @@
 		5A8BF2162AF35BBC00C58D45 /* SignUpPostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8BF2152AF35BBC00C58D45 /* SignUpPostAPI.swift */; };
 		5AD037DC2B091A26001D3E1A /* PopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AD037DB2B091A26001D3E1A /* PopUp.xib */; };
 		5AD037DE2B091AC3001D3E1A /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD037DD2B091AC3001D3E1A /* PopUp.swift */; };
+		5AD037E02B0925DC001D3E1A /* MyStudy2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD037DF2B0925DC001D3E1A /* MyStudy2VC.swift */; };
+		5AD037E22B092AE2001D3E1A /* SecondProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD037E12B092AE2001D3E1A /* SecondProfile.swift */; };
 		5AD2E72D2B0286A800A9437B /* MypageGetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD2E7272B0286A800A9437B /* MypageGetAPI.swift */; };
 		5AD2E72E2B0286A800A9437B /* ApprovalDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD2E7292B0286A800A9437B /* ApprovalDetailVC.swift */; };
 		5AD2E72F2B0286A800A9437B /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD2E72A2B0286A800A9437B /* MyPageViewController.swift */; };
@@ -174,6 +176,8 @@
 		5A8BF2152AF35BBC00C58D45 /* SignUpPostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPostAPI.swift; sourceTree = "<group>"; };
 		5AD037DB2B091A26001D3E1A /* PopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUp.xib; sourceTree = "<group>"; };
 		5AD037DD2B091AC3001D3E1A /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
+		5AD037DF2B0925DC001D3E1A /* MyStudy2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStudy2VC.swift; sourceTree = "<group>"; };
+		5AD037E12B092AE2001D3E1A /* SecondProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondProfile.swift; sourceTree = "<group>"; };
 		5AD2E7272B0286A800A9437B /* MypageGetAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MypageGetAPI.swift; sourceTree = "<group>"; };
 		5AD2E7292B0286A800A9437B /* ApprovalDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApprovalDetailVC.swift; sourceTree = "<group>"; };
 		5AD2E72A2B0286A800A9437B /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
@@ -590,6 +594,8 @@
 				5AD2E7B62B02B41700A9437B /* ProfileVC.swift */,
 				5AD2E7B82B03545700A9437B /* MyStudyVC.swift */,
 				5AD037DD2B091AC3001D3E1A /* PopUp.swift */,
+				5AD037DF2B0925DC001D3E1A /* MyStudy2VC.swift */,
+				5AD037E12B092AE2001D3E1A /* SecondProfile.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -874,6 +880,7 @@
 				5AD2E74A2B02964E00A9437B /* HomeViewController.swift in Sources */,
 				2FC144852AC8067400A642AD /* StudyBasicInfoViewController.swift in Sources */,
 				2F2406192AFA488700E52705 /* SetProfileViewController.swift in Sources */,
+				5AD037E22B092AE2001D3E1A /* SecondProfile.swift in Sources */,
 				2F928D142AFDF54400DE96C7 /* StudyTypeViewController.swift in Sources */,
 				2FA1427A2A149024006AA91B /* ViewController.swift in Sources */,
 				5AD2E7B92B03545700A9437B /* MyStudyVC.swift in Sources */,
@@ -895,6 +902,7 @@
 				5AD2E7AE2B02A8AE00A9437B /* RegisterTodoVC.swift in Sources */,
 				F3A7F9BC2A4219BC00AE1863 /* PreQuestionAlertViewController.swift in Sources */,
 				2F8270E02A8F7B9100CE7BE1 /* StudyListViewController.swift in Sources */,
+				5AD037E02B0925DC001D3E1A /* MyStudy2VC.swift in Sources */,
 				5A3538812B05C21F00D900C5 /* RoundedProgressView.swift in Sources */,
 				5AD2E7472B02964E00A9437B /* StudyInputView.swift in Sources */,
 				2F0BA3EC2AE0351E009D0353 /* TempPasswordViewController.swift in Sources */,

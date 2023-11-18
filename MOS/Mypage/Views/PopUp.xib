@@ -72,14 +72,14 @@
                                 <constraint firstItem="CO2-Xy-CZ4" firstAttribute="top" secondItem="nQf-og-eyf" secondAttribute="top" constant="12" id="t1Z-At-2ae"/>
                             </constraints>
                         </view>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="createStudy_category3" translatesAutoresizingMaskIntoConstraints="NO" id="Lmb-9i-fe0">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mypage_quetion" translatesAutoresizingMaskIntoConstraints="NO" id="Lmb-9i-fe0">
                             <rect key="frame" x="20" y="20" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="40" id="9bg-g9-ZFk"/>
                                 <constraint firstAttribute="height" constant="40" id="DuU-CK-2fM"/>
                             </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="createStudy_category3" translatesAutoresizingMaskIntoConstraints="NO" id="fVB-t6-SsL">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mypage_answer" translatesAutoresizingMaskIntoConstraints="NO" id="fVB-t6-SsL">
                             <rect key="frame" x="16" y="132.66666666666666" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="kC1-PS-Hg7"/>
@@ -163,8 +163,9 @@
         </view>
     </objects>
     <resources>
-        <image name="createStudy_category3" width="87" height="86"/>
         <image name="ic_home_detail_arrow" width="32" height="32"/>
+        <image name="mypage_answer" width="143" height="138"/>
+        <image name="mypage_quetion" width="141" height="149"/>
         <image name="profile1" width="680" height="864"/>
         <namedColor name="subColor">
             <color red="1" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
