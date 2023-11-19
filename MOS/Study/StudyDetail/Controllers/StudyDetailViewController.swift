@@ -9,6 +9,11 @@ import UIKit
 
 class StudyDetailViewController: UIViewController {
     
+    @IBOutlet weak var registerBtn: UIButton!
+    @IBOutlet weak var containerVC6: UIView!
+    @IBOutlet weak var containerVC5: UIView!
+    @IBOutlet weak var containerVC4: UIView!
+    @IBOutlet weak var containerVC3: UIView!
     @IBOutlet var studyDetailView: UIView!
     @IBOutlet weak var containerVC1: UIView!
     @IBOutlet weak var containerVC2: UIView!
@@ -20,6 +25,8 @@ class StudyDetailViewController: UIViewController {
         
         // dynamic height 설정
         setDynamicHeight()
+        registerBtn.layer.cornerRadius = 8
+        
 
         // 네비게이션 바 수정
         let backButton = UIBarButtonItem()
@@ -39,7 +46,7 @@ class StudyDetailViewController: UIViewController {
         // 신청하기 버튼 클릭 시 화면 이동
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "PreQuestionAlertVC") as? PreQuestionAlertViewController else { return }
         nextVC.modalPresentationStyle = .overCurrentContext
-        self.present(nextVC, animated: true, completion: nil)
+        self.present(nextVC, animated: false, completion: nil)
     }
     
     func setDynamicHeight() {
