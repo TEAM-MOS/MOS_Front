@@ -66,6 +66,9 @@ class StudyDetailViewController: UIViewController {
         view.layoutIfNeeded()
            
     }
+    @IBAction func backBtnTapped(_ sender: Any) {
+        self.navigationController?.popViewController(animated: false)
+    }
 }
 
 
