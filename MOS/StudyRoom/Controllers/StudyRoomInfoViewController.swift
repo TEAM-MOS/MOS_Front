@@ -11,5 +11,6 @@ class StudyRoomInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 }

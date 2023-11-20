@@ -24,6 +24,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OPY-He-Zi2">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance">
+                            <textAttributes key="titleTextAttributes"/>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <connections>
                         <segue destination="C7T-T8-cTX" kind="relationship" relationship="rootViewController" id="e8s-2E-3k4"/>
@@ -85,10 +88,27 @@
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="StudyRoomVC" id="cQj-Rb-0jA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7g-4F-Sti">
+                                <rect key="frame" x="0.0" y="103" width="393" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="pCB-Kh-aM6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Tx0-Ag-0on"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e7g-4F-Sti" firstAttribute="top" secondItem="Tx0-Ag-0on" secondAttribute="top" id="L6c-dp-MLF"/>
+                            <constraint firstItem="Tx0-Ag-0on" firstAttribute="trailing" secondItem="e7g-4F-Sti" secondAttribute="trailing" id="W1f-8C-9wF"/>
+                            <constraint firstItem="e7g-4F-Sti" firstAttribute="leading" secondItem="Tx0-Ag-0on" secondAttribute="leading" id="xJz-Pw-H5z"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Nq8-Gf-t2s"/>
+                    <connections>
+                        <outlet property="tempView" destination="e7g-4F-Sti" id="kOA-0q-7qY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r2v-Y6-WEI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,7 +117,7 @@
         <!--Study Room Todo View Controller-->
         <scene sceneID="FE1-8J-2SS">
             <objects>
-                <viewController id="MZp-av-IvF" customClass="StudyRoomTodoViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="studyRoomTodoVC" id="MZp-av-IvF" customClass="StudyRoomTodoViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aRf-Ok-Nve">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,7 +132,7 @@
         <!--Study Room Info View Controller-->
         <scene sceneID="rb3-gO-GWX">
             <objects>
-                <viewController id="1Lv-I4-2BK" customClass="StudyRoomInfoViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="studyRoomInfoVC" id="1Lv-I4-2BK" customClass="StudyRoomInfoViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="laE-fe-NeP" customClass="Study">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
