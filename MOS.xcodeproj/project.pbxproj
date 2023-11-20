@@ -16,7 +16,7 @@
 		2F24061D2AFA682A00E52705 /* CompleteSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F24061C2AFA682A00E52705 /* CompleteSignUpViewController.swift */; };
 		2F28E67D2A1DD9BA00021E72 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F28E67C2A1DD9BA00021E72 /* Search.storyboard */; };
 		2F28E67F2A1DD9C700021E72 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28E67E2A1DD9C700021E72 /* SearchViewController.swift */; };
-		2F28E6812A1DDA4300021E72 /* StudyRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */; };
+		2F28E6812A1DDA4300021E72 /* EmptyStudyRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28E6802A1DDA4300021E72 /* EmptyStudyRoomViewController.swift */; };
 		2F28E6832A1DDA5F00021E72 /* StudyRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */; };
 		2F2B3E232A1DBE52008B0506 /* TabMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B3E222A1DBE52008B0506 /* TabMenuViewController.swift */; };
 		2F2B3E252A1DBE74008B0506 /* TabMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */; };
@@ -38,6 +38,9 @@
 		2FA1427A2A149024006AA91B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA142792A149024006AA91B /* ViewController.swift */; };
 		2FA1427D2A149024006AA91B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA1427B2A149024006AA91B /* Main.storyboard */; };
 		2FA142822A149026006AA91B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA142802A149026006AA91B /* LaunchScreen.storyboard */; };
+		2FACF51E2B0B14D800C73094 /* StudyRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACF51D2B0B14D800C73094 /* StudyRoomViewController.swift */; };
+		2FACF5202B0B151300C73094 /* StudyRoomTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACF51F2B0B151300C73094 /* StudyRoomTodoViewController.swift */; };
+		2FACF5222B0B151E00C73094 /* StudyRoomInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACF5212B0B151E00C73094 /* StudyRoomInfoViewController.swift */; };
 		2FB095862A2631910035FB78 /* DeviceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB095852A2631910035FB78 /* DeviceGroup.swift */; };
 		2FC144852AC8067400A642AD /* StudyBasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC144842AC8067400A642AD /* StudyBasicInfoViewController.swift */; };
 		2FC177B12AD7DB2000873B50 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC177B02AD7DB2000873B50 /* SignUp.storyboard */; };
@@ -121,7 +124,7 @@
 		2F24061C2AFA682A00E52705 /* CompleteSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpViewController.swift; sourceTree = "<group>"; };
 		2F28E67C2A1DD9BA00021E72 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		2F28E67E2A1DD9C700021E72 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoomViewController.swift; sourceTree = "<group>"; };
+		2F28E6802A1DDA4300021E72 /* EmptyStudyRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStudyRoomViewController.swift; sourceTree = "<group>"; };
 		2F28E6822A1DDA5F00021E72 /* StudyRoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudyRoom.storyboard; sourceTree = "<group>"; };
 		2F2B3E222A1DBE52008B0506 /* TabMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenuViewController.swift; sourceTree = "<group>"; };
 		2F2B3E242A1DBE74008B0506 /* TabMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabMenu.storyboard; sourceTree = "<group>"; };
@@ -145,6 +148,9 @@
 		2FA1427C2A149024006AA91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FA142812A149026006AA91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FA142832A149026006AA91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FACF51D2B0B14D800C73094 /* StudyRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoomViewController.swift; sourceTree = "<group>"; };
+		2FACF51F2B0B151300C73094 /* StudyRoomTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoomTodoViewController.swift; sourceTree = "<group>"; };
+		2FACF5212B0B151E00C73094 /* StudyRoomInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoomInfoViewController.swift; sourceTree = "<group>"; };
 		2FB095852A2631910035FB78 /* DeviceGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGroup.swift; sourceTree = "<group>"; };
 		2FC144842AC8067400A642AD /* StudyBasicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyBasicInfoViewController.swift; sourceTree = "<group>"; };
 		2FC177B02AD7DB2000873B50 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
@@ -337,7 +343,10 @@
 		2F97C2662B021B860013BC93 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2F28E6802A1DDA4300021E72 /* StudyRoomViewController.swift */,
+				2F28E6802A1DDA4300021E72 /* EmptyStudyRoomViewController.swift */,
+				2FACF51D2B0B14D800C73094 /* StudyRoomViewController.swift */,
+				2FACF51F2B0B151300C73094 /* StudyRoomTodoViewController.swift */,
+				2FACF5212B0B151E00C73094 /* StudyRoomInfoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -857,13 +866,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AD2E7B02B02A8AE00A9437B /* CheckTableViewCell.swift in Sources */,
-				2F28E6812A1DDA4300021E72 /* StudyRoomViewController.swift in Sources */,
+				2FACF51E2B0B14D800C73094 /* StudyRoomViewController.swift in Sources */,
+				2F28E6812A1DDA4300021E72 /* EmptyStudyRoomViewController.swift in Sources */,
 				2F8270E62A8F808000CE7BE1 /* StudyListCollectionViewCell.swift in Sources */,
 				5AD2E7462B02964E00A9437B /* PagingViewController.swift in Sources */,
 				5AD2E74F2B02964E00A9437B /* SelfIntroductionViewController.swift in Sources */,
 				F33B43462A3B84BA00A5E781 /* StudyRecruitInfoViewController.swift in Sources */,
 				2F97C2632B0216960013BC93 /* SetProfileAPI.swift in Sources */,
 				5A3538802B05C21F00D900C5 /* UIColor.swift in Sources */,
+				2FACF5202B0B151300C73094 /* StudyRoomTodoViewController.swift in Sources */,
 				2F2D15DA2ABC4C5A00ECBD5D /* StudyDetailModel.swift in Sources */,
 				5A3538822B05C21F00D900C5 /* SurveyResultVC.swift in Sources */,
 				5A3538842B05C21F00D900C5 /* SurveyVC.swift in Sources */,
@@ -889,6 +900,7 @@
 				5AD2E72E2B0286A800A9437B /* ApprovalDetailVC.swift in Sources */,
 				F304A13D2A41FDC90066036B /* StudyDetailInfoViewController.swift in Sources */,
 				F3A7F9BE2A421DC800AE1863 /* StudyRegisterViewController.swift in Sources */,
+				2FACF5222B0B151E00C73094 /* StudyRoomInfoViewController.swift in Sources */,
 				5A3538832B05C21F00D900C5 /* SurveyStartVC.swift in Sources */,
 				2FC177B32AD7DB5500873B50 /* SignUpViewController.swift in Sources */,
 				F3A7F9C02A422C4700AE1863 /* CompleteRegisterStudyViewController.swift in Sources */,
