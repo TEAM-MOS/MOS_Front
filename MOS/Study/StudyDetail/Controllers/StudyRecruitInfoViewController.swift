@@ -41,7 +41,7 @@ class StudyRecruitInfoViewController: UIViewController{
         let startDayTime3 = endDate[String.Index(encodedOffset: 8)]
         let startDayTime4 = endDate[String.Index(encodedOffset: 9)]
         
-        studyRecruitDate.text =  "\(startMonthTime1)\(startMonthTime2)월 \(startDayTime1)\(startDayTime2)일~\(startMonthTime3)\(startMonthTime4)월 \(startDayTime3)\(startDayTime4)일"
+//        studyRecruitDate.text =  "\(startMonthTime1)\(startMonthTime2)월 \(startDayTime1)\(startDayTime2)일~\(startMonthTime3)\(startMonthTime4)월 \(startDayTime3)\(startDayTime4)일"
         
     }
 }

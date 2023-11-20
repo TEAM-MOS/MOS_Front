@@ -279,14 +279,14 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오 마케팅 직군 같이 준비하실 스터디원 모집 중입니다 :)" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3c-xn-RUU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023 상반기 네이버 IT직군을 위한 심층 분석을 통한 산업&amp;기업 분석 스터디" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3c-xn-RUU">
                                 <rect key="frame" x="16" y="48" width="331" height="56"/>
                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="BAV-zg-iLf">
-                                <rect key="frame" x="16" y="124" width="234" height="24"/>
+                                <rect key="frame" x="15.999999999999986" y="124" width="233.66666666666663" height="24"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mS9-13-iPx">
                                         <rect key="frame" x="0.0" y="0.0" width="68.666666666666671" height="24"/>
@@ -339,7 +339,7 @@
                                                             <constraint firstAttribute="width" constant="16" id="sFN-RQ-Mh2"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5/31(일)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoN-Im-YVi">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/01(금)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoN-Im-YVi">
                                                         <rect key="frame" x="26" y="3.6666666666666714" width="60" height="17"/>
                                                         <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="14"/>
                                                         <color key="textColor" name="gray-2"/>
@@ -364,10 +364,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ICe-RL-cjU">
-                                        <rect key="frame" x="172.66666666666666" y="0.0" width="61.333333333333343" height="24"/>
+                                        <rect key="frame" x="172.66666666666666" y="0.0" width="61" height="24"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kgv-4z-5yK">
-                                                <rect key="frame" x="0.0" y="0.0" width="61.333333333333336" height="24"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="61" height="24"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_members" translatesAutoresizingMaskIntoConstraints="NO" id="Of3-wd-Gn7">
                                                         <rect key="frame" x="4" y="4" width="16" height="16"/>
@@ -376,8 +376,8 @@
                                                             <constraint firstAttribute="width" constant="16" id="zEQ-Gw-Am5"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="3 / 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3X-c2-oK8">
-                                                        <rect key="frame" x="24" y="3.6666666666666714" width="29.333333333333329" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="5 / 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3X-c2-oK8">
+                                                        <rect key="frame" x="24" y="3.6666666666666714" width="29" height="17"/>
                                                         <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="14"/>
                                                         <color key="textColor" name="gray-2"/>
                                                         <nil key="highlightedColor"/>
@@ -449,7 +449,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="V5a-4S-EeP">
-                                <rect key="frame" x="16" y="47.333333333333336" width="226" height="26.000000000000007"/>
+                                <rect key="frame" x="16" y="47.333333333333336" width="219" height="26.000000000000007"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_circle_cal" translatesAutoresizingMaskIntoConstraints="NO" id="IFl-Qn-aJo">
                                         <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
@@ -464,8 +464,8 @@
                                         <color key="textColor" systemColor="systemGray2Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05월 31일~06월 10일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6K-kt-uWr">
-                                        <rect key="frame" x="98.666666666666686" y="0.0" width="127.33333333333331" height="26"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11월 01일~11월 30일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6K-kt-uWr">
+                                        <rect key="frame" x="98.666666666666686" y="0.0" width="120.33333333333331" height="26"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -487,7 +487,7 @@
                                         <color key="textColor" systemColor="systemGray2Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42v-uz-7MT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42v-uz-7MT">
                                         <rect key="frame" x="98.666666666666671" y="0.0" width="21" height="26"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
                                         <nil key="highlightedColor"/>
@@ -548,7 +548,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="uH4-Yh-0sb">
-                                <rect key="frame" x="20" y="82.333333333333329" width="212.33333333333334" height="17"/>
+                                <rect key="frame" x="20" y="82.333333333333329" width="205" height="17"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="진행기간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdF-zm-PRH">
                                         <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="17"/>
@@ -556,8 +556,8 @@
                                         <color key="textColor" systemColor="systemGray2Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06월 11일~07월 12일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud3-WV-hLN">
-                                        <rect key="frame" x="88.666666666666657" y="0.0" width="123.66666666666666" height="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12월 01일~1월 08일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud3-WV-hLN">
+                                        <rect key="frame" x="88.666666666666686" y="0.0" width="116.33333333333331" height="17"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -696,10 +696,15 @@
                             <constraint firstItem="GFS-3k-kUI" firstAttribute="centerX" secondItem="cLq-oj-BgW" secondAttribute="centerX" id="kMA-Fp-3AO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="noBtn" destination="e4T-OY-iY9" id="P03-vY-cY7"/>
+                        <outlet property="popUpView" destination="GFS-3k-kUI" id="rVu-pB-sE9"/>
+                        <outlet property="yesBtn" destination="rD3-hd-vUc" id="Hgs-be-sip"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tIo-Do-SDz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="427" y="-319"/>
+            <point key="canvasLocation" x="426.71755725190837" y="-319.01408450704224"/>
         </scene>
         <!--가입 신청-->
         <scene sceneID="2e2-Aq-cYe">
@@ -904,16 +909,13 @@
                                 <color key="textColor" systemColor="systemGray2Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚠️ 지각비 안내 ⚠️ 지각비 안내⚠️ 지각비 안내" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5j-Xy-Wik">
-                                <rect key="frame" x="32" y="105.33333333333333" width="291" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5j-Xy-Wik">
+                                <rect key="frame" x="32" y="105.33333333333333" width="291" height="133.66666666666669"/>
+                                <string key="text">⚠️ 지각비 안내 미리 얘기하지 않고 지각할 경우 5분 당 500원씩 벌금을 걷고, 스터디 마지막날 팀원들끼리 나눠갖는 것으로 하겠습니다. 시간 꼭 잘 지켜주세요! 💔 가입 전 주의사항 조기취업한 경우 제외하고 무단 이탈, 지각, 결석은 안 돼요! 가입 시 신중하게 고려해주세요. 스터디 진행 전 과제 준비는 필수입니다! 지각과 마찬가지로 금액을 정해서 벌금을 걷겠습니다~</string>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j5i-hQ-uUs">
-                                <rect key="frame" x="50" y="136.33333333333337" width="240" height="245.66666666666663"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lwT-0w-Vkf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -922,15 +924,11 @@
                             <constraint firstItem="c5j-Xy-Wik" firstAttribute="top" secondItem="1Sf-mu-W9a" secondAttribute="bottom" constant="12" id="Bk9-DO-w29"/>
                             <constraint firstItem="c5j-Xy-Wik" firstAttribute="leading" secondItem="lwT-0w-Vkf" secondAttribute="leading" constant="32" id="IRD-M0-CjB"/>
                             <constraint firstItem="1Sf-mu-W9a" firstAttribute="top" secondItem="Q3o-24-b7o" secondAttribute="bottom" constant="12" id="LSM-Of-saX"/>
-                            <constraint firstItem="j5i-hQ-uUs" firstAttribute="top" secondItem="c5j-Xy-Wik" secondAttribute="bottom" constant="14" id="Um1-38-guV"/>
                             <constraint firstItem="UGn-fK-AAo" firstAttribute="leading" secondItem="Shv-WL-jOt" secondAttribute="leading" constant="20" id="YBQ-en-opx"/>
                             <constraint firstItem="UGn-fK-AAo" firstAttribute="top" secondItem="Shv-WL-jOt" secondAttribute="top" constant="16" id="fQa-Za-n4M"/>
                             <constraint firstItem="Q3o-24-b7o" firstAttribute="leading" secondItem="Shv-WL-jOt" secondAttribute="leading" constant="20" id="fng-ql-NG9"/>
                             <constraint firstItem="lwT-0w-Vkf" firstAttribute="trailing" secondItem="c5j-Xy-Wik" secondAttribute="trailing" constant="32" id="gFU-RF-c2H"/>
-                            <constraint firstAttribute="bottom" secondItem="j5i-hQ-uUs" secondAttribute="bottom" id="m0m-0t-XDf"/>
-                            <constraint firstItem="j5i-hQ-uUs" firstAttribute="leading" secondItem="Shv-WL-jOt" secondAttribute="leading" constant="50" id="muk-Uo-TWf"/>
                             <constraint firstItem="1Sf-mu-W9a" firstAttribute="leading" secondItem="lwT-0w-Vkf" secondAttribute="leading" constant="20" id="qvf-Qi-DNL"/>
-                            <constraint firstAttribute="trailing" secondItem="j5i-hQ-uUs" secondAttribute="trailing" constant="65" id="z3g-JN-WYe"/>
                         </constraints>
                     </view>
                     <connections>
@@ -940,7 +938,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4TH-c0-Er1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-254.19847328244273" y="34.154929577464792"/>
+            <point key="canvasLocation" x="-254.19847328244273" y="33.802816901408455"/>
         </scene>
         <!--Study Member Info View Controller-->
         <scene sceneID="5ur-VN-DSs">
@@ -1072,8 +1070,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oih-4A-gAj">
                                 <rect key="frame" x="20" y="173.66666666666666" width="315" height="38"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="목표 기업 분석(발표 예정 5분 내외)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7l-hi-EF9">
-                                        <rect key="frame" x="20" y="10.666666666666687" width="192" height="16.666666666666671"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="목표 기업 분석 (발표 예정 5분 내외)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7l-hi-EF9">
+                                        <rect key="frame" x="20" y="10.666666666666687" width="196" height="16.666666666666671"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1108,6 +1106,9 @@
                     </view>
                     <connections>
                         <outlet property="outlineView" destination="1P7-RX-ids" id="gcd-sp-Ioq"/>
+                        <outlet property="todoView1" destination="NRi-rL-fcX" id="2VR-18-UZj"/>
+                        <outlet property="todoView2" destination="Jh6-q1-wpY" id="P8W-On-VbV"/>
+                        <outlet property="todoView3" destination="oih-4A-gAj" id="lRq-CW-8nh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Lj-QT-fa6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
