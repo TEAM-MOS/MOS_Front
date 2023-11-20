@@ -509,7 +509,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내가 개설한 스터디" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgq-hS-grI">
-                                <rect key="frame" x="137.33333333333334" y="71" width="118.66666666666666" height="32"/>
+                                <rect key="frame" x="136.66666666666666" y="71" width="119.66666666666666" height="32"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -521,7 +521,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jft-EY-UEA">
-                                <rect key="frame" x="16" y="167.99999999999997" width="361" height="288.33333333333326"/>
+                                <rect key="frame" x="16" y="168" width="361" height="287"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023년 상반기 네이버 IT직군을 위한 심층 분석을 통한 산업&amp;기업분석 스터디" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXd-HU-rXB">
                                         <rect key="frame" x="12" y="20.000000000000004" width="337" height="38.333333333333343"/>
@@ -530,7 +530,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="승인 대기 멤버" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6y-wd-2aV">
-                                        <rect key="frame" x="12" y="78.333333333333343" width="91" height="20"/>
+                                        <rect key="frame" x="12" y="78.333333333333343" width="90.666666666666671" height="20"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                         <color key="textColor" name="mainColor"/>
                                         <nil key="highlightedColor"/>
@@ -549,54 +549,54 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="승인 허가 멤버" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CT-lL-rtg">
-                                        <rect key="frame" x="12" y="183.33333333333331" width="91" height="20"/>
+                                        <rect key="frame" x="12" y="183.33333333333331" width="90.666666666666671" height="18.666666666666657"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                         <color key="textColor" name="mainColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나와 함께 스터디를 할 멤버들이에요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1v-c5-AQQ">
-                                        <rect key="frame" x="12" y="207.33333333333331" width="195.66666666666666" height="17"/>
+                                        <rect key="frame" x="12" y="206" width="195.66666666666666" height="17"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
                                         <color key="textColor" red="0.60424558080000002" green="0.60424558080000002" blue="0.60424558080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="wZ5-Fc-PTl">
-                                        <rect key="frame" x="12" y="228.33333333333331" width="40" height="40"/>
+                                        <rect key="frame" x="12" y="227" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Svg-Sw-Zdo"/>
                                             <constraint firstAttribute="width" constant="40" id="dfx-zH-Lhs"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile7" translatesAutoresizingMaskIntoConstraints="NO" id="7h2-8e-2zr">
-                                        <rect key="frame" x="58" y="228.33333333333331" width="40" height="40"/>
+                                        <rect key="frame" x="58" y="227" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="eHr-P6-uFs"/>
                                             <constraint firstAttribute="height" constant="40" id="gfr-JO-C1w"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile4" translatesAutoresizingMaskIntoConstraints="NO" id="MYV-Hz-Ize">
-                                        <rect key="frame" x="104" y="228.33333333333331" width="40" height="40"/>
+                                        <rect key="frame" x="104" y="227" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="4JE-gw-S68"/>
                                             <constraint firstAttribute="height" constant="40" id="rPa-Xc-V6z"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile5" translatesAutoresizingMaskIntoConstraints="NO" id="wdb-wr-BkL">
-                                        <rect key="frame" x="150" y="228.33333333333331" width="40" height="40"/>
+                                        <rect key="frame" x="150" y="227" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="3fC-C3-Hbu"/>
                                             <constraint firstAttribute="width" constant="40" id="9Na-dK-Mpp"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile6" translatesAutoresizingMaskIntoConstraints="NO" id="UMu-6e-LPt">
-                                        <rect key="frame" x="196" y="228.33333333333331" width="40" height="40"/>
+                                        <rect key="frame" x="196" y="227" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="3LG-Xh-Bo7"/>
                                             <constraint firstAttribute="height" constant="40" id="GZo-YJ-T0T"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mypage_alert" translatesAutoresizingMaskIntoConstraints="NO" id="4XY-OB-Y41">
-                                        <rect key="frame" x="105" y="78.333333333333343" width="20" height="20"/>
+                                        <rect key="frame" x="104.66666666666667" y="78.333333333333343" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="0NW-4Q-Buc"/>
                                             <constraint firstAttribute="width" constant="20" id="u3C-Bw-4qA"/>
@@ -855,7 +855,6 @@
         <!--SecondProfile-->
         <scene sceneID="7Gc-br-qvr">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mSz-ir-rAi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController restorationIdentifier="SecondProfile" storyboardIdentifier="SecondProfile" title="SecondProfile" id="KzX-9d-Zfl" customClass="SecondProfile" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TFK-qV-jCN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -1068,6 +1067,7 @@
                         <outlet property="view4" destination="cQL-NH-Fbg" id="INl-jG-rjr"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mSz-ir-rAi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3460" y="-28"/>
         </scene>
@@ -1080,7 +1080,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내가 신청한 스터디" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXy-Lo-2Ff">
-                                <rect key="frame" x="137.33333333333334" y="71" width="118.66666666666666" height="18.666666666666671"/>
+                                <rect key="frame" x="136.66666666666666" y="71" width="119.66666666666666" height="32"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1151,11 +1151,12 @@
                             <constraint firstItem="YrM-VH-zRP" firstAttribute="leading" secondItem="nK5-hz-NlF" secondAttribute="leading" constant="16" id="8k3-Z6-bE8"/>
                             <constraint firstItem="YrM-VH-zRP" firstAttribute="top" secondItem="gXy-Lo-2Ff" secondAttribute="top" id="End-be-Uh5"/>
                             <constraint firstItem="nK5-hz-NlF" firstAttribute="trailing" secondItem="55j-ax-ceK" secondAttribute="trailing" constant="16" id="HEF-2M-5f4"/>
+                            <constraint firstItem="YrM-VH-zRP" firstAttribute="top" secondItem="nK5-hz-NlF" secondAttribute="top" constant="12" id="Ly7-89-UE3"/>
                             <constraint firstItem="55j-ax-ceK" firstAttribute="bottom" secondItem="RGg-kA-bPD" secondAttribute="bottom" id="OMG-MN-1KE"/>
                             <constraint firstItem="rJX-RM-miF" firstAttribute="leading" secondItem="YrM-VH-zRP" secondAttribute="leading" id="VSH-PT-WbL"/>
                             <constraint firstItem="55j-ax-ceK" firstAttribute="top" secondItem="RGg-kA-bPD" secondAttribute="top" id="ckM-Rr-MUR"/>
+                            <constraint firstItem="gXy-Lo-2Ff" firstAttribute="bottom" secondItem="YrM-VH-zRP" secondAttribute="bottom" id="r1u-18-jUN"/>
                             <constraint firstItem="55j-ax-ceK" firstAttribute="leading" secondItem="RGg-kA-bPD" secondAttribute="trailing" id="wdf-Yo-gLZ"/>
-                            <constraint firstItem="gXy-Lo-2Ff" firstAttribute="top" secondItem="nK5-hz-NlF" secondAttribute="top" constant="12" id="zfv-vu-HX8"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>

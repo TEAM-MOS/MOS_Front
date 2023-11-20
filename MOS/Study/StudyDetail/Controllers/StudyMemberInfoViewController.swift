@@ -8,7 +8,9 @@
 import UIKit
 
 class StudyMemberInfoViewController:UIViewController {
+    @IBOutlet var outlineView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        outlineView.layer.cornerRadius = 16
     }
 }
