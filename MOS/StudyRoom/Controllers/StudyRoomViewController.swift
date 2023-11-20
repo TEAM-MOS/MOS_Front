@@ -24,6 +24,13 @@ class StudyRoomViewController: TabmanViewController {
         backButton.tintColor = UIColor(named: "main")
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         
+        // 네비게이션 바 오른쪽 버튼 추가
+        let moreIcon = UIImage(named: "icon_more")
+        let moreButton = UIBarButtonItem(image: moreIcon, style: .plain, target: self, action: #selector(moreButtonTapped))
+        moreButton.tintColor = .darkGray
+        
+        self.navigationItem.rightBarButtonItem = moreButton
+        
         let studyRoomTodoVC = UIStoryboard.init(name: "StudyRoom", bundle: nil).instantiateViewController(withIdentifier: "studyRoomTodoVC") as! StudyRoomTodoViewController
         let studyRoomInfoVC = UIStoryboard.init(name: "StudyRoom", bundle: nil).instantiateViewController(withIdentifier: "studyRoomInfoVC") as! StudyRoomInfoViewController
         
@@ -51,7 +58,11 @@ class StudyRoomViewController: TabmanViewController {
         
         // Add to view
         addBar(bar, dataSource: self, at: .custom(view: tempView, layout: nil))
-        
+    }
+    
+    @objc func moreButtonTapped() {
+        // 오른쪽 네비 버튼이 탭되었을 때 수행할 동작 구현
+        print("Add button tapped!")
     }
 }
 
