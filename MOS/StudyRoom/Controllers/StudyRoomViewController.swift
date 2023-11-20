@@ -61,9 +61,9 @@ extension StudyRoomViewController: PageboyViewControllerDataSource, TMBarDataSou
         // MARK: - Tab 안 글씨들
         switch index {
         case 0:
-            return TMBarItem(title: "홈")
+            return TMBarItem(title: "TODO")
         case 1:
-            return TMBarItem(title: "Brand")
+            return TMBarItem(title: "스터디 정보")
         default:
             let title = "Page \(index)"
             return TMBarItem(title: title)
