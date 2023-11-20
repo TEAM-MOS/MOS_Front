@@ -33,7 +33,7 @@ class PreQuestionAlertViewController: UIViewController {
         // 네 버튼 클릭 시 화면 이동
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "StudyRegisterVC") as? StudyRegisterViewController else { return }
         nextVC.modalPresentationStyle = .fullScreen
-        self.present(nextVC, animated: true, completion: nil)
+        self.present(nextVC, animated: false, completion: nil)
         
     }
     
