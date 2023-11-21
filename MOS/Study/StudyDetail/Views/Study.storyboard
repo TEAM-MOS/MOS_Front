@@ -34,7 +34,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOD-fn-PjG">
-                                <rect key="frame" x="0.0" y="50" width="395" height="1450"/>
+                                <rect key="frame" x="0.0" y="60" width="395" height="1440"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TA2-nA-w3W">
                                         <rect key="frame" x="0.0" y="0.0" width="395" height="1567"/>
@@ -184,7 +184,7 @@
                             <constraint firstItem="aOD-fn-PjG" firstAttribute="leading" secondItem="Ia4-9l-9Dm" secondAttribute="leading" id="Ukt-2e-WhI"/>
                             <constraint firstItem="TA2-nA-w3W" firstAttribute="width" secondItem="LX9-XX-GgU" secondAttribute="width" id="srj-VO-7B3"/>
                             <constraint firstItem="aOD-fn-PjG" firstAttribute="trailing" secondItem="Ia4-9l-9Dm" secondAttribute="trailing" id="uSh-h8-Qgp"/>
-                            <constraint firstItem="aOD-fn-PjG" firstAttribute="top" secondItem="LX9-XX-GgU" secondAttribute="top" constant="50" id="v9Y-AE-kIk"/>
+                            <constraint firstItem="aOD-fn-PjG" firstAttribute="top" secondItem="LX9-XX-GgU" secondAttribute="top" constant="60" id="v9Y-AE-kIk"/>
                         </constraints>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
