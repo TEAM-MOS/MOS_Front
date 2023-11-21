@@ -15,9 +15,7 @@ class CompleteRegisterStudyViewController: UIViewController {
     }
     
     @IBAction func completeRegisterButtonTapped(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "studyDetailVC") as? StudyDetailViewController else { return }
-        nextVC.modalPresentationStyle = .overCurrentContext
-        self.present(nextVC, animated: true, completion: nil)
+        self.performSegue(withIdentifier: "goToHome", sender: self)
     }
     
 }
