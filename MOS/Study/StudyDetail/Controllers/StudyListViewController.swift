@@ -36,6 +36,7 @@ class StudyListViewController: UIViewController, UICollectionViewDelegate, UICol
         
         collectionView.dataSource = self
         collectionView.delegate = self
+
         
     }
 }

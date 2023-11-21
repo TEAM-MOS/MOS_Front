@@ -28,7 +28,7 @@
         <!--studyDetailVC-->
         <scene sceneID="PW5-qi-kib">
             <objects>
-                <viewController storyboardIdentifier="studyDetailVC" title="studyDetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FPb-CN-tjs" customClass="StudyDetailViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="studyDetailVC" title="studyDetailVC" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FPb-CN-tjs" customClass="StudyDetailViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LX9-XX-GgU">
                         <rect key="frame" x="0.0" y="0.0" width="395" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -187,6 +187,9 @@
                             <constraint firstItem="aOD-fn-PjG" firstAttribute="top" secondItem="LX9-XX-GgU" secondAttribute="top" id="v9Y-AE-kIk"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="395" height="1500"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="395" height="1500"/>
                     <connections>
                         <outlet property="containerVC1" destination="cKC-oX-16J" id="0Ms-hU-BfT"/>
@@ -629,22 +632,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFS-3k-kUI">
-                                <rect key="frame" x="20" y="346" width="353" height="160"/>
+                                <rect key="frame" x="20" y="336" width="353" height="180"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="잠깐! 사전 질문이 있어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7g-bW-WzM">
-                                        <rect key="frame" x="88.666666666666686" y="36" width="176" height="22"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                        <rect key="frame" x="89.666666666666671" y="48" width="173.66666666666663" height="22"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="답변 입력창으로 이동합니다" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmO-Ll-9Z9">
-                                        <rect key="frame" x="99.666666666666686" y="64" width="154" height="17"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <rect key="frame" x="89.666666666666686" y="76" width="174" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
                                         <color key="textColor" systemColor="systemGray2Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rD3-hd-vUc">
-                                        <rect key="frame" x="0.0" y="112" width="233" height="48"/>
+                                        <rect key="frame" x="0.0" y="132" width="229" height="48"/>
                                         <color key="backgroundColor" name="main"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="qU8-sU-IFH"/>
@@ -652,38 +655,37 @@
                                         <color key="tintColor" white="1" alpha="0.98911581230000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="네">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                            <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="yesButtonTapped:" destination="bwd-rx-wpB" eventType="touchUpInside" id="DOc-4s-gl4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4T-OY-iY9">
-                                        <rect key="frame" x="233" y="112" width="120" height="48"/>
+                                        <rect key="frame" x="229" y="132" width="124" height="48"/>
                                         <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="B1a-ag-YdF"/>
-                                        </constraints>
                                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="취소">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                            <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                         </buttonConfiguration>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="F7g-bW-WzM" firstAttribute="centerX" secondItem="GFS-3k-kUI" secondAttribute="centerX" id="1JH-pN-MhU"/>
+                                    <constraint firstItem="e4T-OY-iY9" firstAttribute="top" secondItem="rD3-hd-vUc" secondAttribute="top" id="49L-bd-V5H"/>
                                     <constraint firstAttribute="trailing" secondItem="e4T-OY-iY9" secondAttribute="trailing" id="CZA-Ya-ueK"/>
                                     <constraint firstItem="e4T-OY-iY9" firstAttribute="leading" secondItem="rD3-hd-vUc" secondAttribute="trailing" id="OSb-SL-gjn"/>
-                                    <constraint firstAttribute="height" constant="160" id="VcR-0a-LKR"/>
+                                    <constraint firstAttribute="height" constant="180" id="VcR-0a-LKR"/>
                                     <constraint firstItem="qmO-Ll-9Z9" firstAttribute="centerX" secondItem="GFS-3k-kUI" secondAttribute="centerX" id="ZlB-pz-rad"/>
-                                    <constraint firstItem="F7g-bW-WzM" firstAttribute="top" secondItem="GFS-3k-kUI" secondAttribute="top" constant="36" id="bcv-e2-IU6"/>
+                                    <constraint firstItem="F7g-bW-WzM" firstAttribute="top" secondItem="GFS-3k-kUI" secondAttribute="top" constant="48" id="bcv-e2-IU6"/>
                                     <constraint firstAttribute="bottom" secondItem="rD3-hd-vUc" secondAttribute="bottom" id="coB-sT-90n"/>
                                     <constraint firstItem="qmO-Ll-9Z9" firstAttribute="top" secondItem="F7g-bW-WzM" secondAttribute="bottom" constant="6" id="qzF-0W-uXr"/>
                                     <constraint firstItem="rD3-hd-vUc" firstAttribute="leading" secondItem="GFS-3k-kUI" secondAttribute="leading" id="vHV-1C-2aK"/>
+                                    <constraint firstItem="e4T-OY-iY9" firstAttribute="bottom" secondItem="rD3-hd-vUc" secondAttribute="bottom" id="zLX-2G-kxh"/>
                                     <constraint firstAttribute="bottom" secondItem="e4T-OY-iY9" secondAttribute="bottom" id="zfH-dv-L53"/>
-                                    <constraint firstItem="rD3-hd-vUc" firstAttribute="width" secondItem="GFS-3k-kUI" secondAttribute="height" multiplier="15:32" constant="158" id="zou-zW-yss"/>
+                                    <constraint firstItem="rD3-hd-vUc" firstAttribute="width" secondItem="GFS-3k-kUI" secondAttribute="height" multiplier="15:38" constant="158" id="zou-zW-yss"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -801,6 +803,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="vC9-As-ND6"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="nextBtn" destination="95w-oa-jWF" id="vms-tC-Zlu"/>
                         <outlet property="textView" destination="nDL-5x-gq6" id="8Jk-OH-eG4"/>
                     </connections>
                 </viewController>
@@ -867,6 +870,9 @@
                             <constraint firstItem="wlI-xY-c3n" firstAttribute="centerX" secondItem="2Km-re-GVI" secondAttribute="centerX" id="zwe-9Q-cRP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextBtn" destination="QxF-mW-jbS" id="Izt-oc-dPr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Q3-Aa-C1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

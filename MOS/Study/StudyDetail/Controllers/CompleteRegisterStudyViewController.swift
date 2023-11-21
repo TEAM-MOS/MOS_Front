@@ -8,8 +8,10 @@
 import UIKit
 
 class CompleteRegisterStudyViewController: UIViewController {
+    @IBOutlet weak var nextBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        nextBtn.layer.cornerRadius = 8
     }
     
     @IBAction func completeRegisterButtonTapped(_ sender: Any) {
