@@ -31,7 +31,7 @@ class LanguageViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return StudyList.listPersonnelAptitude.count
+        return StudyList.listLanguage.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -42,14 +42,14 @@ class LanguageViewController: UIViewController, UICollectionViewDataSource, UICo
             return UICollectionViewCell()
         }
         
-        let studyListCell = StudyList.listPersonnelAptitude[indexPath.item]
+        let studyListCell = StudyList.listLanguage[indexPath.item]
         // indexPath 안에는 섹션에 대한 정보, 섹션에 들어가는 데이터 정보 등이 있다
         cell.configure(studyListCell)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        _ = StudyList.listPersonnelAptitude[indexPath.item]
+        _ = StudyList.listLanguage[indexPath.item]
         
         if let studyDetailVC = UIStoryboard(name: "Study", bundle: nil).instantiateViewController(withIdentifier: "studyDetailVC") as? StudyDetailViewController {
                 self.navigationController?.pushViewController(studyDetailVC, animated: false)
@@ -59,7 +59,7 @@ class LanguageViewController: UIViewController, UICollectionViewDataSource, UICo
 
 extension LanguageViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let studyList = StudyList.listPersonnelAptitude[indexPath.item]
+        let studyList = StudyList.listLanguage[indexPath.item]
         
         let titleFont = UIFont.systemFont(ofSize: 17) // 적절한 폰트 사용
         let titleText = studyList.title
