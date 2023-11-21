@@ -28,6 +28,9 @@ class PreQuestionAlertViewController: UIViewController {
         
         
     }
+    @IBAction func noButtonTapped(_ sender: Any) {
+        self.dismiss(animated: false, completion: nil)
+    }
     
     @IBAction func yesButtonTapped(_ sender: Any) {
         // 네 버튼 클릭 시 화면 이동

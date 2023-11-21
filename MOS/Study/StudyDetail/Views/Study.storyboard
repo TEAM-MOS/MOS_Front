@@ -28,16 +28,16 @@
         <!--studyDetailVC-->
         <scene sceneID="PW5-qi-kib">
             <objects>
-                <viewController storyboardIdentifier="studyDetailVC" title="studyDetailVC" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FPb-CN-tjs" customClass="StudyDetailViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="studyDetailVC" title="studyDetailVC" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FPb-CN-tjs" customClass="StudyDetailViewController" customModule="MOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LX9-XX-GgU">
                         <rect key="frame" x="0.0" y="0.0" width="395" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOD-fn-PjG">
-                                <rect key="frame" x="0.0" y="0.0" width="395" height="1500"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOD-fn-PjG">
+                                <rect key="frame" x="0.0" y="50" width="395" height="1450"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TA2-nA-w3W">
-                                        <rect key="frame" x="-8" y="-119" width="395" height="1577"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TA2-nA-w3W">
+                                        <rect key="frame" x="0.0" y="0.0" width="395" height="1567"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Y5-q3-waZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="395" height="56"/>
@@ -184,12 +184,10 @@
                             <constraint firstItem="aOD-fn-PjG" firstAttribute="leading" secondItem="Ia4-9l-9Dm" secondAttribute="leading" id="Ukt-2e-WhI"/>
                             <constraint firstItem="TA2-nA-w3W" firstAttribute="width" secondItem="LX9-XX-GgU" secondAttribute="width" id="srj-VO-7B3"/>
                             <constraint firstItem="aOD-fn-PjG" firstAttribute="trailing" secondItem="Ia4-9l-9Dm" secondAttribute="trailing" id="uSh-h8-Qgp"/>
-                            <constraint firstItem="aOD-fn-PjG" firstAttribute="top" secondItem="LX9-XX-GgU" secondAttribute="top" id="v9Y-AE-kIk"/>
+                            <constraint firstItem="aOD-fn-PjG" firstAttribute="top" secondItem="LX9-XX-GgU" secondAttribute="top" constant="50" id="v9Y-AE-kIk"/>
                         </constraints>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <value key="contentSizeForViewInPopover" type="size" width="395" height="1500"/>
-                    <nil key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <size key="freeformSize" width="395" height="1500"/>
                     <connections>
                         <outlet property="containerVC1" destination="cKC-oX-16J" id="0Ms-hU-BfT"/>
@@ -681,6 +679,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="noButtonTapped:" destination="bwd-rx-wpB" eventType="touchUpInside" id="Ayy-j2-ATw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1079,7 +1080,7 @@
                                 <rect key="frame" x="20" y="73.666666666666671" width="315" height="38"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="두근두근 첫 스터디 날!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rD-rF-JYZ">
-                                        <rect key="frame" x="19.999999999999993" y="10.666666666666657" width="124.33333333333331" height="17"/>
+                                        <rect key="frame" x="11.999999999999993" y="10.666666666666657" width="124.33333333333331" height="17"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1087,7 +1088,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="0rD-rF-JYZ" firstAttribute="leading" secondItem="NRi-rL-fcX" secondAttribute="leading" constant="20" id="KY4-QM-W18"/>
+                                    <constraint firstItem="0rD-rF-JYZ" firstAttribute="leading" secondItem="NRi-rL-fcX" secondAttribute="leading" constant="12" id="KY4-QM-W18"/>
                                     <constraint firstItem="0rD-rF-JYZ" firstAttribute="centerY" secondItem="NRi-rL-fcX" secondAttribute="centerY" id="SrA-8F-XRj"/>
                                     <constraint firstAttribute="height" constant="38" id="ohF-Cb-vTx"/>
                                 </constraints>
@@ -1095,8 +1096,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jh6-q1-wpY">
                                 <rect key="frame" x="20" y="123.66666666666669" width="315" height="38"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="간단한 자기소개 준비(1분 내외)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkS-bf-mG1">
-                                        <rect key="frame" x="20" y="10.666666666666673" width="173" height="16.666666666666671"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="간단한 자기소개 준비 (1분 내외)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkS-bf-mG1">
+                                        <rect key="frame" x="12" y="10.666666666666673" width="176" height="16.666666666666671"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1106,7 +1107,7 @@
                                 <constraints>
                                     <constraint firstItem="JkS-bf-mG1" firstAttribute="centerY" secondItem="Jh6-q1-wpY" secondAttribute="centerY" id="Luz-Bx-b0s"/>
                                     <constraint firstAttribute="height" constant="38" id="Rfp-BL-OXu"/>
-                                    <constraint firstItem="JkS-bf-mG1" firstAttribute="leading" secondItem="Jh6-q1-wpY" secondAttribute="leading" constant="20" id="VfM-TV-y3u"/>
+                                    <constraint firstItem="JkS-bf-mG1" firstAttribute="leading" secondItem="Jh6-q1-wpY" secondAttribute="leading" constant="12" id="VfM-TV-y3u"/>
                                     <constraint firstItem="JkS-bf-mG1" firstAttribute="top" secondItem="Jh6-q1-wpY" secondAttribute="top" constant="10.666666666666657" id="pqX-MC-ANM"/>
                                 </constraints>
                             </view>
@@ -1114,7 +1115,7 @@
                                 <rect key="frame" x="20" y="173.66666666666666" width="315" height="38"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="목표 기업 분석 (발표 예정 5분 내외)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7l-hi-EF9">
-                                        <rect key="frame" x="20" y="10.666666666666687" width="196" height="16.666666666666671"/>
+                                        <rect key="frame" x="12" y="10.666666666666687" width="196" height="16.666666666666671"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1122,7 +1123,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="E7l-hi-EF9" firstAttribute="leading" secondItem="oih-4A-gAj" secondAttribute="leading" constant="20" id="0XU-eC-LRd"/>
+                                    <constraint firstItem="E7l-hi-EF9" firstAttribute="leading" secondItem="oih-4A-gAj" secondAttribute="leading" constant="12" id="0XU-eC-LRd"/>
                                     <constraint firstAttribute="height" constant="38" id="A80-wf-PLh"/>
                                     <constraint firstItem="E7l-hi-EF9" firstAttribute="top" secondItem="oih-4A-gAj" secondAttribute="top" constant="10.666666666666657" id="FfB-1E-e4v"/>
                                     <constraint firstItem="E7l-hi-EF9" firstAttribute="centerY" secondItem="oih-4A-gAj" secondAttribute="centerY" id="iW8-F3-mjR"/>
