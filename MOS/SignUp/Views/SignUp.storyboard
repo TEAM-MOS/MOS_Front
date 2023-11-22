@@ -222,14 +222,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basic_profileImg" translatesAutoresizingMaskIntoConstraints="NO" id="dCV-VR-8Wl">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_image" translatesAutoresizingMaskIntoConstraints="NO" id="dCV-VR-8Wl">
                                 <rect key="frame" x="148.66666666666666" y="89" width="96" height="96"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="96" id="ACD-Db-2bH"/>
                                     <constraint firstAttribute="height" constant="96" id="VE3-5b-cpC"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="b8r-7h-cPJ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_camera_btn" translatesAutoresizingMaskIntoConstraints="NO" id="b8r-7h-cPJ">
                                 <rect key="frame" x="212.66666666666666" y="153" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="32" id="7Wa-e9-58v"/>
@@ -733,9 +733,9 @@
         <segue reference="Fx5-9a-5Xf"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="basic_profileImg" width="200" height="200"/>
-        <image name="camera" width="64" height="64"/>
         <image name="checkmark.circle" catalog="system" width="128" height="123"/>
+        <image name="empty_camera_btn" width="128" height="128"/>
+        <image name="empty_image" width="436" height="436"/>
         <image name="register_colplete" width="192" height="199"/>
         <namedColor name="gray-1">
             <color white="0.84705883264541626" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
