@@ -422,7 +422,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="헤르미온느" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXk-tZ-pNb">
-                                        <rect key="frame" x="116" y="15" width="69.333333333333314" height="20"/>
+                                        <rect key="frame" x="116" y="15.000000000000002" width="69.333333333333314" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -434,7 +434,7 @@
                                         </constraints>
                                     </progressView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fl0-mI-Gsy">
-                                        <rect key="frame" x="325" y="15" width="44" height="20"/>
+                                        <rect key="frame" x="325" y="15.000000000000002" width="44" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                         <color key="textColor" name="main"/>
                                         <nil key="highlightedColor"/>
@@ -460,32 +460,32 @@
                                 <rect key="frame" x="0.0" y="330" width="393" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3위" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seR-DD-2oz">
-                                        <rect key="frame" x="24" y="26" width="23" height="18"/>
+                                        <rect key="frame" x="24" y="26" width="22.666666666666671" height="18"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="bDt-DU-R4E">
-                                        <rect key="frame" x="63" y="15" width="40" height="40"/>
+                                        <rect key="frame" x="62.666666666666657" y="15" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="cmb-x9-Aqd"/>
                                             <constraint firstAttribute="width" constant="40" id="ktJ-mU-hrB"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="딸기가좋아" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bX8-FW-B5p">
-                                        <rect key="frame" x="119" y="15" width="70" height="20"/>
+                                        <rect key="frame" x="118.66666666666669" y="15.000000000000002" width="70" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.70999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="gSP-Gf-b7N">
-                                        <rect key="frame" x="119" y="43" width="250" height="12"/>
+                                        <rect key="frame" x="118.66666666666667" y="43" width="250.33333333333331" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="sds-vD-SiU"/>
                                         </constraints>
                                     </progressView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42O-uQ-hdK">
-                                        <rect key="frame" x="334" y="15" width="35" height="20"/>
+                                        <rect key="frame" x="334" y="15.000000000000002" width="35" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                         <color key="textColor" name="main"/>
                                         <nil key="highlightedColor"/>
@@ -524,7 +524,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만수르일등사위" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWA-k9-ULu">
-                                        <rect key="frame" x="119" y="15" width="97" height="20"/>
+                                        <rect key="frame" x="119" y="15.000000000000002" width="97" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -536,7 +536,7 @@
                                         </constraints>
                                     </progressView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyR-te-BSC">
-                                        <rect key="frame" x="333" y="15" width="36" height="20"/>
+                                        <rect key="frame" x="333" y="15.000000000000002" width="36" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                         <color key="textColor" name="main"/>
                                         <nil key="highlightedColor"/>
@@ -562,32 +562,32 @@
                                 <rect key="frame" x="0.0" y="470" width="393" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5위" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks9-iC-NXw">
-                                        <rect key="frame" x="24" y="26" width="23" height="18"/>
+                                        <rect key="frame" x="24" y="26" width="22.666666666666671" height="18"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile5" translatesAutoresizingMaskIntoConstraints="NO" id="JB9-A9-euH">
-                                        <rect key="frame" x="63" y="15" width="40" height="40"/>
+                                        <rect key="frame" x="62.666666666666657" y="15" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="dmN-7f-bAQ"/>
                                             <constraint firstAttribute="height" constant="40" id="sN0-vf-kev"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="잡스의후예" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lst-BO-qz5">
-                                        <rect key="frame" x="119" y="15" width="70" height="20"/>
+                                        <rect key="frame" x="118.66666666666669" y="15.000000000000002" width="70" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="opW-IN-1PY">
-                                        <rect key="frame" x="119" y="43" width="250" height="12"/>
+                                        <rect key="frame" x="118.66666666666667" y="43" width="250.33333333333331" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="Cfi-t8-m0d"/>
                                         </constraints>
                                     </progressView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isW-hh-yUO">
-                                        <rect key="frame" x="332" y="15" width="37" height="20"/>
+                                        <rect key="frame" x="332.66666666666669" y="15.000000000000002" width="36.333333333333314" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                         <color key="textColor" name="main"/>
                                         <nil key="highlightedColor"/>
@@ -613,32 +613,32 @@
                                 <rect key="frame" x="0.0" y="540" width="393" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6위" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFu-ko-Cr9">
-                                        <rect key="frame" x="24" y="26" width="23" height="18"/>
+                                        <rect key="frame" x="24" y="26" width="22.666666666666671" height="18"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile6" translatesAutoresizingMaskIntoConstraints="NO" id="CJi-P5-i74">
-                                        <rect key="frame" x="63" y="15" width="40" height="40"/>
+                                        <rect key="frame" x="62.666666666666657" y="15" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="1ze-Ds-4nK"/>
                                             <constraint firstAttribute="width" constant="40" id="aY8-cU-XNj"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="페이스메이커" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0S-MF-2G5">
-                                        <rect key="frame" x="119" y="15" width="83" height="20"/>
+                                        <rect key="frame" x="118.66666666666669" y="15.000000000000002" width="83" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Gmc-Nv-sio">
-                                        <rect key="frame" x="119" y="43" width="250" height="12"/>
+                                        <rect key="frame" x="118.66666666666667" y="43" width="250.33333333333331" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="P6c-HX-nO7"/>
                                         </constraints>
                                     </progressView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkE-jk-OFY">
-                                        <rect key="frame" x="343" y="15" width="26" height="20"/>
+                                        <rect key="frame" x="343" y="15.000000000000002" width="26" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -660,36 +660,36 @@
                                     <constraint firstItem="U0S-MF-2G5" firstAttribute="leading" secondItem="CJi-P5-i74" secondAttribute="trailing" constant="16" id="tBv-8R-Nzk"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CV0-hk-QGN">
-                                <rect key="frame" x="0.0" y="259" width="393" height="70"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CV0-hk-QGN">
+                                <rect key="frame" x="0.0" y="260" width="393" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2위" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5O-6E-yzS">
-                                        <rect key="frame" x="24" y="26" width="23" height="18"/>
+                                        <rect key="frame" x="24" y="26" width="22.333333333333329" height="18"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile3" translatesAutoresizingMaskIntoConstraints="NO" id="5I4-wC-3xe">
-                                        <rect key="frame" x="63" y="15" width="40" height="40"/>
+                                        <rect key="frame" x="62.333333333333343" y="15" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="0dg-uv-Ekv"/>
                                             <constraint firstAttribute="height" constant="40" id="5pd-Lh-TWt"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내가먼저취뽀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hu-se-JcY">
-                                        <rect key="frame" x="119" y="15" width="83" height="20"/>
+                                        <rect key="frame" x="118.33333333333331" y="15.000000000000002" width="83" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.751" translatesAutoresizingMaskIntoConstraints="NO" id="sgF-2W-WgB">
-                                        <rect key="frame" x="119" y="43" width="250" height="12"/>
+                                        <rect key="frame" x="118.33333333333333" y="43" width="250.66666666666669" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="JyG-eK-gt0"/>
                                         </constraints>
                                     </progressView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3v-Qp-2Ab">
-                                        <rect key="frame" x="334" y="15" width="35" height="20"/>
+                                        <rect key="frame" x="335" y="15.000000000000002" width="34" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
                                         <color key="textColor" name="main"/>
                                         <nil key="highlightedColor"/>
@@ -775,10 +775,15 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qn8-3V-AgN">
                                                 <rect key="frame" x="20" y="522" width="353" height="42"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="토익 800점 이상" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mz8-Tb-P7n">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mz8-Tb-P7n">
                                                         <rect key="frame" x="16" y="11.333333333333369" width="321" height="19.333333333333329"/>
-                                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
-                                                        <nil key="textColor"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="토익 800점 이상">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="16" name="Pretendard-Regular"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -1160,6 +1165,7 @@
                                             <constraint firstItem="9WW-KN-wLr" firstAttribute="leading" secondItem="hLI-tl-cba" secondAttribute="leading" id="7ut-0x-9EX"/>
                                             <constraint firstAttribute="bottom" secondItem="tON-Lt-1oW" secondAttribute="bottom" constant="40" id="8Rl-GR-v2s"/>
                                             <constraint firstItem="9WW-KN-wLr" firstAttribute="top" secondItem="5sZ-sn-AFA" secondAttribute="bottom" constant="24" id="CYk-CJ-9lU"/>
+                                            <constraint firstAttribute="trailing" secondItem="7U2-vV-GRX" secondAttribute="trailing" constant="20" id="CZo-NB-JL0"/>
                                             <constraint firstItem="w8m-gS-XJw" firstAttribute="top" secondItem="Qn8-3V-AgN" secondAttribute="bottom" constant="40" id="Gmj-wm-avA"/>
                                             <constraint firstAttribute="trailing" secondItem="tON-Lt-1oW" secondAttribute="trailing" constant="20" id="HZa-i9-Ym4"/>
                                             <constraint firstItem="tON-Lt-1oW" firstAttribute="leading" secondItem="hLI-tl-cba" secondAttribute="leading" id="Izs-oD-zIy"/>
@@ -1224,7 +1230,6 @@
                         <outlet property="studyRuleLabel" destination="MqZ-3e-hcB" id="59z-lF-JTr"/>
                         <outlet property="studyRuleVIew" destination="tON-Lt-1oW" id="ZQT-bj-6Wp"/>
                         <outlet property="studyTypeLabel" destination="bBp-ZO-qie" id="8Nz-56-Vev"/>
-                        <outlet property="textView" destination="mz8-Tb-P7n" id="BGh-of-rMW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R7E-kz-1bp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
