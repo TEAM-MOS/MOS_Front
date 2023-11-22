@@ -9,12 +9,14 @@ import UIKit
 
 class StudyRegisterViewController: UIViewController {
 
+    @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var textView: UITextView!
     var placeholderLabel : UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nextBtn.layer.cornerRadius = 8
         textView.delegate = self
         textView.layer.borderWidth = 1
         textView.layer.borderColor = UIColor.lightGray.cgColor
@@ -44,7 +46,7 @@ class StudyRegisterViewController: UIViewController {
     @IBAction func completeButtonTapped(_ sender: Any) {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "CompleteRegisterStudyVC") as? CompleteRegisterStudyViewController else { return }
         nextVC.modalPresentationStyle = .fullScreen
-        self.present(nextVC, animated: true, completion: nil)
+        self.present(nextVC, animated: false, completion: nil)
     }
     
     
