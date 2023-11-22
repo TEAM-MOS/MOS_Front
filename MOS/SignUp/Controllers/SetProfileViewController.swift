@@ -14,7 +14,6 @@ class SetProfileViewController: UIViewController, SendUpdateDelegate, UIImagePic
     @IBOutlet weak var nicknameTextField: UITextField!
     @IBOutlet weak var goalTextField: UITextField!
     @IBOutlet weak var startDateTextField: UITextField!
-    @IBOutlet weak var endDateTextField: UITextField!
     @IBOutlet weak var selectStudyTypeButton: UIButton!
     @IBOutlet weak var selectStudyTypeButton2: UIButton!
     
@@ -47,19 +46,23 @@ class SetProfileViewController: UIViewController, SendUpdateDelegate, UIImagePic
         textField.placeholder = placeholder
         
         textField.layer.cornerRadius = 8
+        
+        let datePaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: startDateTextField.frame.size.height))
+        
+        textField.leftView = datePaddingView
+        textField.leftViewMode = .always
     }
     
     
     
     @objc func dateChange(_ sender: UIDatePicker) {
         startDateTextField.text = dateFormat(date: sender.date)
-        endDateTextField.text = dateFormat(date: sender.date)
         endDatePicker.minimumDate = sender.date
     }
     
     private func dateFormat(date: Date) -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy / MM / dd"
+        formatter.dateFormat = "yyyy년 MM월 dd일"
         
         return formatter.string(from: date)
     }
@@ -72,15 +75,13 @@ class SetProfileViewController: UIViewController, SendUpdateDelegate, UIImagePic
         self.navigationController?.navigationBar.isHidden = true
         
         startDateTextField.isUserInteractionEnabled = true
-        endDateTextField.isUserInteractionEnabled = true
         
         selectStudyTypeButton2.isHidden = true
         
         setTextFieldUI(textField: nicknameTextField)
         setTextFieldUI(textField: goalTextField)
         
-        setupDatePicker(datePicker: startDatePicker, textField: startDateTextField, placeholder: "시작 날짜")
-        setupDatePicker(datePicker: endDatePicker, textField: endDateTextField, placeholder: "종료 날짜", minimumDate: startDatePicker.date)
+        setupDatePicker(datePicker: startDatePicker, textField: startDateTextField, placeholder: "날짜 선택하기")
         
         setupToolBar()
         
@@ -104,27 +105,28 @@ class SetProfileViewController: UIViewController, SendUpdateDelegate, UIImagePic
         self.nicknameTextField.layer.cornerRadius = 8
         self.goalTextField.layer.cornerRadius = 8
         self.startDateTextField.layer.cornerRadius = 8
-        self.endDateTextField.layer.cornerRadius = 8
         
         self.nicknameTextField.layer.borderColor = UIColor.systemGray6.cgColor
         self.goalTextField.layer.borderColor = UIColor.systemGray6.cgColor
         self.startDateTextField.layer.borderColor = UIColor.systemGray6.cgColor
-        self.endDateTextField.layer.borderColor = UIColor.systemGray6.cgColor
         
         self.nicknameTextField.layer.borderWidth = 1
         self.goalTextField.layer.borderWidth = 1
         self.startDateTextField.layer.borderWidth = 1
-        self.endDateTextField.layer.borderWidth = 1
         
         // 텍스트뷰 padding 설정
         let nicknamePaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: nicknameTextField.frame.size.height))
         
         let goalPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: goalTextField.frame.size.height))
         
+        let datePaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: startDateTextField.frame.size.height))
+        
         nicknameTextField.leftView = nicknamePaddingView
         nicknameTextField.leftViewMode = .always
         goalTextField.leftView = goalPaddingView
         goalTextField.leftViewMode = .always
+        startDateTextField.leftView = datePaddingView
+        startDateTextField.leftViewMode = .always
     }
     
     func hideKeyboard() {
@@ -148,7 +150,6 @@ class SetProfileViewController: UIViewController, SendUpdateDelegate, UIImagePic
         toolBar.sizeToFit()
         
         startDateTextField.inputAccessoryView = toolBar
-        endDateTextField.inputAccessoryView = toolBar
     }
     
     private func setTextFieldUI(textField: UITextField) {
@@ -171,10 +172,9 @@ class SetProfileViewController: UIViewController, SendUpdateDelegate, UIImagePic
         
         startDateTextField.text = dateFormat(date: startDatePicker.date)
         
-        endDateTextField.text = dateFormat(date: endDatePicker.date)
         
         startDateTextField.resignFirstResponder()
-        endDateTextField.resignFirstResponder()
+
     }
     
     @IBAction func studyTypeButtonDidTapped(_ sender: Any) {
@@ -202,5 +202,21 @@ class SetProfileViewController: UIViewController, SendUpdateDelegate, UIImagePic
         
         
         picker.dismiss(animated: false, completion: nil) //dismiss를 직접 해야함
+    }
+}
+
+extension UITextField {
+    // 왼쪽에 여백 주기
+    func setLeftPaddingPoints(_ amount: CGFloat) {
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
+        self.leftView = paddingView
+        self.leftViewMode = .always
+    }
+    
+    // 오른쪽에 여백 주기
+    func setRightPaddingPoints(_ amount: CGFloat) {
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
+        self.rightView = paddingView
+        self.rightViewMode = .always
     }
 }

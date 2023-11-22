@@ -20,7 +20,7 @@ class StudyRoomInfoViewController: UIViewController {
     @IBOutlet weak var studyDateView: UIView!
     @IBOutlet weak var studyMemNumView: UIView!
     @IBOutlet weak var onOffCalsuleView: UIStackView!
-    @IBOutlet weak var textView: UILabel!
+
     @IBOutlet weak var studyGoalLabel: UILabel!
     @IBOutlet weak var studyRuleLabel: UILabel!
     
@@ -65,11 +65,6 @@ class StudyRoomInfoViewController: UIViewController {
                 // 테두리 추가
         onOffCalsuleView.layer.borderWidth = 1.0
         onOffCalsuleView.layer.borderColor = UIColor(named: "main")?.cgColor
-        
-        textView.backgroundColor = UIColor(named: "category-1")
-        textView.layer.borderWidth = 1
-        textView.layer.cornerRadius = 8
-        textView.layer.borderColor = UIColor(named: "subColor")?.cgColor
         
         studyGoalView.layer.cornerRadius = 8
         studyGoalView.layer.borderWidth = 1

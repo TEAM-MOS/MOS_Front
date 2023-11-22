@@ -21,7 +21,7 @@ class StudyRoomViewController: TabmanViewController {
         self.navigationController?.navigationBar.topItem?.title = "산업&기업 분석"
         let backButton = UIBarButtonItem()
         backButton.title = ""
-        backButton.tintColor = UIColor(named: "main")
+        backButton.tintColor = .darkGray
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         
         // 네비게이션 바 오른쪽 버튼 추가

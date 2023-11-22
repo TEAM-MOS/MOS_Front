@@ -14,20 +14,24 @@ class PreQuestionAlertViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         popUpView.layer.cornerRadius = 10
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
         let cornerRadius: CGFloat = 10
 
-             // noBtn 오른쪽 아래의 모서리만 둥글게 처리
-             let noBtnMaskLayer = CAShapeLayer()
-             noBtnMaskLayer.path = UIBezierPath(roundedRect: noBtn.bounds, byRoundingCorners: [.bottomRight], cornerRadii: CGSize(width: cornerRadius, height: cornerRadius)).cgPath
-             noBtn.layer.mask = noBtnMaskLayer
+        // noBtn 오른쪽 아래의 모서리만 둥글게 처리
+        let noBtnMaskLayer = CAShapeLayer()
+        noBtnMaskLayer.path = UIBezierPath(roundedRect: noBtn.bounds, byRoundingCorners: [.bottomRight], cornerRadii: CGSize(width: cornerRadius, height: cornerRadius)).cgPath
+        noBtn.layer.mask = noBtnMaskLayer
 
-             // yesBtn 왼쪽 아래의 모서리만 둥글게 처리
-             let yesBtnMaskLayer = CAShapeLayer()
-             yesBtnMaskLayer.path = UIBezierPath(roundedRect: yesBtn.bounds, byRoundingCorners: [.bottomLeft], cornerRadii: CGSize(width: cornerRadius, height: cornerRadius)).cgPath
-             yesBtn.layer.mask = yesBtnMaskLayer
-        
-        
+        // yesBtn 왼쪽 아래의 모서리만 둥글게 처리
+        let yesBtnMaskLayer = CAShapeLayer()
+        yesBtnMaskLayer.path = UIBezierPath(roundedRect: yesBtn.bounds, byRoundingCorners: [.bottomLeft], cornerRadii: CGSize(width: cornerRadius, height: cornerRadius)).cgPath
+        yesBtn.layer.mask = yesBtnMaskLayer
     }
+    
     @IBAction func noButtonTapped(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)
     }

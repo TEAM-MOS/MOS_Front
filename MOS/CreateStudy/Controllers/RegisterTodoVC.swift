@@ -163,8 +163,8 @@ extension RegisterTodoVC: DeleteTableViewCellDelegate {
             onOff: onOff,
             online: online,
             location: location,
-            startDate: startDate!,
-            endDate: endDate!,
+            startDate: "2023-11-30",
+            endDate: "2023-12-30",
             studyDayEntities: studyDays.map { StudyDayEntity(studyDays: $0) }
         )
         
