@@ -16,7 +16,7 @@ class AnalysisViewController: UIViewController, UICollectionViewDataSource, UICo
         super.viewDidLoad()
         
         // 모집 중 스위치 사이즈 조절
-        recruitingSwitch.transform = CGAffineTransformMakeScale(0.75, 0.75);
+        recruitingSwitch.transform = CGAffineTransform(scaleX: 0.75, y: 0.75)
         
         // 콜렉션 뷰 생성 및 설정
         collectionView.dataSource = self
@@ -29,7 +29,6 @@ class AnalysisViewController: UIViewController, UICollectionViewDataSource, UICo
         
         let trailingConstraint = collectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20)
         trailingConstraint.isActive = true
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -50,19 +49,15 @@ class AnalysisViewController: UIViewController, UICollectionViewDataSource, UICo
         return cell
     }
     
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        _ = StudyList.listAnalysis[indexPath.item]
+        
+        if let studyDetailVC = UIStoryboard(name: "Study", bundle: nil).instantiateViewController(withIdentifier: "studyDetailVC") as? StudyDetailViewController {
+                self.navigationController?.pushViewController(studyDetailVC, animated: false)
+            }
+    }
 }
+
 extension AnalysisViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let studyList = StudyList.listAnalysis[indexPath.item]
@@ -79,3 +74,4 @@ extension AnalysisViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.bounds.width, height: cellHeight)
     }
 }
+

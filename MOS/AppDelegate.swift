@@ -5,7 +5,7 @@
 //  Created by yeonsu on 2023/05/17.
 //
 
-import UIKit
+import UIKit 
 
 
 @main

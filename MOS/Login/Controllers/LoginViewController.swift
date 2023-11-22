@@ -7,7 +7,6 @@
 
 import UIKit
 
-@available(iOS 15.0, *)
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -16,12 +15,13 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var kakaoLoginButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     
-
+    var ResultModel: SignInResultModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setStyle()
-
+        
     }
     
     func setStyle() {
@@ -47,11 +47,26 @@ class LoginViewController: UIViewController {
         self.kakaoLoginButton.layer.borderWidth = 1
     }
     
+    
+    // 회원가입 버튼
     @IBAction func signUpButtonDidTapped(_ sender: Any) {
         let SignUpView = UIStoryboard(name: "SignUp", bundle: nil)
         guard let SignUpVC = SignUpView.instantiateViewController(withIdentifier: "SignUpVC") as? SignUpViewController else { return }
-        navigationController?.pushViewController(SignUpVC, animated: true)
+        navigationController?.pushViewController(SignUpVC, animated: false)
     }
     
-
+    
+    // 로그인 버튼
+    @IBAction func loginButtonDidTapped(_ sender: Any) {
+        let parmeterData = SignInModel(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
+        SignInPost.instance.SignInPosting(parameters: parmeterData) { result in self.ResultModel = result }
+        
+        let accessToken = KeyChain.read(account: "MosAccessToken")
+        print("AccessToken read successfully \(accessToken)")
+        
+        let profileView = UIStoryboard(name: "SignUp", bundle: nil)
+        guard let profileVC = profileView.instantiateViewController(withIdentifier: "setProfileVC") as? SetProfileViewController else { return }
+        navigationController?.pushViewController(profileVC, animated: false)
+    }
 }
+ 

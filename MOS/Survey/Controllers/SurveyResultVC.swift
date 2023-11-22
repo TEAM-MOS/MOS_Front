@@ -12,10 +12,10 @@ class SurveyResultVC: UIViewController {
     @IBOutlet weak var categoryOneProgressBar: RoundedProgressView!
     @IBOutlet weak var categoryTwoProgressBar: RoundedProgressView!
     @IBOutlet weak var categoryThreeProgressBar: RoundedProgressView!
+    @IBOutlet weak var lowestCategoryName: UILabel!
     @IBOutlet weak var categoryFourProgressBar: RoundedProgressView!
     @IBOutlet weak var graphbackground: UIView!
     
-    @IBOutlet weak var totalScore: UILabel!
     @IBOutlet weak var resultCharacter: UIImageView!
     @IBOutlet weak var finishButton: UIButton!
     
@@ -47,11 +47,20 @@ class SurveyResultVC: UIViewController {
         let categoryTwoProgress = Float(categoryTwoScore) / Float(maxScorePerCategory)
         let categoryThreeProgress = Float(categoryThreeScore) / Float(maxScorePerCategory)
         let categoryFourProgress = Float(categoryFourScore) / Float(maxScorePerCategory)
+        // Find the lowest progress
+        let lowestProgress = min(categoryOneProgress, categoryTwoProgress, categoryThreeProgress, categoryFourProgress)
         
         categoryOneProgressBar.progress = categoryOneProgress
+        categoryOneProgressBar.lowestProgress = lowestProgress
+                
         categoryTwoProgressBar.progress = categoryTwoProgress
+        categoryTwoProgressBar.lowestProgress = lowestProgress
+        
         categoryThreeProgressBar.progress = categoryThreeProgress
+        categoryThreeProgressBar.lowestProgress = lowestProgress
+        
         categoryFourProgressBar.progress = categoryFourProgress
+        categoryFourProgressBar.lowestProgress = lowestProgress
     }
 
     
@@ -63,37 +72,34 @@ class SurveyResultVC: UIViewController {
     }
     
     func updateTotalScore() {
-        let total = categoryOneScore + categoryTwoScore + categoryThreeScore + categoryFourScore
-        totalScore.text = "\(total)점"
-        
-        var lackingSkills = ""
-        
-        if categoryOneProgressBar.progress < 0.6 {
-            lackingSkills += "산업 & 기업 분석, "
-        }
-        if categoryTwoProgressBar.progress < 0.6 {
-            lackingSkills += "시사 PT, "
-        }
-        if categoryThreeProgressBar.progress < 0.6 {
-            lackingSkills += "자기소개서, "
-        }
-        if categoryFourProgressBar.progress < 0.6 {
-            lackingSkills += "면접, "
-        }
-        
-        if !lackingSkills.isEmpty {
-            lackingSkills = String(lackingSkills.dropLast(2)) // 마지막에 추가된 ", " 제거
-        }
-        
-        if categoryOneProgressBar.progress < 0.6 && categoryTwoProgressBar.progress < 0.6 && categoryThreeProgressBar.progress < 0.6 && categoryFourProgressBar.progress < 0.6  {
-            resultCharacter.image = UIImage(named: "survey_monandol_character")
-            contentLabel.text = "당신은 취업을 준비를 막 시작한 모난돌 단계입니다.\n부족한 역량: \(lackingSkills)"
-        } else if categoryOneProgressBar.progress < 0.6 || categoryTwoProgressBar.progress < 0.6 || categoryThreeProgressBar.progress < 0.6  || categoryFourProgressBar.progress < 0.6 {
-            resultCharacter.image = UIImage(named: "survey_mole_character")
-            contentLabel.text = "당신은 취업할 준비가 좀 더 필요한 모래 단계입니다.\n부족한 역량: \(lackingSkills)"
+        var lowestCategory: String = ""
+
+        if categoryOneScore < categoryTwoScore && categoryOneScore < categoryThreeScore && categoryOneScore < categoryFourScore {
+            lowestCategory = "CategoryOne"
+        } else if categoryTwoScore < categoryOneScore && categoryTwoScore < categoryThreeScore && categoryTwoScore < categoryFourScore {
+            lowestCategory = "CategoryTwo"
+        } else if categoryThreeScore < categoryOneScore && categoryThreeScore < categoryTwoScore && categoryThreeScore < categoryFourScore {
+            lowestCategory = "CategoryThree"
+        } else if categoryFourScore < categoryOneScore && categoryFourScore < categoryTwoScore && categoryFourScore < categoryThreeScore {
+            lowestCategory = "CategoryFour"
         } else {
-            resultCharacter.image = UIImage(named: "survey_mohum_character")
-            contentLabel.text = "당신은 취업할 준비가 끝난 모험 단계입니다.\n자신에게 믿음을 갖고 출발해봅시다!"
+            lowestCategory = "Multiple categories have the same lowest score" // 동점인 경우
+        }
+        
+        if lowestCategory == "CategoryOne" {
+            resultCharacter.image = UIImage(named: "survey_lowest_category1")
+            lowestCategoryName.text = "산업&기업 분석"
+        } else if lowestCategory == "CategoryTwo"{
+            resultCharacter.image = UIImage(named: "survey_lowest_category2")
+            lowestCategoryName.text = "시사 PT"
+        } else if lowestCategory == "CategoryThree"{
+            resultCharacter.image = UIImage(named: "survey_lowest_category3")
+            lowestCategoryName.text = "자소서"
+        }else if lowestCategory == "CategoryFour"{
+            resultCharacter.image = UIImage(named: "survey_lowest_category4")
+            lowestCategoryName.text = "면접"
+        }else{
+            
         }
     }
 }

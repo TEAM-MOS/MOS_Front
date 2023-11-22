@@ -7,7 +7,6 @@
 
 import UIKit
 
-@available(iOS 15.0, *)
 class SignUpViewController: UIViewController, UITextFieldDelegate, PopUpDelegate {
     
     
@@ -16,6 +15,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, PopUpDelegate
     @IBOutlet weak var checkPasswordTextField: UITextField!
     
     @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var SignUpAlertView: UIView!
+    
     
     var ResultModel: SignUpResultModel!
     
@@ -23,8 +24,10 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, PopUpDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        signUpButton.isEnabled = true
         setAddTargetToTextField()
         setTextFieldStyle()
+        SignUpAlertView.isHidden = true
     }
     
     // 비밀번호, 비밀번호 확인 텍스트가 같은지 확인
@@ -46,12 +49,13 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, PopUpDelegate
         if !(self.emailTextField.text?.isEmpty ?? true)
             && !(self.passwordTextField.text?.isEmpty ?? true)
             && isSameBothTextField(passwordTextField, checkPasswordTextField) && isValidEmail(emailTextField.text ?? "") && isValidPassword(passwordTextField.text ?? "") {
+            signUpButton.isEnabled = true
             updateNextButton(willActive: true)
         }
         else {
             updateNextButton(willActive: false)
-            self.signUpButton.tintColor = UIColor(named: "gray-2    ")
-            self.signUpButton.configuration?.background.backgroundColor = UIColor(named: "inactive_button_bg")
+            self.signUpButton.tintColor = UIColor(named: "gray-2")
+            self.signUpButton.backgroundColor = UIColor(named: "inactive_button_bg")
         }
     }
     
@@ -136,12 +140,11 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, PopUpDelegate
     }
     
     
-    @available(iOS 15.0, *)
     func updateNextButton(willActive: Bool) {
         if(willActive == true) {
             //다음 버튼 색 변경
             self.signUpButton.tintColor = .white
-            self.signUpButton.configuration?.background.backgroundColor = UIColor(named: "main")
+            self.signUpButton.backgroundColor = UIColor(named: "main")
             //다음 페이지 연결
             print("다음 버튼 활성화")
         }
@@ -190,7 +193,16 @@ class SignUpViewController: UIViewController, UITextFieldDelegate, PopUpDelegate
         print(parmeterData)
 
         SignUpPost.instance.SignUpPosting(parameters: parmeterData) { result in self.ResultModel = result }
+        
+        SignUpAlertView.isHidden = false
 
-        print("회원가입 성공!")
     }
+    
+    @IBAction func GoProfileButton(_ sender: Any) {
+    
+        // 화면 이동
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "setProfileVC") as? SetProfileViewController else { return }
+        navigationController?.pushViewController(nextVC, animated: false)
+    }
+    
 }

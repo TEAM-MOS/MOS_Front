@@ -33,33 +33,45 @@ struct RequestData: Codable {
 
 class CreateStudyPost {
     static let instance = CreateStudyPost()
+    let accessToken = KeyChain.read(account: "MosAccessToken")
     
-    func createStudyPosting(parameters: RequestData, handler: @escaping (Result<CreateStudyResultModel, Error>) -> Void) {
-        let url = APIConstants.baseURL + "/studyRoom/create"
-        let headers: HTTPHeaders = [
-            .contentType("application/json;charset=utf-8")
-        ]
-        
-        do {
-            let jsonData = try JSONEncoder().encode(parameters)
+    func createStudyPosting(parameters: RequestData, handler:@escaping (_ result: CreateStudyResultModel) ->(Void)) {
+        if let unwrappedToken = accessToken {
+            print(unwrappedToken)
             
-            AF.request(url, method: .post, parameters: jsonData, encoder: JSONParameterEncoder.default, headers: headers)
-                .responseDecodable(of: CreateStudyResultModel.self) { response in
-                    switch response.result {
-                    case .success(let result):
-                        handler(.success(result))
-                    case .failure(let error):
-                        handler(.failure(error))
+            let url = APIConstants.baseURL + "/studyRoom/create"
+            let headers:HTTPHeaders = [
+                .contentType("application/json"),
+                .authorization("Bearer \(unwrappedToken)")
+            ]
+            
+            AF.request(url, method:.post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers).response { response in
+                switch response.result {
+                case .success(let data):
+                    print(String(decoding: data!, as: UTF8.self))
+                    _ = String(decoding: data!, as: UTF8.self)
+                    do {
+                        let json = try JSONSerialization.jsonObject(with: data!, options: .fragmentsAllowed)
+                        print(json)
+                        
+                        let jsonResult = try
+                        JSONDecoder().decode(CreateStudyResultModel.self, from: data!)
+                        handler(jsonResult)
+                    }catch {
+                        print(String(describing:error))
                     }
+                case .failure(let error):
+                    print(String(String(describing: error)))
                 }
-        } catch {
-            handler(.failure(error))
+            }
         }
     }
 }
 
+
 struct CreateStudyResultModel: Codable {
     let success: Bool
     let message: String
-    let status: Int
+    let roomId: Int
+    let status: String
 }

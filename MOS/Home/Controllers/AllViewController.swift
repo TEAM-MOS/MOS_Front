@@ -44,7 +44,7 @@ class AllViewController: UIViewController, UICollectionViewDataSource, UICollect
             return UICollectionViewCell()
         }
         
-        let studyListCell = StudyList.list[indexPath.item]
+        let studyListCell = StudyList.listAll[indexPath.item]
         // indexPath 안에는 섹션에 대한 정보, 섹션에 들어가는 데이터 정보 등이 있다
         cell.configure(studyListCell)
         return cell

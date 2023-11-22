@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C7A-ig-HO3">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -106,10 +106,28 @@
                                     <constraint firstAttribute="trailing" secondItem="KEA-NH-SDb" secondAttribute="trailing" id="cM5-Wd-dwg"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3II-Qo-UAk">
+                                <rect key="frame" x="24" y="474" width="345" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Yb8-yZ-ApH"/>
+                                </constraints>
+                                <color key="tintColor" name=" mainColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그인">
+                                    <backgroundConfiguration key="background" cornerRadius="8" strokeWidth="1">
+                                        <color key="strokeColor" name=" mainColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButtonDidTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lx8-IV-MXO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="3II-Qo-UAk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="7oY-t0-UkZ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YP8-ZM-52V" secondAttribute="trailing" constant="24" id="ADy-yv-Tj7"/>
                             <constraint firstItem="ah3-LE-JJE" firstAttribute="top" secondItem="7ua-CW-ovE" secondAttribute="bottom" constant="54" id="Aar-Ax-awT"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="bIL-9Q-VDz" secondAttribute="bottom" constant="44" id="C9W-R7-hYY"/>
@@ -118,8 +136,10 @@
                             <constraint firstItem="7ua-CW-ovE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="K8q-Hl-Jxf"/>
                             <constraint firstItem="yoK-ig-vsY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="Lac-gw-m2a"/>
                             <constraint firstItem="rdu-su-YFL" firstAttribute="top" secondItem="yoK-ig-vsY" secondAttribute="bottom" constant="16" id="U7y-py-lGv"/>
+                            <constraint firstItem="3II-Qo-UAk" firstAttribute="top" secondItem="rdu-su-YFL" secondAttribute="bottom" constant="40" id="Xkw-bF-0bi"/>
                             <constraint firstItem="YP8-ZM-52V" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="YGs-g8-y4W"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rdu-su-YFL" secondAttribute="trailing" constant="24" id="e19-Wd-6wj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3II-Qo-UAk" secondAttribute="trailing" constant="24" id="eTo-9Y-KhZ"/>
                             <constraint firstItem="bIL-9Q-VDz" firstAttribute="top" secondItem="YP8-ZM-52V" secondAttribute="bottom" constant="40" id="jtn-ja-W3K"/>
                             <constraint firstItem="bIL-9Q-VDz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="uAa-BO-zaM"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bIL-9Q-VDz" secondAttribute="trailing" constant="64" id="yNA-eq-sXe"/>

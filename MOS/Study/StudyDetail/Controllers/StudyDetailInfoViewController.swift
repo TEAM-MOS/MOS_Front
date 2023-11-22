@@ -9,6 +9,7 @@ import UIKit
 
 class StudyDetailInfoViewController:UIViewController {
     
+    @IBOutlet var outlineView: UIView!
     @IBOutlet weak var infoText: UILabel!
     
     
@@ -16,6 +17,8 @@ class StudyDetailInfoViewController:UIViewController {
         super.viewDidLoad()
         
         infoText.text = StudyDetail.list.studyRule
+        
+        outlineView.layer.cornerRadius = 16
         
     }
     
