@@ -45,6 +45,28 @@ class StudyRoomTodoViewController: UIViewController {
         tableView.dataSource = self
         // addCellBtn의 액션 설정
         addCellBtn.addTarget(self, action: #selector(addCell), for: .touchUpInside)
+        
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(goPage))
+        
+        self.goTodoButton.addGestureRecognizer(gesture)
+    }
+    
+    @objc func goPage(sender:UIGestureRecognizer)
+    
+    {
+        
+        // Story board 상수를 지정하고 (Main.storyboard 기 때문에 "Main"을 입력해주자.)
+        
+        let storyboard  = UIStoryboard(name: "StudyRoom", bundle: nil)
+        
+        // 아까 입력했던 storyboard id -> writeview_yw를 입력해주자ㅏ.
+        
+        let vc = storyboard.instantiateViewController(withIdentifier: "todoRankVC")
+        
+        
+        
+        self.navigationController!.pushViewController(vc, animated: true)
+        
     }
     
     func setUI() {
@@ -81,6 +103,10 @@ class StudyRoomTodoViewController: UIViewController {
         sender.layer.cornerRadius = 8
         sender.layer.borderColor = newBorderColor
     }
+    
+    
+    
+    
     
 }
 
@@ -158,4 +184,5 @@ extension StudyRoomTodoViewController: DeleteTodoTableViewCellDelegate {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+    
 }

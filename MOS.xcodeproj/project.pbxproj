@@ -42,6 +42,7 @@
 		2FACF5202B0B151300C73094 /* StudyRoomTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACF51F2B0B151300C73094 /* StudyRoomTodoViewController.swift */; };
 		2FACF5222B0B151E00C73094 /* StudyRoomInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACF5212B0B151E00C73094 /* StudyRoomInfoViewController.swift */; };
 		2FACF5242B0B9A6A00C73094 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACF5232B0B9A6A00C73094 /* TodoTableViewCell.swift */; };
+		2FAFCE9F2B0CDC5C0023523F /* TodoRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAFCE9E2B0CDC5C0023523F /* TodoRankViewController.swift */; };
 		2FB095862A2631910035FB78 /* DeviceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB095852A2631910035FB78 /* DeviceGroup.swift */; };
 		2FC144852AC8067400A642AD /* StudyBasicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC144842AC8067400A642AD /* StudyBasicInfoViewController.swift */; };
 		2FC177B12AD7DB2000873B50 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC177B02AD7DB2000873B50 /* SignUp.storyboard */; };
@@ -153,6 +154,7 @@
 		2FACF51F2B0B151300C73094 /* StudyRoomTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoomTodoViewController.swift; sourceTree = "<group>"; };
 		2FACF5212B0B151E00C73094 /* StudyRoomInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyRoomInfoViewController.swift; sourceTree = "<group>"; };
 		2FACF5232B0B9A6A00C73094 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		2FAFCE9E2B0CDC5C0023523F /* TodoRankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRankViewController.swift; sourceTree = "<group>"; };
 		2FB095852A2631910035FB78 /* DeviceGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGroup.swift; sourceTree = "<group>"; };
 		2FC144842AC8067400A642AD /* StudyBasicInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyBasicInfoViewController.swift; sourceTree = "<group>"; };
 		2FC177B02AD7DB2000873B50 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 				2FACF51F2B0B151300C73094 /* StudyRoomTodoViewController.swift */,
 				2FACF5212B0B151E00C73094 /* StudyRoomInfoViewController.swift */,
 				2FACF5232B0B9A6A00C73094 /* TodoTableViewCell.swift */,
+				2FAFCE9E2B0CDC5C0023523F /* TodoRankViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -940,6 +943,7 @@
 				2FC514052AF36C3900C7C7AD /* LoginPostAPI.swift in Sources */,
 				2F24061D2AFA682A00E52705 /* CompleteSignUpViewController.swift in Sources */,
 				5AD2E7B22B02A8AE00A9437B /* RulePopUp.swift in Sources */,
+				2FAFCE9F2B0CDC5C0023523F /* TodoRankViewController.swift in Sources */,
 				5AD2E74B2B02964E00A9437B /* AnalysisViewController.swift in Sources */,
 				5AD2E7482B02964E00A9437B /* PersonnelAptitudeViewController.swift in Sources */,
 				5AD2E74D2B02964E00A9437B /* AllViewController.swift in Sources */,
