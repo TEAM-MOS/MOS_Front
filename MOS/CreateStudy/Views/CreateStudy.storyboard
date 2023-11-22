@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -266,7 +265,7 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="1107"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qwc-q7-U0t" userLabel="contentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1026.3333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="991.33333333333337"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스터디 기본 정보를 입력해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMG-4o-R75">
                                                 <rect key="frame" x="16" y="124" width="256" height="24"/>
@@ -281,7 +280,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*필수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjB-BP-ctg">
-                                                <rect key="frame" x="86.333333333333329" y="775.66666666666663" width="41" height="21.666666666666629"/>
+                                                <rect key="frame" x="86.333333333333329" y="740.66666666666663" width="41" height="21.666666666666629"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
                                                 <color key="textColor" name="mainColor"/>
                                                 <nil key="highlightedColor"/>
@@ -311,7 +310,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zNg-u0-Lzm">
-                                                <rect key="frame" x="16" y="813.33333333333337" width="361" height="32"/>
+                                                <rect key="frame" x="16" y="778.33333333333337" width="361" height="32"/>
                                                 <segments>
                                                     <segment title="오프라인"/>
                                                     <segment title="온라인"/>
@@ -321,7 +320,7 @@
                                                 </connections>
                                             </segmentedControl>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="장소를 입력해주세요.(ex. 송파구)" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="gEd-IY-5V0">
-                                                <rect key="frame" x="16" y="860.33333333333337" width="361" height="42"/>
+                                                <rect key="frame" x="16" y="825.33333333333337" width="361" height="42"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="42" id="dzz-33-Fla"/>
                                                 </constraints>
@@ -356,25 +355,6 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMw-Ez-e2b">
-                                                <rect key="frame" x="16" y="668.66666666666663" width="361" height="34.333333333333371"/>
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="스터디 시작 일자"/>
-                                                <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="  스터디 시작 일자">
-                                                    <imageReference key="image" image="calendar" catalog="system" symbolScale="medium" renderingMode="hierarchical">
-                                                        <hierarchicalColors>
-                                                            <color systemColor="labelColor"/>
-                                                            <color systemColor="secondaryLabelColor"/>
-                                                            <color systemColor="tertiaryLabelColor"/>
-                                                        </hierarchicalColors>
-                                                    </imageReference>
-                                                    <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="startDateButton:" destination="81f-aj-SMe" eventType="touchUpInside" id="qtr-rb-x0h"/>
-                                                </connections>
-                                            </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex) [네이버] 토익스터디" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="OVj-bz-zEj">
                                                 <rect key="frame" x="16" y="225.66666666666669" width="361" height="42"/>
                                                 <constraints>
@@ -418,7 +398,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XG6-aL-fhn">
-                                                <rect key="frame" x="16" y="942.33333333333337" width="361" height="44"/>
+                                                <rect key="frame" x="16" y="907.33333333333337" width="361" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="vEe-WA-0Yz"/>
                                                 </constraints>
@@ -514,26 +494,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="진행방식" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gs-TZ-Ok5">
-                                                <rect key="frame" x="16.000000000000004" y="775.66666666666663" width="62.333333333333343" height="21.666666666666629"/>
+                                                <rect key="frame" x="16.000000000000004" y="740.66666666666663" width="62.333333333333343" height="21.666666666666629"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXw-qx-jEc">
-                                                <rect key="frame" x="16" y="711" width="361" height="34.333333333333371"/>
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="스터디 종료 일자"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="   스터디 종료 일자">
-                                                    <imageReference key="image" image="calendar" catalog="system" symbolScale="medium"/>
-                                                    <fontDescription key="titleFontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="endDateButton:" destination="81f-aj-SMe" eventType="touchUpInside" id="i5E-4C-9Ax"/>
-                                                </connections>
-                                            </button>
                                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z11-mb-1qp">
-                                                <rect key="frame" x="16" y="860.33333333333337" width="361" height="30"/>
+                                                <rect key="frame" x="16" y="825.33333333333337" width="361" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1X-zl-keY">
                                                         <rect key="frame" x="0.0" y="0.0" width="79" height="30"/>
@@ -572,6 +539,37 @@
                                                     <constraint firstAttribute="height" constant="30" id="F3c-6O-oWA"/>
                                                 </constraints>
                                             </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ubz-lO-gWq">
+                                                <rect key="frame" x="16" y="668.66666666666663" width="361" height="42"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="시작 날짜" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oAi-Zx-wvi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="152" height="42"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="152" id="H54-ne-RwS"/>
+                                                            <constraint firstAttribute="height" constant="42" id="uWb-On-cpY"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZC-HI-qMt">
+                                                        <rect key="frame" x="160" y="10.999999999999998" width="41" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="종료 날짜" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QOe-y4-Dyk">
+                                                        <rect key="frame" x="209" y="0.0" width="152" height="42"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="152" id="nAP-A2-Urz"/>
+                                                            <constraint firstAttribute="height" constant="42" id="rwk-wJ-0PT"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -589,11 +587,11 @@
                                             <constraint firstItem="Z11-mb-1qp" firstAttribute="top" secondItem="zNg-u0-Lzm" secondAttribute="bottom" constant="16" id="B39-bI-66H"/>
                                             <constraint firstAttribute="trailing" secondItem="OVj-bz-zEj" secondAttribute="trailing" constant="16" id="BRo-Yz-KE5"/>
                                             <constraint firstItem="EWe-zs-IxK" firstAttribute="top" secondItem="fge-J4-3Mj" secondAttribute="bottom" constant="16" id="Bya-cm-em5"/>
+                                            <constraint firstItem="3Gs-TZ-Ok5" firstAttribute="top" secondItem="ubz-lO-gWq" secondAttribute="bottom" constant="30" id="Dft-pF-vxb"/>
                                             <constraint firstItem="CjB-BP-ctg" firstAttribute="leading" secondItem="3Gs-TZ-Ok5" secondAttribute="trailing" constant="8" id="EIo-vN-uUW"/>
                                             <constraint firstItem="gEd-IY-5V0" firstAttribute="top" secondItem="zNg-u0-Lzm" secondAttribute="bottom" constant="16" id="Edb-BT-S8R"/>
                                             <constraint firstItem="dLS-0s-kce" firstAttribute="top" secondItem="L8q-yc-Mko" secondAttribute="top" id="FNC-Cy-xuD"/>
                                             <constraint firstItem="gEd-IY-5V0" firstAttribute="leading" secondItem="zNg-u0-Lzm" secondAttribute="leading" id="FS7-c3-mdG"/>
-                                            <constraint firstItem="IXw-qx-jEc" firstAttribute="trailing" secondItem="rMw-Ez-e2b" secondAttribute="trailing" id="GmX-hR-ekx"/>
                                             <constraint firstItem="hBe-7W-KnH" firstAttribute="leading" secondItem="3Mu-2t-kMP" secondAttribute="trailing" constant="8" id="I8c-La-iX7"/>
                                             <constraint firstItem="gEd-IY-5V0" firstAttribute="trailing" secondItem="zNg-u0-Lzm" secondAttribute="trailing" id="J3w-BS-cUr"/>
                                             <constraint firstItem="fge-J4-3Mj" firstAttribute="leading" secondItem="Bfu-rd-t6L" secondAttribute="leading" id="K2D-eB-Z9K"/>
@@ -604,7 +602,6 @@
                                             <constraint firstItem="jRF-2j-6fb" firstAttribute="top" secondItem="tuq-lY-Tce" secondAttribute="top" id="OLT-BD-usS"/>
                                             <constraint firstItem="Bfu-rd-t6L" firstAttribute="top" secondItem="AUq-MS-q5p" secondAttribute="bottom" constant="8" id="OXf-iC-P1z"/>
                                             <constraint firstItem="pB8-e4-KmQ" firstAttribute="centerX" secondItem="Qwc-q7-U0t" secondAttribute="centerX" id="P06-At-FEm"/>
-                                            <constraint firstItem="3Gs-TZ-Ok5" firstAttribute="top" secondItem="IXw-qx-jEc" secondAttribute="bottom" constant="30.333333333333371" id="RSc-6b-Hi0"/>
                                             <constraint firstItem="OVj-bz-zEj" firstAttribute="leading" secondItem="3Mu-2t-kMP" secondAttribute="leading" id="SCe-Bb-ffR"/>
                                             <constraint firstItem="Z11-mb-1qp" firstAttribute="leading" secondItem="zNg-u0-Lzm" secondAttribute="trailing" constant="-361" id="Te5-tX-Xpi"/>
                                             <constraint firstItem="3Mu-2t-kMP" firstAttribute="leading" secondItem="VMG-4o-R75" secondAttribute="leading" id="Twz-R6-ybd"/>
@@ -623,30 +620,27 @@
                                             <constraint firstItem="VMG-4o-R75" firstAttribute="top" secondItem="KcI-2M-Qj3" secondAttribute="bottom" constant="30" id="gZe-SL-iBS"/>
                                             <constraint firstAttribute="bottom" secondItem="XG6-aL-fhn" secondAttribute="bottom" constant="40" id="hCR-DT-55M"/>
                                             <constraint firstItem="Z11-mb-1qp" firstAttribute="trailing" secondItem="zNg-u0-Lzm" secondAttribute="trailing" id="hIC-lF-xq4"/>
+                                            <constraint firstItem="ubz-lO-gWq" firstAttribute="top" secondItem="tuq-lY-Tce" secondAttribute="bottom" constant="16" id="hf5-e6-qX8"/>
                                             <constraint firstItem="zNg-u0-Lzm" firstAttribute="trailing" secondItem="B3h-3F-eXk" secondAttribute="trailing" id="hfD-Xu-2bj"/>
                                             <constraint firstItem="tuq-lY-Tce" firstAttribute="top" secondItem="EWe-zs-IxK" secondAttribute="bottom" constant="30" id="hoc-mj-uf5"/>
                                             <constraint firstItem="L8q-yc-Mko" firstAttribute="leading" secondItem="OVj-bz-zEj" secondAttribute="leading" id="j57-yR-Won"/>
+                                            <constraint firstItem="ubz-lO-gWq" firstAttribute="leading" secondItem="tuq-lY-Tce" secondAttribute="leading" id="kDJ-sz-Ofl"/>
                                             <constraint firstItem="jRF-2j-6fb" firstAttribute="leading" secondItem="tuq-lY-Tce" secondAttribute="trailing" constant="8" id="kdR-W5-Gbu"/>
                                             <constraint firstItem="Bfu-rd-t6L" firstAttribute="leading" secondItem="AUq-MS-q5p" secondAttribute="leading" id="lKt-3q-A1v"/>
-                                            <constraint firstItem="rMw-Ez-e2b" firstAttribute="top" secondItem="tuq-lY-Tce" secondAttribute="bottom" constant="16" id="lvc-Yp-tBd"/>
                                             <constraint firstItem="KcI-2M-Qj3" firstAttribute="top" secondItem="pB8-e4-KmQ" secondAttribute="bottom" constant="20" id="mo8-Vv-h2W"/>
                                             <constraint firstItem="dLS-0s-kce" firstAttribute="bottom" secondItem="L8q-yc-Mko" secondAttribute="bottom" id="nr3-iU-pYM"/>
                                             <constraint firstItem="CjB-BP-ctg" firstAttribute="top" secondItem="3Gs-TZ-Ok5" secondAttribute="top" id="ogw-pE-1xT"/>
                                             <constraint firstItem="KcI-2M-Qj3" firstAttribute="leading" secondItem="Qwc-q7-U0t" secondAttribute="leading" constant="50" id="p04-dP-K52"/>
-                                            <constraint firstItem="IXw-qx-jEc" firstAttribute="leading" secondItem="rMw-Ez-e2b" secondAttribute="leading" id="pmq-nx-Lq1"/>
-                                            <constraint firstItem="rMw-Ez-e2b" firstAttribute="trailing" secondItem="B3h-3F-eXk" secondAttribute="trailing" id="qgf-Im-nrY"/>
-                                            <constraint firstItem="IXw-qx-jEc" firstAttribute="top" secondItem="rMw-Ez-e2b" secondAttribute="bottom" constant="8" symbolic="YES" id="qvf-5f-LML"/>
                                             <constraint firstItem="AUq-MS-q5p" firstAttribute="top" secondItem="OMi-s4-jYS" secondAttribute="bottom" constant="8" id="urs-Zo-cRn"/>
-                                            <constraint firstItem="rMw-Ez-e2b" firstAttribute="leading" secondItem="tuq-lY-Tce" secondAttribute="leading" id="usG-20-HJ6"/>
                                             <constraint firstItem="AUq-MS-q5p" firstAttribute="leading" secondItem="OMi-s4-jYS" secondAttribute="leading" id="utG-Um-W88"/>
                                             <constraint firstItem="tuq-lY-Tce" firstAttribute="leading" secondItem="EWe-zs-IxK" secondAttribute="leading" id="v4Q-Lo-MqZ"/>
                                             <constraint firstItem="B3h-3F-eXk" firstAttribute="leading" secondItem="sCD-gr-Pj9" secondAttribute="trailing" constant="2" id="x1u-7E-JFU"/>
                                             <constraint firstItem="B3h-3F-eXk" firstAttribute="trailing" secondItem="Bfu-rd-t6L" secondAttribute="trailing" id="xTO-yH-I0V"/>
-                                            <constraint firstItem="3Gs-TZ-Ok5" firstAttribute="leading" secondItem="rMw-Ez-e2b" secondAttribute="leading" id="y6Q-Kn-0y3"/>
                                             <constraint firstItem="XG6-aL-fhn" firstAttribute="trailing" secondItem="gEd-IY-5V0" secondAttribute="trailing" id="yTf-mm-69w"/>
                                             <constraint firstItem="OMi-s4-jYS" firstAttribute="trailing" secondItem="OVj-bz-zEj" secondAttribute="trailing" id="ybf-VE-A3i"/>
                                             <constraint firstItem="OVj-bz-zEj" firstAttribute="top" secondItem="3Mu-2t-kMP" secondAttribute="bottom" constant="16" id="yfO-N0-iK2"/>
                                             <constraint firstItem="OMi-s4-jYS" firstAttribute="leading" secondItem="L8q-yc-Mko" secondAttribute="leading" id="zW7-Jj-3MA"/>
+                                            <constraint firstItem="ubz-lO-gWq" firstAttribute="trailing" secondItem="B3h-3F-eXk" secondAttribute="trailing" id="zzN-It-Xml"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnb-BJ-S67">
@@ -691,7 +685,7 @@
                         <outlet property="MaxMemberNum" destination="zgL-hs-BTb" id="LxP-3A-EEs"/>
                         <outlet property="SecondMood" destination="AUq-MS-q5p" id="VST-6c-m3I"/>
                         <outlet property="ThirdMood" destination="Bfu-rd-t6L" id="kC4-fj-pST"/>
-                        <outlet property="endDate" destination="IXw-qx-jEc" id="C6I-kH-rqz"/>
+                        <outlet property="endDateTextField" destination="QOe-y4-Dyk" id="TgF-hD-lro"/>
                         <outlet property="firstMood" destination="OMi-s4-jYS" id="1pU-9S-Sr0"/>
                         <outlet property="firstMoodCheckBox" destination="nyx-Dp-3xN" id="SgF-t7-Nlu"/>
                         <outlet property="memberCountDown" destination="EWe-zs-IxK" id="iwi-7W-Rng"/>
@@ -706,7 +700,7 @@
                         <outlet property="scrollView" destination="HG4-ZV-oeL" id="RBE-wH-gOZ"/>
                         <outlet property="secondMood" destination="AUq-MS-q5p" id="qTF-lz-yVr"/>
                         <outlet property="secondMoodCheckBox" destination="Scb-mM-l0e" id="8P9-gD-n5Q"/>
-                        <outlet property="startDate" destination="rMw-Ez-e2b" id="cli-BA-jPf"/>
+                        <outlet property="startDateTextField" destination="oAi-Zx-wvi" id="wSK-5q-NDZ"/>
                         <outlet property="studyTitle" destination="OVj-bz-zEj" id="0wd-OA-ZNl"/>
                         <outlet property="thirdMood" destination="Bfu-rd-t6L" id="p7R-f5-h25"/>
                         <outlet property="thirdMoodCheckBox" destination="uQK-m4-4ej" id="Gdj-im-GzB"/>
@@ -1475,7 +1469,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="createStudy_category1" width="87" height="85.666664123535156"/>
         <image name="createStudy_category2" width="87" height="84"/>
         <image name="createStudy_category3" width="87" height="86"/>
@@ -1512,9 +1505,6 @@
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -1523,9 +1513,6 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
