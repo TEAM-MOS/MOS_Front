@@ -49,7 +49,7 @@ class StudyTypeViewController: UIViewController {
         button.isSelected = true
         selectedButtons.append(button)
         selectedButtonText.append(button.title(for: .normal) ?? "")
-        button.backgroundColor = UIColor(named: "category-5")
+        button.backgroundColor = UIColor(hex: "F9F9F9")
         button.layer.cornerRadius = 8
     }
     
