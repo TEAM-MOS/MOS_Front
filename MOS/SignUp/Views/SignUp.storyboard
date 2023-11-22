@@ -700,7 +700,7 @@
                                     <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="EzT-kN-Vqb" kind="push" id="spK-xl-5b8"/>
+                                    <segue destination="EzT-kN-Vqb" kind="push" animates="NO" id="spK-xl-5b8"/>
                                 </connections>
                             </button>
                         </subviews>

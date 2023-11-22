@@ -104,7 +104,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
         // 텍스트 데이터를 포함한 화면 전달
         guard let searchResultVC = storyboard?.instantiateViewController(withIdentifier: "SearchResultVC") as? SearchResultViewController else { return }
         searchResultVC.search_text = searchBar.text
-        navigationController?.pushViewController(searchResultVC, animated: true)
+        navigationController?.pushViewController(searchResultVC, animated: false)
 
         let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil) // title 부분 수정
         backBarButtonItem.tintColor = .black
@@ -192,7 +192,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate,  UICollection
         // 카카오 버튼 클릭
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SearchResultVC") as? SearchResultViewController else { return }
         nextVC.search_text = "카카오"
-        navigationController?.pushViewController(nextVC, animated: true)
+        navigationController?.pushViewController(nextVC, animated: false)
         
         
         

@@ -52,7 +52,7 @@ class LoginViewController: UIViewController {
     @IBAction func signUpButtonDidTapped(_ sender: Any) {
         let SignUpView = UIStoryboard(name: "SignUp", bundle: nil)
         guard let SignUpVC = SignUpView.instantiateViewController(withIdentifier: "SignUpVC") as? SignUpViewController else { return }
-        navigationController?.pushViewController(SignUpVC, animated: true)
+        navigationController?.pushViewController(SignUpVC, animated: false)
     }
     
     
@@ -66,7 +66,7 @@ class LoginViewController: UIViewController {
         
         let profileView = UIStoryboard(name: "SignUp", bundle: nil)
         guard let profileVC = profileView.instantiateViewController(withIdentifier: "setProfileVC") as? SetProfileViewController else { return }
-        navigationController?.pushViewController(profileVC, animated: true)
+        navigationController?.pushViewController(profileVC, animated: false)
     }
 }
  

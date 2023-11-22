@@ -63,7 +63,7 @@ class StudyTypeViewController: UIViewController {
     }
     
     @IBAction func completeButtonDidTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: false, completion: nil)
         print(selectedButtonText)
         
         
