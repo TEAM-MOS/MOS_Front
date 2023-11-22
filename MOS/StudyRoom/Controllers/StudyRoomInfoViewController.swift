@@ -27,6 +27,7 @@ class StudyRoomInfoViewController: UIViewController {
     @IBOutlet weak var studyGoalView: UIView!
     @IBOutlet weak var studyRuleVIew: UIView!
     
+    @IBOutlet weak var saturdayView: UIButton!
     
     
  
@@ -77,6 +78,8 @@ class StudyRoomInfoViewController: UIViewController {
         studyRuleVIew.layer.cornerRadius = 8
         studyRuleVIew.layer.borderWidth = 1
         studyRuleVIew.layer.borderColor = UIColor(hex: "FFE5DE").cgColor
+        
+        saturdayView.layer.cornerRadius = 4
         
         creatorUserImage.layer.cornerRadius = creatorUserImage.bounds.width / 2
     }

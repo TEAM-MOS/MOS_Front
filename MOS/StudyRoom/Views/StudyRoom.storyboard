@@ -880,7 +880,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="토">
                                                             <backgroundConfiguration key="background" cornerRadius="8">
-                                                                <color key="strokeColor" name="inactive_button_bg"/>
+                                                                <color key="strokeColor" name="mainColor"/>
                                                             </backgroundConfiguration>
                                                         </buttonConfiguration>
                                                         <connections>
@@ -983,6 +983,7 @@
                         <outlet property="creatorNickname" destination="gz9-YS-DMZ" id="0pv-wK-Teg"/>
                         <outlet property="creatorUserImage" destination="lmp-dI-7Tt" id="pMJ-sh-Fpa"/>
                         <outlet property="onOffCalsuleView" destination="jo9-9r-Tzz" id="x8V-bQ-JHQ"/>
+                        <outlet property="saturdayView" destination="gIq-jp-ZfY" id="1V8-iC-cyE"/>
                         <outlet property="studyDateLabel" destination="ZJN-wq-BzD" id="edy-5p-mdg"/>
                         <outlet property="studyDateView" destination="vkY-wZ-tFC" id="J7P-cj-2zB"/>
                         <outlet property="studyGoalLabel" destination="mz8-Tb-P7n" id="kb6-Mt-CxS"/>
@@ -1024,6 +1025,9 @@
         </namedColor>
         <namedColor name="main-2">
             <color red="1" green="0.95294117647058818" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainColor">
+            <color red="1" green="0.32899999618530273" blue="0.32899999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="subColor">
             <color red="1" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
