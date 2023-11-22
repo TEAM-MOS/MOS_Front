@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -665,39 +665,40 @@
                                             <action selector="yesButtonTapped:" destination="bwd-rx-wpB" eventType="touchUpInside" id="DOc-4s-gl4"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4T-OY-iY9">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2K-V3-6Pi">
                                         <rect key="frame" x="229" y="132" width="124" height="48"/>
-                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="취소">
                                                     <attributes>
-                                                        <font key="NSFont" size="16" name="Pretendard-Bold"/>
+                                                        <font key="NSFont" size="15" name="Pretendard-Bold"/>
+                                                        <font key="NSOriginalFont" metaFont="system" size="15"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
-                                        </buttonConfiguration>
+                                        </state>
                                         <connections>
-                                            <action selector="noButtonTapped:" destination="bwd-rx-wpB" eventType="touchUpInside" id="Ayy-j2-ATw"/>
+                                            <action selector="noButtonTapped:" destination="bwd-rx-wpB" eventType="touchUpInside" id="dYg-Uv-hgd"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="F7g-bW-WzM" firstAttribute="centerX" secondItem="GFS-3k-kUI" secondAttribute="centerX" id="1JH-pN-MhU"/>
-                                    <constraint firstItem="e4T-OY-iY9" firstAttribute="top" secondItem="rD3-hd-vUc" secondAttribute="top" id="49L-bd-V5H"/>
-                                    <constraint firstAttribute="trailing" secondItem="e4T-OY-iY9" secondAttribute="trailing" id="CZA-Ya-ueK"/>
-                                    <constraint firstItem="e4T-OY-iY9" firstAttribute="leading" secondItem="rD3-hd-vUc" secondAttribute="trailing" id="OSb-SL-gjn"/>
+                                    <constraint firstItem="a2K-V3-6Pi" firstAttribute="leading" secondItem="rD3-hd-vUc" secondAttribute="trailing" id="P7J-Gb-jNZ"/>
                                     <constraint firstAttribute="height" constant="180" id="VcR-0a-LKR"/>
+                                    <constraint firstItem="a2K-V3-6Pi" firstAttribute="bottom" secondItem="rD3-hd-vUc" secondAttribute="bottom" id="Ybh-eH-oFp"/>
                                     <constraint firstItem="qmO-Ll-9Z9" firstAttribute="centerX" secondItem="GFS-3k-kUI" secondAttribute="centerX" id="ZlB-pz-rad"/>
                                     <constraint firstItem="F7g-bW-WzM" firstAttribute="top" secondItem="GFS-3k-kUI" secondAttribute="top" constant="48" id="bcv-e2-IU6"/>
                                     <constraint firstAttribute="bottom" secondItem="rD3-hd-vUc" secondAttribute="bottom" id="coB-sT-90n"/>
                                     <constraint firstItem="qmO-Ll-9Z9" firstAttribute="top" secondItem="F7g-bW-WzM" secondAttribute="bottom" constant="6" id="qzF-0W-uXr"/>
+                                    <constraint firstItem="a2K-V3-6Pi" firstAttribute="top" secondItem="rD3-hd-vUc" secondAttribute="top" id="toT-EC-uTK"/>
+                                    <constraint firstAttribute="trailing" secondItem="a2K-V3-6Pi" secondAttribute="trailing" id="uja-vR-a40"/>
                                     <constraint firstItem="rD3-hd-vUc" firstAttribute="leading" secondItem="GFS-3k-kUI" secondAttribute="leading" id="vHV-1C-2aK"/>
-                                    <constraint firstItem="e4T-OY-iY9" firstAttribute="bottom" secondItem="rD3-hd-vUc" secondAttribute="bottom" id="zLX-2G-kxh"/>
-                                    <constraint firstAttribute="bottom" secondItem="e4T-OY-iY9" secondAttribute="bottom" id="zfH-dv-L53"/>
                                     <constraint firstItem="rD3-hd-vUc" firstAttribute="width" secondItem="GFS-3k-kUI" secondAttribute="height" multiplier="15:38" constant="158" id="zou-zW-yss"/>
                                 </constraints>
                             </view>
@@ -712,7 +713,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="noBtn" destination="e4T-OY-iY9" id="P03-vY-cY7"/>
+                        <outlet property="noBtn" destination="a2K-V3-6Pi" id="2gF-kg-g5M"/>
                         <outlet property="popUpView" destination="GFS-3k-kUI" id="rVu-pB-sE9"/>
                         <outlet property="yesBtn" destination="rD3-hd-vUc" id="Hgs-be-sip"/>
                     </connections>
@@ -755,7 +756,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="팀프로젝트를 진핼할 때 본인은 보통 어떤 역할을 맡아서 수행했나요? (200자 이내)" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i2-oB-y3p">
                                 <rect key="frame" x="24" y="321.33333333333331" width="345" height="43"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTe-xy-oTw">
@@ -1189,7 +1190,7 @@
             <color red="1" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1200,8 +1201,8 @@
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
