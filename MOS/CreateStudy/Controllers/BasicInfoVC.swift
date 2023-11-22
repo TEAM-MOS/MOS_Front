@@ -28,8 +28,9 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var memberCountUp: UIButton!
     @IBOutlet weak var memberCountDown: UIButton!
     
-    @IBOutlet weak var startDate: UIButton!
-    @IBOutlet weak var endDate: UIButton!
+    @IBOutlet weak var startDateTextField: UITextField!
+    @IBOutlet weak var endDateTextField: UITextField!
+
     // 스터디명 저장 변수
     @IBOutlet weak var placeSegment: UISegmentedControl!
     @IBOutlet weak var placeTextField: UITextField!
@@ -56,6 +57,9 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
     // 온라인일 경우 플랫폼 저장 변수
     var onlinePlatform: Int?
     
+    let startDatePicker = UIDatePicker()
+    let endDatePicker = UIDatePicker()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,12 +79,8 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
             // 여기에 선택한 카테고리와 관련된 작업을 수행
         }
         
-        startDate.layer.cornerRadius = 8
-        startDate.layer.borderColor = UIColor(hex: "E8E8E8").cgColor
-        startDate.layer.borderWidth = 1
-        endDate.layer.cornerRadius = 8
-        endDate.layer.borderColor = UIColor(hex: "E8E8E8").cgColor
-        endDate.layer.borderWidth = 1
+        setupDatePicker(datePicker: startDatePicker, textField: startDateTextField, placeholder: "시작 날짜")
+        setupDatePicker(datePicker: endDatePicker, textField: endDateTextField, placeholder: "종료 날짜", minimumDate: startDatePicker.date)
         
         // 추구하는 스터디 분위기 버튼 스타일 설정
         setupView(firstMood, with: firstMoodCheckBox)
@@ -128,57 +128,37 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
             onlineBtns.isHidden = true
         }
     }
+
     
-    
-    @IBAction func startDateButton(_ sender: UIButton) {
-        let minDate = DatePickerHelper.shared.dateFrom(day: 18, month: 08, year: 1990)!
-        let maxDate = DatePickerHelper.shared.dateFrom(day: 18, month: 08, year: 2030)!
-        let today = Date()
-        // Create picker object
-        let datePicker = DatePicker()
-        // Setup
-        datePicker.setup(beginWith: today, min: minDate, max: maxDate) { (selected, date) in
-            if selected, let selectedDate = date {
-                let toPostDateFormatter = DateFormatter()
-                toPostDateFormatter.dateFormat = "yyyy-MM-dd"
-                let toPostDate = toPostDateFormatter.string(from: selectedDate)
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "  yyyy년 MM월 dd일 부터"
-                let selectedDateString = dateFormatter.string(from: selectedDate)
-                self.startDate.setTitle(selectedDateString, for: .normal)
-                self.postStartDate = toPostDate
-            } else {
-                print("Cancelled")
-            }
-        }
-        // Display
-        datePicker.show(in: self, on: sender)
+    func setupDatePicker(datePicker: UIDatePicker, textField: UITextField, placeholder: String, minimumDate: Date? = nil) {
+        datePicker.datePickerMode = .date
+        datePicker.preferredDatePickerStyle = .inline
+        datePicker.locale = Locale(identifier: "ko-KR")
+        datePicker.addTarget(self, action: #selector(dateChange), for: .valueChanged)
+        datePicker.minimumDate = minimumDate
+        textField.inputView = datePicker
+        textField.placeholder = placeholder
+        
+        textField.layer.cornerRadius = 8
     }
     
-    @IBAction func endDateButton(_ sender: UIButton) {
-        let minDate = DatePickerHelper.shared.dateFrom(day: 18, month: 08, year: 1990)!
-        let maxDate = DatePickerHelper.shared.dateFrom(day: 18, month: 08, year: 2030)!
-        let today = Date()
-        // Create picker object
-        let datePicker = DatePicker()
-        // Setup
-        datePicker.setup(beginWith: today, min: minDate, max: maxDate) { (selected, date) in
-            if selected, let selectedDate = date {
-                let toPostDateFormatter = DateFormatter()
-                toPostDateFormatter.dateFormat = "yyyy-MM-dd"
-                let toPostDate = toPostDateFormatter.string(from: selectedDate)
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "  yyyy년 MM월 dd일 까지"
-                let selectedDateString = dateFormatter.string(from: selectedDate)
-                self.endDate.setTitle(selectedDateString, for: .normal)
-                self.postEndDate = toPostDate
-            } else {
-                print("Cancelled")
+    @objc func dateChange(_ sender: UIDatePicker) {
+            // sender를 통해 어떤 datePicker에서 이벤트가 발생했는지 구분
+            if sender == startDatePicker {
+                startDateTextField.text = dateFormat(date: sender.date)
+                        endDatePicker.minimumDate = sender.date
+            } else if sender == endDatePicker {
+                endDateTextField.text = dateFormat(date: sender.date)
             }
         }
-        // Display
-        datePicker.show(in: self, on: sender)
+    
+    private func dateFormat(date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy / MM / dd"
+        
+        return formatter.string(from: date)
     }
+    
     
     func setupView(_ view: UIView, with checkBox: UIImageView) {
         view.layer.borderWidth = 1
@@ -316,8 +296,8 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
             detailInfoVC.selectedCategory = selectedCategory
             detailInfoVC.studyTitleText = studyTitle.text
             detailInfoVC.studyMood = studyMood
-            detailInfoVC.postStartDate = postStartDate
-            detailInfoVC.postEndDate = postEndDate
+            detailInfoVC.postStartDate = startDateTextField.text
+            detailInfoVC.postEndDate = endDateTextField.text
             detailInfoVC.maxMember = maxMemberCount
             detailInfoVC.isOnline = isOnline
             detailInfoVC.place = placeTextField.text
