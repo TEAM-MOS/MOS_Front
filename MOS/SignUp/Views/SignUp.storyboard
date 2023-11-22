@@ -312,13 +312,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="OJ1-7g-SMd"/>
                                 </constraints>
-                                <color key="tintColor" name="gray-2"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="완료하기" cornerStyle="fixed">
                                     <backgroundConfiguration key="background" cornerRadius="8">
-                                        <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="main"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
+                                    <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="finishButtonDidTapped:" destination="iIJ-bw-o0D" eventType="touchUpInside" id="zQA-IA-SfD"/>
@@ -387,10 +387,21 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="Mhy-cX-hTe"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Kac-aL-VxF"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajY-UG-Jpa">
+                                <rect key="frame" x="138" y="89" width="116" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="WRD-9p-wkN"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="UploadImageButton:" destination="iIJ-bw-o0D" eventType="touchUpInside" id="xaD-gi-SOb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iCZ-g1-DZX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ajY-UG-Jpa" firstAttribute="top" secondItem="iCZ-g1-DZX" secondAttribute="top" constant="30" id="1NN-uQ-3Se"/>
                             <constraint firstItem="2LQ-mj-YU5" firstAttribute="leading" secondItem="iCZ-g1-DZX" secondAttribute="leading" constant="24" id="3Vy-R8-5MI"/>
                             <constraint firstItem="WNf-em-ROg" firstAttribute="leading" secondItem="iCZ-g1-DZX" secondAttribute="leading" constant="24" id="4bv-FB-Vd7"/>
                             <constraint firstItem="WNf-em-ROg" firstAttribute="centerX" secondItem="UJm-b9-h2c" secondAttribute="centerX" id="5py-T8-u9i"/>
@@ -401,7 +412,9 @@
                             <constraint firstItem="Y6x-Ln-u2E" firstAttribute="leading" secondItem="iCZ-g1-DZX" secondAttribute="leading" constant="24" id="GHp-Ec-bed"/>
                             <constraint firstItem="wEX-AC-WAs" firstAttribute="centerX" secondItem="UJm-b9-h2c" secondAttribute="centerX" id="J8N-tU-WLJ"/>
                             <constraint firstItem="wEX-AC-WAs" firstAttribute="leading" secondItem="iCZ-g1-DZX" secondAttribute="leading" constant="24" id="J99-ab-Sb3"/>
+                            <constraint firstItem="ajY-UG-Jpa" firstAttribute="leading" secondItem="iCZ-g1-DZX" secondAttribute="leading" constant="138" id="LZv-qE-JFY"/>
                             <constraint firstItem="LeD-XL-127" firstAttribute="leading" secondItem="iCZ-g1-DZX" secondAttribute="leading" constant="24" id="Odr-SA-eql"/>
+                            <constraint firstItem="iCZ-g1-DZX" firstAttribute="trailing" secondItem="ajY-UG-Jpa" secondAttribute="trailing" constant="139" id="PIO-25-q1c"/>
                             <constraint firstItem="2LQ-mj-YU5" firstAttribute="top" secondItem="QJr-D3-CY1" secondAttribute="bottom" constant="40" id="SsW-bs-v3s"/>
                             <constraint firstItem="9Ea-Rc-sSu" firstAttribute="leading" secondItem="iCZ-g1-DZX" secondAttribute="leading" constant="24" id="TWm-4S-n4p"/>
                             <constraint firstItem="iCZ-g1-DZX" firstAttribute="trailing" secondItem="QJr-D3-CY1" secondAttribute="trailing" constant="24" id="YlX-l5-MrH"/>
@@ -429,6 +442,7 @@
                         <outlet property="selectStudyTypeButton" destination="8Fe-97-5to" id="kmT-99-iGL"/>
                         <outlet property="selectStudyTypeButton2" destination="OJX-yN-Xx0" id="B83-73-RzG"/>
                         <outlet property="startDateTextField" destination="Tcx-HG-sAI" id="vdJ-lf-P5C"/>
+                        <outlet property="userProfileImage" destination="dCV-VR-8Wl" id="CSp-gq-h46"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LA1-Fi-jyS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -716,7 +730,7 @@
         <image name="basic_profileImg" width="200" height="200"/>
         <image name="camera" width="64" height="64"/>
         <image name="checkmark.circle" catalog="system" width="128" height="123"/>
-        <image name="register_colplete" width="96" height="99"/>
+        <image name="register_colplete" width="192" height="199"/>
         <namedColor name="gray-1">
             <color white="0.84705883264541626" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </namedColor>

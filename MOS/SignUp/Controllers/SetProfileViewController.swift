@@ -7,7 +7,21 @@
 
 import UIKit
 
-class SetProfileViewController: UIViewController, SendUpdateDelegate {
+class SetProfileViewController: UIViewController, SendUpdateDelegate, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+       
+    
+    @IBOutlet weak var userProfileImage: UIImageView!
+    @IBOutlet weak var nicknameTextField: UITextField!
+    @IBOutlet weak var goalTextField: UITextField!
+    @IBOutlet weak var startDateTextField: UITextField!
+    @IBOutlet weak var endDateTextField: UITextField!
+    @IBOutlet weak var selectStudyTypeButton: UIButton!
+    @IBOutlet weak var selectStudyTypeButton2: UIButton!
+    
+    let imagePickerController = UIImagePickerController()
+    let startDatePicker = UIDatePicker()
+    let endDatePicker = UIDatePicker()
+    
     
     func sendUpdate(studyType: [String]) {
         
@@ -23,21 +37,6 @@ class SetProfileViewController: UIViewController, SendUpdateDelegate {
         }
     }
     
-    
-    
-    @IBOutlet weak var nicknameTextField: UITextField!
-    @IBOutlet weak var goalTextField: UITextField!
-    @IBOutlet weak var startDateTextField: UITextField!
-    @IBOutlet weak var endDateTextField: UITextField!
-    @IBOutlet weak var selectStudyTypeButton: UIButton!
-    @IBOutlet weak var selectStudyTypeButton2: UIButton!
-    
-    
-    
-    
-    let startDatePicker = UIDatePicker()
-    let endDatePicker = UIDatePicker()
-    
     func setupDatePicker(datePicker: UIDatePicker, textField: UITextField, placeholder: String, minimumDate: Date? = nil) {
         datePicker.datePickerMode = .date
         datePicker.preferredDatePickerStyle = .inline
@@ -49,6 +48,8 @@ class SetProfileViewController: UIViewController, SendUpdateDelegate {
         
         textField.layer.cornerRadius = 8
     }
+    
+    
     
     @objc func dateChange(_ sender: UIDatePicker) {
         startDateTextField.text = dateFormat(date: sender.date)
@@ -66,6 +67,8 @@ class SetProfileViewController: UIViewController, SendUpdateDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        hideKeyboard()
+        
         self.navigationController?.navigationBar.isHidden = true
         
         startDateTextField.isUserInteractionEnabled = true
@@ -81,7 +84,13 @@ class SetProfileViewController: UIViewController, SendUpdateDelegate {
         
         setupToolBar()
         
-        dismissKeyboard()
+       
+        
+        userProfileImage.layer.cornerRadius = self.userProfileImage.frame.size.height / 2
+        userProfileImage.layer.masksToBounds = true
+        userProfileImage.clipsToBounds = true
+        
+        self.imagePickerController.delegate = self
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -118,7 +127,7 @@ class SetProfileViewController: UIViewController, SendUpdateDelegate {
         goalTextField.leftViewMode = .always
     }
     
-    func dismisskeyboard() {
+    func hideKeyboard() {
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(tapGesture)
@@ -177,5 +186,21 @@ class SetProfileViewController: UIViewController, SendUpdateDelegate {
             guard let CompleteVC = storyboard?.instantiateViewController(withIdentifier: "CompleteSignUp") as? CompleteSignUpViewController else { return }
             navigationController?.pushViewController(CompleteVC, animated: false)
         }
+    }
+    
+    @IBAction func UploadImageButton(_ sender: Any) {
+        self.imagePickerController.delegate = self
+               self.imagePickerController.sourceType = .photoLibrary
+               present(self.imagePickerController, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            userProfileImage?.image = image
+            userProfileImage.contentMode = .scaleAspectFill
+            }
+        
+        
+        picker.dismiss(animated: true, completion: nil) //dismiss를 직접 해야함
     }
 }
