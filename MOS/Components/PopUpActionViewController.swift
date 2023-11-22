@@ -39,11 +39,11 @@ class PopUpActionViewController: UIViewController {
     //MARK: - outlet functions for the viewController
     @IBAction func allowButtonDidTapped(_ sender: Any) {
         self.delegate?.handleAction(action: true)
-        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: false, completion: nil)
     }
     
     @IBAction func cancelButtonDidTapped(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: false, completion: nil)
     }
     
     
@@ -69,7 +69,7 @@ class PopUpActionViewController: UIViewController {
             //setting the delegate of the dialog box to the parent viewController
             popupViewController.delegate = parentVC as? PopUpDelegate
             //presenting the pop up viewController from the parent viewController
-            parentVC.present(popupViewController, animated: true)
+            parentVC.present(popupViewController, animated: false)
         }
     }
 }

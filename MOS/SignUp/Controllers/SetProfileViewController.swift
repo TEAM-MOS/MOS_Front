@@ -191,7 +191,7 @@ class SetProfileViewController: UIViewController, SendUpdateDelegate, UIImagePic
     @IBAction func UploadImageButton(_ sender: Any) {
         self.imagePickerController.delegate = self
                self.imagePickerController.sourceType = .photoLibrary
-               present(self.imagePickerController, animated: true, completion: nil)
+               present(self.imagePickerController, animated: false, completion: nil)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -201,6 +201,6 @@ class SetProfileViewController: UIViewController, SendUpdateDelegate, UIImagePic
             }
         
         
-        picker.dismiss(animated: true, completion: nil) //dismiss를 직접 해야함
+        picker.dismiss(animated: false, completion: nil) //dismiss를 직접 해야함
     }
 }

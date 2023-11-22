@@ -27,6 +27,7 @@ class StudyDetailViewController: UIViewController {
         setDynamicHeight()
         registerBtn.layer.cornerRadius = 8
         
+        self.navigationController?.navigationBar.isHidden = true
 
         // 네비게이션 바 수정
         let backButton = UIBarButtonItem()
