@@ -45,7 +45,7 @@ class StudyRoomInfoViewController: UIViewController {
         creatorNickname.text = "내가먼저취뽀"
         studyDateLabel.text = "04.15~05.15"
         studyMemNumLabel.text = "6명"
-        studyRuleLabel.text = "studyDateView.layer.borderColor = UIColor(named: inactive_button_bg)?.cgColorstudyDateView.layer.cornerRadius = 8studyDateView.layer.borderWidth = 1"
+        studyRuleLabel.text = "⚠️ 지각비 안내 미리 얘기하지 않고 지각할 경우 5분 당 500원씩 벌금을 걷고, 스터디 마지막날 팀원들끼리 나눠갖는 것으로 하겠습니다. 시간 꼭 잘 지켜주세요! 💔 가입 전 주의사항 조기취업한 경우 제외하고 무단 이탈, 지각, 결석은 안 돼요! 가입 시 신중하게 고려해주세요. 스터디 진행 전 과제 준비는 필수입니다! 지각과 마찬가지로 금액을 정해서 벌금을 걷겠습니다~"
         
     }
     
