@@ -28,6 +28,7 @@ class SignInPost {
                     handler(jsonResult)
                     if let userData = jsonResult.result {
                         KeyChain.create(account: "MosAccessToken", token: userData.jwt)
+                        print("로그인 성공"+userData.jwt)
                     }
                 }catch {
                     print(String(describing:error))

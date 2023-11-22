@@ -131,15 +131,28 @@ class BasicInfoVC: UIViewController,UITextFieldDelegate{
 
     
     func setupDatePicker(datePicker: UIDatePicker, textField: UITextField, placeholder: String, minimumDate: Date? = nil) {
-        datePicker.datePickerMode = .date
-        datePicker.preferredDatePickerStyle = .inline
-        datePicker.locale = Locale(identifier: "ko-KR")
-        datePicker.addTarget(self, action: #selector(dateChange), for: .valueChanged)
-        datePicker.minimumDate = minimumDate
-        textField.inputView = datePicker
-        textField.placeholder = placeholder
-        
-        textField.layer.cornerRadius = 8
+           datePicker.datePickerMode = .date
+           datePicker.preferredDatePickerStyle = .inline
+           datePicker.locale = Locale(identifier: "ko-KR")
+           datePicker.addTarget(self, action: #selector(dateChange), for: .valueChanged)
+           datePicker.minimumDate = minimumDate
+
+           // Done 버튼이 있는 툴바 추가
+           let toolbar = UIToolbar()
+           toolbar.sizeToFit()
+
+           let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(doneButtonTapped))
+           toolbar.setItems([doneButton], animated: true)
+
+           textField.inputView = datePicker
+           textField.inputAccessoryView = toolbar
+           textField.placeholder = placeholder
+
+           textField.layer.cornerRadius = 8
+       }
+
+    @objc func doneButtonTapped() {
+           view.endEditing(true)
     }
     
     @objc func dateChange(_ sender: UIDatePicker) {
