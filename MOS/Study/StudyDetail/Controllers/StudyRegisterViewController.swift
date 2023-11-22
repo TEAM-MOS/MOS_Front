@@ -18,9 +18,7 @@ class StudyRegisterViewController: UIViewController {
         
         nextBtn.layer.cornerRadius = 8
         textView.delegate = self
-        textView.layer.borderWidth = 1
-        textView.layer.borderColor = UIColor.lightGray.cgColor
-        textView.layer.cornerRadius = 16
+        textView.layer.cornerRadius = 8
         placeholderLabel = UILabel()
         placeholderLabel.text = "내용을 입력해주세요"
         placeholderLabel.font = .italicSystemFont(ofSize: (textView.font?.pointSize)!)
