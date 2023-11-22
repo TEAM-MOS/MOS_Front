@@ -11,8 +11,21 @@ class TodoRankViewController: UIViewController {
     
     @IBOutlet weak var topRankUserLabel: UILabel!
     @IBOutlet weak var progressBarView: UIProgressView!
-    @IBOutlet weak var progressBackgroundView: UIView!
-    @IBOutlet weak var progressLabel: UILabel!
+    @IBOutlet weak var progressBarView2: UIProgressView!
+    @IBOutlet weak var progressBarView3: UIProgressView!
+    @IBOutlet weak var progressBarView4: UIProgressView!
+    @IBOutlet weak var progressBarView5: UIProgressView!
+    @IBOutlet weak var progressBarView6: UIProgressView!
+    
+    @IBOutlet weak var userImage1: UIImageView!
+    
+    
+    @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var userImage2: UIImageView!
+    @IBOutlet weak var userImage3: UIImageView!
+    @IBOutlet weak var userImage4: UIImageView!
+    @IBOutlet weak var userImage5: UIImageView!
+    @IBOutlet weak var userImage6: UIImageView!
     
     
     
@@ -20,7 +33,18 @@ class TodoRankViewController: UIViewController {
         super.viewDidLoad()
         
         attributedString()
-        setProgressViewUI()
+        setProgressViewUI(progressBarView)
+        setProgressViewUI(progressBarView2)
+        setProgressViewUI(progressBarView3)
+        setProgressViewUI(progressBarView4)
+        setProgressViewUI(progressBarView5)
+        setProgressViewUI(progressBarView6)
+        setUserImage(userImage)
+        setUserImage(userImage2)
+        setUserImage(userImage3)
+        setUserImage(userImage4)
+        setUserImage(userImage5)
+        setUserImage(userImage6)
         
         self.navigationController?.navigationBar.topItem?.title = "산업&기업 분석"
         let backButton = UIBarButtonItem()
@@ -50,19 +74,20 @@ class TodoRankViewController: UIViewController {
         self.topRankUserLabel.attributedText = attributeString
     }
     
-    func setProgressViewUI() {
-        progressBarView.progressViewStyle = .default
-        progressBarView.progressTintColor = UIColor(named: "main")
-        progressBarView.trackTintColor = UIColor(named: "gray-1")
-        progressBarView.clipsToBounds = true
-        progressBarView.layer.cornerRadius = 8
-        progressBarView.clipsToBounds = true
-        progressBarView.layer.sublayers![1].cornerRadius = 8// 뒤에 있는 회색 track
-        progressBarView.subviews[1].clipsToBounds = true
-        progressBackgroundView.layer.cornerRadius = 8
-        progressBackgroundView.backgroundColor = UIColor(named: "light-gray")
-        progressBackgroundView.layer.borderWidth = 1
-        progressBackgroundView.layer.borderColor = UIColor.systemGray5.cgColor
-        progressLabel.font = UIFont(name: "Pretendard-Bold", size: 16)
+    func setProgressViewUI(_ sender: UIProgressView) {
+        sender.progressViewStyle = .default
+        sender.progressTintColor = UIColor(named: "main")
+        sender.trackTintColor = UIColor(named: "gray-1")
+        sender.clipsToBounds = true
+        sender.layer.cornerRadius = 5
+        sender.clipsToBounds = true
+        sender.layer.sublayers![1].cornerRadius = 5// 뒤에 있는 회색 track
+        sender.subviews[1].clipsToBounds = true
+    }
+    
+    func setUserImage(_ sender: UIImageView) {
+        sender.layer.borderWidth = 1
+        sender.clipsToBounds = true
+        sender.layer.borderColor = UIColor.clear.cgColor
     }
 }
