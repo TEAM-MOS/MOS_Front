@@ -13,15 +13,5 @@ class CompleteSignUpViewController: UIViewController {
         super.viewDidLoad()
 
     }
-    
-    @IBAction func goToLoginVC(_ sender: Any) {
-        if let viewControllers = navigationController?.viewControllers {
-            for viewController in viewControllers {
-                if viewController is LoginViewController {
-                    navigationController?.popToViewController(viewController, animated: true)
-                    break
-                }
-            }
-        }
-    }
+
 }

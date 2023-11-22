@@ -64,9 +64,9 @@ class LoginViewController: UIViewController {
         let accessToken = KeyChain.read(account: "MosAccessToken")
         print("AccessToken read successfully \(accessToken)")
         
-        let TabMenuView = UIStoryboard(name: "TabMenu", bundle: nil)
-        guard let TabMenuVC = TabMenuView.instantiateViewController(withIdentifier: "TabMenu") as? TabMenuViewController else { return }
-        navigationController?.pushViewController(TabMenuVC, animated: true)
+        let profileView = UIStoryboard(name: "SignUp", bundle: nil)
+        guard let profileVC = profileView.instantiateViewController(withIdentifier: "setProfileVC") as? SetProfileViewController else { return }
+        navigationController?.pushViewController(profileVC, animated: true)
     }
 }
  
