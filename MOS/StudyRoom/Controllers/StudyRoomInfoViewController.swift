@@ -24,7 +24,9 @@ class StudyRoomInfoViewController: UIViewController {
     @IBOutlet weak var studyGoalLabel: UILabel!
     @IBOutlet weak var studyRuleLabel: UILabel!
     
-
+    @IBOutlet weak var studyGoalView: UIView!
+    @IBOutlet weak var studyRuleVIew: UIView!
+    
     
     
  
@@ -67,5 +69,15 @@ class StudyRoomInfoViewController: UIViewController {
         textView.layer.borderWidth = 1
         textView.layer.cornerRadius = 8
         textView.layer.borderColor = UIColor(named: "subColor")?.cgColor
+        
+        studyGoalView.layer.cornerRadius = 8
+        studyGoalView.layer.borderWidth = 1
+        studyGoalView.layer.borderColor = UIColor(hex: "FFE5DE").cgColor
+        
+        studyRuleVIew.layer.cornerRadius = 8
+        studyRuleVIew.layer.borderWidth = 1
+        studyRuleVIew.layer.borderColor = UIColor(hex: "FFE5DE").cgColor
+        
+        creatorUserImage.layer.cornerRadius = creatorUserImage.bounds.width / 2
     }
 }

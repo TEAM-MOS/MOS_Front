@@ -64,8 +64,8 @@ class StudyRoomTodoViewController: UIViewController {
         let vc = storyboard.instantiateViewController(withIdentifier: "todoRankVC")
         
         
-        
-        self.navigationController!.pushViewController(vc, animated: true)
+        vc.hidesBottomBarWhenPushed = true
+        self.navigationController!.pushViewController(vc, animated: false)
         
     }
     
