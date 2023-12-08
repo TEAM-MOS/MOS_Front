@@ -50,6 +50,14 @@ class AllViewController: UIViewController, UICollectionViewDataSource, UICollect
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        _ = StudyList.listAnalysis[indexPath.item]
+        
+        if let studyDetailVC = UIStoryboard(name: "Study", bundle: nil).instantiateViewController(withIdentifier: "studyDetailVC") as? StudyDetailViewController {
+                self.navigationController?.pushViewController(studyDetailVC, animated: false)
+            }
+    }
+    
     
     
     /*

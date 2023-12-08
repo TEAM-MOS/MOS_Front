@@ -30,6 +30,12 @@ class HomeViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         showMoreStudies.addGestureRecognizer(tapGesture)
         
+        let tapStudy1 = UITapGestureRecognizer(target: self, action: #selector(recruitingStudyTapped))
+        recruitingStudy1.addGestureRecognizer(tapStudy1)
+        
+        let tapStudy2 = UITapGestureRecognizer(target: self, action: #selector(recruitingStudyTapped))
+        recruitingStudy2.addGestureRecognizer(tapStudy2)
+        
         applyShadow()
         fetchRecruitingStudies()
     }
@@ -40,6 +46,13 @@ class HomeViewController: UIViewController {
             // Fetch recruiting studies when the view is about to appear
             fetchRecruitingStudies()
         }
+    
+    @objc func recruitingStudyTapped() {
+        // StudyDetailViewController로 이동하는 segue 수행
+        if let studyDetailVC = UIStoryboard(name: "Study", bundle: nil).instantiateViewController(withIdentifier: "studyDetailVC") as? StudyDetailViewController {
+            self.navigationController?.pushViewController(studyDetailVC, animated: false)
+        }
+    }
     
     func fetchRecruitingStudies() {
         RecruitingStudyGet.instance.recruitingStudyGet { [weak self] result in
